@@ -1,0 +1,2746 @@
+{
+  "character": {
+    "id": "cammy",
+    "name": "Cammy White",
+    "displayName": "Cammy",
+    "archetype": "rushdown",
+    "description": "Fast rushdown character with Hooligan mixups and strong dive kick pressure",
+    "bio": "A former Shadaloo assassin who now works for the British special forces unit Delta Red. Her mission is to rescue others from the same cruel fate she escaped.",
+    "vitals": {
+      "height": "5'4",
+      "weight": "134 lbs",
+      "likes": "Cats, cake, mittens",
+      "hates": "Everything about Shadaloo"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "🎯",
+      "moveIds": ["cammy_st_lp", "cammy_st_mk", "cammy_st_hk", "cammy_cr_mp", "cammy_cr_mk", "cammy_spiral_arrow_l"]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "⚡",
+      "moveIds": ["cammy_cannon_strike", "cammy_hooligan", "cammy_quick_spin_knuckle_m"]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "🔥",
+      "moveIds": ["cammy_spiral_arrow_m", "cammy_cannon_spike_m", "cammy_swing_combination"]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "🛡️",
+      "moveIds": ["cammy_spiral_arrow_h", "cammy_cannon_spike_h", "cammy_hooligan_charged"]
+    }
+  },
+
+  "moves": {
+    "cammy_st_lp": {
+      "id": "cammy_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab for pressure",
+        "whenToUse": "Use for pressure and confirms. Can be rapid canceled.",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["cammy_st_lp", "cammy_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_st_lk": {
+      "id": "cammy_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Quick standing kick",
+        "whenToUse": "Use for pressure strings",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["cammy_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 10,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_st_mp": {
+      "id": "cammy_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Mid-range poke",
+        "whenToUse": "Use for spacing control and confirms into specials",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["cammy_spiral_arrow_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 6
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 13,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_st_mk": {
+      "id": "cammy_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke for footsies",
+        "whenToUse": "Use for max range control in neutral",
+        "situations": ["neutral"],
+        "range": "max",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 18,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_st_hp": {
+      "id": "cammy_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy normal for damage",
+        "whenToUse": "Use for counter hits and confirms",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["cammy_spiral_arrow_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 20,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_st_hk": {
+      "id": "cammy_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy kick with juggle on Punish Counter",
+        "whenToUse": "Use for anti-air and Punish Counter. Forces juggle state on Punish Counter. 2 frames of recovery added when the attack misses.",
+        "situations": ["antiAir", "punish"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "recovery": 21,
+        "total": 35
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_cr_lp": {
+      "id": "cammy_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "↓ + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["cammy_st_lp", "cammy_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 8,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_cr_lk": {
+      "id": "cammy_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "↓ + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light attack with rapid cancel",
+        "whenToUse": "Use for low mixups. Can be rapid canceled.",
+        "situations": ["pressure", "mixup"],
+        "range": "close",
+        "connectsTo": ["cammy_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe low option. Must be blocked low. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 7,
+        "total": 15
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_cr_mp": {
+      "id": "cammy_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "↓ + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Good poke and combo starter",
+        "whenToUse": "Use for confirms into specials. 3 frames of recovery added when the attack misses.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["cammy_spiral_arrow_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 14,
+        "total": 24
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_cr_mk": {
+      "id": "cammy_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "↓ + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke with decent range",
+        "whenToUse": "Use for low mixups and spacing",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 18,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_cr_hp": {
+      "id": "cammy_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "↓ + HP",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air that forces standing",
+        "whenToUse": "Use as anti-air. Forces opponent into standing position.",
+        "situations": ["antiAir"],
+        "range": "mid",
+        "connectsTo": ["cammy_cannon_spike_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 1,
+          "onHit": 7
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+1)! Forces standing."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "recovery": 15,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_cr_hk": {
+      "id": "cammy_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "↓ + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep that causes knockdown",
+        "whenToUse": "Use for knockdown and oki setup. Knockdown time extended on Punish Counter and changes to Hard Knockdown. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["neutral", "oki"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 24,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "cammy_j_lp": {
+      "id": "cammy_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air jab",
+        "whenToUse": "Use for air-to-air",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_j_lk": {
+      "id": "cammy_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cross-up",
+        "whenToUse": "Use for air-to-air. Has cross-up attack properties.",
+        "situations": ["airToAir", "jumpIn"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "cammy_j_mp": {
+      "id": "cammy_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with juggle",
+        "whenToUse": "Use for air-to-air. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["airToAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 8,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_j_mk": {
+      "id": "cammy_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in kick",
+        "whenToUse": "Use for jump-ins",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_j_hp": {
+      "id": "cammy_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure. Forces slam knockdown when hitting a mid-air opponent.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_j_hk": {
+      "id": "cammy_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "cammy_lift_uppercut": {
+      "id": "cammy_lift_uppercut",
+      "displayName": "Lift Uppercut",
+      "shortName": "6MP",
+      "notation": "6MP",
+      "input": "→ + MP",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Advancing uppercut",
+        "whenToUse": "Use for confirms and pressure",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": ["cammy_spiral_arrow_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "recovery": 12,
+        "total": 22
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_delayed_ripper": {
+      "id": "cammy_delayed_ripper",
+      "displayName": "Delayed Ripper",
+      "shortName": "6HP",
+      "notation": "6HP",
+      "input": "→ + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Overhead with juggle extension",
+        "whenToUse": "Use for overhead mixups. Increases juggle state time when attack lands as a Punish Counter.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. OVERHEAD. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 25,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_assault_blade": {
+      "id": "cammy_assault_blade",
+      "displayName": "Assault Blade",
+      "shortName": "4HP",
+      "notation": "4HP",
+      "input": "← + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Launching attack",
+        "whenToUse": "Use for confirms. Can only be canceled into a jump if the attack hits.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable on block. Minus 7. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 18,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_lift_combination": {
+      "id": "cammy_lift_combination",
+      "displayName": "Lift Combination",
+      "shortName": "6MP>HP",
+      "notation": "6MP > HP",
+      "input": "(After Lift Uppercut) HP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Target combo second hit",
+        "whenToUse": "Use for target combo ender. Can only be canceled into a jump if the attack hits. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 23,
+        "total": 35
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_swing_combination": {
+      "id": "cammy_swing_combination",
+      "displayName": "Swing Combination",
+      "shortName": "5HP>HK",
+      "notation": "5HP > HK",
+      "input": "(After 5HP) HK",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy target combo",
+        "whenToUse": "Use for heavy confirms. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 19,
+        "recovery": 29,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 10%, Immediate scaling 10% on 2nd hit, Combo scaling 20%"
+      }
+    },
+    "cammy_spiral_arrow_l": {
+      "id": "cammy_spiral_arrow_l",
+      "displayName": "L Spiral Arrow",
+      "shortName": "L Spiral Arrow",
+      "notation": "236LK",
+      "input": "↓↘→ + LK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Fast advancing special",
+        "whenToUse": "Use for combos and pressure. Considered airborne from frames 9-24. Causes knockdown.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 13,
+        "recovery": 21,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "9-24"
+      }
+    },
+    "cammy_spiral_arrow_m": {
+      "id": "cammy_spiral_arrow_m",
+      "displayName": "M Spiral Arrow",
+      "shortName": "M Spiral Arrow",
+      "notation": "236MK",
+      "input": "↓↘→ + MK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Medium advancing special",
+        "whenToUse": "Use for combos. Considered airborne from frames 9-26. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 15,
+        "recovery": 21,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "9-26"
+      }
+    },
+    "cammy_spiral_arrow_h": {
+      "id": "cammy_spiral_arrow_h",
+      "displayName": "H Spiral Arrow",
+      "shortName": "H Spiral Arrow",
+      "notation": "236HK",
+      "input": "↓↘→ + HK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Heavy advancing special with charge option",
+        "whenToUse": "Use for combos. Hold button for more than 16 frames to change properties. Considered airborne from frames 18-33. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 16,
+        "recovery": 21,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "airborne": "18-33"
+      }
+    },
+    "cammy_spiral_arrow_h_charged": {
+      "id": "cammy_spiral_arrow_h_charged",
+      "displayName": "H Spiral Arrow (Charged)",
+      "shortName": "H SA Charged",
+      "notation": "[236HK]",
+      "input": "↓↘→ + HK (Hold)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Charged version for more range",
+        "whenToUse": "Use for combos. Hold button for more than 16 frames. Considered airborne from frames 30-45. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 27,
+        "active": 16,
+        "recovery": 20,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "airborne": "30-45"
+      }
+    },
+    "cammy_spiral_arrow_od": {
+      "id": "cammy_spiral_arrow_od",
+      "displayName": "OD Spiral Arrow",
+      "shortName": "OD Spiral Arrow",
+      "notation": "236KK",
+      "input": "↓↘→ + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced advancing special",
+        "whenToUse": "Use for combos. Considered airborne from frames 16-32. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["cammy_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 16,
+        "recovery": 20,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "16-32",
+        "comboScaling": "Combo scaling 15%"
+      }
+    },
+    "cammy_cannon_spike_l": {
+      "id": "cammy_cannon_spike_l",
+      "displayName": "L Cannon Spike",
+      "shortName": "L Cannon Spike",
+      "notation": "623LK",
+      "input": "→↓↘ + LK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-14. Considered airborne from frames 7-40. Does 800 damage after the 3rd active frame. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -36,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 12,
+        "recovery": 40,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-14",
+        "airborne": "7-40"
+      }
+    },
+    "cammy_cannon_spike_m": {
+      "id": "cammy_cannon_spike_m",
+      "displayName": "M Cannon Spike",
+      "shortName": "M Cannon Spike",
+      "notation": "623MK",
+      "input": "→↓↘ + MK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-9. Considered airborne from frames 8-42. Does 800 damage after the 3rd active frame. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -36,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 12,
+        "recovery": 41,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-9",
+        "airborne": "8-42"
+      }
+    },
+    "cammy_cannon_spike_h": {
+      "id": "cammy_cannon_spike_h",
+      "displayName": "H Cannon Spike",
+      "shortName": "H Cannon Spike",
+      "notation": "623HK",
+      "input": "→↓↘ + HK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy anti-air with charge option",
+        "whenToUse": "Use as anti-air. Hold button for over 15 frames to change properties. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-8. Considered airborne from frames 10-36. Does 800 damage from the 3rd active frame and on. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -36,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 12,
+        "recovery": 44,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-8",
+        "airborne": "10-36"
+      }
+    },
+    "cammy_cannon_spike_h_charged": {
+      "id": "cammy_cannon_spike_h_charged",
+      "displayName": "H Cannon Spike (Charged)",
+      "shortName": "H CS Charged",
+      "notation": "[623HK]",
+      "input": "→↓↘ + HK (Hold)",
+      "category": "special",
+      "damage": 1500,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible charged version",
+        "whenToUse": "Use as reversal. Hold button for over 15 frames. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-7. Completely invincible from frames 20-25. Considered airborne from frames 26-64. Does 900 damage after the 5th active frame. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 24,
+        "active": 12,
+        "recovery": 45,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-7, full 20-25",
+        "airborne": "26-64"
+      }
+    },
+    "cammy_cannon_spike_od": {
+      "id": "cammy_cannon_spike_od",
+      "displayName": "OD Cannon Spike",
+      "shortName": "OD Cannon Spike",
+      "notation": "623KK",
+      "input": "→↓↘ + KK",
+      "category": "special",
+      "damage": 1500,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible from frames 1-7. Considered airborne from frames 8-47. Does 900 damage after the 5th active frame. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 12,
+        "recovery": 46,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-7",
+        "airborne": "8-47"
+      }
+    },
+    "cammy_quick_spin_knuckle_l": {
+      "id": "cammy_quick_spin_knuckle_l",
+      "displayName": "L Quick Spin Knuckle",
+      "shortName": "L QSK",
+      "notation": "214LP",
+      "input": "↓↙← + LP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing backfist",
+        "whenToUse": "Use for combos and pressure",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": 4,
+        "recovery": 16,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "cammy_quick_spin_knuckle_m": {
+      "id": "cammy_quick_spin_knuckle_m",
+      "displayName": "M Quick Spin Knuckle",
+      "shortName": "M QSK",
+      "notation": "214MP",
+      "input": "↓↙← + MP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing backfist with projectile invincibility",
+        "whenToUse": "Use for combos and going through projectiles. Invincible to projectiles from frames 9-23.",
+        "situations": ["combo", "neutral"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Projectile invincible frames 9-23."
+      },
+      "frameData": {
+        "startup": 24,
+        "active": 4,
+        "recovery": 16,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "projectile 9-23",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_quick_spin_knuckle_h": {
+      "id": "cammy_quick_spin_knuckle_h",
+      "displayName": "H Quick Spin Knuckle",
+      "shortName": "H QSK",
+      "notation": "214HP",
+      "input": "↓↙← + HP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing backfist with longer projectile invincibility",
+        "whenToUse": "Use for combos and going through projectiles. Invincible to projectiles from frames 9-27.",
+        "situations": ["combo", "neutral"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+3)! Projectile invincible frames 9-27."
+      },
+      "frameData": {
+        "startup": 28,
+        "active": 4,
+        "recovery": 17,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "projectile 9-27",
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "cammy_quick_spin_knuckle_od": {
+      "id": "cammy_quick_spin_knuckle_od",
+      "displayName": "OD Quick Spin Knuckle",
+      "shortName": "OD QSK",
+      "notation": "214PP",
+      "input": "↓↙← + PP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced backfist with side switch",
+        "whenToUse": "Use for combos and going through projectiles. Invincible to projectiles from frames 9-24. When performed at close range, Cammy will go behind her opponent and attack. In this situation, start up is 3 frames later.",
+        "situations": ["combo", "neutral"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 7
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. May switch sides at close range."
+      },
+      "frameData": {
+        "startup": 25,
+        "active": 4,
+        "recovery": 17,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "projectile 9-24",
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "cammy_cannon_strike": {
+      "id": "cammy_cannon_strike",
+      "displayName": "Cannon Strike",
+      "shortName": "Cannon Strike",
+      "notation": "j.214K",
+      "input": "(During forward jump) ↓↙← + K",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Dive kick for pressure",
+        "whenToUse": "Use for air pressure and mixups. Recovery changes depending on the height of the attack when it hits or is blocked. 12 frames landing recovery.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 11,
+        "recovery": 12,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_cannon_strike_od": {
+      "id": "cammy_cannon_strike_od",
+      "displayName": "OD Cannon Strike",
+      "shortName": "OD Cannon Strike",
+      "notation": "j.214KK",
+      "input": "(During forward jump) ↓↙← + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced dive kick",
+        "whenToUse": "Use for air pressure. Recovery changes depending on the height of the attack when it hits or is blocked. 12 frames landing recovery.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 5,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+5)! Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 10,
+        "recovery": 12,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%, Immediate scaling 10%"
+      }
+    },
+    "cammy_hooligan": {
+      "id": "cammy_hooligan",
+      "displayName": "Hooligan Combination",
+      "shortName": "Hooligan",
+      "notation": "214K",
+      "input": "↓↙← + K",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Flip stance with multiple follow-ups",
+        "whenToUse": "Use for mixups. From frame 21 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 7 or later. Is considered airborne.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["cammy_razors_edge_slicer", "cammy_hooligan_cannon_strike", "cammy_reverse_edge", "cammy_fatal_leg_twister", "cammy_silent_step"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Flip stance - watch for follow-up mixups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "airborne": true
+      }
+    },
+    "cammy_hooligan_charged": {
+      "id": "cammy_hooligan_charged",
+      "displayName": "Hooligan Combination (Charged)",
+      "shortName": "Hooligan Charged",
+      "notation": "[214K]",
+      "input": "↓↙← + K (Hold)",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Charged flip with extended options",
+        "whenToUse": "Use for mixups. Hold button for more than 18 frames. From frame 41 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 27 or later. Is considered airborne.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["cammy_razors_edge_slicer_charged", "cammy_hooligan_cannon_strike_charged", "cammy_reverse_edge_charged", "cammy_fatal_leg_twister_charged", "cammy_silent_step_charged"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Charged flip stance - watch for follow-up mixups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "airborne": true
+      }
+    },
+    "cammy_hooligan_od": {
+      "id": "cammy_hooligan_od",
+      "displayName": "OD Hooligan Combination",
+      "shortName": "OD Hooligan",
+      "notation": "214KK",
+      "input": "↓↙← + KK",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced flip with OD follow-ups",
+        "whenToUse": "Use for mixups. From frame 21 until landing, can be canceled into any offshoot attacks except for Overdrive Razor's Edge Slicer on frame 7 or later. Is considered airborne.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["cammy_razors_edge_slicer_od", "cammy_hooligan_cannon_strike_od", "cammy_reverse_edge_od", "cammy_fatal_leg_twister_od", "cammy_silent_step_od"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "OD flip stance - watch for follow-up mixups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "airborne": true
+      }
+    },
+    "cammy_razors_edge_slicer": {
+      "id": "cammy_razors_edge_slicer",
+      "displayName": "Razor's Edge Slicer",
+      "shortName": "RES",
+      "notation": "214K > (No input)",
+      "input": "(During Hooligan Combination) No input",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Low slide from Hooligan",
+        "whenToUse": "Use for low mixup. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+2)! LOW - must be blocked low. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 9,
+        "recovery": 13,
+        "total": 32
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_razors_edge_slicer_charged": {
+      "id": "cammy_razors_edge_slicer_charged",
+      "displayName": "Razor's Edge Slicer (Charged)",
+      "shortName": "RES Charged",
+      "notation": "[214K] > (No input)",
+      "input": "(During Hooligan Charged) No input",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Charged low slide from Hooligan",
+        "whenToUse": "Use for low mixup. Only the final attack can be canceled into a Level 3 Super Art or Critical Art. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+2)! LOW - must be blocked low. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 24,
+        "recovery": 17,
+        "total": 51
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_razors_edge_slicer_od": {
+      "id": "cammy_razors_edge_slicer_od",
+      "displayName": "OD Razor's Edge Slicer",
+      "shortName": "OD RES",
+      "notation": "214KK > (No input)",
+      "input": "(During OD Hooligan) No input",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced low slide",
+        "whenToUse": "Use for low mixup. Only the final attack can be canceled into a Level 3 Super Art or Critical Art. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+2)! LOW - must be blocked low. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 24,
+        "recovery": 17,
+        "total": 51
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_hooligan_cannon_strike": {
+      "id": "cammy_hooligan_cannon_strike",
+      "displayName": "Cannon Strike (Hooligan)",
+      "shortName": "Hooligan CS",
+      "notation": "214K > K",
+      "input": "(During Hooligan Combination) K",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Dive kick from Hooligan",
+        "whenToUse": "Use for overhead pressure from Hooligan. Recovery changes depending on the height of the attack when it hits or is blocked. 12 frames landing recovery.",
+        "situations": ["mixup", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 11,
+        "recovery": 12,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_hooligan_cannon_strike_charged": {
+      "id": "cammy_hooligan_cannon_strike_charged",
+      "displayName": "Cannon Strike (Hooligan Charged)",
+      "shortName": "Hooligan CS Charged",
+      "notation": "[214K] > K",
+      "input": "(During Hooligan Charged) K",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced dive kick from Hooligan",
+        "whenToUse": "Use for overhead pressure. Recovery changes depending on the height of the attack when it hits or is blocked. 12 frames landing recovery.",
+        "situations": ["mixup", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 5,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+5)! Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 10,
+        "recovery": 12,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%, Immediate scaling 10%"
+      }
+    },
+    "cammy_hooligan_cannon_strike_od": {
+      "id": "cammy_hooligan_cannon_strike_od",
+      "displayName": "OD Cannon Strike (Hooligan)",
+      "shortName": "OD Hooligan CS",
+      "notation": "214KK > K",
+      "input": "(During OD Hooligan) K",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "OD dive kick from Hooligan",
+        "whenToUse": "Use for overhead pressure. Recovery changes depending on the height of the attack when it hits or is blocked. 12 frames landing recovery.",
+        "situations": ["mixup", "pressure"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 5,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+5)! Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 10,
+        "recovery": 12,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%, Immediate scaling 10%"
+      }
+    },
+    "cammy_reverse_edge": {
+      "id": "cammy_reverse_edge",
+      "displayName": "Reverse Edge",
+      "shortName": "Reverse Edge",
+      "notation": "214K > P",
+      "input": "(During Hooligan Combination) P",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Cross-up attack from Hooligan",
+        "whenToUse": "Use for cross-up mixup. Recovery changes depending on the height of the attack when it hits or is blocked. 13 frames landing recovery.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 6
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 4,
+        "recovery": 13,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_reverse_edge_charged": {
+      "id": "cammy_reverse_edge_charged",
+      "displayName": "Reverse Edge (Charged)",
+      "shortName": "RE Charged",
+      "notation": "[214K] > P",
+      "input": "(During Hooligan Charged) P",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced cross-up attack",
+        "whenToUse": "Use for cross-up mixup. 13 frames landing recovery.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 8
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 22,
+        "recovery": 13,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_reverse_edge_od": {
+      "id": "cammy_reverse_edge_od",
+      "displayName": "OD Reverse Edge",
+      "shortName": "OD RE",
+      "notation": "214KK > P",
+      "input": "(During OD Hooligan) P",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "OD cross-up attack",
+        "whenToUse": "Use for cross-up mixup. 13 frames landing recovery.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["cammy_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 8
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 22,
+        "recovery": 13,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_fatal_leg_twister": {
+      "id": "cammy_fatal_leg_twister",
+      "displayName": "Fatal Leg Twister",
+      "shortName": "FLT",
+      "notation": "214K > LP+LK",
+      "input": "(During Hooligan, close to standing opponent) LP+LK",
+      "category": "special",
+      "damage": 1800,
+      "yourPerspective": {
+        "tacticalUse": "Command grab from Hooligan",
+        "whenToUse": "Use for grab mixup from Hooligan. Only works on standing opponents. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air command grab. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "cammy_fatal_leg_twister_charged": {
+      "id": "cammy_fatal_leg_twister_charged",
+      "displayName": "Fatal Leg Twister (Charged)",
+      "shortName": "FLT Charged",
+      "notation": "[214K] > LP+LK",
+      "input": "(During Hooligan Charged, close to standing opponent) LP+LK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Charged command grab",
+        "whenToUse": "Use for grab mixup. Only works on standing opponents. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air command grab. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_fatal_leg_twister_od": {
+      "id": "cammy_fatal_leg_twister_od",
+      "displayName": "OD Fatal Leg Twister",
+      "shortName": "OD FLT",
+      "notation": "214KK > LP+LK",
+      "input": "(During OD Hooligan, close to standing opponent) LP+LK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "OD command grab",
+        "whenToUse": "Use for grab mixup. Only works on standing opponents. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air command grab. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "cammy_silent_step": {
+      "id": "cammy_silent_step",
+      "displayName": "Silent Step",
+      "shortName": "Silent Step",
+      "notation": "214K > Down",
+      "input": "(During Hooligan Combination) ↓",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel Hooligan into recovery",
+        "whenToUse": "Use to cancel Hooligan safely. 10 frames landing recovery.",
+        "situations": ["bait", "escape"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Hooligan cancel. Watch for follow-up attacks."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": 10,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "cammy_silent_step_charged": {
+      "id": "cammy_silent_step_charged",
+      "displayName": "Silent Step (Charged)",
+      "shortName": "SS Charged",
+      "notation": "[214K] > Down",
+      "input": "(During Hooligan Charged) ↓",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel charged Hooligan into recovery",
+        "whenToUse": "Use to cancel Hooligan safely. 10 frames landing recovery.",
+        "situations": ["bait", "escape"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Hooligan cancel. Watch for follow-up attacks."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": 10,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "cammy_silent_step_od": {
+      "id": "cammy_silent_step_od",
+      "displayName": "OD Silent Step",
+      "shortName": "OD SS",
+      "notation": "214KK > Down",
+      "input": "(During OD Hooligan) ↓",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel OD Hooligan into recovery",
+        "whenToUse": "Use to cancel Hooligan safely. 10 frames landing recovery.",
+        "situations": ["bait", "escape"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Hooligan cancel. Watch for follow-up attacks."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": 10,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+   "cammy_sa1": {
+      "id": "cammy_sa1",
+      "displayName": "SA1 Spin Drive Smasher",
+      "shortName": "SA1",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Invincible reversal Super",
+        "whenToUse": "Use as reversal or combo ender. Invincible to strikes and throws from frame 1 to frame 11. The 6th attack is only performed if the 5th attack hits. Causes knockdown.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 11,
+        "recovery": 38,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-11",
+        "superArt": 1
+      }
+    },
+    "cammy_sa2": {
+      "id": "cammy_sa2",
+      "displayName": "SA2 Killer Bee Spin",
+      "shortName": "SA2",
+      "notation": "214214K",
+      "input": "↓↙←↓↙← + K",
+      "category": "super",
+      "damage": 3000,
+      "yourPerspective": {
+        "tacticalUse": "Combo Super for big damage",
+        "whenToUse": "Use for combos. Attack does not transition into the cinematic attack when hitting an airborne opponent. Damage is 220 x n (multiple hits until Cammy lands on the ground). Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 9,
+        "recovery": 37,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArt": 2
+      }
+    },
+    "cammy_sa2_air": {
+      "id": "cammy_sa2_air",
+      "displayName": "SA2 Aerial Killer Bee Spin",
+      "shortName": "SA2 (Air)",
+      "notation": "j.214214K",
+      "input": "(During forward jump) ↓↙←↓↙← + K",
+      "category": "super",
+      "damage": 3000,
+      "yourPerspective": {
+        "tacticalUse": "Air Super for combos",
+        "whenToUse": "Use for air combo ender. Attack does not transition into the cinematic attack when hitting an airborne opponent. Damage is 220 x n (multiple hits until Cammy lands on the ground). Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -23,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 23. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "recovery": 37,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArt": 2
+      }
+    },
+    "cammy_sa3": {
+      "id": "cammy_sa3",
+      "displayName": "SA3 Delta Red Assault",
+      "shortName": "SA3",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 4000,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible from frames 1-13. Considered airborne from frames 9-27. Minimum guaranteed damage is set to 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -33,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 33. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 15,
+        "recovery": 38,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "airborne": "9-27",
+        "superArt": 3,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "cammy_ca": {
+      "id": "cammy_ca",
+      "displayName": "CA Delta Red Assault (Critical Art)",
+      "shortName": "CA",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P (under 25% vitality)",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible from frames 1-13. Considered airborne from frames 9-27. Minimum guaranteed damage is set to 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -33,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 33. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 15,
+        "recovery": 38,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "airborne": "9-27",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "cammy_throw_f": {
+      "id": "cammy_throw_f",
+      "displayName": "Rough Landing (Forward Throw)",
+      "shortName": "F Throw",
+      "notation": "LP+LK",
+      "input": "LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Forward throw",
+        "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "cammy_throw_b": {
+      "id": "cammy_throw_b",
+      "displayName": "Delta Throw (Back Throw)",
+      "shortName": "B Throw",
+      "notation": "4+LP+LK",
+      "input": "← + LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Back throw for side switch",
+        "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK. Switches sides."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "cammy_throw_air": {
+      "id": "cammy_throw_air",
+      "displayName": "Leg Scissors Choke (Air Throw)",
+      "shortName": "Air Throw",
+      "notation": "j.LP+LK",
+      "input": "(During jump, near opponent) LP + LK",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Air throw",
+        "whenToUse": "Use for air-to-air situations. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown. 3 frames landing recovery.",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air throw. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 3,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "cammy_forward_dash": {
+      "id": "cammy_forward_dash",
+      "displayName": "Forward Dash",
+      "shortName": "66",
+      "notation": "66",
+      "input": "→→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward movement",
+        "whenToUse": "Use to close distance quickly",
+        "situations": ["movement", "approach"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "cammy_back_dash": {
+      "id": "cammy_back_dash",
+      "displayName": "Backward Dash",
+      "shortName": "44",
+      "notation": "44",
+      "input": "←←",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick backward movement with throw invincibility",
+        "whenToUse": "Use to escape pressure. Invincible to throws from frames 1-15.",
+        "situations": ["movement", "escape"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option. Throw invincible frames 1-15."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "invincible": "throw 1-15"
+      }
+    },
+    "cammy_drive_impact": {
+      "id": "cammy_drive_impact",
+      "displayName": "Drive Impact (Spin Raider)",
+      "shortName": "DI",
+      "notation": "HP+HK",
+      "input": "HP + HK",
+      "category": "common",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Armored attack for pressure and punishes",
+        "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 attacks from frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), spinning knockdown (airborne), +3000 SA gauge.",
+        "situations": ["pressure", "punish", "wallSplat"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "2 hits, frames 1-27",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "cammy_drive_reversal_block": {
+      "id": "cammy_drive_reversal_block",
+      "displayName": "Drive Reversal - Blocking (Countersnipe)",
+      "shortName": "DR (Block)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (while blocking or during Drive Parry)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal while blocking",
+        "whenToUse": "Use to escape pressure while blocking. Completely invincible on frames 1-22. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-22"
+      }
+    },
+    "cammy_drive_reversal_wakeup": {
+      "id": "cammy_drive_reversal_wakeup",
+      "displayName": "Drive Reversal - Recovering (Countersnipe)",
+      "shortName": "DR (Wakeup)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (during knockdown recovery)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal on wakeup",
+        "whenToUse": "Use to escape oki pressure. Completely invincible on frames 1-20. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-20"
+      }
+    },
+    "cammy_drive_parry": {
+      "id": "cammy_drive_parry",
+      "displayName": "Drive Parry",
+      "shortName": "Parry",
+      "notation": "MP+MK",
+      "input": "MP + MK",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Defensive parry to absorb attacks",
+        "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": ["cammy_parry_drive_rush"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Cammy is in Punish Counter state. Throw or wait for recovery."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "cammy_perfect_parry_strike": {
+      "id": "cammy_perfect_parry_strike",
+      "displayName": "Perfect Parry (Strike)",
+      "shortName": "PP (Strike)",
+      "notation": "MP+MK",
+      "input": "MP + MK (+ direction for high/low)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry for big punish",
+        "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense", "punish"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "cammy_perfect_parry_projectile": {
+      "id": "cammy_perfect_parry_projectile",
+      "displayName": "Perfect Parry (Projectile)",
+      "shortName": "PP (Proj)",
+      "notation": "MP+MK",
+      "input": "MP + MK (vs projectile)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry against projectiles",
+        "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "cammy_parry_drive_rush": {
+      "id": "cammy_parry_drive_rush",
+      "displayName": "Parry Drive Rush",
+      "shortName": "PDR",
+      "notation": "MP+MK > 66",
+      "input": "(During Drive Parry) →→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel parry into run",
+        "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
+        "situations": ["offense", "conversion"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Cammy is rushing in. Prepare to block or contest."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    },
+    "cammy_cancel_drive_rush": {
+      "id": "cammy_cancel_drive_rush",
+      "displayName": "Cancel Drive Rush",
+      "shortName": "CDR",
+      "notation": "66",
+      "input": "→→ (while connecting with special-cancelable move)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel normal into run for combos",
+        "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
+        "situations": ["combo", "pressure"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Cammy is canceling into run. Prepare for follow-up."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    }
+  }
+}

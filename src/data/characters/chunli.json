@@ -1,0 +1,2857 @@
+{
+  "character": {
+    "id": "chunli",
+    "name": "Chun-Li",
+    "displayName": "Chun-Li",
+    "archetype": "footsies",
+    "description": "Technical footsies character with strong pokes, Serenity Stream stance mixups, and aerial mobility",
+    "bio": "Former ICPO detective now working as a kung fu teacher. One of the most accomplished martial artists in the world, she never stops training and is always looking for strong opponents.",
+    "vitals": {
+      "height": "5'6",
+      "weight": "Unknown",
+      "likes": "Crepes, fruit, ramune",
+      "hates": "Indecisive people, crime"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "🎯",
+      "moveIds": ["chunli_st_mp", "chunli_st_mk", "chunli_st_hk", "chunli_cr_mk", "chunli_kikoken_l"]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "⚡",
+      "moveIds": ["chunli_serenity_stream", "chunli_hazanshu_m", "chunli_hundred_lightning_l"]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "🔥",
+      "moveIds": ["chunli_cr_hp", "chunli_tensho_l", "chunli_spinning_bird_l"]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "🛡️",
+      "moveIds": ["chunli_cr_hk", "chunli_hazanshu_h"]
+    }
+  },
+
+  "moves": {
+    "chunli_st_lp": {
+      "id": "chunli_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab with rapid cancel",
+        "whenToUse": "Use for pressure and frame traps. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["chunli_st_lp", "chunli_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_st_lk": {
+      "id": "chunli_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast poke",
+        "whenToUse": "Use for quick pokes and pressure",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["chunli_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 10,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_st_mp": {
+      "id": "chunli_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Plus on block poke",
+        "whenToUse": "Use for pressure. PLUS ON BLOCK (+1).",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 1,
+          "onHit": 6
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+1)! Chun-Li can continue pressure."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 4,
+        "recovery": 10,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_mk": {
+      "id": "chunli_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke",
+        "whenToUse": "Use for footsies and spacing",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "recovery": 16,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_hp": {
+      "id": "chunli_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy poke with Serenity Stream cancel",
+        "whenToUse": "Use for damage. Can be canceled into Serenity Stream on hit or block.",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can cancel into Serenity Stream."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "recovery": 20,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_hk": {
+      "id": "chunli_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy poke with Serenity Stream cancel",
+        "whenToUse": "Use for neutral. Can be canceled into Serenity Stream on hit or block. Forces juggle state vs airborne.",
+        "situations": ["neutral", "antiAir"],
+        "range": "mid",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 0,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Even on block. Can cancel into Serenity Stream."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "recovery": 18,
+        "total": 35
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_cr_lp": {
+      "id": "chunli_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "↓ + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and confirms. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["chunli_cr_lp", "chunli_cr_lk"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_cr_lk": {
+      "id": "chunli_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "↓ + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light with rapid cancel",
+        "whenToUse": "Use for low mixups. Can be rapid canceled.",
+        "situations": ["pressure", "mixup"],
+        "range": "close",
+        "connectsTo": ["chunli_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe low. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 10,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_cr_mp": {
+      "id": "chunli_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "↓ + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "6-frame poke with cancel options",
+        "whenToUse": "Use for confirms and punishes. 1 frame recovery added on whiff.",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["chunli_hundred_lightning_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 13,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_cr_mk": {
+      "id": "chunli_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "↓ + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke for footsies",
+        "whenToUse": "Use for low pokes and confirms",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["chunli_kikoken_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": -2
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame moves. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 19,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_hp": {
+      "id": "chunli_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "↓ + HP",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Multi-hit anti-air and combo tool",
+        "whenToUse": "Use as anti-air. Forces standing. Forces juggle on first hit vs airborne.",
+        "situations": ["antiAir", "combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_hundred_lightning_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 13,
+        "recovery": 18,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_hk": {
+      "id": "chunli_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "↓ + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep with Serenity Stream cancel",
+        "whenToUse": "Use for knockdown. Can be canceled into Serenity Stream. Hard Knockdown on Punish Counter. Forces juggle vs airborne.",
+        "situations": ["neutral", "oki"],
+        "range": "far",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 19,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_j_lp": {
+      "id": "chunli_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air",
+        "whenToUse": "Use for air-to-air situations",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_lk": {
+      "id": "chunli_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air",
+        "whenToUse": "Use for air-to-air situations",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 8,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_mp": {
+      "id": "chunli_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cancel options",
+        "whenToUse": "Use for air-to-air. Cancelable.",
+        "situations": ["airToAir"],
+        "range": "mid",
+        "connectsTo": ["chunli_air_hundred_lightning_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 15,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_j_mk": {
+      "id": "chunli_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Cross-up kick",
+        "whenToUse": "Use for cross-ups. Has cross-up properties.",
+        "situations": ["crossup", "jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal with cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "chunli_j_hp": {
+      "id": "chunli_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in attack",
+        "whenToUse": "Use for jump-ins. Forces juggle vs airborne.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_hk": {
+      "id": "chunli_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in attack with cross-up",
+        "whenToUse": "Use for jump-ins. Has cross-up properties.",
+        "situations": ["jumpIn", "crossup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal with cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "chunli_nj_hk": {
+      "id": "chunli_nj_hk",
+      "displayName": "Neutral Jumping Heavy Kick",
+      "shortName": "nj.HK",
+      "notation": "nj.HK",
+      "input": "(During neutral jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Neutral jump anti-air",
+        "whenToUse": "Use for neutral jump situations. Forces juggle vs airborne.",
+        "situations": ["antiAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_swift_thrust": {
+      "id": "chunli_swift_thrust",
+      "displayName": "Swift Thrust",
+      "shortName": "6MP",
+      "notation": "6MP",
+      "input": "→ + MP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Forward-advancing poke",
+        "whenToUse": "Use for confirms and pressure",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["chunli_hundred_lightning_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 15,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hakkei": {
+      "id": "chunli_hakkei",
+      "displayName": "Hakkei",
+      "shortName": "6HP",
+      "notation": "6HP",
+      "input": "→ + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Palm strike with good frame advantage",
+        "whenToUse": "Use for confirms. Minus 1 on block is very safe.",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_hundred_lightning_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "recovery": 14,
+        "total": 28
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_water_lotus_fist": {
+      "id": "chunli_water_lotus_fist",
+      "displayName": "Water Lotus Fist",
+      "shortName": "4HP",
+      "notation": "4HP",
+      "input": "← + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Retreating punch with Serenity Stream cancel",
+        "whenToUse": "Use for spacing. Can be canceled into Serenity Stream on hit or block.",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can cancel into Serenity Stream."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "recovery": 15,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_yokusen_kick": {
+      "id": "chunli_yokusen_kick",
+      "displayName": "Yokusen Kick",
+      "shortName": "3HK",
+      "notation": "3HK",
+      "input": "↘ + HK",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing kick with crumple on Punish Counter",
+        "whenToUse": "Use for confirms. Can cancel into Serenity Stream. Crumple stun on Punish Counter. Forces juggle on PC vs airborne. Airborne frames 6-28.",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_serenity_stream"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": -1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes crumple on Punish Counter."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 2,
+        "recovery": 23,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "airborne": "6-28"
+      }
+    },
+    "chunli_falling_crane": {
+      "id": "chunli_falling_crane",
+      "displayName": "Falling Crane",
+      "shortName": "3HK (far)",
+      "notation": "3HK",
+      "input": "↘ + HK (hold)",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jumping overhead with cross-up",
+        "whenToUse": "Use for overhead mixups. Has cross-up properties. Forces juggle vs airborne. Airborne frames 7-39.",
+        "situations": ["mixup"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": 7
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+3)! Overhead with cross-up properties."
+      },
+      "frameData": {
+        "startup": 37,
+        "active": 2,
+        "recovery": 13,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true,
+        "airborne": "7-39"
+      }
+    },
+    "chunli_yoso_kick_1": {
+      "id": "chunli_yoso_kick_1",
+      "displayName": "Yoso Kick (1)",
+      "shortName": "j.MK>",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "unique",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air target combo starter",
+        "whenToUse": "Use for air combos. Has cross-up properties. Forces juggle vs airborne. Part 1 of 3-hit air chain.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_yoso_kick_2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air target combo. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "crossUp": true
+      }
+    },
+    "chunli_yoso_kick_2": {
+      "id": "chunli_yoso_kick_2",
+      "displayName": "Yoso Kick (2)",
+      "shortName": "j.MK>MK",
+      "notation": "j.MK > MK",
+      "input": "(During Yoso Kick 1) MK",
+      "category": "unique",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air target combo second hit",
+        "whenToUse": "Use for air combos. Has cross-up properties. Forces juggle vs airborne. Part 2 of 3-hit air chain.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_yoso_kick_3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air target combo. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "crossUp": true
+      }
+    },
+    "chunli_yoso_kick_3": {
+      "id": "chunli_yoso_kick_3",
+      "displayName": "Yoso Kick (3)",
+      "shortName": "j.MK>MK>MK",
+      "notation": "j.MK > MK > MK",
+      "input": "(During Yoso Kick 2) MK",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Air target combo finisher",
+        "whenToUse": "Use for air combos. Has cross-up properties. Forces juggle vs airborne. Part 3 of 3-hit air chain.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air target combo. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "crossUp": true
+      }
+    },
+    "chunli_soaring_eagle_punches": {
+      "id": "chunli_soaring_eagle_punches",
+      "displayName": "Soaring Eagle Punches",
+      "shortName": "j.HP>HP",
+      "notation": "j.HP > HP",
+      "input": "(During jump) HP > HP",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Air target combo for damage",
+        "whenToUse": "Use for jump-in damage. Forces juggle vs airborne.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air target combo. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_serenity_stream": {
+      "id": "chunli_serenity_stream",
+      "displayName": "Serenity Stream",
+      "shortName": "Stance",
+      "notation": "236K",
+      "input": "↓↘→ + K (or cancel from normals)",
+      "category": "unique",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Stance with 6 follow-up options",
+        "whenToUse": "Use for mixups. Can cancel from special-cancelable normals. Input again to cancel stance. Can transition to follow-ups from frame 15. Hold down to maintain position. 89 total frames.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["chunli_ss_orchid_palm", "chunli_ss_snake_strike", "chunli_ss_lotus_fist", "chunli_ss_forward_strike", "chunli_ss_senpu_kick", "chunli_ss_tenku_kick"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Stance - watch for follow-up mixups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 89
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 15%"
+      }
+    },
+    "chunli_ss_orchid_palm": {
+      "id": "chunli_ss_orchid_palm",
+      "displayName": "Orchid Palm",
+      "shortName": "SS > LP",
+      "notation": "236K > LP",
+      "input": "(During Serenity Stream) LP",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Fast stance follow-up",
+        "whenToUse": "Use for quick pressure. Frame data shown is if Serenity Stream is held. Can start blocking from frame 17 of recovery.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "recovery": 17,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_snake_strike": {
+      "id": "chunli_ss_snake_strike",
+      "displayName": "Snake Strike",
+      "shortName": "SS > MP",
+      "notation": "236K > MP",
+      "input": "(During Serenity Stream) MP",
+      "category": "unique",
+      "damage": 750,
+      "yourPerspective": {
+        "tacticalUse": "Low stance follow-up for knockdown",
+        "whenToUse": "Use for low mixup. Frame data shown is if Serenity Stream is held. Can start blocking from frame 20 of recovery. Causes knockdown.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -15,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 15. LOW - must be blocked low. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 11,
+        "recovery": 20,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "chunli_ss_lotus_fist": {
+      "id": "chunli_ss_lotus_fist",
+      "displayName": "Lotus Fist",
+      "shortName": "SS > HP",
+      "notation": "236K > HP",
+      "input": "(During Serenity Stream) HP",
+      "category": "unique",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "High damage stance follow-up",
+        "whenToUse": "Use for damage. Second hit is overhead only if first hit whiffs.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 10,
+        "recovery": 19,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_forward_strike": {
+      "id": "chunli_ss_forward_strike",
+      "displayName": "Forward Strike",
+      "shortName": "SS > LK",
+      "notation": "236K > LK",
+      "input": "(During Serenity Stream) LK",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low stance follow-up",
+        "whenToUse": "Use for low mixup. Frame data shown is if Serenity Stream is held. Can start blocking from frame 13 of recovery.",
+        "situations": ["mixup"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": -1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. LOW - must be blocked low."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 13,
+        "total": 26
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_senpu_kick": {
+      "id": "chunli_ss_senpu_kick",
+      "displayName": "Senpu Kick",
+      "shortName": "SS > MK",
+      "notation": "236K > MK",
+      "input": "(During Serenity Stream) MK",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Low stance follow-up with good damage",
+        "whenToUse": "Use for low mixup. Frame data shown is if Serenity Stream is held. Can start blocking from frame 23 of recovery.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": -4
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. LOW - must be blocked low."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "recovery": 23,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_tenku_kick": {
+      "id": "chunli_ss_tenku_kick",
+      "displayName": "Tenku Kick",
+      "shortName": "SS > HK",
+      "notation": "236K > HK",
+      "input": "(During Serenity Stream) HK",
+      "category": "unique",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Launcher stance follow-up",
+        "whenToUse": "Use for combo extension. Can only cancel into jump on hit. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 24,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_kikoken_l": {
+      "id": "chunli_kikoken_l",
+      "displayName": "L Kikoken",
+      "shortName": "L Kikoken",
+      "notation": "236LP",
+      "input": "↓↘→ + LP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Slow projectile for zoning",
+        "whenToUse": "Use for zoning and space control. Slowest version.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 90,
+        "recovery": null,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "chunli_kikoken_m": {
+      "id": "chunli_kikoken_m",
+      "displayName": "M Kikoken",
+      "shortName": "M Kikoken",
+      "notation": "236MP",
+      "input": "↓↘→ + MP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Medium speed projectile",
+        "whenToUse": "Use for zoning with medium speed",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 55,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "chunli_kikoken_h": {
+      "id": "chunli_kikoken_h",
+      "displayName": "H Kikoken",
+      "shortName": "H Kikoken",
+      "notation": "236HP",
+      "input": "↓↘→ + HP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Fast projectile",
+        "whenToUse": "Use for zoning with fastest speed",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": -2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 25,
+        "recovery": null,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "chunli_kikoken_od": {
+      "id": "chunli_kikoken_od",
+      "displayName": "OD Kikoken",
+      "shortName": "OD Kikoken",
+      "notation": "236PP",
+      "input": "↓↘→ + PP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Plus on block projectile",
+        "whenToUse": "Use for pressure. PLUS ON BLOCK (+5) and even on hit (0).",
+        "situations": ["pressure", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 5,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+5)! Chun-Li can continue pressure."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_hundred_lightning_l": {
+      "id": "chunli_hundred_lightning_l",
+      "displayName": "L Hundred Lightning Kicks",
+      "shortName": "L HLK",
+      "notation": "236LK",
+      "input": "↓↘→ + LK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Fast multi-hit special",
+        "whenToUse": "Use for combos. Only the 2nd hit can be canceled into SA3/CA. Forces juggle on final hit Punish Counter.",
+        "situations": ["combo", "pressure"],
+        "range": "close",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": 3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 16,
+        "recovery": 20,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_hundred_lightning_m": {
+      "id": "chunli_hundred_lightning_m",
+      "displayName": "M Hundred Lightning Kicks",
+      "shortName": "M HLK",
+      "notation": "236MK",
+      "input": "↓↘→ + MK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Medium multi-hit special",
+        "whenToUse": "Use for combos. Only the 3rd hit can be canceled into SA3/CA.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": 3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 21,
+        "recovery": 22,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_h": {
+      "id": "chunli_hundred_lightning_h",
+      "displayName": "H Hundred Lightning Kicks",
+      "shortName": "H HLK",
+      "notation": "236HK",
+      "input": "↓↘→ + HK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Heavy multi-hit with knockdown",
+        "whenToUse": "Use for combos. Only the 4th/5th hit can be canceled into SA3/CA. Crumple on final hit Punish Counter. Can transition to Lightning Kick Barrage on hit or block.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 25,
+        "recovery": 15,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_od": {
+      "id": "chunli_hundred_lightning_od",
+      "displayName": "OD Hundred Lightning Kicks",
+      "shortName": "OD HLK",
+      "notation": "236KK",
+      "input": "↓↘→ + KK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced multi-hit with Barrage follow-up",
+        "whenToUse": "Use for combos. Can transition to Lightning Kick Barrage.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["chunli_lightning_kick_barrage"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 26,
+        "recovery": 21,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_lightning_kick_barrage": {
+      "id": "chunli_lightning_kick_barrage",
+      "displayName": "Lightning Kick Barrage",
+      "shortName": "LK Barrage",
+      "notation": "236KK > KK",
+      "input": "(After OD Hundred Lightning Kicks) KK",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Follow-up to OD HLK for damage",
+        "whenToUse": "Use after OD HLK for extra damage. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 36,
+        "recovery": 25,
+        "total": 72
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_air_hundred_lightning_l": {
+      "id": "chunli_air_hundred_lightning_l",
+      "displayName": "L Aerial Hundred Lightning Kicks",
+      "shortName": "L Air HLK",
+      "notation": "j.236LK",
+      "input": "(During neutral or forward jump) ↓↘→ + LK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Air multi-hit special",
+        "whenToUse": "Use for air pressure. Does NOT hit crouching opponents. 3 frames recovery added on whiff. 15 frames landing recovery.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Does NOT hit crouching opponents."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 14,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_air_hundred_lightning_m": {
+      "id": "chunli_air_hundred_lightning_m",
+      "displayName": "M Aerial Hundred Lightning Kicks",
+      "shortName": "M Air HLK",
+      "notation": "j.236MK",
+      "input": "(During neutral or forward jump) ↓↘→ + MK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium air multi-hit special",
+        "whenToUse": "Use for air pressure. Does NOT hit crouching opponents. 3 frames recovery added on whiff. 15 frames landing recovery.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Does NOT hit crouching opponents."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 21,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_air_hundred_lightning_h": {
+      "id": "chunli_air_hundred_lightning_h",
+      "displayName": "H Aerial Hundred Lightning Kicks",
+      "shortName": "H Air HLK",
+      "notation": "j.236HK",
+      "input": "(During neutral or forward jump) ↓↘→ + HK",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Heavy air multi-hit special",
+        "whenToUse": "Use for air pressure. Does NOT hit crouching opponents. 3 frames recovery added on whiff. 15 frames landing recovery.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Does NOT hit crouching opponents."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 24,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_air_hundred_lightning_od": {
+      "id": "chunli_air_hundred_lightning_od",
+      "displayName": "OD Aerial Hundred Lightning Kicks",
+      "shortName": "OD Air HLK",
+      "notation": "j.236KK",
+      "input": "(During neutral or forward jump) ↓↘→ + KK",
+      "category": "special",
+      "damage": 1600,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced air multi-hit special",
+        "whenToUse": "Use for air combos. Does NOT hit crouching opponents. Recovery reduced by 2 frames on hit. 5 frames landing recovery.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Does NOT hit crouching opponents."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 26,
+        "recovery": 5,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "chunli_spinning_bird_l": {
+      "id": "chunli_spinning_bird_l",
+      "displayName": "L Spinning Bird Kick",
+      "shortName": "L SBK",
+      "notation": "[2]8LK",
+      "input": "(Hold ↓) ↑ + LK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Inverted helicopter kick",
+        "whenToUse": "Use for combos and movement. Airborne frames 8-32. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -18,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 18. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "8-32"
+      }
+    },
+    "chunli_spinning_bird_m": {
+      "id": "chunli_spinning_bird_m",
+      "displayName": "M Spinning Bird Kick",
+      "shortName": "M SBK",
+      "notation": "[2]8MK",
+      "input": "(Hold ↓) ↑ + MK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Medium helicopter kick",
+        "whenToUse": "Use for combos. Airborne frames 15-56. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -17,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 17. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 33,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "15-56"
+      }
+    },
+    "chunli_spinning_bird_h": {
+      "id": "chunli_spinning_bird_h",
+      "displayName": "H Spinning Bird Kick",
+      "shortName": "H SBK",
+      "notation": "[2]8HK",
+      "input": "(Hold ↓) ↑ + HK",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Heavy helicopter kick",
+        "whenToUse": "Use for combos. Airborne frames 18-72. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -18,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 18. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 45,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "18-72"
+      }
+    },
+    "chunli_spinning_bird_od": {
+      "id": "chunli_spinning_bird_od",
+      "displayName": "OD Spinning Bird Kick",
+      "shortName": "OD SBK",
+      "notation": "[2]8KK",
+      "input": "(Hold ↓) ↑ + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced helicopter kick",
+        "whenToUse": "Use for combos. Airborne frames 14-63. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 40,
+        "recovery": 23,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "14-63"
+      }
+    },
+    "chunli_hazanshu_l": {
+      "id": "chunli_hazanshu_l",
+      "displayName": "L Hazanshu",
+      "shortName": "L Hazanshu",
+      "notation": "214LK",
+      "input": "↓↙← + LK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Overhead flip kick",
+        "whenToUse": "Use for overhead mixups. Bottom half projectile invincible frames 7-18. Airborne frames 5-20.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": 0
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9. OVERHEAD."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 2,
+        "recovery": 21,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "airborne": "5-20",
+        "invincible": "projectile (lower body) 7-18",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_hazanshu_m": {
+      "id": "chunli_hazanshu_m",
+      "displayName": "M Hazanshu",
+      "shortName": "M Hazanshu",
+      "notation": "214MK",
+      "input": "↓↙← + MK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Safe overhead flip kick",
+        "whenToUse": "Use for overhead mixups. Only minus 3 on block. Bottom half projectile invincible frames 7-21. Airborne frames 6-24.",
+        "situations": ["mixup", "pressure"],
+        "range": "mid",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3. OVERHEAD."
+      },
+      "frameData": {
+        "startup": 27,
+        "active": 3,
+        "recovery": 16,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "airborne": "6-24",
+        "invincible": "projectile (lower body) 7-21",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "chunli_hazanshu_h": {
+      "id": "chunli_hazanshu_h",
+      "displayName": "H Hazanshu",
+      "shortName": "H Hazanshu",
+      "notation": "214HK",
+      "input": "↓↙← + HK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Plus on hit overhead",
+        "whenToUse": "Use for overhead mixups. Only minus 1 on block. Plus 6 on hit. Bottom half projectile invincible frames 7-26. Airborne frames 6-29.",
+        "situations": ["mixup", "pressure"],
+        "range": "far",
+        "connectsTo": ["chunli_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 6
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1. OVERHEAD."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": 3,
+        "recovery": 18,
+        "total": 53
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "airborne": "6-29",
+        "invincible": "projectile (lower body) 7-26",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_hazanshu_od": {
+      "id": "chunli_hazanshu_od",
+      "displayName": "OD Hazanshu",
+      "shortName": "OD Hazanshu",
+      "notation": "214KK",
+      "input": "↓↙← + KK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced overhead with full projectile invincibility",
+        "whenToUse": "Use for overhead mixups. Bottom half projectile invincible frames 7-21. Full projectile invincible frames 22-28. Airborne frames 6-23. Causes knockdown.",
+        "situations": ["mixup", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Minus 5. OVERHEAD. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 3,
+        "recovery": 16,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "airborne": "6-23",
+        "invincible": "projectile (lower body) 7-21, projectile (full) 22-28",
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "chunli_tensho_l": {
+      "id": "chunli_tensho_l",
+      "displayName": "L Tensho Kicks",
+      "shortName": "L Tensho",
+      "notation": "[4]6LK",
+      "input": "(Hold ←) → + LK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-10. Airborne frames 8-45. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -37,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 37. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 14,
+        "recovery": 39,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-45"
+      }
+    },
+    "chunli_tensho_m": {
+      "id": "chunli_tensho_m",
+      "displayName": "M Tensho Kicks",
+      "shortName": "M Tensho",
+      "notation": "[4]6MK",
+      "input": "(Hold ←) → + MK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium anti-air",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-10. Airborne frames 8-51. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -41,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 41. Full combo punish."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 14,
+        "recovery": 43,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-51"
+      }
+    },
+    "chunli_tensho_h": {
+      "id": "chunli_tensho_h",
+      "displayName": "H Tensho Kicks",
+      "shortName": "H Tensho",
+      "notation": "[4]6HK",
+      "input": "(Hold ←) → + HK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy anti-air",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-10. Airborne frames 8-69. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -57,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 57. Full combo punish."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 35,
+        "recovery": 38,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-69"
+      }
+    },
+    "chunli_tensho_od": {
+      "id": "chunli_tensho_od",
+      "displayName": "OD Tensho Kicks",
+      "shortName": "OD Tensho",
+      "notation": "[4]6KK",
+      "input": "(Hold ←) → + KK",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible frames 1-7. Airborne frames 8-32. 3rd hit only comes out if 2nd hit connects. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 61,
+        "recovery": 49,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-7",
+        "airborne": "8-32"
+      }
+    },
+    "chunli_sa1": {
+      "id": "chunli_sa1",
+      "displayName": "SA1 Kikosho",
+      "shortName": "SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 1700,
+      "yourPerspective": {
+        "tacticalUse": "Invincible reversal Super",
+        "whenToUse": "Use as reversal or combo ender. Invincible to strikes and throws frames 1-7. Minimum damage 510 (30%). Values do not change on counter or Punish Counter.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -22,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 22. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 70,
+        "recovery": null,
+        "total": 122
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-7",
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "chunli_sa1_air": {
+      "id": "chunli_sa1_air",
+      "displayName": "SA1 Aerial Kikosho",
+      "shortName": "SA1 (Air)",
+      "notation": "j.236236P",
+      "input": "(During jump) ↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Air Super for combos",
+        "whenToUse": "Use for air combo ender. Minimum damage 600 (30%). Values do not change on counter or Punish Counter. 16 frames landing recovery.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Air Super. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 50,
+        "recovery": 16,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "chunli_sa2": {
+      "id": "chunli_sa2",
+      "displayName": "SA2 Hoyoku-sen",
+      "shortName": "SA2",
+      "notation": "214214K",
+      "input": "↓↙←↓↙← + K",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Install Super with combo potential",
+        "whenToUse": "Use for combos. Completely invincible frames 1-12. Minimum damage 800 (40%). Values do not change on counter or Punish Counter. Final hit can be canceled into jump.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -35,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 35. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 86,
+        "recovery": 48,
+        "total": 145
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "full 1-12",
+        "superArt": 2,
+        "minimumDamage": "40%",
+        "comboScaling": "Starter scaling 40%, Combo scaling 40%"
+      }
+    },
+    "chunli_sa3": {
+      "id": "chunli_sa3",
+      "displayName": "SA3 Soten Ranka",
+      "shortName": "SA3",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K",
+      "category": "super",
+      "damage": 4000,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible frames 1-9. Minimum damage 2000 (50%). Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 35,
+        "recovery": 40,
+        "total": 83
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 3,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "chunli_ca": {
+      "id": "chunli_ca",
+      "displayName": "CA Soten Ranka (Critical Art)",
+      "shortName": "CA",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K (under 25% vitality)",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible frames 1-9. Minimum damage 2250 (50%). Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 35,
+        "recovery": 40,
+        "total": 83
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "chunli_throw_f": {
+      "id": "chunli_throw_f",
+      "displayName": "Koshuto (Forward Throw)",
+      "shortName": "F Throw",
+      "notation": "LP+LK",
+      "input": "LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Forward throw",
+        "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "chunli_throw_b": {
+      "id": "chunli_throw_b",
+      "displayName": "Taiji Fan (Back Throw)",
+      "shortName": "B Throw",
+      "notation": "4+LP+LK",
+      "input": "← + LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Back throw for side switch",
+        "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK. Switches sides."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "chunli_throw_air": {
+      "id": "chunli_throw_air",
+      "displayName": "Ryuseiraku (Air Throw)",
+      "shortName": "Air Throw",
+      "notation": "j.LP+LK",
+      "input": "(During jump, near opponent) LP + LK",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Air throw",
+        "whenToUse": "Use for air-to-air situations. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown. 3 frames landing recovery.",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air throw. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 3,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "chunli_forward_dash": {
+      "id": "chunli_forward_dash",
+      "displayName": "Forward Dash",
+      "shortName": "66",
+      "notation": "66",
+      "input": "→→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward movement",
+        "whenToUse": "Use to close distance quickly",
+        "situations": ["movement", "approach"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "chunli_back_dash": {
+      "id": "chunli_back_dash",
+      "displayName": "Backward Dash",
+      "shortName": "44",
+      "notation": "44",
+      "input": "←←",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick backward movement with throw invincibility",
+        "whenToUse": "Use to escape pressure. Invincible to throws frames 1-15.",
+        "situations": ["movement", "escape"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option. Throw invincible frames 1-15."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "invincible": "throw 1-15"
+      }
+    },
+    "chunli_drive_impact": {
+      "id": "chunli_drive_impact",
+      "displayName": "Drive Impact (Hosen Kick)",
+      "shortName": "DI",
+      "notation": "HP+HK",
+      "input": "HP + HK",
+      "category": "common",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Armored attack for pressure and punishes",
+        "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 hits frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), spinning knockdown (airborne), +3000 SA gauge.",
+        "situations": ["pressure", "punish", "wallSplat"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "2 hits, frames 1-27",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "chunli_drive_reversal_block": {
+      "id": "chunli_drive_reversal_block",
+      "displayName": "Drive Reversal - Blocking (Hoyoku Kick)",
+      "shortName": "DR (Block)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (while blocking or during Drive Parry)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal while blocking",
+        "whenToUse": "Use to escape pressure while blocking. Completely invincible frames 1-22. Recoverable damage. 7 frames recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 16,
+        "recovery": 26,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-22"
+      }
+    },
+    "chunli_drive_reversal_wakeup": {
+      "id": "chunli_drive_reversal_wakeup",
+      "displayName": "Drive Reversal - Recovering (Hoyoku Kick)",
+      "shortName": "DR (Wakeup)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (during knockdown recovery)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal on wakeup",
+        "whenToUse": "Use to escape oki pressure. Completely invincible frames 1-20. Recoverable damage. 7 frames recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 16,
+        "recovery": 26,
+        "total": 60
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-20"
+      }
+    },
+    "chunli_drive_parry": {
+      "id": "chunli_drive_parry",
+      "displayName": "Drive Parry",
+      "shortName": "Parry",
+      "notation": "MP+MK",
+      "input": "MP + MK",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Defensive parry to absorb attacks",
+        "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": ["chunli_parry_drive_rush"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Chun-Li is in Punish Counter state. Throw or wait for recovery."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "chunli_perfect_parry_strike": {
+      "id": "chunli_perfect_parry_strike",
+      "displayName": "Perfect Parry (Strike)",
+      "shortName": "PP (Strike)",
+      "notation": "MP+MK",
+      "input": "MP + MK (+ direction for high/low)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry for big punish",
+        "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense", "punish"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "chunli_perfect_parry_projectile": {
+      "id": "chunli_perfect_parry_projectile",
+      "displayName": "Perfect Parry (Projectile)",
+      "shortName": "PP (Proj)",
+      "notation": "MP+MK",
+      "input": "MP + MK (vs projectile)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry against projectiles",
+        "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "chunli_parry_drive_rush": {
+      "id": "chunli_parry_drive_rush",
+      "displayName": "Parry Drive Rush",
+      "shortName": "PDR",
+      "notation": "MP+MK > 66",
+      "input": "(During Drive Parry) →→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel parry into run",
+        "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
+        "situations": ["offense", "conversion"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Chun-Li is rushing in. Prepare to block or contest."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    },
+    "chunli_cancel_drive_rush": {
+      "id": "chunli_cancel_drive_rush",
+      "displayName": "Cancel Drive Rush",
+      "shortName": "CDR",
+      "notation": "66",
+      "input": "→→ (while connecting with special-cancelable move)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel normal into run for combos",
+        "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
+        "situations": ["combo", "pressure"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Chun-Li is canceling into run. Prepare for follow-up."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    }
+  }
+}

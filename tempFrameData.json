@@ -1,0 +1,2330 @@
+{
+  "character": {
+    "id": "ryu",
+    "name": "Ryu",
+    "displayName": "Ryu",
+    "archetype": "shoto",
+    "description": "Well-rounded shoto character with Denjin Charge for enhanced special moves",
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "🎯",
+      "moveIds": ["ryu_st_mp", "ryu_st_mk", "ryu_cr_mk", "ryu_hadoken_m", "ryu_hashogeki_l"]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "⚡",
+      "moveIds": ["ryu_solar_plexus", "ryu_collarbone_breaker", "ryu_axe_kick"]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "🔥",
+      "moveIds": ["ryu_shoryuken_m", "ryu_tatsumaki_m", "ryu_high_blade_kick_m"]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "🛡️",
+      "moveIds": ["ryu_shoryuken_h", "ryu_high_blade_kick_h", "ryu_hashogeki_h"]
+    }
+  },
+
+  "moves": {
+    "ryu_st_lp": {
+      "id": "ryu_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab for pressure",
+        "whenToUse": "Use for pressure and confirms. Can be rapid canceled.",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["ryu_st_lp", "ryu_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "ryu_st_lk": {
+      "id": "ryu_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Quick standing kick",
+        "whenToUse": "Use for pressure strings",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["ryu_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 11,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "ryu_st_mp": {
+      "id": "ryu_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Key mid-range poke",
+        "whenToUse": "Use for spacing control and confirms into specials. Only minus 1 on block!",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["ryu_hadoken_l", "ryu_shoryuken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 7
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 11,
+        "total": 21
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_st_mk": {
+      "id": "ryu_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke for footsies",
+        "whenToUse": "Use for max range control in neutral",
+        "situations": ["neutral"],
+        "range": "max",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 18,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ryu_st_hp": {
+      "id": "ryu_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy normal for damage",
+        "whenToUse": "Use for counter hits and confirms. Forces opponent into standing position.",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["ryu_hadoken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Forces standing."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "recovery": 18,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ryu_st_hk": {
+      "id": "ryu_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy kick with crumple on Punish Counter",
+        "whenToUse": "Use for Punish Counter setups. Produces crumple stun for 36 frames on Punish Counter. Forces juggle state when hitting mid-air opponent. PLUS ON BLOCK (+1)!",
+        "situations": ["neutral", "punish", "antiAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 1,
+          "onHit": 9
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+1)! CRUMPLE STUN on Punish Counter (36 frames)."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "recovery": 20,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ryu_cr_lp": {
+      "id": "ryu_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "↓ + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["ryu_st_lp", "ryu_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 9,
+        "total": 15
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "ryu_cr_lk": {
+      "id": "ryu_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "↓ + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light attack with rapid cancel",
+        "whenToUse": "Use for low mixups. Can be rapid canceled.",
+        "situations": ["pressure", "mixup"],
+        "range": "close",
+        "connectsTo": ["ryu_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe low option. Must be blocked low. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "recovery": 10,
+        "total": 17
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "ryu_cr_mp": {
+      "id": "ryu_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "↓ + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Key poke and combo starter",
+        "whenToUse": "Use for confirms into specials. EVEN ON BLOCK (0)! 2 frames of recovery added when attack misses.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_hadoken_l", "ryu_shoryuken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 0,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "EVEN ON BLOCK (0). Very strong poke."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 13,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_cr_mk": {
+      "id": "ryu_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "↓ + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke with decent range",
+        "whenToUse": "Use for low confirms into specials. Classic Ryu poke.",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["ryu_hadoken_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": 1
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 19,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "ryu_cr_hp": {
+      "id": "ryu_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "↓ + HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air and combo starter",
+        "whenToUse": "Use as anti-air. Can only be canceled on 1st active frame if attack hits. Forces standing.",
+        "situations": ["antiAir"],
+        "range": "mid",
+        "connectsTo": ["ryu_shoryuken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": 1
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 7-frame normals. Forces standing."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 22,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_cr_hk": {
+      "id": "ryu_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "↓ + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep that causes knockdown",
+        "whenToUse": "Use for knockdown and oki setup. Knockdown time extended on Punish Counter and changes to Hard Knockdown.",
+        "situations": ["neutral", "oki"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 23,
+        "total": 35
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "ryu_j_lp": {
+      "id": "ryu_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air jab",
+        "whenToUse": "Use for air-to-air",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ryu_j_lk": {
+      "id": "ryu_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air kick",
+        "whenToUse": "Use for air-to-air",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ryu_j_mp": {
+      "id": "ryu_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cross-up and juggle",
+        "whenToUse": "Use for air-to-air. Has cross-up attack properties. Forces juggle state when hitting mid-air opponent.",
+        "situations": ["airToAir", "jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "ryu_j_mk": {
+      "id": "ryu_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in kick with cross-up",
+        "whenToUse": "Use for jump-ins. Has cross-up attack properties.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "ryu_j_hp": {
+      "id": "ryu_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure. Forces slam knockdown on counter/Punish Counter when hitting mid-air opponent.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ryu_j_hk": {
+      "id": "ryu_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 8,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ryu_collarbone_breaker": {
+      "id": "ryu_collarbone_breaker",
+      "displayName": "Collarbone Breaker",
+      "shortName": "6MP",
+      "notation": "6MP",
+      "input": "→ + MP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Overhead attack",
+        "whenToUse": "Use for overhead mixups. Second attack becomes overhead only if the first attack whiffs.",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": ["ryu_hadoken_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. OVERHEAD if first hit whiffs - must be blocked standing."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 4,
+        "recovery": 19,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "ryu_solar_plexus": {
+      "id": "ryu_solar_plexus",
+      "displayName": "Solar Plexus Strike",
+      "shortName": "6HP",
+      "notation": "6HP",
+      "input": "→ + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing attack with plus frames",
+        "whenToUse": "Use for pressure and confirms. PLUS ON BLOCK (+3)!",
+        "situations": ["pressure", "combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_shoryuken_m", "ryu_tatsumaki_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": 6
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+3)! Very strong pressure tool."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 5,
+        "recovery": 16,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_short_uppercut": {
+      "id": "ryu_short_uppercut",
+      "displayName": "Short Uppercut",
+      "shortName": "6HP (Close)",
+      "notation": "Close 6HP",
+      "input": "→ + HP (close)",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Close range launcher",
+        "whenToUse": "Use for close confirms. Can only be canceled on 1st active frame if attack hits. Forces standing.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["ryu_shoryuken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": 1
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Forces standing."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "recovery": 26,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_axe_kick": {
+      "id": "ryu_axe_kick",
+      "displayName": "Axe Kick",
+      "shortName": "6HK",
+      "notation": "6HK",
+      "input": "→ + HK",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Two-hit kick with ground bound",
+        "whenToUse": "Use for combos and pressure. First attack forces standing. Second attack produces ground bound on mid-air hit.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_shoryuken_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. First hit forces standing."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 14,
+        "recovery": 21,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_whirlwind_kick": {
+      "id": "ryu_whirlwind_kick",
+      "displayName": "Whirlwind Kick",
+      "shortName": "4HK",
+      "notation": "4HK",
+      "input": "← + HK",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Spinning kick with aerial Tatsu cancel",
+        "whenToUse": "Use for combos. Can be canceled into Aerial Tatsumaki Senpu-kyaku (including OD version).",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_aerial_tatsumaki"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "recovery": 20,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_high_double_strike": {
+      "id": "ryu_high_double_strike",
+      "displayName": "High Double Strike",
+      "shortName": "2HP>HP",
+      "notation": "2HP > HP",
+      "input": "(After 2HP) HP",
+      "category": "unique",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Target combo ender with Denjin cancel",
+        "whenToUse": "Use for target combo. Can only be canceled into Denjin Charge on hit. Classic: ↓+P, Modern: ↓+Attack.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_denjin_charge"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 8-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 20,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_fuwa_triple_strike_2": {
+      "id": "ryu_fuwa_triple_strike_2",
+      "displayName": "Fuwa Triple Strike (2)",
+      "shortName": "5MP>LK",
+      "notation": "5MP > LK",
+      "input": "(After 5MP) LK",
+      "category": "unique",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Target combo second hit",
+        "whenToUse": "Use for target combo extension",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_fuwa_triple_strike_3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 16,
+        "total": 24
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ryu_fuwa_triple_strike_3": {
+      "id": "ryu_fuwa_triple_strike_3",
+      "displayName": "Fuwa Triple Strike (3)",
+      "shortName": "5MP>LK>HP",
+      "notation": "5MP > LK > HP",
+      "input": "(After Fuwa Triple Strike 2) HP",
+      "category": "unique",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Target combo ender with Denjin cancel",
+        "whenToUse": "Use for target combo ender. Can only be canceled into Denjin Charge on hit. Classic: ↓+P, Modern: ↓+Attack.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_denjin_charge"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 8-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 17,
+        "active": 4,
+        "recovery": 20,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_hadoken_l": {
+      "id": "ryu_hadoken_l",
+      "displayName": "L Hadoken",
+      "shortName": "L Hadoken",
+      "notation": "236LP",
+      "input": "↓↘→ + LP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Light fireball for zoning",
+        "whenToUse": "Use for zoning. Slowest speed, safest on block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at range."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "ryu_hadoken_m": {
+      "id": "ryu_hadoken_m",
+      "displayName": "M Hadoken",
+      "shortName": "M Hadoken",
+      "notation": "236MP",
+      "input": "↓↘→ + MP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Medium fireball for zoning",
+        "whenToUse": "Use for zoning. Medium speed.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at range."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "ryu_hadoken_h": {
+      "id": "ryu_hadoken_h",
+      "displayName": "H Hadoken",
+      "shortName": "H Hadoken",
+      "notation": "236HP",
+      "input": "↓↘→ + HP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Heavy fireball for zoning",
+        "whenToUse": "Use for zoning. Fastest speed.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": -2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at range."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "ryu_hadoken_denjin": {
+      "id": "ryu_hadoken_denjin",
+      "displayName": "[Denjin Charge] Hadoken",
+      "shortName": "DC Hadoken",
+      "notation": "236P",
+      "input": "↓↘→ + P (with Denjin Charge)",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced fireball with knockdown",
+        "whenToUse": "Use when Denjin Charge stock is held. Causes knockdown on hit.",
+        "situations": ["neutral", "zoning", "combo"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Enhanced projectile. Only minus 1 on block! Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "denjinCharge": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "ryu_hadoken_od": {
+      "id": "ryu_hadoken_od",
+      "displayName": "OD Hadoken",
+      "shortName": "OD Hadoken",
+      "notation": "236PP",
+      "input": "↓↘→ + PP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced fireball with knockdown",
+        "whenToUse": "Use for enhanced zoning. Causes knockdown on hit.",
+        "situations": ["neutral", "zoning", "combo"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "OD Projectile. Only minus 1 on block! Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "ryu_hadoken_od_denjin": {
+      "id": "ryu_hadoken_od_denjin",
+      "displayName": "[Denjin Charge] OD Hadoken",
+      "shortName": "DC OD Hadoken",
+      "notation": "236PP",
+      "input": "↓↘→ + PP (with Denjin Charge)",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Max enhanced fireball with knockdown",
+        "whenToUse": "Use when Denjin Charge stock is held. Causes knockdown on hit. PLUS ON BLOCK (+2)!",
+        "situations": ["neutral", "zoning", "combo"],
+        "range": "fullscreen",
+        "connectsTo": ["ryu_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Enhanced OD Projectile. PLUS ON BLOCK (+2)! Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "denjinCharge": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "ryu_shoryuken_l": {
+      "id": "ryu_shoryuken_l",
+      "displayName": "L Shoryuken",
+      "shortName": "L Shoryuken",
+      "notation": "623LP",
+      "input": "→↓↘ + LP",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-14. Considered airborne from frames 7-34. After 3rd active frame deals only 800 damage.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -23,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 23. Full combo punish. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "recovery": 33,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-14",
+        "airborne": "7-34",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "ryu_shoryuken_m": {
+      "id": "ryu_shoryuken_m",
+      "displayName": "M Shoryuken",
+      "shortName": "M Shoryuken",
+      "notation": "623MP",
+      "input": "→↓↘ + MP",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Medium anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-9. Considered airborne from frames 8-44. After 3rd active frame deals only 800 damage.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -32,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 32. Full combo punish. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 42,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-9",
+        "airborne": "8-44",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "ryu_shoryuken_h": {
+      "id": "ryu_shoryuken_h",
+      "displayName": "H Shoryuken",
+      "shortName": "H Shoryuken",
+      "notation": "623HP",
+      "input": "→↓↘ + HP",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Heavy anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-8. Considered airborne from frames 9-49. After 2nd active frame deals only 800 damage.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -36,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 10,
+        "recovery": 46,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-8",
+        "airborne": "9-49",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "ryu_shoryuken_od": {
+      "id": "ryu_shoryuken_od",
+      "displayName": "OD Shoryuken",
+      "shortName": "OD Shoryuken",
+      "notation": "623PP",
+      "input": "→↓↘ + PP",
+      "category": "special",
+      "damage": 1600,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible from frames 1-8. Considered airborne from frames 8-51. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 52,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-8",
+        "airborne": "8-51"
+      }
+    },
+    "ryu_tatsumaki_l": {
+      "id": "ryu_tatsumaki_l",
+      "displayName": "L Tatsumaki Senpu-kyaku",
+      "shortName": "L Tatsu",
+      "notation": "214LK",
+      "input": "↓↙← + LK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Light spinning kick",
+        "whenToUse": "Use for combos. Considered airborne from frames 5-28. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -15,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 15. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "recovery": 32,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "5-28"
+      }
+    },
+    "ryu_tatsumaki_m": {
+      "id": "ryu_tatsumaki_m",
+      "displayName": "M Tatsumaki Senpu-kyaku",
+      "shortName": "M Tatsu",
+      "notation": "214MK",
+      "input": "↓↙← + MK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium spinning kick",
+        "whenToUse": "Use for combos. Considered airborne from frames 8-41. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 17,
+        "recovery": 31,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "8-41"
+      }
+    },
+    "ryu_tatsumaki_h": {
+      "id": "ryu_tatsumaki_h",
+      "displayName": "H Tatsumaki Senpu-kyaku",
+      "shortName": "H Tatsu",
+      "notation": "214HK",
+      "input": "↓↙← + HK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy spinning kick",
+        "whenToUse": "Use for combos. Considered airborne from frames 10-61. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 32,
+        "recovery": 31,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "10-61"
+      }
+    },
+    "ryu_tatsumaki_od": {
+      "id": "ryu_tatsumaki_od",
+      "displayName": "OD Tatsumaki Senpu-kyaku",
+      "shortName": "OD Tatsu",
+      "notation": "214KK",
+      "input": "↓↙← + KK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced spinning kick",
+        "whenToUse": "Use for combos. Considered airborne from frames 5-47. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 25,
+        "recovery": 23,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "5-47",
+        "comboScaling": "Starter scaling 30%, Combo scaling 25%"
+      }
+    },
+    "ryu_aerial_tatsumaki": {
+      "id": "ryu_aerial_tatsumaki",
+      "displayName": "Aerial Tatsumaki Senpu-kyaku",
+      "shortName": "Air Tatsu",
+      "notation": "j.214K",
+      "input": "(During forward jump) ↓↙← + K",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Air spinning kick",
+        "whenToUse": "Use for air pressure and combos. Can be performed from Whirlwind Kick. Causes knockdown.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Air special. 16 frames landing recovery. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 17,
+        "recovery": 16,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ryu_aerial_tatsumaki_od": {
+      "id": "ryu_aerial_tatsumaki_od",
+      "displayName": "OD Aerial Tatsumaki Senpu-kyaku",
+      "shortName": "OD Air Tatsu",
+      "notation": "j.214KK",
+      "input": "(During forward jump) ↓↙← + KK",
+      "category": "special",
+      "damage": 1500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced air spinning kick",
+        "whenToUse": "Use for air pressure and combos. Can be performed from Whirlwind Kick. Causes knockdown.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "OD Air special. 16 frames landing recovery. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 18,
+        "recovery": 16,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 15%"
+      }
+    },
+    "ryu_high_blade_kick_l": {
+      "id": "ryu_high_blade_kick_l",
+      "displayName": "L High Blade Kick",
+      "shortName": "L Donkey",
+      "notation": "236LK",
+      "input": "↓↘→ + LK",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Launcher for juggle combos",
+        "whenToUse": "Use for combos and juggles. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 6,
+        "recovery": 22,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_high_blade_kick_m": {
+      "id": "ryu_high_blade_kick_m",
+      "displayName": "M High Blade Kick",
+      "shortName": "M Donkey",
+      "notation": "236MK",
+      "input": "↓↘→ + MK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Medium launcher",
+        "whenToUse": "Use for combos and juggles. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 8-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 9,
+        "recovery": 19,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_high_blade_kick_h": {
+      "id": "ryu_high_blade_kick_h",
+      "displayName": "H High Blade Kick",
+      "shortName": "H Donkey",
+      "notation": "236HK",
+      "input": "↓↘→ + HK",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Heavy launcher",
+        "whenToUse": "Use for combos and juggles. Juggle state time extended on Punish Counter. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block! Only minus 3. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 27,
+        "active": 9,
+        "recovery": 15,
+        "total": 51
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_high_blade_kick_od": {
+      "id": "ryu_high_blade_kick_od",
+      "displayName": "OD High Blade Kick",
+      "shortName": "OD Donkey",
+      "notation": "236KK",
+      "input": "↓↘→ + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced launcher",
+        "whenToUse": "Use for combos. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -18,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 18. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 17,
+        "active": 5,
+        "recovery": 33,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "ryu_denjin_charge": {
+      "id": "ryu_denjin_charge",
+      "displayName": "Denjin Charge",
+      "shortName": "Denjin",
+      "notation": "22P",
+      "input": "↓↓ + P",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Charge stock for enhanced specials",
+        "whenToUse": "Use to charge Denjin stock. Stock added on frame 51. Only 1 stock can be held at a time. Enhances Hadoken, Hashogeki, SA1 Shinku Hadoken, and SA2 Shin Hashogeki.",
+        "situations": ["setup"],
+        "range": "none",
+        "connectsTo": ["ryu_hadoken_denjin", "ryu_hashogeki_denjin", "ryu_sa1_denjin", "ryu_sa2_denjin_lv1"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "52 total frames. Vulnerable during charge."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "ryu_hashogeki_l": {
+      "id": "ryu_hashogeki_l",
+      "displayName": "L Hashogeki",
+      "shortName": "L Hashogeki",
+      "notation": "214LP",
+      "input": "↓↙← + LP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Close-range energy attack",
+        "whenToUse": "Use for pressure and confirms. Forces juggle state on counter/Punish Counter. Clashes with projectiles once.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Clashes with projectiles."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 6,
+        "recovery": 18,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectileClash": 1
+      }
+    },
+    "ryu_hashogeki_m": {
+      "id": "ryu_hashogeki_m",
+      "displayName": "M Hashogeki",
+      "shortName": "M Hashogeki",
+      "notation": "214MP",
+      "input": "↓↙← + MP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Medium-range energy attack",
+        "whenToUse": "Use for pressure. Forces juggle state on counter/Punish Counter. Clashes with projectiles once.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": 2
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Clashes with projectiles."
+      },
+      "frameData": {
+        "startup": 19,
+        "active": 6,
+        "recovery": 17,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectileClash": 1
+      }
+    },
+    "ryu_hashogeki_h": {
+      "id": "ryu_hashogeki_h",
+      "displayName": "H Hashogeki",
+      "shortName": "H Hashogeki",
+      "notation": "214HP",
+      "input": "↓↙← + HP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Plus on block energy attack",
+        "whenToUse": "Use for pressure. PLUS ON BLOCK (+2)! Clashes with projectiles twice. Causes knockdown.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+2)! Clashes with projectiles twice. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 30,
+        "active": 5,
+        "recovery": 19,
+        "total": 54
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectileClash": 2
+      }
+    },
+    "ryu_hashogeki_denjin": {
+      "id": "ryu_hashogeki_denjin",
+      "displayName": "[Denjin Charge] Hashogeki",
+      "shortName": "DC Hashogeki",
+      "notation": "214P",
+      "input": "↓↙← + P (with Denjin Charge)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced energy attack",
+        "whenToUse": "Use when Denjin Charge is stocked. PLUS ON BLOCK (+3)! Clashes with projectiles twice. Causes knockdown.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Denjin enhanced. PLUS ON BLOCK (+3)! Clashes with projectiles twice. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 5,
+        "recovery": 19,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "denjin": true,
+        "projectileClash": 2
+      }
+    },
+    "ryu_hashogeki_od": {
+      "id": "ryu_hashogeki_od",
+      "displayName": "OD Hashogeki",
+      "shortName": "OD Hashogeki",
+      "notation": "214PP",
+      "input": "↓↙← + PP",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced energy attack with plus frames",
+        "whenToUse": "Use for pressure. PLUS ON BLOCK (+3)! Clashes with projectiles once.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "OD enhanced. PLUS ON BLOCK (+3)! Clashes with projectiles."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 5,
+        "recovery": 20,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectileClash": 1
+      }
+    },
+    "ryu_hashogeki_od_denjin": {
+      "id": "ryu_hashogeki_od_denjin",
+      "displayName": "[Denjin Charge] OD Hashogeki",
+      "shortName": "DC OD Hashogeki",
+      "notation": "214PP",
+      "input": "↓↙← + PP (with Denjin Charge)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Maximum enhanced energy attack with crumple",
+        "whenToUse": "Use when Denjin Charge is stocked. PLUS ON BLOCK (+4)! Produces crumple stun for 39 frames on hit! Clashes with projectiles once.",
+        "situations": ["neutral", "pressure", "combo"],
+        "range": "mid",
+        "connectsTo": ["ryu_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 4,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Denjin OD enhanced. PLUS ON BLOCK (+4)! CRUMPLE STUN on hit (39 frames)!"
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 6,
+        "recovery": 19,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "denjin": true,
+        "projectileClash": 1
+      }
+    },
+    "ryu_sa1": {
+      "id": "ryu_sa1",
+      "displayName": "SA1 Shinku Hadoken",
+      "shortName": "SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Projectile Super with strike/throw invincibility",
+        "whenToUse": "Use for zoning or combo ender. Invincible to strikes and throws from frames 1-8. Values do not change on counter/Punish Counter. Minimum guaranteed damage is 30%.",
+        "situations": ["zoning", "combo"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Projectile Super."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": null,
+        "recovery": null,
+        "total": 86
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-8",
+        "projectile": true,
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "ryu_sa1_denjin": {
+      "id": "ryu_sa1_denjin",
+      "displayName": "[Denjin Charge] SA1 Shinku Hadoken",
+      "shortName": "DC SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P (with Denjin Charge)",
+      "category": "super",
+      "damage": 2400,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced projectile Super",
+        "whenToUse": "Use when Denjin Charge is stocked. Invincible to strikes and throws from frames 1-8. Values do not change on counter/Punish Counter. Minimum guaranteed damage is 30%.",
+        "situations": ["zoning", "combo"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Denjin Projectile Super."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": null,
+        "recovery": null,
+        "total": 89
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-8",
+        "projectile": true,
+        "superArt": 1,
+        "denjin": true,
+        "minimumDamage": "30%"
+      }
+    },
+    "ryu_sa2_lv1": {
+      "id": "ryu_sa2_lv1",
+      "displayName": "SA2 Shin Hashogeki (Lv1)",
+      "shortName": "SA2 Lv1",
+      "notation": "214214P",
+      "input": "↓↙←↓↙← + P",
+      "category": "super",
+      "damage": 2800,
+      "yourPerspective": {
+        "tacticalUse": "Invincible reversal Super",
+        "whenToUse": "Use as reversal or combo ender. Completely invincible from frames 1-13. Hold button to charge to Lv2 (7+ frames) or Lv3 (39+ frames). Invincible to strikes/throws from frames 2-8. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 6,
+        "recovery": 39,
+        "total": 57
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "ryu_sa2_lv2": {
+      "id": "ryu_sa2_lv2",
+      "displayName": "SA2 Shin Hashogeki (Lv2)",
+      "shortName": "SA2 Lv2",
+      "notation": "[214214P]",
+      "input": "↓↙←↓↙← + P (hold 7+ frames)",
+      "category": "super",
+      "damage": 2900,
+      "yourPerspective": {
+        "tacticalUse": "Charged reversal Super",
+        "whenToUse": "Use for more damage. Completely invincible from frames 1-9. Hold button 7+ frames then release. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 6,
+        "recovery": 39,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "ryu_sa2_lv3": {
+      "id": "ryu_sa2_lv3",
+      "displayName": "SA2 Shin Hashogeki (Lv3)",
+      "shortName": "SA2 Lv3",
+      "notation": "[214214P]",
+      "input": "↓↙←↓↙← + P (hold 39+ frames)",
+      "category": "super",
+      "damage": 3000,
+      "yourPerspective": {
+        "tacticalUse": "Max charged reversal Super",
+        "whenToUse": "Use for maximum damage. Completely invincible from frames 1-9. Hold button 39+ frames then release. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 70,
+        "active": 6,
+        "recovery": 39,
+        "total": 115
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "ryu_sa2_denjin_lv1": {
+      "id": "ryu_sa2_denjin_lv1",
+      "displayName": "[Denjin Charge] SA2 Shin Hashogeki (Lv1)",
+      "shortName": "DC SA2 Lv1",
+      "notation": "214214P",
+      "input": "↓↙←↓↙← + P (with Denjin Charge)",
+      "category": "super",
+      "damage": 3200,
+      "yourPerspective": {
+        "tacticalUse": "Denjin enhanced reversal Super",
+        "whenToUse": "Use when Denjin Charge is stocked. Completely invincible from frames 1-13. Hold button to charge. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Denjin enhanced. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 6,
+        "recovery": 39,
+        "total": 57
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "superArt": 2,
+        "denjin": true,
+        "minimumDamage": "40%"
+      }
+    },
+    "ryu_sa2_denjin_lv2": {
+      "id": "ryu_sa2_denjin_lv2",
+      "displayName": "[Denjin Charge] SA2 Shin Hashogeki (Lv2)",
+      "shortName": "DC SA2 Lv2",
+      "notation": "[214214P]",
+      "input": "↓↙←↓↙← + P (hold 7+ frames, with Denjin Charge)",
+      "category": "super",
+      "damage": 3300,
+      "yourPerspective": {
+        "tacticalUse": "Denjin charged reversal Super",
+        "whenToUse": "Use when Denjin Charge is stocked. Completely invincible from frames 1-9. Hold button 7+ frames then release. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Denjin enhanced. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 6,
+        "recovery": 39,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 2,
+        "denjin": true,
+        "minimumDamage": "40%",
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "ryu_sa2_denjin_lv3": {
+      "id": "ryu_sa2_denjin_lv3",
+      "displayName": "[Denjin Charge] SA2 Shin Hashogeki (Lv3)",
+      "shortName": "DC SA2 Lv3",
+      "notation": "[214214P]",
+      "input": "↓↙←↓↙← + P (hold 39+ frames, with Denjin Charge)",
+      "category": "super",
+      "damage": 3400,
+      "yourPerspective": {
+        "tacticalUse": "Denjin max charged reversal Super",
+        "whenToUse": "Use when Denjin Charge is stocked for maximum damage. Completely invincible from frames 1-9. Hold button 39+ frames then release. Minimum guaranteed damage is 40%.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -20,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 20. Denjin enhanced. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 70,
+        "active": 6,
+        "recovery": 39,
+        "total": 115
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 2,
+        "denjin": true,
+        "minimumDamage": "40%"
+      }
+    },
+    "ryu_sa3": {
+      "id": "ryu_sa3",
+      "displayName": "SA3 Shin Shoryuken",
+      "shortName": "SA3",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K",
+      "category": "super",
+      "damage": 4000,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible from frames 1-16. Minimum guaranteed damage is 50%. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -52,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 52. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 12,
+        "recovery": 71,
+        "total": 88
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-16",
+        "superArt": 3,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "ryu_ca": {
+      "id": "ryu_ca",
+      "displayName": "CA Shin Shoryuken",
+      "shortName": "CA",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K (under 25% vitality)",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible from frames 1-16. Minimum guaranteed damage is 50%. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -52,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 52. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 12,
+        "recovery": 71,
+        "total": 88
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-16",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    
+  }
+}
