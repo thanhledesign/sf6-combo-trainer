@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Typography */
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-[1.75rem] font-bold;
+  }
+  h3 {
+    @apply text-xl font-semibold;
+  }
+  h4 {
+    @apply text-lg font-semibold;
+  }
+}
+
+/* Custom scrollbar hiding for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card flip animation */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  position: relative;
+}
+
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+/* ===========================================
+   SAFE AREA CSS - Mobile Device Support
+   =========================================== */
+
+:root {
+  /* These use env() with fallbacks for browsers that don't support it */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  
+  /* Combined padding for content areas */
+  --safe-padding-top: max(16px, var(--safe-area-inset-top));
+  --safe-padding-bottom: max(16px, var(--safe-area-inset-bottom));
+  --safe-padding-horizontal: max(16px, max(var(--safe-area-inset-left), var(--safe-area-inset-right)));
+}
+
+/* Utility Classes */
+.safe-top {
+  padding-top: var(--safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.safe-horizontal {
+  padding-left: var(--safe-area-inset-left);
+  padding-right: var(--safe-area-inset-right);
+}
+
+.safe-all {
+  padding-top: var(--safe-area-inset-top);
+  padding-right: var(--safe-area-inset-right);
+  padding-bottom: var(--safe-area-inset-bottom);
+  padding-left: var(--safe-area-inset-left);
+}
+
+/* Navigation Bar - accounts for notch */
+.nav-bar {
+  padding: 12px 16px;
+  padding-top: calc(12px + var(--safe-area-inset-top));
+  padding-left: calc(16px + var(--safe-area-inset-left));
+  padding-right: calc(16px + var(--safe-area-inset-right));
+}
+
+/* Bottom Navigation / Tab Bar */
+.bottom-nav {
+  padding: 8px 16px;
+  padding-bottom: calc(8px + var(--safe-area-inset-bottom));
+  padding-left: calc(16px + var(--safe-area-inset-left));
+  padding-right: calc(16px + var(--safe-area-inset-right));
+}
+
+/* Floating Action Button - keep above home indicator */
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + var(--safe-area-inset-bottom));
+}
+
+/* Full-screen modals */
+.modal-fullscreen {
+  padding-top: var(--safe-area-inset-top);
+  padding-bottom: var(--safe-area-inset-bottom);
+  padding-left: var(--safe-area-inset-left);
+  padding-right: var(--safe-area-inset-right);
+}
+
+/* Scrollable content container */
+.scroll-container-safe {
+  padding-top: var(--safe-area-inset-top);
+  padding-bottom: calc(24px + var(--safe-area-inset-bottom));
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) {
+  .nav-bar {
+    padding-left: calc(24px + var(--safe-area-inset-left));
+    padding-right: calc(24px + var(--safe-area-inset-right));
+  }
+  
+  .bottom-nav {
+    padding-left: calc(24px + var(--safe-area-inset-left));
+    padding-right: calc(24px + var(--safe-area-inset-right));
+  }
+}
+
+/* iOS-specific fixes */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, select, textarea {
+  font-size: 16px; /* Minimum 16px prevents auto-zoom on iOS */
+}
+
+.tap-transparent {
+  -webkit-tap-highlight-color: transparent;
+}

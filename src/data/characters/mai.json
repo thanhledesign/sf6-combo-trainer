@@ -1,0 +1,3396 @@
+{
+  "character": {
+    "id": "mai",
+    "name": "Mai Shiranui",
+    "displayName": "Mai",
+    "archetype": "rushdown",
+    "description": "Ninja fighter with fan projectiles, dive attacks, and Boosted special move variants",
+    "bio": "The beautiful and deadly kunoichi of the Shiranui clan. Mai uses her ninja arts and flame-based techniques to fight, all while searching for her beloved Andy Bogard.",
+    "vitals": {
+      "height": "5'5",
+      "weight": "106 lbs",
+      "likes": "Andy Bogard, osechi-ryori",
+      "hates": "Spiders"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "🎯",
+      "moveIds": ["mai_st_lp", "mai_st_mk", "mai_st_hp", "mai_cr_mp", "mai_cr_mk", "mai_kachousen_l"]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "⚡",
+      "moveIds": ["mai_musasabi", "mai_hissatsu_shinobi_bachi_l", "mai_ryuuenbu_l"]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "🔥",
+      "moveIds": ["mai_hishou_ryuuenjin_m", "mai_ryuuenbu_m", "mai_hien_ren_kyaku_3"]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "🛡️",
+      "moveIds": ["mai_hishou_ryuuenjin_h", "mai_ryuuenbu_h", "mai_hoshi_kujaku_2"]
+    }
+  },
+
+  "moves": {
+    "mai_st_lp": {
+      "id": "mai_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab for pressure",
+        "whenToUse": "Use for pressure and confirms. Can be rapid canceled.",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["mai_st_lp", "mai_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_st_lk": {
+      "id": "mai_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Quick standing kick",
+        "whenToUse": "Use for pressure strings",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["mai_cr_lp", "mai_hien_ren_kyaku_2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 1."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 8,
+        "total": 15
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_st_mp": {
+      "id": "mai_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Mid-range poke",
+        "whenToUse": "Use for spacing control and confirms into specials",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["mai_kachousen_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "recovery": 15,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_st_mk": {
+      "id": "mai_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke for footsies",
+        "whenToUse": "Use for max range control in neutral",
+        "situations": ["neutral"],
+        "range": "max",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 18,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_st_hp": {
+      "id": "mai_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy normal for damage",
+        "whenToUse": "Use for counter hits and confirms",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["mai_hoshi_kujaku_1"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 21,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_st_hk": {
+      "id": "mai_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy kick with crumple on Punish Counter",
+        "whenToUse": "Use for Punish Counter setups. Produces crumple stun on Punish Counter with +22 frame advantage. 3 frames of recovery added when attack misses.",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. CRUMPLE STUN on Punish Counter (+22)."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "recovery": 19,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_cr_lp": {
+      "id": "mai_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "↓ + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["mai_st_lp", "mai_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_cr_lk": {
+      "id": "mai_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "↓ + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light attack with rapid cancel",
+        "whenToUse": "Use for low mixups. Can be rapid canceled.",
+        "situations": ["pressure", "mixup"],
+        "range": "close",
+        "connectsTo": ["mai_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe low option. Must be blocked low. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 8,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_cr_mp": {
+      "id": "mai_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "↓ + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Good poke and combo starter",
+        "whenToUse": "Use for confirms into specials. 2 frames of recovery added when attack misses.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_kachousen_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 15,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_cr_mk": {
+      "id": "mai_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "↓ + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke with decent range",
+        "whenToUse": "Use for low mixups and spacing",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": -2
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 19,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_cr_hp": {
+      "id": "mai_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "↓ + HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with extended active frames",
+        "whenToUse": "Use as anti-air. Active for 13 frames.",
+        "situations": ["antiAir"],
+        "range": "mid",
+        "connectsTo": ["mai_hishou_ryuuenjin_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 13,
+        "recovery": 19,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_cr_hk": {
+      "id": "mai_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "↓ + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep that causes knockdown",
+        "whenToUse": "Use for knockdown and oki setup. Knockdown time extended on Punish Counter and changes to Hard Knockdown. 3 frames of recovery added when attack misses. 1 frame of recovery added when blocked.",
+        "situations": ["neutral", "oki"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 22,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "mai_j_lp": {
+      "id": "mai_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air jab",
+        "whenToUse": "Use for air-to-air",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 9,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_lk": {
+      "id": "mai_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cross-up",
+        "whenToUse": "Use for air-to-air. Has cross-up attack properties.",
+        "situations": ["airToAir", "jumpIn"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "mai_j_mp": {
+      "id": "mai_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with juggle",
+        "whenToUse": "Use for air-to-air. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["airToAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_mk": {
+      "id": "mai_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in kick with cross-up",
+        "whenToUse": "Use for jump-ins. Has cross-up attack properties.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "mai_j_hp": {
+      "id": "mai_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_hk": {
+      "id": "mai_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_senkotsu_uchi": {
+      "id": "mai_senkotsu_uchi",
+      "displayName": "Senkotsu Uchi",
+      "shortName": "6MP",
+      "notation": "6MP",
+      "input": "→ + MP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Overhead attack",
+        "whenToUse": "Use for overhead mixups",
+        "situations": ["mixup"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. OVERHEAD - must be blocked standing."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 18,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_hien_ren_kyaku_2": {
+      "id": "mai_hien_ren_kyaku_2",
+      "displayName": "Hien Ren Kyaku (2)",
+      "shortName": "5LK>LK",
+      "notation": "5LK > LK",
+      "input": "(After 5LK) LK",
+      "category": "unique",
+      "damage": 400,
+      "yourPerspective": {
+        "tacticalUse": "Target combo second hit",
+        "whenToUse": "Use for target combo. Forces opponent into standing position.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["mai_hien_ren_kyaku_3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": -2
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Forces standing."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "recovery": 20,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hien_ren_kyaku_3": {
+      "id": "mai_hien_ren_kyaku_3",
+      "displayName": "Hien Ren Kyaku (3)",
+      "shortName": "5LK>LK>LK",
+      "notation": "5LK > LK > LK",
+      "input": "(After Hien Ren Kyaku 2) LK",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Target combo third hit with air transition",
+        "whenToUse": "Use for target combo ender. Can transition to Musasabi no Mai (including OD) or Air Chou Hissatsu Shinobi Bachi between frames 18-33. Considered airborne from frames 10-35.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["mai_musasabi", "mai_sa2_air"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": 3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Can cancel into air specials on hit."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "recovery": 28,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "airborne": "10-35"
+      }
+    },
+    "mai_hoshi_kujaku_1": {
+      "id": "mai_hoshi_kujaku_1",
+      "displayName": "Hoshi Kujaku (1)",
+      "shortName": "5HP>HP",
+      "notation": "5HP > HP",
+      "input": "(After 5HP) HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy target combo first hit",
+        "whenToUse": "Use for heavy confirms. Forces opponent into standing position.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["mai_hoshi_kujaku_2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 1. Forces standing."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 20,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_hoshi_kujaku_2": {
+      "id": "mai_hoshi_kujaku_2",
+      "displayName": "Hoshi Kujaku (2)",
+      "shortName": "5HP>HP>HP",
+      "notation": "5HP > HP > HP",
+      "input": "(After Hoshi Kujaku 1) HP",
+      "category": "unique",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy target combo ender",
+        "whenToUse": "Use for heavy confirms. Causes knockdown. Fully invincible from frames 10-58 on hit only.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 38,
+        "total": 50
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 10-58 (on hit only)"
+      }
+    },
+    "mai_kachousen_l": {
+      "id": "mai_kachousen_l",
+      "displayName": "L Kachousen",
+      "shortName": "L Kachousen",
+      "notation": "236LP",
+      "input": "↓↘→ + LP",
+      "category": "special",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Light fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames to change properties. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": -1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_l_charged": {
+      "id": "mai_kachousen_l_charged",
+      "displayName": "L Kachousen (Charged)",
+      "shortName": "L Kachousen Charged",
+      "notation": "[236LP]",
+      "input": "↓↘→ + LP (Hold)",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Charged light fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames. Trajectory changes on hit or block, becomes mid-air projectile after trajectory change.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_l_boosted": {
+      "id": "mai_kachousen_l_boosted",
+      "displayName": "[Boosted] L Kachousen",
+      "shortName": "B.L Kachousen",
+      "notation": "236LP",
+      "input": "↓↘→ + LP (Boosted)",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Boosted light fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Hold button for over 19 frames to change properties.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_l_charged_boosted": {
+      "id": "mai_kachousen_l_charged_boosted",
+      "displayName": "[Boosted] L Kachousen (Charged)",
+      "shortName": "B.L Kachousen Charged",
+      "notation": "[236LP]",
+      "input": "↓↘→ + LP (Hold, Boosted)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Boosted charged light fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_m": {
+      "id": "mai_kachousen_m",
+      "displayName": "M Kachousen",
+      "shortName": "M Kachousen",
+      "notation": "236MP",
+      "input": "↓↘→ + MP",
+      "category": "special",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Medium fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames to change properties. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_m_charged": {
+      "id": "mai_kachousen_m_charged",
+      "displayName": "M Kachousen (Charged)",
+      "shortName": "M Kachousen Charged",
+      "notation": "[236MP]",
+      "input": "↓↘→ + MP (Hold)",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Charged medium fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames. Trajectory changes on hit or block, becomes mid-air projectile after trajectory change.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_m_boosted": {
+      "id": "mai_kachousen_m_boosted",
+      "displayName": "[Boosted] M Kachousen",
+      "shortName": "B.M Kachousen",
+      "notation": "236MP",
+      "input": "↓↘→ + MP (Boosted)",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Boosted medium fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Hold button for over 19 frames to change properties.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": -1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_m_charged_boosted": {
+      "id": "mai_kachousen_m_charged_boosted",
+      "displayName": "[Boosted] M Kachousen (Charged)",
+      "shortName": "B.M Kachousen Charged",
+      "notation": "[236MP]",
+      "input": "↓↘→ + MP (Hold, Boosted)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Boosted charged medium fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_h": {
+      "id": "mai_kachousen_h",
+      "displayName": "H Kachousen",
+      "shortName": "H Kachousen",
+      "notation": "236HP",
+      "input": "↓↘→ + HP",
+      "category": "special",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Heavy fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames to change properties. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": -5
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable at close range. Minus 11."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_h_charged": {
+      "id": "mai_kachousen_h_charged",
+      "displayName": "H Kachousen (Charged)",
+      "shortName": "H Kachousen Charged",
+      "notation": "[236HP]",
+      "input": "↓↘→ + HP (Hold)",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Charged heavy fan projectile",
+        "whenToUse": "Use for zoning. Hold button for over 19 frames. Trajectory changes on hit or block, becomes mid-air projectile after trajectory change.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "mai_kachousen_h_boosted": {
+      "id": "mai_kachousen_h_boosted",
+      "displayName": "[Boosted] H Kachousen",
+      "shortName": "B.H Kachousen",
+      "notation": "236HP",
+      "input": "↓↘→ + HP (Boosted)",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Boosted heavy fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Hold button for over 19 frames to change properties.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_h_charged_boosted": {
+      "id": "mai_kachousen_h_charged_boosted",
+      "displayName": "[Boosted] H Kachousen (Charged)",
+      "shortName": "B.H Kachousen Charged",
+      "notation": "[236HP]",
+      "input": "↓↘→ + HP (Hold, Boosted)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Boosted charged heavy fan projectile",
+        "whenToUse": "Use for zoning when Boosted. Trajectory changes on hit or block.",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+    "mai_kachousen_od": {
+      "id": "mai_kachousen_od",
+      "displayName": "OD Kachousen",
+      "shortName": "OD Kachousen",
+      "notation": "236PP",
+      "input": "↓↘→ + PP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced fan projectile",
+        "whenToUse": "Use for pressure. Hold button for over 19 frames to change properties. Trajectory changes on hit or block.",
+        "situations": ["neutral", "pressure"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_kachousen_od_charged": {
+      "id": "mai_kachousen_od_charged",
+      "displayName": "OD Kachousen (Charged)",
+      "shortName": "OD Kachousen Charged",
+      "notation": "[236PP]",
+      "input": "↓↘→ + PP (Hold)",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Charged OD fan projectile with follow-up",
+        "whenToUse": "Use for pressure. Trajectory changes on hit or block. Can follow up with Midare Kachousen.",
+        "situations": ["neutral", "pressure"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_midare_kachousen", "mai_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 12,
+          "onHit": 14
+        },
+        "riskLevel": "safe",
+        "riskDescription": "VERY PLUS on block (+12)! VERY PLUS on hit (+14)!"
+      },
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "recovery": null,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_midare_kachousen": {
+      "id": "mai_midare_kachousen",
+      "displayName": "Midare Kachousen",
+      "shortName": "Midare Kachousen",
+      "notation": "[236PP] > P",
+      "input": "(After held OD Kachousen) P",
+      "category": "special",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Follow-up projectile barrage",
+        "whenToUse": "Use after held OD Kachousen for multi-hit projectile. Trajectory changes on hit or block.",
+        "situations": ["pressure", "combo"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Multi-hit projectile follow-up. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "projectile": true
+      }
+    },
+    "mai_midare_kachousen_boosted": {
+      "id": "mai_midare_kachousen_boosted",
+      "displayName": "[Boosted] Midare Kachousen",
+      "shortName": "B.Midare Kachousen",
+      "notation": "[236PP] > P",
+      "input": "(After held OD Kachousen, Boosted) P",
+      "category": "special",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Boosted follow-up projectile barrage",
+        "whenToUse": "Use after held OD Kachousen when Boosted for enhanced multi-hit projectile.",
+        "situations": ["pressure", "combo"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Boosted multi-hit projectile follow-up. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "projectile": true,
+        "boosted": true
+      }
+    },
+   "mai_hishou_ryuuenjin_l": {
+      "id": "mai_hishou_ryuuenjin_l",
+      "displayName": "L Hishou Ryuuenjin",
+      "shortName": "L Ryuuenjin",
+      "notation": "623LP",
+      "input": "→↓↘ + LP",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-14. Considered airborne from frames 7-37. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 29. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-14",
+        "airborne": "7-37"
+      }
+    },
+    "mai_hishou_ryuuenjin_l_boosted": {
+      "id": "mai_hishou_ryuuenjin_l_boosted",
+      "displayName": "[Boosted] L Hishou Ryuuenjin",
+      "shortName": "B.L Ryuuenjin",
+      "notation": "623LP",
+      "input": "→↓↘ + LP (Boosted)",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Boosted anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air when Boosted. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-14. Considered airborne from frames 7-37. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 29. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-14",
+        "airborne": "7-37",
+        "boosted": true
+      }
+    },
+    "mai_hishou_ryuuenjin_m": {
+      "id": "mai_hishou_ryuuenjin_m",
+      "displayName": "M Hishou Ryuuenjin",
+      "shortName": "M Ryuuenjin",
+      "notation": "623MP",
+      "input": "→↓↘ + MP",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Medium anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-10. Considered airborne from frames 8-37. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -28,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 28. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-37"
+      }
+    },
+    "mai_hishou_ryuuenjin_m_boosted": {
+      "id": "mai_hishou_ryuuenjin_m_boosted",
+      "displayName": "[Boosted] M Hishou Ryuuenjin",
+      "shortName": "B.M Ryuuenjin",
+      "notation": "623MP",
+      "input": "→↓↘ + MP (Boosted)",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Boosted medium anti-air",
+        "whenToUse": "Use as anti-air when Boosted. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-10. Considered airborne from frames 8-37. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -28,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 28. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 19,
+        "recovery": 28,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-37",
+        "boosted": true
+      }
+    },
+    "mai_hishou_ryuuenjin_h": {
+      "id": "mai_hishou_ryuuenjin_h",
+      "displayName": "H Hishou Ryuuenjin",
+      "shortName": "H Ryuuenjin",
+      "notation": "623HP",
+      "input": "→↓↘ + HP",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-11. Considered airborne from frames 9-38. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -31,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 31. Full combo punish."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-11",
+        "airborne": "9-38"
+      }
+    },
+    "mai_hishou_ryuuenjin_h_boosted": {
+      "id": "mai_hishou_ryuuenjin_h_boosted",
+      "displayName": "[Boosted] H Hishou Ryuuenjin",
+      "shortName": "B.H Ryuuenjin",
+      "notation": "623HP",
+      "input": "→↓↘ + HP (Boosted)",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Boosted heavy anti-air",
+        "whenToUse": "Use as anti-air when Boosted. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-11. Considered airborne from frames 9-38. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -31,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 31. Full combo punish."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-11",
+        "airborne": "9-38",
+        "boosted": true
+      }
+    },
+    "mai_hishou_ryuuenjin_od": {
+      "id": "mai_hishou_ryuuenjin_od",
+      "displayName": "OD Hishou Ryuuenjin",
+      "shortName": "OD Ryuuenjin",
+      "notation": "623PP",
+      "input": "→↓↘ + PP",
+      "category": "special",
+      "damage": 1600,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible from frames 1-8. Considered airborne from frames 8-41. 7 frames of recovery added when blocked. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 17,
+        "recovery": 35,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-8",
+        "airborne": "8-41"
+      }
+    },
+    "mai_hishou_ryuuenjin_od_boosted": {
+      "id": "mai_hishou_ryuuenjin_od_boosted",
+      "displayName": "[Boosted] OD Hishou Ryuuenjin",
+      "shortName": "B.OD Ryuuenjin",
+      "notation": "623PP",
+      "input": "→↓↘ + PP (Boosted)",
+      "category": "special",
+      "damage": 1700,
+      "yourPerspective": {
+        "tacticalUse": "Boosted fully invincible reversal",
+        "whenToUse": "Use as reversal when Boosted. Completely invincible from frames 1-8. Considered airborne from frames 8-41. 7 frames of recovery added when blocked. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "recovery": 34,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-8",
+        "airborne": "8-41",
+        "boosted": true
+      }
+    },
+    "mai_kachousen_od_boosted": {
+      "id": "mai_kachousen_od_boosted",
+      "displayName": "[Boosted] OD Kachousen",
+      "shortName": "B.OD Kachousen",
+      "notation": "236PP",
+      "input": "↓↘→ + PP (Boosted)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Boosted enhanced fan projectile",
+        "whenToUse": "Use for pressure when Boosted. Hold button for over 19 frames to change properties.",
+        "situations": ["neutral", "pressure"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. PLUS ON HIT."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_kachousen_od_charged_boosted": {
+      "id": "mai_kachousen_od_charged_boosted",
+      "displayName": "[Boosted] OD Kachousen (Charged)",
+      "shortName": "B.OD Kachousen Charged",
+      "notation": "[236PP]",
+      "input": "↓↘→ + PP (Hold, Boosted)",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Boosted charged OD fan projectile",
+        "whenToUse": "Use for pressure when Boosted. Trajectory changes on hit or block. Can follow up with Midare Kachousen.",
+        "situations": ["neutral", "pressure"],
+        "range": "fullscreen",
+        "connectsTo": ["mai_midare_kachousen_boosted", "mai_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 12,
+          "onHit": 14
+        },
+        "riskLevel": "safe",
+        "riskDescription": "VERY PLUS on block (+12)! VERY PLUS on hit (+14)!"
+      },
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "recovery": null,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "boosted": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_l": {
+      "id": "mai_ryuuenbu_l",
+      "displayName": "L Ryuuenbu",
+      "shortName": "L Ryuuenbu",
+      "notation": "214LP",
+      "input": "↓↙← + LP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Spinning flame attack for pressure",
+        "whenToUse": "Use for combos and pressure. Recovery added by 5 frames on super armor hit.",
+        "situations": ["combo", "pressure"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "recovery": 15,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_l_boosted": {
+      "id": "mai_ryuuenbu_l_boosted",
+      "displayName": "[Boosted] L Ryuuenbu",
+      "shortName": "B.L Ryuuenbu",
+      "notation": "214LP",
+      "input": "↓↙← + LP (Boosted)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Boosted spinning flame attack",
+        "whenToUse": "Use for combos and pressure when Boosted. Recovery added by 5 frames on super armor hit.",
+        "situations": ["combo", "pressure"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Only minus 2. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "recovery": 15,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "boosted": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_m": {
+      "id": "mai_ryuuenbu_m",
+      "displayName": "M Ryuuenbu",
+      "shortName": "M Ryuuenbu",
+      "notation": "214MP",
+      "input": "↓↙← + MP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium spinning flame attack",
+        "whenToUse": "Use for combos. Multi-hit attack. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 18,
+        "recovery": 16,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_m_boosted": {
+      "id": "mai_ryuuenbu_m_boosted",
+      "displayName": "[Boosted] M Ryuuenbu",
+      "shortName": "B.M Ryuuenbu",
+      "notation": "214MP",
+      "input": "↓↙← + MP (Boosted)",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Boosted medium spinning flame attack",
+        "whenToUse": "Use for combos when Boosted. Multi-hit attack. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 18,
+        "recovery": 16,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_h": {
+      "id": "mai_ryuuenbu_h",
+      "displayName": "H Ryuuenbu",
+      "shortName": "H Ryuuenbu",
+      "notation": "214HP",
+      "input": "↓↙← + HP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy spinning flame attack",
+        "whenToUse": "Use for combos. Multi-hit attack. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 22,
+        "recovery": 12,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_h_boosted": {
+      "id": "mai_ryuuenbu_h_boosted",
+      "displayName": "[Boosted] H Ryuuenbu",
+      "shortName": "B.H Ryuuenbu",
+      "notation": "214HP",
+      "input": "↓↙← + HP (Boosted)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Boosted heavy spinning flame attack",
+        "whenToUse": "Use for combos when Boosted. Multi-hit attack. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 22,
+        "recovery": 12,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_ryuuenbu_od": {
+      "id": "mai_ryuuenbu_od",
+      "displayName": "OD Ryuuenbu",
+      "shortName": "OD Ryuuenbu",
+      "notation": "214PP",
+      "input": "↓↙← + PP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced spinning flame attack",
+        "whenToUse": "Use for combos. Multi-hit attack. 8 frames of recovery added when blocked. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 31,
+        "recovery": 16,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_od_boosted": {
+      "id": "mai_ryuuenbu_od_boosted",
+      "displayName": "[Boosted] OD Ryuuenbu",
+      "shortName": "B.OD Ryuuenbu",
+      "notation": "214PP",
+      "input": "↓↙← + PP (Boosted)",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Boosted enhanced spinning flame attack",
+        "whenToUse": "Use for combos when Boosted. Multi-hit attack. 8 frames of recovery added when blocked. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 31,
+        "recovery": 16,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l": {
+      "id": "mai_hissatsu_shinobi_bachi_l",
+      "displayName": "L Hissatsu Shinobi Bachi",
+      "shortName": "L Shinobi Bachi",
+      "notation": "236LK",
+      "input": "↓↘→ + LK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Elbow rush attack",
+        "whenToUse": "Use for combos and pressure. Causes knockdown.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l_boosted": {
+      "id": "mai_hissatsu_shinobi_bachi_l_boosted",
+      "displayName": "[Boosted] L Hissatsu Shinobi Bachi",
+      "shortName": "B.L Shinobi Bachi",
+      "notation": "236LK",
+      "input": "↓↘→ + LK (Boosted)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Boosted elbow rush attack",
+        "whenToUse": "Use for combos and pressure when Boosted. Causes knockdown.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l": {
+      "id": "mai_hissatsu_shinobi_bachi_l",
+      "displayName": "L Hissatsu Shinobi Bachi",
+      "shortName": "L Shinobi Bachi",
+      "notation": "236LK",
+      "input": "↓↘→ + LK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Advancing elbow attack",
+        "whenToUse": "Use for combos and pressure. Causes knockdown.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l_boosted": {
+      "id": "mai_hissatsu_shinobi_bachi_l_boosted",
+      "displayName": "[Boosted] L Hissatsu Shinobi Bachi",
+      "shortName": "B.L Shinobi Bachi",
+      "notation": "236LK",
+      "input": "↓↘→ + LK (Boosted)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Boosted advancing elbow attack",
+        "whenToUse": "Use when Boosted for combos and pressure. Causes knockdown.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -10,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 10. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_m": {
+      "id": "mai_hissatsu_shinobi_bachi_m",
+      "displayName": "M Hissatsu Shinobi Bachi",
+      "shortName": "M Shinobi Bachi",
+      "notation": "236MK",
+      "input": "↓↘→ + MK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Medium advancing elbow attack",
+        "whenToUse": "Use for combos. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 30,
+        "recovery": 20,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_m_boosted": {
+      "id": "mai_hissatsu_shinobi_bachi_m_boosted",
+      "displayName": "[Boosted] M Hissatsu Shinobi Bachi",
+      "shortName": "B.M Shinobi Bachi",
+      "notation": "236MK",
+      "input": "↓↘→ + MK (Boosted)",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Boosted medium advancing elbow attack",
+        "whenToUse": "Use when Boosted for combos. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 30,
+        "recovery": 20,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_h": {
+      "id": "mai_hissatsu_shinobi_bachi_h",
+      "displayName": "H Hissatsu Shinobi Bachi",
+      "shortName": "H Shinobi Bachi",
+      "notation": "236HK",
+      "input": "↓↘→ + HK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Heavy advancing elbow attack",
+        "whenToUse": "Use for combos. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 30,
+        "recovery": 21,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_h_boosted": {
+      "id": "mai_hissatsu_shinobi_bachi_h_boosted",
+      "displayName": "[Boosted] H Hissatsu Shinobi Bachi",
+      "shortName": "B.H Shinobi Bachi",
+      "notation": "236HK",
+      "input": "↓↘→ + HK (Boosted)",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Boosted heavy advancing elbow attack",
+        "whenToUse": "Use when Boosted for combos. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["mai_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 30,
+        "recovery": 21,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_od": {
+      "id": "mai_hissatsu_shinobi_bachi_od",
+      "displayName": "OD Hissatsu Shinobi Bachi",
+      "shortName": "OD Shinobi Bachi",
+      "notation": "236KK",
+      "input": "↓↘→ + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced advancing elbow with air transition",
+        "whenToUse": "Use for combos. Can perform moves from frame 53. Considered airborne from frames 31-74. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["mai_sa2_air"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 32,
+        "recovery": 32,
+        "total": 78
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "airborne": "31-74",
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_od_boosted": {
+      "id": "mai_hissatsu_shinobi_bachi_od_boosted",
+      "displayName": "[Boosted] OD Hissatsu Shinobi Bachi",
+      "shortName": "B.OD Shinobi Bachi",
+      "notation": "236KK",
+      "input": "↓↘→ + KK (Boosted)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Boosted enhanced advancing elbow with air transition",
+        "whenToUse": "Use when Boosted for combos. Can perform moves from frame 53. Considered airborne from frames 31-74. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "far",
+        "connectsTo": ["mai_sa2_air"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 32,
+        "recovery": 32,
+        "total": 78
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "airborne": "31-74",
+        "boosted": true,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_musasabi": {
+      "id": "mai_musasabi",
+      "displayName": "Musasabi no Mai",
+      "shortName": "Musasabi",
+      "notation": "j.214K",
+      "input": "(During forward jump) ↓↙← + K",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Dive kick for pressure",
+        "whenToUse": "Use for air pressure and mixups. 7 frames of recovery added when attack misses. 10 frames added when attack misses and characters switch sides. Recovery on block changes depending on the height of the attack when blocked.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Minus 7 on block. Frame advantage varies by height. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_musasabi_boosted": {
+      "id": "mai_musasabi_boosted",
+      "displayName": "[Boosted] Musasabi no Mai",
+      "shortName": "B.Musasabi",
+      "notation": "j.214K",
+      "input": "(During forward jump) ↓↙← + K (Boosted)",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Boosted dive kick for pressure",
+        "whenToUse": "Use when Boosted for air pressure and mixups. 7 frames of recovery added when attack misses. 10 frames added when attack misses and characters switch sides. Recovery on block changes depending on the height of the attack when blocked.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 4. Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "boosted": true
+      }
+    },
+    "mai_musasabi_od": {
+      "id": "mai_musasabi_od",
+      "displayName": "OD Musasabi no Mai",
+      "shortName": "OD Musasabi",
+      "notation": "j.214KK",
+      "input": "(During forward jump) ↓↙← + KK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced dive kick",
+        "whenToUse": "Use for enhanced air pressure. 7 frames of recovery added when attack misses. 10 frames added when attack misses and characters switch sides. Recovery on block changes depending on the height of the attack when blocked.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -7,
+          "onHit": 1
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Minus 7 on block. Frame advantage varies by height."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "mai_musasabi_od_boosted": {
+      "id": "mai_musasabi_od_boosted",
+      "displayName": "[Boosted] OD Musasabi no Mai",
+      "shortName": "B.OD Musasabi",
+      "notation": "j.214KK",
+      "input": "(During forward jump) ↓↙← + KK (Boosted)",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Boosted enhanced dive kick with floor bound",
+        "whenToUse": "Use when Boosted for enhanced air pressure. 7 frames of recovery added when attack misses. 10 frames added when attack misses and characters switch sides. Recovery on block changes depending on the height of the attack when blocked. Produces floor bound during mid-air hit.",
+        "situations": ["jumpIn", "pressure"],
+        "range": "mid",
+        "connectsTo": ["mai_sa2"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 4. Causes floor bound on air hit."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "boosted": true,
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "mai_sa1": {
+      "id": "mai_sa1",
+      "displayName": "SA1 Kagerou no Mai",
+      "shortName": "SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Invincible projectile Super",
+        "whenToUse": "Use as reversal or combo ender. Invincible to strikes and throws between frames 1-8. Minimum guaranteed damage is 30%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -31,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 31. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 34,
+        "recovery": 51,
+        "total": 91
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-8",
+        "projectile": true,
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "mai_sa1_boosted": {
+      "id": "mai_sa1_boosted",
+      "displayName": "[Boosted] SA1 Kagerou no Mai",
+      "shortName": "B.SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P (Boosted)",
+      "category": "super",
+      "damage": 2300,
+      "yourPerspective": {
+        "tacticalUse": "Boosted invincible projectile Super",
+        "whenToUse": "Use when Boosted as reversal or combo ender. Invincible to strikes and throws between frames 1-6. Minimum guaranteed damage is 30%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -26,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 26. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 90,
+        "recovery": 46,
+        "total": 142
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-6",
+        "projectile": true,
+        "superArt": 1,
+        "boosted": true,
+        "minimumDamage": "30%"
+      }
+    },
+    "mai_sa2": {
+      "id": "mai_sa2",
+      "displayName": "SA2 Chou Hissatsu Shinobi Bachi",
+      "shortName": "SA2",
+      "notation": "214214K",
+      "input": "↓↙←↓↙← + K",
+      "category": "super",
+      "damage": 2800,
+      "yourPerspective": {
+        "tacticalUse": "Invincible rush Super",
+        "whenToUse": "Use as reversal or combo ender. Completely invincible on frames 1-8. Minimum guaranteed damage is 40%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 36,
+        "recovery": 26,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-8",
+        "superArt": 2,
+        "minimumDamage": "40%",
+        "comboScaling": "Starter scaling 40%, Combo scaling 20%"
+      }
+    },
+    "mai_sa2_boosted": {
+      "id": "mai_sa2_boosted",
+      "displayName": "[Boosted] SA2 Chou Hissatsu Shinobi Bachi",
+      "shortName": "B.SA2",
+      "notation": "214214K",
+      "input": "↓↙←↓↙← + K (Boosted)",
+      "category": "super",
+      "damage": 3000,
+      "yourPerspective": {
+        "tacticalUse": "Boosted invincible rush Super",
+        "whenToUse": "Use when Boosted as reversal or combo ender. Completely invincible on frames 1-8. Projectile invincibility from frames 9-12. Minimum guaranteed damage is 40%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -24,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 24. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 36,
+        "recovery": 31,
+        "total": 74
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-8, projectile 9-12",
+        "superArt": 2,
+        "boosted": true,
+        "minimumDamage": "40%",
+        "comboScaling": "Starter scaling 40%, Combo scaling 20%"
+      }
+    },
+    "mai_sa2_air": {
+      "id": "mai_sa2_air",
+      "displayName": "SA2 Air Chou Hissatsu Shinobi Bachi",
+      "shortName": "SA2 (Air)",
+      "notation": "j.214214K",
+      "input": "(During forward jump) ↓↙←↓↙← + K",
+      "category": "super",
+      "damage": 2800,
+      "yourPerspective": {
+        "tacticalUse": "Air Super for combos",
+        "whenToUse": "Use for air combo ender. Minimum guaranteed damage is 40%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "Air Super. Very punishable on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 20,
+        "recovery": 24,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArt": 2,
+        "minimumDamage": "40%",
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_sa2_air_boosted": {
+      "id": "mai_sa2_air_boosted",
+      "displayName": "[Boosted] SA2 Air Chou Hissatsu Shinobi Bachi",
+      "shortName": "B.SA2 (Air)",
+      "notation": "j.214214K",
+      "input": "(During forward jump) ↓↙←↓↙← + K (Boosted)",
+      "category": "super",
+      "damage": 3000,
+      "yourPerspective": {
+        "tacticalUse": "Boosted Air Super for combos",
+        "whenToUse": "Use when Boosted for air combo ender. Minimum guaranteed damage is 40%. Values do not change on counter or Punish Counter. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "Boosted Air Super. Very punishable on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 24,
+        "recovery": 24,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArt": 2,
+        "boosted": true,
+        "minimumDamage": "40%",
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "mai_sa3": {
+      "id": "mai_sa3",
+      "displayName": "SA3 Shiranui Ryuu: Enbu Ada Zakura",
+      "shortName": "SA3",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K",
+      "category": "super",
+      "damage": 4000,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible between frames 1-11. Minimum guaranteed damage is 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -33,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 33. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 39,
+        "recovery": 46,
+        "total": 95
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-11",
+        "superArt": 3,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%, Starter scaling 50%"
+      }
+    },
+    "mai_ca": {
+      "id": "mai_ca",
+      "displayName": "CA Shiranui Ryuu: Enbu Ada Zakura",
+      "shortName": "CA",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K (under 25% vitality)",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible between frames 1-11. Minimum guaranteed damage is 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -33,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 33. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 39,
+        "recovery": 46,
+        "total": 95
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-11",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%, Starter scaling 50%"
+      }
+    },
+    "mai_throw_f": {
+      "id": "mai_throw_f",
+      "displayName": "Shiranui Gourin (Forward Throw)",
+      "shortName": "F Throw",
+      "notation": "LP+LK",
+      "input": "LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Forward throw",
+        "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "mai_throw_b": {
+      "id": "mai_throw_b",
+      "displayName": "Fuusha Kuzushi (Back Throw)",
+      "shortName": "B Throw",
+      "notation": "4+LP+LK",
+      "input": "← + LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Back throw for side switch",
+        "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK. Switches sides."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "mai_throw_air": {
+      "id": "mai_throw_air",
+      "displayName": "Yume Zakura (Air Throw)",
+      "shortName": "Air Throw",
+      "notation": "j.LP+LK",
+      "input": "(During jump, near opponent) LP + LK",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Air throw",
+        "whenToUse": "Use for air-to-air situations. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air throw. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 3,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "mai_forward_dash": {
+      "id": "mai_forward_dash",
+      "displayName": "Forward Dash",
+      "shortName": "66",
+      "notation": "66",
+      "input": "→→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward movement",
+        "whenToUse": "Use to close distance quickly",
+        "situations": ["movement", "approach"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "mai_back_dash": {
+      "id": "mai_back_dash",
+      "displayName": "Backward Dash",
+      "shortName": "44",
+      "notation": "44",
+      "input": "←←",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick backward movement with throw invincibility",
+        "whenToUse": "Use to escape pressure. Invincible to throws from frames 1-15.",
+        "situations": ["movement", "escape"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option. Throw invincible frames 1-15."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "invincible": "throw 1-15"
+      }
+    },
+    "mai_drive_impact": {
+      "id": "mai_drive_impact",
+      "displayName": "Drive Impact (Botan Ichige)",
+      "shortName": "DI",
+      "notation": "HP+HK",
+      "input": "HP + HK",
+      "category": "common",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Armored attack for pressure and punishes",
+        "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 attacks from frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), increased juggle time (airborne), +3000 SA gauge.",
+        "situations": ["pressure", "punish", "wallSplat"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "2 hits, frames 1-27",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "mai_drive_reversal_block": {
+      "id": "mai_drive_reversal_block",
+      "displayName": "Drive Reversal - Blocking (Yusura Ume)",
+      "shortName": "DR (Block)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (while blocking or during Drive Parry)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal while blocking",
+        "whenToUse": "Use to escape pressure while blocking. Completely invincible on frames 1-22. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-22"
+      }
+    },
+    "mai_drive_reversal_wakeup": {
+      "id": "mai_drive_reversal_wakeup",
+      "displayName": "Drive Reversal - Recovering (Yusura Ume)",
+      "shortName": "DR (Wakeup)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (during knockdown recovery)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal on wakeup",
+        "whenToUse": "Use to escape oki pressure. Completely invincible on frames 1-20. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-20"
+      }
+    },
+    "mai_drive_parry": {
+      "id": "mai_drive_parry",
+      "displayName": "Drive Parry",
+      "shortName": "Parry",
+      "notation": "MP+MK",
+      "input": "MP + MK",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Defensive parry to absorb attacks",
+        "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": ["mai_parry_drive_rush"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Mai is in Punish Counter state. Throw or wait for recovery."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "mai_perfect_parry_strike": {
+      "id": "mai_perfect_parry_strike",
+      "displayName": "Perfect Parry (Strike)",
+      "shortName": "PP (Strike)",
+      "notation": "MP+MK",
+      "input": "MP + MK (+ direction for high/low)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry for big punish",
+        "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense", "punish"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "mai_perfect_parry_projectile": {
+      "id": "mai_perfect_parry_projectile",
+      "displayName": "Perfect Parry (Projectile)",
+      "shortName": "PP (Proj)",
+      "notation": "MP+MK",
+      "input": "MP + MK (vs projectile)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry against projectiles",
+        "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "mai_parry_drive_rush": {
+      "id": "mai_parry_drive_rush",
+      "displayName": "Parry Drive Rush",
+      "shortName": "PDR",
+      "notation": "MP+MK > 66",
+      "input": "(During Drive Parry) →→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel parry into run",
+        "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
+        "situations": ["offense", "conversion"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Mai is rushing in. Prepare to block or contest."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    },
+    "mai_cancel_drive_rush": {
+      "id": "mai_cancel_drive_rush",
+      "displayName": "Cancel Drive Rush",
+      "shortName": "CDR",
+      "notation": "66",
+      "input": "→→ (while connecting with special-cancelable move)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel normal into run for combos",
+        "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
+        "situations": ["combo", "pressure"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Mai is canceling into run. Prepare for follow-up."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    }
+  }
+}

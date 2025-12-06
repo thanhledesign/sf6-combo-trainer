@@ -1,0 +1,2804 @@
+{
+  "character": {
+    "id": "luke",
+    "name": "Luke Sullivan",
+    "displayName": "Luke",
+    "archetype": "rushdown",
+    "description": "Aggressive rushdown character with Flash Knuckle pressure and strong anti-air options",
+    "bio": "A fighter who is an up-and-coming star in the MMA world. Luke is highly skilled in both grappling and striking, and possesses powerful punches and kicks in his arsenal.",
+    "vitals": {
+      "height": "6'1",
+      "weight": "205 lbs",
+      "likes": "Video games, pizza, his girlfriend",
+      "hates": "Lectures"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "🎯",
+      "moveIds": ["luke_st_lp", "luke_st_lk", "luke_st_mp", "luke_st_mk", "luke_st_hp", "luke_st_hk", "luke_cr_mp", "luke_sand_blast_l", "luke_sand_blast_m"]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "⚡",
+      "moveIds": ["luke_flash_knuckle_l", "luke_flash_knuckle_m", "luke_avenger", "luke_suppressor"]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "🔥",
+      "moveIds": ["luke_triple_impact_2", "luke_triple_impact_3", "luke_snapback_combo_2", "luke_rising_uppercut_h"]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "🛡️",
+      "moveIds": ["luke_flash_knuckle_h", "luke_rising_uppercut_od", "luke_slam_dunk"]
+    }
+  },
+
+  "moves": {
+    "luke_st_lp": {
+      "id": "luke_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab for pressure",
+        "whenToUse": "Use for pressure and confirms. 3 frames of recovery added when the attack misses.",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["luke_st_lp", "luke_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "recovery": 11,
+        "total": 20
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_st_lk": {
+      "id": "luke_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Quick standing kick",
+        "whenToUse": "Use for pressure strings",
+        "situations": ["neutral", "pressure"],
+        "range": "close",
+        "connectsTo": ["luke_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "recovery": 12,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_st_mp": {
+      "id": "luke_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Mid-range poke with good range",
+        "whenToUse": "Use for spacing control and confirms into specials",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_l", "luke_sand_blast_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 16,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_mk": {
+      "id": "luke_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke for footsies",
+        "whenToUse": "Use for max range control in neutral. 3 frames of recovery added when the attack misses.",
+        "situations": ["neutral"],
+        "range": "max",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 16,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_st_hp": {
+      "id": "luke_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy normal for damage and confirms",
+        "whenToUse": "Use for counter hits and big damage confirms",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_m", "luke_sand_blast_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": 1
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 23,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_hk": {
+      "id": "luke_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy kick with juggle and crumple properties",
+        "whenToUse": "Use for anti-air and Punish Counter. Forces juggle state on mid-air hit. Forces juggle on Punish Counter. Feet are invincible from frame 8 to frame 15.",
+        "situations": ["antiAir", "punish"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Feet invincible frames 8-15."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "recovery": 16,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "feet 8-15"
+      }
+    },
+    "luke_cr_lp": {
+      "id": "luke_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "↓ + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
+        "situations": ["pressure"],
+        "range": "close",
+        "connectsTo": ["luke_st_lp", "luke_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 10,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_cr_lk": {
+      "id": "luke_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "↓ + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light attack with rapid cancel",
+        "whenToUse": "Use for low mixups. Can be rapid canceled.",
+        "situations": ["pressure", "mixup"],
+        "range": "close",
+        "connectsTo": ["luke_cr_lp"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe low option. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 11,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_cr_mp": {
+      "id": "luke_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "↓ + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Good poke and combo starter",
+        "whenToUse": "Use for confirms into specials. PLUS ON BLOCK (+1). 3 frames of recovery added when the attack misses.",
+        "situations": ["neutral", "pressure"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_l", "luke_sand_blast_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 1,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+1)! Luke can continue pressure."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 2,
+        "recovery": 14,
+        "total": 22
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 15%"
+      }
+    },
+    "luke_cr_mk": {
+      "id": "luke_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "↓ + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke with decent range",
+        "whenToUse": "Use for low mixups and spacing",
+        "situations": ["neutral"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": -2
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 19,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_cr_hp": {
+      "id": "luke_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "↓ + HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Strong launcher that forces standing",
+        "whenToUse": "Use for combos. Forces opponent into standing position. Can only be canceled until the 1st active frame.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -13,
+          "onHit": 1
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 13."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 24,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Combo scaling 15%"
+      }
+    },
+    "luke_cr_hk": {
+      "id": "luke_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "↓ + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep that causes knockdown",
+        "whenToUse": "Use for knockdown and oki setup. Knockdown time extended on Punish Counter and changes to Hard Knockdown.",
+        "situations": ["neutral", "oki"],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 24,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "luke_j_lp": {
+      "id": "luke_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air jab",
+        "whenToUse": "Use for air-to-air",
+        "situations": ["airToAir"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 9,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_lk": {
+      "id": "luke_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cross-up",
+        "whenToUse": "Use for air-to-air. Has cross-up attack properties.",
+        "situations": ["airToAir", "jumpIn"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "luke_j_mp": {
+      "id": "luke_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with juggle",
+        "whenToUse": "Use for air-to-air. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["airToAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "luke_j_mk": {
+      "id": "luke_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in with cross-up",
+        "whenToUse": "Use for jump-ins. Has cross-up attack properties.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "luke_j_hp": {
+      "id": "luke_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure. Forces slam knockdown on counter or Punish Counter when hitting a mid-air opponent.",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_hk": {
+      "id": "luke_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in for damage",
+        "whenToUse": "Use for jump-in pressure",
+        "situations": ["jumpIn"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_nj_hk": {
+      "id": "luke_nj_hk",
+      "displayName": "Neutral Jumping Heavy Kick",
+      "shortName": "nj.HK",
+      "notation": "nj.HK",
+      "input": "(During neutral jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Neutral jump anti-air",
+        "whenToUse": "Use for neutral jump spacing. Has cross-up attack properties.",
+        "situations": ["antiAir"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. Has cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "luke_rawhide": {
+      "id": "luke_rawhide",
+      "displayName": "Rawhide",
+      "shortName": "6MP",
+      "notation": "6MP",
+      "input": "→ + MP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Forward-advancing elbow",
+        "whenToUse": "Use for confirms. Forces slam knockdown when hitting a mid-air opponent.",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_l"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 21,
+        "active": 2,
+        "recovery": 21,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_suppressor": {
+      "id": "luke_suppressor",
+      "displayName": "Suppressor",
+      "shortName": "6HP",
+      "notation": "6HP",
+      "input": "→ + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Forward punch for pressure",
+        "whenToUse": "Use for confirms. 17 frames of advantage added when the attack lands as a Punish Counter. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["neutral", "punish"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_m"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 20,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_outlaw_kick": {
+      "id": "luke_outlaw_kick",
+      "displayName": "Outlaw Kick",
+      "shortName": "6HK",
+      "notation": "6HK",
+      "input": "→ + HK",
+      "category": "unique",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Advancing kick with juggle",
+        "whenToUse": "Use for confirms. Forces juggle state when hitting a mid-air opponent.",
+        "situations": ["neutral", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "recovery": 24,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_double_impact_1": {
+      "id": "luke_double_impact_1",
+      "displayName": "Double Impact (1)",
+      "shortName": "5HP>",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Target combo first hit",
+        "whenToUse": "Use for target combo starter. 4 frames of recovery added when the attack misses.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_double_impact_2"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 15,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_double_impact_2": {
+      "id": "luke_double_impact_2",
+      "displayName": "Double Impact (2)",
+      "shortName": "5HP>HP",
+      "notation": "5HP > HP",
+      "input": "(After Double Impact 1) HP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Target combo second hit",
+        "whenToUse": "Use for target combo ender. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -19,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 19. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 34,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "luke_triple_impact_2": {
+      "id": "luke_triple_impact_2",
+      "displayName": "Triple Impact (2)",
+      "shortName": "5LP>MP",
+      "notation": "5LP > MP",
+      "input": "(After 5LP) MP",
+      "category": "unique",
+      "damage": 400,
+      "yourPerspective": {
+        "tacticalUse": "Light target combo second hit",
+        "whenToUse": "Use for light confirms",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": ["luke_triple_impact_3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": -2
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "recovery": 20,
+        "total": 32
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_triple_impact_3": {
+      "id": "luke_triple_impact_3",
+      "displayName": "Triple Impact (3)",
+      "shortName": "5LP>MP>HP",
+      "notation": "5LP > MP > HP",
+      "input": "(After Triple Impact 2) HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Light target combo third hit",
+        "whenToUse": "Use for light combo ender. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 27,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_2": {
+      "id": "luke_snapback_combo_2",
+      "displayName": "Snapback Combo (2)",
+      "shortName": "5MP>MP",
+      "notation": "5MP > MP",
+      "input": "(After 5MP) MP",
+      "category": "unique",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Medium target combo second hit",
+        "whenToUse": "Use for medium confirms",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_snapback_combo_3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": 0
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "recovery": 23,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_nose_breaker": {
+      "id": "luke_nose_breaker",
+      "displayName": "Nose Breaker",
+      "shortName": "5MP>HP",
+      "notation": "5MP > HP",
+      "input": "(After 5MP) HP",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Medium target combo alternate ender",
+        "whenToUse": "Use for confirms",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": 2
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 25,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_3": {
+      "id": "luke_snapback_combo_3",
+      "displayName": "Snapback Combo (3)",
+      "shortName": "5MP>MP>MP",
+      "notation": "5MP > MP > MP",
+      "input": "(After Snapback Combo 2) MP",
+      "category": "unique",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Medium target combo third hit",
+        "whenToUse": "Use for extended combos",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_snapback_combo_4"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": -6
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 14."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 29,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_4": {
+      "id": "luke_snapback_combo_4",
+      "displayName": "Snapback Combo (4)",
+      "shortName": "5MP>MP>MP>MP",
+      "notation": "5MP > MP > MP > MP",
+      "input": "(After Snapback Combo 3) MP",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Medium target combo fourth hit",
+        "whenToUse": "Use for full target combo. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 27,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_sand_blast_l": {
+      "id": "luke_sand_blast_l",
+      "displayName": "L Sand Blast",
+      "shortName": "L Sand Blast",
+      "notation": "236LP",
+      "input": "↓↘→ + LP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Slow projectile for zoning",
+        "whenToUse": "Use for zoning and space control",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": -3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Projectile. Punishable at close range."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "recovery": 33,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "luke_sand_blast_m": {
+      "id": "luke_sand_blast_m",
+      "displayName": "M Sand Blast",
+      "shortName": "M Sand Blast",
+      "notation": "236MP",
+      "input": "↓↘→ + MP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Medium speed projectile",
+        "whenToUse": "Use for zoning with medium speed",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 17,
+        "active": 6,
+        "recovery": 30,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "luke_sand_blast_h": {
+      "id": "luke_sand_blast_h",
+      "displayName": "H Sand Blast",
+      "shortName": "H Sand Blast",
+      "notation": "236HP",
+      "input": "↓↘→ + HP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Fast projectile",
+        "whenToUse": "Use for zoning with fastest speed",
+        "situations": ["neutral", "zoning"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 9,
+        "recovery": 27,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "luke_sand_blast_od": {
+      "id": "luke_sand_blast_od",
+      "displayName": "OD Sand Blast",
+      "shortName": "OD Sand Blast",
+      "notation": "236PP",
+      "input": "↓↘→ + PP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced projectile with Fatal Shot follow-up",
+        "whenToUse": "Use for pressure. Can follow up with Fatal Shot on hit.",
+        "situations": ["neutral", "combo"],
+        "range": "fullscreen",
+        "connectsTo": ["luke_fatal_shot"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": 24,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "luke_fatal_shot": {
+      "id": "luke_fatal_shot",
+      "displayName": "Fatal Shot",
+      "shortName": "Fatal Shot",
+      "notation": "236PP > PP",
+      "input": "(After OD Sand Blast) PP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Follow-up to OD Sand Blast for damage",
+        "whenToUse": "Use after OD Sand Blast for extra damage. Consumes 10000 Drive gauge. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -21,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 21. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "recovery": 42,
+        "total": 50
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "projectile": true
+      }
+    },
+    "luke_flash_knuckle_l": {
+      "id": "luke_flash_knuckle_l",
+      "displayName": "L Flash Knuckle",
+      "shortName": "L Flash Knuckle",
+      "notation": "214LP",
+      "input": "↓↙← + LP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Fast advancing punch",
+        "whenToUse": "Use for combos and pressure. Hold the button for more than 18 frames to change properties. Perform Perfect version by releasing button between frames 18-20.",
+        "situations": ["combo", "pressure"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -18,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 18. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "recovery": 31,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_l_charged": {
+      "id": "luke_flash_knuckle_l_charged",
+      "displayName": "L Flash Knuckle (Charged)",
+      "shortName": "L FK Charged",
+      "notation": "[214LP]",
+      "input": "↓↙← + LP (Hold)",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Charged version with projectile clash",
+        "whenToUse": "Use for combos. Clashes with projectiles (once). Combo scaling added to 2nd hit.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 4,
+        "recovery": 25,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_l_perfect": {
+      "id": "luke_flash_knuckle_l_perfect",
+      "displayName": "L Flash Knuckle (Perfect)",
+      "shortName": "L FK Perfect",
+      "notation": "[214LP]!",
+      "input": "↓↙← + LP (Release frames 18-20)",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Perfect release for more damage",
+        "whenToUse": "Use for max damage. Release button between frames 18-20. Clashes with projectiles (once). Combo scaling added to 2nd hit.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 4,
+        "recovery": 25,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m": {
+      "id": "luke_flash_knuckle_m",
+      "displayName": "M Flash Knuckle",
+      "shortName": "M Flash Knuckle",
+      "notation": "214MP",
+      "input": "↓↙← + MP",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Medium advancing punch",
+        "whenToUse": "Use for combos. Hold the button for more than 18 frames to change properties. Perform Perfect version by releasing button between frames 18-20.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": 3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 19,
+        "active": 3,
+        "recovery": 27,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m_charged": {
+      "id": "luke_flash_knuckle_m_charged",
+      "displayName": "M Flash Knuckle (Charged)",
+      "shortName": "M FK Charged",
+      "notation": "[214MP]",
+      "input": "↓↙← + MP (Hold)",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Charged version with projectile clash",
+        "whenToUse": "Use for combos. Clashes with projectiles (once). Combo scaling added to 2nd hit.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 29,
+        "active": 4,
+        "recovery": 26,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m_perfect": {
+      "id": "luke_flash_knuckle_m_perfect",
+      "displayName": "M Flash Knuckle (Perfect)",
+      "shortName": "M FK Perfect",
+      "notation": "[214MP]!",
+      "input": "↓↙← + MP (Release frames 18-20)",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Perfect release for more damage",
+        "whenToUse": "Use for max damage. Release button between frames 18-20. Clashes with projectiles (once).",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 29,
+        "active": 4,
+        "recovery": 26,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h": {
+      "id": "luke_flash_knuckle_h",
+      "displayName": "H Flash Knuckle",
+      "shortName": "H Flash Knuckle",
+      "notation": "214HP",
+      "input": "↓↙← + HP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Heavy advancing punch",
+        "whenToUse": "Use for combos. Hold the button for more than 18 frames to change properties. Perform Perfect version by releasing button between frames 18-20.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "recovery": 21,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h_charged": {
+      "id": "luke_flash_knuckle_h_charged",
+      "displayName": "H Flash Knuckle (Charged)",
+      "shortName": "H FK Charged",
+      "notation": "[214HP]",
+      "input": "↓↙← + HP (Hold)",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Charged version with projectile clash",
+        "whenToUse": "Use for combos. Clashes with projectiles (once).",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 4,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+4)! Causes knockdown."
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 24,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h_perfect": {
+      "id": "luke_flash_knuckle_h_perfect",
+      "displayName": "H Flash Knuckle (Perfect)",
+      "shortName": "H FK Perfect",
+      "notation": "[214HP]!",
+      "input": "↓↙← + HP (Release frames 18-20)",
+      "category": "special",
+      "damage": 1600,
+      "yourPerspective": {
+        "tacticalUse": "Perfect release for max damage",
+        "whenToUse": "Use for max damage. Release button between frames 18-20. Clashes with projectiles (once).",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 4,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+4)! Causes knockdown."
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 24,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_od": {
+      "id": "luke_flash_knuckle_od",
+      "displayName": "OD Flash Knuckle",
+      "shortName": "OD Flash Knuckle",
+      "notation": "214PP",
+      "input": "↓↙← + PP",
+      "category": "special",
+      "damage": 400,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced version with DDT follow-up",
+        "whenToUse": "Use for combos. Transitions to 2nd attack on hit. Can only be canceled into DDT on the 1st hit.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_flash_knuckle_od_2", "luke_ddt"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -22,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 22."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 1,
+        "recovery": 39,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_od_2": {
+      "id": "luke_flash_knuckle_od_2",
+      "displayName": "OD Flash Knuckle (2)",
+      "shortName": "OD FK (2)",
+      "notation": "214PP",
+      "input": "(After OD Flash Knuckle 1st hit)",
+      "category": "special",
+      "damage": 400,
+      "yourPerspective": {
+        "tacticalUse": "Second hit of OD Flash Knuckle",
+        "whenToUse": "Automatic follow-up on hit",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Causes knockdown."
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 16,
+        "total": 53
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_ddt": {
+      "id": "luke_ddt",
+      "displayName": "DDT",
+      "shortName": "DDT",
+      "notation": "214PP > PP",
+      "input": "(After OD Flash Knuckle 1st hit) PP",
+      "category": "special",
+      "damage": 2500,
+      "yourPerspective": {
+        "tacticalUse": "Command grab follow-up for huge damage",
+        "whenToUse": "Use after OD Flash Knuckle 1st hit for big damage. Consumes 10000 Drive gauge.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Command grab. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": null,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle": {
+      "id": "luke_aerial_flash_knuckle",
+      "displayName": "Aerial Flash Knuckle",
+      "shortName": "j.FK",
+      "notation": "j.214P",
+      "input": "(During neutral or forward jump) ↓↙← + P",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-ground special",
+        "whenToUse": "Use for air combos. +7 frames of recovery added when whiffing the attack high in the air. Causes knockdown.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Causes knockdown. 13 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 5,
+        "recovery": 13,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle_charged": {
+      "id": "luke_aerial_flash_knuckle_charged",
+      "displayName": "Aerial Flash Knuckle (Charged)",
+      "shortName": "j.FK Charged",
+      "notation": "j.[214P]",
+      "input": "(During neutral or forward jump) ↓↙← + P (Hold)",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Charged air special",
+        "whenToUse": "Use for air combos. Causes knockdown.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Causes knockdown. 15 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 6,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle_od": {
+      "id": "luke_aerial_flash_knuckle_od",
+      "displayName": "OD Aerial Flash Knuckle",
+      "shortName": "j.OD FK",
+      "notation": "j.214PP",
+      "input": "(During neutral or forward jump) ↓↙← + PP",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced air special",
+        "whenToUse": "Use for air combos. Causes knockdown.",
+        "situations": ["jumpIn", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air special. Causes knockdown. 15 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 6,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_avenger": {
+      "id": "luke_avenger",
+      "displayName": "Avenger",
+      "shortName": "Avenger",
+      "notation": "214K",
+      "input": "↓↙← + K",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Stance with follow-up options",
+        "whenToUse": "Use for mixups. Can transition to branching attacks from frames 13-31.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["luke_no_chaser", "luke_impaler"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Stance - watch for follow-up mixups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_avenger_od": {
+      "id": "luke_avenger_od",
+      "displayName": "OD Avenger",
+      "shortName": "OD Avenger",
+      "notation": "214KK",
+      "input": "↓↙← + KK",
+      "category": "special",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced stance with Super Armor",
+        "whenToUse": "Use for mixups. Super Armor for 1 attack from frames 3-35. Can transition to branching attacks from frames 12-31.",
+        "situations": ["mixup", "pressure"],
+        "range": "none",
+        "connectsTo": ["luke_od_chaser", "luke_od_impaler"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Stance with Super Armor frames 3-35. Watch for follow-ups."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "superArmor": "1 hit, frames 3-35"
+      }
+    },
+    "luke_no_chaser": {
+      "id": "luke_no_chaser",
+      "displayName": "No Chaser",
+      "shortName": "No Chaser",
+      "notation": "214K > P",
+      "input": "(During Avenger) P",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Avenger follow-up punch",
+        "whenToUse": "Use for damage from stance. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 10,
+        "recovery": 16,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_od_chaser": {
+      "id": "luke_od_chaser",
+      "displayName": "OD Chaser",
+      "shortName": "OD Chaser",
+      "notation": "214KK > P",
+      "input": "(During OD Avenger) P",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "OD Avenger follow-up punch",
+        "whenToUse": "Use for damage from OD stance. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 10,
+        "recovery": 16,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "luke_impaler": {
+      "id": "luke_impaler",
+      "displayName": "Impaler",
+      "shortName": "Impaler",
+      "notation": "214K > K",
+      "input": "(During Avenger) K",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Avenger follow-up kick",
+        "whenToUse": "Use for damage from stance. 5 frames of recovery added when the attack misses. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 8. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 12,
+        "recovery": 22,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_od_impaler": {
+      "id": "luke_od_impaler",
+      "displayName": "OD Impaler",
+      "shortName": "OD Impaler",
+      "notation": "214KK > K",
+      "input": "(During OD Avenger) K",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "OD Avenger follow-up kick",
+        "whenToUse": "Use for damage from OD stance. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 3. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 12,
+        "recovery": 19,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "luke_rising_uppercut_l": {
+      "id": "luke_rising_uppercut_l",
+      "displayName": "L Rising Uppercut",
+      "shortName": "L Rising Uppercut",
+      "notation": "623LP",
+      "input": "→↓↘ + LP",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-14. Considered airborne from frames 8-36. Does 800 damage from the 3rd active frame and on. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -27,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 27. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "recovery": 34,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-14",
+        "airborne": "8-36",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "luke_rising_uppercut_m": {
+      "id": "luke_rising_uppercut_m",
+      "displayName": "M Rising Uppercut",
+      "shortName": "M Rising Uppercut",
+      "notation": "623MP",
+      "input": "→↓↘ + MP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Medium anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-8. Considered airborne from frames 9-39. Does 800 damage from the 3rd active frame and on. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 29. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 36,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-8",
+        "airborne": "9-39",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "luke_rising_uppercut_h": {
+      "id": "luke_rising_uppercut_h",
+      "displayName": "H Rising Uppercut",
+      "shortName": "H Rising Uppercut",
+      "notation": "623HP",
+      "input": "→↓↘ + HP",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Heavy anti-air",
+        "whenToUse": "Use as anti-air. Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1-9. Considered airborne from frames 11-43. Does 800 damage from the 3rd active frame and on. Causes knockdown.",
+        "situations": ["antiAir"],
+        "range": "close",
+        "connectsTo": ["luke_sa3"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -33,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 33. Full combo punish."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 10,
+        "recovery": 40,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-9",
+        "airborne": "11-43",
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "luke_rising_uppercut_od": {
+      "id": "luke_rising_uppercut_od",
+      "displayName": "OD Rising Uppercut",
+      "shortName": "OD Rising Uppercut",
+      "notation": "623PP",
+      "input": "→↓↘ + PP",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible from frames 1-10. Considered airborne from frames 8-50. Can only transition to Slam Dunk on hit. Causes knockdown.",
+        "situations": ["reversal", "antiAir"],
+        "range": "close",
+        "connectsTo": ["luke_slam_dunk"],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -40,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 50,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-10",
+        "airborne": "8-50"
+      }
+    },
+    "luke_slam_dunk": {
+      "id": "luke_slam_dunk",
+      "displayName": "Slam Dunk",
+      "shortName": "Slam Dunk",
+      "notation": "623PP > PP",
+      "input": "(After OD Rising Uppercut on hit) PP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Follow-up to OD Rising Uppercut",
+        "whenToUse": "Use after OD Rising Uppercut on hit. Consumes 10000 Drive gauge. Causes knockdown.",
+        "situations": ["combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Causes knockdown."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_sa1": {
+      "id": "luke_sa1",
+      "displayName": "SA1 Vulcan Blast",
+      "shortName": "SA1",
+      "notation": "236236P",
+      "input": "↓↘→↓↘→ + P",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Invincible reversal Super",
+        "whenToUse": "Use as reversal or combo ender. Invincible to strikes and throws from frames 1-6. Minimum guaranteed damage is 30%. Values do not change on counter or Punish Counter.",
+        "situations": ["reversal", "combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 29. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "recovery": 102,
+        "total": 108
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "strikes/throws 1-6",
+        "projectile": true,
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "luke_sa2": {
+      "id": "luke_sa2",
+      "displayName": "SA2 Eraser",
+      "shortName": "SA2",
+      "notation": "214214P",
+      "input": "↓↙←↓↙← + P",
+      "category": "super",
+      "damage": 2800,
+      "yourPerspective": {
+        "tacticalUse": "Invincible punch Super",
+        "whenToUse": "Use for combos. Completely invincible from frames 1-7. Transitions to full attack after the 2nd hit. Minimum guaranteed damage is 40%. Values do not change on counter or Punish Counter.",
+        "situations": ["combo"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 29. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 51,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-7",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "luke_sa3": {
+      "id": "luke_sa3",
+      "displayName": "SA3 Pale Rider",
+      "shortName": "SA3",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K",
+      "category": "super",
+      "damage": 4000,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible from frames 1-13. Considered airborne from frames 9-27. Minimum guaranteed damage is 50%. Values do not change on counter or Punish Counter. Start up changes depending on the distance from the opponent. When activated from close range: Start up is 10 frames. When activated from furthest possible range: Start up is 27 frames. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -42,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 42. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "recovery": 92,
+        "total": 106
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "airborne": "9-27",
+        "superArt": 3,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "luke_ca": {
+      "id": "luke_ca",
+      "displayName": "CA Pale Rider (Critical Art)",
+      "shortName": "CA",
+      "notation": "236236K",
+      "input": "↓↘→↓↘→ + K (under 25% vitality)",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible from frames 1-13. Considered airborne from frames 9-27. Minimum guaranteed damage is 50%. Values do not change on counter or Punish Counter. Start up changes depending on the distance from the opponent. Can only be canceled into from special moves.",
+        "situations": ["reversal", "combo"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -42,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 42. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "recovery": 92,
+        "total": 106
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-13",
+        "airborne": "9-27",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%",
+        "comboScaling": "Immediate scaling 10%"
+      }
+    },
+    "luke_throw_f": {
+      "id": "luke_throw_f",
+      "displayName": "Sweeper (Forward Throw)",
+      "shortName": "F Throw",
+      "notation": "LP+LK",
+      "input": "LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Forward throw",
+        "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "luke_throw_b": {
+      "id": "luke_throw_b",
+      "displayName": "Scrapper (Back Throw)",
+      "shortName": "B Throw",
+      "notation": "4+LP+LK",
+      "input": "← + LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Back throw for side switch",
+        "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": ["mixup", "pressure"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK. Switches sides."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "luke_forward_dash": {
+      "id": "luke_forward_dash",
+      "displayName": "Forward Dash",
+      "shortName": "66",
+      "notation": "66",
+      "input": "→→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward movement",
+        "whenToUse": "Use to close distance quickly",
+        "situations": ["movement", "approach"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "luke_back_dash": {
+      "id": "luke_back_dash",
+      "displayName": "Backward Dash",
+      "shortName": "44",
+      "notation": "44",
+      "input": "←←",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick backward movement with throw invincibility",
+        "whenToUse": "Use to escape pressure. Invincible to throws from frame 1 to frame 15.",
+        "situations": ["movement", "escape"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option. Throw invincible frames 1-15."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "invincible": "throw 1-15"
+      }
+    },
+    "luke_drive_impact": {
+      "id": "luke_drive_impact",
+      "displayName": "Drive Impact (Muzzle Flash)",
+      "shortName": "DI",
+      "notation": "HP+HK",
+      "input": "HP + HK",
+      "category": "common",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Armored attack for pressure and punishes",
+        "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 hits from frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), spinning knockdown (airborne), +3000 SA gauge.",
+        "situations": ["pressure", "punish", "wallSplat"],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "2 hits, frames 1-27",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "luke_drive_reversal_block": {
+      "id": "luke_drive_reversal_block",
+      "displayName": "Drive Reversal - Blocking (Battering Ram)",
+      "shortName": "DR (Block)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (while blocking or during Drive Parry)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal while blocking",
+        "whenToUse": "Use to escape pressure while blocking. Completely invincible from frames 1-22. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-22"
+      }
+    },
+    "luke_drive_reversal_wakeup": {
+      "id": "luke_drive_reversal_wakeup",
+      "displayName": "Drive Reversal - Recovering (Battering Ram)",
+      "shortName": "DR (Wakeup)",
+      "notation": "6HP+HK",
+      "input": "→ + HP + HK (during knockdown recovery)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal on wakeup",
+        "whenToUse": "Use to escape oki pressure. Completely invincible on frames 1-20. Recoverable damage. 5 frames of recovery added on hit.",
+        "situations": ["escape", "reversal"],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame normals. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-20"
+      }
+    },
+    "luke_drive_parry": {
+      "id": "luke_drive_parry",
+      "displayName": "Drive Parry",
+      "shortName": "Parry",
+      "notation": "MP+MK",
+      "input": "MP + MK",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Defensive parry to absorb attacks",
+        "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": ["luke_parry_drive_rush"],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Luke is in Punish Counter state. Throw or wait for recovery."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_perfect_parry_strike": {
+      "id": "luke_perfect_parry_strike",
+      "displayName": "Perfect Parry (Strike)",
+      "shortName": "PP (Strike)",
+      "notation": "MP+MK",
+      "input": "MP + MK (+ direction for high/low)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry for big punish",
+        "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense", "punish"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "luke_perfect_parry_projectile": {
+      "id": "luke_perfect_parry_projectile",
+      "displayName": "Perfect Parry (Projectile)",
+      "shortName": "PP (Proj)",
+      "notation": "MP+MK",
+      "input": "MP + MK (vs projectile)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry against projectiles",
+        "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
+        "situations": ["defense"],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "luke_parry_drive_rush": {
+      "id": "luke_parry_drive_rush",
+      "displayName": "Parry Drive Rush",
+      "shortName": "PDR",
+      "notation": "MP+MK > 66",
+      "input": "(During Drive Parry) →→",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel parry into run",
+        "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
+        "situations": ["offense", "conversion"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Luke is rushing in. Prepare to block or contest."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    },
+    "luke_cancel_drive_rush": {
+      "id": "luke_cancel_drive_rush",
+      "displayName": "Cancel Drive Rush",
+      "shortName": "CDR",
+      "notation": "66",
+      "input": "→→ (while connecting with special-cancelable move)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel normal into run for combos",
+        "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
+        "situations": ["combo", "pressure"],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Luke is canceling into run. Prepare for follow-up."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    }
+  }
+}

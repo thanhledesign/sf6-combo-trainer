@@ -1,0 +1,2685 @@
+{
+  "character": {
+    "id": "terry",
+    "name": "Terry Bogard",
+    "displayName": "Terry",
+    "archetype": "rushdown",
+    "description": "Aggressive rushdown character with strong pressure tools and comeback potential",
+    "bio": "The Legendary Hungry Wolf. This charismatic fighter travels the globe, eager to test his strength against warriors from all corners of the world.",
+    "vitals": {
+      "height": "5'11",
+      "weight": "179 lbs",
+      "likes": "Video games, fast food, Rock",
+      "hates": "Slugs"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-29"
+  },
+  "tactics": {
+    "neutral": {
+      "name": "Neutral Tactics",
+      "description": "Moves for controlling space and starting offense",
+      "icon": "\ud83c\udfaf",
+      "moveIds": [
+        "terry_st_lp",
+        "terry_st_lk",
+        "terry_st_mp",
+        "terry_st_mk",
+        "terry_cr_mp",
+        "terry_cr_mk"
+      ]
+    },
+    "offensive": {
+      "name": "Offensive Pressure",
+      "description": "Moves for maintaining pressure and mix-ups",
+      "icon": "\u26a1",
+      "moveIds": [
+        "terry_burn_knuckle_m",
+        "terry_power_charge_l",
+        "terry_crack_shoot_l"
+      ]
+    },
+    "combo": {
+      "name": "Combo Tactics",
+      "description": "Combo routes and special moves",
+      "icon": "\ud83d\udd25",
+      "moveIds": [
+        "terry_power_wave_l",
+        "terry_rising_tackle_l",
+        "terry_power_dunk"
+      ]
+    },
+    "corner": {
+      "name": "Corner Tactics",
+      "description": "Corner-specific options and setups",
+      "icon": "\ud83d\udee1\ufe0f",
+      "moveIds": [
+        "terry_burn_knuckle_h",
+        "terry_cr_hk"
+      ]
+    }
+  },
+  "moves": {
+    "terry_st_lp": {
+      "id": "terry_st_lp",
+      "displayName": "Standing Light Punch",
+      "shortName": "5LP",
+      "notation": "5LP",
+      "input": "LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast jab with rapid cancel",
+        "whenToUse": "Use for pressure and frame traps. Can be rapid canceled.",
+        "situations": [
+          "pressure"
+        ],
+        "range": "close",
+        "connectsTo": [
+          "terry_st_lp",
+          "terry_cr_lp"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_st_lk": {
+      "id": "terry_st_lk",
+      "displayName": "Standing Light Kick",
+      "shortName": "5LK",
+      "notation": "5LK",
+      "input": "LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast poke",
+        "whenToUse": "Use for quick pokes and pressure",
+        "situations": [
+          "neutral",
+          "pressure"
+        ],
+        "range": "close",
+        "connectsTo": [
+          "terry_cr_lp"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "recovery": 12,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_st_mp": {
+      "id": "terry_st_mp",
+      "displayName": "Standing Medium Punch",
+      "shortName": "5MP",
+      "notation": "5MP",
+      "input": "MP",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Mid-range poke with cancel options",
+        "whenToUse": "Use for spacing and confirms into specials",
+        "situations": [
+          "neutral"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_power_wave_l",
+          "terry_burn_knuckle_m"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 16,
+        "total": 26
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "terry_st_mk": {
+      "id": "terry_st_mk",
+      "displayName": "Standing Medium Kick",
+      "shortName": "5MK",
+      "notation": "5MK",
+      "input": "MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Long-range poke for footsies",
+        "whenToUse": "Use for max range control in neutral",
+        "situations": [
+          "neutral"
+        ],
+        "range": "max",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe at max range."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 18,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_st_hp": {
+      "id": "terry_st_hp",
+      "displayName": "Standing Heavy Punch",
+      "shortName": "5HP",
+      "notation": "5HP",
+      "input": "HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy normal with plus frames",
+        "whenToUse": "Use for counter hits and pressure. PLUS ON BLOCK (+1). 2 frames recovery subtracted when blocked.",
+        "situations": [
+          "neutral",
+          "pressure"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_power_wave_l",
+          "terry_burn_knuckle_m"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 1,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK! Terry can continue pressure."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 18,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "terry_st_hk": {
+      "id": "terry_st_hk",
+      "displayName": "Standing Heavy Kick",
+      "shortName": "5HK",
+      "notation": "5HK",
+      "input": "HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Heavy kick with crumple on Punish Counter",
+        "whenToUse": "Use for counter hits. Produces crumple stun on Punish Counter with +18 frame advantage.",
+        "situations": [
+          "neutral",
+          "reads"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes crumple stun on Punish Counter."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "recovery": 21,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_cr_lp": {
+      "id": "terry_cr_lp",
+      "displayName": "Crouching Light Punch",
+      "shortName": "2LP",
+      "notation": "2LP",
+      "input": "\u2193 + LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Fast crouching jab with rapid cancel",
+        "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
+        "situations": [
+          "pressure"
+        ],
+        "range": "close",
+        "connectsTo": [
+          "terry_cr_lp",
+          "terry_cr_lk"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe. Can be rapid canceled."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 8,
+        "total": 15
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_cr_lk": {
+      "id": "terry_cr_lk",
+      "displayName": "Crouching Light Kick",
+      "shortName": "2LK",
+      "notation": "2LK",
+      "input": "\u2193 + LK",
+      "category": "normal",
+      "damage": 200,
+      "yourPerspective": {
+        "tacticalUse": "Low-hitting light with rapid cancel",
+        "whenToUse": "Use for low mixups and tick throws. Can be rapid canceled.",
+        "situations": [
+          "pressure",
+          "mixup"
+        ],
+        "range": "close",
+        "connectsTo": [
+          "terry_cr_lp"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe low option. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "recovery": 11,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_cr_mp": {
+      "id": "terry_cr_mp",
+      "displayName": "Crouching Medium Punch",
+      "shortName": "2MP",
+      "notation": "2MP",
+      "input": "\u2193 + MP",
+      "category": "normal",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "6-frame punish tool and combo starter",
+        "whenToUse": "Use as anti-air or for confirms into specials.",
+        "situations": [
+          "punish",
+          "antiAir",
+          "neutral"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_power_wave_l",
+          "terry_burn_knuckle_m"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": 5
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Very safe on block."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 14,
+        "total": 24
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "terry_cr_mk": {
+      "id": "terry_cr_mk",
+      "displayName": "Crouching Medium Kick",
+      "shortName": "2MK",
+      "notation": "2MK",
+      "input": "\u2193 + MK",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Low poke for neutral",
+        "whenToUse": "Use for low pokes and spacing. Cancelable.",
+        "situations": [
+          "neutral"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_power_wave_l"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": -2
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame moves. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 19,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_cr_hp": {
+      "id": "terry_cr_hp",
+      "displayName": "Crouching Heavy Punch",
+      "shortName": "2HP",
+      "notation": "2HP",
+      "input": "\u2193 + HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air that forces standing",
+        "whenToUse": "Primary anti-air. Forces opponent to stand. 3 frames recovery subtracted on hit or block.",
+        "situations": [
+          "antiAir"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_power_wave_l"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -4,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "recovery": 22,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_cr_hk": {
+      "id": "terry_cr_hk",
+      "displayName": "Crouching Heavy Kick",
+      "shortName": "2HK",
+      "notation": "2HK",
+      "input": "\u2193 + HK",
+      "category": "normal",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Sweep with knockdown",
+        "whenToUse": "Use for knockdown. Hard Knockdown on Punish Counter.",
+        "situations": [
+          "neutral",
+          "oki"
+        ],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown. Must be blocked low."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 24,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "terry_j_lp": {
+      "id": "terry_j_lp",
+      "displayName": "Jumping Light Punch",
+      "shortName": "j.LP",
+      "notation": "j.LP",
+      "input": "(During jump) LP",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air",
+        "whenToUse": "Use for air-to-air situations",
+        "situations": [
+          "airToAir"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_j_lk": {
+      "id": "terry_j_lk",
+      "displayName": "Jumping Light Kick",
+      "shortName": "j.LK",
+      "notation": "j.LK",
+      "input": "(During jump) LK",
+      "category": "normal",
+      "damage": 300,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air",
+        "whenToUse": "Use for air-to-air situations",
+        "situations": [
+          "airToAir"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_j_mp": {
+      "id": "terry_j_mp",
+      "displayName": "Jumping Medium Punch",
+      "shortName": "j.MP",
+      "notation": "j.MP",
+      "input": "(During jump) MP",
+      "category": "normal",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Air-to-air with cross-up properties",
+        "whenToUse": "Use for air-to-air or cross-ups. Has cross-up properties.",
+        "situations": [
+          "airToAir",
+          "crossup"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal with cross-up properties. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "crossUp": true
+      }
+    },
+    "terry_j_mk": {
+      "id": "terry_j_mk",
+      "displayName": "Jumping Medium Kick",
+      "shortName": "j.MK",
+      "notation": "j.MK",
+      "input": "(During jump) MK",
+      "category": "normal",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Jump-in attack",
+        "whenToUse": "Use for jump-ins. Forces juggle on mid-air hit.",
+        "situations": [
+          "jumpIn"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_j_hp": {
+      "id": "terry_j_hp",
+      "displayName": "Jumping Heavy Punch",
+      "shortName": "j.HP",
+      "notation": "j.HP",
+      "input": "(During jump) HP",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Strong jump-in for damage",
+        "whenToUse": "Use for jump-ins. Slam knockdown on counter/Punish Counter vs air.",
+        "situations": [
+          "jumpIn"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_j_hk": {
+      "id": "terry_j_hk",
+      "displayName": "Jumping Heavy Kick",
+      "shortName": "j.HK",
+      "notation": "j.HK",
+      "input": "(During jump) HK",
+      "category": "normal",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy jump-in",
+        "whenToUse": "Use for jump-ins with good horizontal range",
+        "situations": [
+          "jumpIn"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Air normal. 3 frames landing recovery."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_hammer_punch": {
+      "id": "terry_hammer_punch",
+      "displayName": "Hammer Punch",
+      "shortName": "6HP",
+      "notation": "6HP",
+      "input": "\u2192 + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Overhead-style forward punch",
+        "whenToUse": "Use for pressure and confirms",
+        "situations": [
+          "pressure",
+          "neutral"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "recovery": 19,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "terry_power_drive": {
+      "id": "terry_power_drive",
+      "displayName": "Power Drive",
+      "shortName": "TC1",
+      "notation": "6MP > HP",
+      "input": "\u2192 + MP > HP",
+      "category": "unique",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Target combo for knockdown",
+        "whenToUse": "Use for confirms into knockdown",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown on hit."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "recovery": 22,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 30%"
+      }
+    },
+    "terry_power_shoot": {
+      "id": "terry_power_shoot",
+      "displayName": "Power Shoot",
+      "shortName": "TC2",
+      "notation": "6MK > HK",
+      "input": "\u2192 + MK > HK",
+      "category": "unique",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Target combo for knockdown",
+        "whenToUse": "Use for confirms into knockdown",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 31,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      }
+    },
+    "terry_power_dunk": {
+      "id": "terry_power_dunk",
+      "displayName": "Power Dunk",
+      "shortName": "TC3",
+      "notation": "6MK > HK > HK",
+      "input": "\u2192 + MK > HK > HK",
+      "category": "unique",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Target combo launcher",
+        "whenToUse": "Use for combo extensions. Launches opponent.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Causes knockdown. Launches on hit."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 30,
+        "recovery": 33,
+        "total": 81
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_passing_sway": {
+      "id": "terry_passing_sway",
+      "displayName": "Passing Sway",
+      "shortName": "Sway",
+      "notation": "6LK > LK",
+      "input": "\u2192 + LK > LK",
+      "category": "unique",
+      "damage": 400,
+      "yourPerspective": {
+        "tacticalUse": "Evasive movement with follow-up",
+        "whenToUse": "Use for evasion and mixups. Fully invincible frames 20-40 on hit only.",
+        "situations": [
+          "mixup",
+          "evasion"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -12,
+          "onHit": -3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 12."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 2,
+        "recovery": 27,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_jumping_lariat": {
+      "id": "terry_jumping_lariat",
+      "displayName": "Jumping Lariat",
+      "shortName": "Lariat",
+      "notation": "6LK > MK > MK",
+      "input": "\u2192 + LK > MK > MK",
+      "category": "unique",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Target combo with full invincibility",
+        "whenToUse": "Use for confirms. Completely invincible frames 1-25. Airborne frames 14-25.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 3,
+          "onHit": 4
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+3)!"
+      },
+      "frameData": {
+        "startup": 24,
+        "active": 2,
+        "recovery": 18,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-25",
+        "airborne": "14-25"
+      }
+    },
+    "terry_jumping_knee": {
+      "id": "terry_jumping_knee",
+      "displayName": "Jumping Knee",
+      "shortName": "Knee",
+      "notation": "6LK > MK > HK",
+      "input": "\u2192 + LK > MK > HK",
+      "category": "unique",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Target combo with full invincibility",
+        "whenToUse": "Use for confirms. Completely invincible frames 1-25. Airborne frames 16-25.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 24,
+        "active": 2,
+        "recovery": 20,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-25",
+        "airborne": "16-25"
+      }
+    },
+    "terry_fire_kick": {
+      "id": "terry_fire_kick",
+      "displayName": "Fire Kick",
+      "shortName": "Fire Kick",
+      "notation": "6MK > HP",
+      "input": "\u2192 + MK > HP",
+      "category": "unique",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Target combo with launch",
+        "whenToUse": "Use for combo starters",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -16,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 16. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 2,
+        "recovery": 28,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "terry_back_spin_kick": {
+      "id": "terry_back_spin_kick",
+      "displayName": "Back Spin Kick",
+      "shortName": "4HK",
+      "notation": "4HK",
+      "input": "\u2190 + HK",
+      "category": "unique",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Retreating kick",
+        "whenToUse": "Use for spacing and whiff punishes",
+        "situations": [
+          "neutral"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame moves. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "recovery": 22,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_rising_upper": {
+      "id": "terry_rising_upper",
+      "displayName": "Rising Upper",
+      "shortName": "3HP",
+      "notation": "3HP",
+      "input": "\u2198 + HP",
+      "category": "unique",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air normal",
+        "whenToUse": "Use as anti-air",
+        "situations": [
+          "antiAir"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 8."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "recovery": 24,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "terry_power_wave_l": {
+      "id": "terry_power_wave_l",
+      "displayName": "L Power Wave",
+      "shortName": "L Power Wave",
+      "notation": "236LP",
+      "input": "\u2193\u2198\u2192 + LP",
+      "category": "special",
+      "damage": 600,
+      "yourPerspective": {
+        "tacticalUse": "Ground projectile for zoning",
+        "whenToUse": "Use for zoning and space control. Slowest version.",
+        "situations": [
+          "neutral",
+          "zoning"
+        ],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": -3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "terry_power_wave_m": {
+      "id": "terry_power_wave_m",
+      "displayName": "M Power Wave",
+      "shortName": "M Power Wave",
+      "notation": "236MP",
+      "input": "\u2193\u2198\u2192 + MP",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Medium speed ground projectile",
+        "whenToUse": "Use for zoning with medium speed",
+        "situations": [
+          "neutral",
+          "zoning"
+        ],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": 0
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Projectile. Safe at distance."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "terry_round_wave": {
+      "id": "terry_round_wave",
+      "displayName": "Round Wave",
+      "shortName": "H Power Wave",
+      "notation": "236HP",
+      "input": "\u2193\u2198\u2192 + HP",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Rising projectile with plus frames",
+        "whenToUse": "Use for pressure. PLUS ON BLOCK (+5) and PLUS ON HIT (+8).",
+        "situations": [
+          "pressure",
+          "zoning"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": 5,
+          "onHit": 8
+        },
+        "riskLevel": "safe",
+        "riskDescription": "PLUS ON BLOCK (+5)! Terry can continue pressure."
+      },
+      "frameData": {
+        "startup": 29,
+        "active": null,
+        "recovery": null,
+        "total": 51
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "projectile": true
+      }
+    },
+    "terry_power_wave_od": {
+      "id": "terry_power_wave_od",
+      "displayName": "OD Power Wave",
+      "shortName": "OD Power Wave",
+      "notation": "236PP",
+      "input": "\u2193\u2198\u2192 + PP",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced projectile",
+        "whenToUse": "Use for pressure. Plus on hit (+2) and safe on block (-2).",
+        "situations": [
+          "pressure",
+          "zoning"
+        ],
+        "range": "fullscreen",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe projectile. Only minus 2."
+      },
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "recovery": null,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "projectile": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_quick_burn": {
+      "id": "terry_quick_burn",
+      "displayName": "Quick Burn",
+      "shortName": "Quick Burn",
+      "notation": "214LP",
+      "input": "\u2193\u2199\u2190 + LP",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward rush attack",
+        "whenToUse": "Use for pressure and combos.",
+        "situations": [
+          "pressure",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": 2
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 14,
+        "recovery": 23,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 30%"
+      }
+    },
+    "terry_quick_burn_od": {
+      "id": "terry_quick_burn_od",
+      "displayName": "OD Quick Burn",
+      "shortName": "OD Quick Burn",
+      "notation": "214PP",
+      "input": "\u2193\u2199\u2190 + PP",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced forward rush",
+        "whenToUse": "Use for combos and pressure.",
+        "situations": [
+          "pressure",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -5,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 14,
+        "recovery": 23,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_burn_knuckle_m": {
+      "id": "terry_burn_knuckle_m",
+      "displayName": "M Burning Knuckle",
+      "shortName": "M Burn Knuckle",
+      "notation": "214MP",
+      "input": "\u2193\u2199\u2190 + MP",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Forward rushing punch",
+        "whenToUse": "Use for combos and approaching.",
+        "situations": [
+          "combo",
+          "approach"
+        ],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame moves. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 9,
+        "recovery": 20,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "video": "/videos/terry/burn_knuckle_m_followup.mp4"
+    },
+    "terry_burn_knuckle_h": {
+      "id": "terry_burn_knuckle_h",
+      "displayName": "H Burning Knuckle",
+      "shortName": "H Burn Knuckle",
+      "notation": "214HP",
+      "input": "\u2193\u2199\u2190 + HP",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Long range rushing punch",
+        "whenToUse": "Use for combos and long range approaches.",
+        "situations": [
+          "combo",
+          "approach"
+        ],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 8. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 14,
+        "recovery": 17,
+        "total": 54
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "terry_burn_knuckle_od": {
+      "id": "terry_burn_knuckle_od",
+      "displayName": "OD Burning Knuckle",
+      "shortName": "OD Burn Knuckle",
+      "notation": "214PP",
+      "input": "\u2193\u2199\u2190 + PP (hold)",
+      "category": "special",
+      "damage": 1400,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced rushing punch",
+        "whenToUse": "Use for combos. Juggle state extended on Punish Counter.",
+        "situations": [
+          "combo"
+        ],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -8,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 8. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 19,
+        "active": 14,
+        "recovery": 17,
+        "total": 50
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 20%, Combo scaling 20%"
+      },
+      "video": "/videos/terry/burn_knuckle_od.mp4"
+    },
+    "terry_power_charge_l": {
+      "id": "terry_power_charge_l",
+      "displayName": "L Power Charge",
+      "shortName": "L Power Charge",
+      "notation": "236LK",
+      "input": "\u2193\u2198\u2192 + LK",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Shoulder tackle",
+        "whenToUse": "Use for pressure and combos.",
+        "situations": [
+          "pressure",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -9,
+          "onHit": 3
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "Punishable on block. Minus 9."
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 5,
+        "recovery": 24,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "terry_power_charge_m": {
+      "id": "terry_power_charge_m",
+      "displayName": "M Power Charge",
+      "shortName": "M Power Charge",
+      "notation": "236MK",
+      "input": "\u2193\u2198\u2192 + MK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Medium shoulder tackle",
+        "whenToUse": "Use for combos.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -11,
+          "onHit": null
+        },
+        "riskLevel": "unsafe",
+        "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 6,
+        "recovery": 23,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "terry_power_charge_h": {
+      "id": "terry_power_charge_h",
+      "displayName": "H Power Charge",
+      "shortName": "H Power Charge",
+      "notation": "236HK",
+      "input": "\u2193\u2198\u2192 + HK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Heavy shoulder tackle with special cancel",
+        "whenToUse": "Use for combos. Changes to juggle state on mid-air hit. Can cancel into other specials except Power Charge on hit only.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [
+          "terry_rising_tackle_l",
+          "terry_crack_shoot_l"
+        ],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -16,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 16. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 25,
+        "active": 9,
+        "recovery": 27,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "terry_power_charge_od": {
+      "id": "terry_power_charge_od",
+      "displayName": "OD Power Charge",
+      "shortName": "OD Power Charge",
+      "notation": "236KK",
+      "input": "\u2193\u2198\u2192 + KK",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced shoulder tackle",
+        "whenToUse": "Use for combos.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -14,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 14. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 19,
+        "active": 8,
+        "recovery": 24,
+        "total": 51
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "terry_crack_shoot_l": {
+      "id": "terry_crack_shoot_l",
+      "displayName": "L Crack Shoot",
+      "shortName": "L Crack Shoot",
+      "notation": "214LK",
+      "input": "\u2193\u2199\u2190 + LK",
+      "category": "special",
+      "damage": 700,
+      "yourPerspective": {
+        "tacticalUse": "Overhead flip kick",
+        "whenToUse": "Use for overhead mixups. Airborne frames 7-23. Hard Knockdown on Punish Counter.",
+        "situations": [
+          "mixup",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 1
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "recovery": 18,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "7-23"
+      }
+    },
+    "terry_crack_shoot_m": {
+      "id": "terry_crack_shoot_m",
+      "displayName": "M Crack Shoot",
+      "shortName": "M Crack Shoot",
+      "notation": "214MK",
+      "input": "\u2193\u2199\u2190 + MK",
+      "category": "special",
+      "damage": 900,
+      "yourPerspective": {
+        "tacticalUse": "Medium overhead flip kick",
+        "whenToUse": "Use for overhead mixups. Airborne frames 9-25. Hard Knockdown on counter and Punish Counter.",
+        "situations": [
+          "mixup",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": 3
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block."
+      },
+      "frameData": {
+        "startup": 17,
+        "active": 7,
+        "recovery": 18,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "airborne": "9-25"
+      }
+    },
+    "terry_crack_shoot_h": {
+      "id": "terry_crack_shoot_h",
+      "displayName": "H Crack Shoot",
+      "shortName": "H Crack Shoot",
+      "notation": "214HK",
+      "input": "\u2193\u2199\u2190 + HK",
+      "category": "special",
+      "damage": 1100,
+      "yourPerspective": {
+        "tacticalUse": "Heavy overhead flip kick",
+        "whenToUse": "Use for combos. Airborne frames 12-34. Nearly safe on block (-1).",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -1,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 1. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 11,
+        "recovery": 19,
+        "total": 53
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "12-34",
+        "comboScaling": "Combo scaling 20%"
+      }
+    },
+    "terry_crack_shoot_od": {
+      "id": "terry_crack_shoot_od",
+      "displayName": "OD Crack Shoot",
+      "shortName": "OD Crack Shoot",
+      "notation": "214KK",
+      "input": "\u2193\u2199\u2190 + KK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced overhead flip kick",
+        "whenToUse": "Use for combos. Airborne frames 8-25. Hard Knockdown on Punish Counter. Floor bound on mid-air hit.",
+        "situations": [
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -2,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Only minus 2. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 4,
+        "recovery": 19,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "airborne": "8-25"
+      }
+    },
+    "terry_rising_tackle_l": {
+      "id": "terry_rising_tackle_l",
+      "displayName": "L Rising Tackle",
+      "shortName": "L Rising Tackle",
+      "notation": "[4]6LK",
+      "input": "(Hold \u2190) \u2192 + LK",
+      "category": "special",
+      "damage": 1000,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air with upper body invincibility",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-14. Airborne frames 6-35.",
+        "situations": [
+          "antiAir",
+          "combo"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -25,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 25. Full combo punish."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "recovery": 33,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-14",
+        "airborne": "6-35",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_rising_tackle_m": {
+      "id": "terry_rising_tackle_m",
+      "displayName": "M Rising Tackle",
+      "shortName": "M Rising Tackle",
+      "notation": "[4]6MK",
+      "input": "(Hold \u2190) \u2192 + MK",
+      "category": "special",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Higher damage anti-air",
+        "whenToUse": "Use as anti-air or combo ender. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-10. Airborne frames 8-43.",
+        "situations": [
+          "antiAir",
+          "combo"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -26,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 26. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 40,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-10",
+        "airborne": "8-43",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_rising_tackle_h": {
+      "id": "terry_rising_tackle_h",
+      "displayName": "H Rising Tackle",
+      "shortName": "H Rising Tackle",
+      "notation": "[4]6HK",
+      "input": "(Hold \u2190) \u2192 + HK",
+      "category": "special",
+      "damage": 1300,
+      "yourPerspective": {
+        "tacticalUse": "Max damage anti-air",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-8. Airborne frames 8-53.",
+        "situations": [
+          "antiAir",
+          "combo"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -36,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish."
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 20,
+        "recovery": 42,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "invincible": "mid-air 1-8",
+        "airborne": "8-53",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_rising_tackle_od": {
+      "id": "terry_rising_tackle_od",
+      "displayName": "OD Rising Tackle",
+      "shortName": "OD Rising Tackle",
+      "notation": "[4]6KK",
+      "input": "(Hold \u2190) \u2192 + KK",
+      "category": "special",
+      "damage": 1600,
+      "yourPerspective": {
+        "tacticalUse": "Fully invincible reversal",
+        "whenToUse": "Use as reversal. Completely invincible frames 1-10. Airborne frames 7-54.",
+        "situations": [
+          "reversal",
+          "antiAir"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -42,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 42. Full combo punish."
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 15,
+        "recovery": 49,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-10",
+        "airborne": "7-54",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_sa1": {
+      "id": "terry_sa1",
+      "displayName": "SA1 Power Geyser",
+      "shortName": "SA1",
+      "notation": "236236P",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + P",
+      "category": "super",
+      "damage": 2000,
+      "yourPerspective": {
+        "tacticalUse": "Invincible reversal Super",
+        "whenToUse": "Use as reversal or combo ender. Completely invincible frames 1-9. Minimum damage 600 (30%). Values do not change on counter or Punish Counter.",
+        "situations": [
+          "reversal",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -29,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "VERY PUNISHABLE on block. Minus 29."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "recovery": 44,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-9",
+        "superArt": 1,
+        "minimumDamage": "30%"
+      }
+    },
+    "terry_sa2_buster_wolf": {
+      "id": "terry_sa2_buster_wolf",
+      "displayName": "SA2 Buster Wolf",
+      "shortName": "SA2 Buster",
+      "notation": "214214P",
+      "input": "\u2193\u2199\u2190\u2193\u2199\u2190 + P",
+      "category": "super",
+      "damage": 2600,
+      "yourPerspective": {
+        "tacticalUse": "Rushing Super with armor",
+        "whenToUse": "Use for combos. Super Armor vs mid-air and ground attacks 1 hit frames 6-26. Minimum damage 1040 (40%). Values do not change on counter or Punish Counter.",
+        "situations": [
+          "combo"
+        ],
+        "range": "far",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -34,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 34."
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 12,
+        "recovery": 42,
+        "total": 66
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "1 hit, frames 6-26",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "terry_sa2_star_dunk_volcano": {
+      "id": "terry_sa2_star_dunk_volcano",
+      "displayName": "SA2 Star Dunk Volcano",
+      "shortName": "SA2 Volcano",
+      "notation": "214214K",
+      "input": "\u2193\u2199\u2190\u2193\u2199\u2190 + K",
+      "category": "super",
+      "damage": 2400,
+      "yourPerspective": {
+        "tacticalUse": "Anti-air Super with invincibility",
+        "whenToUse": "Use as anti-air. Invincible vs mid-air frames 1-20. Minimum damage 960 (40%). Values do not change on counter or Punish Counter.",
+        "situations": [
+          "antiAir",
+          "combo"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -39,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 39."
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 49,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "mid-air 1-20",
+        "airborne": "8-31",
+        "superArt": 2,
+        "minimumDamage": "40%"
+      }
+    },
+    "terry_sa3": {
+      "id": "terry_sa3",
+      "displayName": "SA3 Trinity Geyser",
+      "shortName": "SA3",
+      "notation": "236236K",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K",
+      "category": "super",
+      "damage": 4500,
+      "yourPerspective": {
+        "tacticalUse": "Level 3 Super with full invincibility",
+        "whenToUse": "Use for max damage or reversal. Completely invincible frames 1-16. Minimum damage 2250 (50%). Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": [
+          "reversal",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -37,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 37."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "recovery": 52,
+        "total": 66
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-16",
+        "superArt": 3,
+        "minimumDamage": "50%"
+      }
+    },
+    "terry_ca": {
+      "id": "terry_ca",
+      "displayName": "CA Trinity Geyser (Critical Art)",
+      "shortName": "CA",
+      "notation": "236236K",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K (under 25% vitality)",
+      "category": "super",
+      "damage": 5000,
+      "yourPerspective": {
+        "tacticalUse": "Enhanced Level 3 at low health",
+        "whenToUse": "Use for max damage when under 25% health. Completely invincible frames 1-16. Minimum damage 2500 (50%). Values do not change on counter or Punish Counter. Can only be canceled into from special moves.",
+        "situations": [
+          "reversal",
+          "combo"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -37,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "DEATH ON BLOCK. Minus 37."
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "recovery": 52,
+        "total": 66
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-16",
+        "superArt": 3,
+        "criticalArt": true,
+        "minimumDamage": "50%"
+      }
+    },
+    "terry_rising_fang": {
+      "id": "terry_rising_fang",
+      "displayName": "Rising Fang",
+      "shortName": "Rising Fang",
+      "notation": "236K (air)",
+      "input": "(During forward jump) \u2193\u2198\u2192 + K",
+      "category": "special",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Air dive kick special",
+        "whenToUse": "Use for air approach. Can only be performed during forward jump. Airborne 1 - until landing.",
+        "situations": [
+          "approach",
+          "mixup"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Punishable by 6-frame moves. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 12,
+        "recovery": 17,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "airborne": "1-landing"
+      }
+    },
+    "terry_throw_f": {
+      "id": "terry_throw_f",
+      "displayName": "Buster Throw (Forward Throw)",
+      "shortName": "F Throw",
+      "notation": "LP+LK",
+      "input": "LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Forward throw",
+        "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": [
+          "mixup",
+          "pressure"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "terry_throw_b": {
+      "id": "terry_throw_b",
+      "displayName": "Buster Throw (Back Throw)",
+      "shortName": "B Throw",
+      "notation": "4+LP+LK",
+      "input": "\u2190 + LP + LK (near opponent)",
+      "category": "throw",
+      "damage": 1200,
+      "yourPerspective": {
+        "tacticalUse": "Back throw for side switch",
+        "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
+        "situations": [
+          "mixup",
+          "pressure"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Throw. Tech with LP+LK. Switches sides."
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false,
+        "comboScaling": "Immediate scaling 20%"
+      }
+    },
+    "terry_forward_dash": {
+      "id": "terry_forward_dash",
+      "displayName": "Forward Dash",
+      "shortName": "66",
+      "notation": "66",
+      "input": "\u2192\u2192",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick forward movement",
+        "whenToUse": "Use to close distance quickly",
+        "situations": [
+          "movement",
+          "approach"
+        ],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 17
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "terry_back_dash": {
+      "id": "terry_back_dash",
+      "displayName": "Backward Dash",
+      "shortName": "44",
+      "notation": "44",
+      "input": "\u2190\u2190",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Quick backward movement with throw invincibility",
+        "whenToUse": "Use to escape pressure. Invincible to throws frames 1-21.",
+        "situations": [
+          "movement",
+          "escape"
+        ],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Movement option. Throw invincible frames 1-21."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "invincible": "throw 1-21"
+      }
+    },
+    "terry_drive_impact": {
+      "id": "terry_drive_impact",
+      "displayName": "Drive Impact (Power Blow)",
+      "shortName": "DI",
+      "notation": "HP+HK",
+      "input": "HP + HK",
+      "category": "common",
+      "damage": 800,
+      "yourPerspective": {
+        "tacticalUse": "Armored attack for pressure and punishes",
+        "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 hits frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), spinning knockdown (airborne), +3000 SA gauge.",
+        "situations": [
+          "pressure",
+          "punish",
+          "wallSplat"
+        ],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -3,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "superArmor": "2 hits, frames 1-27",
+        "comboScaling": "Starter scaling 20%"
+      }
+    },
+    "terry_drive_reversal_block": {
+      "id": "terry_drive_reversal_block",
+      "displayName": "Drive Reversal - Blocking (Power Crack)",
+      "shortName": "DR (Block)",
+      "notation": "6HP+HK",
+      "input": "\u2192 + HP + HK (while blocking or during Drive Parry)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal while blocking",
+        "whenToUse": "Use to escape pressure while blocking. Completely invincible frames 1-22. Recoverable damage. 5 frames recovery added on hit.",
+        "situations": [
+          "escape",
+          "reversal"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-22"
+      }
+    },
+    "terry_drive_reversal_wakeup": {
+      "id": "terry_drive_reversal_wakeup",
+      "displayName": "Drive Reversal - Recovering (Power Crack)",
+      "shortName": "DR (Wakeup)",
+      "notation": "6HP+HK",
+      "input": "\u2192 + HP + HK (during knockdown recovery)",
+      "category": "common",
+      "damage": 500,
+      "yourPerspective": {
+        "tacticalUse": "Reversal on wakeup",
+        "whenToUse": "Use to escape oki pressure. Completely invincible frames 1-20. Recoverable damage. 5 frames recovery added on hit.",
+        "situations": [
+          "escape",
+          "reversal"
+        ],
+        "range": "close",
+        "connectsTo": [],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": -6,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Safe on block. Causes knockdown."
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "invincible": "full 1-20"
+      }
+    },
+    "terry_drive_parry": {
+      "id": "terry_drive_parry",
+      "displayName": "Drive Parry",
+      "shortName": "Parry",
+      "notation": "MP+MK",
+      "input": "MP + MK",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Defensive parry to absorb attacks",
+        "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
+        "situations": [
+          "defense"
+        ],
+        "range": "none",
+        "connectsTo": [
+          "terry_parry_drive_rush"
+        ],
+        "executionDifficulty": "easy"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "medium",
+        "riskDescription": "Terry is in Punish Counter state. Throw or wait for recovery."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "terry_perfect_parry_strike": {
+      "id": "terry_perfect_parry_strike",
+      "displayName": "Perfect Parry (Strike)",
+      "shortName": "PP (Strike)",
+      "notation": "MP+MK",
+      "input": "MP + MK (+ direction for high/low)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry for big punish",
+        "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
+        "situations": [
+          "defense",
+          "punish"
+        ],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "terry_perfect_parry_projectile": {
+      "id": "terry_perfect_parry_projectile",
+      "displayName": "Perfect Parry (Projectile)",
+      "shortName": "PP (Proj)",
+      "notation": "MP+MK",
+      "input": "MP + MK (vs projectile)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Frame-perfect parry against projectiles",
+        "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
+        "situations": [
+          "defense"
+        ],
+        "range": "none",
+        "connectsTo": [],
+        "executionDifficulty": "hard"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "very_unsafe",
+        "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false,
+        "comboScaling": "Starter scaling 50%"
+      }
+    },
+    "terry_parry_drive_rush": {
+      "id": "terry_parry_drive_rush",
+      "displayName": "Parry Drive Rush",
+      "shortName": "PDR",
+      "notation": "MP+MK > 66",
+      "input": "(During Drive Parry) \u2192\u2192",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel parry into run",
+        "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
+        "situations": [
+          "offense",
+          "conversion"
+        ],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Terry is rushing in. Prepare to block or contest."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    },
+    "terry_cancel_drive_rush": {
+      "id": "terry_cancel_drive_rush",
+      "displayName": "Cancel Drive Rush",
+      "shortName": "CDR",
+      "notation": "66",
+      "input": "\u2192\u2192 (while connecting with special-cancelable move)",
+      "category": "common",
+      "damage": 0,
+      "yourPerspective": {
+        "tacticalUse": "Cancel normal into run for combos",
+        "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
+        "situations": [
+          "combo",
+          "pressure"
+        ],
+        "range": "movement",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "frameAdvantage": {
+          "onBlock": null,
+          "onHit": null
+        },
+        "riskLevel": "safe",
+        "riskDescription": "Terry is canceling into run. Prepare for follow-up."
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true,
+        "comboScaling": "Multiplier scaling 15%"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Generate Icons</title></head>
+<body>
+<h1>Right-click each canvas and "Save Image As" with the filename shown</h1>
+<script>
+const sizes = [72, 96, 128, 144, 152, 180, 192, 384, 512];
+sizes.forEach(size => {
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  
+  // Purple gradient background
+  const gradient = ctx.createLinearGradient(0, 0, size, size);
+  gradient.addColorStop(0, '#7c3aed');
+  gradient.addColorStop(1, '#4f46e5');
+  
+  // Rounded rect
+  const radius = size * 0.125;
+  ctx.beginPath();
+  ctx.moveTo(radius, 0);
+  ctx.lineTo(size - radius, 0);
+  ctx.quadraticCurveTo(size, 0, size, radius);
+  ctx.lineTo(size, size - radius);
+  ctx.quadraticCurveTo(size, size, size - radius, size);
+  ctx.lineTo(radius, size);
+  ctx.quadraticCurveTo(0, size, 0, size - radius);
+  ctx.lineTo(0, radius);
+  ctx.quadraticCurveTo(0, 0, radius, 0);
+  ctx.closePath();
+  ctx.fillStyle = gradient;
+  ctx.fill();
+  
+  // Text
+  ctx.fillStyle = 'white';
+  ctx.font = `bold ${size * 0.35}px Arial`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('SF6', size/2, size/2);
+  
+  const div = document.createElement('div');
+  div.style.margin = '20px';
+  div.innerHTML = `<p>icon-${size}.png</p>`;
+  div.appendChild(canvas);
+  document.body.appendChild(div);
+});
+</script>
+</body>
+</html>
