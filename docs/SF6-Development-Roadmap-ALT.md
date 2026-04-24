@@ -1,3 +1,7 @@
+> **⚠️ T1 cleanup note (2026-04-24):** This file was originally `sf6-docs/SF6-Development-Roadmap.md`. It diverged from `docs/SF6-Development-Roadmap.md` (the canonical, Figma-detailed version dated Dec 1, 2025) — neither was strictly "newer." This copy is preserved because it contains unique content the canonical lacks: Pressure String DB schema details, Bookmark export/import, community features, video integration, 28-char roster ambition, Resource Estimates, Decision Log. **Action for Thanh: review and either merge useful sections into `SF6-Development-Roadmap.md`, or delete this file.**
+
+---
+
 # SF6 Combo Trainer - Development Roadmap
 ## Strategic Plan & Feature Priorities
 
