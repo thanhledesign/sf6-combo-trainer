@@ -1,0 +1,1196 @@
+{
+  "character": {
+    "id": "lily",
+    "name": "Lily",
+    "displayName": "Lily",
+    "archetype": "Wind Stance Grappler",
+    "description": ""
+  },
+  "tactics": {},
+  "moves": {
+    "lily_standing_light_punch_l": {
+      "id": "lily_standing_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_standing_light_kick_l": {
+      "id": "lily_standing_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_standing_medium_punch_m": {
+      "id": "lily_standing_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_standing_medium_kick_m": {
+      "id": "lily_standing_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_standing_heavy_punch_h": {
+      "id": "lily_standing_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_standing_heavy_kick_h": {
+      "id": "lily_standing_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_light_punch_l": {
+      "id": "lily_crouching_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_light_kick_l": {
+      "id": "lily_crouching_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_medium_punch_m": {
+      "id": "lily_crouching_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_medium_kick_m": {
+      "id": "lily_crouching_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_heavy_punch_h": {
+      "id": "lily_crouching_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_crouching_heavy_kick_h": {
+      "id": "lily_crouching_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_light_punch": {
+      "id": "lily_jumping_light_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_light_kick": {
+      "id": "lily_jumping_light_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_medium_punch": {
+      "id": "lily_jumping_medium_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_medium_kick": {
+      "id": "lily_jumping_medium_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_heavy_punch": {
+      "id": "lily_jumping_heavy_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_jumping_heavy_kick": {
+      "id": "lily_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_ridge_thrust_h": {
+      "id": "lily_ridge_thrust_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_horn_breaker_h": {
+      "id": "lily_horn_breaker_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_great_spin": {
+      "id": "lily_great_spin",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_double_arrow": {
+      "id": "lily_double_arrow",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_desert_storm_1_h": {
+      "id": "lily_desert_storm_1_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_desert_storm_2": {
+      "id": "lily_desert_storm_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_desert_storm_3": {
+      "id": "lily_desert_storm_3",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_l_condor_wind_l": {
+      "id": "lily_l_condor_wind_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_m_condor_wind_m": {
+      "id": "lily_m_condor_wind_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_h_condor_wind_h": {
+      "id": "lily_h_condor_wind_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_condor_wind": {
+      "id": "lily_od_condor_wind",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_l_condor_spire_l": {
+      "id": "lily_l_condor_spire_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_m_condor_spire_m": {
+      "id": "lily_m_condor_spire_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_h_condor_spire_h": {
+      "id": "lily_h_condor_spire_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_l_condor_spire": {
+      "id": "lily_od_l_condor_spire",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_h_condor_spire": {
+      "id": "lily_od_h_condor_spire",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_l_condor_spire_l": {
+      "id": "lily_windclad_l_condor_spire_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_m_condor_spire_m": {
+      "id": "lily_windclad_m_condor_spire_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_h_condor_spire_h": {
+      "id": "lily_windclad_h_condor_spire_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_od_l_condor_spire": {
+      "id": "lily_windclad_od_l_condor_spire",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_od_h_condor_spire": {
+      "id": "lily_windclad_od_h_condor_spire",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_l_tomahawk_buster_l": {
+      "id": "lily_l_tomahawk_buster_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_m_tomahawk_buster_m": {
+      "id": "lily_m_tomahawk_buster_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_h_tomahawk_buster_h": {
+      "id": "lily_h_tomahawk_buster_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_tomahawk_buster": {
+      "id": "lily_od_tomahawk_buster",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_l_tomahawk_buster_l": {
+      "id": "lily_windclad_l_tomahawk_buster_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_m_tomahawk_buster_m": {
+      "id": "lily_windclad_m_tomahawk_buster_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_h_tomahawk_buster_h": {
+      "id": "lily_windclad_h_tomahawk_buster_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_od_tomahawk_buster": {
+      "id": "lily_windclad_od_tomahawk_buster",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_condor_dive": {
+      "id": "lily_condor_dive",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_condor_dive": {
+      "id": "lily_od_condor_dive",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_condor_dive": {
+      "id": "lily_windclad_condor_dive",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_od_condor_dive": {
+      "id": "lily_windclad_od_condor_dive",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_l_mexican_typhoon": {
+      "id": "lily_l_mexican_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_m_mexican_typhoon": {
+      "id": "lily_m_mexican_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_h_mexican_typhoon": {
+      "id": "lily_h_mexican_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_od_mexican_typhoon": {
+      "id": "lily_od_mexican_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_sa1_breezing_hawk": {
+      "id": "lily_sa1_breezing_hawk",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_sa2_thunderbird": {
+      "id": "lily_sa2_thunderbird",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_sa2_thunderbird": {
+      "id": "lily_windclad_sa2_thunderbird",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_sa2_soaring_thunderbird": {
+      "id": "lily_sa2_soaring_thunderbird",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_windclad_sa2_soaring_thunderbird": {
+      "id": "lily_windclad_sa2_soaring_thunderbird",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_sa3_raging_typhoon": {
+      "id": "lily_sa3_raging_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_ca_raging_typhoon": {
+      "id": "lily_ca_raging_typhoon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_canyon_throw": {
+      "id": "lily_canyon_throw",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_falling_cliff": {
+      "id": "lily_falling_cliff",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_forward_dash": {
+      "id": "lily_forward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_backward_dash": {
+      "id": "lily_backward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_drive_impact_earth_s_rage": {
+      "id": "lily_drive_impact_earth_s_rage",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_drive_reversal_block": {
+      "id": "lily_drive_reversal_block",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_drive_reversal_wakeup": {
+      "id": "lily_drive_reversal_wakeup",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_drive_parry": {
+      "id": "lily_drive_parry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_perfect_parry_strike": {
+      "id": "lily_perfect_parry_strike",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_perfect_parry_projectile": {
+      "id": "lily_perfect_parry_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_parry_drive_rush": {
+      "id": "lily_parry_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "lily_cancel_drive_rush": {
+      "id": "lily_cancel_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    }
+  }
+}

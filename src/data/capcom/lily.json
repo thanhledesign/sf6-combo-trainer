@@ -1,0 +1,1849 @@
+{
+  "id": "lily",
+  "scrapedAt": "2026-04-25T20:42:57.583Z",
+  "source": "https://www.streetfighter.com/6/character/lily",
+  "character": {
+    "bio": "A descendant of the Thunderfoot tribe, Lily speaks with the spirits of nature, trusting in their guidance as she travels the globe. Don't judge a book by its cover—her small stature conceals truly titanic power.",
+    "vitals": {
+      "height": "5'3",
+      "weight": "106 lbs",
+      "likes": "Cameras, birds of prey",
+      "hates": "Lies"
+    }
+  },
+  "moves": {
+    "lily_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 350,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 8,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "lily_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 8,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "lily_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 17,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "lily_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 15,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "lily_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 22,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Produces a crumple stun on Punish Counter if the opponent is standing on the groundForces a juggle state on Punish Counter when hitting a mid-air opponent"
+    },
+    "lily_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "activeRange": "14-17",
+        "recovery": 21,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state on Punish Counter"
+    },
+    "lily_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 8,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "lily_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "lily_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 18,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "lily_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 18,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "lily_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": 1501,
+        "activeRange": "10-1510-11,12-15",
+        "recovery": 22,
+        "total": 1533
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state on counter or Punish Counter when hitting a mid-air opponent"
+    },
+    "lily_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 11,
+        "active": 2001,
+        "activeRange": "11-2011-12, 19-20",
+        "recovery": 24,
+        "total": 2036
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "*low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown*Second attack is considered a high attack only when the first attack is blocked"
+    },
+    "lily_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 9,
+        "activeRange": "5-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "lily_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "activeRange": "6-11",
+        "recovery": 3,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "lily_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "lily_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "lily_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "lily_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 11,
+        "active": 6,
+        "activeRange": "11-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "lily_ridge_thrust_h": {
+      "displayName": "Ridge Thrust",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HP",
+      "notation": "3HP",
+      "shortName": "3HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 25,
+        "active": 3,
+        "activeRange": "25-27",
+        "recovery": 18,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Invincible to low attacks from frames 5 - 19"
+    },
+    "lily_horn_breaker_h": {
+      "displayName": "Horn Breaker",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HP",
+      "notation": "4HP",
+      "shortName": "4HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "activeRange": "14-17",
+        "recovery": 18,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "lily_great_spin": {
+      "displayName": "Great Spin",
+      "level": "(During a jump)   H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 11,
+        "activeRange": "9-19",
+        "recovery": 3,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "lily_double_arrow": {
+      "displayName": "Double Arrow",
+      "level": "(During a jump) MM",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) MP + MP",
+      "notation": "MPMP",
+      "shortName": "MPMP",
+      "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Forces a juggle state on a mid-air hit* Can only be canceled by Level 2 Super Art Thunderbird"
+    },
+    "lily_desert_storm_1_h": {
+      "displayName": "Desert Storm(1)",
+      "level": "H",
+      "category": "normal",
+      "damage": 900,
+      "frameData": {
+        "startup": 16,
+        "active": 2,
+        "activeRange": "16-17",
+        "recovery": 24,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "lily_desert_storm_2": {
+      "displayName": "Desert Storm(2)",
+      "level": "HH",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 2,
+        "activeRange": "20-21",
+        "recovery": 27,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "lily_desert_storm_3": {
+      "displayName": "Desert Storm(3)",
+      "level": "HHH",
+      "category": "normal",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 5,
+        "activeRange": "20-24",
+        "recovery": 39,
+        "total": 64
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "lily_l_condor_wind_l": {
+      "displayName": "L Condor Wind",
+      "level": "L",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 47,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Adds 1 stock of Windclad on frame 46 if the button is released in the fastest situation.Adds 1 stock on frames 71 and 91 if the button is held.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
+    },
+    "lily_m_condor_wind_m": {
+      "displayName": "M Condor Wind",
+      "level": "M",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 900,
+      "frameData": {
+        "startup": 23,
+        "active": 4,
+        "activeRange": "23-26",
+        "recovery": 25,
+        "total": 52
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 91.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added.Forces a juggle state when hitting a mid-air opponent"
+    },
+    "lily_h_condor_wind_h": {
+      "displayName": "H Condor Wind",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 25,
+        "active": 4,
+        "activeRange": "25-28",
+        "recovery": 25,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 91.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
+    },
+    "lily_od_condor_wind": {
+      "displayName": "OD Condor Wind",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 1200,
+      "frameData": {
+        "startup": 19,
+        "active": 4,
+        "activeRange": "19-22",
+        "recovery": 23,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 25.If the button is held, adds a Windclad stock on frames 38, or for the full 40 frames of the move.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
+    },
+    "lily_l_condor_spire_l": {
+      "displayName": "L Condor Spire",
+      "level": "L",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) ↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 17,
+        "active": 13,
+        "activeRange": "17-29",
+        "recovery": 16,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 8 - 30"
+    },
+    "lily_m_condor_spire_m": {
+      "displayName": "M Condor Spire",
+      "level": "M",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) ↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 900,
+      "frameData": {
+        "startup": 21,
+        "active": 13,
+        "activeRange": "21-33",
+        "recovery": 16,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 35"
+    },
+    "lily_h_condor_spire_h": {
+      "displayName": "H Condor Spire",
+      "level": "H",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) ↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 25,
+        "active": 13,
+        "activeRange": "25-37",
+        "recovery": 16,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 11 - 39"
+    },
+    "lily_od_l_condor_spire": {
+      "displayName": "OD L Condor Spire",
+      "level": "LMLH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 15,
+        "active": 13,
+        "activeRange": "15-27",
+        "recovery": 13,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Considered airborne from frames 7 - 29* Can only be canceled by Level 2 Super Art Thunderbird"
+    },
+    "lily_od_h_condor_spire": {
+      "displayName": "OD H Condor Spire",
+      "level": "MH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 15,
+        "active": 13,
+        "activeRange": "15-27",
+        "recovery": 13,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Considered airborne from frames 7 - 29* Can only be canceled by Level 2 Super Art Thunderbird"
+    },
+    "lily_windclad_l_condor_spire_l": {
+      "displayName": "[Windclad]L Condor Spire",
+      "level": "L",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 9,
+        "active": 371,
+        "activeRange": "9-379-13, 20-30, 31-37",
+        "recovery": 14,
+        "total": 394
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 39"
+    },
+    "lily_windclad_m_condor_spire_m": {
+      "displayName": "[Windclad]M Condor Spire",
+      "level": "M",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 13,
+        "active": 4101,
+        "activeRange": "13-4113-17, 24-34, 35-41",
+        "recovery": 14,
+        "total": 4128
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 13 - 43"
+    },
+    "lily_windclad_h_condor_spire_h": {
+      "displayName": "[Windclad]H Condor Spire",
+      "level": "H",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 17,
+        "active": 4501,
+        "activeRange": "17-4517-21, 28-38, 39-45",
+        "recovery": 14,
+        "total": 4532
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 17 - 47"
+    },
+    "lily_windclad_od_l_condor_spire": {
+      "displayName": "[Windclad]OD L Condor Spire",
+      "level": "LMLH",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 9,
+        "active": 321,
+        "activeRange": "9-329-22, 23-25, 26-32",
+        "recovery": 14,
+        "total": 344
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Considered airborne from frames 9 - 34Invincible to projectiles from frames 9 - 32* Can only be canceled by level 2 Super Art Sky Thunderbird"
+    },
+    "lily_windclad_od_h_condor_spire": {
+      "displayName": "[Windclad]OD H Condor Spire",
+      "level": "MH",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 9,
+        "active": 321,
+        "activeRange": "9-329-22, 23-25, 26-32",
+        "recovery": 14,
+        "total": 344
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Considered airborne from frames 9 - 34Invincible to projectiles from frames 9 - 32* Can only be canceled by level 2 Super Art Sky Thunderbird"
+    },
+    "lily_l_tomahawk_buster_l": {
+      "displayName": "L Tomahawk Buster",
+      "level": "L",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) →↓↘ + LP",
+      "notation": "623LP",
+      "shortName": "623LP",
+      "damage": 900,
+      "frameData": {
+        "startup": 6,
+        "active": 11,
+        "activeRange": "6-16",
+        "recovery": 2012,
+        "total": 2029
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 7 - 37"
+    },
+    "lily_m_tomahawk_buster_m": {
+      "displayName": "M Tomahawk Buster",
+      "level": "M",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) →↓↘ + MP",
+      "notation": "623MP",
+      "shortName": "623MP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 8,
+        "active": 12,
+        "activeRange": "8-19",
+        "recovery": 2412,
+        "total": 2432
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 12Considered airborne from frames 9 - 44"
+    },
+    "lily_h_tomahawk_buster_h": {
+      "displayName": "H Tomahawk Buster",
+      "level": "H",
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) →↓↘ + HP",
+      "notation": "623HP",
+      "shortName": "623HP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 10,
+        "active": 14,
+        "activeRange": "10-23",
+        "recovery": 2512,
+        "total": 2536
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1- 14Considered airborne from frames 11 - 49"
+    },
+    "lily_od_tomahawk_buster": {
+      "displayName": "OD Tomahawk Buster",
+      "level": null,
+      "category": "special",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) →↓↘ + P",
+      "notation": "623P",
+      "shortName": "623P",
+      "damage": 1400,
+      "frameData": {
+        "startup": 6,
+        "active": 12,
+        "activeRange": "6-17",
+        "recovery": 2715,
+        "total": 2733
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 11 - 14Invincible to throws from frames 1 - 10Considered airborne from frames 7 - 45Can only transition into Overdrive Condor Dive"
+    },
+    "lily_windclad_l_tomahawk_buster_l": {
+      "displayName": "[Windclad]L Tomahawk Buster",
+      "level": "L",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 4,
+        "active": 161,
+        "activeRange": "4-164-7, 8-16",
+        "recovery": 2012,
+        "total": 2177
+      },
+      "frameAdvantage": {
+        "onBlock": -25,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 7 - 37"
+    },
+    "lily_windclad_m_tomahawk_buster_m": {
+      "displayName": "[Windclad]M Tomahawk Buster",
+      "level": "M",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "activeRange": "6-9 10-19",
+        "recovery": 2412,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -30,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 12Considered airborne from frames 9 - 44"
+    },
+    "lily_windclad_h_tomahawk_buster_h": {
+      "displayName": "[Windclad]H Tomahawk Buster",
+      "level": "H",
+      "category": "special",
+      "damage": 1400,
+      "frameData": {
+        "startup": 8,
+        "active": 231,
+        "activeRange": "8-238-11, 12-23",
+        "recovery": 2512,
+        "total": 2751
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 11 - 49"
+    },
+    "lily_windclad_od_tomahawk_buster": {
+      "displayName": "[Windclad]OD Tomahawk Buster",
+      "level": null,
+      "category": "special",
+      "damage": 1600,
+      "frameData": {
+        "startup": 4,
+        "active": 171,
+        "activeRange": "4-174-5, 6-7, 8-17",
+        "recovery": 2715,
+        "total": 2890
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Invincible to throws from frames 1 - 10Considered airborne from frames 7 - 45* Can only transition into Overdrive Condor Dive"
+    },
+    "lily_condor_dive": {
+      "displayName": "Condor Dive",
+      "level": "(During a neutral or forward jump)",
+      "category": "special",
+      "context": "(During a neutral jump or forward jump) (Effect changes when Windclad)",
+      "input": "(During a neutral jump or forward jump) (Effect changes when Windclad) P + P",
+      "notation": "PP",
+      "shortName": "PP",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "12-until landing",
+        "recovery": 24,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "lily_od_condor_dive": {
+      "displayName": "OD Condor Dive",
+      "level": "(During a neutral or forward jump)(During OD Tomahawk Buster)",
+      "category": "special",
+      "context": "(During a neutral jump, forward jump, or OD Tomahawk Buster) (Effect changes when Windclad)",
+      "input": "(During a neutral jump, forward jump, or OD Tomahawk Buster) (Effect changes when Windclad) PPP",
+      "notation": "PPP",
+      "shortName": "PPP",
+      "damage": 1400,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "12-until landing",
+        "recovery": 24,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties* If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%"
+    },
+    "lily_windclad_condor_dive": {
+      "displayName": "[Windclad]Condor Dive",
+      "level": "(During a neutral or forward jump)",
+      "category": "special",
+      "context": "(During a neutral or forward jump)",
+      "damage": 1000,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "12-until landing",
+        "recovery": 24,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack propertiesWhen the first attack hits, the 2nd hit will happen on the next frameCan be followed up with an additional Condor Dive by using a Windclad Stock on hit or block* If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%"
+    },
+    "lily_windclad_od_condor_dive": {
+      "displayName": "[Windclad]OD Condor Dive",
+      "level": "(During a neutral or forward jump)(During OD Tomahawk Buster)",
+      "category": "special",
+      "context": "(During a neutral or forward jump)",
+      "damage": 1600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "12-until landing",
+        "recovery": 24,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack propertiesWhen the first attack hits, the 2nd hit will happen on the next frameCan be followed up with an additional Condor Dive by using a Windclad Stock on hit or block* If transitioned from Overdrive Tomahawk Buster, combo scaling is 35%"
+    },
+    "lily_l_mexican_typhoon": {
+      "displayName": "L Mexican Typhoon",
+      "level": "(When near opponent)  L",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?LP",
+      "notation": "?key-circle.png?LP",
+      "shortName": "?key-circle.png?LP",
+      "damage": 2000,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 53,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Damage set to 2300 on Punish Counter"
+    },
+    "lily_m_mexican_typhoon": {
+      "displayName": "M Mexican Typhoon",
+      "level": "(When near opponent)  M",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?MP",
+      "notation": "?key-circle.png?MP",
+      "shortName": "?key-circle.png?MP",
+      "damage": 2400,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 53,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Damage set to 2760 on Punish Counter"
+    },
+    "lily_h_mexican_typhoon": {
+      "displayName": "H Mexican Typhoon",
+      "level": "(When near opponent)  H",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?HP",
+      "notation": "?key-circle.png?HP",
+      "shortName": "?key-circle.png?HP",
+      "damage": 2800,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 53,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3220 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3220 individual damage when the attack lands as a Punish Counter*Does 2576 individual damage using simplified inputs"
+    },
+    "lily_od_mexican_typhoon": {
+      "displayName": "OD Mexican Typhoon",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?P",
+      "notation": "?key-circle.png?P",
+      "shortName": "?key-circle.png?P",
+      "damage": 2900,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 53,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3350 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3350 individual damage when the attack lands as a Punish Counter*Does 2680 individual damage using simplified inputs"
+    },
+    "lily_sa1_breezing_hawk": {
+      "displayName": "SA1 Breezing Hawk",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 2200,
+      "frameData": {
+        "startup": 10,
+        "active": 4701,
+        "activeRange": "10-4710-11,17-18,26-27,36-37,46-47",
+        "recovery": 54,
+        "total": 4765
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws from frames 1 - 11Transitions to the full animation on the 2nd hitValues do not change on counter or Punish CounterMinimum guaranteed damage is set to 30%"
+    },
+    "lily_sa2_thunderbird": {
+      "displayName": "SA2 Thunderbird",
+      "level": null,
+      "category": "super",
+      "context": "(Effect changes when Windclad)",
+      "input": "(Effect changes when Windclad) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2600,
+      "frameData": {
+        "startup": 9,
+        "active": 411,
+        "activeRange": "9-419-30,40-41",
+        "recovery": 3924,
+        "total": 4344
+      },
+      "frameAdvantage": {
+        "onBlock": -60,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 12Invincible to projectiles from frames 13 - 41Considered airborne from frames 13 - 80Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 40%"
+    },
+    "lily_windclad_sa2_thunderbird": {
+      "displayName": "[Windclad]SA2 Thunderbird",
+      "level": null,
+      "category": "super",
+      "damage": 2900,
+      "frameData": {
+        "startup": 9,
+        "active": 411,
+        "activeRange": "9-419-33,40-41",
+        "recovery": 3924,
+        "total": 4344
+      },
+      "frameAdvantage": {
+        "onBlock": -59,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 12Invincible to projectiles from frames 13 - 41Considered airborne from frames 13 - 80Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 40%"
+    },
+    "lily_sa2_soaring_thunderbird": {
+      "displayName": "SA2 Soaring Thunderbird",
+      "level": "(During a jump)",
+      "category": "super",
+      "context": "(During a jump) (Effect changes when Windclad)",
+      "input": "(During a jump) (Effect changes when Windclad) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2600,
+      "frameData": {
+        "startup": 9,
+        "active": 411,
+        "activeRange": "9-419-30,40-41",
+        "recovery": 25,
+        "total": 445
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 12Invincible to projectiles from frames 13 - 41Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 40%"
+    },
+    "lily_windclad_sa2_soaring_thunderbird": {
+      "displayName": "[Windclad]SA2 Soaring Thunderbird",
+      "level": "(During a jump)",
+      "category": "super",
+      "context": "(During a jump)",
+      "damage": 2900,
+      "frameData": {
+        "startup": 9,
+        "active": 411,
+        "activeRange": "9-419-33,40-41",
+        "recovery": 25,
+        "total": 445
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 12Invincible to projectiles from frames 13 - 41Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 40%"
+    },
+    "lily_sa3_raging_typhoon": {
+      "displayName": "SA3 Raging Typhoon",
+      "level": "(When near opponent)",
+      "category": "super",
+      "context": "(When near opponent) (More powerful when vitality is at 25% or below)",
+      "input": "(When near opponent) (More powerful when vitality is at 25% or below) ↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 106,
+        "total": 115
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 8Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 50%*Adds immediate scaling of 20% when canceling from a special move"
+    },
+    "lily_ca_raging_typhoon": {
+      "displayName": "CA Raging Typhoon",
+      "level": "(When near opponent)(when under 25% vitality)",
+      "category": "super",
+      "context": "(When near opponent) (More powerful when vitality is at 25% or below)",
+      "input": "(When near opponent) (More powerful when vitality is at 25% or below) ↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 5000,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 106,
+        "total": 115
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Fully invincible from frames 1 - 8Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 50%*Adds immediate scaling of 20% when canceling from a special move"
+    },
+    "lily_canyon_throw": {
+      "displayName": "Canyon Throw",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "lily_falling_cliff": {
+      "displayName": "Falling Cliff",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "lily_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 21,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "lily_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 24,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "lily_drive_impact_earth_s_rage": {
+      "displayName": "Drive Impact: Earth's Rage",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "lily_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Cross Hammer",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "lily_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Cross Hammer",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "lily_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "lily_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "lily_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "lily_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "lily_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 0,
+        "active": 0,
+        "activeRange": "0",
+        "recovery": 0,
+        "total": 0
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

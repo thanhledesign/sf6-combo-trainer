@@ -1,0 +1,1388 @@
+{
+  "character": {
+    "id": "juri",
+    "name": "Juri",
+    "displayName": "Juri",
+    "archetype": "Stance Mix-up",
+    "description": ""
+  },
+  "tactics": {},
+  "moves": {
+    "juri_standing_light_punch_l": {
+      "id": "juri_standing_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_light_punch_l": {
+      "id": "juri_chain_combo_standing_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_standing_light_kick_l": {
+      "id": "juri_standing_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_light_kick_l": {
+      "id": "juri_chain_combo_standing_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_standing_medium_punch_m": {
+      "id": "juri_standing_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_medium_punch_m": {
+      "id": "juri_chain_combo_standing_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_standing_medium_kick_m": {
+      "id": "juri_standing_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_medium_kick_m": {
+      "id": "juri_chain_combo_standing_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_standing_heavy_punch_h": {
+      "id": "juri_standing_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_heavy_punch_h": {
+      "id": "juri_chain_combo_standing_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_standing_heavy_kick_h": {
+      "id": "juri_standing_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_standing_heavy_kick_h": {
+      "id": "juri_chain_combo_standing_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_light_punch_l": {
+      "id": "juri_crouching_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_light_punch_l": {
+      "id": "juri_chain_combo_crouching_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_light_kick_l": {
+      "id": "juri_crouching_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_light_kick_l": {
+      "id": "juri_chain_combo_crouching_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_medium_punch_m": {
+      "id": "juri_crouching_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_medium_punch_m": {
+      "id": "juri_chain_combo_crouching_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_medium_kick_m": {
+      "id": "juri_crouching_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_medium_kick_m": {
+      "id": "juri_chain_combo_crouching_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_heavy_punch_h": {
+      "id": "juri_crouching_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_heavy_punch_h": {
+      "id": "juri_chain_combo_crouching_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_crouching_heavy_kick_h": {
+      "id": "juri_crouching_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_crouching_heavy_kick_h": {
+      "id": "juri_chain_combo_crouching_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_light_punch": {
+      "id": "juri_jumping_light_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_jumping_light_punch": {
+      "id": "juri_chain_combo_jumping_light_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_light_kick": {
+      "id": "juri_jumping_light_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_jumping_light_kick": {
+      "id": "juri_chain_combo_jumping_light_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_medium_punch": {
+      "id": "juri_jumping_medium_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_jumping_medium_punch": {
+      "id": "juri_chain_combo_jumping_medium_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_medium_kick": {
+      "id": "juri_jumping_medium_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_jumping_medium_kick": {
+      "id": "juri_chain_combo_jumping_medium_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_heavy_punch": {
+      "id": "juri_jumping_heavy_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_neutral_jumping_heavy_kick": {
+      "id": "juri_chain_combo_neutral_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_jumping_heavy_kick": {
+      "id": "juri_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_jumping_heavy_kick": {
+      "id": "juri_chain_combo_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_neutral_jumping_heavy_kick": {
+      "id": "juri_neutral_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_kyosesho_m": {
+      "id": "juri_kyosesho_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_kyosesho_m": {
+      "id": "juri_chain_combo_kyosesho_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_senkai_kick_m": {
+      "id": "juri_senkai_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_senkai_kick_m": {
+      "id": "juri_chain_combo_senkai_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_renko_kicks_h": {
+      "id": "juri_renko_kicks_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_renko_kicks_h": {
+      "id": "juri_chain_combo_renko_kicks_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_korenzan_h": {
+      "id": "juri_korenzan_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_chain_combo_korenzan_h": {
+      "id": "juri_chain_combo_korenzan_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_death_crest_2": {
+      "id": "juri_death_crest_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_death_crest_3": {
+      "id": "juri_death_crest_3",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_l_fuhajin_l": {
+      "id": "juri_l_fuhajin_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_m_fuhajin_m": {
+      "id": "juri_m_fuhajin_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_h_fuhajin_h": {
+      "id": "juri_h_fuhajin_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_fuhajin": {
+      "id": "juri_od_fuhajin",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_saihasho_l": {
+      "id": "juri_saihasho_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_boosted_saihasho_l": {
+      "id": "juri_boosted_saihasho_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_saihasho": {
+      "id": "juri_od_saihasho",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_ankensatsu_m": {
+      "id": "juri_ankensatsu_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_boosted_ankensatsu_m": {
+      "id": "juri_boosted_ankensatsu_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_ankensatsu": {
+      "id": "juri_od_ankensatsu",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_go_ohsatsu_h": {
+      "id": "juri_go_ohsatsu_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_boosted_go_ohsatsu_h": {
+      "id": "juri_boosted_go_ohsatsu_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_go_ohsatsu": {
+      "id": "juri_od_go_ohsatsu",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_l_tensenrin_l": {
+      "id": "juri_l_tensenrin_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_m_tensenrin_m": {
+      "id": "juri_m_tensenrin_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_h_tensenrin_h": {
+      "id": "juri_h_tensenrin_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_tensenrin": {
+      "id": "juri_od_tensenrin",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_shiku_sen": {
+      "id": "juri_shiku_sen",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_shiku_sen": {
+      "id": "juri_od_shiku_sen",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_shiren_sen": {
+      "id": "juri_shiren_sen",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_od_shiren_sen": {
+      "id": "juri_od_shiren_sen",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_sa1_sakkai_fuhazan": {
+      "id": "juri_sa1_sakkai_fuhazan",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_sa2_feng_shui_engine": {
+      "id": "juri_sa2_feng_shui_engine",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_sa2_feng_shui_engine_rush": {
+      "id": "juri_sa2_feng_shui_engine_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_sa3_kaisen_dankai_raku": {
+      "id": "juri_sa3_kaisen_dankai_raku",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_ca_kaisen_dankai_raku": {
+      "id": "juri_ca_kaisen_dankai_raku",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_spider_fang_throw": {
+      "id": "juri_spider_fang_throw",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_shadow_kick_throw": {
+      "id": "juri_shadow_kick_throw",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_zanka_sen": {
+      "id": "juri_zanka_sen",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_forward_dash": {
+      "id": "juri_forward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_backward_dash": {
+      "id": "juri_backward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_drive_impact_sekkan_kick": {
+      "id": "juri_drive_impact_sekkan_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_drive_reversal_block": {
+      "id": "juri_drive_reversal_block",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_drive_reversal_wakeup": {
+      "id": "juri_drive_reversal_wakeup",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_drive_parry": {
+      "id": "juri_drive_parry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_perfect_parry_strike": {
+      "id": "juri_perfect_parry_strike",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_perfect_parry_projectile": {
+      "id": "juri_perfect_parry_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_parry_drive_rush": {
+      "id": "juri_parry_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "juri_cancel_drive_rush": {
+      "id": "juri_cancel_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    }
+  }
+}

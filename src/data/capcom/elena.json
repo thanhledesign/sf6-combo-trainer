@@ -1,0 +1,1960 @@
+{
+  "id": "elena",
+  "scrapedAt": "2026-04-25T20:44:11.786Z",
+  "source": "https://www.streetfighter.com/6/character/elena",
+  "character": {
+    "bio": "A cheerful girl raised in the arms of the savannah, and a member of a clan of proud warriors. She has a talent for healing, and seeks to become a veterinarian.",
+    "vitals": {
+      "height": "6'1",
+      "weight": "129 lbs",
+      "likes": "Animals, music, dancing",
+      "hates": "Destruction of nature, poaching"
+    }
+  },
+  "moves": {
+    "elena_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 4,
+        "activeRange": "5-8",
+        "recovery": 8,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "elena_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 11,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "elena_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 15,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Forces the opponent into a standing position on Punish Counter"
+    },
+    "elena_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 13,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "elena_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 20,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces the opponent into a standing positionForces a juggle state on Punish Counter"
+    },
+    "elena_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 19,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Feet are invincible between frames 9 - 17Forces a juggle state on Punish Counter, or when it hits as a mid-air Counter or Punish CounterJuggle state time is extended when attack hits a mid-air opponent as a Punish Counter"
+    },
+    "elena_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 8,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "elena_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 8,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "elena_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 20,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "elena_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 18,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "2 frames of recovery subtracted on hit"
+    },
+    "elena_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 181,
+        "activeRange": "9-189-11, 16-18",
+        "recovery": 20,
+        "total": 210
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "elena_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 24,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "elena_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 6,
+        "activeRange": "5-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "elena_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 6,
+        "activeRange": "5-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "elena_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "elena_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "activeRange": "7-11",
+        "recovery": 3,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "elena_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "elena_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 2001,
+        "activeRange": "10-2010-11, 13-20",
+        "recovery": 3,
+        "total": 2014
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "*midhigh",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent with the 1st attackForces a slam knockdown when hitting a mid-air opponent with the 2nd attack*Second attack becomes an overhead only if the first attack whiffs"
+    },
+    "elena_slide_h": {
+      "displayName": "Slide",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HK",
+      "notation": "3HK",
+      "shortName": "3HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 14,
+        "active": 9,
+        "activeRange": "14-22",
+        "recovery": 22,
+        "total": 45
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "4 frames of recovery added on armor hit or if the attack misses"
+    },
+    "elena_round_arch_h": {
+      "displayName": "Round Arch",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HK",
+      "notation": "4HK",
+      "shortName": "4HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "activeRange": "14-17",
+        "recovery": 17,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Feet are invincible between frames 9 - 17Forces a juggle state when the attack lands as a counter or Punish Counter2 frames of recovery added when the attack misses"
+    },
+    "elena_starling_beak_2": {
+      "displayName": "Starling Beak(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 17,
+        "active": 5,
+        "activeRange": "17-21",
+        "recovery": 20,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": -4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "elena_handstand_whip_1_m": {
+      "displayName": "Handstand Whip(1)",
+      "level": "M",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 19,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "elena_handstand_whip_2": {
+      "displayName": "Handstand Whip(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "activeRange": "14-16",
+        "recovery": 26,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "elena_hind_kick_2": {
+      "displayName": "Hind Kick(2)",
+      "level": "MH",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 24,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "elena_fluttering_lark_2": {
+      "displayName": "Fluttering Lark(2)",
+      "level": "MH",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 15,
+        "active": 15,
+        "activeRange": "15",
+        "recovery": 24,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "4 frames of recovery subtracted on hit"
+    },
+    "elena_turning_tail_2": {
+      "displayName": "Turning Tail(2)",
+      "level": "HH",
+      "category": "normal",
+      "damage": 800,
+      "frameData": {
+        "startup": 17,
+        "active": 2701,
+        "activeRange": "17-2717-20, 24-27",
+        "recovery": 17,
+        "total": 2735
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "elena_trunk_slap_1_h": {
+      "displayName": "Trunk Slap(1)",
+      "level": "H",
+      "category": "normal",
+      "damage": 900,
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 20,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "elena_trunk_slap_2": {
+      "displayName": "Trunk Slap(2)",
+      "level": "HH",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 26,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "elena_trunk_slap_3": {
+      "displayName": "Trunk Slap(3)",
+      "level": "HHH",
+      "category": "normal",
+      "damage": 750,
+      "frameData": {
+        "startup": 7,
+        "active": 171,
+        "activeRange": "7-177-9, 15-17",
+        "recovery": 27,
+        "total": 205
+      },
+      "frameAdvantage": {
+        "onBlock": -16,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "elena_soaring_raid": {
+      "displayName": "Soaring Raid",
+      "level": "(During a jump) LM",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) LP + MK",
+      "notation": "LP+MK",
+      "shortName": "LP+MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 6,
+        "active": 5,
+        "activeRange": "6-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "elena_raptor_range": {
+      "displayName": "Raptor Range",
+      "level": "(During a jump) MH",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) MP + HP",
+      "notation": "MPHP",
+      "shortName": "MPHP",
+      "damage": 700,
+      "frameData": {
+        "startup": 12,
+        "active": 5,
+        "activeRange": "12-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "elena_l_rhino_horn_l": {
+      "displayName": "L Rhino Horn",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 13,
+        "active": 3301,
+        "activeRange": "13-3313-17, 28-33",
+        "recovery": 19,
+        "total": 3333
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 13 - 363 frames of recovery subtracted on hit"
+    },
+    "elena_m_rhino_horn_m": {
+      "displayName": "M Rhino Horn",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 17,
+        "active": 3801,
+        "activeRange": "17-3817-21, 33-38",
+        "recovery": 20,
+        "total": 3838
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 17 - 414 frames of recovery subtracted on hit"
+    },
+    "elena_h_rhino_horn_h": {
+      "displayName": "H Rhino Horn",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 21,
+        "active": 4201,
+        "activeRange": "21-4221-25, 37-42",
+        "recovery": 20,
+        "total": 4242
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 21 - 454 frames of recovery subtracted on hit"
+    },
+    "elena_od_rhino_horn": {
+      "displayName": "OD Rhino Horn",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 1200,
+      "frameData": {
+        "startup": 11,
+        "active": 3501,
+        "activeRange": "11-3511-17, 25-35",
+        "recovery": 19,
+        "total": 3531
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Considered airborne from frames 11 - 386 frames of recovery subtracted on hit"
+    },
+    "elena_l_scratch_wheel_l": {
+      "displayName": "L Scratch Wheel",
+      "level": "L",
+      "category": "special",
+      "input": "→↓↘ + LK",
+      "notation": "623LK",
+      "shortName": "623LK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "activeRange": "5-9",
+        "recovery": 2514,
+        "total": 2524
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Considered airborne from frames 7 - 37"
+    },
+    "elena_m_scratch_wheel_m": {
+      "displayName": "M Scratch Wheel",
+      "level": "M",
+      "category": "special",
+      "input": "→↓↘ + MK",
+      "notation": "623MK",
+      "shortName": "623MK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "activeRange": "6-11",
+        "recovery": 3014,
+        "total": 3026
+      },
+      "frameAdvantage": {
+        "onBlock": -30,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 7 - 42"
+    },
+    "elena_h_scratch_wheel_h": {
+      "displayName": "H Scratch Wheel",
+      "level": "H",
+      "category": "special",
+      "input": "→↓↘ + HK",
+      "notation": "623HK",
+      "shortName": "623HK",
+      "damage": 1400,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3414,
+        "total": 3427
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11Considered airborne from frames 7 - 46"
+    },
+    "elena_od_scratch_wheel": {
+      "displayName": "OD Scratch Wheel",
+      "level": null,
+      "category": "special",
+      "input": "→↓↘ + K",
+      "notation": "623K",
+      "shortName": "623K",
+      "damage": 1600,
+      "frameData": {
+        "startup": 6,
+        "active": 281,
+        "activeRange": "6-286-11, 24-25, 27-28",
+        "recovery": 2519,
+        "total": 2806
+      },
+      "frameAdvantage": {
+        "onBlock": -46,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 8Considered airborne from frames 7 - 52"
+    },
+    "elena_l_lynx_song_l": {
+      "displayName": "L Lynx Song",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 28,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 11 - 21Can transition to Leopard Snap from frames 13 - 21Can transition to Lynx Whirl, Harvest Circle and Mallet Smash from frames 16 - 21"
+    },
+    "elena_m_lynx_song_m": {
+      "displayName": "M Lynx Song",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 36,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 11 - 22Can transition to Leopard Snap from frames 13 - 22Can transition to Lynx Whirl, Harvest Circle and Mallet Smash from frames 18 - 22"
+    },
+    "elena_h_lynx_song_h": {
+      "displayName": "H Lynx Song",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 11 - 24Can transition to Leopard Snap from frames 16 - 24Can transition to Lynx Whirl, Harvest Circle and Mallet Smash from frames 19 - 24"
+    },
+    "elena_od_lynx_song": {
+      "displayName": "OD Lynx Song",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 34,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 8 - 26Can transition to Leopard Snap from frames 15 - 24Can transition to Lynx Whirl, Harvest Circle and Mallet Smash from frames 18 - 24"
+    },
+    "elena_leopard_snap": {
+      "displayName": "Leopard Snap",
+      "level": "(During Lynx Song)  L",
+      "category": "special",
+      "context": "(During OD Lynx Song)",
+      "input": "(During OD Lynx Song) → + LK",
+      "notation": "6LK",
+      "shortName": "6LK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 22,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "elena_boosted_leopard_snap": {
+      "displayName": "[Boosted]Leopard Snap",
+      "level": "(During OD Lynx Song Lynx Whirl)  L",
+      "category": "special",
+      "context": "(During OD Lynx Song Lynx Whirl)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 10,
+        "active": 2201,
+        "activeRange": "10-2210-14, 20-22",
+        "recovery": 15,
+        "total": 2226
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "1 frame of recovery added when the attack misses"
+    },
+    "elena_harvest_circle": {
+      "displayName": "Harvest Circle",
+      "level": "(During Lynx Song)  M",
+      "category": "special",
+      "context": "(During OD Lynx Song)",
+      "input": "(During OD Lynx Song) → + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 900,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 23,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 10"
+    },
+    "elena_boosted_harvest_circle": {
+      "displayName": "[Boosted]Harvest Circle",
+      "level": "(During OD Lynx Song Lynx Whirl)  M",
+      "category": "special",
+      "context": "(During OD Lynx Song Lynx Whirl)",
+      "damage": 1300,
+      "frameData": {
+        "startup": 8,
+        "active": 191,
+        "activeRange": "8-198-10, 17-19",
+        "recovery": 16,
+        "total": 215
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 102 frames of recovery subtracted on hit"
+    },
+    "elena_mallet_smash": {
+      "displayName": "Mallet Smash",
+      "level": "(During Lynx Song)  H",
+      "category": "special",
+      "context": "(During OD Lynx Song)",
+      "input": "(During OD Lynx Song) → + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 19,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 14 - 23"
+    },
+    "elena_boosted_mallet_smash": {
+      "displayName": "[Boosted]Mallet Smash",
+      "level": "(During OD Lynx Song Lynx Whirl)  H",
+      "category": "special",
+      "context": "(During OD Lynx Song Lynx Whirl)",
+      "damage": 1000,
+      "frameData": {
+        "startup": 22,
+        "active": 2701,
+        "activeRange": "22-2722-23, 26-27",
+        "recovery": 16,
+        "total": 2739
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "*midhigh",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 22*Second attack becomes an overhead only if the first attack whiffs"
+    },
+    "elena_l_lynx_whirl": {
+      "displayName": "L Lynx Whirl",
+      "level": "(During Lynx Song Spinning Scythe)  L",
+      "category": "special",
+      "context": "(During OD Spinning Scythe)",
+      "input": "(During OD Spinning Scythe) → + LP",
+      "notation": "6LP",
+      "shortName": "6LP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 28,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 21Can transition to Leopard Snap from frames 15 - 21Can transition to Harvest Circle and Mallet Smash from frames 18 - 21Can transition to Lynx Whirl from frames 20 - 21"
+    },
+    "elena_m_lynx_whirl": {
+      "displayName": "M Lynx Whirl",
+      "level": "(During Lynx Song Spinning Scythe)  M",
+      "category": "special",
+      "context": "(During OD Spinning Scythe)",
+      "input": "(During OD Spinning Scythe) → + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 36,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 26Can transition to Leopard Snap from frames 15 - 21Can transition to Harvest Circle and Mallet Smash from frames 18 - 21Can transition to Lynx Whirl from frames 20 - 21"
+    },
+    "elena_h_lynx_whirl": {
+      "displayName": "H Lynx Whirl",
+      "level": "(During Lynx Song Spinning Scythe)  H",
+      "category": "special",
+      "context": "(During OD Spinning Scythe)",
+      "input": "(During OD Spinning Scythe) → + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 26Can transition to Leopard Snap from frames 15 - 21Can transition to Harvest Circle and Mallet Smash from frames 18 - 21Can transition to Lynx Whirl from frames 20 - 21"
+    },
+    "elena_od_lynx_whirl": {
+      "displayName": "OD Lynx Whirl",
+      "level": "(During OD Lynx Song)",
+      "category": "special",
+      "context": "(During OD Spinning Scythe)",
+      "input": "(During OD Spinning Scythe) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 34,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Projectile invincibility from frames 1 - 26Can transition to Leopard Snap from frames 15 - 24Can transition to Harvest Circle and Mallet Smash from frames 18 - 24Can transition to Lynx Whirl from frames 20 - 24"
+    },
+    "elena_l_spinning_scythe_l": {
+      "displayName": "L Spinning Scythe",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 900,
+      "frameData": {
+        "startup": 15,
+        "active": 6701,
+        "activeRange": "15-6715-18, 33-35, 60-61, 65-67",
+        "recovery": 24,
+        "total": 6740
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Lynx Whirl on hit from frames 38 - 40Can transition to Lynx Whirl on block on frame 40"
+    },
+    "elena_m_spinning_scythe_m": {
+      "displayName": "M Spinning Scythe",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 20,
+        "active": 7601,
+        "activeRange": "20-7620-23, 43-45, 68-72, 75-76",
+        "recovery": 27,
+        "total": 7648
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Lynx Whirl on hit from frames 48 - 50Can transition to Lynx Whirl on block on frame 50"
+    },
+    "elena_h_spinning_scythe_h": {
+      "displayName": "H Spinning Scythe",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 24,
+        "active": 7801,
+        "activeRange": "24-7824-27, 45-47, 70-74, 77-78",
+        "recovery": 23,
+        "total": 7848
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Lynx Whirl on hit from frames 50 - 52Can transition to Lynx Whirl on block on frame 52"
+    },
+    "elena_od_spinning_scythe": {
+      "displayName": "OD Spinning Scythe",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 6801,
+        "activeRange": "18-6818-21, 34-36, 61-62, 66-68",
+        "recovery": 22,
+        "total": 6841
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to Lynx Whirl on hit from frames 37 - 39Can transition to Lynx Whirl on block on frame 39"
+    },
+    "elena_l_moon_glider_1_l": {
+      "displayName": "L Moon Glider(1)",
+      "level": "L",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 20,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 21 - 23Forces the opponent into a standing position"
+    },
+    "elena_m_moon_glider_1_m": {
+      "displayName": "M Moon Glider(1)",
+      "level": "M",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 24,
+        "active": 3,
+        "activeRange": "24-26",
+        "recovery": 19,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 25 - 27Forces the opponent into a standing position"
+    },
+    "elena_h_moon_glider_1_h": {
+      "displayName": "H Moon Glider(1)",
+      "level": "H",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 28,
+        "active": 3,
+        "activeRange": "28-30",
+        "recovery": 20,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 29 - 31Forces the opponent into a standing position"
+    },
+    "elena_moon_glider_2": {
+      "displayName": "Moon Glider(2)",
+      "level": null,
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 16,
+        "active": 2501,
+        "activeRange": "16-2516-17, 22-25",
+        "recovery": 25,
+        "total": 2542
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "elena_od_moon_glider_1": {
+      "displayName": "OD Moon Glider(1)",
+      "level": null,
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 23,
+        "active": 3,
+        "activeRange": "23-25",
+        "recovery": 20,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to branching attacks from frames 24 - 26Forces the opponent into a standing position"
+    },
+    "elena_od_moon_glider_2": {
+      "displayName": "OD Moon Glider(2)",
+      "level": null,
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 16,
+        "active": 4701,
+        "activeRange": "16-4716-17, 22-25, 45-47",
+        "recovery": 35,
+        "total": 4752
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "elena_sa1_meteor_volley": {
+      "displayName": "SA1 Meteor Volley",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 1800,
+      "frameData": {
+        "startup": 7,
+        "active": 391,
+        "activeRange": "7-397-11, 18-21, 38-39",
+        "recovery": 55,
+        "total": 453
+      },
+      "frameAdvantage": {
+        "onBlock": -68,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 23Considered airborne from frames 9 - 65Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%8 frames of recovery subtracted on hit"
+    },
+    "elena_sa2_revival_dance": {
+      "displayName": "SA2 Revival Dance",
+      "level": null,
+      "category": "super",
+      "context": "(Hold to change effect)",
+      "input": "(Hold to change effect) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 2800,
+      "frameData": {
+        "startup": 12,
+        "active": 6,
+        "activeRange": "12-17",
+        "recovery": 62,
+        "total": 80
+      },
+      "frameAdvantage": {
+        "onBlock": -47,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible on frames 1 - 17Minimum guaranteed damage is set to 40%Values do not change when the attack lands as a counter or Punish CounterProperties change to the following when a down input is held during the attack:- Damage changes to 1950- 1600 vitality recovered・Recovers the Drive Gauge by 10,000"
+    },
+    "elena_sa3_song_of_the_grasslands": {
+      "displayName": "SA3 Song of the Grasslands",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↙←↓↙← + K",
+      "notation": "214214K",
+      "shortName": "214214K",
+      "damage": 4000,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 68,
+        "total": 80
+      },
+      "frameAdvantage": {
+        "onBlock": -54,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 11The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "elena_ca_song_of_the_grasslands": {
+      "displayName": "CA Song of the Grasslands",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↙←↓↙← + K",
+      "notation": "214214K",
+      "shortName": "214214K",
+      "damage": 4500,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 68,
+        "total": 80
+      },
+      "frameAdvantage": {
+        "onBlock": -54,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 11The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "elena_leg_tackle": {
+      "displayName": "Leg Tackle",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "elena_leg_lift_throw": {
+      "displayName": "Leg Lift Throw",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "elena_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 20,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "elena_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws between frames 1 - 15"
+    },
+    "elena_drive_impact_giraffe_neck": {
+      "displayName": "Drive Impact: Giraffe Neck",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "elena_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Boar Charge",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
+    },
+    "elena_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Boar Charge",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 205 frames of recovery added on hit"
+    },
+    "elena_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
+    },
+    "elena_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "elena_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occursThe player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "elena_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "elena_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

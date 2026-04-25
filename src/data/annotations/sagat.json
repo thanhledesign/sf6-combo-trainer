@@ -1,0 +1,1132 @@
+{
+  "character": {
+    "id": "sagat",
+    "name": "Sagat",
+    "displayName": "Sagat",
+    "archetype": "Tiger Shot Zoner",
+    "description": ""
+  },
+  "tactics": {},
+  "moves": {
+    "sagat_standing_light_punch_l": {
+      "id": "sagat_standing_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_standing_light_kick_l": {
+      "id": "sagat_standing_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_standing_medium_punch_m": {
+      "id": "sagat_standing_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_standing_medium_kick_m": {
+      "id": "sagat_standing_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_standing_heavy_punch_h": {
+      "id": "sagat_standing_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_standing_heavy_kick_h": {
+      "id": "sagat_standing_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_light_punch_l": {
+      "id": "sagat_crouching_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_light_kick_l": {
+      "id": "sagat_crouching_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_medium_punch_m": {
+      "id": "sagat_crouching_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_medium_kick_m": {
+      "id": "sagat_crouching_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_heavy_punch_h": {
+      "id": "sagat_crouching_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_crouching_heavy_kick_h": {
+      "id": "sagat_crouching_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_light_punch": {
+      "id": "sagat_jumping_light_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_light_kick": {
+      "id": "sagat_jumping_light_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_medium_punch": {
+      "id": "sagat_jumping_medium_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_medium_kick": {
+      "id": "sagat_jumping_medium_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_heavy_punch": {
+      "id": "sagat_jumping_heavy_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_jumping_heavy_kick": {
+      "id": "sagat_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_heavy_elbow_m": {
+      "id": "sagat_tiger_heavy_elbow_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_monolith_h": {
+      "id": "sagat_tiger_monolith_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_low_step_kick_l": {
+      "id": "sagat_low_step_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_high_step_kick_h": {
+      "id": "sagat_high_step_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_middle_step_kick": {
+      "id": "sagat_middle_step_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_sting": {
+      "id": "sagat_tiger_sting",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_slash": {
+      "id": "sagat_tiger_slash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_rise": {
+      "id": "sagat_tiger_rise",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_m_high_tiger_shot_m": {
+      "id": "sagat_m_high_tiger_shot_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_h_high_tiger_shot_h": {
+      "id": "sagat_h_high_tiger_shot_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_high_tiger_shot": {
+      "id": "sagat_od_high_tiger_shot",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_low_tiger_shot_l": {
+      "id": "sagat_low_tiger_shot_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_low_tiger_shot": {
+      "id": "sagat_od_low_tiger_shot",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_l_tiger_uppercut_l": {
+      "id": "sagat_l_tiger_uppercut_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_m_tiger_uppercut_m": {
+      "id": "sagat_m_tiger_uppercut_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_h_tiger_uppercut_h": {
+      "id": "sagat_h_tiger_uppercut_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_h_tiger_uppercut_charged": {
+      "id": "sagat_h_tiger_uppercut_charged",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_tiger_uppercut": {
+      "id": "sagat_od_tiger_uppercut",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_l_tiger_knee_crush_l": {
+      "id": "sagat_l_tiger_knee_crush_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_m_tiger_knee_crush_m": {
+      "id": "sagat_m_tiger_knee_crush_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_h_tiger_knee_crush_h": {
+      "id": "sagat_h_tiger_knee_crush_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_tiger_knee_crush": {
+      "id": "sagat_od_tiger_knee_crush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_l_tiger_nexus_l": {
+      "id": "sagat_l_tiger_nexus_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_m_tiger_nexus_m": {
+      "id": "sagat_m_tiger_nexus_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_h_tiger_nexus_h": {
+      "id": "sagat_h_tiger_nexus_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_tiger_nexus": {
+      "id": "sagat_od_tiger_nexus",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_mighty_tiger": {
+      "id": "sagat_mighty_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_mighty_tiger": {
+      "id": "sagat_od_mighty_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_greedy_tiger": {
+      "id": "sagat_greedy_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_greedy_tiger": {
+      "id": "sagat_od_greedy_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_nova_tiger": {
+      "id": "sagat_nova_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_od_nova_tiger": {
+      "id": "sagat_od_nova_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa1_tiger_cannon": {
+      "id": "sagat_sa1_tiger_cannon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa2_savage_tiger": {
+      "id": "sagat_sa2_savage_tiger",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa2_savage_tiger_raid": {
+      "id": "sagat_sa2_savage_tiger_raid",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa2_savage_tiger_zenith": {
+      "id": "sagat_sa2_savage_tiger_zenith",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa2_savage_tiger_pendulum": {
+      "id": "sagat_sa2_savage_tiger_pendulum",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa2_savage_tiger_stomp": {
+      "id": "sagat_sa2_savage_tiger_stomp",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_sa3_tiger_vanquisher": {
+      "id": "sagat_sa3_tiger_vanquisher",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_ca_tiger_vanquisher": {
+      "id": "sagat_ca_tiger_vanquisher",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_hang": {
+      "id": "sagat_tiger_hang",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_tiger_carry": {
+      "id": "sagat_tiger_carry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_forward_dash": {
+      "id": "sagat_forward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_backward_dash": {
+      "id": "sagat_backward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_drive_impact_tiger_punishment": {
+      "id": "sagat_drive_impact_tiger_punishment",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_drive_reversal_block": {
+      "id": "sagat_drive_reversal_block",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_drive_reversal_wakeup": {
+      "id": "sagat_drive_reversal_wakeup",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_drive_parry": {
+      "id": "sagat_drive_parry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_perfect_parry_strike": {
+      "id": "sagat_perfect_parry_strike",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_perfect_parry_projectile": {
+      "id": "sagat_perfect_parry_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_parry_drive_rush": {
+      "id": "sagat_parry_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "sagat_cancel_drive_rush": {
+      "id": "sagat_cancel_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    }
+  }
+}

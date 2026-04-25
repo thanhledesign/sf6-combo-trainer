@@ -1,0 +1,2150 @@
+{
+  "id": "rashid",
+  "scrapedAt": "2026-04-25T20:43:22.533Z",
+  "source": "https://www.streetfighter.com/6/character/rashid",
+  "character": {
+    "bio": "”The Soaring Eagle of the Desert” that fights using parkour. With the wind as his ally, he outfoxes opponents with his high mobility. Born into nobility, he's a carefree but earnest man. Loves video streaming.",
+    "vitals": {
+      "height": "5'10",
+      "weight": "187 lbs",
+      "likes": "New stuff, movies, his friends",
+      "hates": "Fighting women and children,load times, trolls"
+    }
+  },
+  "moves": {
+    "rashid_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "activeRange": "4-5",
+        "recovery": 9,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "rashid_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 10,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 14,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 17,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "rashid_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 21,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 13,
+        "active": 8,
+        "activeRange": "13-20",
+        "recovery": 18,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces the opponent into a standing positionForces a juggle state when hitting a mid-air opponentForces a juggle state when the attack lands as a Punish Counter"
+    },
+    "rashid_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 7,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "rashid_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 8,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "rashid_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 13,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 18,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 21,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "rashid_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 24,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "rashid_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 5,
+        "activeRange": "4-8",
+        "recovery": 3,
+        "total": 12
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "rashid_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "activeRange": "5-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "rashid_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "rashid_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "rashid_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 161,
+        "activeRange": "8-168-10, 14-16",
+        "recovery": 3,
+        "total": 172
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "midmid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent on the 2nd attack"
+    },
+    "rashid_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent when transitioning from Wing Stroke or Arabian Skyhigh"
+    },
+    "rashid_run": {
+      "displayName": "Run",
+      "level": null,
+      "category": "normal",
+      "input": "→ + ?key-rc.png?",
+      "notation": "6?key-rc.png?",
+      "shortName": "6?key-rc.png?",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Movement can be stoppped from frames 2 - 60Can transition to either a branching attack or forward jump from frames 6 - 605 frames of recovery added when movement is stoppedCan be affected by air currents from frames 1 - 60"
+    },
+    "rashid_backup": {
+      "displayName": "Backup",
+      "level": "(During Run)",
+      "category": "normal",
+      "context": "(During Run)",
+      "input": "(During Run) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 10,
+        "activeRange": "8-17",
+        "recovery": 17,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Considered airborne from frames 1 - 17Only the second attack can be canceled into a Super Art"
+    },
+    "rashid_tempest_moon": {
+      "displayName": "Tempest Moon",
+      "level": "(During Run)",
+      "category": "normal",
+      "context": "(During Run) (Effect changes when in contact with air current)",
+      "input": "(During Run) (Effect changes when in contact with air current) → + K",
+      "notation": "6K",
+      "shortName": "6K",
+      "damage": 1200,
+      "frameData": {
+        "startup": 16,
+        "active": 2401,
+        "activeRange": "16-2416-17, 22-24",
+        "recovery": 21,
+        "total": 2438
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Can be affected by air currents from frames 1 - 15Considered airborne from frames 6 - 21Only the second attack can be canceled into a Super Art"
+    },
+    "rashid_air_current_boosted_tempest_moon": {
+      "displayName": "[Air Current Boosted]Tempest Moon",
+      "level": "(from Run when coming in contact with an air current)",
+      "category": "normal",
+      "context": "(from Run when coming in contact with an air current)",
+      "damage": 1400,
+      "frameData": {
+        "startup": 9,
+        "active": 401,
+        "activeRange": "9-409-11, 33-34,38-40",
+        "recovery": 22,
+        "total": 432
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 20 - 35"
+    },
+    "rashid_flapping_spin_m": {
+      "displayName": "Flapping Spin",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 251,
+        "activeRange": "8-258-9, 24-25",
+        "recovery": 18,
+        "total": 277
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent on the 1st attackCan be affected by air currents from frames 3 - 10"
+    },
+    "rashid_beak_assault_h": {
+      "displayName": "Beak Assault",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 21,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Can be affected by air currents from frames 4 - 25"
+    },
+    "rashid_crescent_kick_h": {
+      "displayName": "Crescent Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 20,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "3 frames of recovery added when the attack missesCan be affected by air currents from frames 6 - 19"
+    },
+    "rashid_blitz_strike": {
+      "displayName": "Blitz Strike",
+      "level": "(During a forward jump)  H",
+      "category": "normal",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 850,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can transition to a mid-air special move from frames 12 - 23 when the attack hits or is blockedCan transition to any mid-air normal attack or special move from frame 24 until landing on the groundProduces a ground bound when hitting a mid-air opponent"
+    },
+    "rashid_aerial_shot": {
+      "displayName": "Aerial Shot",
+      "level": "(During a neutral jump)  H",
+      "category": "normal",
+      "context": "(During a neutral jump)",
+      "input": "(During a neutral jump) ↑ + HK",
+      "notation": "8HK",
+      "shortName": "8HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "rashid_rising_kick": {
+      "displayName": "Rising Kick",
+      "level": "MH",
+      "category": "normal",
+      "input": "MP + HK",
+      "notation": "MP+HK",
+      "shortName": "MP+HK",
+      "damage": 400,
+      "frameData": {
+        "startup": 13,
+        "active": 4,
+        "activeRange": "13-16",
+        "recovery": 36,
+        "total": 53
+      },
+      "frameAdvantage": {
+        "onBlock": -20,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "rashid_side_flip": {
+      "displayName": "Side Flip",
+      "level": null,
+      "category": "normal",
+      "input": "→ + KK",
+      "notation": "6KK",
+      "shortName": "6KK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 32,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can transition to Front Flip from frames 18 - 24Can be affected by air currents from frames 2 - 20"
+    },
+    "rashid_front_flip": {
+      "displayName": "Front Flip",
+      "level": "(During Side Flip)",
+      "category": "normal",
+      "context": "(During Side Flip)",
+      "input": "(During Side Flip) ← + /5/6KK",
+      "notation": "4/5/6KK",
+      "shortName": "4/5/6KK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 8,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 11 - 43Can transition to any mid-air normal attack, unique attack or special move from frame 22 - 40Can be affected by air currents from frames 1 - 36"
+    },
+    "rashid_l_spinning_mixer_l": {
+      "displayName": "L Spinning Mixer",
+      "level": "L",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "activeRange": "8-238, 16-17, 22-23",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Attack properties changed by air currents are active from frames 2 - 175 frames of recovery added when the attack misses"
+    },
+    "rashid_air_current_boosted_l_spinning_mixer": {
+      "displayName": "[Air Current Boosted] L Spinning Mixer",
+      "level": "(when coming in contact with an air current)  L",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1000,
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "activeRange": "6-596, 12-14, 18-20,25-27,31-33,38-40,44-46,51-53,57-59",
+        "recovery": 15,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "rashid_m_spinning_mixer_m": {
+      "displayName": "M Spinning Mixer",
+      "level": "M",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "activeRange": "8-268,9-10,13-14,20-21,25-26",
+        "recovery": 11,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -45,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 14Considered airborne from frames 13 - 60Attack properties changed by air currents are active from frames 2 - 911 frames of landing recovery can be canceled by a special move or Super Art when the attack hits"
+    },
+    "rashid_air_current_boosted_m_spinning_mixer": {
+      "displayName": "[Air Current Boosted] M Spinning Mixer",
+      "level": "(when coming in contact with an air current)  M",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1400,
+      "frameData": {
+        "startup": 5,
+        "active": null,
+        "activeRange": "5-595,6-7,10-11,16-17,21-22,29-30,34-35,41-42,46-47,53-54,58-59",
+        "recovery": 15,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -78,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 3 - 11Considered airborne from frames 10 -97"
+    },
+    "rashid_h_spinning_mixer_h": {
+      "displayName": "H Spinning Mixer",
+      "level": "H",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 6,
+        "active": 391,
+        "activeRange": "6-396-7, 10-12, 16-18, 23-25, 30-32, 37-39",
+        "recovery": 14,
+        "total": 411
+      },
+      "frameAdvantage": {
+        "onBlock": -55,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 12Considered airborne from frames 13 - 63Invincible to throws from frames 8 - 10Attack properties changed by air currents are active from frames 2 - 6"
+    },
+    "rashid_air_current_boosted_h_spinning_mixer": {
+      "displayName": "[Air Current Boosted] H Spinning Mixer",
+      "level": "(when coming in contact with an air current)  H",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1800,
+      "frameData": {
+        "startup": 5,
+        "active": 511,
+        "activeRange": "5-515-7, 9-11, 15-17, 22-24, 28-30, 33-35,38-40,43-45,49-51",
+        "recovery": 14,
+        "total": 530
+      },
+      "frameAdvantage": {
+        "onBlock": -83,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 12Considered airborne from frames 9 - 91Invincible to throws from frames 8 - 10"
+    },
+    "rashid_od_spinning_mixer": {
+      "displayName": "OD Spinning Mixer",
+      "level": null,
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 1400,
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "activeRange": "6-486, 7-8, 11-13, 16-19, 22-25, 28-31, 34-37, 40-43, 46-48",
+        "recovery": 15,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -42,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 8Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 9 - 13Can be affected by air currents from frames 2 - 9"
+    },
+    "rashid_air_current_boosted_od_spinning_mixer": {
+      "displayName": "[Air Current Boosted] OD Spinning Mixer",
+      "level": "(when coming in contact with an air current)",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1400,
+      "frameData": {
+        "startup": 4,
+        "active": null,
+        "activeRange": "4-594, 5-6, 9-11, 14-17, 20-23, 26-29, 32-35, 38-41, 44-47,50-53,56-59",
+        "recovery": 15,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -72,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 6Can transition to mid-air special moves from frames 67 - 71Considered airborne from frames 10 - 97"
+    },
+    "rashid_l_eagle_spike_l": {
+      "displayName": "L Eagle Spike",
+      "level": "L",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 15,
+        "active": 13,
+        "activeRange": "15-27",
+        "recovery": 31,
+        "total": 59
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*SA3"
+      },
+      "note": "Attack properties changed by air currents are active from frames 4 - 15Considered airborne from frames 9 - 38*Can only be canceled into Super Art 3 on hit"
+    },
+    "rashid_air_current_boosted_l_eagle_spike": {
+      "displayName": "[Air Current Boosted] L Eagle Spike",
+      "level": "(when coming in contact with an air current)  L",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1300,
+      "frameData": {
+        "startup": 14,
+        "active": 13,
+        "activeRange": "14-26",
+        "recovery": 33,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*SA3"
+      },
+      "note": "Considered airborne from frames 9 - 38*Can only be canceled into Super Art 3 on hit"
+    },
+    "rashid_m_eagle_spike_m": {
+      "displayName": "M Eagle Spike",
+      "level": "M",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 21,
+        "active": 13,
+        "activeRange": "21-33",
+        "recovery": 26,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Attack properties changed by air currents are active from frames 6 - 28Considered airborne from frames 12 - 38"
+    },
+    "rashid_air_current_boosted_m_eagle_spike": {
+      "displayName": "[Air Current Boosted] M Eagle Spike",
+      "level": "(when coming in contact with an air current)  M",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1500,
+      "frameData": {
+        "startup": 17,
+        "active": 15,
+        "activeRange": "17-31",
+        "recovery": 50,
+        "total": 82
+      },
+      "frameAdvantage": {
+        "onBlock": -15,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 17 - 45"
+    },
+    "rashid_h_eagle_spike_h": {
+      "displayName": "H Eagle Spike",
+      "level": "H",
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 26,
+        "active": 13,
+        "activeRange": "26-38",
+        "recovery": 27,
+        "total": 66
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Attack properties changed by air currents are active from frames 6 - 31Considered airborne from frames 15 - 44"
+    },
+    "rashid_air_current_boosted_h_eagle_spike": {
+      "displayName": "[Air Current Boosted] H Eagle Spike",
+      "level": "(when coming in contact with an air current)  H",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1500,
+      "frameData": {
+        "startup": 17,
+        "active": 15,
+        "activeRange": "17-31",
+        "recovery": 50,
+        "total": 82
+      },
+      "frameAdvantage": {
+        "onBlock": -15,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 17 - 45"
+    },
+    "rashid_od_eagle_spike": {
+      "displayName": "OD Eagle Spike",
+      "level": null,
+      "category": "special",
+      "context": "(Effect changes when in contact with air current)",
+      "input": "(Effect changes when in contact with air current) ↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 1000,
+      "frameData": {
+        "startup": 21,
+        "active": 13,
+        "activeRange": "21-33",
+        "recovery": 26,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Attack properties changed by air currents are active from frames 6 - 30Considered airborne from frames 12 - 40"
+    },
+    "rashid_air_current_boosted_od_eagle_spike": {
+      "displayName": "[Air Current Boosted] OD Eagle Spike",
+      "level": "(when coming in contact with an air current)",
+      "category": "special",
+      "context": "(when coming in contact with an air current)",
+      "damage": 1300,
+      "frameData": {
+        "startup": 18,
+        "active": 14,
+        "activeRange": "18-31",
+        "recovery": 22,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 12 - 40Invincible to projectiles from frames 7 - 40"
+    },
+    "rashid_l_whirlwind_shot_l": {
+      "displayName": "L Whirlwind Shot",
+      "level": "L",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 52,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Transition to variation attack by releasing the button between frames 29 and 48Transition to maximum attack version by holding the button for over 48 frames"
+    },
+    "rashid_l_whirlwind_shot_charged": {
+      "displayName": "L Whirlwind Shot(Charged)",
+      "level": "Hold L",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 34,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "rashid_l_whirlwind_shot_longest_possible_button_hold": {
+      "displayName": "L Whirlwind Shot(Longest possible button hold)",
+      "level": "Hold L",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 53,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 8,
+        "onHit": 16
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "After technique is finished, an air current that lasts 60 frames will be generated"
+    },
+    "rashid_m_whirlwind_shot_m": {
+      "displayName": "M Whirlwind Shot",
+      "level": "M",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 52,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Transition to variation attack by releasing the button between frames 29 and 48Transition to maximum attack version by holding the button for over 48 frames"
+    },
+    "rashid_m_whirlwind_shot_charged": {
+      "displayName": "M Whirlwind Shot(Charged)",
+      "level": "Hold M",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 34,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "rashid_m_whirlwind_shot_longest_possible_button_hold": {
+      "displayName": "M Whirlwind Shot(Longest possible button hold)",
+      "level": "Hold M",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 53,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 8,
+        "onHit": 16
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "After technique is finished, an air current that lasts 60 frames will be generated"
+    },
+    "rashid_h_whirlwind_shot_h": {
+      "displayName": "H Whirlwind Shot",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 52,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Transition to variation attack by releasing the button between frames 29 and 48Transition to maximum attack version by holding the button for over 48 frames"
+    },
+    "rashid_h_whirlwind_shot_charged": {
+      "displayName": "H Whirlwind Shot(Charged)",
+      "level": "Hold H",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 34,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "rashid_h_whirlwind_shot_longest_possible_button_hold": {
+      "displayName": "H Whirlwind Shot(Longest possible button hold)",
+      "level": "Hold H",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 53,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 8,
+        "onHit": 16
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "After technique is finished, an air current that lasts 60 frames will be generated"
+    },
+    "rashid_od_whirlwind_shot": {
+      "displayName": "OD Whirlwind Shot",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 700,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 52,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Transition to variation attack by holding the button for 32 frames"
+    },
+    "rashid_od_whirlwind_shot_charged": {
+      "displayName": "OD Whirlwind Shot(Charged)",
+      "level": "Hold",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 38,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to branching attacks on frame 11After technique is finished, an air current that lasts 70 frames will be generated"
+    },
+    "rashid_l_arabian_cyclone_l": {
+      "displayName": "L Arabian Cyclone",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 47,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 21 - 22Clashes with projectiles (Once)"
+    },
+    "rashid_m_arabian_cyclone_m": {
+      "displayName": "M Arabian Cyclone",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 900,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 50,
+        "total": 73
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 26- 27Clashes with projectiles (Once)"
+    },
+    "rashid_h_arabian_cyclone_h": {
+      "displayName": "H Arabian Cyclone",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 27,
+        "active": 3,
+        "activeRange": "27-29",
+        "recovery": 69,
+        "total": 99
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to branching attacks from frames 33 - 34Clashes with projectiles (Once)"
+    },
+    "rashid_od_arabian_cyclone": {
+      "displayName": "OD Arabian Cyclone",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 53,
+        "total": 76
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to branching attacks from frames 26 - 273 frames of recovery added when the attack is blockedAfter technique is finished, an air current that lasts 60 frames will be generatedClashes with projectiles (Once)"
+    },
+    "rashid_wing_stroke": {
+      "displayName": "Wing Stroke",
+      "level": "(During Arabian Cyclone)",
+      "category": "special",
+      "context": "(During Arabian Cyclone)",
+      "input": "(During Arabian Cyclone) ← + K",
+      "notation": "4K",
+      "shortName": "4K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 6,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 22 - 61Can transition to normal mid-air attacks from frames 32 - 51Can be affected by air currents from frames 23 - 47"
+    },
+    "rashid_rolling_assault": {
+      "displayName": "Rolling Assault",
+      "level": "(During Arabian Cyclone)",
+      "category": "special",
+      "context": "(During Arabian Cyclone)",
+      "input": "(During Arabian Cyclone) → + K",
+      "notation": "6K",
+      "shortName": "6K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can transition to branching attacks from frames 17 - 20Can be affected by air currents from frames 8 - 25"
+    },
+    "rashid_nail_assault": {
+      "displayName": "Nail Assault",
+      "level": "(During Rolling Assault)",
+      "category": "special",
+      "context": "(During Rolling Assault)",
+      "input": "(During Rolling Assault) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 26,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "rashid_l_arabian_skyhigh": {
+      "displayName": "L Arabian Skyhigh",
+      "level": "(During a forward jump)  L",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 600,
+      "frameData": {
+        "startup": 13,
+        "active": 9,
+        "activeRange": "13-21",
+        "recovery": 3,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can be affected by air currents from frames 1 - 13Can transition to any mid-air normal attack, unique attack or special move from frame 51 until landing on the groundCan hit an opponent outside of a combo from frames 14 - 21"
+    },
+    "rashid_m_arabian_skyhigh": {
+      "displayName": "M Arabian Skyhigh",
+      "level": "(During a forward jump)  M",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 18,
+        "active": 9,
+        "activeRange": "18-26",
+        "recovery": 3,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can be affected by air currents from frames 1 - 18Can transition to any mid-air normal attack, unique attack or special move from frame 59 until landing on the groundCan hit an opponent outside of a combo from frames 19 - 26"
+    },
+    "rashid_h_arabian_skyhigh": {
+      "displayName": "H Arabian Skyhigh",
+      "level": "(During a forward jump)  H",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 21,
+        "active": 9,
+        "activeRange": "21-29",
+        "recovery": 3,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can be affected by air currents from frames 1 - 21Can transition to any mid-air normal attack, unique attack or special move from frame 62 until landing on the groundCan hit an opponent outside of a combo from frames 21 - 29"
+    },
+    "rashid_od_arabian_skyhigh": {
+      "displayName": "OD Arabian Skyhigh",
+      "level": "(During a forward jump)",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 1500,
+      "frameData": {
+        "startup": 13,
+        "active": 9,
+        "activeRange": "13-21",
+        "recovery": 3,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can be affected by air currents from frames 1 - 13Can transition to any mid-air normal attack, unique attack or special move from frame 51 until landing on the ground only when the attack is blocked or missesCan hit an opponent outside of a combo from frames 14 - 21"
+    },
+    "rashid_sa1_super_rashid_kick": {
+      "displayName": "SA1 Super Rashid Kick",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2100,
+      "frameData": {
+        "startup": 9,
+        "active": 7,
+        "activeRange": "9-15",
+        "recovery": 76,
+        "total": 92
+      },
+      "frameAdvantage": {
+        "onBlock": -53,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws from frames 1 - 16During the attack's active frames from frames 3 - 7 on hit, when the attack hits an airborne opponent, the properties change and damage is set to 1800Considered airborne from frames 10 - 36The minimum guaranteed damage is 30%Values do not change when the attack lands as a counter or Punish Counter"
+    },
+    "rashid_sa2_ysaar": {
+      "displayName": "SA2 Ysaar",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + K",
+      "notation": "214214K",
+      "shortName": "214214K",
+      "damage": 1000,
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "activeRange": "",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 33,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "An air current is generated during the attack's entire active frame duration and for 100 frames after the active frames are finishedYsaar becomes faster if Arabian Cyclone's first hit is collides with the attack during the active framesThe minimum guaranteed damage is 40%Values do not change when the attack lands as a counter or Punish Counter"
+    },
+    "rashid_sa3_altair": {
+      "displayName": "SA3 Altair",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 11,
+        "active": 18,
+        "activeRange": "11-28",
+        "recovery": 82,
+        "total": 111
+      },
+      "frameAdvantage": {
+        "onBlock": -75,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frame 1 to frame 16.Values do not change when the attack lands as a counter or Punish Counter.The minimum guaranteed damage is 50%.Note: Can only be canceled into from special moves."
+    },
+    "rashid_ca_altair": {
+      "displayName": "CA Altair",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 11,
+        "active": 18,
+        "activeRange": "11-28",
+        "recovery": 82,
+        "total": 111
+      },
+      "frameAdvantage": {
+        "onBlock": -75,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frame 1 to frame 16.Values do not change when the attack lands as a counter or Punish Counter.The minimum guaranteed damage is 50%.Note: Can only be canceled into from special moves."
+    },
+    "rashid_riding_glider": {
+      "displayName": "Riding Glider",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "rashid_sunset_drop": {
+      "displayName": "Sunset Drop",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "rashid_desert_slider": {
+      "displayName": "Desert Slider",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) LP + LK",
+      "notation": "LP+LK",
+      "shortName": "LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 3,
+        "total": 11
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "rashid_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 18,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Transitions to Run on frame 13Can be affected by air currents from frames 1 - 15"
+    },
+    "rashid_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 25,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "rashid_drive_impact_eagle_edge": {
+      "displayName": "Drive Impact: Eagle Edge",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 hits from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallProperties change to the following when the attack lands as a Punish Counter, or after the Super Armor absorbs a hit:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "rashid_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Eagle Slash",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "rashid_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Eagle Slash",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "rashid_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "rashid_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "rashid_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "rashid_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "rashid_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

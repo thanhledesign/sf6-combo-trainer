@@ -1,0 +1,1787 @@
+{
+  "id": "sagat",
+  "scrapedAt": "2026-04-25T20:44:35.634Z",
+  "source": "https://www.streetfighter.com/6/character/sagat",
+  "character": {
+    "bio": "The Emperor of Muay Thai. He was once one ofthe highest ranking members of Shadaloo, buthas since left the criminal organization.He currently lives deep in the mountains,focusing only on his training.",
+    "vitals": {
+      "height": "7'5",
+      "weight": "306 lbs",
+      "likes": "Strong opponents, tigers",
+      "hates": "Feckless people"
+    }
+  },
+  "moves": {
+    "sagat_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 11,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "sagat_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 400,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 15,
+        "total": 24
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "sagat_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 15,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "sagat_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 19,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "sagat_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 22,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "3 frames of recovery added when the attack misses"
+    },
+    "sagat_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 21,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "4 frames of recovery added when the attack missesForces the opponent into a standing position"
+    },
+    "sagat_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "activeRange": "4-5",
+        "recovery": 10,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "sagat_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 12,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "sagat_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 16,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "1 frame of recovery added when blocked3 frames of recovery added when the attack misses"
+    },
+    "sagat_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 18,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "sagat_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 21,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "sagat_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 26,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "sagat_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 7,
+        "activeRange": "4-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "sagat_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "sagat_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "*mid",
+        "cancelable": false
+      },
+      "note": "*Second attack is considered a high attack only when blockedForces a juggle state when hitting a mid-air opponent"
+    },
+    "sagat_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 8,
+        "activeRange": "8-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "sagat_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Produces a slam knockdown when hitting a mid-air opponent"
+    },
+    "sagat_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "sagat_tiger_heavy_elbow_m": {
+      "displayName": "Tiger Heavy Elbow",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 19,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Produces a ground bound during a mid-air hit"
+    },
+    "sagat_tiger_monolith_h": {
+      "displayName": "Tiger Monolith",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HP",
+      "notation": "4HP",
+      "shortName": "4HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 8,
+        "activeRange": "8-15",
+        "recovery": 25,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "First attack produces a ground bound on counter or Punish Counter"
+    },
+    "sagat_low_step_kick_l": {
+      "displayName": "Low Step Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "→ + LK",
+      "notation": "6LK",
+      "shortName": "6LK",
+      "damage": 700,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 18,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "3 frames of recovery added when the attack misses"
+    },
+    "sagat_high_step_kick_h": {
+      "displayName": "High Step Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 21,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Overall frames decreased by 3 frames when blockedAdds +21 frames of advantage on a Punish Counter"
+    },
+    "sagat_middle_step_kick": {
+      "displayName": "Middle Step Kick",
+      "level": "MH",
+      "category": "normal",
+      "input": "MK + HK",
+      "notation": "MKHK",
+      "shortName": "MKHK",
+      "damage": 800,
+      "frameData": {
+        "startup": 19,
+        "active": 3,
+        "activeRange": "19-21",
+        "recovery": 23,
+        "total": 45
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "sagat_tiger_sting": {
+      "displayName": "Tiger Sting",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 27,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "sagat_tiger_slash": {
+      "displayName": "Tiger Slash",
+      "level": "MH",
+      "category": "normal",
+      "input": "↓ + MPHP",
+      "notation": "2MPHP",
+      "shortName": "2MPHP",
+      "damage": 600,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 27,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Produces a ground bound during a mid-air hit"
+    },
+    "sagat_tiger_rise": {
+      "displayName": "Tiger Rise",
+      "level": "MH",
+      "category": "normal",
+      "input": "↓ + MP + HK",
+      "notation": "2MP+HK",
+      "shortName": "2MP+HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 4,
+        "activeRange": "18-21",
+        "recovery": 26,
+        "total": 48
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "sagat_m_high_tiger_shot_m": {
+      "displayName": "M High Tiger Shot",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + /MPHP",
+      "notation": "236/MPHP",
+      "shortName": "236/MPHP",
+      "damage": 700,
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "sagat_h_high_tiger_shot_h": {
+      "displayName": "H High Tiger Shot",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + /MPHP",
+      "notation": "236/MPHP",
+      "shortName": "236/MPHP",
+      "damage": 700,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "sagat_od_high_tiger_shot": {
+      "displayName": "OD High Tiger Shot",
+      "level": "MH",
+      "category": "special",
+      "input": "↓↘→ + /MPHP",
+      "notation": "236/MPHP",
+      "shortName": "236/MPHP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "sagat_low_tiger_shot_l": {
+      "displayName": "Low Tiger Shot",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 600,
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "sagat_od_low_tiger_shot": {
+      "displayName": "OD Low Tiger Shot",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "sagat_l_tiger_uppercut_l": {
+      "displayName": "L Tiger Uppercut",
+      "level": "L",
+      "category": "special",
+      "input": "→↓↘ + LP",
+      "notation": "623LP",
+      "shortName": "623LP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 3512,
+        "total": 3527
+      },
+      "frameAdvantage": {
+        "onBlock": -37,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 9 - 49"
+    },
+    "sagat_m_tiger_uppercut_m": {
+      "displayName": "M Tiger Uppercut",
+      "level": "M",
+      "category": "special",
+      "input": "→↓↘ + MP",
+      "notation": "623MP",
+      "shortName": "623MP",
+      "damage": 1400,
+      "frameData": {
+        "startup": 10,
+        "active": 10,
+        "activeRange": "10-19",
+        "recovery": 4015,
+        "total": 4035
+      },
+      "frameAdvantage": {
+        "onBlock": -45,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 13Considered airborne from frames 14 - 59"
+    },
+    "sagat_h_tiger_uppercut_h": {
+      "displayName": "H Tiger Uppercut",
+      "level": "H",
+      "category": "special",
+      "input": "→↓↘ + HP",
+      "notation": "623HP",
+      "shortName": "623HP",
+      "damage": 1600,
+      "frameData": {
+        "startup": 18,
+        "active": 10,
+        "activeRange": "18-27",
+        "recovery": 4015,
+        "total": 4043
+      },
+      "frameAdvantage": {
+        "onBlock": -45,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 24 frames to change its propertiesInvincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 21Considered airborne from frames 22 - 67"
+    },
+    "sagat_h_tiger_uppercut_charged": {
+      "displayName": "H Tiger Uppercut(Charged)",
+      "level": "Hold H",
+      "category": "special",
+      "damage": 2800,
+      "frameData": {
+        "startup": 35,
+        "active": 10,
+        "activeRange": "35-44",
+        "recovery": 4015,
+        "total": 4060
+      },
+      "frameAdvantage": {
+        "onBlock": -45,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 and 28 - 38Considered airborne from frames 39 - 84"
+    },
+    "sagat_od_tiger_uppercut": {
+      "displayName": "OD Tiger Uppercut",
+      "level": null,
+      "category": "special",
+      "input": "→↓↘ + P",
+      "notation": "623P",
+      "shortName": "623P",
+      "damage": 1600,
+      "frameData": {
+        "startup": 8,
+        "active": 12,
+        "activeRange": "8-19",
+        "recovery": 3815,
+        "total": 3835
+      },
+      "frameAdvantage": {
+        "onBlock": -43,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 12Considered airborne from frames 13 - 57"
+    },
+    "sagat_l_tiger_knee_crush_l": {
+      "displayName": "L Tiger Knee Crush",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 14,
+        "active": 11,
+        "activeRange": "14-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 13 - 27Recovery added by 3 frames on super armor hit"
+    },
+    "sagat_m_tiger_knee_crush_m": {
+      "displayName": "M Tiger Knee Crush",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 11,
+        "activeRange": "18-28",
+        "recovery": 18,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 16 - 31Recovery added by 3 frames on super armor hit"
+    },
+    "sagat_h_tiger_knee_crush_h": {
+      "displayName": "H Tiger Knee Crush",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1400,
+      "frameData": {
+        "startup": 22,
+        "active": 4001,
+        "activeRange": "22-4022-25, 30-40",
+        "recovery": 18,
+        "total": 4041
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 24 - 43Damage changed to 1300 and blowback time is increased when hitting the attack in a specific location between the 3rd and 4th active frame of the first attack."
+    },
+    "sagat_od_tiger_knee_crush": {
+      "displayName": "OD Tiger Knee Crush",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 1600,
+      "frameData": {
+        "startup": 19,
+        "active": 3601,
+        "activeRange": "19-3619-21, 26-36",
+        "recovery": 18,
+        "total": 3638
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Considered airborne from frames 21 - 38Blowback time increased when hitting from close range"
+    },
+    "sagat_l_tiger_nexus_l": {
+      "displayName": "L Tiger Nexus",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 500,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 23,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 25 - 28Forces a juggle state when the attack lands as a counter or Punish Counter."
+    },
+    "sagat_m_tiger_nexus_m": {
+      "displayName": "M Tiger Nexus",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 23,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 28 - 31Forces a juggle state when the attack lands as a counter or Punish Counter."
+    },
+    "sagat_h_tiger_nexus_h": {
+      "displayName": "H Tiger Nexus",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 500,
+      "frameData": {
+        "startup": 28,
+        "active": 3501,
+        "activeRange": "28-3528-30, 32-35",
+        "recovery": 20,
+        "total": 3549
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Recovery increased by 2 frames on Perfect ParryCan transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 38 - 41"
+    },
+    "sagat_od_tiger_nexus": {
+      "displayName": "OD Tiger Nexus",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 500,
+      "frameData": {
+        "startup": 23,
+        "active": 3001,
+        "activeRange": "23-3023-25, 27-30",
+        "recovery": 20,
+        "total": 3044
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Recovery increased by 2 frames on Perfect ParryCan transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 33 - 36"
+    },
+    "sagat_mighty_tiger": {
+      "displayName": "Mighty Tiger",
+      "level": "(During Tiger Nexus)  L",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + LK",
+      "notation": "6LK",
+      "shortName": "6LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 22,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Produces a ground bound during a mid-air hit"
+    },
+    "sagat_od_mighty_tiger": {
+      "displayName": "OD Mighty Tiger",
+      "level": "(During OD Tiger Nexus)  L",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + LK",
+      "notation": "6LK",
+      "shortName": "6LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 22,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Produces a ground bound during a mid-air hit"
+    },
+    "sagat_greedy_tiger": {
+      "displayName": "Greedy Tiger",
+      "level": "(During Tiger Nexus)  M",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 17,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "sagat_od_greedy_tiger": {
+      "displayName": "OD Greedy Tiger",
+      "level": "(During OD Tiger Nexus)  M",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 17,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "sagat_nova_tiger": {
+      "displayName": "Nova Tiger",
+      "level": "(During Tiger Nexus)  H",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "activeRange": "21-23",
+        "recovery": 19,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "sagat_od_nova_tiger": {
+      "displayName": "OD Nova Tiger",
+      "level": "(During OD Tiger Nexus)  H",
+      "category": "special",
+      "context": "(During Tiger Nexus)",
+      "input": "(During Tiger Nexus) → + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "activeRange": "21-23",
+        "recovery": 19,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "sagat_sa1_tiger_cannon": {
+      "displayName": "SA1 Tiger Cannon",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 2200,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "",
+        "recovery": 109,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws on frames 1 - 13Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 30%"
+    },
+    "sagat_sa2_savage_tiger": {
+      "displayName": "SA2 Savage Tiger",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + K",
+      "notation": "214214K",
+      "shortName": "214214K",
+      "damage": 500,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 73,
+        "total": 88
+      },
+      "frameAdvantage": {
+        "onBlock": -58,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible on frames 1 - 14Minimum guaranteed damage is set to 40%Values do not change on counter or Punish CounterPressing a direction on frame 76 after the attack hits produces a different follow-up attack:Neutral - Savage Tiger RaidForward - Savage Tiger ZenithBack - Savage Tiger PendulumDown - Savage Tiger Stomp"
+    },
+    "sagat_sa2_savage_tiger_raid": {
+      "displayName": "SA2 Savage Tiger Raid",
+      "level": "(During Savage Tiger)(No input)",
+      "category": "super",
+      "context": "(During Savage Tiger)",
+      "input": "(During Savage Tiger) ",
+      "notation": "5",
+      "shortName": "5",
+      "damage": 2500,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+    },
+    "sagat_sa2_savage_tiger_zenith": {
+      "displayName": "SA2 Savage Tiger Zenith",
+      "level": "(During Savage Tiger)",
+      "category": "super",
+      "context": "(During Savage Tiger)",
+      "input": "(During Savage Tiger) →",
+      "notation": "6",
+      "shortName": "6",
+      "damage": 1200,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+    },
+    "sagat_sa2_savage_tiger_pendulum": {
+      "displayName": "SA2 Savage Tiger Pendulum",
+      "level": "(During Savage Tiger)",
+      "category": "super",
+      "context": "(During Savage Tiger)",
+      "input": "(During Savage Tiger) ←",
+      "notation": "4",
+      "shortName": "4",
+      "damage": 2200,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+    },
+    "sagat_sa2_savage_tiger_stomp": {
+      "displayName": "SA2 Savage Tiger Stomp",
+      "level": "(During Savage Tiger)",
+      "category": "super",
+      "context": "(During Savage Tiger)",
+      "input": "(During Savage Tiger) ↓",
+      "notation": "2",
+      "shortName": "2",
+      "damage": 2200,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+    },
+    "sagat_sa3_tiger_vanquisher": {
+      "displayName": "SA3 Tiger Vanquisher",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4000,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 67,
+        "total": 83
+      },
+      "frameAdvantage": {
+        "onBlock": -51,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 15The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "sagat_ca_tiger_vanquisher": {
+      "displayName": "CA Tiger Vanquisher",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4500,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 67,
+        "total": 83
+      },
+      "frameAdvantage": {
+        "onBlock": -51,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 15The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "sagat_tiger_hang": {
+      "displayName": "Tiger Hang",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "sagat_tiger_carry": {
+      "displayName": "Tiger Carry",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "sagat_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "sagat_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws between frames 1 - 15"
+    },
+    "sagat_drive_impact_tiger_punishment": {
+      "displayName": "Drive Impact: Tiger Punishment",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "sagat_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Tiger Twin Babel",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
+    },
+    "sagat_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Tiger Twin Babel",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 205 frames of recovery added on hit"
+    },
+    "sagat_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
+    },
+    "sagat_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "sagat_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occursThe player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "sagat_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "sagat_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

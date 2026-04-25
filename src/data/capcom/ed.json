@@ -1,0 +1,1751 @@
+{
+  "id": "ed",
+  "scrapedAt": "2026-04-25T20:43:47.285Z",
+  "source": "https://www.streetfighter.com/6/character/ed",
+  "character": {
+    "bio": "A Psycho Power-wielding youth aged uprapidly by Shadaloo's experimentation,on a journey and a mission to free othersubjects. He gets his short temper andfoul mouth from Balrog, his former mentor.",
+    "vitals": {
+      "height": "6'0",
+      "weight": "190 lbs",
+      "likes": "Boxing, landslide victories",
+      "hates": "Idealists, M. Bison, needles"
+    }
+  },
+  "moves": {
+    "ed_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "ed_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 2,
+        "activeRange": "6-7",
+        "recovery": 13,
+        "total": 21
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ed_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 15,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "ed_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 16,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "4 frames of recovery added when the attack misses"
+    },
+    "ed_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "activeRange": "10-13",
+        "recovery": 18,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing positionHold the button to transition into Psycho KnuckleCan be canceled into Kill Rush (Forward) while the button is heldChanges to Level 1 version if the button is held for more than 30 frames and then releasedChanges to Level 2 version if the button is held for more than 60 frames"
+    },
+    "ed_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 12,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "ed_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 200,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 10,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "ed_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "ed_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 19,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "ed_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 2,
+        "activeRange": "9-10",
+        "recovery": 16,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "3 frames of recovery added when the attack missesForces the opponent into a standing position"
+    },
+    "ed_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "activeRange": "10-13",
+        "recovery": 24,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "ed_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 19,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "ed_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "activeRange": "5-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ed_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ed_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "ed_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 3,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "ed_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown on counter or Punish Counter when hitting a mid-air opponent"
+    },
+    "ed_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 2,
+        "activeRange": "8-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "ed_psycho_knuckle_lv1": {
+      "displayName": "Psycho Knuckle(Lv1)",
+      "level": "Hold H",
+      "category": "normal",
+      "damage": 800,
+      "frameData": {
+        "startup": 39,
+        "active": 15,
+        "activeRange": "39-53",
+        "recovery": 35,
+        "total": 89
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Produces a crumple stun for 41 frames when the attack lands* +2 frames of advantage when blocked near the corner of the screen"
+    },
+    "ed_psycho_knuckle_lv2": {
+      "displayName": "Psycho Knuckle(Lv2)",
+      "level": "Hold H",
+      "category": "normal",
+      "damage": 1200,
+      "frameData": {
+        "startup": 69,
+        "active": 15,
+        "activeRange": "69-83",
+        "recovery": 35,
+        "total": 119
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Produces a crumple stun for 41 frames when the attack landsClashes with projectiles"
+    },
+    "ed_cobra_punch_h": {
+      "displayName": "Cobra Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 21,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Feet are invincible between frames 7 - 19Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "ed_flicker_combination_2": {
+      "displayName": "Flicker Combination(2)",
+      "level": "LL",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 15,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ed_flicker_combination_3": {
+      "displayName": "Flicker Combination(3)",
+      "level": "LLL",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 16,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ed_body_blow_combination": {
+      "displayName": "Body Blow Combination",
+      "level": "MH",
+      "category": "normal",
+      "input": "MP + HP",
+      "notation": "MPHP",
+      "shortName": "MPHP",
+      "damage": 400,
+      "frameData": {
+        "startup": 13,
+        "active": 2,
+        "activeRange": "13-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C*"
+      },
+      "note": "* Can only be canceled into Kill Rush (Backward)"
+    },
+    "ed_hitman_combination_2": {
+      "displayName": "Hitman Combination(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 300,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 20,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ed_hitman_combination_3": {
+      "displayName": "Hitman Combination(3)",
+      "level": "MMH",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 11,
+        "active": 5,
+        "activeRange": "11-15",
+        "recovery": 23,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "ed_low_smash_combination": {
+      "displayName": "Low Smash Combination",
+      "level": "HH",
+      "category": "normal",
+      "input": "↓ + HK + HP",
+      "notation": "2HK+HP",
+      "shortName": "2HK+HP",
+      "damage": 700,
+      "frameData": {
+        "startup": 12,
+        "active": 5,
+        "activeRange": "12-16",
+        "recovery": 19,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Can be canceled into Kill Rush (Forward) and Kill Rush (Backward) when the attack hits"
+    },
+    "ed_psycho_spark": {
+      "displayName": "Psycho Spark",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 400,
+      "frameData": {
+        "startup": 14,
+        "active": 12,
+        "activeRange": "14-25",
+        "recovery": 8,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Psycho Shoot between frames 22 - 28"
+    },
+    "ed_od_psycho_spark": {
+      "displayName": "OD Psycho Spark",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 400,
+      "frameData": {
+        "startup": 14,
+        "active": 12,
+        "activeRange": "14-25",
+        "recovery": 7,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to Psycho Shoot between frames 18 - 28"
+    },
+    "ed_l_psycho_shoot": {
+      "displayName": "L Psycho Shoot",
+      "level": "(During Psycho Spark)  L",
+      "category": "special",
+      "context": "(During Psycho Spark)",
+      "input": "(During Psycho Spark) → + LP",
+      "notation": "6LP",
+      "shortName": "6LP",
+      "damage": 600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_m_psycho_shoot": {
+      "displayName": "M Psycho Shoot",
+      "level": "(During Psycho Spark)  M",
+      "category": "special",
+      "context": "(During Psycho Spark)",
+      "input": "(During Psycho Spark) → + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_h_psycho_shoot": {
+      "displayName": "H Psycho Shoot",
+      "level": "(During Psycho Spark)  H",
+      "category": "special",
+      "context": "(During Psycho Spark)",
+      "input": "(During Psycho Spark) → + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_od_l_psycho_shoot": {
+      "displayName": "OD L Psycho Shoot",
+      "level": "(During OD Psycho Spark)  L",
+      "category": "special",
+      "context": "(During OD Psycho Spark)",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "ed_od_m_psycho_shoot": {
+      "displayName": "OD M Psycho Shoot",
+      "level": "(During OD Psycho Spark)  M",
+      "category": "special",
+      "context": "(During OD Psycho Spark)",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "ed_od_h_psycho_shoot": {
+      "displayName": "OD H Psycho Shoot",
+      "level": "(During OD Psycho Spark)  H",
+      "category": "special",
+      "context": "(During OD Psycho Spark)",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "ed_l_psycho_uppercut_l": {
+      "displayName": "L Psycho Uppercut",
+      "level": "L",
+      "category": "special",
+      "input": "→↓↘ + LP",
+      "notation": "623LP",
+      "shortName": "623LP",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 8,
+        "activeRange": "10-17",
+        "recovery": 28,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 15"
+    },
+    "ed_m_psycho_uppercut_m": {
+      "displayName": "M Psycho Uppercut",
+      "level": "M",
+      "category": "special",
+      "input": "→↓↘ + MP",
+      "notation": "623MP",
+      "shortName": "623MP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 14,
+        "active": 6,
+        "activeRange": "14-19",
+        "recovery": 32,
+        "total": 52
+      },
+      "frameAdvantage": {
+        "onBlock": -20,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 19"
+    },
+    "ed_h_psycho_uppercut_h": {
+      "displayName": "H Psycho Uppercut",
+      "level": "H",
+      "category": "special",
+      "input": "→↓↘ + HP",
+      "notation": "623HP",
+      "shortName": "623HP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 16,
+        "active": 6,
+        "activeRange": "16-21",
+        "recovery": 33,
+        "total": 55
+      },
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 19"
+    },
+    "ed_od_psycho_uppercut": {
+      "displayName": "OD Psycho Uppercut",
+      "level": null,
+      "category": "special",
+      "input": "→↓↘ + P",
+      "notation": "623P",
+      "shortName": "623P",
+      "damage": 1600,
+      "frameData": {
+        "startup": 13,
+        "active": 6,
+        "activeRange": "13-18",
+        "recovery": 36,
+        "total": 55
+      },
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 16"
+    },
+    "ed_l_psycho_blitz_l": {
+      "displayName": "L Psycho Blitz",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 11,
+        "active": 2901,
+        "activeRange": "11-2911-13, 17-19, 26-29",
+        "recovery": 14,
+        "total": 2926
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_m_psycho_blitz_m": {
+      "displayName": "M Psycho Blitz",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 900,
+      "frameData": {
+        "startup": 13,
+        "active": 3601,
+        "activeRange": "13-3613-14, 22-24, 34-36",
+        "recovery": 16,
+        "total": 3630
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_h_psycho_blitz_h": {
+      "displayName": "H Psycho Blitz",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 15,
+        "active": 3701,
+        "activeRange": "15-3715-16, 28-29, 36-37",
+        "recovery": 23,
+        "total": 3739
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_od_psycho_blitz": {
+      "displayName": "OD Psycho Blitz",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 1400,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-4413, 18, 22, 26, 30, 34,43-44",
+        "recovery": 20,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "ed_l_psycho_flicker_l": {
+      "displayName": "L Psycho Flicker",
+      "level": "L",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 26,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold the button for more than 26 frames to change propertiesCan be canceled into Kill Rush (Forward) and Kill Rush (Backward) while the button is heldCan be canceled into Kill Rush (Forward) and Kill Rush (Backward) when the attack hitsProduces a crumple stun for 21 frames when the attack lands as a Punish CounterRecovery is reduced by 2 frame on hitClashes with projectiles (Once)"
+    },
+    "ed_l_psycho_flicker_charged": {
+      "displayName": "L Psycho Flicker (Charged)",
+      "level": "Hold L",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 31,
+        "active": 5,
+        "activeRange": "31-35",
+        "recovery": 24,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Pulls the opponent towards Ed when the attack hits or is blockedLaunches the opponent when the attack hits while they are standing on the groundProduces a slam knockdown when hitting a mid-air opponentClashes with projectiles (Twice)"
+    },
+    "ed_m_psycho_flicker_m": {
+      "displayName": "M Psycho Flicker",
+      "level": "M",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 900,
+      "frameData": {
+        "startup": 20,
+        "active": 4,
+        "activeRange": "20-23",
+        "recovery": 26,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold the button for more than 30 frames to change propertiesCan be canceled into Kill Rush (Forward) or Kill Rush (Backward) while the button is heldCan be canceled into Kill Rush (Forward) and Kill Rush (Backward) when the attack hitsProduces a crumple stun for 45 frames when the attack lands as a Punish CounterRecovery is reduced by 1 frame on hitClashes with projectiles (Once)"
+    },
+    "ed_m_psycho_flicker_charged": {
+      "displayName": "M Psycho Flicker (Charged)",
+      "level": "Hold M",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 35,
+        "active": 5,
+        "activeRange": "35-39",
+        "recovery": 24,
+        "total": 64
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Pulls the opponent towards Ed when the attack hits or is blockedLaunches the opponent when the attack hits while they are standing on the groundProduces a slam knockdown when hitting a mid-air opponentClashes with projectiles (Twice)"
+    },
+    "ed_h_psycho_flicker_h": {
+      "displayName": "H Psycho Flicker",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 17,
+        "active": 8,
+        "activeRange": "17-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold the button for more than 30 frames to change propertiesCan be canceled into Kill Rush (Forward) or Kill Rush (Backward) while the button is heldCan be canceled into Kill Rush (Forward) and Kill Rush (Backward) when the attack hitsDoes not hit an opponent standing on the groundClashes with projectiles (Once)"
+    },
+    "ed_h_psycho_flicker_charged": {
+      "displayName": "H Psycho Flicker (Charged)",
+      "level": "Hold H",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 35,
+        "active": 10,
+        "activeRange": "35-44",
+        "recovery": 19,
+        "total": 64
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Does not hit an opponent standing on the groundProduces a slam knockdown when hitting a mid-air opponentClashes with projectiles (Twice)"
+    },
+    "ed_od_psycho_flicker": {
+      "displayName": "OD Psycho Flicker",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 800,
+      "frameData": {
+        "startup": 25,
+        "active": 4,
+        "activeRange": "25-28",
+        "recovery": 32,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Pulls the opponent towards Ed when the attack hits or is blockedLaunches the opponent when the attack hits while they are standing on the groundProduces a slam knockdown when hitting a mid-air opponent* Damage when hitting a mid-air opponent is 1200Clashes with projectiles (Once)"
+    },
+    "ed_kill_rush_forward": {
+      "displayName": "Kill Rush (Forward)",
+      "level": null,
+      "category": "special",
+      "context": "(Press while charging an attack to activate)",
+      "input": "(Press while charging an attack to activate) /6KK",
+      "notation": "5/6KK",
+      "shortName": "5/6KK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 31,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can transition to Kill Switch Break between frames 11 - 12Can transition to Kill Switch Chaser between frames 13 - 24"
+    },
+    "ed_kill_switch_break": {
+      "displayName": "Kill Switch Break",
+      "level": "(During Kill Rush (Forward))",
+      "category": "special",
+      "context": "(During the first half of Kill Rush Forward)",
+      "input": "(During the first half of Kill Rush Forward) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 600,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 20,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_kill_switch_chaser": {
+      "displayName": "Kill Switch Chaser",
+      "level": "(During Kill Rush (Forward))",
+      "category": "special",
+      "context": "(During the latter half of Kill Rush Forward)",
+      "input": "(During the latter half of Kill Rush Forward) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 600,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 20,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "ed_kill_rush_backward": {
+      "displayName": "Kill Rush (Backward)",
+      "level": null,
+      "category": "special",
+      "context": "(Press while charging an attack to activate)",
+      "input": "(Press while charging an attack to activate) ← + KK",
+      "notation": "4KK",
+      "shortName": "4KK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 31,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "ed_sa1_psycho_storm": {
+      "displayName": "SA1 Psycho Storm",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2000,
+      "frameData": {
+        "startup": 13,
+        "active": 6701,
+        "activeRange": "13- 6713-14, 22-23, 40-41, 45-46, 63, 65, 67",
+        "recovery": 56,
+        "total": 6770
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws between frames 1 - 14Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
+    },
+    "ed_sa2_psycho_cannon": {
+      "displayName": "SA2 Psycho Cannon",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 1100,
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "activeRange": "",
+        "recovery": 35,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 65,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 40%"
+    },
+    "ed_sa3_psycho_chamber": {
+      "displayName": "SA3 Psycho Chamber",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 10,
+        "active": 10,
+        "activeRange": "10-19",
+        "recovery": 64,
+        "total": 84
+      },
+      "frameAdvantage": {
+        "onBlock": -49,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 14The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves* 30% Immediate Scaling added when canceled into from a Light or Medium Psycho Flicker"
+    },
+    "ed_ca_psycho_chamber": {
+      "displayName": "CA Psycho Chamber",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 10,
+        "active": 10,
+        "activeRange": "10-19",
+        "recovery": 64,
+        "total": 84
+      },
+      "frameAdvantage": {
+        "onBlock": -49,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 14Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves* 30% Immediate Scaling added when canceled into from a Light or Medium Psycho Flicker"
+    },
+    "ed_face_buster": {
+      "displayName": "Face Buster",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "ed_rib_crusher": {
+      "displayName": "Rib Crusher",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "ed_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "ed_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws between frames 1 - 15"
+    },
+    "ed_drive_impact_turn_punch": {
+      "displayName": "Drive Impact (Turn Punch)",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "ed_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Hammer Blow",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
+    },
+    "ed_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Hammer Blow",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "ed_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
+    },
+    "ed_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "ed_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "ed_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "ed_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}
