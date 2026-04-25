@@ -8,6 +8,8 @@ import PunishCalculator from './components/Punish/PunishCalculator';
 import MoveBrowser from './components/Browse/MoveBrowser';
 import SearchResults from './components/Search/SearchResults';
 import TacticsPage from './components/Tactics/TacticsPage';
+import TrackerPage from './components/Tracker/TrackerPage';
+import StatsPage from './components/Tracker/StatsPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import {
   ken     as kenData,
@@ -256,6 +258,12 @@ function App() {
                 Tactics
               </NavButton>
               <NavButton
+                active={location.pathname.startsWith('/tracker')}
+                onClick={() => navigate('/tracker')}
+              >
+                Tracker
+              </NavButton>
+              <NavButton
                 active={location.pathname.startsWith('/punish')}
                 onClick={() => navigate(`/punish/${selectedCharacterId || 'ken'}`)}
               >
@@ -416,6 +424,15 @@ function App() {
                   Tactics
                 </MobileNavButton>
                 <MobileNavButton
+                  active={location.pathname.startsWith('/tracker')}
+                  onClick={() => {
+                    navigate('/tracker');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Tracker
+                </MobileNavButton>
+                <MobileNavButton
                   active={location.pathname.startsWith('/punish')}
                   onClick={() => {
                     navigate(`/punish/${selectedCharacterId || 'ken'}`);
@@ -477,6 +494,30 @@ function App() {
         } />
         <Route path="/character/:characterId/tactics/:categoryId" element={
           <TacticsPage characterMap={characterMap} onCharacterEntered={setSelectedCharacterId} />
+        } />
+
+        {/* Tracker — V01.32 win/loss tracker */}
+        <Route path="/tracker" element={
+          <TrackerPage
+            characterMap={characterMap}
+            characterList={[
+              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
+              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
+              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
+            ]}
+            defaultYourCharacter={selectedCharacterId}
+          />
+        } />
+        <Route path="/tracker/stats" element={
+          <StatsPage
+            characterMap={characterMap}
+            characterList={[
+              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
+              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
+              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
+            ]}
+            defaultYourCharacter={selectedCharacterId}
+          />
         } />
 
         {/* Punish Calculator - with optional character ID */}

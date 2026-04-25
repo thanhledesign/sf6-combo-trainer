@@ -47,6 +47,7 @@ const TacticsPage = ({ characterMap, onCharacterEntered }) => {
   }, [characterData, activeSlot]);
 
   const counts = useMemo(() => countMovesByTag(effectiveMoves), [effectiveMoves]);
+  const totalTagged = useMemo(() => Object.values(counts).reduce((a, b) => a + b, 0), [counts]);
 
   // Load slots on character change
   useEffect(() => {
@@ -255,8 +256,42 @@ const TacticsPage = ({ characterMap, onCharacterEntered }) => {
             </div>
           </header>
 
-          {/* Sections — render order respects per-slot categoryOrder when set */}
-          <div className="flex flex-col gap-10 md:gap-12">
+          {/* Empty state — invite the user to build their own when there
+              are no factory tags AND no active slot. Hides the 9 empty
+              sections that would otherwise look broken. */}
+          {totalTagged === 0 && !activeSlot && (
+            <div className="rounded-2xl border-2 border-dashed border-purple-500/30 bg-purple-600/5 p-6 md:p-8 mb-6">
+              <p className="text-xs uppercase tracking-wide text-purple-400 font-semibold mb-2">Build your own</p>
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
+                No tactical tags yet for {characterData.character?.displayName || characterId}
+              </h2>
+              <p className="text-sm text-gray-400 mb-4 max-w-2xl">
+                The Tactics page surfaces the 3-6 moves that matter most in each situation. Ken has a starter set as an example — for everyone else, you author your own. Save up to 5 named configurations per character; export and share them.
+              </p>
+              <p className="text-sm text-gray-400 mb-5 max-w-2xl">
+                Open <button onClick={() => navigate(`/browse/${characterId}`)} className="text-purple-400 hover:text-purple-300 underline">Browse</button> to study {characterData.character?.displayName || characterId}'s full movelist, then come back and tag your favorites.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSlotsPanelOpen(true)}
+                  className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-sm font-semibold flex items-center gap-1.5"
+                >
+                  <Settings className="w-4 h-4" /> Open slot manager
+                </button>
+                <button
+                  onClick={handleEnterEditMode}
+                  className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm font-semibold flex items-center gap-1.5"
+                >
+                  <Pencil className="w-4 h-4" /> Start editing
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Sections — render order respects per-slot categoryOrder when set.
+              In the empty-state case above we still render the empty sections
+              so the user can immediately see the structure they'd be filling. */}
+          <div className={`flex flex-col gap-10 md:gap-12 ${totalTagged === 0 && !activeSlot ? 'opacity-50' : ''}`}>
             {(() => {
               const customOrder = activeSlot?.categoryOrder;
               let cats = TACTICAL_CATEGORIES;

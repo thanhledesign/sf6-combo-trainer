@@ -10,7 +10,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 
 - **Live**: https://sf6-combo-trainer.vercel.app
 - **GitHub**: https://github.com/thanhledesign/sf6-combo-trainer
-- **Current version**: V01.31 (Tactical Guide shipped — 9-category per-character tactical view)
+- **Current version**: V01.32 (Win/Loss Tracker — quick-entry counter, sessions, per-matchup stats with Trainer bridge, opt-in tilt meter)
 - **Owner**: Thanh Le. Active SF6 ranked player (Ken main, peak ~1,600 MR), uses the app as a personal training companion
 
 ---
