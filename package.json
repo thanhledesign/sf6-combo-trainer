@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "migrate-data": "node scripts/migrate-character-data.mjs",
-    "sync-data": "node scripts/sync/scrape-capcom.mjs --all"
+    "sync-data": "node scripts/sync/scrape-capcom.mjs --all",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",
