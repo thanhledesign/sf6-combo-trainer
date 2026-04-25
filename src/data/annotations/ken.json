@@ -139,7 +139,10 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      }
+      },
+      "tacticalTags": [
+        "drc-combo"
+      ]
     },
     "ken_st_mk": {
       "id": "ken_st_mk",
@@ -164,7 +167,10 @@
       },
       "properties": {
         "comboScaling": "Starter scaling 20%"
-      }
+      },
+      "tacticalTags": [
+        "pokes"
+      ]
     },
     "ken_st_hp": {
       "id": "ken_st_hp",
@@ -190,7 +196,11 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      }
+      },
+      "tacticalTags": [
+        "meaties",
+        "drc-combo"
+      ]
     },
     "ken_st_hk": {
       "id": "ken_st_hk",
@@ -298,7 +308,11 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Neutral on block."
-      }
+      },
+      "tacticalTags": [
+        "pokes",
+        "meaties"
+      ]
     },
     "ken_cr_mk": {
       "id": "ken_cr_mk",
@@ -325,7 +339,10 @@
       },
       "properties": {
         "comboScaling": "Starter scaling 20%"
-      }
+      },
+      "tacticalTags": [
+        "pokes"
+      ]
     },
     "ken_cr_hp": {
       "id": "ken_cr_hp",
@@ -353,7 +370,11 @@
       },
       "properties": {
         "comboScaling": "Starter scaling 20%"
-      }
+      },
+      "tacticalTags": [
+        "anti-airs",
+        "drc-combo"
+      ]
     },
     "ken_cr_hk": {
       "id": "ken_cr_hk",
@@ -566,7 +587,10 @@
         "riskLevel": "safe",
         "riskDescription": "Movement option. Watch for follow-up attacks."
       },
-      "video": "/videos/ken/quick_dash.mp4"
+      "video": "/videos/ken/quick_dash.mp4",
+      "tacticalTags": [
+        "unique"
+      ]
     },
     "ken_emergency_stop": {
       "id": "ken_emergency_stop",
@@ -589,7 +613,10 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Ken stops his run. Can act after."
-      }
+      },
+      "tacticalTags": [
+        "unique"
+      ]
     },
     "ken_thunder_kick": {
       "id": "ken_thunder_kick",
@@ -614,7 +641,10 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      }
+      },
+      "tacticalTags": [
+        "unique"
+      ]
     },
     "ken_forward_step_kick": {
       "id": "ken_forward_step_kick",
@@ -672,7 +702,11 @@
       "properties": {
         "comboScaling": "Combo scaling 20%"
       },
-      "video": "/videos/ken/chin_buster.mp4"
+      "video": "/videos/ken/chin_buster.mp4",
+      "tacticalTags": [
+        "drc-combo",
+        "super-combo"
+      ]
     },
     "ken_triple_flash_2": {
       "id": "ken_triple_flash_2",
@@ -852,7 +886,10 @@
         "airborne": "7-35",
         "comboScaling": "Starter scaling 20%"
       },
-      "video": "/videos/ken/shoryuken.mp4"
+      "video": "/videos/ken/shoryuken.mp4",
+      "tacticalTags": [
+        "anti-airs"
+      ]
     },
     "ken_shoryuken_m": {
       "id": "ken_shoryuken_m",
@@ -1220,7 +1257,11 @@
       "properties": {
         "airborne": "19-37",
         "comboScaling": "Starter scaling 30%, Combo scaling 30%"
-      }
+      },
+      "tacticalTags": [
+        "plus-on-block",
+        "super-combo"
+      ]
     },
     "ken_dragonlash_od": {
       "id": "ken_dragonlash_od",
@@ -1274,7 +1315,10 @@
       "properties": {
         "airborne": "10-28",
         "comboScaling": "Starter scaling 10%, 5% Immediate scaling on 2nd hit"
-      }
+      },
+      "tacticalTags": [
+        "unique"
+      ]
     },
     "ken_jinrai_l": {
       "id": "ken_jinrai_l",
@@ -1327,7 +1371,11 @@
       "opponentPerspective": {
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 7."
-      }
+      },
+      "tacticalTags": [
+        "burnout",
+        "unique"
+      ]
     },
     "ken_jinrai_h": {
       "id": "ken_jinrai_h",
@@ -1477,7 +1525,10 @@
       "opponentPerspective": {
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      }
+      },
+      "tacticalTags": [
+        "meaties"
+      ]
     },
     "ken_od_gorai": {
       "id": "ken_od_gorai",
@@ -1629,7 +1680,11 @@
         "invincible": "strikes/throws 1-9",
         "superArt": 1,
         "minimumDamage": "30%"
-      }
+      },
+      "tacticalTags": [
+        "super-arts",
+        "super-combo"
+      ]
     },
     "ken_sa2": {
       "id": "ken_sa2",
@@ -1655,7 +1710,11 @@
       "properties": {
         "superArt": 2,
         "minimumDamage": "40%"
-      }
+      },
+      "tacticalTags": [
+        "super-arts",
+        "super-combo"
+      ]
     },
     "ken_sa3": {
       "id": "ken_sa3",
@@ -1685,7 +1744,11 @@
         "minimumDamage": "50%",
         "comboScaling": "Immediate scaling 10%"
       },
-      "video": "/videos/ken/sa3.mp4"
+      "video": "/videos/ken/sa3.mp4",
+      "tacticalTags": [
+        "super-arts",
+        "super-combo"
+      ]
     },
     "ken_ca": {
       "id": "ken_ca",

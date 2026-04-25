@@ -10,7 +10,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 
 - **Live**: https://sf6-combo-trainer.vercel.app
 - **GitHub**: https://github.com/thanhledesign/sf6-combo-trainer
-- **Current version**: V01.30 (PWA reinstated; T3 done)
+- **Current version**: V01.31 (Tactical Guide shipped — 9-category per-character tactical view)
 - **Owner**: Thanh Le. Active SF6 ranked player (Ken main, peak ~1,600 MR), uses the app as a personal training companion
 
 ---
@@ -59,7 +59,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 - Dark theme always
 - Best practices oriented toward new learners
 - 100% consistency over cleverness
-- Versioning: increment `V01.XX` tags with each significant feature addition (currently V01.30 → next is V01.31, the win/loss tracker per `docs/_handoff-2026-04-24/07-WIN-LOSS-TRACKER-SPEC.md`)
+- Versioning: increment `V01.XX` tags with each significant feature addition (currently V01.31 → next is V01.32, the win/loss tracker per `docs/_handoff-2026-04-24/07-WIN-LOSS-TRACKER-SPEC.md` — engine already scaffolded, UI gates on Figma wireframes)
 
 ---
 

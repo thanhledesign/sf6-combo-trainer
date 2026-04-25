@@ -7,6 +7,7 @@ import MoveCard from './components/Card/MoveCard';
 import PunishCalculator from './components/Punish/PunishCalculator';
 import MoveBrowser from './components/Browse/MoveBrowser';
 import SearchResults from './components/Search/SearchResults';
+import TacticsPage from './components/Tactics/TacticsPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import {
   ken     as kenData,
@@ -229,7 +230,13 @@ function App() {
               >
                 Characters
               </NavButton>
-              <NavButton 
+              <NavButton
+                active={location.pathname.includes('/tactics')}
+                onClick={() => navigate(`/character/${selectedCharacterId || 'ken'}/tactics`)}
+              >
+                Tactics
+              </NavButton>
+              <NavButton
                 active={location.pathname.startsWith('/punish')}
                 onClick={() => navigate(`/punish/${selectedCharacterId || 'ken'}`)}
               >
@@ -380,7 +387,16 @@ function App() {
                 >
                   Characters
                 </MobileNavButton>
-                <MobileNavButton 
+                <MobileNavButton
+                  active={location.pathname.includes('/tactics')}
+                  onClick={() => {
+                    navigate(`/character/${selectedCharacterId || 'ken'}/tactics`);
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Tactics
+                </MobileNavButton>
+                <MobileNavButton
                   active={location.pathname.startsWith('/punish')}
                   onClick={() => {
                     navigate(`/punish/${selectedCharacterId || 'ken'}`);
@@ -436,6 +452,14 @@ function App() {
           <MoveBrowserWrapper onCharacterChange={handleCharacterChange} />
         } />
         
+        {/* Tactics — full 9-section guide per docs/_handoff-2026-04-24/04-TACTICAL-IA-SPEC.md */}
+        <Route path="/character/:characterId/tactics" element={
+          <TacticsPage characterMap={characterMap} />
+        } />
+        <Route path="/character/:characterId/tactics/:categoryId" element={
+          <TacticsPage characterMap={characterMap} />
+        } />
+
         {/* Punish Calculator - with optional character ID */}
         <Route path="/punish" element={
           <PunishCalculatorWrapper onCharacterChange={handleCharacterChange} />
