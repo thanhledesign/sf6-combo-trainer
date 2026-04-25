@@ -11,17 +11,10 @@ import TacticsPage from './components/Tactics/TacticsPage';
 import StatsPage from './components/Tracker/StatsPage';
 import SetTrackerPage from './components/Tracker/SetTrackerPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
-import {
-  ken     as kenData,
-  terry   as terryData,
-  chunli  as chunliData,
-  luke    as lukeData,
-  cammy   as cammyData,
-  mai     as maiData,
-  ryu     as ryuData,
-} from './data/characters';
+import { characters as characterMap, characterList } from './data/characters';
 
-// Character thumbnail imports for nav
+// Character thumbnail imports for nav (only the 7 hand-curated PNGs exist;
+// new characters render via CharacterAvatar's gradient-circle fallback)
 import kenThumb from './assets/characters/kenThumbnail.png';
 import terryThumb from './assets/characters/terryThumbnail.png';
 import chunliThumb from './assets/characters/chunliThumbnail.png';
@@ -30,17 +23,6 @@ import cammyThumb from './assets/characters/cammyThumbnail.png';
 import maiThumb from './assets/characters/maiThumbnail.png';
 import ryuThumb from './assets/characters/ryuThumbnail.png';
 
-// Character data map for easy lookup
-const characterMap = {
-  ken: kenData,
-  terry: terryData,
-  chunli: chunliData,
-  luke: lukeData,
-  cammy: cammyData,
-  mai: maiData,
-  ryu: ryuData
-};
-
 const thumbnailMap = {
   ken: kenThumb,
   terry: terryThumb,
@@ -48,9 +30,10 @@ const thumbnailMap = {
   luke: lukeThumb,
   cammy: cammyThumb,
   mai: maiThumb,
-  ryu: ryuThumb
+  ryu: ryuThumb,
 };
 
+// Full roster for the character selector modal — includes all 29 chars.
 const allCharacters = Object.values(characterMap);
 
 // Wrapper component for MoveBrowser that gets character from URL
