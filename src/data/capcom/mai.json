@@ -1,6 +1,6 @@
 {
   "id": "mai",
-  "scrapedAt": "2026-04-25T16:32:57.412Z",
+  "scrapedAt": "2026-04-25T16:50:54.229Z",
   "source": "https://www.streetfighter.com/6/character/mai",
   "character": {
     "bio": "The successor of Shiranui-style ninja arts. A charming kunoichi who is as dedicated to love as she is to training. Loves cooking, Japanese dressmaking, flower arrangement, and traditional Japanese dance.",
@@ -2104,9 +2104,9 @@
       "level": "(While connecting with a special-cancelable move)",
       "category": "normal",
       "context": "(While connecting with a special-cancelable move)",
-      "input": "(While connecting with a special-cancelable move) →→→ + MP + MK",
-      "notation": "666MP+MK",
-      "shortName": "666MP+MK",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,

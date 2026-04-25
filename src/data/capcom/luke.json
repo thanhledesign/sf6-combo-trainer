@@ -1,6 +1,6 @@
 {
   "id": "luke",
-  "scrapedAt": "2026-04-25T16:32:18.709Z",
+  "scrapedAt": "2026-04-25T16:50:15.749Z",
   "source": "https://www.streetfighter.com/6/character/luke",
   "character": {
     "bio": "A contractor for a PMC, Luke uses his elite military background to teach mixed martial arts. His days off are spent eating junk food, playing video games, and fighting, but make no mistake—Luke plays to win.",
@@ -1789,9 +1789,9 @@
       "level": "(While connecting with a special-cancelable move)  (  )  MM",
       "category": "normal",
       "context": "(While connecting with a special-cancelable move)",
-      "input": "(While connecting with a special-cancelable move) →→→ + MP + MK",
-      "notation": "666MP+MK",
-      "shortName": "666MP+MK",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,

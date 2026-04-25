@@ -116,6 +116,16 @@ const IMG_TO_TOKEN = {
   'key-ul.png': '7',
   'key-l.png': '4',
   'key-dl.png': '1',
+  // Charge motions (hold direction). Bracket notation like [4] / [2] is
+  // standard for charge moves. Renderer translates to "(Hold ←)" / "(Hold ↓)".
+  'key-lc.png': '[4]',
+  'key-dc.png': '[2]',
+  // Neutral position (5)
+  'key-nutral.png': '5',
+  // Alternation between options ("←/→ + P" style)
+  'key-or.png': '/',
+  // Modern controls "all directions" — semantically rare; drop
+  'key-all.png': '',
   // Combinator
   'key-plus.png': '+',
   // Buttons (any-strength variants are how Capcom denotes "any P" / "any K")
@@ -127,8 +137,19 @@ const IMG_TO_TOKEN = {
   'icon_kick_l.png': 'LK',
   'icon_kick_m.png': 'MK',
   'icon_kick_h.png': 'HK',
-  // Visual separator — drop
+  // Visual separators / unhandled — drop
   'arrow_3.png': '',
+  '0.png': '',
+  'dd.png': '~',  // double-tap indicator (e.g., Drive Rush "66")
+  // Modern controls icons — drop (we describe Classic notation)
+  'modern_m.png': '',
+  's1.png': '',
+  's2.png': '',
+  's3.png': '',
+  'd05.png': '',
+  'd1.png': '',
+  'd2.png': '',
+  'd3.png': '',
 };
 
 function imagesToNotation(imgFilenames) {
@@ -138,26 +159,51 @@ function imagesToNotation(imgFilenames) {
     if (IMG_TO_TOKEN[fn] != null) raw.push(IMG_TO_TOKEN[fn]);
     else raw.push(`?${fn}?`); // surface unknown so we notice in diffs
   }
-  // Drop the "+" tokens — Capcom uses key-plus to glue motion to button, but
-  // standard SF notation doesn't write "236+P", it writes "236P". We re-insert
-  // "+" only between two specific-strength buttons (HP+HK style).
+  // Drop the "+" tokens between motion and button — standard SF notation
+  // doesn't write "236+P", just "236P". We re-insert "+" only between two
+  // specific-strength buttons (HP+HK style).
   const tokens = raw.filter((t) => t !== '+');
   const isMotion = (t) => /^[1-9]$/.test(t);
+  const isCharge = (t) => /^\[[1-9]\]$/.test(t);
   const isStrengthButton = (t) => /^[LMH][PK]$/.test(t);
   const isGenericButton = (t) => /^[PK]$/.test(t);
 
   const motion = [];
   const buttons = [];
   for (const t of tokens) {
-    if (isMotion(t)) motion.push(t);
+    if (isMotion(t) || isCharge(t)) motion.push(t);
     else if (isStrengthButton(t) || isGenericButton(t)) buttons.push(t);
+    else motion.push(t); // pass-through for "/", "~", etc.
   }
 
-  // Two specific-strength buttons (e.g. HP + HK = Drive Impact) → join with +
-  // All other cases concatenate (236P, KK, MK, 5LP, etc.)
-  const buttonStr = (buttons.length > 1 && buttons.every(isStrengthButton))
-    ? buttons.join('+')
-    : buttons.join('');
+  // Decide button representation:
+  // - Identical generic buttons (K+K, P+P) → "KK" / "PP" (Quick Dash style)
+  // - 2 specific buttons of DIFFERENT families (HP + HK) → "HP+HK" (Drive Impact)
+  // - 1 generic + 1 specific of SAME family (K + HK) → keep the generic
+  //   (Capcom shows this as "regular K, OD HK" — only the generic applies
+  //   to the regular variant; the OD lives on its own frame row.)
+  // - 1 button → use it
+  // - >2 buttons → concat (rare, multi-tap moves)
+  let buttonStr;
+  if (buttons.length === 2) {
+    const [a, b] = buttons;
+    const famA = a.slice(-1);
+    const famB = b.slice(-1);
+    if (a === b) {
+      // identical generics: real two-button input
+      buttonStr = a + b;
+    } else if (famA === famB && (isGenericButton(a) || isGenericButton(b))) {
+      // generic + specific of same family: keep generic only
+      buttonStr = isGenericButton(a) ? a : b;
+    } else if (famA !== famB && isStrengthButton(a) && isStrengthButton(b)) {
+      // different families, both specific: simultaneous press
+      buttonStr = `${a}+${b}`;
+    } else {
+      buttonStr = buttons.join('');
+    }
+  } else {
+    buttonStr = buttons.join('');
+  }
   return motion.join('') + buttonStr;
 }
 
@@ -179,27 +225,37 @@ const NUMPAD_TO_ARROW = {
 function notationToInputDisplay(notation, context = null) {
   if (!notation) return null;
 
-  // Split on existing "+" first (HP+HK style)
-  const parts = notation.split('+').map((p) => p.trim());
   const formatPart = (p) => {
-    // Find motion prefix (consecutive digits) vs button suffix
+    // Charge prefix: [4]6P → "(Hold ←) → + P"
+    const chargeMatch = p.match(/^\[([1-9])\]([1-9]*)(.*)$/);
+    if (chargeMatch) {
+      const chargeArrow = NUMPAD_TO_ARROW[chargeMatch[1]] || chargeMatch[1];
+      const followMotion = chargeMatch[2];
+      const button = chargeMatch[3];
+      const followArrows = followMotion.split('').map((d) => NUMPAD_TO_ARROW[d] || d).join('');
+      let s = `(Hold ${chargeArrow})`;
+      if (followArrows) s += ` ${followArrows}`;
+      if (button) s += ` + ${button}`;
+      return s;
+    }
+    // Motion + button: 236P → "↓↘→ + P"
     const m = p.match(/^([1-9]+)(.*)$/);
     if (!m) return p; // pure-button like "K" or "LP"
     const motion = m[1];
     const button = m[2];
-    // Drop neutral stance (5)
-    if (motion === '5') return button;
+    if (motion === '5') return button; // drop neutral stance
     const arrows = motion.split('').map((d) => NUMPAD_TO_ARROW[d] || d).join('');
     return button ? `${arrows} + ${button}` : arrows;
   };
 
+  // Split on existing "+" first (HP+HK style)
+  const parts = notation.split('+').map((p) => p.trim());
+
   let display;
   if (parts.length > 1) {
-    // Two-button "+" case — render each part, join with " + "
     display = parts.map(formatPart).join(' + ');
   } else if (/^[LMH]?[PK][LMH]?[PK]$/.test(notation)) {
-    // Generic two-button concat (KK, PP, LPLK, etc.) — split between buttons
-    // KK → K + K, but only if it's exactly two buttons concatenated.
+    // Generic two-button concat (KK, PP, LPLK)
     const m = notation.match(/^([LMH]?[PK])([LMH]?[PK])$/);
     if (m) display = `${m[1]} + ${m[2]}`;
     else display = formatPart(notation);

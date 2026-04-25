@@ -1,6 +1,6 @@
 {
   "id": "ryu",
-  "scrapedAt": "2026-04-25T16:31:55.988Z",
+  "scrapedAt": "2026-04-25T16:49:53.282Z",
   "source": "https://www.streetfighter.com/6/character/ryu",
   "character": {
     "bio": "Ever training, this martial artist seeks true strength. Well-mannered and sincere, Ryu travels the globe in search of worthy opponents. Having overcome the Satsui no Hado, he now seeks yet greater heights.",
@@ -1799,9 +1799,9 @@
       "level": "(While connecting with a special-cancelable move)  (  )  MM",
       "category": "normal",
       "context": "(While connecting with a special-cancelable move)",
-      "input": "(While connecting with a special-cancelable move) →→→ + MP + MK",
-      "notation": "666MP+MK",
-      "shortName": "666MP+MK",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,

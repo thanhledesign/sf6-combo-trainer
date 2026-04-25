@@ -1,6 +1,6 @@
 {
   "id": "ken",
-  "scrapedAt": "2026-04-25T16:31:40.656Z",
+  "scrapedAt": "2026-04-25T16:49:44.686Z",
   "source": "https://www.streetfighter.com/6/character/ken",
   "character": {
     "bio": "Former US National Fighting Champ, and ex-VP of the Masters Foundation. Accusations of orchestrating a criminal plot have forced Ken to abandon his family and business and go into hiding.",
@@ -605,8 +605,8 @@
       "level": "MH",
       "category": "normal",
       "input": "MP + HP",
-      "notation": "MP+HP",
-      "shortName": "MP+HP",
+      "notation": "MPHP",
+      "shortName": "MPHP",
       "damage": 400,
       "frameData": {
         "startup": 11,
@@ -1693,9 +1693,9 @@
       "level": "(While connecting with a special-cancelable move)  (  )  MM",
       "category": "normal",
       "context": "(While connecting with a special-cancelable move)",
-      "input": "(While connecting with a special-cancelable move) →→→ + MP + MK",
-      "notation": "666MP+MK",
-      "shortName": "666MP+MK",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,
