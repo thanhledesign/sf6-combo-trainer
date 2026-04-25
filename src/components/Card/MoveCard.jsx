@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { RotateCcw, Zap, Shield, AlertTriangle, CheckCircle, Play } from 'lucide-react';
+import RangeBadge from '../RangeBadge';
 
 const MoveCard = ({ move, showCharacter = false, characterName = '', compact = false }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -341,6 +342,13 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
                         Invincible
                       </span>
                     )}
+                  </div>
+                )}
+
+                {/* Range badge — color-graded reach indicator (red close → teal full-screen) */}
+                {yourPerspective?.range && (
+                  <div className="mb-2">
+                    <RangeBadge range={yourPerspective.range} compact={compact} />
                   </div>
                 )}
 

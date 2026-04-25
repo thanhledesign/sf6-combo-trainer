@@ -36,9 +36,6 @@ const colorFor = (id) => {
   return PALETTE[hash % PALETTE.length];
 };
 
-// Map of character id → thumbnail asset URL (for consumers that need
-// the URL, e.g., as <img src>).
-export const thumbnailMap = KNOWN_THUMBNAILS;
 
 const CharacterAvatar = ({ characterId, name, size = 'md', className = '', ...rest }) => {
   const sizeMap = {

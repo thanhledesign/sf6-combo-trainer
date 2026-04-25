@@ -8,7 +8,6 @@ import PunishCalculator from './components/Punish/PunishCalculator';
 import MoveBrowser from './components/Browse/MoveBrowser';
 import SearchResults from './components/Search/SearchResults';
 import TacticsPage from './components/Tactics/TacticsPage';
-import TrackerPage from './components/Tracker/TrackerPage';
 import StatsPage from './components/Tracker/StatsPage';
 import SetTrackerPage from './components/Tracker/SetTrackerPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
@@ -497,38 +496,18 @@ function App() {
           <TacticsPage characterMap={characterMap} onCharacterEntered={setSelectedCharacterId} />
         } />
 
-        {/* Tracker — V01.32 win/loss tracker */}
+        {/* Tracker — head-to-head set tracker is the primary entry */}
         <Route path="/tracker" element={
-          <TrackerPage
+          <SetTrackerPage
             characterMap={characterMap}
-            characterList={[
-              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
-              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
-              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
-            ]}
+            thumbnailMap={thumbnailMap}
+            characterList={allCharacters.map((c) => ({ id: c.character?.id, name: c.character?.displayName || c.character?.name || c.character?.id }))}
             defaultYourCharacter={selectedCharacterId}
           />
         } />
         <Route path="/tracker/stats" element={
           <StatsPage
             characterMap={characterMap}
-            characterList={[
-              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
-              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
-              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
-            ]}
-            defaultYourCharacter={selectedCharacterId}
-          />
-        } />
-        <Route path="/tracker/set" element={
-          <SetTrackerPage
-            characterMap={characterMap}
-            thumbnailMap={thumbnailMap}
-            characterList={[
-              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
-              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
-              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
-            ]}
             defaultYourCharacter={selectedCharacterId}
           />
         } />

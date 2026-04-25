@@ -57,6 +57,22 @@ export async function winRateByMatchup({ yourCharacter } = {}) {
 }
 
 /**
+ * Win rate per stage (optionally filtered by your character).
+ * Powers the stage heatmap in StatsPage.
+ * @param {{yourCharacter?: string}} [filter]
+ */
+export async function winRateByStage({ yourCharacter } = {}) {
+  const matches = await trackerStore.getAllMatches();
+  const groups = {};
+  for (const m of matches) {
+    if (!m.stage) continue;
+    if (yourCharacter && m.yourCharacter !== yourCharacter) continue;
+    (groups[m.stage] ??= []).push(m);
+  }
+  return Object.entries(groups).map(([stage, ms]) => ({ stage, ...tally(ms) }));
+}
+
+/**
  * Top loss tags ("your top leaks"). Defaults to all-time; pass `sinceTimestamp`
  * for "this week" / "last 7 days" style queries.
  * @param {{limit?: number, sinceTimestamp?: number}} [opts]

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, Trophy, X, Undo2, Flag } from 'lucide-react';
-import { trackerStore } from '../../utils/tracker';
+import { Trophy, X, Undo2, Flag, BarChart3 } from 'lucide-react';
+import { trackerStore, SF6_STAGES } from '../../utils/tracker';
 import SwipeCard from './SwipeCard';
 
 // Head-to-head set tracker — Tinder-style swipe to log each match in a set.
@@ -21,6 +21,7 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
   const [pickerYour, setPickerYour] = useState(defaultYourCharacter || null);
   const [pickerOpp, setPickerOpp]   = useState(null);
   const [setLength, setSetLength]   = useState(3);
+  const [pickerStage, setPickerStage] = useState(null);
   const [completedSet, setCompletedSet] = useState(null);
 
   const refresh = useCallback(async () => {
@@ -40,11 +41,23 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
       opponentCharacter: pickerOpp,
       setLength,
     });
-    setActiveSet(s);
+    // Stage isn't part of the set engine yet, but we keep it in component
+    // state and attach to each match record. Future improvement: persist
+    // on the set object itself.
+    setActiveSet({ ...s, stage: pickerStage });
     setPhase('playing');
   };
 
   const handleSwipe = async (direction) => {
+    // Each set match also writes a regular match record so it appears in
+    // /tracker/stats — including the stage if one was picked at set start.
+    const stage = activeSet?.stage || pickerStage || undefined;
+    await trackerStore.addMatch({
+      result: direction,
+      yourCharacter: activeSet?.yourCharacter,
+      opponentCharacter: activeSet?.opponentCharacter,
+      stage,
+    });
     const { set, complete } = await trackerStore.recordSetMatch(direction);
     if (complete) {
       setActiveSet(null);
@@ -75,12 +88,19 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
   return (
     <div className="bg-gray-900 min-h-screen">
       <div className="max-w-md mx-auto px-4 py-5 sm:py-8">
-        <button
-          onClick={() => navigate('/tracker')}
-          className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white mb-4"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to tracker
-        </button>
+        <header className="flex items-center justify-between mb-4">
+          <div>
+            <p className="text-xs uppercase tracking-wide text-purple-400 font-semibold">Tracker</p>
+            <h1 className="text-xl md:text-2xl font-bold text-white mt-0.5">Win/Loss Sets</h1>
+          </div>
+          <button
+            onClick={() => navigate('/tracker/stats')}
+            aria-label="View stats"
+            className="p-2 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white"
+          >
+            <BarChart3 className="w-5 h-5" />
+          </button>
+        </header>
 
         {phase === 'picking' && (
           <PickerView
@@ -89,9 +109,11 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
             yourChar={pickerYour}
             oppChar={pickerOpp}
             setLength={setLength}
+            stage={pickerStage}
             onYour={setPickerYour}
             onOpp={setPickerOpp}
             onLength={setSetLength}
+            onStage={setPickerStage}
             onStart={start}
           />
         )}
@@ -112,7 +134,7 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
             set={completedSet}
             characterMap={characterMap}
             onNewSet={newSet}
-            onBack={() => navigate('/tracker')}
+            onBack={() => navigate('/tracker/stats')}
           />
         )}
       </div>
@@ -122,9 +144,8 @@ const SetTrackerPage = ({ characterMap, characterList, thumbnailMap, defaultYour
 
 // ─── Picker view ────────────────────────────────────────────────────
 
-const PickerView = ({ characterList, thumbnailMap, yourChar, oppChar, setLength, onYour, onOpp, onLength, onStart }) => (
+const PickerView = ({ characterList, thumbnailMap, yourChar, oppChar, setLength, stage, onYour, onOpp, onLength, onStage, onStart }) => (
   <div>
-    <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">Head-to-head set</h1>
     <p className="text-sm text-gray-400 mb-6">Pick characters, set length, then swipe per match.</p>
 
     <Section title="You">
@@ -152,6 +173,19 @@ const PickerView = ({ characterList, thumbnailMap, yourChar, oppChar, setLength,
           </button>
         ))}
       </div>
+    </Section>
+
+    <Section title="Stage (optional)">
+      <select
+        value={stage ?? ''}
+        onChange={(e) => onStage(e.target.value || null)}
+        className="w-full bg-gray-800 text-white rounded-lg py-2 px-3 text-sm border border-gray-700 focus:border-purple-500 focus:outline-none"
+      >
+        <option value="">— None —</option>
+        {SF6_STAGES.map((s) => (
+          <option key={s.id} value={s.id}>{s.label}</option>
+        ))}
+      </select>
     </Section>
 
     <button
@@ -338,7 +372,7 @@ const DoneView = ({ set, characterMap, onNewSet, onBack }) => {
           onClick={onBack}
           className="py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-xl text-sm font-semibold"
         >
-          Back to tracker
+          View stats
         </button>
         <button
           onClick={onNewSet}

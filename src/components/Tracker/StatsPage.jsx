@@ -4,28 +4,33 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 import {
   winRateByYourCharacter,
   winRateByMatchup,
+  winRateByStage,
   topLossTags,
   DEFAULT_LOSS_TAGS,
+  STAGE_BY_ID,
 } from '../../utils/tracker';
 
 const StatsPage = ({ characterMap, defaultYourCharacter }) => {
   const navigate = useNavigate();
   const [perChar, setPerChar]     = useState([]);
   const [matchups, setMatchups]   = useState([]);
+  const [stages, setStages]       = useState([]);
   const [tags, setTags]           = useState([]);
   const [filterChar, setFilterChar] = useState(defaultYourCharacter || null);
 
   useEffect(() => {
     let cancel = false;
     (async () => {
-      const [pc, mu, tg] = await Promise.all([
+      const [pc, mu, st, tg] = await Promise.all([
         winRateByYourCharacter(),
         winRateByMatchup(filterChar ? { yourCharacter: filterChar } : {}),
+        winRateByStage(filterChar ? { yourCharacter: filterChar } : {}),
         topLossTags({ limit: 10, sinceTimestamp: Date.now() - 7 * 24 * 60 * 60 * 1000 }),
       ]);
       if (cancel) return;
       setPerChar(pc.sort((a, b) => b.total - a.total));
       setMatchups(mu.sort((a, b) => a.winRate - b.winRate)); // problem matchups first
+      setStages(st.sort((a, b) => a.winRate - b.winRate));   // problem stages first
       setTags(tg);
     })();
     return () => { cancel = true; };
@@ -116,6 +121,46 @@ const StatsPage = ({ characterMap, defaultYourCharacter }) => {
                         <span className="hidden sm:inline">Study</span>
                       </button>
                     </div>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </section>
+
+        {/* Stage heatmap */}
+        <section className="mb-8">
+          <h2 className="text-sm uppercase tracking-wide text-gray-500 font-semibold mb-3">
+            By stage{filterChar ? ` — ${charName(filterChar)}` : ''}
+          </h2>
+          {stages.length === 0 ? (
+            <p className="text-sm text-gray-500 italic py-4">No stage data yet — pick a stage when logging matches to see per-stage win rates.</p>
+          ) : (
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {stages.map((s) => {
+                const stageLabel = STAGE_BY_ID[s.stage]?.label || s.stage;
+                const wr = s.winRate;
+                // Heatmap color: red < 40%, amber 40-50%, lime 50-60%, green 60%+
+                const tone = wr < 0.4
+                  ? { bg: 'rgba(220,38,38,0.15)', text: '#fca5a5', border: 'rgba(220,38,38,0.4)' }
+                  : wr < 0.5
+                  ? { bg: 'rgba(245,158,11,0.15)', text: '#fcd34d', border: 'rgba(245,158,11,0.4)' }
+                  : wr < 0.6
+                  ? { bg: 'rgba(132,204,22,0.15)', text: '#bef264', border: 'rgba(132,204,22,0.4)' }
+                  : { bg: 'rgba(34,197,94,0.15)', text: '#86efac', border: 'rgba(34,197,94,0.4)' };
+                return (
+                  <li
+                    key={s.stage}
+                    className="rounded-lg p-3 border"
+                    style={{ backgroundColor: tone.bg, borderColor: tone.border }}
+                  >
+                    <div className="flex items-baseline justify-between gap-2">
+                      <p className="text-sm text-white truncate flex-1">{stageLabel}</p>
+                      <span className="text-lg font-bold tabular-nums shrink-0" style={{ color: tone.text }}>
+                        {Math.round(wr * 100)}%
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-500 mt-0.5 tabular-nums">{s.wins}W-{s.losses}L · {s.total} matches</p>
                   </li>
                 );
               })}
