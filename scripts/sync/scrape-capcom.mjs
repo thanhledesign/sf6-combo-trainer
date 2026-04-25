@@ -36,35 +36,98 @@ function normalizeName(s) {
   return (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+// Strip qualifiers people add to annotation displayNames in parens:
+//   "Knee Strikes (Forward Throw)" → "Knee Strikes"
+//   "Shoryuken (Quick Dash)"       → "Shoryuken"
+//   "Kasai Thrust Kick (Kazekama)" → "Kasai Thrust Kick"
+//   "Drive Impact (Power Blow)"    → "Drive Impact"
+const stripAnnotQualifier = (n) => n.replace(/\s*\([^)]+\)\s*$/, '').trim();
+
+// Strip prefixes Capcom uses on the frame page that aren't on the movelist
+// or annotations: "L Hadoken" → "Hadoken", "SA1 X" → "X", "[Quick Dash] X" → "X"
+const stripCapcomPrefix = (n) =>
+  n.replace(/^\[(?:quick dash|after [^\]]+)\]\s+/i, '')
+   .replace(/^(?:sa[123]|ca|od|critical art)\s+/i, '')
+   .replace(/^[lmh]\s+/, '')
+   .trim();
+
+// Per-character disambiguation when Capcom puts the same displayName on
+// multiple rows. Key format is "<normalized name>:<level token>" — level
+// is either L/M/H or the parenthesized prerequisite text Capcom puts in
+// the level column for chained moves.
+const ID_BY_NAME_LEVEL = {
+  // Ken's Kasai Thrust Kick — three rows, one per OD Jinrai sub-branch.
+  // Capcom puts the prerequisite in the level column, not L/M/H.
+  'kasai thrust kick:(during od kazekama shin kick)': 'ken_kasai_kazekama',
+  'kasai thrust kick:(during od gorai axe kick)':     'ken_kasai_gorai',
+  'kasai thrust kick:(during od senka snap kick)':    'ken_kasai_senka',
+};
+
+// Normalize the level field for hint-table lookup (lowercase, collapsed spaces).
+const normLevelForHint = (lvl) => (lvl || '').toLowerCase().replace(/\s+/g, ' ').trim();
+
 function buildMoveIndex(annotMoves) {
-  // Multi-key index: normalized fullName + normalized stripped (no SA prefix etc.)
-  const byFull = new Map();
-  const byStripped = new Map();
-  const stripPrefix = (n) => n.replace(/^(?:sa[123]|ca|critical art)\s+/i, '').trim();
+  const byFull = new Map();          // normalize(displayName)         → id
+  const byStripped = new Map();       // strip SA/CA prefix             → id
+  const byNoQualifier = new Map();    // strip "(Foo)" suffix           → id
+  const noQualMulti = new Map();      // same key, but a list of ids when ambiguous
   for (const [id, move] of Object.entries(annotMoves)) {
     const dn = move?.displayName;
     if (!dn) continue;
-    byFull.set(normalizeName(dn), id);
-    byStripped.set(normalizeName(stripPrefix(dn)), id);
+    const full = normalizeName(dn);
+    byFull.set(full, id);
+    const noPrefix = normalizeName(dn.replace(/^(?:sa[123]|ca|critical art)\s+/i, '').trim());
+    if (!byStripped.has(noPrefix)) byStripped.set(noPrefix, id);
+    const noQual = normalizeName(stripAnnotQualifier(dn));
+    if (!byNoQualifier.has(noQual)) byNoQualifier.set(noQual, id);
+    if (!noQualMulti.has(noQual)) noQualMulti.set(noQual, []);
+    noQualMulti.get(noQual).push(id);
   }
-  return { byFull, byStripped };
+  return { byFull, byStripped, byNoQualifier, noQualMulti };
 }
 
 function matchMove(displayName, level, index, charId) {
   const norm = normalizeName(displayName);
+  const cap  = normalizeName(stripCapcomPrefix(displayName));
+  const both = normalizeName(stripAnnotQualifier(stripCapcomPrefix(displayName)));
+
+  // 1. Exact match (Capcom name == annotation displayName)
   if (index.byFull.has(norm)) return index.byFull.get(norm);
-  // Try without SA1/SA2/SA3/CA prefix
-  const stripped = normalizeName(displayName.replace(/^(?:sa[123]|ca|critical art)\s+/i, '').trim());
-  if (index.byStripped.has(stripped)) return index.byStripped.get(stripped);
-  if (index.byFull.has(stripped)) return index.byFull.get(stripped);
-  // Try common variants
-  for (const cand of [
-    norm.replace(/\bjumping\b/g, 'jump'),
-    norm.replace(/\bjumping\b/g, 'neutral jumping'),
-  ]) {
+  if (index.byFull.has(cap))  return index.byFull.get(cap);
+
+  // 2. Stripped-qualifier match. Always try disambiguation FIRST when the
+  //    stripped name is ambiguous (multiple annotation moves share it).
+  const tryStripped = (key) => {
+    const ids = index.noQualMulti.get(key);
+    if (!ids || ids.length === 0) return null;
+    if (ids.length > 1) {
+      if (/^[LMH]$/.test(level || '')) {
+        const hint = ID_BY_NAME_LEVEL[`${key}:${level}`];
+        if (hint && ids.includes(hint)) return hint;
+      }
+      const pHint = ID_BY_NAME_LEVEL[`${key}:${normLevelForHint(level)}`];
+      if (pHint && ids.includes(pHint)) return pHint;
+    }
+    return ids[0];
+  };
+  const m1 = tryStripped(norm); if (m1) return m1;
+  const m2 = tryStripped(cap);  if (m2) return m2;
+  const m3 = tryStripped(both); if (m3) return m3;
+
+  // 3. Colon split (handles "Drive Impact: Flame Strike" → "Drive Impact")
+  const beforeColon = normalizeName(displayName.split(':')[0].trim());
+  if (index.byFull.has(beforeColon)) return index.byFull.get(beforeColon);
+  const m4 = tryStripped(beforeColon); if (m4) return m4;
+
+  // 4. SA prefix variant via byStripped
+  if (index.byStripped.has(norm)) return index.byStripped.get(norm);
+
+  // 5. Jumping → jump variants
+  for (const cand of [norm.replace(/\bjumping\b/g, 'jump'), norm.replace(/\bjumping\b/g, 'neutral jumping')]) {
     if (index.byFull.has(cand)) return index.byFull.get(cand);
   }
-  // Drive Reversal heuristic: "Drive Reversal (while blocking): Foo" → <char>_drive_reversal_block
+
+  // 6. Drive Reversal heuristic
   if (charId && /drive reversal.*blocking/i.test(displayName)) return `${charId}_drive_reversal_block`;
   if (charId && /drive reversal.*recovering/i.test(displayName)) return `${charId}_drive_reversal_wakeup`;
   return null;
@@ -322,7 +385,13 @@ async function scrapeCharacter(page, charId) {
       // Conditional context like "(During Jinrai Kick)" lives in skill_text
       // siblings near the movelist_classic span.
       const skill = li.querySelector('[class*="skill_text"]');
-      const context = skill ? skill.textContent.trim() : null;
+      // Normalize Capcom's fullwidth parens / spaces to ASCII for consistency
+      const context = skill
+        ? skill.textContent.trim()
+            .replace(/[（]/g, '(').replace(/[）]/g, ')')
+            .replace(/[　]/g, ' ')
+            .replace(/\s+/g, ' ')
+        : null;
       return { name, imgs, context };
     }).filter(Boolean);
   });

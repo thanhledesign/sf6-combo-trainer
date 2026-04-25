@@ -1,6 +1,6 @@
 {
   "id": "mai",
-  "scrapedAt": "2026-04-25T16:50:54.229Z",
+  "scrapedAt": "2026-04-25T18:52:20.723Z",
   "source": "https://www.streetfighter.com/6/character/mai",
   "character": {
     "bio": "The successor of Shiranui-style ninja arts. A charming kunoichi who is as dedicated to love as she is to training. Loves cooking, Japanese dressmaking, flower arrangement, and traditional Japanese dance.",
@@ -1887,6 +1887,84 @@
       },
       "note": "Completely invincible between frames 1 - 11The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
     },
+    "mai_throw_f": {
+      "displayName": "Shiranui Gourin",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "mai_throw_b": {
+      "displayName": "Fuusha Kuzushi",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "mai_throw_air": {
+      "displayName": "Yume Zakura",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) LP + LK",
+      "notation": "LP+LK",
+      "shortName": "LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 3,
+        "total": 11
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
     "mai_forward_dash": {
       "displayName": "Forward Dash",
       "level": null,
@@ -2127,21 +2205,5 @@
       "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
   },
-  "_unmatched": [
-    {
-      "displayName": "Shiranui Gourin",
-      "section": "Throws",
-      "level": "(When near opponent)    LL"
-    },
-    {
-      "displayName": "Fuusha Kuzushi",
-      "section": "Throws",
-      "level": "(When near opponent)  LL"
-    },
-    {
-      "displayName": "Yume Zakura",
-      "section": "Throws",
-      "level": "(During a jump) (When near opponent)LL"
-    }
-  ]
+  "_unmatched": []
 }

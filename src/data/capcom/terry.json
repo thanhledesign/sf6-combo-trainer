@@ -1,6 +1,6 @@
 {
   "id": "terry",
-  "scrapedAt": "2026-04-25T16:51:17.049Z",
+  "scrapedAt": "2026-04-25T18:52:43.587Z",
   "source": "https://www.streetfighter.com/6/character/terry",
   "character": {
     "bio": "A passionate fighter that hones his craft as he travels all over the world. Also known as the \"Hungry Wolf\". He came to Metro City after hearing about the opening of the Pao Pao Cafe.",
@@ -594,8 +594,8 @@
       "displayName": "Jumping Lariat",
       "level": "MMM",
       "category": "normal",
-      "context": "（After Passing Sway connects）",
-      "input": "（After Passing Sway connects） MP",
+      "context": "(After Passing Sway connects)",
+      "input": "(After Passing Sway connects) MP",
       "notation": "MP",
       "shortName": "MP",
       "damage": 1000,
@@ -620,8 +620,8 @@
       "displayName": "Jumping Knee",
       "level": "MMM",
       "category": "normal",
-      "context": "（After Passing Sway connects）",
-      "input": "（After Passing Sway connects） MK",
+      "context": "(After Passing Sway connects)",
+      "input": "(After Passing Sway connects) MK",
       "notation": "MK",
       "shortName": "MK",
       "damage": 1000,
@@ -1198,7 +1198,7 @@
       },
       "note": "Completely invincible between frames 1 - 10Considered airborne from frames 7 - 54"
     },
-    "terry_sa2_buster_wolf": {
+    "terry_sa1": {
       "displayName": "SA1 Buster Wolf",
       "level": null,
       "category": "super",
@@ -1223,7 +1223,7 @@
       },
       "note": "Invincible to strikes and throws between frames 1 - 8Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
     },
-    "terry_sa1": {
+    "terry_sa2_star_dunk_volcano": {
       "displayName": "SA2 Power Geyser",
       "level": null,
       "category": "super",
@@ -1248,7 +1248,107 @@
       },
       "note": "Can transition to Twin Geyser between frames 25 - 38 on hit onlyCompletely invincible on frames 1 - 17Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 18 - 25Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 40%"
     },
-    "terry_rising_fang": {
+    "terry_sa2_twin_geyser": {
+      "displayName": "SA2 Twin Geyser",
+      "level": null,
+      "category": "super",
+      "context": "(After Power Geyser connects)",
+      "input": "(After Power Geyser connects) P + P",
+      "notation": "PP",
+      "shortName": "PP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 22,
+        "active": 6,
+        "activeRange": "22-27",
+        "recovery": 43,
+        "total": 71
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Can transition to Triple Geyser or Triple Geyser (Dud) between frames 38 - 42 on hit onlyThe minimum guaranteed damage is 40%"
+    },
+    "terry_sa2_triple_geyser": {
+      "displayName": "SA2 Triple Geyser",
+      "level": null,
+      "category": "super",
+      "context": "(After Twin Geyser connects)",
+      "input": "(After Twin Geyser connects) P + P",
+      "notation": "PP",
+      "shortName": "PP",
+      "damage": 2500,
+      "frameData": {
+        "startup": 14,
+        "active": 14,
+        "activeRange": "14",
+        "recovery": 125,
+        "total": 153
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 139The minimum guaranteed damage is 40%"
+    },
+    "terry_sa2_triple_geyser_dud": {
+      "displayName": "SA2 Triple Geyser (Dud)",
+      "level": null,
+      "category": "super",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 90,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Performed when there's not enough Super Gauge meter"
+    },
+    "terry_sa3": {
+      "displayName": "SA3 Rising Fang",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 8,
+        "active": 27,
+        "activeRange": "8-34",
+        "recovery": 57,
+        "total": 92
+      },
+      "frameAdvantage": {
+        "onBlock": -50,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 16The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "terry_ca": {
       "displayName": "CA Rising Fang",
       "level": "(when under 25% vitality)",
       "category": "super",
@@ -1273,6 +1373,58 @@
         "cancelable": false
       },
       "note": "Completely invincible between frames 1 - 16The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "terry_throw_f": {
+      "displayName": "Grasping Upper",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "terry_throw_b": {
+      "displayName": "Buster Throw",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
     },
     "terry_forward_dash": {
       "displayName": "Forward Dash",
@@ -1316,6 +1468,31 @@
         "cancelable": false
       },
       "note": "Invincible to throws between frames 1 - 15"
+    },
+    "terry_drive_impact": {
+      "displayName": "Drive Impact: Back Spin Kick",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
     },
     "terry_drive_reversal_block": {
       "displayName": "Drive Reversal (while blocking): Back Knuckle",
@@ -1489,36 +1666,5 @@
       "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
   },
-  "_unmatched": [
-    {
-      "displayName": "SA2 Twin Geyser",
-      "section": "Super Arts",
-      "level": null
-    },
-    {
-      "displayName": "SA2 Triple Geyser",
-      "section": "Super Arts",
-      "level": null
-    },
-    {
-      "displayName": "SA2 Triple Geyser (Dud)",
-      "section": "Super Arts",
-      "level": null
-    },
-    {
-      "displayName": "Grasping Upper",
-      "section": "Throws",
-      "level": "(When near opponent)    LL"
-    },
-    {
-      "displayName": "Buster Throw",
-      "section": "Throws",
-      "level": "(When near opponent)  LL"
-    },
-    {
-      "displayName": "Drive Impact: Back Spin Kick",
-      "section": "Common Moves",
-      "level": "HH"
-    }
-  ]
+  "_unmatched": []
 }

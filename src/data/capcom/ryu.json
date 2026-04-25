@@ -1,6 +1,6 @@
 {
   "id": "ryu",
-  "scrapedAt": "2026-04-25T16:49:53.282Z",
+  "scrapedAt": "2026-04-25T18:51:19.533Z",
   "source": "https://www.streetfighter.com/6/character/ryu",
   "character": {
     "bio": "Ever training, this martial artist seeks true strength. Well-mannered and sincere, Ryu travels the globe in search of worthy opponents. Having overcome the Satsui no Hado, he now seeks yet greater heights.",
@@ -1582,6 +1582,58 @@
       },
       "note": "Completely invincible from frame 1 to frame 16.Values do not change when the attack lands as a counter or Punish Counter.The minimum guaranteed damage is 50%.* Can only be canceled into from special moves."
     },
+    "ryu_throw_f": {
+      "displayName": "Shoulder Throw",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "ryu_throw_b": {
+      "displayName": "Somersault Throw",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
     "ryu_forward_dash": {
       "displayName": "Forward Dash",
       "level": null,
@@ -1822,16 +1874,5 @@
       "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
   },
-  "_unmatched": [
-    {
-      "displayName": "Shoulder Throw",
-      "section": "Throws",
-      "level": "(When near opponent)    LL"
-    },
-    {
-      "displayName": "Somersault Throw",
-      "section": "Throws",
-      "level": "(When near opponent)  LL"
-    }
-  ]
+  "_unmatched": []
 }

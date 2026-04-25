@@ -19,7 +19,7 @@
     "neutral": {
       "name": "Neutral Tactics",
       "description": "Moves for controlling space and starting offense",
-      "icon": "🎯",
+      "icon": "\ud83c\udfaf",
       "moveIds": [
         "terry_st_lp",
         "terry_st_lk",
@@ -32,7 +32,7 @@
     "offensive": {
       "name": "Offensive Pressure",
       "description": "Moves for maintaining pressure and mix-ups",
-      "icon": "⚡",
+      "icon": "\u26a1",
       "moveIds": [
         "terry_burn_knuckle_m",
         "terry_power_charge_l",
@@ -42,7 +42,7 @@
     "combo": {
       "name": "Combo Tactics",
       "description": "Combo routes and special moves",
-      "icon": "🔥",
+      "icon": "\ud83d\udd25",
       "moveIds": [
         "terry_power_wave_l",
         "terry_rising_tackle_l",
@@ -52,7 +52,7 @@
     "corner": {
       "name": "Corner Tactics",
       "description": "Corner-specific options and setups",
-      "icon": "🛡️",
+      "icon": "\ud83d\udee1\ufe0f",
       "moveIds": [
         "terry_burn_knuckle_h",
         "terry_cr_hk"
@@ -217,7 +217,7 @@
       "displayName": "Crouching Light Punch",
       "shortName": "2LP",
       "notation": "2LP",
-      "input": "↓ + LP",
+      "input": "\u2193 + LP",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "Fast crouching jab with rapid cancel",
@@ -245,7 +245,7 @@
       "displayName": "Crouching Light Kick",
       "shortName": "2LK",
       "notation": "2LK",
-      "input": "↓ + LK",
+      "input": "\u2193 + LK",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "Low-hitting light with rapid cancel",
@@ -273,7 +273,7 @@
       "displayName": "Crouching Medium Punch",
       "shortName": "2MP",
       "notation": "2MP",
-      "input": "↓ + MP",
+      "input": "\u2193 + MP",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "6-frame punish tool and combo starter",
@@ -300,7 +300,7 @@
       "displayName": "Crouching Medium Kick",
       "shortName": "2MK",
       "notation": "2MK",
-      "input": "↓ + MK",
+      "input": "\u2193 + MK",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "Low poke for neutral",
@@ -327,7 +327,7 @@
       "displayName": "Crouching Heavy Punch",
       "shortName": "2HP",
       "notation": "2HP",
-      "input": "↓ + HP",
+      "input": "\u2193 + HP",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "Anti-air that forces standing",
@@ -354,7 +354,7 @@
       "displayName": "Crouching Heavy Kick",
       "shortName": "2HK",
       "notation": "2HK",
-      "input": "↓ + HK",
+      "input": "\u2193 + HK",
       "category": "normal",
       "yourPerspective": {
         "tacticalUse": "Sweep with knockdown",
@@ -513,7 +513,7 @@
       "displayName": "Hammer Punch",
       "shortName": "6HP",
       "notation": "6HP",
-      "input": "→ + HP",
+      "input": "\u2192 + HP",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Overhead-style forward punch",
@@ -536,7 +536,7 @@
       "displayName": "Power Drive",
       "shortName": "TC1",
       "notation": "6MP > HP",
-      "input": "→ + MP > HP",
+      "input": "\u2192 + MP > HP",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo for knockdown",
@@ -561,7 +561,7 @@
       "displayName": "Power Shoot",
       "shortName": "TC2",
       "notation": "6MK > HK",
-      "input": "→ + MK > HK",
+      "input": "\u2192 + MK > HK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo for knockdown",
@@ -586,7 +586,7 @@
       "displayName": "Power Dunk",
       "shortName": "TC3",
       "notation": "6MK > HK > HK",
-      "input": "→ + MK > HK > HK",
+      "input": "\u2192 + MK > HK > HK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo launcher",
@@ -608,7 +608,7 @@
       "displayName": "Passing Sway",
       "shortName": "Sway",
       "notation": "6LK > LK",
-      "input": "→ + LK > LK",
+      "input": "\u2192 + LK > LK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Evasive movement with follow-up",
@@ -631,7 +631,7 @@
       "displayName": "Jumping Lariat",
       "shortName": "Lariat",
       "notation": "6LK > MK > MK",
-      "input": "→ + LK > MK > MK",
+      "input": "\u2192 + LK > MK > MK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo with full invincibility",
@@ -657,7 +657,7 @@
       "displayName": "Jumping Knee",
       "shortName": "Knee",
       "notation": "6LK > MK > HK",
-      "input": "→ + LK > MK > HK",
+      "input": "\u2192 + LK > MK > HK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo with full invincibility",
@@ -683,7 +683,7 @@
       "displayName": "Fire Kick",
       "shortName": "Fire Kick",
       "notation": "6MK > HP",
-      "input": "→ + MK > HP",
+      "input": "\u2192 + MK > HP",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Target combo with launch",
@@ -708,7 +708,7 @@
       "displayName": "Back Spin Kick",
       "shortName": "4HK",
       "notation": "4HK",
-      "input": "← + HK",
+      "input": "\u2190 + HK",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Retreating kick",
@@ -730,7 +730,7 @@
       "displayName": "Rising Upper",
       "shortName": "3HP",
       "notation": "3HP",
-      "input": "↘ + HP",
+      "input": "\u2198 + HP",
       "category": "unique",
       "yourPerspective": {
         "tacticalUse": "Anti-air normal",
@@ -752,7 +752,7 @@
       "displayName": "L Power Wave",
       "shortName": "L Power Wave",
       "notation": "236LP",
-      "input": "↓↘→ + LP",
+      "input": "\u2193\u2198\u2192 + LP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Ground projectile for zoning",
@@ -778,7 +778,7 @@
       "displayName": "M Power Wave",
       "shortName": "M Power Wave",
       "notation": "236MP",
-      "input": "↓↘→ + MP",
+      "input": "\u2193\u2198\u2192 + MP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Medium speed ground projectile",
@@ -804,7 +804,7 @@
       "displayName": "Round Wave",
       "shortName": "H Power Wave",
       "notation": "236HP",
-      "input": "↓↘→ + HP",
+      "input": "\u2193\u2198\u2192 + HP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Rising projectile with plus frames",
@@ -830,7 +830,7 @@
       "displayName": "OD Power Wave",
       "shortName": "OD Power Wave",
       "notation": "236PP",
-      "input": "↓↘→ + PP",
+      "input": "\u2193\u2198\u2192 + PP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Enhanced projectile",
@@ -857,7 +857,7 @@
       "displayName": "Quick Burn",
       "shortName": "Quick Burn",
       "notation": "214LP",
-      "input": "↓↙← + LP",
+      "input": "\u2193\u2199\u2190 + LP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Quick forward rush attack",
@@ -883,7 +883,7 @@
       "displayName": "OD Quick Burn",
       "shortName": "OD Quick Burn",
       "notation": "214PP",
-      "input": "↓↙← + PP",
+      "input": "\u2193\u2199\u2190 + PP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Enhanced forward rush",
@@ -909,7 +909,7 @@
       "displayName": "M Burning Knuckle",
       "shortName": "M Burn Knuckle",
       "notation": "214MP",
-      "input": "↓↙← + MP",
+      "input": "\u2193\u2199\u2190 + MP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Forward rushing punch",
@@ -933,7 +933,7 @@
       "displayName": "H Burning Knuckle",
       "shortName": "H Burn Knuckle",
       "notation": "214HP",
-      "input": "↓↙← + HP",
+      "input": "\u2193\u2199\u2190 + HP",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Long range rushing punch",
@@ -956,7 +956,7 @@
       "displayName": "OD Burning Knuckle",
       "shortName": "OD Burn Knuckle",
       "notation": "214PP",
-      "input": "↓↙← + PP (hold)",
+      "input": "\u2193\u2199\u2190 + PP (hold)",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Enhanced rushing punch",
@@ -982,7 +982,7 @@
       "displayName": "L Power Charge",
       "shortName": "L Power Charge",
       "notation": "236LK",
-      "input": "↓↘→ + LK",
+      "input": "\u2193\u2198\u2192 + LK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Shoulder tackle",
@@ -1008,7 +1008,7 @@
       "displayName": "M Power Charge",
       "shortName": "M Power Charge",
       "notation": "236MK",
-      "input": "↓↘→ + MK",
+      "input": "\u2193\u2198\u2192 + MK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Medium shoulder tackle",
@@ -1033,7 +1033,7 @@
       "displayName": "H Power Charge",
       "shortName": "H Power Charge",
       "notation": "236HK",
-      "input": "↓↘→ + HK",
+      "input": "\u2193\u2198\u2192 + HK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Heavy shoulder tackle with special cancel",
@@ -1058,7 +1058,7 @@
       "displayName": "OD Power Charge",
       "shortName": "OD Power Charge",
       "notation": "236KK",
-      "input": "↓↘→ + KK",
+      "input": "\u2193\u2198\u2192 + KK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Enhanced shoulder tackle",
@@ -1083,7 +1083,7 @@
       "displayName": "L Crack Shoot",
       "shortName": "L Crack Shoot",
       "notation": "214LK",
-      "input": "↓↙← + LK",
+      "input": "\u2193\u2199\u2190 + LK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Overhead flip kick",
@@ -1109,7 +1109,7 @@
       "displayName": "M Crack Shoot",
       "shortName": "M Crack Shoot",
       "notation": "214MK",
-      "input": "↓↙← + MK",
+      "input": "\u2193\u2199\u2190 + MK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Medium overhead flip kick",
@@ -1135,7 +1135,7 @@
       "displayName": "H Crack Shoot",
       "shortName": "H Crack Shoot",
       "notation": "214HK",
-      "input": "↓↙← + HK",
+      "input": "\u2193\u2199\u2190 + HK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Heavy overhead flip kick",
@@ -1161,7 +1161,7 @@
       "displayName": "OD Crack Shoot",
       "shortName": "OD Crack Shoot",
       "notation": "214KK",
-      "input": "↓↙← + KK",
+      "input": "\u2193\u2199\u2190 + KK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Enhanced overhead flip kick",
@@ -1186,7 +1186,7 @@
       "displayName": "L Rising Tackle",
       "shortName": "L Rising Tackle",
       "notation": "[4]6LK",
-      "input": "(Hold ←) → + LK",
+      "input": "(Hold \u2190) \u2192 + LK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Anti-air with upper body invincibility",
@@ -1214,7 +1214,7 @@
       "displayName": "M Rising Tackle",
       "shortName": "M Rising Tackle",
       "notation": "[4]6MK",
-      "input": "(Hold ←) → + MK",
+      "input": "(Hold \u2190) \u2192 + MK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Higher damage anti-air",
@@ -1242,7 +1242,7 @@
       "displayName": "H Rising Tackle",
       "shortName": "H Rising Tackle",
       "notation": "[4]6HK",
-      "input": "(Hold ←) → + HK",
+      "input": "(Hold \u2190) \u2192 + HK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Max damage anti-air",
@@ -1270,7 +1270,7 @@
       "displayName": "OD Rising Tackle",
       "shortName": "OD Rising Tackle",
       "notation": "[4]6KK",
-      "input": "(Hold ←) → + KK",
+      "input": "(Hold \u2190) \u2192 + KK",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Fully invincible reversal",
@@ -1295,10 +1295,10 @@
     },
     "terry_sa1": {
       "id": "terry_sa1",
-      "displayName": "SA1 Power Geyser",
+      "displayName": "SA1 Buster Wolf",
       "shortName": "SA1",
       "notation": "236236P",
-      "input": "↓↘→↓↘→ + P",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + P",
       "category": "super",
       "yourPerspective": {
         "tacticalUse": "Invincible reversal Super",
@@ -1321,39 +1321,12 @@
         "minimumDamage": "30%"
       }
     },
-    "terry_sa2_buster_wolf": {
-      "id": "terry_sa2_buster_wolf",
-      "displayName": "SA2 Buster Wolf",
-      "shortName": "SA2 Buster",
-      "notation": "214214P",
-      "input": "↓↙←↓↙← + P",
-      "category": "super",
-      "yourPerspective": {
-        "tacticalUse": "Rushing Super with armor",
-        "whenToUse": "Use for combos. Super Armor vs mid-air and ground attacks 1 hit frames 6-26. Minimum damage 1040 (40%). Values do not change on counter or Punish Counter.",
-        "situations": [
-          "combo"
-        ],
-        "range": "far",
-        "connectsTo": [],
-        "executionDifficulty": "medium"
-      },
-      "opponentPerspective": {
-        "riskLevel": "very_unsafe",
-        "riskDescription": "DEATH ON BLOCK. Minus 34."
-      },
-      "properties": {
-        "superArmor": "1 hit, frames 6-26",
-        "superArt": 2,
-        "minimumDamage": "40%"
-      }
-    },
     "terry_sa2_star_dunk_volcano": {
       "id": "terry_sa2_star_dunk_volcano",
-      "displayName": "SA2 Star Dunk Volcano",
+      "displayName": "SA2 Power Geyser",
       "shortName": "SA2 Volcano",
       "notation": "214214K",
-      "input": "↓↙←↓↙← + K",
+      "input": "\u2193\u2199\u2190\u2193\u2199\u2190 + K",
       "category": "super",
       "yourPerspective": {
         "tacticalUse": "Anti-air Super with invincibility",
@@ -1379,10 +1352,10 @@
     },
     "terry_sa3": {
       "id": "terry_sa3",
-      "displayName": "SA3 Trinity Geyser",
+      "displayName": "SA3 Rising Fang",
       "shortName": "SA3",
       "notation": "236236K",
-      "input": "↓↘→↓↘→ + K",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K",
       "category": "super",
       "yourPerspective": {
         "tacticalUse": "Level 3 Super with full invincibility",
@@ -1407,10 +1380,10 @@
     },
     "terry_ca": {
       "id": "terry_ca",
-      "displayName": "CA Trinity Geyser (Critical Art)",
+      "displayName": "CA Rising Fang",
       "shortName": "CA",
       "notation": "236236K",
-      "input": "↓↘→↓↘→ + K (under 25% vitality)",
+      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K (under 25% vitality)",
       "category": "super",
       "yourPerspective": {
         "tacticalUse": "Enhanced Level 3 at low health",
@@ -1439,7 +1412,7 @@
       "displayName": "Rising Fang",
       "shortName": "Rising Fang",
       "notation": "236K (air)",
-      "input": "(During forward jump) ↓↘→ + K",
+      "input": "(During forward jump) \u2193\u2198\u2192 + K",
       "category": "special",
       "yourPerspective": {
         "tacticalUse": "Air dive kick special",
@@ -1462,7 +1435,7 @@
     },
     "terry_throw_f": {
       "id": "terry_throw_f",
-      "displayName": "Buster Throw (Forward Throw)",
+      "displayName": "Grasping Upper (Forward Throw)",
       "shortName": "F Throw",
       "notation": "LP+LK",
       "input": "LP + LK (near opponent)",
@@ -1491,7 +1464,7 @@
       "displayName": "Buster Throw (Back Throw)",
       "shortName": "B Throw",
       "notation": "4+LP+LK",
-      "input": "← + LP + LK (near opponent)",
+      "input": "\u2190 + LP + LK (near opponent)",
       "category": "throw",
       "yourPerspective": {
         "tacticalUse": "Back throw for side switch",
@@ -1517,7 +1490,7 @@
       "displayName": "Forward Dash",
       "shortName": "66",
       "notation": "66",
-      "input": "→→",
+      "input": "\u2192\u2192",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Quick forward movement",
@@ -1540,7 +1513,7 @@
       "displayName": "Backward Dash",
       "shortName": "44",
       "notation": "44",
-      "input": "←←",
+      "input": "\u2190\u2190",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Quick backward movement with throw invincibility",
@@ -1594,7 +1567,7 @@
       "displayName": "Drive Reversal - Blocking (Power Crack)",
       "shortName": "DR (Block)",
       "notation": "6HP+HK",
-      "input": "→ + HP + HK (while blocking or during Drive Parry)",
+      "input": "\u2192 + HP + HK (while blocking or during Drive Parry)",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Reversal while blocking",
@@ -1620,7 +1593,7 @@
       "displayName": "Drive Reversal - Recovering (Power Crack)",
       "shortName": "DR (Wakeup)",
       "notation": "6HP+HK",
-      "input": "→ + HP + HK (during knockdown recovery)",
+      "input": "\u2192 + HP + HK (during knockdown recovery)",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Reversal on wakeup",
@@ -1721,7 +1694,7 @@
       "displayName": "Parry Drive Rush",
       "shortName": "PDR",
       "notation": "MP+MK > 66",
-      "input": "(During Drive Parry) →→",
+      "input": "(During Drive Parry) \u2192\u2192",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Cancel parry into run",
@@ -1747,7 +1720,7 @@
       "displayName": "Cancel Drive Rush",
       "shortName": "CDR",
       "notation": "66",
-      "input": "→→ (while connecting with special-cancelable move)",
+      "input": "\u2192\u2192 (while connecting with special-cancelable move)",
       "category": "common",
       "yourPerspective": {
         "tacticalUse": "Cancel normal into run for combos",
@@ -1767,6 +1740,60 @@
       "properties": {
         "comboScaling": "Multiplier scaling 15%"
       }
+    },
+    "terry_sa2_twin_geyser": {
+      "id": "terry_sa2_twin_geyser",
+      "displayName": "Twin Geyser",
+      "category": "super",
+      "yourPerspective": {
+        "tacticalUse": "Follow-up after SA2 Power Geyser connects",
+        "whenToUse": "",
+        "situations": [],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "riskLevel": "committal",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "terry_sa2_triple_geyser": {
+      "id": "terry_sa2_triple_geyser",
+      "displayName": "Triple Geyser",
+      "category": "super",
+      "yourPerspective": {
+        "tacticalUse": "Follow-up after Twin Geyser connects",
+        "whenToUse": "",
+        "situations": [],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "riskLevel": "committal",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "terry_sa2_triple_geyser_dud": {
+      "id": "terry_sa2_triple_geyser_dud",
+      "displayName": "Triple Geyser (Dud)",
+      "category": "super",
+      "yourPerspective": {
+        "tacticalUse": "Mistimed Triple Geyser variant",
+        "whenToUse": "",
+        "situations": [],
+        "range": "mid",
+        "connectsTo": [],
+        "executionDifficulty": "medium"
+      },
+      "opponentPerspective": {
+        "riskLevel": "committal",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
     }
   }
 }
