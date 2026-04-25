@@ -10,16 +10,23 @@ import {
   snapshotFactory,
   updateMoveTags,
   updateOrdering,
+  updateCategoryOrder,
 } from '../../utils/tacticsSlots';
 import TacticsCategorySection from './TacticsCategorySection';
 import TacticsSubNav from './TacticsSubNav';
 import AddMoveModal from './AddMoveModal';
 import SlotsPanel from './SlotsPanel';
 
-const TacticsPage = ({ characterMap }) => {
+const TacticsPage = ({ characterMap, onCharacterEntered }) => {
   const { characterId, categoryId } = useParams();
   const navigate = useNavigate();
   const characterData = characterMap?.[characterId];
+
+  // Sync the App-level selectedCharacterId with the URL — so the top-right
+  // selector shows the right character when arriving via deep-link.
+  useEffect(() => {
+    if (characterId && onCharacterEntered) onCharacterEntered(characterId);
+  }, [characterId, onCharacterEntered]);
 
   const [activeId, setActiveId] = useState(categoryId || TACTICAL_CATEGORIES[0].id);
   const [slotsDoc, setSlotsDoc] = useState(null);
@@ -140,6 +147,26 @@ const TacticsPage = ({ characterMap }) => {
     setSlotsDoc(doc);
   };
 
+  const handleReorderCategory = async (catId, direction) => {
+    const slot = await ensureActiveSlot();
+    if (!slot) return;
+    // Resolve the current effective order
+    const currentOrder = (slot.categoryOrder && slot.categoryOrder.length)
+      ? [...slot.categoryOrder]
+      : TACTICAL_CATEGORIES.map((c) => c.id);
+    // If a category isn't in the custom list yet, append it
+    for (const c of TACTICAL_CATEGORIES) {
+      if (!currentOrder.includes(c.id)) currentOrder.push(c.id);
+    }
+    const idx = currentOrder.indexOf(catId);
+    if (idx === -1) return;
+    const newIdx = direction === 'up' ? idx - 1 : idx + 1;
+    if (newIdx < 0 || newIdx >= currentOrder.length) return;
+    [currentOrder[idx], currentOrder[newIdx]] = [currentOrder[newIdx], currentOrder[idx]];
+    const doc = await updateCategoryOrder(characterId, slot.id, currentOrder);
+    setSlotsDoc(doc);
+  };
+
   const handleReorder = async (moveId, catId, direction) => {
     const slot = await ensureActiveSlot();
     if (!slot) return;
@@ -171,6 +198,8 @@ const TacticsPage = ({ characterMap }) => {
         counts={counts}
         onSelect={handleSubNavSelect}
         variant="mobile"
+        editMode={editMode}
+        categoryOrder={activeSlot?.categoryOrder}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-6 lg:py-8 lg:flex lg:gap-8">
@@ -179,6 +208,9 @@ const TacticsPage = ({ characterMap }) => {
           counts={counts}
           onSelect={handleSubNavSelect}
           variant="desktop"
+          editMode={editMode}
+          categoryOrder={activeSlot?.categoryOrder}
+          onReorderCategory={handleReorderCategory}
         />
 
         <main className="flex-1 min-w-0">
@@ -223,25 +255,42 @@ const TacticsPage = ({ characterMap }) => {
             </div>
           </header>
 
-          {/* Sections */}
+          {/* Sections — render order respects per-slot categoryOrder when set */}
           <div className="flex flex-col gap-10 md:gap-12">
-            {TACTICAL_CATEGORIES.map((cat) => (
-              <div key={cat.id}>
-                {cat.order === DIVIDER_AFTER_ORDER + 1 && (
-                  <hr className="hidden lg:block border-gray-800 mb-12" aria-hidden />
-                )}
-                <TacticsCategorySection
-                  category={cat}
-                  characterMoves={effectiveMoves}
-                  ordering={ordering}
-                  editMode={editMode}
-                  onAddMove={handleAddMoveToCategory}
-                  onEditMove={handleEditMove}
-                  onRemoveMove={handleRemoveMoveFromCategory}
-                  onMoveItem={handleReorder}
-                />
-              </div>
-            ))}
+            {(() => {
+              const customOrder = activeSlot?.categoryOrder;
+              let cats = TACTICAL_CATEGORIES;
+              if (customOrder && customOrder.length) {
+                const seen = new Set();
+                const reordered = [];
+                for (const id of customOrder) {
+                  const cat = TACTICAL_CATEGORIES.find((c) => c.id === id);
+                  if (cat && !seen.has(id)) { reordered.push(cat); seen.add(id); }
+                }
+                for (const cat of TACTICAL_CATEGORIES) {
+                  if (!seen.has(cat.id)) reordered.push(cat);
+                }
+                cats = reordered;
+              }
+              const isCustom = !!(customOrder && customOrder.length);
+              return cats.map((cat) => (
+                <div key={cat.id}>
+                  {!isCustom && cat.order === DIVIDER_AFTER_ORDER + 1 && (
+                    <hr className="hidden lg:block border-gray-800 mb-12" aria-hidden />
+                  )}
+                  <TacticsCategorySection
+                    category={cat}
+                    characterMoves={effectiveMoves}
+                    ordering={ordering}
+                    editMode={editMode}
+                    onAddMove={handleAddMoveToCategory}
+                    onEditMove={handleEditMove}
+                    onRemoveMove={handleRemoveMoveFromCategory}
+                    onMoveItem={handleReorder}
+                  />
+                </div>
+              ));
+            })()}
           </div>
         </main>
       </div>

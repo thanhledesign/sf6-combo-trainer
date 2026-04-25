@@ -94,6 +94,73 @@ function deriveNotationForNormal(displayName) {
   return null;
 }
 
+// ─── Image filename → notation token map ──────────────────────────────
+// Capcom renders move inputs as a sequence of <img> tags inside a
+// .movelist_classic span. Each filename maps to a notation token; we
+// concatenate (skipping arrow_3 separators) to build the canonical input.
+//
+// Verified mappings:
+//   Quick Dash   = [icon_kick, icon_kick]                → "KK"
+//   Hadoken      = [key-d, key-dr, key-r, key-plus, icon_punch]   → "236P"
+//   Shoryuken    = [key-r, key-d, key-dr, key-plus, icon_punch]   → "623P"
+//   Tatsumaki    = [key-d, key-dl, key-l, key-plus, icon_kick]    → "214K"
+//   Drive Parry  = [icon_punch_m, icon_kick_m]            → "MP+MK"
+
+const IMG_TO_TOKEN = {
+  // Numpad directions
+  'key-d.png': '2',
+  'key-dr.png': '3',
+  'key-r.png': '6',
+  'key-ur.png': '9',
+  'key-u.png': '8',
+  'key-ul.png': '7',
+  'key-l.png': '4',
+  'key-dl.png': '1',
+  // Combinator
+  'key-plus.png': '+',
+  // Buttons (any-strength variants are how Capcom denotes "any P" / "any K")
+  'icon_punch.png': 'P',
+  'icon_kick.png': 'K',
+  'icon_punch_l.png': 'LP',
+  'icon_punch_m.png': 'MP',
+  'icon_punch_h.png': 'HP',
+  'icon_kick_l.png': 'LK',
+  'icon_kick_m.png': 'MK',
+  'icon_kick_h.png': 'HK',
+  // Visual separator — drop
+  'arrow_3.png': '',
+};
+
+function imagesToNotation(imgFilenames) {
+  const raw = [];
+  for (const fn of imgFilenames) {
+    if (IMG_TO_TOKEN[fn] === '') continue;
+    if (IMG_TO_TOKEN[fn] != null) raw.push(IMG_TO_TOKEN[fn]);
+    else raw.push(`?${fn}?`); // surface unknown so we notice in diffs
+  }
+  // Drop the "+" tokens — Capcom uses key-plus to glue motion to button, but
+  // standard SF notation doesn't write "236+P", it writes "236P". We re-insert
+  // "+" only between two specific-strength buttons (HP+HK style).
+  const tokens = raw.filter((t) => t !== '+');
+  const isMotion = (t) => /^[1-9]$/.test(t);
+  const isStrengthButton = (t) => /^[LMH][PK]$/.test(t);
+  const isGenericButton = (t) => /^[PK]$/.test(t);
+
+  const motion = [];
+  const buttons = [];
+  for (const t of tokens) {
+    if (isMotion(t)) motion.push(t);
+    else if (isStrengthButton(t) || isGenericButton(t)) buttons.push(t);
+  }
+
+  // Two specific-strength buttons (e.g. HP + HK = Drive Impact) → join with +
+  // All other cases concatenate (236P, KK, MK, 5LP, etc.)
+  const buttonStr = (buttons.length > 1 && buttons.every(isStrengthButton))
+    ? buttons.join('+')
+    : buttons.join('');
+  return motion.join('') + buttonStr;
+}
+
 // ─── Scraping ─────────────────────────────────────────────────────────
 
 async function scrapeCharacter(page, charId) {
@@ -134,6 +201,26 @@ async function scrapeCharacter(page, charId) {
       },
     };
   });
+
+  // 1.5) Movelist page — extract canonical input notation from button-icon images
+  await page.goto(`https://www.streetfighter.com/6/character/${charId}/movelist`, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.waitForTimeout(1500);
+  const movelistEntries = await page.evaluate(() => {
+    const items = Array.from(document.querySelectorAll('[class*="movelist_movelist_li"], [class*="movelist_li"]'));
+    return items.map((li) => {
+      const name = li.querySelector('[class*="movelist_arts"]')?.textContent.trim();
+      const cmd  = li.querySelector('[class*="movelist_classic"]');
+      if (!name || !cmd) return null;
+      const imgs = Array.from(cmd.querySelectorAll('img'))
+        .map((img) => (img.getAttribute('src') || '').split('/').pop())
+        .filter((fn) => fn && (fn.startsWith('key-') || fn.startsWith('icon_') || fn.startsWith('arrow_')));
+      return { name, imgs };
+    }).filter(Boolean);
+  });
+  const notationByName = new Map();
+  for (const e of movelistEntries) {
+    notationByName.set(normalizeName(e.name), imagesToNotation(e.imgs));
+  }
 
   // 2) Frame data page
   await page.goto(`https://www.streetfighter.com/6/character/${charId}/frame`, { waitUntil: 'networkidle', timeout: 60000 });
@@ -226,11 +313,39 @@ async function scrapeCharacter(page, charId) {
     const derived = category === 'normal' ? deriveNotationForNormal(row.displayName) : null;
     const hitLevel = row.hitLevel ? row.hitLevel.toLowerCase().replace(/mid-air projectile/, 'mid-air-projectile') : null;
 
+    // Canonical notation from movelist images takes precedence over the
+    // displayName-derived form. For specials, this is the only source.
+    // Frame page name often has prefixes/suffixes the movelist doesn't:
+    //   "L Hadoken" → "Hadoken"
+    //   "SA1 Dragonlash Flame" → "Dragonlash Flame"
+    //   "OD Hadoken" → "Hadoken"
+    //   "Drive Impact: Flame Strike" → "Drive Impact"
+    const norm = normalizeName(row.displayName);
+    const candidates = [
+      norm,
+      norm.replace(/^[lmh]\s+/, ''),
+      norm.replace(/^(?:sa[123]|ca|od)\s+/, ''),
+      norm.split(':')[0].trim(),
+    ];
+    let fromMovelist = null;
+    for (const c of candidates) {
+      if (notationByName.has(c)) { fromMovelist = notationByName.get(c); break; }
+    }
+    // Append strength suffix to generic-button notation (e.g. "236P" + L → "236LP").
+    // Only when the frame-row level is exactly L/M/H — Capcom sometimes puts
+    // hint text like "(when under 25% vitality)" or "(During a forward jump)"
+    // in the level column for SA / aerial / conditional moves.
+    if (fromMovelist && /^[LMH]$/.test(row.level || '') && /[PK]$/.test(fromMovelist) && !/[LMH][PK]$/.test(fromMovelist) && !fromMovelist.includes('+')) {
+      fromMovelist = fromMovelist.replace(/([PK])$/, `${row.level}$1`);
+    }
+    const notation = fromMovelist || derived?.notation || null;
+    const input = fromMovelist || derived?.input || null;
+
     out.moves[moveId] = {
       displayName: row.displayName,
       level: row.level,
       category,
-      ...(derived && { input: derived.input, notation: derived.notation, shortName: derived.shortName }),
+      ...(notation && { input, notation, shortName: notation }),
       damage,
       frameData: { startup, active: activeCount, activeRange: row.active, recovery, total },
       frameAdvantage: { onBlock, onHit },

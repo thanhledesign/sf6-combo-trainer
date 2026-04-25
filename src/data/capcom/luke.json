@@ -1,6 +1,6 @@
 {
   "id": "luke",
-  "scrapedAt": "2026-04-25T15:37:08.572Z",
+  "scrapedAt": "2026-04-25T16:08:58.348Z",
   "source": "https://www.streetfighter.com/6/character/luke",
   "character": {
     "bio": "A contractor for a PMC, Luke uses his elite military background to teach mixed martial arts. His days off are spent eating junk food, playing video games, and fighting, but make no mistake—Luke plays to win.",
@@ -470,6 +470,9 @@
       "displayName": "Rawhide",
       "level": "M",
       "category": "normal",
+      "input": "6MP",
+      "notation": "6MP",
+      "shortName": "6MP",
       "damage": 600,
       "frameData": {
         "startup": 21,
@@ -492,6 +495,9 @@
       "displayName": "Suppressor",
       "level": "H",
       "category": "normal",
+      "input": "4HP",
+      "notation": "4HP",
+      "shortName": "4HP",
       "damage": 800,
       "frameData": {
         "startup": 16,
@@ -514,6 +520,9 @@
       "displayName": "Outlaw Kick",
       "level": "H",
       "category": "normal",
+      "input": "4HK",
+      "notation": "4HK",
+      "shortName": "4HK",
       "damage": 1000,
       "frameData": {
         "startup": 12,
@@ -646,6 +655,9 @@
       "displayName": "Nose Breaker",
       "level": "M  H",
       "category": "normal",
+      "input": "22MK+HP",
+      "notation": "22MK+HP",
+      "shortName": "22MK+HP",
       "damage": 600,
       "frameData": {
         "startup": 9,
@@ -709,6 +721,9 @@
       "displayName": "L Sand Blast",
       "level": "L",
       "category": "special",
+      "input": "236LP",
+      "notation": "236LP",
+      "shortName": "236LP",
       "damage": 600,
       "frameData": {
         "startup": 14,
@@ -731,6 +746,9 @@
       "displayName": "M Sand Blast",
       "level": "M",
       "category": "special",
+      "input": "236MP",
+      "notation": "236MP",
+      "shortName": "236MP",
       "damage": 600,
       "frameData": {
         "startup": 17,
@@ -753,6 +771,9 @@
       "displayName": "H Sand Blast",
       "level": "H",
       "category": "special",
+      "input": "236HP",
+      "notation": "236HP",
+      "shortName": "236HP",
       "damage": 600,
       "frameData": {
         "startup": 20,
@@ -775,6 +796,9 @@
       "displayName": "OD Sand Blast",
       "level": null,
       "category": "special",
+      "input": "236P",
+      "notation": "236P",
+      "shortName": "236P",
       "damage": 800,
       "frameData": {
         "startup": 16,
@@ -797,6 +821,9 @@
       "displayName": "Fatal Shot",
       "level": "(After an OD Sand Blast)",
       "category": "special",
+      "input": "PP",
+      "notation": "PP",
+      "shortName": "PP",
       "damage": 1000,
       "frameData": {
         "startup": 8,
@@ -820,6 +847,9 @@
       "displayName": "L Flash Knuckle",
       "level": "L",
       "category": "special",
+      "input": "214LP",
+      "notation": "214LP",
+      "shortName": "214LP",
       "damage": 700,
       "frameData": {
         "startup": 13,
@@ -889,6 +919,9 @@
       "displayName": "M Flash Knuckle",
       "level": "M",
       "category": "special",
+      "input": "214MP",
+      "notation": "214MP",
+      "shortName": "214MP",
       "damage": 900,
       "frameData": {
         "startup": 19,
@@ -958,6 +991,9 @@
       "displayName": "H Flash Knuckle",
       "level": "H",
       "category": "special",
+      "input": "214HP",
+      "notation": "214HP",
+      "shortName": "214HP",
       "damage": 1000,
       "frameData": {
         "startup": 22,
@@ -1027,6 +1063,9 @@
       "displayName": "OD Flash Knuckle",
       "level": null,
       "category": "special",
+      "input": "214P",
+      "notation": "214P",
+      "shortName": "214P",
       "damage": 400,
       "frameData": {
         "startup": 15,
@@ -1072,6 +1111,9 @@
       "displayName": "DDT",
       "level": "(After an OD Flash Knuckle)",
       "category": "special",
+      "input": "PP",
+      "notation": "PP",
+      "shortName": "PP",
       "damage": 2500,
       "frameData": {
         "startup": 1,
@@ -1094,6 +1136,9 @@
       "displayName": "Aerial Flash Knuckle",
       "level": "(During a neutral or forward jump)",
       "category": "special",
+      "input": "214P",
+      "notation": "214P",
+      "shortName": "214P",
       "damage": 700,
       "frameData": {
         "startup": 14,
@@ -1137,6 +1182,9 @@
       "displayName": "OD Aerial Flash Knuckle",
       "level": "(During a neutral or forward jump)",
       "category": "special",
+      "input": "214P",
+      "notation": "214P",
+      "shortName": "214P",
       "damage": 1300,
       "frameData": {
         "startup": 14,
@@ -1158,6 +1206,9 @@
       "displayName": "Avenger",
       "level": null,
       "category": "special",
+      "input": "236K",
+      "notation": "236K",
+      "shortName": "236K",
       "damage": 0,
       "frameData": {
         "startup": null,
@@ -1180,6 +1231,9 @@
       "displayName": "OD Avenger",
       "level": null,
       "category": "special",
+      "input": "236K",
+      "notation": "236K",
+      "shortName": "236K",
       "damage": 0,
       "frameData": {
         "startup": null,
@@ -1202,6 +1256,9 @@
       "displayName": "No Chaser",
       "level": "(During Avenger)",
       "category": "special",
+      "input": "P",
+      "notation": "P",
+      "shortName": "P",
       "damage": 900,
       "frameData": {
         "startup": 12,
@@ -1246,6 +1303,9 @@
       "displayName": "Impaler",
       "level": "(During Avenger)",
       "category": "special",
+      "input": "K",
+      "notation": "K",
+      "shortName": "K",
       "damage": 1200,
       "frameData": {
         "startup": 13,
@@ -1268,6 +1328,9 @@
       "displayName": "OD Impaler",
       "level": "(During OD Avenger)",
       "category": "special",
+      "input": "K",
+      "notation": "K",
+      "shortName": "K",
       "damage": 1200,
       "frameData": {
         "startup": 13,
@@ -1289,6 +1352,9 @@
       "displayName": "L Rising Uppercut",
       "level": "L",
       "category": "special",
+      "input": "623LP",
+      "notation": "623LP",
+      "shortName": "623LP",
       "damage": 900,
       "frameData": {
         "startup": 5,
@@ -1312,6 +1378,9 @@
       "displayName": "M Rising Uppercut",
       "level": "M",
       "category": "special",
+      "input": "623MP",
+      "notation": "623MP",
+      "shortName": "623MP",
       "damage": 1000,
       "frameData": {
         "startup": 6,
@@ -1335,6 +1404,9 @@
       "displayName": "H Rising Uppercut",
       "level": "H",
       "category": "special",
+      "input": "623HP",
+      "notation": "623HP",
+      "shortName": "623HP",
       "damage": 1200,
       "frameData": {
         "startup": 9,
@@ -1358,6 +1430,9 @@
       "displayName": "OD Rising Uppercut",
       "level": null,
       "category": "special",
+      "input": "623P",
+      "notation": "623P",
+      "shortName": "623P",
       "damage": 1400,
       "frameData": {
         "startup": 6,
@@ -1380,6 +1455,9 @@
       "displayName": "Slam Dunk",
       "level": "(After an OD Rising Uppercut)",
       "category": "special",
+      "input": "PP",
+      "notation": "PP",
+      "shortName": "PP",
       "damage": 600,
       "frameData": {
         "startup": 16,
@@ -1402,6 +1480,9 @@
       "displayName": "SA1 Vulcan Blast",
       "level": null,
       "category": "super",
+      "input": "236236P",
+      "notation": "236236P",
+      "shortName": "236236P",
       "damage": 2000,
       "frameData": {
         "startup": 6,
@@ -1424,6 +1505,9 @@
       "displayName": "SA2 Eraser",
       "level": null,
       "category": "super",
+      "input": "214214P",
+      "notation": "214214P",
+      "shortName": "214214P",
       "damage": 2800,
       "frameData": {
         "startup": 5,
@@ -1446,6 +1530,9 @@
       "displayName": "CA Pale Rider",
       "level": "(when under 25% vitality)",
       "category": "super",
+      "input": "236236K",
+      "notation": "236236K",
+      "shortName": "236236K",
       "damage": 4500,
       "frameData": {
         "startup": 10,
@@ -1511,6 +1598,9 @@
       "displayName": "Drive Impact: Muzzle Flash",
       "level": "HH",
       "category": "normal",
+      "input": "HP+HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
       "damage": 800,
       "frameData": {
         "startup": 26,
@@ -1577,6 +1667,9 @@
       "displayName": "Drive Parry",
       "level": "MM",
       "category": "normal",
+      "input": "MP+MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
       "damage": 0,
       "frameData": {
         "startup": 1,
@@ -1644,6 +1737,9 @@
       "displayName": "Parry Drive Rush",
       "level": "(During a Drive Parry)",
       "category": "normal",
+      "input": "66",
+      "notation": "66",
+      "shortName": "66",
       "damage": 0,
       "frameData": {
         "startup": null,
@@ -1667,6 +1763,9 @@
       "displayName": "Cancel Drive Rush",
       "level": "(While connecting with a special-cancelable move)  (  )  MM",
       "category": "normal",
+      "input": "666MP+MK",
+      "notation": "666MP+MK",
+      "shortName": "666MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,

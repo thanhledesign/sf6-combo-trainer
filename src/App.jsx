@@ -162,7 +162,15 @@ function App() {
     } else {
       setSelectedCharacterId(characterId);
       setIsCharacterModalOpen(false);
-      navigate(`/browse/${characterId}`);
+      // If we're already on a Tactics or Punish page, stay on that page for
+      // the new character. Otherwise default to Browse.
+      if (location.pathname.startsWith('/character/') && location.pathname.includes('/tactics')) {
+        navigate(`/character/${characterId}/tactics`);
+      } else if (location.pathname.startsWith('/punish')) {
+        navigate(`/punish/${characterId}`);
+      } else {
+        navigate(`/browse/${characterId}`);
+      }
     }
   };
 
@@ -172,6 +180,12 @@ function App() {
       navigate(`/browse/${characterId}`);
     } else if (location.pathname.startsWith('/punish')) {
       navigate(`/punish/${characterId}`);
+    } else if (location.pathname.startsWith('/character/') && location.pathname.includes('/tactics')) {
+      // Preserve any /tactics/:categoryId deep-link suffix
+      const segs = location.pathname.split('/');
+      const tacticsIdx = segs.indexOf('tactics');
+      const tail = segs.slice(tacticsIdx).join('/');
+      navigate(`/character/${characterId}/${tail}`);
     }
   };
 
@@ -459,10 +473,10 @@ function App() {
         
         {/* Tactics — full 9-section guide per docs/_handoff-2026-04-24/04-TACTICAL-IA-SPEC.md */}
         <Route path="/character/:characterId/tactics" element={
-          <TacticsPage characterMap={characterMap} />
+          <TacticsPage characterMap={characterMap} onCharacterEntered={setSelectedCharacterId} />
         } />
         <Route path="/character/:characterId/tactics/:categoryId" element={
-          <TacticsPage characterMap={characterMap} />
+          <TacticsPage characterMap={characterMap} onCharacterEntered={setSelectedCharacterId} />
         } />
 
         {/* Punish Calculator - with optional character ID */}

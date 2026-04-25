@@ -1,6 +1,6 @@
 {
   "id": "terry",
-  "scrapedAt": "2026-04-25T15:37:59.141Z",
+  "scrapedAt": "2026-04-25T16:09:59.637Z",
   "source": "https://www.streetfighter.com/6/character/terry",
   "character": {
     "bio": "A passionate fighter that hones his craft as he travels all over the world. Also known as the \"Hungry Wolf\". He came to Metro City after hearing about the opening of the Pao Pao Cafe.",
@@ -467,6 +467,9 @@
       "displayName": "Hammer Punch",
       "level": "H",
       "category": "normal",
+      "input": "6HP",
+      "notation": "6HP",
+      "shortName": "6HP",
       "damage": 800,
       "frameData": {
         "startup": 22,
@@ -488,6 +491,9 @@
       "displayName": "Power Drive",
       "level": "MH",
       "category": "normal",
+      "input": "MP+HP",
+      "notation": "MP+HP",
+      "shortName": "MP+HP",
       "damage": 1100,
       "frameData": {
         "startup": 15,
@@ -509,6 +515,9 @@
       "displayName": "Power Shoot",
       "level": "MH",
       "category": "normal",
+      "input": "MP+HK",
+      "notation": "MP+HK",
+      "shortName": "MP+HK",
       "damage": 600,
       "frameData": {
         "startup": 18,
@@ -530,6 +539,9 @@
       "displayName": "Power Dunk)",
       "level": "MHH",
       "category": "normal",
+      "input": "MP+HK+HK",
+      "notation": "MP+HK+HK",
+      "shortName": "MP+HK+HK",
       "damage": 1300,
       "frameData": {
         "startup": 18,
@@ -551,6 +563,9 @@
       "displayName": "Passing Sway",
       "level": "MM",
       "category": "normal",
+      "input": "MP+MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
       "damage": 400,
       "frameData": {
         "startup": 13,
@@ -573,6 +588,9 @@
       "displayName": "Jumping Lariat",
       "level": "MMM",
       "category": "normal",
+      "input": "MP",
+      "notation": "MP",
+      "shortName": "MP",
       "damage": 1000,
       "frameData": {
         "startup": 24,
@@ -595,6 +613,9 @@
       "displayName": "Jumping Knee",
       "level": "MMM",
       "category": "normal",
+      "input": "MK",
+      "notation": "MK",
+      "shortName": "MK",
       "damage": 1000,
       "frameData": {
         "startup": 24,
@@ -617,6 +638,9 @@
       "displayName": "Fire Kick",
       "level": "M  H",
       "category": "normal",
+      "input": "22MK+HK",
+      "notation": "22MK+HK",
+      "shortName": "22MK+HK",
       "damage": 500,
       "frameData": {
         "startup": 13,
@@ -639,6 +663,9 @@
       "displayName": "L Power Wave",
       "level": "L",
       "category": "special",
+      "input": "236LP+MP",
+      "notation": "236LP+MP",
+      "shortName": "236LP+MP",
       "damage": 600,
       "frameData": {
         "startup": 14,
@@ -661,6 +688,9 @@
       "displayName": "M Power Wave",
       "level": "M",
       "category": "special",
+      "input": "236LP+MP",
+      "notation": "236LP+MP",
+      "shortName": "236LP+MP",
       "damage": 700,
       "frameData": {
         "startup": 16,
@@ -683,6 +713,9 @@
       "displayName": "Round Wave",
       "level": "H",
       "category": "special",
+      "input": "236HP",
+      "notation": "236HP",
+      "shortName": "236HP",
       "damage": 900,
       "frameData": {
         "startup": 29,
@@ -705,6 +738,9 @@
       "displayName": "OD Power Wave",
       "level": null,
       "category": "special",
+      "input": "236LP+MP",
+      "notation": "236LP+MP",
+      "shortName": "236LP+MP",
       "damage": 800,
       "frameData": {
         "startup": 15,
@@ -727,6 +763,9 @@
       "displayName": "Quick Burn",
       "level": "L",
       "category": "special",
+      "input": "214LP",
+      "notation": "214LP",
+      "shortName": "214LP",
       "damage": 900,
       "frameData": {
         "startup": 10,
@@ -749,6 +788,9 @@
       "displayName": "OD Quick Burn",
       "level": "LM",
       "category": "special",
+      "input": "214LP",
+      "notation": "214LP",
+      "shortName": "214LP",
       "damage": 1400,
       "frameData": {
         "startup": 10,
@@ -771,6 +813,9 @@
       "displayName": "M Burning Knuckle",
       "level": "M",
       "category": "special",
+      "input": "214MP+HP",
+      "notation": "214MP+HP",
+      "shortName": "214MP+HP",
       "damage": 1000,
       "frameData": {
         "startup": 14,
@@ -793,6 +838,9 @@
       "displayName": "H Burning Knuckle",
       "level": "H",
       "category": "special",
+      "input": "214MP+HP",
+      "notation": "214MP+HP",
+      "shortName": "214MP+HP",
       "damage": 1200,
       "frameData": {
         "startup": 23,
@@ -815,6 +863,9 @@
       "displayName": "OD Burning Knuckle",
       "level": null,
       "category": "special",
+      "input": "214MP+HP",
+      "notation": "214MP+HP",
+      "shortName": "214MP+HP",
       "damage": 1400,
       "frameData": {
         "startup": 19,
@@ -838,6 +889,9 @@
       "displayName": "L Power Charge",
       "level": "L",
       "category": "special",
+      "input": "236LK",
+      "notation": "236LK",
+      "shortName": "236LK",
       "damage": 700,
       "frameData": {
         "startup": 14,
@@ -860,6 +914,9 @@
       "displayName": "M Power Charge",
       "level": "M",
       "category": "special",
+      "input": "236MK",
+      "notation": "236MK",
+      "shortName": "236MK",
       "damage": 800,
       "frameData": {
         "startup": 20,
@@ -882,6 +939,9 @@
       "displayName": "H Power Charge",
       "level": "H",
       "category": "special",
+      "input": "236HK",
+      "notation": "236HK",
+      "shortName": "236HK",
       "damage": 800,
       "frameData": {
         "startup": 25,
@@ -905,6 +965,9 @@
       "displayName": "OD Power Charge",
       "level": null,
       "category": "special",
+      "input": "236K",
+      "notation": "236K",
+      "shortName": "236K",
       "damage": 800,
       "frameData": {
         "startup": 19,
@@ -928,6 +991,9 @@
       "displayName": "L Crack Shoot",
       "level": "L",
       "category": "special",
+      "input": "214LK",
+      "notation": "214LK",
+      "shortName": "214LK",
       "damage": 700,
       "frameData": {
         "startup": 16,
@@ -950,6 +1016,9 @@
       "displayName": "M Crack Shoot",
       "level": "M",
       "category": "special",
+      "input": "214MK",
+      "notation": "214MK",
+      "shortName": "214MK",
       "damage": 900,
       "frameData": {
         "startup": 17,
@@ -972,6 +1041,9 @@
       "displayName": "H Crack Shoot",
       "level": "H",
       "category": "special",
+      "input": "214HK",
+      "notation": "214HK",
+      "shortName": "214HK",
       "damage": 1100,
       "frameData": {
         "startup": 23,
@@ -994,6 +1066,9 @@
       "displayName": "OD Crack Shoot",
       "level": null,
       "category": "special",
+      "input": "214K",
+      "notation": "214K",
+      "shortName": "214K",
       "damage": 1200,
       "frameData": {
         "startup": 20,
@@ -1016,6 +1091,9 @@
       "displayName": "L Rising Tackle",
       "level": "L",
       "category": "special",
+      "input": "623LP",
+      "notation": "623LP",
+      "shortName": "623LP",
       "damage": 1000,
       "frameData": {
         "startup": 5,
@@ -1039,6 +1117,9 @@
       "displayName": "M Rising Tackle",
       "level": "M",
       "category": "special",
+      "input": "623MP",
+      "notation": "623MP",
+      "shortName": "623MP",
       "damage": 1200,
       "frameData": {
         "startup": 6,
@@ -1062,6 +1143,9 @@
       "displayName": "H Rising Tackle",
       "level": "H",
       "category": "special",
+      "input": "623HP",
+      "notation": "623HP",
+      "shortName": "623HP",
       "damage": 1300,
       "frameData": {
         "startup": 7,
@@ -1085,6 +1169,9 @@
       "displayName": "OD Rising Tackle",
       "level": null,
       "category": "special",
+      "input": "623P",
+      "notation": "623P",
+      "shortName": "623P",
       "damage": 1600,
       "frameData": {
         "startup": 6,
@@ -1107,6 +1194,9 @@
       "displayName": "SA1 Buster Wolf",
       "level": null,
       "category": "super",
+      "input": "236236K",
+      "notation": "236236K",
+      "shortName": "236236K",
       "damage": 2000,
       "frameData": {
         "startup": 7,
@@ -1129,6 +1219,9 @@
       "displayName": "SA2 Power Geyser",
       "level": null,
       "category": "super",
+      "input": "214214P",
+      "notation": "214214P",
+      "shortName": "214214P",
       "damage": 2600,
       "frameData": {
         "startup": 13,
@@ -1151,6 +1244,9 @@
       "displayName": "CA Rising Fang",
       "level": "(when under 25% vitality)",
       "category": "super",
+      "input": "236236P",
+      "notation": "236236P",
+      "shortName": "236236P",
       "damage": 4500,
       "frameData": {
         "startup": 8,
@@ -1260,6 +1356,9 @@
       "displayName": "Drive Parry",
       "level": "MM",
       "category": "normal",
+      "input": "MP+MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
       "damage": 0,
       "frameData": {
         "startup": 1,
@@ -1327,6 +1426,9 @@
       "displayName": "Parry Drive Rush",
       "level": "(During a Drive Parry)",
       "category": "normal",
+      "input": "66",
+      "notation": "66",
+      "shortName": "66",
       "damage": 0,
       "frameData": {
         "startup": null,
@@ -1350,6 +1452,9 @@
       "displayName": "Cancel Drive Rush",
       "level": "(While connecting with a special-cancelable move)",
       "category": "normal",
+      "input": "666MP+MK",
+      "notation": "666MP+MK",
+      "shortName": "666MP+MK",
       "damage": 0,
       "frameData": {
         "startup": null,

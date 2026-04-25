@@ -123,6 +123,18 @@ export async function updateOrdering(characterId, slotId, categoryId, moveIds) {
   return doc;
 }
 
+/** Update the order of categories themselves (the 9 sections). Pass null to revert to default. */
+export async function updateCategoryOrder(characterId, slotId, categoryIds) {
+  const doc = await loadSlotsDoc(characterId);
+  const slot = doc.slots.find((s) => s.id === slotId);
+  if (!slot) return doc;
+  if (categoryIds && categoryIds.length > 0) slot.categoryOrder = categoryIds;
+  else delete slot.categoryOrder;
+  slot.modifiedAt = Date.now();
+  await saveDoc(doc);
+  return doc;
+}
+
 // ─── Validation ───────────────────────────────────────────────────────
 
 /**
