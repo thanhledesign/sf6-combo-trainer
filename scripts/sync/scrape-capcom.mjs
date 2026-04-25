@@ -161,6 +161,55 @@ function imagesToNotation(imgFilenames) {
   return motion.join('') + buttonStr;
 }
 
+// ─── Numpad → arrow display form ──────────────────────────────────────
+// "236LP"   → "↓↘→ + LP"
+// "623P"    → "→↓↘ + P"
+// "KK"      → "K + K"
+// "HP+HK"   → "HP + HK"
+// "5LP"     → "LP"        (neutral stance dropped)
+// "2MK"     → "↓ + MK"
+// Optional context prefix prepends to the result with a leading space.
+
+const NUMPAD_TO_ARROW = {
+  '1': '↙', '2': '↓', '3': '↘',
+  '4': '←',           '6': '→',
+  '7': '↖', '8': '↑', '9': '↗',
+};
+
+function notationToInputDisplay(notation, context = null) {
+  if (!notation) return null;
+
+  // Split on existing "+" first (HP+HK style)
+  const parts = notation.split('+').map((p) => p.trim());
+  const formatPart = (p) => {
+    // Find motion prefix (consecutive digits) vs button suffix
+    const m = p.match(/^([1-9]+)(.*)$/);
+    if (!m) return p; // pure-button like "K" or "LP"
+    const motion = m[1];
+    const button = m[2];
+    // Drop neutral stance (5)
+    if (motion === '5') return button;
+    const arrows = motion.split('').map((d) => NUMPAD_TO_ARROW[d] || d).join('');
+    return button ? `${arrows} + ${button}` : arrows;
+  };
+
+  let display;
+  if (parts.length > 1) {
+    // Two-button "+" case — render each part, join with " + "
+    display = parts.map(formatPart).join(' + ');
+  } else if (/^[LMH]?[PK][LMH]?[PK]$/.test(notation)) {
+    // Generic two-button concat (KK, PP, LPLK, etc.) — split between buttons
+    // KK → K + K, but only if it's exactly two buttons concatenated.
+    const m = notation.match(/^([LMH]?[PK])([LMH]?[PK])$/);
+    if (m) display = `${m[1]} + ${m[2]}`;
+    else display = formatPart(notation);
+  } else {
+    display = formatPart(notation);
+  }
+
+  return context ? `${context} ${display}` : display;
+}
+
 // ─── Scraping ─────────────────────────────────────────────────────────
 
 async function scrapeCharacter(page, charId) {
@@ -206,7 +255,7 @@ async function scrapeCharacter(page, charId) {
   await page.goto(`https://www.streetfighter.com/6/character/${charId}/movelist`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
   const movelistEntries = await page.evaluate(() => {
-    const items = Array.from(document.querySelectorAll('[class*="movelist_movelist_li"], [class*="movelist_li"]'));
+    const items = Array.from(document.querySelectorAll('li[class*="movelist"]'));
     return items.map((li) => {
       const name = li.querySelector('[class*="movelist_arts"]')?.textContent.trim();
       const cmd  = li.querySelector('[class*="movelist_classic"]');
@@ -214,12 +263,19 @@ async function scrapeCharacter(page, charId) {
       const imgs = Array.from(cmd.querySelectorAll('img'))
         .map((img) => (img.getAttribute('src') || '').split('/').pop())
         .filter((fn) => fn && (fn.startsWith('key-') || fn.startsWith('icon_') || fn.startsWith('arrow_')));
-      return { name, imgs };
+      // Conditional context like "(During Jinrai Kick)" lives in skill_text
+      // siblings near the movelist_classic span.
+      const skill = li.querySelector('[class*="skill_text"]');
+      const context = skill ? skill.textContent.trim() : null;
+      return { name, imgs, context };
     }).filter(Boolean);
   });
   const notationByName = new Map();
+  const contextByName  = new Map();
   for (const e of movelistEntries) {
-    notationByName.set(normalizeName(e.name), imagesToNotation(e.imgs));
+    const key = normalizeName(e.name);
+    notationByName.set(key, imagesToNotation(e.imgs));
+    if (e.context) contextByName.set(key, e.context);
   }
 
   // 2) Frame data page
@@ -314,12 +370,8 @@ async function scrapeCharacter(page, charId) {
     const hitLevel = row.hitLevel ? row.hitLevel.toLowerCase().replace(/mid-air projectile/, 'mid-air-projectile') : null;
 
     // Canonical notation from movelist images takes precedence over the
-    // displayName-derived form. For specials, this is the only source.
-    // Frame page name often has prefixes/suffixes the movelist doesn't:
-    //   "L Hadoken" → "Hadoken"
-    //   "SA1 Dragonlash Flame" → "Dragonlash Flame"
-    //   "OD Hadoken" → "Hadoken"
-    //   "Drive Impact: Flame Strike" → "Drive Impact"
+    // displayName-derived form. Frame name often has prefixes the movelist
+    // doesn't: "L Hadoken" → "Hadoken", "SA1 Dragonlash Flame" → "...".
     const norm = normalizeName(row.displayName);
     const candidates = [
       norm,
@@ -328,23 +380,46 @@ async function scrapeCharacter(page, charId) {
       norm.split(':')[0].trim(),
     ];
     let fromMovelist = null;
+    let context = null;
     for (const c of candidates) {
-      if (notationByName.has(c)) { fromMovelist = notationByName.get(c); break; }
+      if (notationByName.has(c)) {
+        fromMovelist = notationByName.get(c);
+        context = contextByName.get(c) ?? null;
+        break;
+      }
     }
+    // Capcom's "level" column may contain a strength letter (L/M/H), a
+    // parenthesized condition (e.g. "(During a forward jump)"), or BOTH
+    // ("(During Jinrai Kick)  L"). Extract each piece independently.
+    let strength = null;
+    let levelContext = null;
+    if (row.level) {
+      const m = row.level.match(/^(.*?)?\s*([LMH])$/);
+      if (m && m[2]) strength = m[2];
+      const condMatch = row.level.match(/\([^)]+\)/);
+      if (condMatch) levelContext = condMatch[0];
+      // Pure single-letter level (L/M/H alone)
+      if (!condMatch && /^[LMH]$/.test(row.level)) strength = row.level;
+    }
+
     // Append strength suffix to generic-button notation (e.g. "236P" + L → "236LP").
-    // Only when the frame-row level is exactly L/M/H — Capcom sometimes puts
-    // hint text like "(when under 25% vitality)" or "(During a forward jump)"
-    // in the level column for SA / aerial / conditional moves.
-    if (fromMovelist && /^[LMH]$/.test(row.level || '') && /[PK]$/.test(fromMovelist) && !/[LMH][PK]$/.test(fromMovelist) && !fromMovelist.includes('+')) {
-      fromMovelist = fromMovelist.replace(/([PK])$/, `${row.level}$1`);
+    if (fromMovelist && strength && /[PK]$/.test(fromMovelist) && !/[LMH][PK]$/.test(fromMovelist) && !fromMovelist.includes('+')) {
+      fromMovelist = fromMovelist.replace(/([PK])$/, `${strength}$1`);
     }
+
+    // Pick context: movelist skill_text wins over frame-table level conditional;
+    // they're often the same content anyway. Avoid concatenating duplicates.
+    if (!context && levelContext) context = levelContext;
+
     const notation = fromMovelist || derived?.notation || null;
-    const input = fromMovelist || derived?.input || null;
+    // input = display form: arrows + context. notation stays as numpad.
+    const input = notationToInputDisplay(notation, context);
 
     out.moves[moveId] = {
       displayName: row.displayName,
       level: row.level,
       category,
+      ...(context && { context }),
       ...(notation && { input, notation, shortName: notation }),
       damage,
       frameData: { startup, active: activeCount, activeRange: row.active, recovery, total },
