@@ -20,11 +20,12 @@ Anywhere the code currently calls a browser API directly, route it through a thi
 
 ```
 src/utils/platform/
-├── storage.js     ← wraps localStorage / sessionStorage
-├── haptics.js     ← wraps navigator.vibrate
-├── network.js     ← fetch wrapper (optional, see below)
-└── index.js       ← single import point
+├── storage.js     ← wraps localStorage / sessionStorage  (✓ exists, T4)
+├── haptics.js     ← wraps navigator.vibrate              (✓ exists, T4)
+└── index.js       ← single import point                  (✓ exists, T4)
 ```
+
+`network.js` was intentionally **not** created — see §8 below. Add it when (and if) Capacitor integration surfaces a real CORS or cookie issue.
 
 ### Pattern Example — Storage
 
@@ -231,7 +232,14 @@ For each match outside the expected location: refactor or document why it's an e
 
 ## Known Compromises
 
-(Empty for now. Populate during Task 4 audit. Format: filename:line — what it is — why we kept it.)
+Populated during T4 audit (2026-04-24). Format: filename:line — what it is — why we kept it.
+
+- `src/main.jsx:7` — `document.getElementById('root')` — React's standard root mount. Not "DOM manipulation in app code"; this is the framework entry point. Capacitor web view supports it identically to a browser.
+- `src/App.jsx:113` — `window.scrollTo(0, 0)` on route change — works identically in Capacitor web view. Not abstraction-worthy.
+- `src/components/CharacterCards.jsx:253`, `src/components/Browse/MoveBrowser.jsx:35` — `window.innerWidth < 768` for grid column count — Capacitor web view exposes `window.innerWidth` correctly. If we ever add tablet-vs-phone differentiation by device class (not just width), revisit.
+- `src/components/Search/SearchResults.jsx:48,160`, `src/components/Browse/MoveBrowser.jsx:44,54` — `window.addEventListener('scroll', ...)` and `window.scrollTo({behavior: 'smooth'})` — both work in Capacitor web view.
+
+**T4 audit summary (2026-04-24):** Codebase was already exceptionally clean. No `localStorage`, `sessionStorage`, `navigator.vibrate`, `document.cookie`, `window.location`, hardcoded prod URLs, or `<a href>` for SPA routes. The platform abstraction modules now exist as a forward-compatible layer ready for the V01.31 win/loss tracker (the first persistent-state feature) and any future state-bearing work.
 
 ---
 
