@@ -103,7 +103,9 @@ const PunishCalculatorWrapper = ({ onCharacterChange }) => {
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [passwordOk, setPasswordOk] = useState(() => isPasswordValid());
+  // Read sessionStorage synchronously each render — gate either passes or
+  // shows on mount; transitions go through window.location.reload().
+  const passwordOk = isPasswordValid();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCharacterId, setSelectedCharacterId] = useState(null);
   const [isCharacterModalOpen, setIsCharacterModalOpen] = useState(false);
@@ -113,10 +115,8 @@ function App() {
   const searchInputRef = useRef(null);
   const searchContainerRef = useRef(null);
 
-  if (isPasswordRequired() && !passwordOk) {
-    return <PasswordGate onSuccess={() => setPasswordOk(true)} />;
-  }
-
+  // Hooks must run unconditionally — keep all useEffects above any early
+  // return (the gate) so call order is stable.
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -196,6 +196,11 @@ function App() {
   // Get current character data for nav display
   const currentCharacter = selectedCharacterId ? characterMap[selectedCharacterId] : null;
   const currentThumbnail = selectedCharacterId ? thumbnailMap[selectedCharacterId] : null;
+
+  // Gate the app behind the password (after all hooks have run)
+  if (isPasswordRequired() && !passwordOk) {
+    return <PasswordGate />;
+  }
 
   return (
     <div className="min-h-screen bg-gray-900">

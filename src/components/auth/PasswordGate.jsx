@@ -12,7 +12,10 @@ export function isPasswordValid() {
   return sessionStorage.getItem(STORAGE_KEY) === 'true';
 }
 
-export function PasswordGate({ onSuccess }) {
+// onSuccess is no longer used — gate reloads the page on success so the
+// service worker is in control before route assets fetch. Kept in the prop
+// signature would be misleading; consumers should not depend on it.
+export function PasswordGate() {
   const [input, setInput] = useState('');
   const [error, setError] = useState(false);
 
@@ -20,7 +23,10 @@ export function PasswordGate({ onSuccess }) {
     e.preventDefault();
     if (input === SITE_PASSWORD) {
       sessionStorage.setItem(STORAGE_KEY, 'true');
-      onSuccess();
+      // Reload so the service worker is in control before route assets fetch.
+      // Without this, post-unlock route mounts can race against SW activation
+      // and miss precached assets until manual refresh.
+      window.location.reload();
     } else {
       setError(true);
       setTimeout(() => setError(false), 2000);
