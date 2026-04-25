@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Search, ChevronDown, Menu, X } from 'lucide-react';
+import { PasswordGate, isPasswordRequired, isPasswordValid } from './components/auth/PasswordGate';
 import CharacterCards from './components/CharacterCards';
 import MoveCard from './components/Card/MoveCard';
 import PunishCalculator from './components/Punish/PunishCalculator';
@@ -99,6 +100,7 @@ const PunishCalculatorWrapper = ({ onCharacterChange }) => {
 function App() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [passwordOk, setPasswordOk] = useState(() => isPasswordValid());
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCharacterId, setSelectedCharacterId] = useState(null);
   const [isCharacterModalOpen, setIsCharacterModalOpen] = useState(false);
@@ -107,6 +109,10 @@ function App() {
   const [searchInputValue, setSearchInputValue] = useState('');
   const searchInputRef = useRef(null);
   const searchContainerRef = useRef(null);
+
+  if (isPasswordRequired() && !passwordOk) {
+    return <PasswordGate onSuccess={() => setPasswordOk(true)} />;
+  }
 
   // Scroll to top on route change
   useEffect(() => {
