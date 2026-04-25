@@ -1,68 +1,111 @@
 {
   "id": "mai",
+  "scrapedAt": "2026-04-25T15:37:39.284Z",
+  "source": "https://www.streetfighter.com/6/character/mai",
+  "character": {
+    "bio": "The successor of Shiranui-style ninja arts. A charming kunoichi who is as dedicated to love as she is to training. Loves cooking, Japanese dressmaking, flower arrangement, and traditional Japanese dance.",
+    "vitals": {
+      "height": "5'5",
+      "weight": "110 lbs",
+      "likes": "Ozoni, ohagi, dates with Andy",
+      "hates": "Spiders"
+    }
+  },
   "moves": {
     "mai_st_lp": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 5
       },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "mai_st_lk": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
       "frameData": {
         "startup": 4,
         "active": 3,
-        "recovery": 7,
-        "total": 14
+        "activeRange": "4-6",
+        "recovery": 8,
+        "total": 15
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_st_lk": {
-      "damage": 300,
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 4,
-        "active": 3,
-        "recovery": 8,
-        "total": 15
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "mai_st_mp": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
       "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 15,
+        "total": 27
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 8,
-        "active": 4,
-        "recovery": 15,
-        "total": 27
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "mai_st_mk": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -4,
-        "onHit": 5
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 18,
         "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 5
       },
       "properties": {
         "hitLevel": "high",
@@ -70,152 +113,224 @@
       }
     },
     "mai_st_hp": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
       "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 21,
+        "total": 33
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 9,
-        "active": 3,
-        "recovery": 21,
-        "total": 33
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "mai_st_hk": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
       "damage": 900,
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "activeRange": "14-16",
+        "recovery": 19,
+        "total": 36
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 14,
-        "active": 3,
-        "recovery": 19,
-        "total": 36
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "3 frames of recovery added when the attack missesProduces a crumple stun on Punish Counter, and +22 frame advantage"
     },
     "mai_cr_lp": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "2LP",
+      "shortName": "2LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 4
       },
-      "frameData": {
-        "startup": 4,
-        "active": 3,
-        "recovery": 7,
-        "total": 14
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
     },
     "mai_cr_lk": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "2LK",
+      "shortName": "2LK",
       "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 8,
+        "total": 16
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 8,
-        "total": 16
-      },
       "properties": {
         "hitLevel": "low",
         "cancelable": false
-      }
+      },
+      "note": "Can be rapid canceled"
     },
     "mai_cr_mp": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "2MP",
+      "shortName": "2MP",
       "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 15,
+        "total": 25
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 6,
-        "active": 4,
-        "recovery": 15,
-        "total": 25
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
     },
     "mai_cr_mk": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "2MK",
+      "shortName": "2MK",
       "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 19,
+        "total": 29
+      },
       "frameAdvantage": {
         "onBlock": -6,
         "onHit": -2
       },
-      "frameData": {
-        "startup": 7,
-        "active": 3,
-        "recovery": 19,
-        "total": 29
-      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "mai_cr_hp": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "2HP",
+      "shortName": "2HP",
       "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 2201,
+        "activeRange": "10-2210-11, 20-22",
+        "recovery": 19,
+        "total": 2230
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 4
       },
-      "frameData": {
-        "startup": 10,
-        "active": 13,
-        "recovery": 19,
-        "total": 42
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": false
       }
     },
     "mai_cr_hk": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "2HK",
+      "shortName": "2HK",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -11,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 22,
         "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "low",
         "cancelable": false
-      }
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown3 frames of recovery added when the attack misses1 frame of recovery added when blocked"
     },
     "mai_j_lp": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "9LP",
+      "shortName": "9LP",
       "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 4,
         "active": 9,
+        "activeRange": "4-12",
         "recovery": 3,
-        "total": null
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -223,67 +338,99 @@
       }
     },
     "mai_j_lk": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "9LK",
+      "shortName": "9LK",
       "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 5,
         "active": 7,
+        "activeRange": "5-11",
         "recovery": 3,
-        "total": null
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
         "cancelable": false
-      }
+      },
+      "note": "Has cross-up attack properties"
     },
     "mai_j_mp": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "9MP",
+      "shortName": "9MP",
       "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "activeRange": "7-11",
+        "recovery": 3,
+        "total": 15
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 7,
-        "active": 5,
-        "recovery": 3,
-        "total": null
-      },
       "properties": {
         "hitLevel": "mid",
-        "cancelable": false
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
     },
     "mai_j_mk": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "9MK",
+      "shortName": "9MK",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
         "active": 5,
+        "activeRange": "7-11",
         "recovery": 3,
-        "total": null
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
         "cancelable": false
-      }
+      },
+      "note": "Has cross-up attack properties"
     },
     "mai_j_hp": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "9HP",
+      "shortName": "9HP",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 5,
+        "activeRange": "9-13",
         "recovery": 3,
-        "total": null
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -291,16 +438,23 @@
       }
     },
     "mai_j_hk": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "9HK",
+      "shortName": "9HK",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 6,
+        "activeRange": "10-15",
         "recovery": 3,
-        "total": null
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -308,16 +462,20 @@
       }
     },
     "mai_senkotsu_uchi": {
+      "displayName": "Senkotsu Uchi",
+      "level": "M",
+      "category": "normal",
       "damage": 600,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 2
-      },
       "frameData": {
         "startup": 20,
         "active": 3,
+        "activeRange": "20-22",
         "recovery": 18,
         "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
       },
       "properties": {
         "hitLevel": "mid",
@@ -325,1211 +483,1542 @@
       }
     },
     "mai_hien_ren_kyaku_2": {
+      "displayName": "Hien Ren Kyaku(2)",
+      "level": "LL",
+      "category": "normal",
       "damage": 400,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 20,
+        "total": 29
+      },
       "frameAdvantage": {
         "onBlock": -10,
         "onHit": -2
       },
-      "frameData": {
-        "startup": 7,
-        "active": 2,
-        "recovery": 20,
-        "total": 29
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Forces the opponent into a standing position"
     },
     "mai_hien_ren_kyaku_3": {
+      "displayName": "Hien Ren Kyaku(3)",
+      "level": "LLL",
+      "category": "normal",
       "damage": 500,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 28,
+        "total": 40
+      },
       "frameAdvantage": {
         "onBlock": -10,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 10,
-        "active": 2,
-        "recovery": 28,
-        "total": 40
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Can transition to Musasabi no Mai (Overdrive included) or Air Chou Hissatsu Shinobi Bachi between frames 18 and 33Considered airborne from frames 10 - 35"
     },
     "mai_hoshi_kujaku_1": {
+      "displayName": "Hoshi Kujaku(1)",
+      "level": "H",
+      "category": "normal",
       "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 20,
+        "total": 33
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 8,
-        "active": 5,
-        "recovery": 20,
-        "total": 33
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Forces the opponent into a standing position"
     },
     "mai_hoshi_kujaku_2": {
+      "displayName": "Hoshi Kujaku(2)",
+      "level": "HH",
+      "category": "normal",
       "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -11,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 38,
         "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Fully invincible from frames 10 - 58 on hit only"
     },
     "mai_kachousen_l": {
+      "displayName": "L Kachousen",
+      "level": "L",
+      "category": "special",
       "damage": 500,
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": -1
       },
-      "frameData": {
-        "startup": 16,
-        "active": null,
-        "recovery": null,
-        "total": 48
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
     },
     "mai_kachousen_l_charged": {
+      "displayName": "L Kachousen(Charged)",
+      "level": "Hold L",
+      "category": "special",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 1
-      },
       "frameData": {
         "startup": 32,
         "active": null,
-        "recovery": null,
-        "total": 62
+        "activeRange": "",
+        "recovery": 64,
+        "total": null
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_kachousen_l_boosted": {
-      "damage": 600,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 1
-      },
-      "frameData": {
-        "startup": 16,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_kachousen_l_charged_boosted": {
-      "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 1
-      },
-      "frameData": {
-        "startup": 32,
-        "active": null,
-        "recovery": null,
-        "total": 62
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_kachousen_m": {
-      "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -9,
-        "onHit": -3
-      },
-      "frameData": {
-        "startup": 14,
-        "active": null,
-        "recovery": null,
-        "total": 48
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_kachousen_m_charged": {
-      "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 1
-      },
-      "frameData": {
-        "startup": 32,
-        "active": null,
-        "recovery": null,
-        "total": 62
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_kachousen_m_boosted": {
-      "damage": 600,
       "frameAdvantage": {
         "onBlock": -5,
         "onHit": -1
       },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_kachousen_l_boosted": {
+      "displayName": "[Boosted]L Kachousen",
+      "level": "L",
+      "category": "special",
+      "damage": 600,
       "frameData": {
-        "startup": 14,
+        "startup": 16,
         "active": null,
-        "recovery": null,
-        "total": 45
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
     },
-    "mai_kachousen_m_charged_boosted": {
+    "mai_kachousen_l_charged_boosted": {
+      "displayName": "[Boosted]L Kachousen(Charged)",
+      "level": "Hold L",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "activeRange": "",
+        "recovery": 62,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 1
       },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_kachousen_m": {
+      "displayName": "M Kachousen",
+      "level": "M",
+      "category": "special",
+      "damage": 500,
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
+    },
+    "mai_kachousen_m_charged": {
+      "displayName": "M Kachousen(Charged)",
+      "level": "Hold M",
+      "category": "special",
+      "damage": 700,
       "frameData": {
         "startup": 32,
         "active": null,
-        "recovery": null,
-        "total": 62
+        "activeRange": "",
+        "recovery": 64,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_kachousen_m_boosted": {
+      "displayName": "[Boosted]M Kachousen",
+      "level": "M",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
+    },
+    "mai_kachousen_m_charged_boosted": {
+      "displayName": "[Boosted]M Kachousen(Charged)",
+      "level": "Hold M",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "activeRange": "",
+        "recovery": 62,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
     },
     "mai_kachousen_h": {
+      "displayName": "H Kachousen",
+      "level": "H",
+      "category": "special",
       "damage": 500,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -11,
         "onHit": -5
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 48
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
     },
     "mai_kachousen_h_charged": {
+      "displayName": "H Kachousen(Charged)",
+      "level": "Hold H",
+      "category": "special",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 1
-      },
       "frameData": {
         "startup": 32,
         "active": null,
-        "recovery": null,
-        "total": 62
+        "activeRange": "",
+        "recovery": 64,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
     },
     "mai_kachousen_h_boosted": {
+      "displayName": "[Boosted]H Kachousen",
+      "level": "H",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": -3
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 19 frames to change its properties"
     },
     "mai_kachousen_h_charged_boosted": {
+      "displayName": "[Boosted]H Kachousen(Charged)",
+      "level": "Hold H",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "activeRange": "",
+        "recovery": 62,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 32,
-        "active": null,
-        "recovery": null,
-        "total": 62
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
     },
     "mai_kachousen_od": {
+      "displayName": "OD Kachousen",
+      "level": null,
+      "category": "special",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 3
-      },
       "frameData": {
         "startup": 12,
         "active": null,
-        "recovery": null,
-        "total": 42
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Hold down the button for over 19 frames to change its propertiesTrajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
     },
     "mai_kachousen_od_charged": {
+      "displayName": "OD Kachousen(Charged)",
+      "level": "Hold",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "activeRange": "",
+        "recovery": 58,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": 12,
         "onHit": 14
       },
-      "frameData": {
-        "startup": 28,
-        "active": null,
-        "recovery": null,
-        "total": 58
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "mai_midare_kachousen": {
-      "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 15,
-        "active": null,
-        "recovery": null,
-        "total": 39
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_midare_kachousen_boosted": {
-      "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 15,
-        "active": null,
-        "recovery": null,
-        "total": 39
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_l": {
-      "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -29,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 18,
-        "recovery": 30,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_l_boosted": {
-      "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -29,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 18,
-        "recovery": 30,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_m": {
-      "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -28,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 18,
-        "recovery": 29,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_m_boosted": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -28,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 19,
-        "recovery": 28,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_h": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -31,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 7,
-        "active": 18,
-        "recovery": 29,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_h_boosted": {
-      "damage": 1300,
-      "frameAdvantage": {
-        "onBlock": -31,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 7,
-        "active": 18,
-        "recovery": 29,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_od": {
-      "damage": 1600,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 17,
-        "recovery": 35,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "mai_hishou_ryuuenjin_od_boosted": {
-      "damage": 1700,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 18,
-        "recovery": 34,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
       }
     },
     "mai_kachousen_od_boosted": {
+      "displayName": "[Boosted]OD Kachousen",
+      "level": null,
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 3
-      },
       "frameData": {
         "startup": 12,
         "active": null,
-        "recovery": null,
-        "total": 42
+        "activeRange": "",
+        "recovery": 42,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 3
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Hold down the button for over 19 frames to change its propertiesTrajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
     },
     "mai_kachousen_od_charged_boosted": {
+      "displayName": "[Boosted]OD Kachousen(Charged)",
+      "level": "Hold",
+      "category": "special",
       "damage": 700,
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "activeRange": "",
+        "recovery": 58,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": 12,
         "onHit": 14
       },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_midare_kachousen": {
+      "displayName": "Midare Kachousen",
+      "level": "(After a held Overdrive Kachousen)",
+      "category": "special",
+      "damage": 900,
       "frameData": {
-        "startup": 28,
+        "startup": 15,
         "active": null,
-        "recovery": null,
-        "total": 58
+        "activeRange": "",
+        "recovery": 39,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_midare_kachousen_boosted": {
+      "displayName": "[Boosted]Midare Kachousen",
+      "level": "(After a held Overdrive Kachousen)",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "activeRange": "",
+        "recovery": 39,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile / high - mid-air-projectile",
+        "cancelable": false
+      },
+      "note": "Trajectory changes on hit or blockAfter the trajectory change, properties change to 'High - Mid-air Projectile'After the trajectory and property change, does not hit against moves invincible to mid-air projectiles"
+    },
+    "mai_hishou_ryuuenjin_l": {
+      "displayName": "L Hishou Ryuuenjin",
+      "level": "L",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "activeRange": "5-22",
+        "recovery": 1515,
+        "total": 1538
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 7 - 37"
+    },
+    "mai_hishou_ryuuenjin_l_boosted": {
+      "displayName": "[Boosted]L Hishou Ryuuenjin",
+      "level": "L",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "activeRange": "5-22",
+        "recovery": 1515,
+        "total": 1538
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 7 - 37"
+    },
+    "mai_hishou_ryuuenjin_m": {
+      "displayName": "M Hishou Ryuuenjin",
+      "level": "M",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "activeRange": "6-23",
+        "recovery": 1415,
+        "total": 1439
+      },
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 8 - 37"
+    },
+    "mai_hishou_ryuuenjin_m_boosted": {
+      "displayName": "[Boosted]M Hishou Ryuuenjin",
+      "level": "M",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 6,
+        "active": 19,
+        "activeRange": "6-24",
+        "recovery": 1315,
+        "total": 1340
+      },
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 8 - 37"
+    },
+    "mai_hishou_ryuuenjin_h": {
+      "displayName": "H Hishou Ryuuenjin",
+      "level": "H",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "activeRange": "7-24",
+        "recovery": 1415,
+        "total": 1440
+      },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11Considered airborne from frames 9 - 38"
+    },
+    "mai_hishou_ryuuenjin_h_boosted": {
+      "displayName": "[Boosted]H Hishou Ryuuenjin",
+      "level": "H",
+      "category": "special",
+      "damage": 1300,
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "activeRange": "7-24",
+        "recovery": 1415,
+        "total": 1440
+      },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11Considered airborne from frames 9 - 38"
+    },
+    "mai_hishou_ryuuenjin_od": {
+      "displayName": "OD Hishou Ryuuenjin",
+      "level": null,
+      "category": "special",
+      "damage": 1600,
+      "frameData": {
+        "startup": 6,
+        "active": 17,
+        "activeRange": "6-22",
+        "recovery": 1916,
+        "total": 1939
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 8Considered airborne from frames 8 - 417 frame of recovery added when blocked"
+    },
+    "mai_hishou_ryuuenjin_od_boosted": {
+      "displayName": "[Boosted]OD Hishou Ryuuenjin",
+      "level": null,
+      "category": "special",
+      "damage": 1700,
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "activeRange": "6-23",
+        "recovery": 1816,
+        "total": 1840
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 8Considered airborne from frames 8 - 417 frame of recovery added when blocked"
     },
     "mai_ryuuenbu_l": {
+      "displayName": "L Ryuuenbu",
+      "level": "L",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "activeRange": "14-20",
+        "recovery": 15,
+        "total": 36
+      },
       "frameAdvantage": {
         "onBlock": -4,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 14,
-        "active": 7,
-        "recovery": 15,
-        "total": 36
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Recovery added by 5 frames on super armor hit"
     },
     "mai_ryuuenbu_l_boosted": {
+      "displayName": "[Boosted]L Ryuuenbu",
+      "level": "L",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -2,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
         "active": 7,
+        "activeRange": "14-20",
         "recovery": 15,
         "total": 36
       },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Recovery added by 5 frames on super armor hit"
     },
     "mai_ryuuenbu_m": {
+      "displayName": "M Ryuuenbu",
+      "level": "M",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
-        "active": 18,
+        "active": 3101,
+        "activeRange": "14-3114-15, 25-31",
         "recovery": 16,
-        "total": 48
+        "total": 3131
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_ryuuenbu_m_boosted": {
+      "displayName": "[Boosted]M Ryuuenbu",
+      "level": "M",
+      "category": "special",
       "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
-        "active": 18,
+        "active": 3101,
+        "activeRange": "14-3114-15, 25-31",
         "recovery": 16,
-        "total": 48
+        "total": 3131
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_ryuuenbu_h": {
+      "displayName": "H Ryuuenbu",
+      "level": "H",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 15,
-        "active": 22,
+        "active": 3601,
+        "activeRange": "15-3615-17, 27-36",
         "recovery": 12,
-        "total": 49
+        "total": 3628
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_ryuuenbu_h_boosted": {
+      "displayName": "[Boosted]H Ryuuenbu",
+      "level": "H",
+      "category": "special",
       "damage": 900,
+      "frameData": {
+        "startup": 14,
+        "active": 3601,
+        "activeRange": "14-3614-17, 27-36",
+        "recovery": 12,
+        "total": 3627
+      },
       "frameAdvantage": {
         "onBlock": -6,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 15,
-        "active": 22,
-        "recovery": 12,
-        "total": 49
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_ryuuenbu_od": {
+      "displayName": "OD Ryuuenbu",
+      "level": null,
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 16,
-        "active": 31,
+        "active": 4601,
+        "activeRange": "16-4616-17, 30-34, 42-46",
         "recovery": 16,
-        "total": 63
+        "total": 4633
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "8 frame of recovery added when blocked"
     },
     "mai_ryuuenbu_od_boosted": {
+      "displayName": "[Boosted]OD Ryuuenbu",
+      "level": null,
+      "category": "special",
       "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 16,
-        "active": 31,
+        "active": 4601,
+        "activeRange": "16-4616-17, 30-34, 42-46",
         "recovery": 16,
-        "total": 63
+        "total": 4633
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "8 frame of recovery added when blocked"
     },
     "mai_hissatsu_shinobi_bachi_l": {
+      "displayName": "L Hissatsu Shinobi Bachi",
+      "level": "L",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 30,
+        "active": 3901,
+        "activeRange": "10-3910-11, 23-39",
         "recovery": 16,
-        "total": 56
+        "total": 3927
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_l_boosted": {
+      "displayName": "[Boosted]L Hissatsu Shinobi Bachi",
+      "level": "L",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 30,
+        "active": 3901,
+        "activeRange": "10-3910-11, 23-39",
         "recovery": 16,
-        "total": 56
+        "total": 3927
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_m": {
+      "displayName": "M Hissatsu Shinobi Bachi",
+      "level": "M",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 15,
-        "active": 30,
+        "active": 4401,
+        "activeRange": "15-4415-16, 28-44",
         "recovery": 20,
-        "total": 65
+        "total": 4436
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_m_boosted": {
+      "displayName": "[Boosted]M Hissatsu Shinobi Bachi",
+      "level": "M",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 15,
-        "active": 30,
+        "active": 4401,
+        "activeRange": "15-4415-16, 28-44",
         "recovery": 20,
-        "total": 65
+        "total": 4436
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_h": {
+      "displayName": "H Hissatsu Shinobi Bachi",
+      "level": "H",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -13,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
-        "active": 30,
+        "active": 4701,
+        "activeRange": "18-4718-19, 31-47",
         "recovery": 21,
-        "total": 69
+        "total": 4740
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_h_boosted": {
+      "displayName": "[Boosted]H Hissatsu Shinobi Bachi",
+      "level": "H",
+      "category": "special",
       "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -13,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
-        "active": 30,
+        "active": 4701,
+        "activeRange": "18-4718-19, 31-47",
         "recovery": 21,
-        "total": 69
+        "total": 4740
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "mai_hissatsu_shinobi_bachi_od": {
+      "displayName": "OD Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
-        "active": 32,
+        "active": 4501,
+        "activeRange": "14-4514-15, 29-45",
         "recovery": 32,
-        "total": 78
+        "total": 4547
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can perform moves from frame 53Considered airborne from frames 31 - 74"
     },
     "mai_hissatsu_shinobi_bachi_od_boosted": {
+      "displayName": "[Boosted]OD Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
-        "active": 32,
+        "active": 4501,
+        "activeRange": "14-4514-15, 29-45",
         "recovery": 32,
-        "total": 78
+        "total": 4547
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can perform moves from frame 53Considered airborne from frames 31 - 74"
     },
     "mai_musasabi": {
+      "displayName": "Musasabi no Mai",
+      "level": null,
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -7,
-        "onHit": null
-      },
       "frameData": {
         "startup": 21,
         "active": null,
+        "activeRange": "21-until landing",
         "recovery": 18,
         "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -71,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "7 frames of recovery added when the attack misses10 frames of recovery added when the attack misses and characters switch sidesRecovery on block changes depending on the height of the attack when it is blocked"
     },
     "mai_musasabi_boosted": {
+      "displayName": "[Boosted]Musasabi no Mai",
+      "level": null,
+      "category": "special",
       "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -4,
-        "onHit": 1
-      },
       "frameData": {
         "startup": 21,
         "active": null,
+        "activeRange": "21-until landing",
         "recovery": 18,
         "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -42,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "7 frames of recovery added when the attack misses10 frames of recovery added when the attack misses and characters switch sidesRecovery on block changes depending on the height of the attack when it is blocked"
     },
     "mai_musasabi_od": {
+      "displayName": "OD Musasabi no Mai",
+      "level": null,
+      "category": "special",
       "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -7,
-        "onHit": 1
-      },
       "frameData": {
         "startup": 21,
         "active": null,
+        "activeRange": "21-until landing",
         "recovery": 18,
         "total": null
       },
+      "frameAdvantage": {
+        "onBlock": -71,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "7 frames of recovery added when the attack misses10 frames of recovery added when the attack misses and characters switch sidesRecovery on block changes depending on the height of the attack when it is blocked"
     },
     "mai_musasabi_od_boosted": {
+      "displayName": "[Boosted]OD Musasabi no Mai",
+      "level": null,
+      "category": "special",
       "damage": 1300,
-      "frameAdvantage": {
-        "onBlock": -4,
-        "onHit": 2
-      },
       "frameData": {
         "startup": 21,
         "active": null,
+        "activeRange": "21-until landing",
         "recovery": 18,
         "total": null
       },
+      "frameAdvantage": {
+        "onBlock": -42,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "7 frames of recovery added when the attack misses10 frames of recovery added when the attack misses and characters switch sidesRecovery on block changes depending on the height of the attack when it is blockedProduces a ground bound during a mid-air hit"
     },
     "mai_sa1": {
+      "displayName": "SA1 Kagerou no Mai",
+      "level": null,
+      "category": "super",
       "damage": 2000,
-      "frameAdvantage": {
-        "onBlock": -31,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 34,
+        "activeRange": "6-39",
         "recovery": 51,
         "total": 91
       },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "high - projectile",
         "cancelable": false
-      }
+      },
+      "note": "Invincible to strikes and throws between frames 1 - 8Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
     },
     "mai_sa1_boosted": {
+      "displayName": "[Boosted]SA1 Kagerou no Mai",
+      "level": null,
+      "category": "super",
       "damage": 2300,
-      "frameAdvantage": {
-        "onBlock": -26,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 90,
+        "activeRange": "6-95",
         "recovery": 46,
         "total": 142
       },
+      "frameAdvantage": {
+        "onBlock": -26,
+        "onHit": 0
+      },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "high - projectile",
         "cancelable": false
-      }
+      },
+      "note": "Invincible to strikes and throws between frames 1 - 6Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
     },
     "mai_sa2": {
+      "displayName": "SA2 Chou Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "super",
       "damage": 2800,
-      "frameAdvantage": {
-        "onBlock": -24,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
-        "active": 36,
+        "active": 421,
+        "activeRange": "7-427-8, 12-13, 26-27, 32-33, 40-42",
         "recovery": 26,
-        "total": 69
+        "total": 454
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Completely invincible on frames 1 - 8Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
     },
     "mai_sa2_boosted": {
+      "displayName": "[Boosted]SA2 Chou Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "super",
       "damage": 3000,
-      "frameAdvantage": {
-        "onBlock": -24,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
         "active": 36,
+        "activeRange": "7-42",
         "recovery": 31,
         "total": 74
       },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Completely invincible on frames 1 - 8Projectile invincibility from frames 9 - 12Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
     },
     "mai_sa2_air": {
+      "displayName": "SA2 Air Chou Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "super",
       "damage": 2800,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 3,
-        "active": 20,
+        "active": 221,
+        "activeRange": "3-223-4, 7-8, 11-12, 16-17, 20-22",
         "recovery": 24,
-        "total": null
+        "total": 248
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
     },
     "mai_sa2_air_boosted": {
+      "displayName": "[Boosted]SA2 Air Chou Hissatsu Shinobi Bachi",
+      "level": null,
+      "category": "super",
       "damage": 3000,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 3,
         "active": 24,
+        "activeRange": "3-26",
         "recovery": 24,
-        "total": null
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
     },
     "mai_sa3": {
+      "displayName": "SA3 Shiranui Ryuu: Enbu Ada Zakura",
+      "level": null,
+      "category": "super",
       "damage": 4000,
-      "frameAdvantage": {
-        "onBlock": -33,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 39,
+        "active": 4801,
+        "activeRange": "10-4810-11, 16-17, 33-36, 45-48",
         "recovery": 46,
-        "total": 95
+        "total": 4857
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Completely invincible between frames 1 - 11The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
     },
     "mai_ca": {
+      "displayName": "CA Shiranui Ryuu: Enbu Ada Zakura",
+      "level": "(when under 25% vitality)",
+      "category": "super",
       "damage": 4500,
-      "frameAdvantage": {
-        "onBlock": -33,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 39,
+        "active": 4801,
+        "activeRange": "10-4810-11, 16-17, 33-36, 45-48",
         "recovery": 46,
-        "total": 95
+        "total": 4857
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
-    },
-    "mai_throw_f": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
-    },
-    "mai_throw_b": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
-    },
-    "mai_throw_air": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 3,
-        "total": 11
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
+      "note": "Completely invincible between frames 1 - 11The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
     },
     "mai_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": null,
         "active": null,
-        "recovery": null,
-        "total": 18
+        "activeRange": "",
+        "recovery": 18,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "mai_back_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 23
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Invincible to throws between frames 1 - 15"
     },
     "mai_drive_impact": {
+      "displayName": "Drive Impact: Botan Ichige",
+      "level": "HH",
+      "category": "normal",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": null
-      },
       "frameData": {
         "startup": 26,
         "active": 2,
+        "activeRange": "26-27",
         "recovery": 35,
         "total": 63
       },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
     },
     "mai_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Yusura Ume",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 20,
         "active": 3,
+        "activeRange": "20-22",
         "recovery": 26,
         "total": 49
       },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
     },
     "mai_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Yusura Ume",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
         "active": 3,
+        "activeRange": "18-20",
         "recovery": 26,
         "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
     },
     "mai_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 12,
-        "recovery": 33,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
     },
     "mai_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 1,
-        "recovery": 0,
-        "total": 2
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "mai_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 1,
-        "active": 10,
-        "recovery": 0,
-        "total": 11
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "mai_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
     },
     "mai_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
-  }
+  },
+  "_unmatched": [
+    {
+      "displayName": "Shiranui Gourin",
+      "section": "Throws",
+      "level": "(When near opponent)    LL"
+    },
+    {
+      "displayName": "Fuusha Kuzushi",
+      "section": "Throws",
+      "level": "(When near opponent)  LL"
+    },
+    {
+      "displayName": "Yume Zakura",
+      "section": "Throws",
+      "level": "(During a jump) (When near opponent)LL"
+    }
+  ]
 }

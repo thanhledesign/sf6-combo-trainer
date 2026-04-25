@@ -1,0 +1,51 @@
+name: Sync Capcom data
+
+# Monthly automated scrape of streetfighter.com via Playwright.
+# Opens a PR with the diff if any data changed. Manual trigger also enabled.
+
+on:
+  schedule:
+    # 8:00 UTC on the 1st of each month
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright (Chromium + system deps)
+        run: npx playwright install --with-deps chromium
+
+      - name: Scrape all characters
+        run: node scripts/sync/scrape-capcom.mjs --all
+
+      - name: Open PR if data changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data-sync/${{ github.run_id }}
+          title: "data: monthly Capcom sync (${{ github.run_id }})"
+          commit-message: "data: monthly Capcom sync"
+          body: |
+            Automated sync from streetfighter.com via Playwright.
+
+            **Review checklist:**
+            - Spot-check a few characters in the Vercel preview
+            - Verify any frame-data changes match a real Capcom balance patch
+            - Check the unmatched count in the script logs (see Actions tab) — if higher than usual, a Capcom rename or new move may have appeared
+            - If a Capcom redesign broke the parser, no diff will appear and the run will succeed silently — keep an eye on monthly cadence
+          delete-branch: true

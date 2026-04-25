@@ -1,221 +1,339 @@
 {
   "id": "ken",
+  "scrapedAt": "2026-04-25T15:36:42.405Z",
+  "source": "https://www.streetfighter.com/6/character/ken",
+  "character": {
+    "bio": "Former US National Fighting Champ, and ex-VP of the Masters Foundation. Accusations of orchestrating a criminal plot have forced Ken to abandon his family and business and go into hiding.",
+    "vitals": {
+      "height": "5'9",
+      "weight": "183 lbs",
+      "likes": "Family",
+      "hates": "Pointless meetings"
+    }
+  },
   "moves": {
     "ken_st_lp": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 4
       },
-      "frameData": {
-        "startup": 4,
-        "active": 3,
-        "recovery": 7,
-        "total": 14
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
     },
     "ken_st_lk": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
       "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 0
       },
-      "frameData": {
-        "startup": 5,
-        "active": 2,
-        "recovery": 12,
-        "total": 19
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "ken_st_mp": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
       "damage": 600,
+      "frameData": {
+        "startup": 5,
+        "active": 4,
+        "activeRange": "5-8",
+        "recovery": 14,
+        "total": 23
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 4
       },
-      "frameData": {
-        "startup": 5,
-        "active": 4,
-        "recovery": 14,
-        "total": 23
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "ken_st_mk": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
       "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 20,
+        "total": 31
+      },
       "frameAdvantage": {
         "onBlock": -5,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 8,
-        "active": 3,
-        "recovery": 20,
-        "total": 31
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "SA"
       }
     },
     "ken_st_hp": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
       "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 17,
+        "total": 32
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 10,
-        "active": 5,
-        "recovery": 17,
-        "total": 32
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "ken_st_hk": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
       "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 23,
+        "total": 37
+      },
       "frameAdvantage": {
         "onBlock": -5,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 12,
-        "active": 2,
-        "recovery": 23,
-        "total": 37
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "* 2 frames of recovery added on armor hit or if the attack missesForces a spinning knockdown on Punish Counter"
     },
     "ken_cr_lp": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "2LP",
+      "shortName": "2LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "activeRange": "4-5",
+        "recovery": 9,
+        "total": 15
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 4,
-        "active": 2,
-        "recovery": 9,
-        "total": 15
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
     },
     "ken_cr_lk": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "2LK",
+      "shortName": "2LK",
       "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 10,
+        "total": 18
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 10,
-        "total": 18
-      },
       "properties": {
         "hitLevel": "low",
         "cancelable": false
-      }
+      },
+      "note": "Can be rapid canceled"
     },
     "ken_cr_mp": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "2MP",
+      "shortName": "2MP",
       "damage": 700,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 14,
+        "total": 23
+      },
       "frameAdvantage": {
         "onBlock": 0,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 6,
-        "active": 3,
-        "recovery": 14,
-        "total": 23
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
     },
     "ken_cr_mk": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "2MK",
+      "shortName": "2MK",
       "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 19,
+        "total": 29
+      },
       "frameAdvantage": {
         "onBlock": -6,
         "onHit": -2
       },
-      "frameData": {
-        "startup": 7,
-        "active": 3,
-        "recovery": 19,
-        "total": 29
-      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "ken_cr_hp": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "2HP",
+      "shortName": "2HP",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": 3
-      },
       "frameData": {
         "startup": 8,
         "active": 4,
+        "activeRange": "8-11",
         "recovery": 24,
         "total": 36
       },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 3
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing positionCan be canceled until the 2nd active frame"
     },
     "ken_cr_hk": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "2HK",
+      "shortName": "2HK",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": null
-      },
       "frameData": {
         "startup": 8,
         "active": 3,
+        "activeRange": "8-10",
         "recovery": 24,
         "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "low",
         "cancelable": false
-      }
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown* 1 frame of recovery added when blocked"
     },
     "ken_j_lp": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "9LP",
+      "shortName": "9LP",
       "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 5,
         "active": 7,
+        "activeRange": "5-11",
         "recovery": 3,
-        "total": null
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -223,84 +341,124 @@
       }
     },
     "ken_j_lk": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "9LK",
+      "shortName": "9LK",
       "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 6,
+        "activeRange": "6-11",
         "recovery": 3,
-        "total": null
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
         "cancelable": false
-      }
+      },
+      "note": "Has cross-up attack properties"
     },
     "ken_j_mp": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "9MP",
+      "shortName": "9MP",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 4,
+        "activeRange": "6-9",
         "recovery": 3,
-        "total": null
+        "total": 13
       },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
-      }
-    },
-    "ken_j_mk": {
-      "damage": 500,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "ken_j_mk": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
       "frameData": {
         "startup": 7,
         "active": 6,
+        "activeRange": "7-12",
         "recovery": 3,
-        "total": null
+        "total": 16
       },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
-      }
-    },
-    "ken_j_hp": {
-      "damage": 800,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "ken_j_hp": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
       "frameData": {
         "startup": 9,
         "active": 6,
+        "activeRange": "9-14",
         "recovery": 3,
-        "total": null
+        "total": 18
       },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
-      }
-    },
-    "ken_j_hk": {
-      "damage": 800,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown on counter or Punish Counter"
+    },
+    "ken_j_hk": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
       "frameData": {
         "startup": 10,
         "active": 7,
+        "activeRange": "10-16",
         "recovery": 3,
-        "total": null
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -308,16 +466,23 @@
       }
     },
     "ken_nj_hk": {
+      "displayName": "Neutral Jumping Heavy Kick",
+      "level": "(During a neutral jump)H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "9HK",
+      "shortName": "9HK",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 6,
+        "activeRange": "6-11",
         "recovery": 3,
-        "total": null
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
         "hitLevel": "mid",
@@ -325,101 +490,131 @@
       }
     },
     "ken_quick_dash": {
+      "displayName": "Quick Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can transition to branching attacks from frame 12"
     },
     "ken_emergency_stop": {
+      "displayName": "Emergency Stop",
+      "level": "(During Quick Dash)L",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 16,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 16
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "ken_thunder_kick": {
+      "displayName": "Thunder Kick",
+      "level": "(During Quick Dash)M",
+      "category": "normal",
       "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 20,
+        "total": 41
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 18,
-        "active": 3,
-        "recovery": 20,
-        "total": 41
-      },
       "properties": {
         "hitLevel": "mid",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can be canceled into Level 3 Super Art or Critical Art"
     },
     "ken_forward_step_kick": {
+      "displayName": "Forward Step Kick",
+      "level": "(During Quick Dash)H",
+      "category": "normal",
       "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "activeRange": "10-13",
+        "recovery": 20,
+        "total": 34
+      },
       "frameAdvantage": {
         "onBlock": -4,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 10,
-        "active": 4,
-        "recovery": 20,
-        "total": 34
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Can be canceled into any Super Art"
     },
     "ken_chin_buster": {
+      "displayName": "Chin Buster",
+      "level": "MH",
+      "category": "normal",
       "damage": 400,
-      "frameAdvantage": {
-        "onBlock": -14,
-        "onHit": null
-      },
       "frameData": {
         "startup": 11,
         "active": 3,
+        "activeRange": "11-13",
         "recovery": 27,
         "total": 41
       },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "ken_triple_flash_2": {
+      "displayName": "Triple Flash Kicks (2)",
+      "level": "MM",
+      "category": "normal",
       "damage": 400,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 11,
         "active": 2,
+        "activeRange": "11-12",
         "recovery": 27,
         "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
@@ -427,271 +622,309 @@
       }
     },
     "ken_triple_flash_3": {
+      "displayName": "Triple Flash Kicks (3)",
+      "level": "MMH",
+      "category": "normal",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -11,
-        "onHit": null
-      },
       "frameData": {
         "startup": 13,
         "active": 3,
+        "activeRange": "13-15",
         "recovery": 28,
         "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Always in Punish Counter state during execution"
     },
     "ken_hadoken_l": {
+      "displayName": "L Hadoken",
+      "level": "L",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "activeRange": "",
+        "recovery": 49,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": -1
       },
-      "frameData": {
-        "startup": 16,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "ken_hadoken_m": {
+      "displayName": "M Hadoken",
+      "level": "M",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "activeRange": "",
+        "recovery": 49,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -9,
         "onHit": -3
       },
-      "frameData": {
-        "startup": 14,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "ken_hadoken_h": {
+      "displayName": "H Hadoken",
+      "level": "H",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 49,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -11,
         "onHit": -5
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "ken_hadoken_od": {
+      "displayName": "OD Hadoken",
+      "level": null,
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 40
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
       }
     },
     "ken_shoryuken_l": {
+      "displayName": "L Shoryuken",
+      "level": "L",
+      "category": "special",
       "damage": 1100,
-      "frameAdvantage": {
-        "onBlock": -23,
-        "onHit": null
-      },
       "frameData": {
         "startup": 5,
         "active": 10,
-        "recovery": 33,
-        "total": null
+        "activeRange": "5-14",
+        "recovery": 2112,
+        "total": 2127
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 7 - 35* Does 800 individual damage from the 3rd active frame and on"
     },
     "ken_shoryuken_m": {
+      "displayName": "M Shoryuken",
+      "level": "M",
+      "category": "special",
       "damage": 1300,
+      "frameData": {
+        "startup": 6,
+        "active": 151,
+        "activeRange": "6-156-8,9-15",
+        "recovery": 2812,
+        "total": 2969
+      },
       "frameAdvantage": {
         "onBlock": -28,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 10,
-        "recovery": 40,
-        "total": null
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8Considered airborne from frames 8 - 43"
     },
     "ken_shoryuken_h": {
+      "displayName": "H Shoryuken",
+      "level": "H",
+      "category": "special",
       "damage": 1400,
-      "frameAdvantage": {
-        "onBlock": -36,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
-        "active": 10,
-        "recovery": 50,
-        "total": null
+        "active": 161,
+        "activeRange": "7-167-8,9-10,11-16",
+        "recovery": 3515,
+        "total": 3683
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9Invincible to projectiles from frames 5 - 11Considered airborne from frames 9 - 51"
     },
     "ken_shoryuken_od": {
+      "displayName": "OD Shoryuken",
+      "level": null,
+      "category": "special",
       "damage": 1600,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
-        "active": 34,
-        "recovery": 50,
-        "total": null
+        "active": 391,
+        "activeRange": "6-396-7, 8-15, 30-31, 32, 33-34, 35-39",
+        "recovery": 3515,
+        "total": 3912
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
-    },
-    "ken_qd_shoryuken": {
-      "damage": 1700,
-      "frameAdvantage": {
-        "onBlock": -35,
-        "onHit": null
       },
-      "frameData": {
-        "startup": 8,
-        "active": 10,
-        "recovery": 48,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+      "note": "Completely invincible from frames 1 - 10Considered airborne from frames 9 - 24 and 33 - 74"
     },
     "ken_tatsumaki_l": {
+      "displayName": "L Tatsumaki Senpu-kyaku",
+      "level": "L",
+      "category": "special",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -14,
-        "onHit": null
-      },
       "frameData": {
         "startup": 4,
-        "active": 11,
+        "active": 141,
+        "activeRange": "4-144-5, 12-14",
         "recovery": 32,
-        "total": null
+        "total": 177
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 5 - 28."
     },
     "ken_tatsumaki_m": {
+      "displayName": "M Tatsumaki Senpu-kyaku",
+      "level": "M",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 14,
-        "active": 17,
+        "active": 3001,
+        "activeRange": "14-3014-15, 29-30",
         "recovery": 31,
-        "total": null
+        "total": 3046
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "ken_tatsumaki_h": {
-      "damage": 1000,
       "frameAdvantage": {
         "onBlock": -12,
-        "onHit": null
+        "onHit": 0
       },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 8 - 41"
+    },
+    "ken_tatsumaki_h": {
+      "displayName": "H Tatsumaki Senpu-kyaku",
+      "level": "H",
+      "category": "special",
+      "damage": 1000,
       "frameData": {
         "startup": 16,
-        "active": 32,
+        "active": 4701,
+        "activeRange": "16-4716-17, 31-32, 46-47",
         "recovery": 31,
-        "total": null
+        "total": 4748
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 10 - 61"
     },
     "ken_tatsumaki_od": {
+      "displayName": "OD Tatsumaki Senpu-kyaku",
+      "level": null,
+      "category": "special",
       "damage": 1700,
-      "frameAdvantage": {
-        "onBlock": -61,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
-        "active": 48,
-        "recovery": 34,
-        "total": null
+        "active": 561,
+        "activeRange": "9-569-12, 18-20, 27-29, 36-38,54-56",
+        "recovery": 2212,
+        "total": 2782
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "ken_qd_tatsumaki": {
-      "damage": 1200,
       "frameAdvantage": {
-        "onBlock": -9,
-        "onHit": 3
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 46,
-        "recovery": 20,
-        "total": null
+        "onBlock": -61,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 10 - 77"
     },
     "ken_air_tatsumaki": {
+      "displayName": "Aerial Tatsumaki Senpu-kyaku",
+      "level": "(During a forward jump)",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 11,
-        "active": 17,
+        "active": 2701,
+        "activeRange": "11-2711-12,18-19,26-27",
         "recovery": 14,
-        "total": null
+        "total": 2726
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
@@ -699,599 +932,674 @@
       }
     },
     "ken_air_tatsumaki_od": {
+      "displayName": "OD Aerial Tatsumaki Senpu-kyaku",
+      "level": "(During a forward jump)",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 11,
-        "active": 18,
+        "active": 2801,
+        "activeRange": "11-2811-12, 14-15, 18-19, 22-23, 27-28",
         "recovery": 14,
-        "total": null
+        "total": 2826
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 10 - 77Does not hit the opponent in front of you on the 2nd and 4th attacks(The 2nd and 4th attacks do 700 damage and increases the Super Art gauge by 600)7 frames of recovery added when the attack misses"
     },
     "ken_dragonlash_l": {
+      "displayName": "L Dragonlash Kick",
+      "level": "L",
+      "category": "special",
       "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 6,
+        "activeRange": "18-23",
+        "recovery": 21,
+        "total": 45
+      },
       "frameAdvantage": {
         "onBlock": -4,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 18,
-        "active": 6,
-        "recovery": 21,
-        "total": null
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Does not hit opponents on the ground from frames 18 - 20Does 950 damage from frames 21 - 23Considered airborne from frames 9 - 28"
     },
     "ken_dragonlash_m": {
+      "displayName": "M Dragonlash Kick",
+      "level": "M",
+      "category": "special",
       "damage": 1100,
+      "frameData": {
+        "startup": 23,
+        "active": 5,
+        "activeRange": "23-27",
+        "recovery": 25,
+        "total": 53
+      },
       "frameAdvantage": {
         "onBlock": -8,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 23,
-        "active": 5,
-        "recovery": 25,
-        "total": null
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Does not hit opponents on the ground from frames 23 - 24Considered airborne from frames 14 - 32"
     },
     "ken_dragonlash_h": {
+      "displayName": "H Dragonlash Kick",
+      "level": "H",
+      "category": "special",
       "damage": 1200,
+      "frameData": {
+        "startup": 28,
+        "active": 5,
+        "activeRange": "28-32",
+        "recovery": 21,
+        "total": 54
+      },
       "frameAdvantage": {
         "onBlock": 1,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 28,
-        "active": 5,
-        "recovery": 21,
-        "total": null
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Does not hit opponents on the ground from frames 28 - 29Considered airborne from frames 19 - 37"
     },
     "ken_dragonlash_od": {
+      "displayName": "OD Dragonlash Kick",
+      "level": null,
+      "category": "special",
       "damage": 1200,
+      "frameData": {
+        "startup": 9,
+        "active": 241,
+        "activeRange": "9-249-10, 18-24",
+        "recovery": 24,
+        "total": 274
+      },
       "frameAdvantage": {
         "onBlock": -9,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 9,
-        "active": 16,
-        "recovery": 24,
-        "total": null
-      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
-    },
-    "ken_qd_dragonlash": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -8,
-        "onHit": 2
       },
-      "frameData": {
-        "startup": 9,
-        "active": 15,
-        "recovery": 24,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
+      "note": "Does not hit opponents on the ground from frames 9 - 12 and 18Considered airborne from frames 10 - 27Does not have additional combo scaling if the 2nd attack hits"
     },
     "ken_jinrai_l": {
+      "displayName": "L Jinrai Kick",
+      "level": "L",
+      "category": "special",
       "damage": 500,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 28,
+        "total": 43
+      },
       "frameAdvantage": {
         "onBlock": -11,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 12,
-        "active": 3,
-        "recovery": 28,
-        "total": 43
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Kazekama Shin Kick and Gorai Axe Kick from frames 32 - 35Can transition to Senka Snap Kick from frames 30 - 35"
     },
     "ken_jinrai_m": {
+      "displayName": "M Jinrai Kick",
+      "level": "M",
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 24,
+        "total": 43
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 16,
-        "active": 3,
-        "recovery": 24,
-        "total": 43
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Kazekama Shin Kick and Gorai Axe Kick from frames 32 - 35Can transition to Senka Snap Kick from frames 30 - 35"
     },
     "ken_jinrai_h": {
+      "displayName": "H Jinrai Kick",
+      "level": "H",
+      "category": "special",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -2,
-        "onHit": null
-      },
       "frameData": {
         "startup": 25,
         "active": 3,
+        "activeRange": "25-27",
         "recovery": 19,
         "total": 47
       },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to Kazekama Shin Kick and Gorai Axe Kick from frames 36 - 41Can transition to Senka Snap Kick from frames 34 - 41"
     },
     "ken_jinrai_od": {
+      "displayName": "OD Jinrai Kick",
+      "level": null,
+      "category": "special",
       "damage": 600,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 25,
+        "total": 41
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": -4
       },
-      "frameData": {
-        "startup": 13,
-        "active": 3,
-        "recovery": 25,
-        "total": 41
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to Overdrive Kazekama Shin Kick and Overdrive Gorai Axe Kick from frames 21 - 27Can transition to Overdrive Senka Snap Kick from frames 19 - 27"
     },
     "ken_kazekama": {
-      "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -5,
-        "onHit": 3
-      },
+      "displayName": "Kazekama Shin Kick",
+      "level": "(During Jinrai Kick)  L",
+      "category": "special",
+      "damage": 600,
       "frameData": {
         "startup": 6,
         "active": 4,
+        "activeRange": "6-9",
         "recovery": 19,
         "total": 29
       },
-      "properties": {
-        "hitLevel": "low",
-        "cancelable": true
-      }
-    },
-    "ken_od_kazekama": {
-      "damage": 500,
       "frameAdvantage": {
         "onBlock": -5,
         "onHit": 3
       },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Knockdown on Counter or Punish CounterAlways in Punish Counter state during execution"
+    },
+    "ken_od_kazekama": {
+      "displayName": "OD Kazekama Shin Kick",
+      "level": "(During OD Jinrai Kick)  L",
+      "category": "special",
+      "damage": 500,
       "frameData": {
         "startup": 6,
         "active": 3,
+        "activeRange": "6-8",
         "recovery": 20,
         "total": 29
       },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 3
+      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
-      }
-    },
-    "ken_kasai_kazekama": {
-      "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
+        "cancelable": false,
+        "cancelFlags": "SA2"
       },
-      "frameData": {
-        "startup": 15,
-        "active": 3,
-        "recovery": 29,
-        "total": 47
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+      "note": "Can transition to Kasai Thrust Kick from frame 11Always in Punish Counter state during execution"
     },
     "ken_gorai": {
+      "displayName": "Gorai Axe Kick",
+      "level": "(During Jinrai Kick)  M",
+      "category": "special",
       "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 20,
+        "total": 41
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 18,
-        "active": 3,
-        "recovery": 20,
-        "total": 41
-      },
       "properties": {
         "hitLevel": "mid",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Always in Punish Counter state during executionProduces a ground bound during a mid-air hit"
     },
     "ken_od_gorai": {
+      "displayName": "OD Gorai Axe Kick",
+      "level": "(During OD Jinrai Kick)  M",
+      "category": "special",
       "damage": 1000,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 24,
+        "total": 44
+      },
       "frameAdvantage": {
         "onBlock": -7,
         "onHit": -3
       },
-      "frameData": {
-        "startup": 17,
-        "active": 3,
-        "recovery": 24,
-        "total": 44
-      },
       "properties": {
         "hitLevel": "mid",
-        "cancelable": true
-      }
-    },
-    "ken_kasai_gorai": {
-      "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
+        "cancelable": false,
+        "cancelFlags": "SA2"
       },
-      "frameData": {
-        "startup": 11,
-        "active": 3,
-        "recovery": 29,
-        "total": 43
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+      "note": "Can transition to Kasai Thrust Kick from frame 24Always in Punish Counter state during execution"
     },
     "ken_senka": {
+      "displayName": "Senka Snap Kick",
+      "level": "(During Jinrai Kick)  H",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 3,
+        "activeRange": "10-12",
         "recovery": 25,
         "total": 38
       },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Always in Punish Counter state during executionDoes not hit on crouching opponents"
     },
     "ken_od_senka": {
+      "displayName": "OD Senka Snap Kick",
+      "level": "(During OD Jinrai Kick)  H",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -4,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 4,
-        "recovery": 20,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 18,
         "total": 34
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "ken_kasai_senka": {
-      "damage": 500,
       "frameAdvantage": {
-        "onBlock": -20,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 15,
-        "active": 3,
-        "recovery": 37,
-        "total": 55
+        "onBlock": -4,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to Kasai Thrust Kick from frame 22Always in Punish Counter state during execution"
     },
     "ken_sa1": {
+      "displayName": "SA1 Dragonlash Flame",
+      "level": null,
+      "category": "super",
       "damage": 2000,
-      "frameAdvantage": {
-        "onBlock": -24,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
         "active": 3,
+        "activeRange": "7-9",
         "recovery": 41,
         "total": 51
       },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Invincible to strikes and throws on frames 1 - 9Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 30%"
     },
     "ken_sa2": {
+      "displayName": "SA2 Shippu Jinrai-kyaku",
+      "level": null,
+      "category": "super",
       "damage": 2800,
-      "frameAdvantage": {
-        "onBlock": -5,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
-        "active": 56,
+        "active": 611,
+        "activeRange": "6-616-7,18-20,31-33,46-48,60-61",
         "recovery": 28,
-        "total": 90
+        "total": 645
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Transitions to the full attack after the 6th attackMinimum guaranteed damage is set to 40%"
     },
     "ken_sa3": {
-      "damage": 4000,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 7,
-        "active": 39,
-        "recovery": 55,
-        "total": 101
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "ken_ca": {
+      "displayName": "CA Shinryu Reppa",
+      "level": "(when under 25% vitality)",
+      "category": "super",
       "damage": 4500,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
-        "active": 39,
+        "active": 451,
+        "activeRange": "7-457-9,11-13,14-16,33-35,36-37,38-39,40-41,42-43,44-45",
         "recovery": 55,
-        "total": 101
+        "total": 513
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
-    },
-    "ken_throw_f": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
-    },
-    "ken_throw_b": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
+      "note": "Completely invincible from frames 1 - 18Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 50%Following properties occur if the first attack is blocked or misses- Damage is 2300- Reduces Drive Gauge by 16000 on hit- Does not go into full cinematic animation* Applies only when during Thunder Kick or when canceling from special moves."
     },
     "ken_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": null,
         "active": null,
-        "recovery": null,
-        "total": 19
+        "activeRange": "",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "ken_back_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 23
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Invincible to throws from frames 1 - 15"
     },
     "ken_drive_impact": {
+      "displayName": "Drive Impact: Flame Strike",
+      "level": "HH",
+      "category": "normal",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": null
-      },
       "frameData": {
         "startup": 26,
         "active": 2,
+        "activeRange": "26-27",
         "recovery": 35,
         "total": 63
       },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Super Armor for 2 attacks from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
     },
     "ken_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Lightning Crack",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 20,
         "active": 3,
+        "activeRange": "20-22",
         "recovery": 26,
         "total": 49
       },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
     },
     "ken_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Lightning Crack",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
         "active": 3,
+        "activeRange": "18-20",
         "recovery": 26,
         "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
     },
     "ken_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 12,
-        "recovery": 33,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
     },
     "ken_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 1,
-        "recovery": 0,
-        "total": 2
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "ken_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 1,
-        "active": 10,
-        "recovery": 0,
-        "total": 11
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "ken_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
     },
     "ken_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
-  }
+  },
+  "_unmatched": [
+    {
+      "displayName": "[Quick Dash] Shoryuken",
+      "section": "Special Moves",
+      "level": "(During Quick Dash)"
+    },
+    {
+      "displayName": "[Quick Dash] Tatsumaki Senpu-kyaku",
+      "section": "Special Moves",
+      "level": "(During Quick Dash)"
+    },
+    {
+      "displayName": "[Quick Dash] Dragonlash Kick",
+      "section": "Special Moves",
+      "level": "(During Quick Dash)"
+    },
+    {
+      "displayName": "Kasai Thrust Kick",
+      "section": "Special Moves",
+      "level": "(During OD Kazekama Shin Kick)"
+    },
+    {
+      "displayName": "Kasai Thrust Kick",
+      "section": "Special Moves",
+      "level": "(During OD Gorai Axe Kick)"
+    },
+    {
+      "displayName": "Kasai Thrust Kick",
+      "section": "Special Moves",
+      "level": "(During OD Senka Snap Kick)"
+    },
+    {
+      "displayName": "Knee Strikes",
+      "section": "Throws",
+      "level": "(When near opponent)    LL"
+    },
+    {
+      "displayName": "Hell Wheel",
+      "section": "Throws",
+      "level": "(When near opponent)  LL"
+    }
+  ]
 }

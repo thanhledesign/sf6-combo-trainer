@@ -38,12 +38,12 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 - **PWA**: vite-plugin-pwa with Workbox (CacheFirst for videos w/ 30d). Manifest at `vite.config.js`; icons in `public/icons/` (purple gradient `#7c3aed → #4f46e5`).
 
 ### Data Layers (`src/data/`)
-- **capcom/{name}.json** — frame numbers from Capcom (machine-managed in future, hand-keyed today). Never edit by hand if you can avoid it.
+- **capcom/{name}.json** — auto-scraped from streetfighter.com. Frame data, display names, bio, vitals. **Never hand-edit** — gets overwritten by the next sync.
 - **annotations/{name}.json** — Thanh's IP: tactical use, perspectives, combo connectsTo, IA tactics, tactical_tags. **This is where you spend 95% of editing time.**
 - **overrides/{name}.json** — sparse corrections to Capcom values (rare, only when you've frame-verified Capcom is wrong).
-- 7 chars currently, ~538 moves total. Roster expansion: write two new files per character (capcom + annotations) per `npm run sync-data` instructions.
-- **Future auto-sync**: see `docs/_handoff-2026-04-24/08-DATA-PIPELINE-RESEARCH.md` — Capcom data isn't in HTML (client-side fetched), needs Playwright.
-- **Source URLs** (for hand-keying): https://www.streetfighter.com/6/character/{name}/{frame,movelist}
+- 7 chars currently, ~530 moves total. Capcom is the source of truth for objective fields; annotations win for tactical narrative.
+- **Auto-sync**: `npm run sync-data` runs `scripts/sync/scrape-capcom.mjs` (Playwright + Chromium). Monthly GH Action workflow at `.github/workflows/sync-capcom-data.yml` opens a PR on data change.
+- **Unmatched moves**: `docs/_handoff-2026-04-24/09-CAPCOM-SYNC-UNMATCHED.md` — currently 28 throws/specials need annotation displayName renames to match Capcom.
 
 ### Figma (MCP-Connected)
 - **File**: Bc7305TyPGELiIE4rmwVJe

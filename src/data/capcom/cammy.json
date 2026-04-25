@@ -1,51 +1,86 @@
 {
   "id": "cammy",
+  "scrapedAt": "2026-04-25T15:37:34.117Z",
+  "source": "https://www.streetfighter.com/6/character/cammy",
+  "character": {
+    "bio": "Member of British special forces unit Delta Red. Distinguished herself in the operation against Shadaloo, with which she shares a fated connection. Hyper-competent but somewhat moody. Currently working at HQ.",
+    "vitals": {
+      "height": "5'5",
+      "weight": "134 lbs",
+      "likes": "Cats",
+      "hates": "Everything (if she's grumpy)"
+    }
+  },
   "moves": {
     "cammy_st_lp": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 4,
-        "active": 3,
-        "recovery": 7,
-        "total": 14
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
     },
     "cammy_st_lk": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
       "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 10,
+        "total": 18
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 10,
-        "total": 18
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "cammy_st_mp": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
       "damage": 600,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 6
-      },
       "frameData": {
         "startup": 6,
         "active": 4,
+        "activeRange": "6-9",
         "recovery": 13,
         "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
       },
       "properties": {
         "hitLevel": "high",
@@ -53,16 +88,23 @@
       }
     },
     "cammy_st_mk": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
       "damage": 700,
-      "frameAdvantage": {
-        "onBlock": -4,
-        "onHit": 3
-      },
       "frameData": {
         "startup": 8,
         "active": 3,
+        "activeRange": "8-10",
         "recovery": 18,
         "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
       },
       "properties": {
         "hitLevel": "high",
@@ -70,815 +112,1045 @@
       }
     },
     "cammy_st_hp": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 2
-      },
       "frameData": {
         "startup": 8,
         "active": 3,
+        "activeRange": "8-10",
         "recovery": 20,
         "total": 31
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "cammy_st_hk": {
-      "damage": 900,
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 2
       },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "cammy_st_hk": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 900,
       "frameData": {
         "startup": 11,
         "active": 3,
+        "activeRange": "11-13",
         "recovery": 21,
         "total": 35
       },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Forces a juggle state on Punish Counter2 frames of recovery added when the attack misses"
     },
     "cammy_cr_lp": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "2LP",
+      "shortName": "2LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "activeRange": "4-5",
+        "recovery": 8,
+        "total": 14
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 4,
-        "active": 2,
-        "recovery": 8,
-        "total": 14
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
     },
     "cammy_cr_lk": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "2LK",
+      "shortName": "2LK",
       "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 7,
+        "total": 15
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 7,
-        "total": 15
-      },
       "properties": {
         "hitLevel": "low",
         "cancelable": false
-      }
+      },
+      "note": "Can be rapid canceled"
     },
     "cammy_cr_mp": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "2MP",
+      "shortName": "2MP",
       "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 14,
+        "total": 24
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 7,
-        "active": 3,
-        "recovery": 14,
-        "total": 24
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "3 frames of recovery added when the attack misses"
     },
     "cammy_cr_mk": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "2MK",
+      "shortName": "2MK",
       "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 18,
+        "total": 29
+      },
       "frameAdvantage": {
         "onBlock": -5,
         "onHit": 1
       },
-      "frameData": {
-        "startup": 8,
-        "active": 3,
-        "recovery": 18,
-        "total": 29
-      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "cammy_cr_hp": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "2HP",
+      "shortName": "2HP",
       "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "activeRange": "10-13",
+        "recovery": 15,
+        "total": 29
+      },
       "frameAdvantage": {
         "onBlock": 1,
         "onHit": 7
       },
-      "frameData": {
-        "startup": 10,
-        "active": 4,
-        "recovery": 15,
-        "total": 29
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Forces the opponent into a standing position"
     },
     "cammy_cr_hk": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "2HK",
+      "shortName": "2HK",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 24,
         "total": 36
       },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
-      }
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard KnockdownForces a juggle state when hitting a mid-air opponent"
     },
     "cammy_j_lp": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "9LP",
+      "shortName": "9LP",
       "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "activeRange": "4-13",
+        "recovery": 3,
+        "total": 17
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 4,
-        "active": 10,
-        "recovery": 3,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "mid",
         "cancelable": false
       }
     },
     "cammy_j_lk": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "9LK",
+      "shortName": "9LK",
       "damage": 300,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 4,
         "active": 10,
+        "activeRange": "4-13",
         "recovery": 3,
-        "total": null
+        "total": 17
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "cammy_j_mp": {
-      "damage": 600,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "cammy_j_mp": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 600,
       "frameData": {
         "startup": 6,
         "active": 8,
+        "activeRange": "6-13",
         "recovery": 3,
-        "total": null
+        "total": 17
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "cammy_j_mk": {
-      "damage": 600,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "cammy_j_mk": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 600,
       "frameData": {
         "startup": 7,
         "active": 6,
+        "activeRange": "7-12",
         "recovery": 3,
-        "total": null
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "mid",
         "cancelable": false
       }
     },
     "cammy_j_hp": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "9HP",
+      "shortName": "9HP",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 8,
         "active": 5,
+        "activeRange": "8-12",
         "recovery": 3,
-        "total": null
+        "total": 16
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "cammy_j_hk": {
-      "damage": 800,
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "cammy_j_hk": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
       "frameData": {
         "startup": 10,
         "active": 6,
+        "activeRange": "10-15",
         "recovery": 3,
-        "total": null
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "mid",
         "cancelable": false
       }
     },
     "cammy_lift_uppercut": {
+      "displayName": "Lift Uppercut",
+      "level": "M",
+      "category": "normal",
       "damage": 500,
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "activeRange": "5-9",
+        "recovery": 12,
+        "total": 22
+      },
       "frameAdvantage": {
         "onBlock": -1,
         "onHit": 4
       },
-      "frameData": {
-        "startup": 5,
-        "active": 5,
-        "recovery": 12,
-        "total": 22
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "cammy_delayed_ripper": {
+      "displayName": "Delayed Ripper",
+      "level": "H",
+      "category": "normal",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
         "active": 3,
+        "activeRange": "18-20",
         "recovery": 25,
         "total": 46
       },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Recovery is reduced by 5 frame on hitIncrease juggle state time when attack lands as a Punish Counter"
     },
     "cammy_assault_blade": {
+      "displayName": "Assault Blade",
+      "level": "H",
+      "category": "normal",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -7,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 18,
         "total": 30
       },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": true,
+        "cancelFlags": "C*"
+      },
+      "note": "Can only be canceled into a jump if the attack hits"
     },
     "cammy_lift_combination": {
+      "displayName": "Lift Combination",
+      "level": "MH",
+      "category": "normal",
       "damage": 600,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 3,
+        "activeRange": "9-11",
         "recovery": 23,
         "total": 35
       },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
-    },
-    "cammy_swing_combination": {
-      "damage": 800,
       "frameAdvantage": {
         "onBlock": -12,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 19,
-        "recovery": 29,
-        "total": 61
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": true,
+        "cancelFlags": "C*"
+      },
+      "note": "Can only be canceled into a jump if the attack hits"
+    },
+    "cammy_swing_combination": {
+      "displayName": "Swing Combination",
+      "level": "HH",
+      "category": "normal",
+      "damage": 800,
+      "frameData": {
+        "startup": 13,
+        "active": 3101,
+        "activeRange": "13-3113-15, 29-31",
+        "recovery": 29,
+        "total": 3143
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "cammy_spiral_arrow_l": {
+      "displayName": "L Spiral Arrow",
+      "level": "L",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 13,
+        "activeRange": "9-21",
         "recovery": 21,
         "total": 43
       },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 9 - 24"
     },
     "cammy_spiral_arrow_m": {
+      "displayName": "M Spiral Arrow",
+      "level": "M",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -14,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 15,
+        "activeRange": "9-23",
         "recovery": 21,
         "total": 45
       },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Considered airborne from frames 9 - 26"
     },
     "cammy_spiral_arrow_h": {
+      "displayName": "H Spiral Arrow",
+      "level": "H",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -12,
-        "onHit": null
-      },
       "frameData": {
         "startup": 15,
-        "active": 16,
+        "active": 3001,
+        "activeRange": "15-3015-17, 19-30",
         "recovery": 21,
-        "total": 52
+        "total": 3037
       },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
-      }
-    },
-    "cammy_spiral_arrow_h_charged": {
-      "damage": 800,
       "frameAdvantage": {
-        "onBlock": -14,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 27,
-        "active": 16,
-        "recovery": 20,
-        "total": 63
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
-      }
-    },
-    "cammy_spiral_arrow_od": {
-      "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -14,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 16,
-        "recovery": 20,
-        "total": 49
+        "onBlock": -12,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 18 - 33"
+    },
+    "cammy_spiral_arrow_h_charged": {
+      "displayName": "H Spiral Arrow(Charged)",
+      "level": "Hold H",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 27,
+        "active": 4201,
+        "activeRange": "27-4227-29, 31-33, 34-36, 37-39, 40-42",
+        "recovery": 20,
+        "total": 4248
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold the button for more than 16 frames to change its propertiesConsidered airborne from frames 30 - 45"
+    },
+    "cammy_spiral_arrow_od": {
+      "displayName": "OD Spiral Arrow",
+      "level": null,
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 13,
+        "active": 2801,
+        "activeRange": "13-2813-15, 17-19, 20-22, 23-25, 26-28",
+        "recovery": 20,
+        "total": 2834
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Considered airborne from frames 16 - 32"
     },
     "cammy_cannon_spike_l": {
+      "displayName": "L Cannon Spike",
+      "level": "L",
+      "category": "special",
       "damage": 900,
-      "frameAdvantage": {
-        "onBlock": -36,
-        "onHit": null
-      },
       "frameData": {
         "startup": 5,
         "active": 12,
-        "recovery": 40,
-        "total": null
+        "activeRange": "5-16",
+        "recovery": 2416,
+        "total": 2433
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 7 - 40* Does 800 individual damage after the 3rd active frame"
     },
     "cammy_cannon_spike_m": {
+      "displayName": "M Cannon Spike",
+      "level": "M",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": -36,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 12,
-        "recovery": 41,
-        "total": null
+        "activeRange": "6-17",
+        "recovery": 2516,
+        "total": 2534
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9Considered airborne from frames 8 - 42* Does 800 individual damage after the 3rd active frame"
     },
     "cammy_cannon_spike_h": {
+      "displayName": "H Cannon Spike",
+      "level": "H",
+      "category": "special",
       "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": -36,
-        "onHit": null
-      },
       "frameData": {
         "startup": 7,
         "active": 12,
-        "recovery": 44,
-        "total": null
+        "activeRange": "7-18",
+        "recovery": 2816,
+        "total": 2835
+      },
+      "frameAdvantage": {
+        "onBlock": -36,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button for over 15 frames to change its propertiesInvincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8Considered airborne from frames 10 - 36* Does 800 individual damage from the 3rd active frame and on"
     },
     "cammy_cannon_spike_h_charged": {
+      "displayName": "H Cannon Spike(Charged)",
+      "level": "Hold H",
+      "category": "special",
       "damage": 1500,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
       "frameData": {
         "startup": 24,
         "active": 12,
-        "recovery": 45,
-        "total": null
+        "activeRange": "24-35",
+        "recovery": 2916,
+        "total": 2952
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Completely invincible from frames 20 - 25Considered airborne from frames 26 - 64* Does 900 individual damage after the 5th active frame"
     },
     "cammy_cannon_spike_od": {
+      "displayName": "OD Cannon Spike",
+      "level": null,
+      "category": "special",
       "damage": 1500,
-      "frameAdvantage": {
-        "onBlock": -40,
-        "onHit": null
-      },
       "frameData": {
         "startup": 6,
         "active": 12,
-        "recovery": 46,
-        "total": null
+        "activeRange": "6-17",
+        "recovery": 3016,
+        "total": 3034
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Completely invincible from frames 1 - 7Considered airborne from frames 8 - 47* Does 900 individual damage after the 5th active frame"
     },
     "cammy_quick_spin_knuckle_l": {
+      "displayName": "L Quick Spin Knuckle",
+      "level": "L",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 21,
+        "active": 4,
+        "activeRange": "21-24",
+        "recovery": 16,
+        "total": 41
+      },
       "frameAdvantage": {
         "onBlock": -3,
         "onHit": 2
       },
-      "frameData": {
-        "startup": 21,
-        "active": 4,
-        "recovery": 16,
-        "total": 41
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "cammy_quick_spin_knuckle_m": {
+      "displayName": "M Quick Spin Knuckle",
+      "level": "M",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 24,
+        "active": 4,
+        "activeRange": "24-27",
+        "recovery": 16,
+        "total": 44
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 3
       },
-      "frameData": {
-        "startup": 24,
-        "active": 4,
-        "recovery": 16,
-        "total": 44
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible to projectiles from frames 9 - 23"
     },
     "cammy_quick_spin_knuckle_h": {
+      "displayName": "H Quick Spin Knuckle",
+      "level": "H",
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 28,
+        "active": 4,
+        "activeRange": "28-31",
+        "recovery": 17,
+        "total": 49
+      },
       "frameAdvantage": {
         "onBlock": 3,
         "onHit": 5
       },
-      "frameData": {
-        "startup": 28,
-        "active": 4,
-        "recovery": 17,
-        "total": 49
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible to projectiles from frames 9 - 27"
     },
     "cammy_quick_spin_knuckle_od": {
+      "displayName": "OD Quick Spin Knuckle",
+      "level": null,
+      "category": "special",
       "damage": 800,
+      "frameData": {
+        "startup": 25,
+        "active": 4,
+        "activeRange": "25-28",
+        "recovery": 17,
+        "total": 46
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 7
       },
-      "frameData": {
-        "startup": 25,
-        "active": 4,
-        "recovery": 17,
-        "total": 46
-      },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Invincible to projectiles from frames 9 - 24When performed at close range, Cammy will go behind her opponent and attack. In this situation, start up is 3 frames later"
     },
     "cammy_cannon_strike": {
+      "displayName": "Cannon Strike",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 600,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 9
-      },
       "frameData": {
         "startup": 13,
         "active": 11,
+        "activeRange": "13-23",
         "recovery": 12,
-        "total": null
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -63,
+        "onHit": 9
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recovery changes depending on the height of the attack when it hits or is blocked"
     },
     "cammy_cannon_strike_od": {
+      "displayName": "OD Cannon Strike",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": 5,
-        "onHit": 9
-      },
       "frameData": {
         "startup": 13,
         "active": 10,
+        "activeRange": "13-22",
         "recovery": 12,
-        "total": null
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 19
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": true
-      }
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Recovery changes depending on the height of the attack when it hits or is blocked"
     },
     "cammy_hooligan": {
+      "displayName": "Hooligan Combination",
+      "level": null,
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "From frame 21 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 7 or later. Is considered airborne."
     },
     "cammy_hooligan_charged": {
+      "displayName": "Hooligan Combination(Charged)",
+      "level": "Hold H",
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Hold the button for more than 18 frames to change its propertiesFrom frame 41 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 27 or later. Is considered airborne."
     },
     "cammy_hooligan_od": {
+      "displayName": "OD Hooligan Combination",
+      "level": null,
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "From frame 21 until landing, can be canceled into any offshoot attacks except for Overdrive Razor's Edge Slicer on frame 7 or later. Is considered airborne."
     },
     "cammy_razors_edge_slicer": {
+      "displayName": "Razor's Edge Slicer",
+      "level": "(During Hooligan Combination)(No input)",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": 2,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 9,
+        "activeRange": "10-18",
         "recovery": 13,
         "total": 32
       },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "low",
-        "cancelable": true
+        "cancelable": false,
+        "cancelFlags": "SA3"
       }
     },
     "cammy_razors_edge_slicer_charged": {
+      "displayName": "Razor's Edge Slicer(Charged)",
+      "level": "(During Hooligan Combination)(No input)",
+      "category": "special",
       "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": 2,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 24,
+        "active": 3301,
+        "activeRange": "10-3310-18,29-33",
         "recovery": 17,
-        "total": 51
+        "total": 3328
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
       },
       "properties": {
-        "hitLevel": "low",
-        "cancelable": true
-      }
+        "hitLevel": "lowlow",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Only the final attack can be canceled into a Level 3 Super Art or Critical Art"
     },
     "cammy_razors_edge_slicer_od": {
+      "displayName": "OD Razor's Edge Slicer",
+      "level": "(During Hooligan Combination)(No input)",
+      "category": "special",
       "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": 2,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
-        "active": 24,
+        "active": 3301,
+        "activeRange": "10-3310-18,29-33",
         "recovery": 17,
-        "total": 51
+        "total": 3328
       },
-      "properties": {
-        "hitLevel": "low",
-        "cancelable": true
-      }
-    },
-    "cammy_hooligan_cannon_strike": {
-      "damage": 600,
       "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 9
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 11,
-        "recovery": 12,
-        "total": null
+        "onBlock": 2,
+        "onHit": 0
       },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "cammy_hooligan_cannon_strike_charged": {
-      "damage": 800,
-      "frameAdvantage": {
-        "onBlock": 5,
-        "onHit": 9
+        "hitLevel": "lowlow",
+        "cancelable": false,
+        "cancelFlags": "SA2"
       },
-      "frameData": {
-        "startup": 13,
-        "active": 10,
-        "recovery": 12,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "cammy_hooligan_cannon_strike_od": {
-      "damage": 800,
-      "frameAdvantage": {
-        "onBlock": 5,
-        "onHit": 9
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 10,
-        "recovery": 12,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
-      }
+      "note": "Only the final attack can be canceled into a Level 3 Super Art or Critical Art"
     },
     "cammy_reverse_edge": {
+      "displayName": "Reverse Edge",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -1,
-        "onHit": 6
-      },
       "frameData": {
         "startup": 18,
         "active": 4,
+        "activeRange": "18-21",
         "recovery": 13,
-        "total": null
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 69
       },
       "properties": {
-        "hitLevel": "high",
+        "hitLevel": "mid",
         "cancelable": false
-      }
+      },
+      "note": "Recovery changes depending on the height of the attack when it hits or is blocked"
     },
     "cammy_reverse_edge_charged": {
+      "displayName": "Reverse Edge(Charged)",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 1200,
+      "frameData": {
+        "startup": 18,
+        "active": 3901,
+        "activeRange": "18-3918-21, 36-39",
+        "recovery": 13,
+        "total": 3932
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 8
       },
-      "frameData": {
-        "startup": 18,
-        "active": 22,
-        "recovery": 13,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "mid",
+        "hitLevel": "midmid",
         "cancelable": false
       }
     },
     "cammy_reverse_edge_od": {
+      "displayName": "OD Reverse Edge",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 1200,
+      "frameData": {
+        "startup": 18,
+        "active": 3901,
+        "activeRange": "18-3918-21, 36-39",
+        "recovery": 13,
+        "total": 3932
+      },
       "frameAdvantage": {
         "onBlock": -2,
         "onHit": 8
       },
-      "frameData": {
-        "startup": 18,
-        "active": 22,
-        "recovery": 13,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
+        "hitLevel": "midmid",
+        "cancelable": false,
+        "cancelFlags": "SA2"
       }
     },
     "cammy_fatal_leg_twister": {
+      "displayName": "Fatal Leg Twister",
+      "level": "(During Hooligan Combination)(When close to a standing opponent)LL",
+      "category": "special",
       "damage": 1800,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 3,
+        "activeRange": "10-12",
         "recovery": 30,
-        "total": null
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "throw",
@@ -886,16 +1158,20 @@
       }
     },
     "cammy_fatal_leg_twister_charged": {
+      "displayName": "Fatal Leg Twister(Charged)",
+      "level": "(During Hooligan Combination)(When close to a standing opponent)LL",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 3,
+        "activeRange": "10-12",
         "recovery": 30,
-        "total": null
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "throw",
@@ -903,16 +1179,20 @@
       }
     },
     "cammy_fatal_leg_twister_od": {
+      "displayName": "OD Fatal Leg Twister",
+      "level": "(During Hooligan Combination)(When close to a standing opponent)LL",
+      "category": "special",
       "damage": 1000,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 10,
         "active": 3,
+        "activeRange": "10-12",
         "recovery": 30,
-        "total": null
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "throw",
@@ -920,361 +1200,399 @@
       }
     },
     "cammy_silent_step": {
+      "displayName": "Silent Step",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": 10,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "cammy_silent_step_charged": {
+      "displayName": "Silent Step(Charged)",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": 10,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "cammy_silent_step_od": {
+      "displayName": "OD Silent Step",
+      "level": "(During Hooligan Combination)",
+      "category": "special",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": 10,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "cammy_sa1": {
+      "displayName": "SA1 Spin Drive Smasher",
+      "level": null,
+      "category": "super",
       "damage": 2000,
-      "frameAdvantage": {
-        "onBlock": -24,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
-        "active": 11,
+        "active": 16,
+        "activeRange": "9-24",
         "recovery": 38,
-        "total": 58
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Invincible to strikes and throws from frame 1 to frame 11.The 6th attack is only performed if the 5th attack hits"
     },
     "cammy_sa2": {
+      "displayName": "SA2 Killer Bee Spin",
+      "level": null,
+      "category": "super",
       "damage": 3000,
-      "frameAdvantage": {
-        "onBlock": -24,
-        "onHit": null
-      },
       "frameData": {
         "startup": 13,
         "active": 9,
+        "activeRange": "13-21",
         "recovery": 37,
         "total": 59
       },
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Attack does not transition into the cinematic attack when hitting an airborne opponentDamage is 220 x n (multiple hits until Cammy lands on the ground)"
     },
     "cammy_sa2_air": {
+      "displayName": "SA2 Aerial Killer Bee Spin",
+      "level": "(During a forward jump)",
+      "category": "super",
       "damage": 3000,
-      "frameAdvantage": {
-        "onBlock": -23,
-        "onHit": null
-      },
       "frameData": {
         "startup": 13,
         "active": null,
+        "activeRange": "13-until landing",
         "recovery": 37,
         "total": null
       },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Attack does not transition into the cinematic attack when hitting an airborne opponentDamage is 220 x n (multiple hits until Cammy lands on the ground)"
     },
     "cammy_sa3": {
-      "damage": 4000,
-      "frameAdvantage": {
-        "onBlock": -33,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 9,
-        "active": 15,
-        "recovery": 38,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
-      }
-    },
-    "cammy_ca": {
+      "displayName": "CA Delta Red Assault",
+      "level": "(when under 25% vitality)",
+      "category": "super",
       "damage": 4500,
-      "frameAdvantage": {
-        "onBlock": -33,
-        "onHit": null
-      },
       "frameData": {
         "startup": 9,
         "active": 15,
-        "recovery": 38,
-        "total": null
+        "activeRange": "9-23",
+        "recovery": 434,
+        "total": 458
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
-    },
-    "cammy_throw_f": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
-    },
-    "cammy_throw_b": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
-    },
-    "cammy_throw_air": {
-      "damage": 1200,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 3,
-        "total": 11
-      },
-      "properties": {
-        "hitLevel": "throw",
-        "cancelable": false
-      }
+      "note": "Completely invincible from frames 1 - 13Considered airborn from frames 9 - 27Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
     },
     "cammy_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": null,
         "active": null,
-        "recovery": null,
-        "total": 18
+        "activeRange": "",
+        "recovery": 18,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
       }
     },
     "cammy_back_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 23
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Invincible to throws from frames 1 - 15"
     },
     "cammy_drive_impact": {
+      "displayName": "Drive Impact: Spin Raider",
+      "level": "HH",
+      "category": "normal",
       "damage": 800,
-      "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": null
-      },
       "frameData": {
         "startup": 26,
         "active": 2,
+        "activeRange": "26-27",
         "recovery": 35,
         "total": 63
       },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Super Armor for 2 attacks from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
     },
     "cammy_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Countersnipe",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 20,
         "active": 3,
+        "activeRange": "20-22",
         "recovery": 26,
         "total": 49
       },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
     },
     "cammy_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Countersnipe",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
       "damage": 500,
-      "frameAdvantage": {
-        "onBlock": -6,
-        "onHit": null
-      },
       "frameData": {
         "startup": 18,
         "active": 3,
+        "activeRange": "18-20",
         "recovery": 26,
         "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
     },
     "cammy_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 12,
-        "recovery": 33,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
     },
     "cammy_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": 1,
-        "active": 1,
-        "recovery": 0,
-        "total": 2
-      },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "cammy_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
       "damage": 0,
-      "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
-      },
       "frameData": {
         "startup": 1,
-        "active": 10,
-        "recovery": 0,
-        "total": 11
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
       },
       "properties": {
-        "hitLevel": "none",
+        "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
     },
     "cammy_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
     },
     "cammy_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
       "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
       "frameAdvantage": {
         "onBlock": null,
         "onHit": null
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true
-      }
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
     }
-  }
+  },
+  "_unmatched": [
+    {
+      "displayName": "Cannon Strike(Charged)",
+      "section": "Special Moves",
+      "level": "(During Hooligan Combination)"
+    },
+    {
+      "displayName": "Rough Landing",
+      "section": "Throws",
+      "level": "(When near opponent)    LL"
+    },
+    {
+      "displayName": "Delta Throw",
+      "section": "Throws",
+      "level": "(When near opponent)  LL"
+    },
+    {
+      "displayName": "Leg Scissors Choke",
+      "section": "Throws",
+      "level": "(During a jump) (When near opponent)LL"
+    }
+  ]
 }
