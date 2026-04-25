@@ -4,6 +4,13 @@ This is your task queue. Work through it in order. Each task has: **What**, **Wh
 
 **Do not skip ahead.** Tasks 1–4 are cleanup that makes Tasks 5–6 (and everything after) safer. Task 5 requires user input before implementation.
 
+> **STATUS UPDATE 2026-04-25**
+>
+> - **T1, T2, T3, T4, T5 — done and shipped to production** (V01.30 live)
+> - **V01.31 win/loss tracker engine — done on `feat/tracker-engine`** (UI gates on Figma wireframes)
+> - **Data pipeline migration — done on `feat/data-pipeline`** (Sheet killed, three-layer JSON live, see `08-DATA-PIPELINE-RESEARCH.md`)
+> - **T6 — path changed**: instead of editing the Sheet, populate `src/data/annotations/ken.json` `moves[*].tacticalTags` arrays. The CSV parser/Sheet pipeline is dead. T6 details below describe the old workflow; treat them as historical.
+
 ---
 
 ## Task 1 — Consolidate `docs/` and `sf6-docs/`

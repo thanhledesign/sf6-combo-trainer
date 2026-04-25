@@ -8,13 +8,15 @@ import PunishCalculator from './components/Punish/PunishCalculator';
 import MoveBrowser from './components/Browse/MoveBrowser';
 import SearchResults from './components/Search/SearchResults';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
-import kenData from './data/characters/ken.json';
-import terryData from './data/characters/terry.json';
-import chunliData from './data/characters/chunli.json';
-import lukeData from './data/characters/luke.json';
-import cammyData from './data/characters/cammy.json';
-import maiData from './data/characters/mai.json';
-import ryuData from './data/characters/ryu.json';
+import {
+  ken     as kenData,
+  terry   as terryData,
+  chunli  as chunliData,
+  luke    as lukeData,
+  cammy   as cammyData,
+  mai     as maiData,
+  ryu     as ryuData,
+} from './data/characters';
 
 // Character thumbnail imports for nav
 import kenThumb from './assets/characters/kenThumbnail.png';

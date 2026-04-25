@@ -33,15 +33,17 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 - **Styling**: Tailwind CSS 3.4 (dark theme: `gray-900` bg, `purple-600` accent)
 - **Routing**: react-router-dom 7
 - **Icons**: lucide-react
-- **Data**: Google Sheets CMS (CSV export via published URLs, ~5min cache, fallback to static JSON)
+- **Data**: Three-layer static JSON, merged at runtime by `src/data/characters/loader.js`
 - **Deploy**: Vercel (staging on non-`main` branches, production on `main`)
-- **PWA**: vite-plugin-pwa with Workbox (NetworkFirst for Google Sheets CSV w/ 1hr cache, CacheFirst for videos w/ 30d). Manifest at `vite.config.js`; icons in `public/icons/` (purple gradient `#7c3aed → #4f46e5`).
+- **PWA**: vite-plugin-pwa with Workbox (CacheFirst for videos w/ 30d). Manifest at `vite.config.js`; icons in `public/icons/` (purple gradient `#7c3aed → #4f46e5`).
 
-### Data Sources
-- **Google Sheet ID**: `1Z1InqW1dISE5kgDJWM47PF_gznjt7zJhw4_3LyriSpE`
-- **Tabs (one per character)**: Ken, Terry, Chun-Li, Luke, Cammy, Mai, Ryu (7 chars, ~538 moves total)
-- **Frame data scraping source**: https://www.streetfighter.com/6/character/{name}/frame
-- **Move list source**: https://www.streetfighter.com/6/character/{name}/movelist
+### Data Layers (`src/data/`)
+- **capcom/{name}.json** — frame numbers from Capcom (machine-managed in future, hand-keyed today). Never edit by hand if you can avoid it.
+- **annotations/{name}.json** — Thanh's IP: tactical use, perspectives, combo connectsTo, IA tactics, tactical_tags. **This is where you spend 95% of editing time.**
+- **overrides/{name}.json** — sparse corrections to Capcom values (rare, only when you've frame-verified Capcom is wrong).
+- 7 chars currently, ~538 moves total. Roster expansion: write two new files per character (capcom + annotations) per `npm run sync-data` instructions.
+- **Future auto-sync**: see `docs/_handoff-2026-04-24/08-DATA-PIPELINE-RESEARCH.md` — Capcom data isn't in HTML (client-side fetched), needs Playwright.
+- **Source URLs** (for hand-keying): https://www.streetfighter.com/6/character/{name}/{frame,movelist}
 
 ### Figma (MCP-Connected)
 - **File**: Bc7305TyPGELiIE4rmwVJe

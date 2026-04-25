@@ -19,7 +19,7 @@
     "neutral": {
       "name": "Neutral Tactics",
       "description": "Moves for controlling space and starting offense",
-      "icon": "\ud83c\udfaf",
+      "icon": "🎯",
       "moveIds": [
         "ken_st_lp",
         "ken_st_lk",
@@ -32,7 +32,7 @@
     "offensive": {
       "name": "Offensive Pressure",
       "description": "Moves for maintaining pressure and mix-ups",
-      "icon": "\u26a1",
+      "icon": "⚡",
       "moveIds": [
         "ken_quick_dash",
         "ken_jinrai_l",
@@ -42,7 +42,7 @@
     "combo": {
       "name": "Combo Tactics",
       "description": "Combo routes and special moves",
-      "icon": "\ud83d\udd25",
+      "icon": "🔥",
       "moveIds": [
         "ken_hadoken_l",
         "ken_shoryuken_l",
@@ -52,7 +52,7 @@
     "corner": {
       "name": "Corner Tactics",
       "description": "Corner-specific options and setups",
-      "icon": "\ud83d\udee1\ufe0f",
+      "icon": "🛡️",
       "moveIds": [
         "ken_shoryuken_h",
         "ken_cr_hk"
@@ -67,7 +67,6 @@
       "notation": "5LP",
       "input": "LP",
       "category": "normal",
-      "damage": 300,
       "yourPerspective": {
         "tacticalUse": "Fast jab with rapid cancel",
         "whenToUse": "Use for pressure and frame traps. Can be rapid canceled.",
@@ -82,22 +81,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -1,
-          "onHit": 4
-        },
         "riskLevel": "safe",
         "riskDescription": "Very safe. Can be rapid canceled."
       },
-      "frameData": {
-        "startup": 4,
-        "active": 3,
-        "recovery": 7,
-        "total": 14
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -108,7 +95,6 @@
       "notation": "5LK",
       "input": "LK",
       "category": "normal",
-      "damage": 300,
       "yourPerspective": {
         "tacticalUse": "Fast poke",
         "whenToUse": "Use for quick pokes and pressure",
@@ -123,22 +109,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -2,
-          "onHit": 0
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
       },
-      "frameData": {
-        "startup": 5,
-        "active": 2,
-        "recovery": 12,
-        "total": 19
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -149,7 +123,6 @@
       "notation": "5MP",
       "input": "MP",
       "category": "normal",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Mid-range poke with cancel options",
         "whenToUse": "Use for spacing and confirms into specials",
@@ -164,22 +137,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -2,
-          "onHit": 4
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 4,
-        "recovery": 14,
-        "total": 23
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_st_mk": {
@@ -189,7 +148,6 @@
       "notation": "5MK",
       "input": "MK",
       "category": "normal",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Long-range poke for footsies",
         "whenToUse": "Use for max range control in neutral",
@@ -201,22 +159,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -5,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe at max range."
       },
-      "frameData": {
-        "startup": 8,
-        "active": 3,
-        "recovery": 20,
-        "total": 31
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -227,7 +173,6 @@
       "notation": "5HP",
       "input": "HP",
       "category": "normal",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Heavy normal for damage and confirms",
         "whenToUse": "Use for counter hits and big damage confirms",
@@ -243,22 +188,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -2,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      },
-      "frameData": {
-        "startup": 10,
-        "active": 5,
-        "recovery": 17,
-        "total": 32
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_st_hk": {
@@ -268,7 +199,6 @@
       "notation": "5HK",
       "input": "HK",
       "category": "normal",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Heavy kick with special properties",
         "whenToUse": "Use for counter hits. 2 frames recovery added on armor hit or whiff. Forces spinning knockdown on Punish Counter.",
@@ -281,22 +211,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -5,
-          "onHit": 1
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Forces spinning knockdown on Punish Counter."
       },
-      "frameData": {
-        "startup": 12,
-        "active": 2,
-        "recovery": 23,
-        "total": 37
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "comboScaling": "Starter scaling 30%"
       }
     },
@@ -305,9 +223,8 @@
       "displayName": "Crouching Light Punch",
       "shortName": "2LP",
       "notation": "2LP",
-      "input": "\u2193 + LP",
+      "input": "↓ + LP",
       "category": "normal",
-      "damage": 300,
       "yourPerspective": {
         "tacticalUse": "Fast crouching jab with rapid cancel",
         "whenToUse": "Use for pressure and light confirms. Can be rapid canceled.",
@@ -322,22 +239,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -1,
-          "onHit": 5
-        },
         "riskLevel": "safe",
         "riskDescription": "Very safe. Can be rapid canceled."
       },
-      "frameData": {
-        "startup": 4,
-        "active": 2,
-        "recovery": 9,
-        "total": 15
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -346,9 +251,8 @@
       "displayName": "Crouching Light Kick",
       "shortName": "2LK",
       "notation": "2LK",
-      "input": "\u2193 + LK",
+      "input": "↓ + LK",
       "category": "normal",
-      "damage": 200,
       "yourPerspective": {
         "tacticalUse": "Low-hitting light with rapid cancel",
         "whenToUse": "Use for low mixups and tick throws. Can be rapid canceled.",
@@ -363,22 +267,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -3,
-          "onHit": 1
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe low option. Must be blocked low."
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 10,
-        "total": 18
-      },
       "properties": {
-        "hitLevel": "low",
-        "cancelable": false,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -387,9 +279,8 @@
       "displayName": "Crouching Medium Punch",
       "shortName": "2MP",
       "notation": "2MP",
-      "input": "\u2193 + MP",
+      "input": "↓ + MP",
       "category": "normal",
-      "damage": 700,
       "yourPerspective": {
         "tacticalUse": "6-frame punish tool and combo starter",
         "whenToUse": "Primary punish for -6 moves. 2 frames recovery added on whiff.",
@@ -405,22 +296,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": 0,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Neutral on block."
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 3,
-        "recovery": 14,
-        "total": 23
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_cr_mk": {
@@ -428,9 +305,8 @@
       "displayName": "Crouching Medium Kick",
       "shortName": "2MK",
       "notation": "2MK",
-      "input": "\u2193 + MK",
+      "input": "↓ + MK",
       "category": "normal",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Low poke for neutral",
         "whenToUse": "Use for low pokes and spacing. Cancelable.",
@@ -444,22 +320,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -6,
-          "onHit": -2
-        },
         "riskLevel": "medium",
         "riskDescription": "Punishable by 6-frame moves. Must be blocked low."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 3,
-        "recovery": 19,
-        "total": 29
-      },
       "properties": {
-        "hitLevel": "low",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -468,9 +332,8 @@
       "displayName": "Crouching Heavy Punch",
       "shortName": "2HP",
       "notation": "2HP",
-      "input": "\u2193 + HP",
+      "input": "↓ + HP",
       "category": "normal",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Anti-air and combo starter",
         "whenToUse": "Forces standing on hit. Can cancel until 2nd active frame.",
@@ -485,22 +348,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -10,
-          "onHit": 3
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 10."
       },
-      "frameData": {
-        "startup": 8,
-        "active": 4,
-        "recovery": 24,
-        "total": 36
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -509,9 +360,8 @@
       "displayName": "Crouching Heavy Kick",
       "shortName": "2HK",
       "notation": "2HK",
-      "input": "\u2193 + HK",
+      "input": "↓ + HK",
       "category": "normal",
-      "damage": 900,
       "yourPerspective": {
         "tacticalUse": "Sweep with knockdown",
         "whenToUse": "Use for knockdown. Hard Knockdown on Punish Counter. 1 frame recovery added when blocked.",
@@ -524,22 +374,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -10,
-          "onHit": null
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Causes knockdown. Must be blocked low."
-      },
-      "frameData": {
-        "startup": 8,
-        "active": 3,
-        "recovery": 24,
-        "total": 35
-      },
-      "properties": {
-        "hitLevel": "low",
-        "cancelable": false
       }
     },
     "ken_j_lp": {
@@ -549,7 +385,6 @@
       "notation": "j.LP",
       "input": "(During jump) LP",
       "category": "normal",
-      "damage": 300,
       "yourPerspective": {
         "tacticalUse": "Air-to-air",
         "whenToUse": "Use for air-to-air situations",
@@ -561,22 +396,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal. 3 frames landing recovery."
-      },
-      "frameData": {
-        "startup": 5,
-        "active": 7,
-        "recovery": 3,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
       }
     },
     "ken_j_lk": {
@@ -586,7 +407,6 @@
       "notation": "j.LK",
       "input": "(During jump) LK",
       "category": "normal",
-      "damage": 300,
       "yourPerspective": {
         "tacticalUse": "Air-to-air with cross-up properties",
         "whenToUse": "Use for air-to-air or cross-ups. Has cross-up properties.",
@@ -599,22 +419,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal with cross-up properties. 3 frames landing recovery."
       },
-      "frameData": {
-        "startup": 6,
-        "active": 6,
-        "recovery": 3,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "mid",
-        "cancelable": false,
         "crossUp": true
       }
     },
@@ -625,7 +433,6 @@
       "notation": "j.MP",
       "input": "(During jump) MP",
       "category": "normal",
-      "damage": 700,
       "yourPerspective": {
         "tacticalUse": "Strong air-to-air",
         "whenToUse": "Use for air-to-air. Forces juggle on mid-air hit.",
@@ -637,22 +444,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal. 3 frames landing recovery."
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 4,
-        "recovery": 3,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
       }
     },
     "ken_j_mk": {
@@ -662,7 +455,6 @@
       "notation": "j.MK",
       "input": "(During jump) MK",
       "category": "normal",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Jump-in with cross-up properties",
         "whenToUse": "Use for jump-ins and cross-ups. Has cross-up properties.",
@@ -675,22 +467,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal with cross-up properties. 3 frames landing recovery."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 6,
-        "recovery": 3,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "mid",
-        "cancelable": false,
         "crossUp": true
       }
     },
@@ -701,7 +481,6 @@
       "notation": "j.HP",
       "input": "(During jump) HP",
       "category": "normal",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Strong jump-in for damage",
         "whenToUse": "Use for jump-ins. Slam knockdown on counter/Punish Counter vs air.",
@@ -713,22 +492,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal. 3 frames landing recovery."
-      },
-      "frameData": {
-        "startup": 9,
-        "active": 6,
-        "recovery": 3,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
       }
     },
     "ken_j_hk": {
@@ -738,7 +503,6 @@
       "notation": "j.HK",
       "input": "(During jump) HK",
       "category": "normal",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Heavy jump-in",
         "whenToUse": "Use for jump-ins with good horizontal range",
@@ -750,22 +514,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal. 3 frames landing recovery."
-      },
-      "frameData": {
-        "startup": 10,
-        "active": 7,
-        "recovery": 3,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
       }
     },
     "ken_nj_hk": {
@@ -775,7 +525,6 @@
       "notation": "nj.HK",
       "input": "(During neutral jump) HK",
       "category": "normal",
-      "damage": 900,
       "yourPerspective": {
         "tacticalUse": "Neutral jump anti-air",
         "whenToUse": "Use for neutral jump situations",
@@ -787,22 +536,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Air normal. 3 frames landing recovery."
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 6,
-        "recovery": 3,
-        "total": null
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": false
       }
     },
     "ken_quick_dash": {
@@ -810,9 +545,8 @@
       "displayName": "Quick Dash",
       "shortName": "Quick Dash",
       "notation": "236K",
-      "input": "\u2193\u2198\u2192 + K",
+      "input": "↓↘→ + K",
       "category": "unique",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Run for pressure and mixups",
         "whenToUse": "Use to close distance and access follow-up attacks. Can transition to branching attacks from frame 12.",
@@ -829,22 +563,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Movement option. Watch for follow-up attacks."
-      },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
-      "properties": {
-        "hitLevel": "none",
-        "cancelable": true
       },
       "video": "/videos/ken/quick_dash.mp4"
     },
@@ -855,7 +575,6 @@
       "notation": "236K > L",
       "input": "(During Quick Dash) LP",
       "category": "unique",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Cancel Quick Dash early",
         "whenToUse": "Use to bait reactions or stop safely",
@@ -868,22 +587,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Ken stops his run. Can act after."
-      },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 16
-      },
-      "properties": {
-        "hitLevel": "none",
-        "cancelable": false
       }
     },
     "ken_thunder_kick": {
@@ -893,7 +598,6 @@
       "notation": "236K > M",
       "input": "(During Quick Dash) MK",
       "category": "unique",
-      "damage": 1000,
       "yourPerspective": {
         "tacticalUse": "Run cancel combo extender",
         "whenToUse": "Use for combos. Can be canceled into Level 3 Super Art or Critical Art.",
@@ -908,22 +612,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -3,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      },
-      "frameData": {
-        "startup": 18,
-        "active": 3,
-        "recovery": 20,
-        "total": 41
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
       }
     },
     "ken_forward_step_kick": {
@@ -933,7 +623,6 @@
       "notation": "236K > H",
       "input": "(During Quick Dash) HK",
       "category": "unique",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Run cancel launcher",
         "whenToUse": "Use for combo starters. Can be canceled into any Super Art.",
@@ -949,22 +638,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -4,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
       },
-      "frameData": {
-        "startup": 10,
-        "active": 4,
-        "recovery": 20,
-        "total": 34
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -973,9 +650,8 @@
       "displayName": "Chin Buster",
       "shortName": "TC1",
       "notation": "6MP > HP",
-      "input": "\u2192 + MP > HP",
+      "input": "→ + MP > HP",
       "category": "unique",
-      "damage": 400,
       "yourPerspective": {
         "tacticalUse": "Target combo for confirms",
         "whenToUse": "Use for confirms into specials.",
@@ -990,22 +666,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -14,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "VERY PUNISHABLE on block. Minus 14. Causes knockdown."
       },
-      "frameData": {
-        "startup": 11,
-        "active": 3,
-        "recovery": 27,
-        "total": 41
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Combo scaling 20%"
       },
       "video": "/videos/ken/chin_buster.mp4"
@@ -1017,7 +681,6 @@
       "notation": "5MK > MK",
       "input": "MK > MK",
       "category": "unique",
-      "damage": 400,
       "yourPerspective": {
         "tacticalUse": "Target combo part 2",
         "whenToUse": "Second hit of target combo. Can continue to third hit.",
@@ -1031,22 +694,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -12,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
-      },
-      "frameData": {
-        "startup": 11,
-        "active": 2,
-        "recovery": 27,
-        "total": 40
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
       }
     },
     "ken_triple_flash_3": {
@@ -1056,7 +705,6 @@
       "notation": "5MK > MK > HK",
       "input": "MK > MK > HK",
       "category": "unique",
-      "damage": 700,
       "yourPerspective": {
         "tacticalUse": "Target combo finisher",
         "whenToUse": "Final hit of target combo. Always in Punish Counter state during execution.",
@@ -1068,22 +716,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -11,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 11. Causes knockdown."
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 3,
-        "recovery": 28,
-        "total": 44
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": false
       }
     },
     "ken_hadoken_l": {
@@ -1091,9 +725,8 @@
       "displayName": "L Hadoken",
       "shortName": "L Hadoken",
       "notation": "236LP",
-      "input": "\u2193\u2198\u2192 + LP",
+      "input": "↓↘→ + LP",
       "category": "special",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Slow fireball for zoning",
         "whenToUse": "Use for zoning and space control. Slowest version.",
@@ -1106,22 +739,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -7,
-          "onHit": -1
-        },
         "riskLevel": "safe",
         "riskDescription": "Projectile. Safe at distance."
       },
-      "frameData": {
-        "startup": 16,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "projectile": true
       }
     },
@@ -1130,9 +751,8 @@
       "displayName": "M Hadoken",
       "shortName": "M Hadoken",
       "notation": "236MP",
-      "input": "\u2193\u2198\u2192 + MP",
+      "input": "↓↘→ + MP",
       "category": "special",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Medium speed fireball",
         "whenToUse": "Use for zoning with medium speed",
@@ -1145,22 +765,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -9,
-          "onHit": -3
-        },
         "riskLevel": "safe",
         "riskDescription": "Projectile. Safe at distance."
       },
-      "frameData": {
-        "startup": 14,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "projectile": true
       }
     },
@@ -1169,9 +777,8 @@
       "displayName": "H Hadoken",
       "shortName": "H Hadoken",
       "notation": "236HP",
-      "input": "\u2193\u2198\u2192 + HP",
+      "input": "↓↘→ + HP",
       "category": "special",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Fast fireball",
         "whenToUse": "Use for faster zoning and pressure",
@@ -1184,22 +791,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -11,
-          "onHit": -5
-        },
         "riskLevel": "safe",
         "riskDescription": "Projectile. Safe at distance."
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "projectile": true
       }
     },
@@ -1208,9 +803,8 @@
       "displayName": "OD Hadoken",
       "shortName": "OD Hadoken",
       "notation": "236PP",
-      "input": "\u2193\u2198\u2192 + PP",
+      "input": "↓↘→ + PP",
       "category": "special",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Enhanced fireball",
         "whenToUse": "Use for pressure and combos. Plus on hit.",
@@ -1223,22 +817,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -2,
-          "onHit": 2
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe projectile. Only minus 2."
       },
-      "frameData": {
-        "startup": 12,
-        "active": null,
-        "recovery": null,
-        "total": 40
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "projectile": true,
         "comboScaling": "Starter scaling 20%"
       }
@@ -1248,9 +830,8 @@
       "displayName": "L Shoryuken",
       "shortName": "L DP",
       "notation": "623LP",
-      "input": "\u2192\u2193\u2198 + LP",
+      "input": "→↓↘ + LP",
       "category": "special",
-      "damage": 1100,
       "yourPerspective": {
         "tacticalUse": "Anti-air with upper body invincibility",
         "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-14. Airborne frames 7-35. Does 800 damage from 3rd active frame.",
@@ -1263,22 +844,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -23,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 23. Full combo punish."
       },
-      "frameData": {
-        "startup": 5,
-        "active": 10,
-        "recovery": 33,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "invincible": "mid-air 1-14",
         "airborne": "7-35",
         "comboScaling": "Starter scaling 20%"
@@ -1290,9 +859,8 @@
       "displayName": "M Shoryuken",
       "shortName": "M DP",
       "notation": "623MP",
-      "input": "\u2192\u2193\u2198 + MP",
+      "input": "→↓↘ + MP",
       "category": "special",
-      "damage": 1300,
       "yourPerspective": {
         "tacticalUse": "Higher damage anti-air",
         "whenToUse": "Use as anti-air or combo ender. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-8. Airborne frames 8-43.",
@@ -1305,22 +873,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -28,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 28. Full combo punish."
       },
-      "frameData": {
-        "startup": 6,
-        "active": 10,
-        "recovery": 40,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "invincible": "mid-air 1-8",
         "airborne": "8-43",
         "comboScaling": "Starter scaling 20%"
@@ -1331,9 +887,8 @@
       "displayName": "H Shoryuken",
       "shortName": "H DP",
       "notation": "623HP",
-      "input": "\u2192\u2193\u2198 + HP",
+      "input": "→↓↘ + HP",
       "category": "special",
-      "damage": 1400,
       "yourPerspective": {
         "tacticalUse": "Max damage anti-air with projectile invincibility",
         "whenToUse": "Use as anti-air. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-9. Projectile invincible frames 5-11. Airborne frames 9-51.",
@@ -1346,22 +901,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -36,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 36. Full combo punish."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 10,
-        "recovery": 50,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "invincible": "mid-air 1-9, projectile 5-11",
         "airborne": "9-51",
         "comboScaling": "Starter scaling 20%"
@@ -1372,9 +915,8 @@
       "displayName": "OD Shoryuken",
       "shortName": "OD DP",
       "notation": "623PP",
-      "input": "\u2192\u2193\u2198 + PP",
+      "input": "→↓↘ + PP",
       "category": "special",
-      "damage": 1600,
       "yourPerspective": {
         "tacticalUse": "Fully invincible reversal",
         "whenToUse": "Use as reversal. Completely invincible frames 1-10. Airborne frames 9-24 and 33-74.",
@@ -1387,22 +929,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -40,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 40. Full combo punish."
       },
-      "frameData": {
-        "startup": 6,
-        "active": 34,
-        "recovery": 50,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "full 1-10",
         "airborne": "9-24, 33-74"
       },
@@ -1413,9 +943,8 @@
       "displayName": "Shoryuken (Quick Dash)",
       "shortName": "QD DP",
       "notation": "236K > 623P",
-      "input": "(During Quick Dash) \u2192\u2193\u2198 + P",
+      "input": "(During Quick Dash) →↓↘ + P",
       "category": "special",
-      "damage": 1700,
       "yourPerspective": {
         "tacticalUse": "Run cancel into DP",
         "whenToUse": "Use for surprise anti-air or combo ender. Invincible vs mid-air projectiles and strikes with mid-air hitboxes frames 1-18. Projectile invincible frames 3-11. Airborne frames 11-51.",
@@ -1428,22 +957,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -35,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 35. Full combo punish."
       },
-      "frameData": {
-        "startup": 8,
-        "active": 10,
-        "recovery": 48,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "invincible": "mid-air 1-18, projectile 3-11",
         "airborne": "11-51"
       }
@@ -1453,9 +970,8 @@
       "displayName": "L Tatsumaki Senpu-kyaku",
       "shortName": "L Tatsu",
       "notation": "214LK",
-      "input": "\u2193\u2199\u2190 + LK",
+      "input": "↓↙← + LK",
       "category": "special",
-      "damage": 700,
       "yourPerspective": {
         "tacticalUse": "Quick horizontal kick",
         "whenToUse": "Use for combos. Airborne frames 5-28.",
@@ -1467,22 +983,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -14,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 14. Causes knockdown."
       },
-      "frameData": {
-        "startup": 4,
-        "active": 11,
-        "recovery": 32,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "5-28"
       }
     },
@@ -1491,9 +995,8 @@
       "displayName": "M Tatsumaki Senpu-kyaku",
       "shortName": "M Tatsu",
       "notation": "214MK",
-      "input": "\u2193\u2199\u2190 + MK",
+      "input": "↓↙← + MK",
       "category": "special",
-      "damage": 900,
       "yourPerspective": {
         "tacticalUse": "Multi-hit horizontal kick",
         "whenToUse": "Use for combos. Airborne frames 8-41.",
@@ -1505,22 +1008,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -12,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
       },
-      "frameData": {
-        "startup": 14,
-        "active": 17,
-        "recovery": 31,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "8-41"
       }
     },
@@ -1529,9 +1020,8 @@
       "displayName": "H Tatsumaki Senpu-kyaku",
       "shortName": "H Tatsu",
       "notation": "214HK",
-      "input": "\u2193\u2199\u2190 + HK",
+      "input": "↓↙← + HK",
       "category": "special",
-      "damage": 1000,
       "yourPerspective": {
         "tacticalUse": "Max range horizontal kick",
         "whenToUse": "Use for combos and corner carry. Airborne frames 10-61.",
@@ -1543,22 +1033,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -12,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
       },
-      "frameData": {
-        "startup": 16,
-        "active": 32,
-        "recovery": 31,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-61"
       }
     },
@@ -1567,9 +1045,8 @@
       "displayName": "OD Tatsumaki Senpu-kyaku",
       "shortName": "OD Tatsu",
       "notation": "214KK",
-      "input": "\u2193\u2199\u2190 + KK",
+      "input": "↓↙← + KK",
       "category": "special",
-      "damage": 1700,
       "yourPerspective": {
         "tacticalUse": "Extended multi-hit tatsu",
         "whenToUse": "Use for max damage combos. Airborne frames 10-77.",
@@ -1581,22 +1058,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -61,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 61."
       },
-      "frameData": {
-        "startup": 9,
-        "active": 48,
-        "recovery": 34,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-77"
       }
     },
@@ -1605,9 +1070,8 @@
       "displayName": "Tatsumaki Senpu-kyaku (Quick Dash)",
       "shortName": "QD Tatsu",
       "notation": "236K > 214K",
-      "input": "(During Quick Dash) \u2193\u2199\u2190 + K",
+      "input": "(During Quick Dash) ↓↙← + K",
       "category": "special",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Run cancel multi-hit tatsu",
         "whenToUse": "Use for combo extensions. Does not hit opponent in front on 2nd, 4th, 6th, 8th, 10th hits. Airborne frames 10-61.",
@@ -1619,22 +1083,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -9,
-          "onHit": 3
-        },
         "riskLevel": "unsafe",
         "riskDescription": "Punishable on block. Minus 9."
       },
-      "frameData": {
-        "startup": 13,
-        "active": 46,
-        "recovery": 20,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-61",
         "comboScaling": "Starter scaling 15%"
       }
@@ -1644,9 +1096,8 @@
       "displayName": "Aerial Tatsumaki Senpu-kyaku",
       "shortName": "Air Tatsu",
       "notation": "j.214K",
-      "input": "(During forward jump) \u2193\u2199\u2190 + K",
+      "input": "(During forward jump) ↓↙← + K",
       "category": "special",
-      "damage": 900,
       "yourPerspective": {
         "tacticalUse": "Air approach option",
         "whenToUse": "Use for air approaches. 14 frames landing recovery. Airborne frames 10-61.",
@@ -1658,22 +1109,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "medium",
         "riskDescription": "Air special. Causes knockdown."
       },
-      "frameData": {
-        "startup": 11,
-        "active": 17,
-        "recovery": 14,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "comboScaling": "Starter scaling 30%"
       }
     },
@@ -1682,9 +1121,8 @@
       "displayName": "OD Aerial Tatsumaki Senpu-kyaku",
       "shortName": "OD Air Tatsu",
       "notation": "j.214KK",
-      "input": "(During forward jump) \u2193\u2199\u2190 + KK",
+      "input": "(During forward jump) ↓↙← + KK",
       "category": "special",
-      "damage": 900,
       "yourPerspective": {
         "tacticalUse": "Enhanced air approach",
         "whenToUse": "Use for air approaches. Does not hit opponent in front on 2nd and 4th attacks. 2nd and 4th attacks do 700 damage and +600 SA gauge. 7 frames recovery added on whiff. Airborne frames 10-77.",
@@ -1696,22 +1134,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "medium",
         "riskDescription": "Air special. Causes knockdown."
       },
-      "frameData": {
-        "startup": 11,
-        "active": 18,
-        "recovery": 14,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-77",
         "comboScaling": "Starter scaling 30%"
       }
@@ -1721,9 +1147,8 @@
       "displayName": "L Dragonlash Kick",
       "shortName": "L Dragonlash",
       "notation": "214LP",
-      "input": "\u2193\u2199\u2190 + LP",
+      "input": "↓↙← + LP",
       "category": "special",
-      "damage": 1000,
       "yourPerspective": {
         "tacticalUse": "Dive kick for pressure",
         "whenToUse": "Use for approach and pressure. Does not hit grounded opponents frames 18-20. Does 950 damage from frames 21-23. Airborne frames 9-28.",
@@ -1736,22 +1161,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -4,
-          "onHit": 2
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
       },
-      "frameData": {
-        "startup": 18,
-        "active": 6,
-        "recovery": 21,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "9-28",
         "comboScaling": "Starter scaling 30%, Combo scaling 30%"
       },
@@ -1762,9 +1175,8 @@
       "displayName": "M Dragonlash Kick",
       "shortName": "M Dragonlash",
       "notation": "214MP",
-      "input": "\u2193\u2199\u2190 + MP",
+      "input": "↓↙← + MP",
       "category": "special",
-      "damage": 1100,
       "yourPerspective": {
         "tacticalUse": "Medium dive kick",
         "whenToUse": "Use for approach. Does not hit grounded opponents frames 23-24. Airborne frames 14-32.",
@@ -1776,22 +1188,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -8,
-          "onHit": 3
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 8."
       },
-      "frameData": {
-        "startup": 23,
-        "active": 5,
-        "recovery": 25,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "14-32",
         "comboScaling": "Starter scaling 30%, Combo scaling 30%"
       }
@@ -1801,9 +1201,8 @@
       "displayName": "H Dragonlash Kick",
       "shortName": "H Dragonlash",
       "notation": "214HP",
-      "input": "\u2193\u2199\u2190 + HP",
+      "input": "↓↙← + HP",
       "category": "special",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Plus on block dive kick",
         "whenToUse": "Use for pressure. PLUS ON BLOCK (+1). Does not hit grounded opponents frames 28-29. Airborne frames 19-37.",
@@ -1815,22 +1214,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": 1,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "PLUS ON BLOCK! Ken can continue pressure."
       },
-      "frameData": {
-        "startup": 28,
-        "active": 5,
-        "recovery": 21,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "19-37",
         "comboScaling": "Starter scaling 30%, Combo scaling 30%"
       }
@@ -1840,9 +1227,8 @@
       "displayName": "OD Dragonlash Kick",
       "shortName": "OD Dragonlash",
       "notation": "214PP",
-      "input": "\u2193\u2199\u2190 + PP",
+      "input": "↓↙← + PP",
       "category": "special",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Two-hit dive kick",
         "whenToUse": "Use for combos. Does not hit grounded opponents frames 9-12 and 18. Airborne frames 10-27. No additional combo scaling if 2nd hit connects.",
@@ -1854,35 +1240,22 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -9,
-          "onHit": 1
-        },
         "riskLevel": "unsafe",
         "riskDescription": "Punishable on block. Minus 9."
       },
-      "frameData": {
-        "startup": 9,
-        "active": 16,
-        "recovery": 24,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-27",
         "comboScaling": "Starter scaling 10%, 5% Immediate scaling on 2nd hit"
       },
-       "video": "/videos/ken/dragonlash_od.mp4"
+      "video": "/videos/ken/dragonlash_od.mp4"
     },
     "ken_qd_dragonlash": {
       "id": "ken_qd_dragonlash",
       "displayName": "Dragonlash Kick (Quick Dash)",
       "shortName": "QD Dragonlash",
       "notation": "236K > 214P",
-      "input": "(During Quick Dash) \u2193\u2199\u2190 + P",
+      "input": "(During Quick Dash) ↓↙← + P",
       "category": "special",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Run cancel dive kick",
         "whenToUse": "Use for run mixups. Does not hit grounded opponents frames 9-12 and 18-19. Airborne frames 10-28. No additional combo scaling if 2nd hit connects.",
@@ -1895,22 +1268,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -8,
-          "onHit": 2
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 8."
       },
-      "frameData": {
-        "startup": 9,
-        "active": 15,
-        "recovery": 24,
-        "total": null
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "airborne": "10-28",
         "comboScaling": "Starter scaling 10%, 5% Immediate scaling on 2nd hit"
       }
@@ -1920,9 +1281,8 @@
       "displayName": "L Jinrai Kick",
       "shortName": "L Jinrai",
       "notation": "236LK",
-      "input": "\u2193\u2198\u2192 + LK",
+      "input": "↓↘→ + LK",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Rekka starter for pressure",
         "whenToUse": "Use for pressure strings. Can transition to Kazekama Shin Kick and Gorai Axe Kick frames 32-35. Can transition to Senka Snap Kick frames 30-35.",
@@ -1938,22 +1298,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -11,
-          "onHit": 1
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block if no follow-up. Minus 11."
-      },
-      "frameData": {
-        "startup": 12,
-        "active": 3,
-        "recovery": 28,
-        "total": 43
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       },
       "video": "/videos/ken/jinrai_l.mp4"
     },
@@ -1962,9 +1308,8 @@
       "displayName": "M Jinrai Kick",
       "shortName": "M Jinrai",
       "notation": "236MK",
-      "input": "\u2193\u2198\u2192 + MK",
+      "input": "↓↘→ + MK",
       "category": "special",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "Safer rekka starter",
         "whenToUse": "Use for pressure. Can transition to Kazekama Shin Kick and Gorai Axe Kick frames 32-35. Can transition to Senka Snap Kick frames 30-35.",
@@ -1980,22 +1325,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -7,
-          "onHit": 2
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 7."
-      },
-      "frameData": {
-        "startup": 16,
-        "active": 3,
-        "recovery": 24,
-        "total": 43
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_jinrai_h": {
@@ -2003,9 +1334,8 @@
       "displayName": "H Jinrai Kick",
       "shortName": "H Jinrai",
       "notation": "236HK",
-      "input": "\u2193\u2198\u2192 + HK",
+      "input": "↓↘→ + HK",
       "category": "special",
-      "damage": 700,
       "yourPerspective": {
         "tacticalUse": "Safest rekka starter",
         "whenToUse": "Use for pressure. Only -2 on block. Can transition to Kazekama Shin Kick and Gorai Axe Kick frames 36-41. Can transition to Senka Snap Kick frames 34-41. Causes knockdown.",
@@ -2021,22 +1351,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -2,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Only minus 2. Causes knockdown."
-      },
-      "frameData": {
-        "startup": 25,
-        "active": 3,
-        "recovery": 19,
-        "total": 47
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_jinrai_od": {
@@ -2044,9 +1360,8 @@
       "displayName": "OD Jinrai Kick",
       "shortName": "OD Jinrai",
       "notation": "236KK",
-      "input": "\u2193\u2198\u2192 + KK",
+      "input": "↓↘→ + KK",
       "category": "special",
-      "damage": 600,
       "yourPerspective": {
         "tacticalUse": "OD rekka with unique follow-ups",
         "whenToUse": "Use for pressure. Can transition to OD Kazekama Shin Kick and OD Gorai Axe Kick frames 21-27. Can transition to OD Senka Snap Kick frames 19-27.",
@@ -2062,22 +1377,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -7,
-          "onHit": -4
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 7."
-      },
-      "frameData": {
-        "startup": 13,
-        "active": 3,
-        "recovery": 25,
-        "total": 41
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       },
       "video": "/videos/ken/jinrai_od.mp4"
     },
@@ -2088,7 +1389,6 @@
       "notation": "236K > L",
       "input": "(During Jinrai Kick) LK",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Low rekka follow-up",
         "whenToUse": "Use for low mixup. Knockdown on Counter or Punish Counter. Always in Punish Counter state during execution.",
@@ -2100,22 +1400,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -5,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. LOW - must be blocked low."
       },
-      "frameData": {
-        "startup": 6,
-        "active": 4,
-        "recovery": 19,
-        "total": 29
-      },
       "properties": {
-        "hitLevel": "low",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%, Combo scaling 15%"
       }
     },
@@ -2126,7 +1414,6 @@
       "notation": "236KK > L",
       "input": "(During OD Jinrai Kick) LK",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "OD low follow-up",
         "whenToUse": "Use for low mixup. Can transition to Kasai Thrust Kick from frame 11. Always in Punish Counter state during execution.",
@@ -2140,22 +1427,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -5,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. LOW - must be blocked low."
-      },
-      "frameData": {
-        "startup": 6,
-        "active": 3,
-        "recovery": 20,
-        "total": 29
-      },
-      "properties": {
-        "hitLevel": "low",
-        "cancelable": true
       }
     },
     "ken_kasai_kazekama": {
@@ -2165,7 +1438,6 @@
       "notation": "236KK > L > Any",
       "input": "(During OD Kazekama Shin Kick) Any",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Rekka finisher from Kazekama",
         "whenToUse": "Use to end rekka string. Always in Punish Counter state during execution.",
@@ -2177,22 +1449,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -12,
-          "onHit": null
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
       },
-      "frameData": {
-        "startup": 15,
-        "active": 3,
-        "recovery": 29,
-        "total": 47
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 40%, Combo scaling 20%"
       }
     },
@@ -2203,7 +1463,6 @@
       "notation": "236K > M",
       "input": "(During Jinrai Kick) MK",
       "category": "special",
-      "damage": 1000,
       "yourPerspective": {
         "tacticalUse": "Mid rekka follow-up",
         "whenToUse": "Use for mid option. Floor bound on mid-air hit. Always in Punish Counter state during execution.",
@@ -2216,22 +1475,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -3,
-          "onHit": 3
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block."
-      },
-      "frameData": {
-        "startup": 18,
-        "active": 3,
-        "recovery": 20,
-        "total": 41
-      },
-      "properties": {
-        "hitLevel": "mid",
-        "cancelable": true
       }
     },
     "ken_od_gorai": {
@@ -2241,7 +1486,6 @@
       "notation": "236KK > M",
       "input": "(During OD Jinrai Kick) MK",
       "category": "special",
-      "damage": 1000,
       "yourPerspective": {
         "tacticalUse": "OD mid follow-up",
         "whenToUse": "Use for mid option. Can transition to Kasai Thrust Kick from frame 24. Always in Punish Counter state during execution.",
@@ -2256,22 +1500,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -7,
-          "onHit": -3
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 7."
       },
-      "frameData": {
-        "startup": 17,
-        "active": 3,
-        "recovery": 24,
-        "total": 44
-      },
       "properties": {
-        "hitLevel": "mid",
-        "cancelable": true,
         "comboScaling": "Starter scaling 20%"
       }
     },
@@ -2282,7 +1514,6 @@
       "notation": "236KK > M > Any",
       "input": "(During OD Gorai Axe Kick) Any",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Rekka finisher from Gorai",
         "whenToUse": "Use to end rekka string. Always in Punish Counter state during execution.",
@@ -2294,22 +1525,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -12,
-          "onHit": null
-        },
         "riskLevel": "unsafe",
         "riskDescription": "PUNISHABLE on block. Minus 12. Causes knockdown."
       },
-      "frameData": {
-        "startup": 11,
-        "active": 3,
-        "recovery": 29,
-        "total": 43
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 40%, Combo scaling 20%"
       }
     },
@@ -2320,7 +1539,6 @@
       "notation": "236K > H",
       "input": "(During Jinrai Kick) HK",
       "category": "special",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "High rekka follow-up",
         "whenToUse": "Use for combo damage. Does NOT hit crouching opponents. Always in Punish Counter state during execution.",
@@ -2332,22 +1550,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -3,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Does NOT hit crouching opponents. Causes knockdown."
-      },
-      "frameData": {
-        "startup": 10,
-        "active": 3,
-        "recovery": 25,
-        "total": 38
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_od_senka": {
@@ -2357,7 +1561,6 @@
       "notation": "236KK > H",
       "input": "(During OD Jinrai Kick) HK",
       "category": "special",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "OD high follow-up",
         "whenToUse": "Use for combo damage. Can transition to Kasai Thrust Kick from frame 22. Always in Punish Counter state during execution.",
@@ -2371,22 +1574,8 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -4,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Causes knockdown."
-      },
-      "frameData": {
-        "startup": 10,
-        "active": 4,
-        "recovery": 20,
-        "total": 34
-      },
-      "properties": {
-        "hitLevel": "high",
-        "cancelable": true
       }
     },
     "ken_kasai_senka": {
@@ -2396,7 +1585,6 @@
       "notation": "236KK > H > Any",
       "input": "(During OD Senka Snap Kick) Any",
       "category": "special",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Rekka finisher from Senka",
         "whenToUse": "Use to end rekka string. Always in Punish Counter state during execution.",
@@ -2408,22 +1596,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -20,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "VERY PUNISHABLE on block. Minus 20. Causes knockdown."
       },
-      "frameData": {
-        "startup": 15,
-        "active": 3,
-        "recovery": 37,
-        "total": 55
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": true,
         "comboScaling": "Starter scaling 40%"
       }
     },
@@ -2432,9 +1608,8 @@
       "displayName": "SA1 Dragonlash Flame",
       "shortName": "SA1",
       "notation": "236236P",
-      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + P",
+      "input": "↓↘→↓↘→ + P",
       "category": "super",
-      "damage": 2000,
       "yourPerspective": {
         "tacticalUse": "Invincible reversal Super",
         "whenToUse": "Use as reversal or combo ender. Invincible to strikes and throws frames 1-9. Minimum damage 30%. Values do not change on counter or Punish Counter.",
@@ -2447,22 +1622,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -24,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "VERY PUNISHABLE on block. Minus 24."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 3,
-        "recovery": 41,
-        "total": 51
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "strikes/throws 1-9",
         "superArt": 1,
         "minimumDamage": "30%"
@@ -2473,9 +1636,8 @@
       "displayName": "SA2 Shippu Jinrai-kyaku",
       "shortName": "SA2",
       "notation": "214214K",
-      "input": "\u2193\u2199\u2190\u2193\u2199\u2190 + K",
+      "input": "↓↙←↓↙← + K",
       "category": "super",
-      "damage": 2800,
       "yourPerspective": {
         "tacticalUse": "High damage combo Super",
         "whenToUse": "Use for combo damage. Transitions to full attack after 6th hit. Minimum damage 40%. Values do not change on counter or Punish Counter.",
@@ -2487,22 +1649,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -5,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Only minus 5."
       },
-      "frameData": {
-        "startup": 6,
-        "active": 56,
-        "recovery": 28,
-        "total": 90
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "superArt": 2,
         "minimumDamage": "40%"
       }
@@ -2512,9 +1662,8 @@
       "displayName": "SA3 Shinryu Reppa",
       "shortName": "SA3",
       "notation": "236236K",
-      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K",
+      "input": "↓↘→↓↘→ + K",
       "category": "super",
-      "damage": 4000,
       "yourPerspective": {
         "tacticalUse": "Level 3 Super with full invincibility",
         "whenToUse": "Use for max damage or reversal. Completely invincible frames 1-18. Minimum damage 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves. If first hit blocked/whiffs: 2100 damage, -9000 Drive Gauge, no cinematic.",
@@ -2527,22 +1676,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -40,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 40."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 39,
-        "recovery": 55,
-        "total": 101
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "full 1-18",
         "superArt": 3,
         "minimumDamage": "50%",
@@ -2555,9 +1692,8 @@
       "displayName": "CA Shinryu Reppa (Critical Art)",
       "shortName": "CA",
       "notation": "236236K",
-      "input": "\u2193\u2198\u2192\u2193\u2198\u2192 + K (under 25% vitality)",
+      "input": "↓↘→↓↘→ + K (under 25% vitality)",
       "category": "super",
-      "damage": 4500,
       "yourPerspective": {
         "tacticalUse": "Enhanced Level 3 at low health",
         "whenToUse": "Use for max damage when under 25% health. Completely invincible frames 1-18. Minimum damage 50%. Values do not change on counter or Punish Counter. Can only be canceled into from special moves. If first hit blocked/whiffs: 2300 damage, -16000 Drive Gauge, no cinematic.",
@@ -2570,22 +1706,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -40,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "DEATH ON BLOCK. Minus 40."
       },
-      "frameData": {
-        "startup": 7,
-        "active": 39,
-        "recovery": 55,
-        "total": 101
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "full 1-18",
         "superArt": 3,
         "minimumDamage": "50%",
@@ -2600,7 +1724,6 @@
       "notation": "LP+LK",
       "input": "LP + LK (near opponent)",
       "category": "throw",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Forward throw",
         "whenToUse": "Use for throw mixups. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
@@ -2613,22 +1736,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Throw. Tech with LP+LK."
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
       "properties": {
-        "hitLevel": "throw",
-        "cancelable": false,
         "comboScaling": "Immediate scaling 20%"
       }
     },
@@ -2637,9 +1748,8 @@
       "displayName": "Hell Wheel (Back Throw)",
       "shortName": "B Throw",
       "notation": "4+LP+LK",
-      "input": "\u2190 + LP + LK (near opponent)",
+      "input": "← + LP + LK (near opponent)",
       "category": "throw",
-      "damage": 1200,
       "yourPerspective": {
         "tacticalUse": "Back throw for side switch",
         "whenToUse": "Use for side switch and corner carry. On Punish Counter: 2040 damage, +4000 SA gauge, hard knockdown.",
@@ -2652,22 +1762,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Throw. Tech with LP+LK. Switches sides."
       },
-      "frameData": {
-        "startup": 5,
-        "active": 3,
-        "recovery": 23,
-        "total": 31
-      },
       "properties": {
-        "hitLevel": "throw",
-        "cancelable": false,
         "comboScaling": "Immediate scaling 20%"
       }
     },
@@ -2676,9 +1774,8 @@
       "displayName": "Forward Dash",
       "shortName": "66",
       "notation": "66",
-      "input": "\u2192\u2192",
+      "input": "→→",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Quick forward movement",
         "whenToUse": "Use to close distance quickly",
@@ -2691,22 +1788,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Movement option."
-      },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 19
-      },
-      "properties": {
-        "hitLevel": "none",
-        "cancelable": false
       }
     },
     "ken_back_dash": {
@@ -2714,9 +1797,8 @@
       "displayName": "Backward Dash",
       "shortName": "44",
       "notation": "44",
-      "input": "\u2190\u2190",
+      "input": "←←",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Quick backward movement with throw invincibility",
         "whenToUse": "Use to escape pressure. Invincible to throws frames 1-15.",
@@ -2729,22 +1811,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Movement option. Throw invincible frames 1-15."
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 23
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": false,
         "invincible": "throw 1-15"
       }
     },
@@ -2755,7 +1825,6 @@
       "notation": "HP+HK",
       "input": "HP + HK",
       "category": "common",
-      "damage": 800,
       "yourPerspective": {
         "tacticalUse": "Armored attack for pressure and punishes",
         "whenToUse": "Use to absorb attacks and punish. Super Armor for 2 hits frames 1-27. Wall splat on hit near wall. On Punish Counter or after armor absorb: crumple stun (grounded), spinning knockdown (airborne), +3000 SA gauge.",
@@ -2769,22 +1838,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -3,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Has Super Armor. Counter with your own Drive Impact or throw."
       },
-      "frameData": {
-        "startup": 26,
-        "active": 2,
-        "recovery": 35,
-        "total": 63
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "superArmor": "2 hits, frames 1-27",
         "comboScaling": "Starter scaling 20%"
       }
@@ -2794,9 +1851,8 @@
       "displayName": "Drive Reversal - Blocking (Lightning Crack)",
       "shortName": "DR (Block)",
       "notation": "6HP+HK",
-      "input": "\u2192 + HP + HK (while blocking or during Drive Parry)",
+      "input": "→ + HP + HK (while blocking or during Drive Parry)",
       "category": "common",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Reversal while blocking",
         "whenToUse": "Use to escape pressure while blocking. Completely invincible frames 1-22. Recoverable damage. 5 frames recovery added on hit.",
@@ -2809,22 +1865,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -6,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Causes knockdown."
       },
-      "frameData": {
-        "startup": 20,
-        "active": 3,
-        "recovery": 26,
-        "total": 49
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "full 1-22"
       }
     },
@@ -2833,9 +1877,8 @@
       "displayName": "Drive Reversal - Recovering (Lightning Crack)",
       "shortName": "DR (Wakeup)",
       "notation": "6HP+HK",
-      "input": "\u2192 + HP + HK (during knockdown recovery)",
+      "input": "→ + HP + HK (during knockdown recovery)",
       "category": "common",
-      "damage": 500,
       "yourPerspective": {
         "tacticalUse": "Reversal on wakeup",
         "whenToUse": "Use to escape oki pressure. Completely invincible frames 1-20. Recoverable damage. 5 frames recovery added on hit.",
@@ -2848,22 +1891,10 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": -6,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Safe on block. Causes knockdown."
       },
-      "frameData": {
-        "startup": 18,
-        "active": 3,
-        "recovery": 26,
-        "total": 47
-      },
       "properties": {
-        "hitLevel": "high",
-        "cancelable": false,
         "invincible": "full 1-20"
       }
     },
@@ -2874,7 +1905,6 @@
       "notation": "MP+MK",
       "input": "MP + MK",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Defensive parry to absorb attacks",
         "whenToUse": "Use to parry attacks. Can cancel from frame 4 via Drive Rush. Parry hitbox extended while buttons held. Only blocks during recovery. Always in Punish Counter state during execution.",
@@ -2888,22 +1918,8 @@
         "executionDifficulty": "easy"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "medium",
         "riskDescription": "Ken is in Punish Counter state. Throw or wait for recovery."
-      },
-      "frameData": {
-        "startup": 1,
-        "active": 12,
-        "recovery": 33,
-        "total": 46
-      },
-      "properties": {
-        "hitLevel": "none",
-        "cancelable": true
       }
     },
     "ken_perfect_parry_strike": {
@@ -2913,7 +1929,6 @@
       "notation": "MP+MK",
       "input": "MP + MK (+ direction for high/low)",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Frame-perfect parry for big punish",
         "whenToUse": "Activates when attack absorbed on parry input frame or next frame. For high/overhead: press away. For low: press down-back. No direction = regular parry +3000 Drive. Fully invincible 5 frames after recovery (not if continuing parry). Opponent forced into Punish Counter state until move finished.",
@@ -2926,22 +1941,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
       },
-      "frameData": {
-        "startup": 1,
-        "active": 1,
-        "recovery": 0,
-        "total": 2
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": false,
         "comboScaling": "Starter scaling 50%"
       }
     },
@@ -2952,7 +1955,6 @@
       "notation": "MP+MK",
       "input": "MP + MK (vs projectile)",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Frame-perfect parry against projectiles",
         "whenToUse": "Activates when projectile absorbed on parry input frame or next frame. No screen freeze. Opponent forced into Punish Counter state until move finished.",
@@ -2964,22 +1966,10 @@
         "executionDifficulty": "hard"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "very_unsafe",
         "riskDescription": "You are in PUNISH COUNTER state until move finishes. Cannot cancel."
       },
-      "frameData": {
-        "startup": 1,
-        "active": 10,
-        "recovery": 0,
-        "total": 11
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": false,
         "comboScaling": "Starter scaling 50%"
       }
     },
@@ -2988,9 +1978,8 @@
       "displayName": "Parry Drive Rush",
       "shortName": "PDR",
       "notation": "MP+MK > 66",
-      "input": "(During Drive Parry) \u2192\u2192",
+      "input": "(During Drive Parry) →→",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Cancel parry into run",
         "whenToUse": "Use to convert parry into offense. Screen freeze until frame 10. Can cancel into attack on frame 9. Can cancel into non-parry actions from frame 24.",
@@ -3003,22 +1992,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Ken is rushing in. Prepare to block or contest."
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 45
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true,
         "comboScaling": "Multiplier scaling 15%"
       },
       "video": "/videos/ken/parry_drive_rush.mp4"
@@ -3028,9 +2005,8 @@
       "displayName": "Cancel Drive Rush",
       "shortName": "CDR",
       "notation": "66",
-      "input": "\u2192\u2192 (while connecting with special-cancelable move)",
+      "input": "→→ (while connecting with special-cancelable move)",
       "category": "common",
-      "damage": 0,
       "yourPerspective": {
         "tacticalUse": "Cancel normal into run for combos",
         "whenToUse": "Use for combo extensions. Screen freeze until frame 9. Can cancel into attack from frame 10. Can cancel into non-parry actions from frame 25.",
@@ -3043,22 +2019,10 @@
         "executionDifficulty": "medium"
       },
       "opponentPerspective": {
-        "frameAdvantage": {
-          "onBlock": null,
-          "onHit": null
-        },
         "riskLevel": "safe",
         "riskDescription": "Ken is canceling into run. Prepare for follow-up."
       },
-      "frameData": {
-        "startup": null,
-        "active": null,
-        "recovery": null,
-        "total": 46
-      },
       "properties": {
-        "hitLevel": "none",
-        "cancelable": true,
         "comboScaling": "Multiplier scaling 15%"
       },
       "video": "/videos/ken/cancel_drive_rush.mp4"

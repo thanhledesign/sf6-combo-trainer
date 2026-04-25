@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "migrate-data": "node scripts/migrate-character-data.mjs",
+    "sync-data": "node scripts/sync-frame-data.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.555.0",

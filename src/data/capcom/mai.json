@@ -1,0 +1,1535 @@
+{
+  "id": "mai",
+  "moves": {
+    "mai_st_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_st_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 8,
+        "total": 15
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_st_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "recovery": 15,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_st_mk": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 18,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_st_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 21,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_st_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "recovery": 19,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_cr_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_cr_lk": {
+      "damage": 200,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 8,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "mai_cr_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 15,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_cr_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 19,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "mai_cr_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 13,
+        "recovery": 19,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_cr_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 22,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "mai_j_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 9,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_j_hk": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_senkotsu_uchi": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 18,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "mai_hien_ren_kyaku_2": {
+      "damage": 400,
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "recovery": 20,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hien_ren_kyaku_3": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "recovery": 28,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_hoshi_kujaku_1": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 20,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_hoshi_kujaku_2": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 38,
+        "total": 50
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_kachousen_l": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -1
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_l_charged": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_l_boosted": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_l_charged_boosted": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_m": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_m_charged": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_m_boosted": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "frameData": {
+        "startup": 14,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_m_charged_boosted": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_h": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": -5
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_h_charged": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_h_boosted": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_h_charged_boosted": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 32,
+        "active": null,
+        "recovery": null,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_od": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_od_charged": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": 12,
+        "onHit": 14
+      },
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "recovery": null,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_midare_kachousen": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_midare_kachousen_boosted": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_l": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_l_boosted": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_m": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_m_boosted": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 19,
+        "recovery": 28,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_h": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_h_boosted": {
+      "damage": 1300,
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 18,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_od": {
+      "damage": 1600,
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 17,
+        "recovery": 35,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hishou_ryuuenjin_od_boosted": {
+      "damage": 1700,
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 18,
+        "recovery": 34,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_kachousen_od_boosted": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 12,
+        "active": null,
+        "recovery": null,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_kachousen_od_charged_boosted": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": 12,
+        "onHit": 14
+      },
+      "frameData": {
+        "startup": 28,
+        "active": null,
+        "recovery": null,
+        "total": 58
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_ryuuenbu_l": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "recovery": 15,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_ryuuenbu_l_boosted": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "recovery": 15,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_ryuuenbu_m": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 18,
+        "recovery": 16,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_m_boosted": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 18,
+        "recovery": 16,
+        "total": 48
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_h": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 22,
+        "recovery": 12,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_h_boosted": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 22,
+        "recovery": 12,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_od": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 31,
+        "recovery": 16,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ryuuenbu_od_boosted": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 31,
+        "recovery": 16,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_l_boosted": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 30,
+        "recovery": 16,
+        "total": 56
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_m": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 30,
+        "recovery": 20,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_m_boosted": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 30,
+        "recovery": 20,
+        "total": 65
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_h": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 30,
+        "recovery": 21,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_h_boosted": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 30,
+        "recovery": 21,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_od": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 32,
+        "recovery": 32,
+        "total": 78
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_hissatsu_shinobi_bachi_od_boosted": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 32,
+        "recovery": 32,
+        "total": 78
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_musasabi": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_musasabi_boosted": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_musasabi_od": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_musasabi_od_boosted": {
+      "damage": 1300,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 21,
+        "active": null,
+        "recovery": 18,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "mai_sa1": {
+      "damage": 2000,
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 34,
+        "recovery": 51,
+        "total": 91
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa1_boosted": {
+      "damage": 2300,
+      "frameAdvantage": {
+        "onBlock": -26,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 90,
+        "recovery": 46,
+        "total": 142
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa2": {
+      "damage": 2800,
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 36,
+        "recovery": 26,
+        "total": 69
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa2_boosted": {
+      "damage": 3000,
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 36,
+        "recovery": 31,
+        "total": 74
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa2_air": {
+      "damage": 2800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 20,
+        "recovery": 24,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa2_air_boosted": {
+      "damage": 3000,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 24,
+        "recovery": 24,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_sa3": {
+      "damage": 4000,
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 39,
+        "recovery": 46,
+        "total": 95
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_ca": {
+      "damage": 4500,
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 39,
+        "recovery": 46,
+        "total": 95
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_throw_f": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "mai_throw_b": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "mai_throw_air": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 3,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "mai_forward_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "mai_back_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "mai_drive_impact": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_drive_reversal_block": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_drive_reversal_wakeup": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "mai_drive_parry": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "mai_perfect_parry_strike": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "mai_perfect_parry_projectile": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "mai_parry_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "mai_cancel_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    }
+  }
+}

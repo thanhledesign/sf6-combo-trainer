@@ -2,6 +2,14 @@
 
 The "why" behind everything. Read this before making non-trivial decisions.
 
+> **⚠️ ARCHITECTURE UPDATE 2026-04-25**
+>
+> The "Google Sheets CMS as source of truth" model described below was abandoned. The Sheet was never actually wired up at runtime (the `src/` code only ever imported static JSON), and pushing forward with it would have made every Capcom patch destroy Thanh's hand-curated tactical content.
+>
+> Current data architecture: three-layer JSON in `src/data/{capcom,annotations,overrides}/`, merged at runtime by `src/data/characters/loader.js`. Capcom layer is machine-managed (auto-scrape deferred — see `08-DATA-PIPELINE-RESEARCH.md`). Annotation layer holds Thanh's IP. Override layer patches Capcom errors.
+>
+> Read `08-DATA-PIPELINE-RESEARCH.md` for the full reasoning and the deferred auto-scrape plan. The Sheet references below are kept for historical context but are **no longer the source of truth**.
+
 ---
 
 ## The Owner

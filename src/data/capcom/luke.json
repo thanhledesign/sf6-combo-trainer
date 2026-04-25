@@ -1,0 +1,1314 @@
+{
+  "id": "luke",
+  "moves": {
+    "luke_st_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "recovery": 11,
+        "total": 20
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "recovery": 12,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 16,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_mk": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 16,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_st_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 23,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_st_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "recovery": 16,
+        "total": 33
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_cr_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 10,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_cr_lk": {
+      "damage": 200,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 11,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "luke_cr_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 2,
+        "recovery": 14,
+        "total": 22
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_cr_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "recovery": 19,
+        "total": 30
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "luke_cr_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "recovery": 24,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_cr_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 24,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "luke_j_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 9,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_mp": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "luke_j_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_j_hk": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_nj_hk": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_rawhide": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 21,
+        "active": 2,
+        "recovery": 21,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_suppressor": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 20,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_outlaw_kick": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "recovery": 24,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_double_impact_1": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 15,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_double_impact_2": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 34,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_triple_impact_2": {
+      "damage": 400,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "recovery": 20,
+        "total": 32
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_triple_impact_3": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "recovery": 27,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_2": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "recovery": 23,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_nose_breaker": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "recovery": 25,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_3": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": -6
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 29,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_snapback_combo_4": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 2,
+        "recovery": 27,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_sand_blast_l": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "recovery": 33,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_sand_blast_m": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 17,
+        "active": 6,
+        "recovery": 30,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_sand_blast_h": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 9,
+        "recovery": 27,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_sand_blast_od": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": null,
+        "recovery": 24,
+        "total": 40
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_fatal_shot": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "recovery": 42,
+        "total": 50
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_flash_knuckle_l": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "recovery": 31,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_l_charged": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 4,
+        "recovery": 25,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_l_perfect": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 4,
+        "recovery": 25,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 19,
+        "active": 3,
+        "recovery": 27,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m_charged": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 29,
+        "active": 4,
+        "recovery": 26,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_m_perfect": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 29,
+        "active": 4,
+        "recovery": 26,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "recovery": 21,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h_charged": {
+      "damage": 1300,
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 24,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_h_perfect": {
+      "damage": 1600,
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 24,
+        "total": 61
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_od": {
+      "damage": 400,
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 1,
+        "recovery": 39,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_flash_knuckle_od_2": {
+      "damage": 400,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 33,
+        "active": 4,
+        "recovery": 16,
+        "total": 53
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_ddt": {
+      "damage": 2500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": null,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 5,
+        "recovery": 13,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle_charged": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 6,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_aerial_flash_knuckle_od": {
+      "damage": 1300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 6,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_avenger": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_avenger_od": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_no_chaser": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 10,
+        "recovery": 16,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_od_chaser": {
+      "damage": 1300,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 10,
+        "recovery": 16,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_impaler": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 12,
+        "recovery": 22,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_od_impaler": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 12,
+        "recovery": 19,
+        "total": 44
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_rising_uppercut_l": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "recovery": 34,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_rising_uppercut_m": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 36,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_rising_uppercut_h": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 10,
+        "recovery": 40,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "luke_rising_uppercut_od": {
+      "damage": 1400,
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "recovery": 50,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_slam_dunk": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "luke_sa1": {
+      "damage": 2000,
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "recovery": 102,
+        "total": 108
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_sa2": {
+      "damage": 2800,
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 51,
+        "total": 59
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_sa3": {
+      "damage": 4000,
+      "frameAdvantage": {
+        "onBlock": -42,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "recovery": 92,
+        "total": 106
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_ca": {
+      "damage": 4500,
+      "frameAdvantage": {
+        "onBlock": -42,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "recovery": 92,
+        "total": 106
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_throw_f": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "luke_throw_b": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "luke_forward_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "luke_back_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "luke_drive_impact": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_drive_reversal_block": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "recovery": 26,
+        "total": 49
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_drive_reversal_wakeup": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "recovery": 26,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "luke_drive_parry": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_perfect_parry_strike": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "luke_perfect_parry_projectile": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "luke_parry_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "luke_cancel_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    }
+  }
+}

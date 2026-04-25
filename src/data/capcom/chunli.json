@@ -1,0 +1,1331 @@
+{
+  "id": "chunli",
+  "moves": {
+    "chunli_st_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 10,
+        "total": 18
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 6
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 4,
+        "recovery": 10,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "recovery": 16,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "recovery": 20,
+        "total": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_st_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "recovery": 18,
+        "total": 35
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "recovery": 7,
+        "total": 14
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_lk": {
+      "damage": 200,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "recovery": 10,
+        "total": 16
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 13,
+        "total": 23
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 19,
+        "total": 29
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_hp": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 13,
+        "recovery": 18,
+        "total": 42
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_cr_hk": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 19,
+        "total": 34
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_j_lp": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_lk": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 4,
+        "active": 8,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_mp": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 15,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_j_mk": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_hp": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_j_hk": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 7,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_nj_hk": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_swift_thrust": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "recovery": 15,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hakkei": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "recovery": 14,
+        "total": 28
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_water_lotus_fist": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "recovery": 15,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_yokusen_kick": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -1
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 2,
+        "recovery": 23,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_falling_crane": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 7
+      },
+      "frameData": {
+        "startup": 37,
+        "active": 2,
+        "recovery": 13,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_yoso_kick_1": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 3,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_yoso_kick_2": {
+      "damage": 300,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_yoso_kick_3": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 11,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_soaring_eagle_punches": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "recovery": 3,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_serenity_stream": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 89
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_orchid_palm": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 5,
+        "recovery": 17,
+        "total": 27
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_snake_strike": {
+      "damage": 750,
+      "frameAdvantage": {
+        "onBlock": -15,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 11,
+        "recovery": 20,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "chunli_ss_lotus_fist": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 10,
+        "recovery": 19,
+        "total": 52
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_forward_strike": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 13,
+        "total": 26
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_senpu_kick": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": -4
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "recovery": 23,
+        "total": 38
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true
+      }
+    },
+    "chunli_ss_tenku_kick": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "recovery": 24,
+        "total": 37
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_kikoken_l": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 15,
+        "active": 90,
+        "recovery": null,
+        "total": 47
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_kikoken_m": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -3
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 55,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_kikoken_h": {
+      "damage": 600,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -2
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 25,
+        "recovery": null,
+        "total": 43
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_kikoken_od": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": 5,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "recovery": null,
+        "total": 39
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_l": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 16,
+        "recovery": 20,
+        "total": 41
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_m": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 21,
+        "recovery": 22,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_h": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 25,
+        "recovery": 15,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_hundred_lightning_od": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 26,
+        "recovery": 21,
+        "total": 55
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_lightning_kick_barrage": {
+      "damage": 700,
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 36,
+        "recovery": 25,
+        "total": 72
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_air_hundred_lightning_l": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 14,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_air_hundred_lightning_m": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 10,
+        "active": 21,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_air_hundred_lightning_h": {
+      "damage": 1100,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 12,
+        "active": 24,
+        "recovery": 15,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_air_hundred_lightning_od": {
+      "damage": 1600,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 26,
+        "recovery": 5,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_spinning_bird_l": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 18,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_spinning_bird_m": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -17,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 33,
+        "recovery": 29,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_spinning_bird_h": {
+      "damage": 1400,
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 45,
+        "recovery": 30,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_spinning_bird_od": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 16,
+        "active": 40,
+        "recovery": 23,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_hazanshu_l": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "frameData": {
+        "startup": 23,
+        "active": 2,
+        "recovery": 21,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_hazanshu_m": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "frameData": {
+        "startup": 27,
+        "active": 3,
+        "recovery": 16,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_hazanshu_h": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
+      },
+      "frameData": {
+        "startup": 32,
+        "active": 3,
+        "recovery": 18,
+        "total": 53
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true
+      }
+    },
+    "chunli_hazanshu_od": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 3,
+        "recovery": 16,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "chunli_tensho_l": {
+      "damage": 900,
+      "frameAdvantage": {
+        "onBlock": -37,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 14,
+        "recovery": 39,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_tensho_m": {
+      "damage": 1000,
+      "frameAdvantage": {
+        "onBlock": -41,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 14,
+        "recovery": 43,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_tensho_h": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": -57,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 9,
+        "active": 35,
+        "recovery": 38,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_tensho_od": {
+      "damage": 1400,
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 6,
+        "active": 61,
+        "recovery": 49,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_sa1": {
+      "damage": 1700,
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 70,
+        "recovery": null,
+        "total": 122
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_sa1_air": {
+      "damage": 2000,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 7,
+        "active": 50,
+        "recovery": 16,
+        "total": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_sa2": {
+      "damage": 2000,
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 11,
+        "active": 86,
+        "recovery": 48,
+        "total": 145
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true
+      }
+    },
+    "chunli_sa3": {
+      "damage": 4000,
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 35,
+        "recovery": 40,
+        "total": 83
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_ca": {
+      "damage": 4500,
+      "frameAdvantage": {
+        "onBlock": -24,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 8,
+        "active": 35,
+        "recovery": 40,
+        "total": 83
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_throw_f": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "chunli_throw_b": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 23,
+        "total": 31
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "chunli_throw_air": {
+      "damage": 1200,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "recovery": 3,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "chunli_forward_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 19
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "chunli_back_dash": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 25
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "chunli_drive_impact": {
+      "damage": 800,
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "recovery": 35,
+        "total": 63
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_drive_reversal_block": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 20,
+        "active": 16,
+        "recovery": 26,
+        "total": 62
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_drive_reversal_wakeup": {
+      "damage": 500,
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 18,
+        "active": 16,
+        "recovery": 26,
+        "total": 60
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "chunli_drive_parry": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 12,
+        "recovery": 33,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "chunli_perfect_parry_strike": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 1,
+        "recovery": 0,
+        "total": 2
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "chunli_perfect_parry_projectile": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": 1,
+        "active": 10,
+        "recovery": 0,
+        "total": 11
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": false
+      }
+    },
+    "chunli_parry_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 45
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    },
+    "chunli_cancel_drive_rush": {
+      "damage": 0,
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "recovery": null,
+        "total": 46
+      },
+      "properties": {
+        "hitLevel": "none",
+        "cancelable": true
+      }
+    }
+  }
+}

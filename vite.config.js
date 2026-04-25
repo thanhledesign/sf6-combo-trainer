@@ -42,15 +42,6 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/docs\.google\.com\/spreadsheets\/.*/i,
-            handler: 'NetworkFirst',
-            options: {
-              cacheName: 'google-sheets-cache',
-              expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 },
-              networkTimeoutSeconds: 10,
-            },
-          },
-          {
             urlPattern: ({ request }) => request.destination === 'video',
             handler: 'CacheFirst',
             options: {
