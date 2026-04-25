@@ -57,3 +57,18 @@
   inset: 0;
   transform: rotateY(180deg);
 }
+
+/* Safe-area support for notched devices and home indicators (iOS, Android) */
+:root {
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+}
+
+.safe-top    { padding-top: var(--safe-area-inset-top); }
+.safe-bottom { padding-bottom: var(--safe-area-inset-bottom); }
+.safe-left   { padding-left: var(--safe-area-inset-left); }
+.safe-right  { padding-right: var(--safe-area-inset-right); }
+.safe-x      { padding-left: var(--safe-area-inset-left); padding-right: var(--safe-area-inset-right); }
+.safe-y      { padding-top: var(--safe-area-inset-top); padding-bottom: var(--safe-area-inset-bottom); }

@@ -10,7 +10,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 
 - **Live**: https://sf6-combo-trainer.vercel.app
 - **GitHub**: https://github.com/thanhledesign/sf6-combo-trainer
-- **Current version**: V01.29 (latest commit: "Fix: clean build setup" — note: PWA was removed in this commit, scheduled for reinstatement)
+- **Current version**: V01.30 (PWA reinstated; T3 done)
 - **Owner**: Thanh Le. Active SF6 ranked player (Ken main, peak ~1,600 MR), uses the app as a personal training companion
 
 ---
@@ -35,7 +35,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 - **Icons**: lucide-react
 - **Data**: Google Sheets CMS (CSV export via published URLs, ~5min cache, fallback to static JSON)
 - **Deploy**: Vercel (staging on non-`main` branches, production on `main`)
-- **PWA**: was present in V01.29, removed in latest commit, scheduled to be reinstated (see `docs/_handoff-2026-04-24/01-NEXT-STEPS.md` Task 3)
+- **PWA**: vite-plugin-pwa with Workbox (NetworkFirst for Google Sheets CSV w/ 1hr cache, CacheFirst for videos w/ 30d). Manifest at `vite.config.js`; icons in `public/icons/` (purple gradient `#7c3aed → #4f46e5`).
 
 ### Data Sources
 - **Google Sheet ID**: `1Z1InqW1dISE5kgDJWM47PF_gznjt7zJhw4_3LyriSpE`
@@ -57,7 +57,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 - Dark theme always
 - Best practices oriented toward new learners
 - 100% consistency over cleverness
-- Versioning: increment `V01.XX` tags with each significant feature addition (currently V01.29 → next is V01.30)
+- Versioning: increment `V01.XX` tags with each significant feature addition (currently V01.30 → next is V01.31, the win/loss tracker per `docs/_handoff-2026-04-24/07-WIN-LOSS-TRACKER-SPEC.md`)
 
 ---
 
