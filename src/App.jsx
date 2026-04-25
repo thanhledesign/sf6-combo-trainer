@@ -10,6 +10,7 @@ import SearchResults from './components/Search/SearchResults';
 import TacticsPage from './components/Tactics/TacticsPage';
 import TrackerPage from './components/Tracker/TrackerPage';
 import StatsPage from './components/Tracker/StatsPage';
+import SetTrackerPage from './components/Tracker/SetTrackerPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import {
   ken     as kenData,
@@ -511,6 +512,18 @@ function App() {
         <Route path="/tracker/stats" element={
           <StatsPage
             characterMap={characterMap}
+            characterList={[
+              { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
+              { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },
+              { id: 'mai', name: 'Mai' }, { id: 'terry', name: 'Terry' },
+            ]}
+            defaultYourCharacter={selectedCharacterId}
+          />
+        } />
+        <Route path="/tracker/set" element={
+          <SetTrackerPage
+            characterMap={characterMap}
+            thumbnailMap={thumbnailMap}
             characterList={[
               { id: 'ken', name: 'Ken' }, { id: 'ryu', name: 'Ryu' }, { id: 'luke', name: 'Luke' },
               { id: 'chunli', name: 'Chun-Li' }, { id: 'cammy', name: 'Cammy' },

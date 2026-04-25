@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Settings, BarChart3, Coffee, Trophy } from 'lucide-react';
+import { Settings, BarChart3, Coffee, Swords } from 'lucide-react';
 import { trackerStore, activeSessionStats, currentLossStreak, tiltCheck } from '../../utils/tracker';
 import QuickEntry from './QuickEntry';
 import MatchList from './MatchList';
@@ -163,6 +163,15 @@ const TrackerPage = ({ characterMap, characterList, defaultYourCharacter }) => {
           className="w-full mt-3 py-2.5 text-sm text-gray-400 hover:text-white border border-dashed border-gray-700 hover:border-purple-500 rounded-xl transition-colors"
         >
           + Log details (character, opponent, notes, tags)
+        </button>
+
+        {/* Head-to-head set entry — alternate flow for sets where you're tracking
+            a single matchup over multiple matches with swipe entry per match. */}
+        <button
+          onClick={() => navigate('/tracker/set')}
+          className="w-full mt-2 py-2.5 text-sm bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white rounded-xl transition-colors flex items-center justify-center gap-2 border border-gray-700"
+        >
+          <Swords className="w-4 h-4" /> Start head-to-head set (FT-N, swipe entry)
         </button>
 
         {/* Matches */}
