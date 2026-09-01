@@ -1,6 +1,6 @@
 {
   "id": "ken",
-  "scrapedAt": "2026-04-25T18:51:10.140Z",
+  "scrapedAt": "2026-09-01T12:52:45.647Z",
   "source": "https://www.streetfighter.com/6/character/ken",
   "character": {
     "bio": "Former US National Fighting Champ, and ex-VP of the Masters Foundation. Accusations of orchestrating a criminal plot have forced Ken to abandon his family and business and go into hiding.",
@@ -221,7 +221,7 @@
       "input": "↓ + MP",
       "notation": "2MP",
       "shortName": "2MP",
-      "damage": 700,
+      "damage": 600,
       "frameData": {
         "startup": 6,
         "active": 3,
@@ -231,7 +231,7 @@
       },
       "frameAdvantage": {
         "onBlock": 0,
-        "onHit": 3
+        "onHit": 5
       },
       "properties": {
         "hitLevel": "high",
@@ -519,7 +519,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Can transition to branching attacks from frame 12"
+      "note": "Can transition into Forward Step Kick from frame 10, and other branching attacks from frame 12"
     },
     "ken_emergency_stop": {
       "displayName": "Emergency Stop",
@@ -583,22 +583,22 @@
       "shortName": "HK",
       "damage": 800,
       "frameData": {
-        "startup": 10,
+        "startup": 8,
         "active": 4,
-        "activeRange": "10-13",
-        "recovery": 20,
-        "total": 34
+        "activeRange": "8-11",
+        "recovery": 24,
+        "total": 36
       },
       "frameAdvantage": {
         "onBlock": -4,
-        "onHit": 3
+        "onHit": 1
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false,
         "cancelFlags": "SA"
       },
-      "note": "Can be canceled into any Super Art"
+      "note": "Adds +4 frames of recovery on armor hit or if the attack missesCan be canceled into any Super Art"
     },
     "ken_chin_buster": {
       "displayName": "Chin Buster",

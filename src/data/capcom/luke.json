@@ -1,6 +1,6 @@
 {
   "id": "luke",
-  "scrapedAt": "2026-04-25T18:51:42.234Z",
+  "scrapedAt": "2026-09-01T12:53:59.565Z",
   "source": "https://www.streetfighter.com/6/character/luke",
   "character": {
     "bio": "A contractor for a PMC, Luke uses his elite military background to teach mixed martial arts. His days off are spent eating junk food, playing video games, and fighting, but make no mistake—Luke plays to win.",
@@ -129,7 +129,7 @@
         "total": 36
       },
       "frameAdvantage": {
-        "onBlock": -5,
+        "onBlock": -4,
         "onHit": 1
       },
       "properties": {
@@ -225,9 +225,9 @@
       "damage": 600,
       "frameData": {
         "startup": 6,
-        "active": 2,
-        "activeRange": "6-7",
-        "recovery": 14,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 13,
         "total": 22
       },
       "frameAdvantage": {
@@ -378,9 +378,9 @@
       "shortName": "9MP",
       "damage": 700,
       "frameData": {
-        "startup": 9,
-        "active": 4,
-        "activeRange": "9-12",
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
         "recovery": 3,
         "total": 16
       },
@@ -721,7 +721,8 @@
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Recovery is reduced by 3 frame on hitThe blowback time is extended when standing medium punch up until the third hit of Snapback Combo hits as a Punish Counter"
     },
     "luke_sand_blast_l": {
       "displayName": "L Sand Blast",
@@ -746,7 +747,8 @@
         "hitLevel": "high - projectile",
         "cancelable": false,
         "cancelFlags": "SA3"
-      }
+      },
+      "note": "Forces a blowback knockdown when the attack lands as a Counter or Punish Counter"
     },
     "luke_sand_blast_m": {
       "displayName": "M Sand Blast",
@@ -771,7 +773,8 @@
         "hitLevel": "high - projectile",
         "cancelable": false,
         "cancelFlags": "SA3"
-      }
+      },
+      "note": "Forces a blowback knockdown when the attack lands as a Counter or Punish Counter"
     },
     "luke_sand_blast_h": {
       "displayName": "H Sand Blast",
@@ -796,7 +799,8 @@
         "hitLevel": "high - projectile",
         "cancelable": false,
         "cancelFlags": "SA3"
-      }
+      },
+      "note": "Forces a blowback knockdown when the attack lands as a Counter or Punish Counter"
     },
     "luke_sand_blast_od": {
       "displayName": "OD Sand Blast",
@@ -1374,7 +1378,7 @@
       "input": "→↓↘ + LP",
       "notation": "623LP",
       "shortName": "623LP",
-      "damage": 900,
+      "damage": 1000,
       "frameData": {
         "startup": 5,
         "active": 10,
@@ -1400,7 +1404,7 @@
       "input": "→↓↘ + MP",
       "notation": "623MP",
       "shortName": "623MP",
-      "damage": 1000,
+      "damage": 1100,
       "frameData": {
         "startup": 6,
         "active": 10,
@@ -1426,7 +1430,7 @@
       "input": "→↓↘ + HP",
       "notation": "623HP",
       "shortName": "623HP",
-      "damage": 1200,
+      "damage": 1300,
       "frameData": {
         "startup": 9,
         "active": 10,
@@ -1528,7 +1532,7 @@
       "input": "↓↙←↓↙← + P",
       "notation": "214214P",
       "shortName": "214214P",
-      "damage": 2800,
+      "damage": 3000,
       "frameData": {
         "startup": 5,
         "active": 3,

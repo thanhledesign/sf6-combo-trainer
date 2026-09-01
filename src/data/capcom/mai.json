@@ -1,6 +1,6 @@
 {
   "id": "mai",
-  "scrapedAt": "2026-04-25T18:52:20.723Z",
+  "scrapedAt": "2026-09-01T12:55:47.956Z",
   "source": "https://www.streetfighter.com/6/character/mai",
   "character": {
     "bio": "The successor of Shiranui-style ninja arts. A charming kunoichi who is as dedicated to love as she is to training. Loves cooking, Japanese dressmaking, flower arrangement, and traditional Japanese dance.",
@@ -86,7 +86,8 @@
         "hitLevel": "high",
         "cancelable": true,
         "cancelFlags": "C"
-      }
+      },
+      "note": "2 frames of recovery added when the attack misses"
     },
     "mai_st_mk": {
       "displayName": "Standing Medium Kick",
@@ -1357,7 +1358,7 @@
       "input": "(Effect changes when a Flame is stocked) ↓↙← + P",
       "notation": "214P",
       "shortName": "214P",
-      "damage": 1000,
+      "damage": 1300,
       "frameData": {
         "startup": 16,
         "active": 4601,
@@ -1366,21 +1367,20 @@
         "total": 4633
       },
       "frameAdvantage": {
-        "onBlock": -12,
+        "onBlock": -3,
         "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": false,
         "cancelFlags": "SA2"
-      },
-      "note": "8 frame of recovery added when blocked"
+      }
     },
     "mai_ryuuenbu_od_boosted": {
       "displayName": "[Boosted]OD Ryuuenbu",
       "level": null,
       "category": "special",
-      "damage": 1100,
+      "damage": 1400,
       "frameData": {
         "startup": 16,
         "active": 4601,
@@ -1389,7 +1389,7 @@
         "total": 4633
       },
       "frameAdvantage": {
-        "onBlock": -12,
+        "onBlock": -3,
         "onHit": 0
       },
       "properties": {
@@ -1397,7 +1397,7 @@
         "cancelable": false,
         "cancelFlags": "SA2"
       },
-      "note": "8 frame of recovery added when blocked"
+      "note": "Produces a wall splat if the opponent reaches the wall"
     },
     "mai_hissatsu_shinobi_bachi_l": {
       "displayName": "L Hissatsu Shinobi Bachi",
@@ -1715,7 +1715,7 @@
         "hitLevel": "high - projectile",
         "cancelable": false
       },
-      "note": "Invincible to strikes and throws between frames 1 - 8Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 39Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
     },
     "mai_sa1_boosted": {
       "displayName": "[Boosted]SA1 Kagerou no Mai",
@@ -1737,7 +1737,7 @@
         "hitLevel": "high - projectile",
         "cancelable": false
       },
-      "note": "Invincible to strikes and throws between frames 1 - 6Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 77Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%"
     },
     "mai_sa2": {
       "displayName": "SA2 Chou Hissatsu Shinobi Bachi",
@@ -1811,7 +1811,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+      "note": "Minimum guaranteed damage is set to 40%"
     },
     "mai_sa2_air_boosted": {
       "displayName": "[Boosted]SA2 Air Chou Hissatsu Shinobi Bachi",
@@ -1833,7 +1833,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+      "note": "Minimum guaranteed damage is set to 40%"
     },
     "mai_sa3": {
       "displayName": "SA3 Shiranui Ryuu: Enbu Ada Zakura",
