@@ -132,11 +132,14 @@ for (const c of groupChars) {
     if (!moves || moves.length === 0) continue;
 
     const sectionRow = sheet.addRow([CATEGORY_LABEL[cat] || cat]);
-    sheet.mergeCells(sectionRow.number, 1, sectionRow.number, COLUMNS.length);
-    const c1 = sectionRow.getCell(1);
-    c1.fill = sectionStyle.fill;
-    c1.font = sectionStyle.font;
-    c1.alignment = sectionStyle.alignment;
+    // Style every cell individually instead of merging — Google Sheets Tables
+    // refuse to insert over merged ranges, and this file needs to accept Tables.
+    for (let i = 1; i <= COLUMNS.length; i++) {
+      const cell = sectionRow.getCell(i);
+      cell.fill = sectionStyle.fill;
+      cell.font = sectionStyle.font;
+      if (i === 1) cell.alignment = sectionStyle.alignment;
+    }
     sectionRow.height = 18;
 
     moves.sort((a, b) => (a.displayName || '').localeCompare(b.displayName || ''));
@@ -162,8 +165,12 @@ for (const c of groupChars) {
   sheet.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: COLUMNS.length } };
 }
 
+  const isSingle = groups.length === 1;
   const label = `${groupChars[0].displayName[0]}-${groupChars[groupChars.length - 1].displayName[0]}`;
-  const outPath = resolve(OUT_DIR, `sf6-frame-data-part${groupIdx + 1}-${label}.xlsx`);
+  const filename = isSingle
+    ? `sf6-frame-data-all-${groupChars.length}-chars.xlsx`
+    : `sf6-frame-data-part${groupIdx + 1}-${label}.xlsx`;
+  const outPath = resolve(OUT_DIR, filename);
   await wb.xlsx.writeFile(outPath);
   return outPath;
 }
