@@ -1,0 +1,2259 @@
+{
+  "id": "blanka",
+  "scrapedAt": "2026-04-25T20:38:21.961Z",
+  "source": "https://www.streetfighter.com/6/character/blanka",
+  "character": {
+    "bio": "A kindhearted defender of nature, Blanka has become an adventure tour guide, confident his intimate knowledge of the jungle will serve as a springboard to fame—and a comfortable life for his beloved mother.",
+    "vitals": {
+      "height": "6'4",
+      "weight": "216 lbs",
+      "likes": "Samantha, Blanka-chan dolls",
+      "hates": "Army ants"
+    }
+  },
+  "moves": {
+    "blanka_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 10,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "blanka_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 4,
+        "activeRange": "4-7",
+        "recovery": 7,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "blanka_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 15,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "blanka_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 17,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "* 3 frames of recovery added when the attack misses"
+    },
+    "blanka_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 22,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "blanka_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 7,
+        "active": 9,
+        "activeRange": "7-15",
+        "recovery": 18,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when the attack lands as a counter or Punish Counter on a mid-air opponentForces the opponent into a standing position"
+    },
+    "blanka_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 8,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "blanka_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 10,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "blanka_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 16,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "blanka_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 16,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "*2 frames of recovery added when the attack is blocked or misses"
+    },
+    "blanka_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 15,
+        "active": 5,
+        "activeRange": "15-19",
+        "recovery": 20,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a blowback knockdown when the attack lands as a Counter or Punish CounterForces the opponent into a standing position"
+    },
+    "blanka_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "blanka_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 5,
+        "activeRange": "4-8",
+        "recovery": 3,
+        "total": 12
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "blanka_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 6,
+        "activeRange": "5-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "blanka_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 7,
+        "active": 7,
+        "activeRange": "7-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "blanka_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "blanka_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 9,
+        "activeRange": "9",
+        "recovery": 3,
+        "total": 21
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "blanka_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 11,
+        "active": 6,
+        "activeRange": "11-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "blanka_neutral_jumping_heavy_punch": {
+      "displayName": "Neutral Jumping Heavy Punch",
+      "level": "(During a neutral jump)H",
+      "category": "normal",
+      "context": "(During a neutral jump)",
+      "input": "(During a neutral jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "blanka_rock_crusher_m": {
+      "displayName": "Rock Crusher",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 20,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "*midhigh",
+        "cancelable": false
+      },
+      "note": "*Second attack becomes an overhead only if the first attack whiffs"
+    },
+    "blanka_double_knee_bombs_m": {
+      "displayName": "Double Knee Bombs",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 201,
+        "activeRange": "9-209-11, 19-20",
+        "recovery": 18,
+        "total": 228
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Blowback knockdown when the first attack hits a mid-air opponentForces the opponent into a standing position"
+    },
+    "blanka_wild_edge_m": {
+      "displayName": "Wild Edge",
+      "level": "M",
+      "category": "normal",
+      "input": "← + MK",
+      "notation": "4MK",
+      "shortName": "4MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 12,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "blanka_wild_nail_h": {
+      "displayName": "Wild Nail",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 18,
+        "active": 4,
+        "activeRange": "18-21",
+        "recovery": 31,
+        "total": 53
+      },
+      "frameAdvantage": {
+        "onBlock": -15,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "* Can transition to Coward Crouch between frames 33 - 34Properties change to the following when the attack lands as a Punish Counter:- Produces a crumple stun if the opponent is standing on the ground- Forces a ground bound if the attack hits a mid-air opponent"
+    },
+    "blanka_amazon_river_run_h": {
+      "displayName": "Amazon River Run",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HP",
+      "notation": "3HP",
+      "shortName": "3HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 14,
+        "active": 10,
+        "activeRange": "14-23",
+        "recovery": 22,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Forces a Hard Knockdown on Punish Counter"
+    },
+    "blanka_coward_crouch": {
+      "displayName": "Coward Crouch",
+      "level": null,
+      "category": "normal",
+      "input": "↓ + PP",
+      "notation": "2PP",
+      "shortName": "2PP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 98,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Hold down on the stick during the move to continue the technique for 48 more framesDuring the crouch, press up on the stick to cancel the techniqueCan transition to Surprise Forward Hop or Surprise Backward Hop from frames 18 - 111 (longest time)"
+    },
+    "blanka_wild_lift": {
+      "displayName": "Wild Lift",
+      "level": "(During Coward Crouch)",
+      "category": "normal",
+      "context": "(During Coward Crouch)",
+      "input": "(During Coward Crouch) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 7,
+        "activeRange": "8-14",
+        "recovery": 31,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "blanka_raid_jump": {
+      "displayName": "Raid Jump",
+      "level": "(During Coward Crouch)",
+      "category": "normal",
+      "context": "(During Coward Crouch)",
+      "input": "(During Coward Crouch) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 4312,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 43Can be canceled from mid-air normal attacks or special moves from frames 15 - 43"
+    },
+    "blanka_surprise_forward_hop": {
+      "displayName": "Surprise Forward Hop",
+      "level": null,
+      "category": "normal",
+      "input": "→ + KKK",
+      "notation": "6KKK",
+      "shortName": "6KKK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 27,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can be canceled into any special-canceable normal or unique attack"
+    },
+    "blanka_surprise_back_hop": {
+      "displayName": "Surprise Back Hop",
+      "level": null,
+      "category": "normal",
+      "input": "← + KKK",
+      "notation": "4KKK",
+      "shortName": "4KKK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 32,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 11 - 21Can be canceled into any special-canceable normal or unique attack"
+    },
+    "blanka_electric_thunder": {
+      "displayName": "Electric Thunder",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) ↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 2101,
+        "activeRange": "10-2110-11,15-16,20-21",
+        "recovery": 17,
+        "total": 2128
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button to continue that attack"
+    },
+    "blanka_lightning_beast_electric_thunder": {
+      "displayName": "[Lightning Beast] Electric Thunder",
+      "level": null,
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 2101,
+        "activeRange": "10-2110-11,15-16,20-21",
+        "recovery": 17,
+        "total": 2128
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Hold down the button to continue that attack"
+    },
+    "blanka_od_electric_thunder": {
+      "displayName": "OD Electric Thunder",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) ↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": 2101,
+        "activeRange": "10-2110-11,15-16,20-21",
+        "recovery": 17,
+        "total": 2128
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Hold down the button to continue that attack"
+    },
+    "blanka_lightning_beast_od_electric_thunder": {
+      "displayName": "[Lightning Beast]OD Electric Thunder",
+      "level": null,
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 10,
+        "active": 2101,
+        "activeRange": "10-2110-11,15-16,20-21",
+        "recovery": 17,
+        "total": 2128
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Hold down the button to continue that attack"
+    },
+    "blanka_l_rolling_attack_l": {
+      "displayName": "L Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "input": "(Hold ←) → + LP",
+      "notation": "[4]6LP",
+      "shortName": "[4]6LP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": 11,
+        "activeRange": "10-20",
+        "recovery": 11,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 10 - 23"
+    },
+    "blanka_lightning_beast_l_rolling_attack_l": {
+      "displayName": "[Lightning Beast] L Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 10,
+        "active": 11,
+        "activeRange": "10-20",
+        "recovery": 11,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 10 - 23Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or block"
+    },
+    "blanka_m_rolling_attack_m": {
+      "displayName": "M Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "input": "(Hold ←) → + MP",
+      "notation": "[4]6MP",
+      "shortName": "[4]6MP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 12,
+        "active": 19,
+        "activeRange": "12-30",
+        "recovery": 11,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 12 - 23Juggle state time is extended when attack hits for a Punish Counter.Can cancel into Level 3 Super Art until active frame 11"
+    },
+    "blanka_lightning_beast_m_rolling_attack_m": {
+      "displayName": "[Lightning Beast] M Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "damage": 1300,
+      "frameData": {
+        "startup": 12,
+        "active": 19,
+        "activeRange": "12-30",
+        "recovery": 11,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 12 - 23Consumes 100 of the Super Art 2 timerJuggle state time is extended when attack hits for a Punish Counter.Can transition to Rolling Cannon on hit or block"
+    },
+    "blanka_h_rolling_attack_h": {
+      "displayName": "H Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "input": "(Hold ←) → + HP",
+      "notation": "[4]6HP",
+      "shortName": "[4]6HP",
+      "damage": 1300,
+      "frameData": {
+        "startup": 22,
+        "active": 20,
+        "activeRange": "22-41",
+        "recovery": 26,
+        "total": 68
+      },
+      "frameAdvantage": {
+        "onBlock": -15,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 20 - 42Juggle state time is extended when attack hits for a Punish Counter.Can cancel into Level 3 Super Art until active frame 6"
+    },
+    "blanka_lightning_beast_h_rolling_attack_h": {
+      "displayName": "[Lightning Beast] H Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "damage": 1400,
+      "frameData": {
+        "startup": 22,
+        "active": 20,
+        "activeRange": "22-41",
+        "recovery": 26,
+        "total": 68
+      },
+      "frameAdvantage": {
+        "onBlock": -21,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Considered airborne from frames 20 - 42Consumes 100 of the Super Art 2 timerJuggle state time is extended when attack hits for a Punish Counter.Can transition to Rolling Cannon on hit or block"
+    },
+    "blanka_od_rolling_attack": {
+      "displayName": "OD Rolling Attack",
+      "level": null,
+      "category": "special",
+      "input": "(Hold ←) → + P",
+      "notation": "[4]6P",
+      "shortName": "[4]6P",
+      "damage": 800,
+      "frameData": {
+        "startup": 18,
+        "active": 22,
+        "activeRange": "18-39",
+        "recovery": 17,
+        "total": 57
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Considered airborne from frames 18 - 41Can cancel into Level 3 Super Art until active frame 2"
+    },
+    "blanka_lightning_beast_od_rolling_attack": {
+      "displayName": "[Lightning Beast] OD Rolling Attack",
+      "level": null,
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 18,
+        "active": 22,
+        "activeRange": "18-39",
+        "recovery": 17,
+        "total": 57
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 18 - 40Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or block"
+    },
+    "blanka_l_vertical_rolling_attack_l": {
+      "displayName": "L Vertical Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + LK",
+      "notation": "[2]8LK",
+      "shortName": "[2]8LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_lightning_beast_l_vertical_rolling_attack_l": {
+      "displayName": "[Lightning Beast] L Vertical Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "damage": 1300,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockConsidered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_m_vertical_rolling_attack_m": {
+      "displayName": "M Vertical Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + MK",
+      "notation": "[2]8MK",
+      "shortName": "[2]8MK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_lightning_beast_m_vertical_rolling_attack_m": {
+      "displayName": "[Lightning Beast] M Vertical Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "damage": 1400,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockConsidered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_h_vertical_rolling_attack_h": {
+      "displayName": "H Vertical Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + HK",
+      "notation": "[2]8HK",
+      "shortName": "[2]8HK",
+      "damage": 1400,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_lightning_beast_h_vertical_rolling_attack_h": {
+      "displayName": "[Lightning Beast] H Vertical Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "damage": 1500,
+      "frameData": {
+        "startup": 8,
+        "active": 20,
+        "activeRange": "8-27",
+        "recovery": 3117,
+        "total": 3145
+      },
+      "frameAdvantage": {
+        "onBlock": -27,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockConsidered airborne from frames 6 - 57Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 26"
+    },
+    "blanka_od_vertical_rolling_attack": {
+      "displayName": "OD Vertical Rolling Attack",
+      "level": null,
+      "category": "special",
+      "input": "(Hold ↓) ↑ + K",
+      "notation": "[2]8K",
+      "shortName": "[2]8K",
+      "damage": 1600,
+      "frameData": {
+        "startup": 7,
+        "active": 221,
+        "activeRange": "7-227-14,17-22",
+        "recovery": 3117,
+        "total": 3345
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 4 - 53Completely invincible to attacks from frames 1 - 10"
+    },
+    "blanka_lightning_beast_od_vertical_rolling_attack": {
+      "displayName": "[Lightning Beast] OD Vertical Rolling Attack",
+      "level": null,
+      "category": "special",
+      "damage": 1750,
+      "frameData": {
+        "startup": 7,
+        "active": 221,
+        "activeRange": "7-227-14,17-22",
+        "recovery": 3117,
+        "total": 3345
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockConsidered airborne from frames 4 - 53Completely invincible to attacks from frames 1 - 10"
+    },
+    "blanka_l_backstep_rolling_attack_l": {
+      "displayName": "L Backstep Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "input": "→↘↓↙← + LK",
+      "notation": "63214LK",
+      "shortName": "63214LK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 9
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "blanka_lightning_beast_l_backstep_rolling_attack_l": {
+      "displayName": "[Lightning Beast] L Backstep Rolling Attack",
+      "level": "L",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 9
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or block"
+    },
+    "blanka_m_backstep_rolling_attack_m": {
+      "displayName": "M Backstep Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "input": "→↘↓↙← + MK",
+      "notation": "63214MK",
+      "shortName": "63214MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "blanka_lightning_beast_m_backstep_rolling_attack_m": {
+      "displayName": "[Lightning Beast] M Backstep Rolling Attack",
+      "level": "M",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or block"
+    },
+    "blanka_h_backstep_rolling_attack_h": {
+      "displayName": "H Backstep Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "input": "→↘↓↙← + HK",
+      "notation": "63214HK",
+      "shortName": "63214HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "blanka_lightning_beast_h_backstep_rolling_attack_h": {
+      "displayName": "[Lightning Beast] H Backstep Rolling Attack",
+      "level": "H",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 41,
+        "active": null,
+        "activeRange": "41-until landing",
+        "recovery": 5,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or block"
+    },
+    "blanka_od_backstep_rolling_attack": {
+      "displayName": "OD Backstep Rolling Attack",
+      "level": null,
+      "category": "special",
+      "input": "→↘↓↙← + K",
+      "notation": "63214K",
+      "shortName": "63214K",
+      "damage": 1000,
+      "frameData": {
+        "startup": 8,
+        "active": 661,
+        "activeRange": "8-668-12,41-61,63-66",
+        "recovery": 4,
+        "total": 673
+      },
+      "frameAdvantage": {
+        "onBlock": 6,
+        "onHit": 10
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "First attack produces a juggle state knockdownCan be canceled into Level 2 or 3 Super Art until the 3rd active frame of the first attack"
+    },
+    "blanka_lightning_beast_od_backstep_rolling_attack": {
+      "displayName": "[Lightning Beast] OD Backstep Rolling Attack",
+      "level": null,
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 8,
+        "active": 661,
+        "activeRange": "8-668-12,41-61,63-66",
+        "recovery": 4,
+        "total": 673
+      },
+      "frameAdvantage": {
+        "onBlock": 6,
+        "onHit": 10
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "First attack produces a juggle state knockdownConsumes 100 of the Super Art 2 timerCan transition to Rolling Cannon when the rotating part hits or is blocked"
+    },
+    "blanka_l_aerial_rolling_attack": {
+      "displayName": "L Aerial Rolling Attack",
+      "level": "(During a jump)   L",
+      "category": "special",
+      "context": "(During a jump)",
+      "input": "(During a jump) (Hold ←) → + LP",
+      "notation": "[4]6LP",
+      "shortName": "[4]6LP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "blanka_lightning_beast_l_aerial_rolling_attack": {
+      "displayName": "[Lightning Beast] L Aerial Rolling Attack",
+      "level": "(During a jump)   L",
+      "category": "special",
+      "context": "(During a jump)",
+      "damage": 1100,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockHas cross-up attack properties"
+    },
+    "blanka_m_aerial_rolling_attack": {
+      "displayName": "M Aerial Rolling Attack",
+      "level": "(During a jump)   M",
+      "category": "special",
+      "context": "(During a jump)",
+      "input": "(During a jump) (Hold ←) → + MP",
+      "notation": "[4]6MP",
+      "shortName": "[4]6MP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "blanka_lightning_beast_m_aerial_rolling_attack": {
+      "displayName": "[Lightning Beast] M Aerial Rolling Attack",
+      "level": "(During a jump)   M",
+      "category": "special",
+      "context": "(During a jump)",
+      "damage": 1100,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockHas cross-up attack properties"
+    },
+    "blanka_h_aerial_rolling_attack": {
+      "displayName": "H Aerial Rolling Attack",
+      "level": "(During a jump)   H",
+      "category": "special",
+      "context": "(During a jump)",
+      "input": "(During a jump) (Hold ←) → + HP",
+      "notation": "[4]6HP",
+      "shortName": "[4]6HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "blanka_lightning_beast_h_aerial_rolling_attack": {
+      "displayName": "[Lightning Beast] H Aerial Rolling Attack",
+      "level": "(During a jump)   H",
+      "category": "special",
+      "context": "(During a jump)",
+      "damage": 1100,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 17,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockHas cross-up attack properties"
+    },
+    "blanka_od_aerial_rolling_attack": {
+      "displayName": "OD Aerial Rolling Attack",
+      "level": "(During a jump)",
+      "category": "special",
+      "context": "(During a jump)",
+      "input": "(During a jump) (Hold ←) → + P",
+      "notation": "[4]6P",
+      "shortName": "[4]6P",
+      "damage": 1200,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 15,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "blanka_lightning_beast_od_aerial_rolling_attack": {
+      "displayName": "[Lightning Beast] OD Aerial Rolling Attack",
+      "level": "(During a jump)",
+      "category": "special",
+      "context": "(During a jump)",
+      "damage": 1400,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Consumes 100 of the Super Art 2 timerCan transition to Rolling Cannon on hit or blockHas cross-up attack properties"
+    },
+    "blanka_l_wild_hunt": {
+      "displayName": "L Wild Hunt",
+      "level": "(When near opponent)  L",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 1600,
+      "frameData": {
+        "startup": 34,
+        "active": 3,
+        "activeRange": "34-36",
+        "recovery": 57,
+        "total": 94
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 26"
+    },
+    "blanka_m_wild_hunt": {
+      "displayName": "M Wild Hunt",
+      "level": "(When near opponent)  M",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 1700,
+      "frameData": {
+        "startup": 39,
+        "active": 3,
+        "activeRange": "39-41",
+        "recovery": 57,
+        "total": 99
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 14 - 36"
+    },
+    "blanka_h_wild_hunt": {
+      "displayName": "H Wild Hunt",
+      "level": "(When near opponent)  H",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1800,
+      "frameData": {
+        "startup": 43,
+        "active": 3,
+        "activeRange": "43-45",
+        "recovery": 57,
+        "total": 103
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 18 - 36"
+    },
+    "blanka_od_wild_hunt": {
+      "displayName": "OD Wild Hunt",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 2000,
+      "frameData": {
+        "startup": 32,
+        "active": 3,
+        "activeRange": "32-34",
+        "recovery": 57,
+        "total": 92
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 9 - 36"
+    },
+    "blanka_blanka_chan_bomb": {
+      "displayName": "Blanka-chan Bomb",
+      "level": null,
+      "category": "special",
+      "input": "↓↓ + P",
+      "notation": "22P",
+      "shortName": "22P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Disappears 1000 frames after landing on the groundWorks as a projectile attack when activated by any special moves that produces electricity or comes in contact with a Super Art until the 1000th frameThe trajectory of the thrown doll changes if it touches the edge of the screen"
+    },
+    "blanka_blanka_chan_bomb_activated": {
+      "displayName": "Blanka-chan Bomb (Activated)",
+      "level": "-",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 36,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false
+      },
+      "note": "Start up value is upon being activated"
+    },
+    "blanka_od_blanka_chan_bomb_activated": {
+      "displayName": "OD Blanka-chan Bomb (Activated)",
+      "level": "-",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 36,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false
+      },
+      "note": "Start up value is upon being activated"
+    },
+    "blanka_rolling_cannon": {
+      "displayName": "Rolling Cannon",
+      "level": "(During Lightning Beast)(When performing a rolling-type special move, press any direction)",
+      "category": "special",
+      "context": "(During Lightning Beast)",
+      "input": "(During Lightning Beast) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 400,
+      "frameData": {
+        "startup": 3,
+        "active": 25,
+        "activeRange": "3-27",
+        "recovery": 9,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition into any Rolling-style attack a maximum of 3 times"
+    },
+    "blanka_sa1_shout_of_earth": {
+      "displayName": "SA1 Shout of Earth",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 2000,
+      "frameData": {
+        "startup": 8,
+        "active": 9,
+        "activeRange": "8-16",
+        "recovery": 78,
+        "total": 95
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws from frames 1 - 9Minimum guaranteed damage is set to 30%Values do not change on counter or Punish Counter"
+    },
+    "blanka_lightning_beast_sa1_shout_of_earth": {
+      "displayName": "[Lightning Beast] SA1 Shout of Earth",
+      "level": null,
+      "category": "super",
+      "damage": 2200,
+      "frameData": {
+        "startup": 8,
+        "active": 9,
+        "activeRange": "8-16",
+        "recovery": 78,
+        "total": 95
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws from frames 1 - 9Minimum guaranteed damage is set to 30%Values do not change on counter or Punish Counter"
+    },
+    "blanka_sa2_lightning_beast": {
+      "displayName": "SA2 Lightning Beast",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Super Art 2 timer is set to 1500Changes the properties of special moves except for Wild Hunt while activeAllows any Rolling-type attack to cancel into Rolling Cannon while activeAllows the following attacks to be cancel into without any directional charge- Rolling Attack- Vertical Rolling Attack- Aerial Rolling Attack"
+    },
+    "blanka_sa3_ground_shave_cannonball": {
+      "displayName": "SA3 Ground Shave Cannonball",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4000,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 61,
+        "total": 74
+      },
+      "frameAdvantage": {
+        "onBlock": -46,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 12Considered airborne from frames 2 - 12Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "blanka_ca_ground_shave_cannonball": {
+      "displayName": "CA Ground Shave Cannonball",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4500,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 61,
+        "total": 74
+      },
+      "frameAdvantage": {
+        "onBlock": -46,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 12Considered airborne from frames 2 - 12Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "blanka_wild_fang": {
+      "displayName": "Wild Fang",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "blanka_jungle_flip": {
+      "displayName": "Jungle Flip",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "blanka_wild_bites": {
+      "displayName": "Wild Bites",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) LP + LK",
+      "notation": "LP+LK",
+      "shortName": "LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "blanka_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "blanka_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "blanka_drive_impact_wild_scratch": {
+      "displayName": "Drive Impact: Wild Scratch",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 hits from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallProperties change to the following when the attack lands as a Punish Counter, or after the Super Armor absorbs a hit:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "blanka_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Quick Rolling Attack",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "blanka_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Quick Rolling Attack",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "blanka_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "blanka_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "blanka_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "blanka_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 55,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "blanka_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 55,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

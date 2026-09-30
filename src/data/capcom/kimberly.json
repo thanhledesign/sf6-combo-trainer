@@ -1,0 +1,2167 @@
+{
+  "id": "kimberly",
+  "scrapedAt": "2026-04-25T20:40:32.241Z",
+  "source": "https://www.streetfighter.com/6/character/kimberly",
+  "character": {
+    "bio": "Uninvited student to Guy, the 39th successor to Bushinryu. Kimberly had an ordinary upbringing, but she's a genuine prodigy who graduated college early...and now wants to be a ninja. Loves '80s pop culture.",
+    "vitals": {
+      "height": "5'6",
+      "weight": "134 lbs",
+      "likes": "80's music, sneakers, large numbers",
+      "hates": "Tear-jerker movies"
+    }
+  },
+  "moves": {
+    "kimberly_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 270,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 8,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 270,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 11,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 540,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 18,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 540,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 18,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 630,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 20,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Add +23 frames of advantage on Punish Counter"
+    },
+    "kimberly_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 630,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 17,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 270,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 7,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 180,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 7,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "kimberly_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 500,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 13,
+        "total": 22
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "kimberly_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 540,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 16,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "kimberly_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 720,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 17,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "kimberly_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 810,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 24,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "kimberly_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 270,
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "activeRange": "4-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "kimberly_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 270,
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "kimberly_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 450,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "kimberly_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 540,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "kimberly_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 630,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "kimberly_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 630,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "kimberly_water_slicer_slide_m": {
+      "displayName": "Water Slicer Slide",
+      "level": "M",
+      "category": "normal",
+      "input": "↘ + MK",
+      "notation": "3MK",
+      "shortName": "3MK",
+      "damage": 450,
+      "frameData": {
+        "startup": 11,
+        "active": 10,
+        "activeRange": "11-20",
+        "recovery": 16,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown on Punish Counter if it hits between active frames 1-4"
+    },
+    "kimberly_windmill_kick_h": {
+      "displayName": "Windmill Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HK",
+      "notation": "4HK",
+      "shortName": "4HK",
+      "damage": 720,
+      "frameData": {
+        "startup": 22,
+        "active": 2,
+        "activeRange": "22-23",
+        "recovery": 19,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces opponent to crouch on hit"
+    },
+    "kimberly_hisen_kick_h": {
+      "displayName": "Hisen Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 720,
+      "frameData": {
+        "startup": 27,
+        "active": 3,
+        "activeRange": "27-29",
+        "recovery": 21,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 18 - 32Forces a juggle state when hitting a mid-air opponent* Recovery is reduced by 8 frames when blocked"
+    },
+    "kimberly_step_up": {
+      "displayName": "Step Up",
+      "level": "(After Hisen Kick)",
+      "category": "normal",
+      "context": "(After Hisen Kick)",
+      "input": "(After Hisen Kick) ↖ + /8/9",
+      "notation": "7/8/9",
+      "shortName": "7/8/9",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 3,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": -10
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "kimberly_elbow_drop": {
+      "displayName": "Elbow Drop",
+      "level": "(At the peak of a forward jump)  M",
+      "category": "normal",
+      "context": "(At the peak of a forward jump)",
+      "input": "(At the peak of a forward jump) ↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 540,
+      "frameData": {
+        "startup": 13,
+        "active": 13,
+        "activeRange": "13-25",
+        "recovery": 8,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "kimberly_bushin_tiger_fangs": {
+      "displayName": "Bushin Tiger Fangs",
+      "level": "MH",
+      "category": "normal",
+      "input": "MP + HP",
+      "notation": "MPHP",
+      "shortName": "MPHP",
+      "damage": 360,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 26,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "kimberly_bushin_prism_strikes_2": {
+      "displayName": "Bushin Prism Strikes(2)",
+      "level": "LM",
+      "category": "normal",
+      "damage": 360,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 18,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_bushin_prism_strikes_3": {
+      "displayName": "Bushin Prism Strikes(3)",
+      "level": "LMH",
+      "category": "normal",
+      "damage": 440,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 25,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_bushin_prism_strikes_4": {
+      "displayName": "Bushin Prism Strikes(4)",
+      "level": "LMHH",
+      "category": "normal",
+      "damage": 520,
+      "frameData": {
+        "startup": 26,
+        "active": 3,
+        "activeRange": "26-28",
+        "recovery": 24,
+        "total": 53
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponentRecovery is reduced by 5 frame on hit"
+    },
+    "kimberly_bushin_hellchain_3": {
+      "displayName": "Bushin Hellchain(3)",
+      "level": "LM  H",
+      "category": "normal",
+      "damage": 580,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 25,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_bushin_hellchain_4": {
+      "displayName": "Bushin Hellchain(4)",
+      "level": "LM  HH",
+      "category": "normal",
+      "damage": 750,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 24,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_bushin_hellchain_throw": {
+      "displayName": "Bushin Hellchain Throw",
+      "level": "LM  H  H",
+      "category": "normal",
+      "input": "↓↓ + LPMPHPHK",
+      "notation": "22LPMPHPHK",
+      "shortName": "22LPMPHPHK",
+      "damage": 750,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 23,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_l_bushin_senpukyaku_l": {
+      "displayName": "L Bushin Senpukyaku",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 990,
+      "frameData": {
+        "startup": 6,
+        "active": 361,
+        "activeRange": "6-366-11, 13-18*,20-25, 34-36",
+        "recovery": 17,
+        "total": 384
+      },
+      "frameAdvantage": {
+        "onBlock": -30,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 11Considered airborne from frames 7 - 42Invincible to throws from frames 7 - 11"
+    },
+    "kimberly_m_bushin_senpukyaku_m": {
+      "displayName": "M Bushin Senpukyaku",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 1080,
+      "frameData": {
+        "startup": 7,
+        "active": 371,
+        "activeRange": "7-377-12,14-19*, 21-26, 35-37",
+        "recovery": 17,
+        "total": 395
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 7 - 12Considered airborne from frames 8 - 45Invincible to throws from frames 8 - 12"
+    },
+    "kimberly_h_bushin_senpukyaku_h": {
+      "displayName": "H Bushin Senpukyaku",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 1170,
+      "frameData": {
+        "startup": 8,
+        "active": 381,
+        "activeRange": "8-388-13, 15-20*, 22-27, 36-38",
+        "recovery": 17,
+        "total": 406
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 13Considered airborne from frames 9 - 49Invincible to throws from frames 9 - 13"
+    },
+    "kimberly_od_bushin_senpukyaku": {
+      "displayName": "OD Bushin Senpukyaku",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 1410,
+      "frameData": {
+        "startup": 6,
+        "active": 351,
+        "activeRange": "6-356-11, 13-18, 20-25, 27-32, 34-35",
+        "recovery": 17,
+        "total": 374
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11Considered airborne from frames 7 - 47Invincible to throws from frames 7 - 11Only the 4th hit can be canceled into a Level 2 Super Art"
+    },
+    "kimberly_aerial_bushin_senpukyaku": {
+      "displayName": "Aerial Bushin Senpukyaku",
+      "level": "(During a forward jump)",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 900,
+      "frameData": {
+        "startup": 8,
+        "active": 271,
+        "activeRange": "8-278-9, 17-18, 26-27",
+        "recovery": 12,
+        "total": 291
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_od_aerial_bushin_senpukyaku": {
+      "displayName": "OD Aerial Bushin Senpukyaku",
+      "level": "(During a forward jump)",
+      "category": "special",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 990,
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "activeRange": "8-27 8-9, 12-14*, 17-18, 21-23*, 26-27",
+        "recovery": 12,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "kimberly_sprint": {
+      "displayName": "Sprint",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 55,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Kimberly can transition to branching attacks from the 8th frameAfter the 16th frame, if the opponent is within a certain distance, Kimberly will automatically perform Arc Step"
+    },
+    "kimberly_od_sprint": {
+      "displayName": "OD Sprint",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 54,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Kimberly can transition to Emergency Stop from the 6th frameKimberly can transition to Torso Cleaver, Shadow Slide and Neck Hunter from the 8th frameAfter the 14th frame, if the opponent is within a certain distance, Kimberly will automatically perform Arc Step"
+    },
+    "kimberly_emergency_stop": {
+      "displayName": "Emergency Stop",
+      "level": "(During Sprint)",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 14,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "kimberly_od_emergency_stop": {
+      "displayName": "OD Emergency Stop",
+      "level": "(During OD Sprint)",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 13,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "kimberly_torso_cleaver": {
+      "displayName": "Torso Cleaver",
+      "level": "(During Sprint)L",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) LK",
+      "notation": "LK",
+      "shortName": "LK",
+      "damage": 900,
+      "frameData": {
+        "startup": 21,
+        "active": 7,
+        "activeRange": "21-27",
+        "recovery": 16,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "kimberly_od_torso_cleaver": {
+      "displayName": "OD Torso Cleaver",
+      "level": "(During OD Sprint)L",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) LK",
+      "notation": "LK",
+      "shortName": "LK",
+      "damage": 1080,
+      "frameData": {
+        "startup": 17,
+        "active": 2301,
+        "activeRange": "17-2317-18, 19-23",
+        "recovery": 16,
+        "total": 2334
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "kimberly_shadow_slide": {
+      "displayName": "Shadow Slide",
+      "level": "(During Sprint)M",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) MK",
+      "notation": "MK",
+      "shortName": "MK",
+      "damage": 720,
+      "frameData": {
+        "startup": 10,
+        "active": 12,
+        "activeRange": "10-21",
+        "recovery": 19,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "kimberly_od_shadow_slide": {
+      "displayName": "OD Shadow Slide",
+      "level": "(During OD Sprint)M",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) MK",
+      "notation": "MK",
+      "shortName": "MK",
+      "damage": 900,
+      "frameData": {
+        "startup": 8,
+        "active": 191,
+        "activeRange": "8-198-15, 16-19",
+        "recovery": 19,
+        "total": 218
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "lowlow",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "kimberly_neck_hunter": {
+      "displayName": "Neck Hunter",
+      "level": "(During Sprint)H",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) HK",
+      "notation": "HK",
+      "shortName": "HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 19,
+        "active": 5,
+        "activeRange": "19-23",
+        "recovery": 19,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "kimberly_od_neck_hunter": {
+      "displayName": "OD Neck Hunter",
+      "level": "(During OD Sprint)H",
+      "category": "special",
+      "context": "(During Sprint)",
+      "input": "(During Sprint) HK",
+      "notation": "HK",
+      "shortName": "HK",
+      "damage": 1080,
+      "frameData": {
+        "startup": 15,
+        "active": 1901,
+        "activeRange": "15-1915-16, 17-19",
+        "recovery": 19,
+        "total": 1935
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "midmid",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Produces a ground bound during a mid-air hit"
+    },
+    "kimberly_arc_step": {
+      "displayName": "Arc Step",
+      "level": "(Automatically activates after getting close with Sprint)",
+      "category": "special",
+      "context": "(Automatically activates after getting close with Sprint)",
+      "damage": 450,
+      "frameData": {
+        "startup": 6,
+        "active": 151,
+        "activeRange": "6-156-7, 14-15",
+        "recovery": 264,
+        "total": 421
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 7 - 41Can transition into branching attacks from frame 33"
+    },
+    "kimberly_od_arc_step": {
+      "displayName": "OD Arc Step",
+      "level": "(Automatically activates after getting close with OD Sprint)",
+      "category": "special",
+      "context": "(Automatically activates after getting close with OD Sprint)",
+      "damage": 270,
+      "frameData": {
+        "startup": 6,
+        "active": 151,
+        "activeRange": "6-156-7, 14-15",
+        "recovery": 264,
+        "total": 421
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 7 - 41Can transition into branching attacks from frame 33"
+    },
+    "kimberly_bushin_izuna_otoshi": {
+      "displayName": "Bushin Izuna Otoshi",
+      "level": "(During Arc Step)",
+      "category": "special",
+      "context": "(During Arc Step)",
+      "input": "(During Arc Step) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 1440,
+      "frameData": {
+        "startup": 13,
+        "active": 6,
+        "activeRange": "13-18",
+        "recovery": 40,
+        "total": 59
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 1656 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 1324 individual damage when the attack lands as a Punish Counter"
+    },
+    "kimberly_od_bushin_izuna_otoshi": {
+      "displayName": "OD Bushin Izuna Otoshi",
+      "level": "(During OD Arc Step)",
+      "category": "special",
+      "context": "(During Arc Step)",
+      "input": "(During Arc Step) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 900,
+      "frameData": {
+        "startup": 13,
+        "active": 6,
+        "activeRange": "13-18",
+        "recovery": 40,
+        "total": 59
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 1035 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 828 individual damage when the attack lands as a Punish Counter"
+    },
+    "kimberly_bushin_hojin_kick": {
+      "displayName": "Bushin Hojin Kick",
+      "level": "(During Arc Step)",
+      "category": "special",
+      "context": "(During Arc Step)",
+      "input": "(During Arc Step) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 630,
+      "frameData": {
+        "startup": 13,
+        "active": 6,
+        "activeRange": "13-18",
+        "recovery": 20,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "kimberly_od_bushin_hojin_kick": {
+      "displayName": "OD Bushin Hojin Kick",
+      "level": "(During OD Arc Step)",
+      "category": "special",
+      "context": "(During Arc Step)",
+      "input": "(During Arc Step) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 630,
+      "frameData": {
+        "startup": 13,
+        "active": 6,
+        "activeRange": "13-18",
+        "recovery": 20,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Only transitions to the 2nd attack on hitProduces a wall splat on hit"
+    },
+    "kimberly_l_vagabond_edge_l": {
+      "displayName": "L Vagabond Edge",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 810,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 21,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "kimberly_m_vagabond_edge_m": {
+      "displayName": "M Vagabond Edge",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 1080,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "17-43*17-18, 41-43*",
+        "recovery": 28,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "* Will only transition to 2nd attack if the first attack hits"
+    },
+    "kimberly_h_vagabond_edge_h": {
+      "displayName": "H Vagabond Edge",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 540,
+      "frameData": {
+        "startup": 24,
+        "active": null,
+        "activeRange": "24- 45*24-25, 45*",
+        "recovery": 28,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "* Will only transition to 2nd attack if the first attack hits   The 2nd attack can be canceled by a jump"
+    },
+    "kimberly_od_vagabond_edge": {
+      "displayName": "OD Vagabond Edge",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 540,
+      "frameData": {
+        "startup": 17,
+        "active": 3801,
+        "activeRange": "17- 3817-18, 38",
+        "recovery": 28,
+        "total": 3846
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "* Will only transition to 2nd attack if the first attack hits   The 2nd attack can be canceled by a jump"
+    },
+    "kimberly_hidden_variable": {
+      "displayName": "Hidden Variable",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 43,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 19 - 26Can be canceled into anything except walk/dashes, Drive Parry, Block and Hidden Variable from the 34th frame"
+    },
+    "kimberly_od_hidden_variable": {
+      "displayName": "OD Hidden Variable",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 3,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 20 - 27Can be canceled into a mid-air attack from the 34th frame* Landing recovery can be canceled by anything except walk/dashes"
+    },
+    "kimberly_genius_at_play": {
+      "displayName": "Genius at Play",
+      "level": null,
+      "category": "special",
+      "input": "↓↓ + P",
+      "notation": "22P",
+      "shortName": "22P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Adds a Shuriken Bomb stock on frame 43"
+    },
+    "kimberly_od_genius_at_play": {
+      "displayName": "OD Genius at Play",
+      "level": null,
+      "category": "special",
+      "input": "↓↓ + P",
+      "notation": "22P",
+      "shortName": "22P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Adds 2 Shuriken Bomb stock on frame 43"
+    },
+    "kimberly_l_shuriken_bomb": {
+      "displayName": "L Shuriken Bomb",
+      "level": "(With at least 1 Shuriken Bomb stock)  L",
+      "category": "special",
+      "context": "(With at least 1 Shuriken Bomb stock)",
+      "input": "(With at least 1 Shuriken Bomb stock) ↓↓ + LP",
+      "notation": "22LP",
+      "shortName": "22LP",
+      "damage": 450,
+      "frameData": {
+        "startup": 122,
+        "active": null,
+        "activeRange": "122-131*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires a projectile on the 18th frameDecreases the Shuriken Bomb stock by 1* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_m_shuriken_bomb": {
+      "displayName": "M Shuriken Bomb",
+      "level": "(With at least 1 Shuriken Bomb stock)  M",
+      "category": "special",
+      "context": "(With at least 1 Shuriken Bomb stock)",
+      "input": "(With at least 1 Shuriken Bomb stock) ↓↓ + MP",
+      "notation": "22MP",
+      "shortName": "22MP",
+      "damage": 450,
+      "frameData": {
+        "startup": 124,
+        "active": null,
+        "activeRange": "124-133*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires a projectile on the 18th frameDecreases the Shuriken Bomb stock by 1* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_h_shuriken_bomb": {
+      "displayName": "H Shuriken Bomb",
+      "level": "(With at least 1 Shuriken Bomb stock)  H",
+      "category": "special",
+      "context": "(With at least 1 Shuriken Bomb stock)",
+      "input": "(With at least 1 Shuriken Bomb stock) ↓↓ + HP",
+      "notation": "22HP",
+      "shortName": "22HP",
+      "damage": 450,
+      "frameData": {
+        "startup": 128,
+        "active": null,
+        "activeRange": "128-137*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires a projectile on the 18th frameDecreases the Shuriken Bomb stock by 1* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_l_shuriken_bomb_spread": {
+      "displayName": "L Shuriken Bomb Spread",
+      "level": "(With at least 2 Shuriken Bomb stocks)  LM",
+      "category": "special",
+      "context": "(With at least 2 Shuriken Bomb stocks)",
+      "input": "(With at least 2 Shuriken Bomb stocks) ↓↓ + PMP",
+      "notation": "22PMP",
+      "shortName": "22PMP",
+      "damage": 450,
+      "frameData": {
+        "startup": 122,
+        "active": null,
+        "activeRange": "122-131、170-179*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires 2 projectiles on the 18th frameDecreases the Shuriken Bomb stock by 2* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_m_shuriken_bomb_spread": {
+      "displayName": "M Shuriken Bomb Spread",
+      "level": "(With at least 2 Shuriken Bomb stocks)  LH",
+      "category": "special",
+      "context": "(With at least 2 Shuriken Bomb stocks)",
+      "input": "(With at least 2 Shuriken Bomb stocks) ↓↓ + PHP",
+      "notation": "22PHP",
+      "shortName": "22PHP",
+      "damage": 450,
+      "frameData": {
+        "startup": 122,
+        "active": null,
+        "activeRange": "122-131、128-137*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires 2 projectiles on the 18th frameDecreases the Shuriken Bomb stock by 2* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_h_shuriken_bomb_spread": {
+      "displayName": "H Shuriken Bomb Spread",
+      "level": "(With at least 2 Shuriken Bomb stocks)  MH",
+      "category": "special",
+      "context": "(With at least 2 Shuriken Bomb stocks)",
+      "input": "(With at least 2 Shuriken Bomb stocks) ↓↓ + PHP",
+      "notation": "22PHP",
+      "shortName": "22PHP",
+      "damage": 450,
+      "frameData": {
+        "startup": 124,
+        "active": null,
+        "activeRange": "124-133、174-183*",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires 2 projectiles on the 18th frameDecreases the Shuriken Bomb stock by 2* Values represent when the attack is performed in the middle of the screen"
+    },
+    "kimberly_nue_twister": {
+      "displayName": "Nue Twister",
+      "level": "(During a jump) (When near opponent)",
+      "category": "special",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) ↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 1440,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 20,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "*Does 1656 individual damage when the attack lands as a Punish Counter"
+    },
+    "kimberly_od_nue_twister": {
+      "displayName": "OD Nue Twister",
+      "level": "(During a jump) (When near opponent)",
+      "category": "special",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) ↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 900,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 20,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "*Does 1035 individual damage when the attack lands as a Punish Counter"
+    },
+    "kimberly_sa1_bushin_beats": {
+      "displayName": "SA1 Bushin Beats",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 1800,
+      "frameData": {
+        "startup": 10,
+        "active": 15,
+        "activeRange": "10-24",
+        "recovery": 40,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -25,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws on frames 1 - 14Minimum guaranteed damage is 30%Values do not change on counter or Punish Counter"
+    },
+    "kimberly_sa1_bushin_thunderous_beats": {
+      "displayName": "SA1 Bushin Thunderous Beats",
+      "level": "(With at least 1 Shuriken Bomb stock)  Hold",
+      "category": "super",
+      "context": "(With at least 1 Shuriken Bomb stock) (During Bushin Beats)",
+      "input": "(With at least 1 Shuriken Bomb stock) (During Bushin Beats) ?key-barrage.png?K",
+      "notation": "?key-barrage.png?K",
+      "shortName": "?key-barrage.png?K",
+      "damage": 2200,
+      "frameData": {
+        "startup": 10,
+        "active": 15,
+        "activeRange": "10-24",
+        "recovery": 40,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -25,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws on frames 1 - 14Minimum guaranteed damage is 30%Values do not change on counter or Punish Counter"
+    },
+    "kimberly_sa2_bushin_scramble": {
+      "displayName": "SA2 Bushin Scramble",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 2800,
+      "frameData": {
+        "startup": 13,
+        "active": 8,
+        "activeRange": "13-20",
+        "recovery": 39,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": -25,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible on the 1st frameConsidered airborne from frames 1- 20Minimum guaranteed damage is 40%Values do not change on counter or Punish Counter"
+    },
+    "kimberly_sa2_soaring_bushin_scramble": {
+      "displayName": "SA2 Soaring Bushin Scramble",
+      "level": "(During a forward jump)",
+      "category": "super",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 2800,
+      "frameData": {
+        "startup": 13,
+        "active": null,
+        "activeRange": "13-until landing",
+        "recovery": 39,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible on the 1st frameConsidered airborne from frame 1 and onMinimum guaranteed damage is 40%Values do not change on counter or Punish Counter"
+    },
+    "kimberly_sa3_bushin_ninjastar_cypher": {
+      "displayName": "SA3 Bushin Ninjastar Cypher",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 51,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 13On the first frame, the following boosts are activated and remain until the end of the match- Attack damage up 111%- Walk speed increasedMinimum guaranteed damage is 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "kimberly_ca_bushin_ninjastar_cypher": {
+      "displayName": "CA Bushin Ninjastar Cypher",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 51,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 13On the first frame, the following boosts are activated and remain until the end of the match- Attack damage up 111%- Walk speed increasedMinimum guaranteed damage is 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "kimberly_ripcord_throw": {
+      "displayName": "Ripcord Throw",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1082,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 1838 (1839)- Super Art gauge increases by 4000- Produces a Hard Knockdown"
+    },
+    "kimberly_bell_ringer": {
+      "displayName": "Bell Ringer",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1082,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 1838 (1839)- Super Art gauge increases by 4000- Produces a Hard Knockdown"
+    },
+    "kimberly_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 18,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "kimberly_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "kimberly_drive_impact_steadfast_strike": {
+      "displayName": "Drive Impact: Steadfast Strike",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 720,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 hits from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallProperties change to the following when the attack lands as a Punish Counter, or after the Super Armor absorbs a hit:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "kimberly_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Shapeless State",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "kimberly_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Shapeless State",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "kimberly_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "kimberly_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "kimberly_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "kimberly_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "kimberly_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

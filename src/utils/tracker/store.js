@@ -91,7 +91,7 @@ export const trackerStore = {
    * @param {Partial<import('./types.js').Match> & {result: 'W'|'L'}} input
    * @returns {Promise<import('./types.js').Match>}
    */
-  async addMatch({ result, yourCharacter, opponentCharacter, notes, lossTags }) {
+  async addMatch({ result, yourCharacter, opponentCharacter, notes, lossTags, stage }) {
     let session = await this.getActiveSession();
     if (!session) session = await this.startSession();
     const match = {
@@ -103,6 +103,7 @@ export const trackerStore = {
       ...(opponentCharacter && { opponentCharacter }),
       ...(notes && { notes }),
       ...(lossTags && lossTags.length > 0 && { lossTags }),
+      ...(stage && { stage }),
     };
     const matches = await list(KEYS.matches);
     matches.push(match);

@@ -1,0 +1,1796 @@
+{
+  "id": "zangief",
+  "scrapedAt": "2026-04-25T20:42:32.125Z",
+  "source": "https://www.streetfighter.com/6/character/zangief",
+  "character": {
+    "bio": "A colossal wrestler nicknamed the Red Cyclone. Zangief is dedicated to physical improvement and instructing his students.",
+    "vitals": {
+      "height": "7'0",
+      "weight": "399 lbs",
+      "likes": "Wrestling, Cossack dancing",
+      "hates": "Projectiles (Hadokens, etc.)"
+    }
+  },
+  "moves": {
+    "zangief_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 400,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 9,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_rapid_cancel_version_standing_light_punch_l": {
+      "displayName": "(Rapid cancel version)Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 400,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 9,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 400,
+      "frameData": {
+        "startup": 7,
+        "active": 2,
+        "activeRange": "7-8",
+        "recovery": 17,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "zangief_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 17,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 4,
+        "activeRange": "10-13",
+        "recovery": 19,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 22,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when the attack lands as a Punish Counter5 frames of recovery added when the attack missesWhen the button is held, 1 hit of super armor is added to the upper half of the body from frame 4Hold down the button for over 23 frames to change its properties"
+    },
+    "zangief_standing_heavy_punch_charged": {
+      "displayName": "Standing Heavy Punch(Charged)",
+      "level": "Hold H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 1400,
+      "frameData": {
+        "startup": 32,
+        "active": 3,
+        "activeRange": "32-34",
+        "recovery": 22,
+        "total": 57
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 1 attack from frames 4 - 34juggle state time increased when attack lands as a Punish Counter2 frames of recovery added when the attack misses"
+    },
+    "zangief_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 13,
+        "active": 4,
+        "activeRange": "13-16",
+        "recovery": 21,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponentForce a juggle state and increase juggle state time when attack lands as a Punish Counter"
+    },
+    "zangief_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 2,
+        "activeRange": "6-7",
+        "recovery": 8,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_rapid_cancel_version_crouching_light_punch_l": {
+      "displayName": "(Rapid cancel version)Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 3,
+        "active": 2,
+        "activeRange": "3-4",
+        "recovery": 8,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 250,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_rapid_cancel_version_crouching_light_kick_l": {
+      "displayName": "(Rapid cancel version)Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 250,
+      "frameData": {
+        "startup": 3,
+        "active": 3,
+        "activeRange": "3-5",
+        "recovery": 12,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "zangief_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 16,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "zangief_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 18,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "zangief_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 11,
+        "active": 9,
+        "activeRange": "11-19",
+        "recovery": 35,
+        "total": 55
+      },
+      "frameAdvantage": {
+        "onBlock": -20,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Increase juggle state time when attack lands as a Punish CounterProduces a ground bound on Punish Counter"
+    },
+    "zangief_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 27,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "zangief_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 7,
+        "activeRange": "5-11",
+        "recovery": 3,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "zangief_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "zangief_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "zangief_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 8,
+        "activeRange": "8-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "zangief_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "zangief_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Hold down the button for over 20 frames to change its properties"
+    },
+    "zangief_jumping_heavy_kick_charged": {
+      "displayName": "Jumping Heavy Kick(Charged)",
+      "level": "(During a jump) Hold H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 32,
+        "active": 6,
+        "activeRange": "32-37",
+        "recovery": 20,
+        "total": 58
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Transitions to unique hit and block action, and adds 10 frames to landing recoveryForces a wall bound on Punish Counter"
+    },
+    "zangief_hellstab_m": {
+      "displayName": "Hellstab",
+      "level": "M",
+      "category": "normal",
+      "input": "↘ + MP",
+      "notation": "3MP",
+      "shortName": "3MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 21,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "zangief_knee_hammer_m": {
+      "displayName": "Knee Hammer",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 14,
+        "active": 7,
+        "activeRange": "14-20",
+        "recovery": 13,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_headbutt_h": {
+      "displayName": "Headbutt",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 14,
+        "active": 5,
+        "activeRange": "14-18",
+        "recovery": 15,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 8
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery added when the attack misses"
+    },
+    "zangief_cyclone_wheel_kick_h": {
+      "displayName": "Cyclone Wheel Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 22,
+        "active": 7,
+        "activeRange": "22-28",
+        "recovery": 25,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Produces a ground bound on Punish Counter"
+    },
+    "zangief_smetana_dropkick_h": {
+      "displayName": "Smetana Dropkick",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HK",
+      "notation": "3HK",
+      "shortName": "3HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 16,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 40,
+        "total": 60
+      },
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Throw invincible from frames 5 - 26Wall splat effect added on Punish Counter"
+    },
+    "zangief_flying_body_press": {
+      "displayName": "Flying Body Press",
+      "level": "(During a jump)   H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 9,
+        "activeRange": "9-17",
+        "recovery": 8,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "zangief_flying_headbutt": {
+      "displayName": "Flying Headbutt",
+      "level": "(During a neutral jump)  H",
+      "category": "normal",
+      "context": "(During a neutral jump)",
+      "input": "(During a neutral jump) ↑ + HP",
+      "notation": "8HP",
+      "shortName": "8HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 3,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "zangief_machine_gun_chops_2": {
+      "displayName": "Machine Gun Chops(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 20,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_machine_gun_chops_3": {
+      "displayName": "Machine Gun Chops(3)",
+      "level": "MMM",
+      "category": "normal",
+      "damage": 900,
+      "frameData": {
+        "startup": 15,
+        "active": 3,
+        "activeRange": "15-17",
+        "recovery": 32,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -17,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_power_stomps_1_m": {
+      "displayName": "Power Stomps(1)",
+      "level": "M",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 17,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "zangief_power_stomps_2": {
+      "displayName": "Power Stomps(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 19,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "zangief_power_stomps_3": {
+      "displayName": "Power Stomps(3)",
+      "level": "MMM",
+      "category": "normal",
+      "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 24,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "zangief_double_lariat": {
+      "displayName": "Double Lariat",
+      "level": null,
+      "category": "special",
+      "input": "P + P",
+      "notation": "PP",
+      "shortName": "PP",
+      "damage": 1400,
+      "frameData": {
+        "startup": 15,
+        "active": 4501,
+        "activeRange": "15-4515-16, 26-27, 36-37, 44-45",
+        "recovery": 27,
+        "total": 4543
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Projectile invincibility from frames 6 - 45Press left or right during the attack to move"
+    },
+    "zangief_od_double_lariat": {
+      "displayName": "OD Double Lariat",
+      "level": "L\n    M\n    H",
+      "category": "special",
+      "input": "P + P",
+      "notation": "PP",
+      "shortName": "PP",
+      "damage": 1700,
+      "frameData": {
+        "startup": 12,
+        "active": 3601,
+        "activeRange": "12-3612-13, 16-17, 21-22, 29-30, 35-36",
+        "recovery": 26,
+        "total": 3639
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Projectile invincibility from frames 1 - 36Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 12Press left or right during the attack to moveFirst attack produces a crumple stun on hit"
+    },
+    "zangief_l_screw_piledriver": {
+      "displayName": "L Screw Piledriver",
+      "level": "(When near opponent)  L",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?LP",
+      "notation": "?key-circle.png?LP",
+      "shortName": "?key-circle.png?LP",
+      "damage": 2500,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 54,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Does 2875 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_m_screw_piledriver": {
+      "displayName": "M Screw Piledriver",
+      "level": "(When near opponent)  M",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?MP",
+      "notation": "?key-circle.png?MP",
+      "shortName": "?key-circle.png?MP",
+      "damage": 2900,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 54,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Does 3335 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_h_screw_piledriver": {
+      "displayName": "H Screw Piledriver",
+      "level": "(When near opponent)  H",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?HP",
+      "notation": "?key-circle.png?HP",
+      "shortName": "?key-circle.png?HP",
+      "damage": 3300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 54,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3795 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3795 individual damage when the attack lands as a Punish Counter*Does 3036 individual damage using simplified inputs"
+    },
+    "zangief_od_screw_piledriver": {
+      "displayName": "OD Screw Piledriver",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ?key-circle.png?P",
+      "notation": "?key-circle.png?P",
+      "shortName": "?key-circle.png?P",
+      "damage": 3400,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 54,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "\"With Classic ControlsDoes 3910 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3910 individual damage when the attack lands as a Punish Counter*Does 3128 individual damage using simplified inputs\""
+    },
+    "zangief_borscht_dynamite": {
+      "displayName": "Borscht Dynamite",
+      "level": "(During a jump) (When near opponent)",
+      "category": "special",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) ?key-circle.png?K",
+      "notation": "?key-circle.png?K",
+      "shortName": "?key-circle.png?K",
+      "damage": 2900,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 16,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Only hits airborne opponentsWith Classic ControlsDoes 3260 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3260 individual damage when the attack lands as a Punish Counter*Does 2608 individual damage using simplified inputs"
+    },
+    "zangief_od_borscht_dynamite": {
+      "displayName": "OD Borscht Dynamite",
+      "level": "(During a jump) (When near opponent)",
+      "category": "special",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) ?key-circle.png?K",
+      "notation": "?key-circle.png?K",
+      "shortName": "?key-circle.png?K",
+      "damage": 3000,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 16,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Only hits airborne opponentsWith Classic ControlsDoes 3375 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3375 individual damage when the attack lands as a Punish Counter*Does 2700 individual damage using simplified inputs"
+    },
+    "zangief_russian_suplex": {
+      "displayName": "Russian Suplex",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) →↘↓↙← + K",
+      "notation": "63214K",
+      "shortName": "63214K",
+      "damage": 2900,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 50,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3335 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3335 individual damage when the attack lands as a Punish Counter*Does 2668 individual damage using simplified inputs"
+    },
+    "zangief_od_russian_suplex": {
+      "displayName": "OD Russian Suplex",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) →↘↓↙← + K",
+      "notation": "63214K",
+      "shortName": "63214K",
+      "damage": 3200,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 50,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3680 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 2944 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_siberian_express_close_range": {
+      "displayName": "Siberian Express(Close range)",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "damage": 2700,
+      "frameData": {
+        "startup": 28,
+        "active": 2,
+        "activeRange": "28-29",
+        "recovery": 41,
+        "total": 71
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3105 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 2484 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_od_siberian_express_close_range": {
+      "displayName": "OD Siberian Express(Close range)",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "damage": 3000,
+      "frameData": {
+        "startup": 23,
+        "active": 2,
+        "activeRange": "23-24",
+        "recovery": 44,
+        "total": 69
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 3450 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 2760 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_siberian_express_far_range": {
+      "displayName": "Siberian Express(Far range)",
+      "level": "(When far from opponent)",
+      "category": "special",
+      "context": "(When far from opponent)",
+      "damage": 2700,
+      "frameData": {
+        "startup": 55,
+        "active": 2,
+        "activeRange": "55-56",
+        "recovery": 40,
+        "total": 97
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Super Armor for 1 attack from frames 10 - 56Travel distance changes depending on the distance from the opponent*Frame data displays the shortest distanceWith Classic ControlsDoes 3105 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 2484 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_od_siberian_express_far_range": {
+      "displayName": "OD Siberian Express(Far range)",
+      "level": "(When far from opponent)",
+      "category": "special",
+      "context": "(When far from opponent)",
+      "damage": 3000,
+      "frameData": {
+        "startup": 54,
+        "active": 2,
+        "activeRange": "54-55",
+        "recovery": 40,
+        "total": 96
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks from frames 3 - 55Travel distance changes depending on the distance from the opponent*Frame data displays the shortest distanceWith Classic ControlsDoes 3450 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 2760 individual damage when the attack lands as a Punish Counter"
+    },
+    "zangief_tundra_storm_h": {
+      "displayName": "Tundra Storm",
+      "level": "H",
+      "category": "special",
+      "input": "↓↓ + HK",
+      "notation": "22HK",
+      "shortName": "22HK",
+      "damage": 2400,
+      "frameData": {
+        "startup": 5,
+        "active": 51,
+        "activeRange": "5-55",
+        "recovery": 24,
+        "total": 80
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      }
+    },
+    "zangief_sa1_aerial_russian_slam": {
+      "displayName": "SA1 Aerial Russian Slam",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 3500,
+      "frameData": {
+        "startup": 11,
+        "active": 7,
+        "activeRange": "11-17",
+        "recovery": 60,
+        "total": 78
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1- 17Considered airborne from frames 2 - 30Can only work on mid-air opponentsMinimum guaranteed damage is 30%Does 2100 individual damage when using simplified inputsAs the simplified input damage figure above is after it has already been scaled to 80%, the 30% minimum guaranteed damage will equal 787 damage when using simplified inputsValues do not change on counter or Punish Counter"
+    },
+    "zangief_sa2_cyclone_lariat_charged": {
+      "displayName": "SA2 Cyclone Lariat(Charged)",
+      "level": null,
+      "category": "super",
+      "damage": 1100,
+      "frameData": {
+        "startup": 18,
+        "active": null,
+        "activeRange": "*18-122*18-111, 33-35, 41-42, 50-51, 60-61, 69-70, 79-80, 90-91, 99-100, 110-111, 120-122",
+        "recovery": 52,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -35,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1- 18Projectile invincibility from frames 19 - 122Shifts to throw when the button is not held downMinimum guaranteed damage is 40%Values do not change on counter or Punish Counter* Active vaccuum hitbox"
+    },
+    "zangief_sa2_cyclone_lariat_immediately": {
+      "displayName": "SA2 Cyclone Lariat(immediately)",
+      "level": null,
+      "category": "super",
+      "damage": 3100,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "zangief_sa2_cyclone_lariat_movement": {
+      "displayName": "SA2 Cyclone Lariat(Movement)",
+      "level": null,
+      "category": "super",
+      "damage": 3000,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Press left or right to move"
+    },
+    "zangief_sa3_bolshoi_storm_buster": {
+      "displayName": "SA3 Bolshoi Storm Buster",
+      "level": "(When near opponent)",
+      "category": "super",
+      "context": "(When near opponent) (More powerful when vitality is at 25% or below)",
+      "input": "(When near opponent) (More powerful when vitality is at 25% or below) ?key-circle.png??key-circle.png?P",
+      "notation": "?key-circle.png??key-circle.png?P",
+      "shortName": "?key-circle.png??key-circle.png?P",
+      "damage": 4800,
+      "frameData": {
+        "startup": 60,
+        "active": 2,
+        "activeRange": "6-7",
+        "recovery": 116,
+        "total": 178
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1- 7Minimum guaranteed damage is 50%Values do not change on counter or Punish Counter"
+    },
+    "zangief_ca_bolshoi_storm_buster": {
+      "displayName": "CA Bolshoi Storm Buster",
+      "level": "(When near opponent)(when under 25% vitality)",
+      "category": "super",
+      "context": "(When near opponent) (More powerful when vitality is at 25% or below)",
+      "input": "(When near opponent) (More powerful when vitality is at 25% or below) ?key-circle.png??key-circle.png?P",
+      "notation": "?key-circle.png??key-circle.png?P",
+      "shortName": "?key-circle.png??key-circle.png?P",
+      "damage": 5300,
+      "frameData": {
+        "startup": 60,
+        "active": 2,
+        "activeRange": "6-7",
+        "recovery": 116,
+        "total": 178
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1- 7Minimum guaranteed damage is 50%Values do not change on counter or Punish Counter"
+    },
+    "zangief_bodyslam": {
+      "displayName": "Bodyslam",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent) (Hold the button to perform a follow-up attack)",
+      "input": "(When near opponent) (Hold the button to perform a follow-up attack) LP + LK",
+      "notation": "5LP+LK",
+      "shortName": "5LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 2040- Super Art gauge increases by 3800- Produces a Hard KnockdownPress the throw button again during the animation for 600 extra damage"
+    },
+    "zangief_capture_suplex": {
+      "displayName": "Capture Suplex",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1400,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 2380- Super Art gauge increases by 4000- Produces a Hard Knockdown"
+    },
+    "zangief_german_suplex": {
+      "displayName": "German Suplex",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) → + LP + LK",
+      "notation": "6LP+LK",
+      "shortName": "6LP+LK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 2550- Super Art gauge increases by 6000- Produces a Hard Knockdown"
+    },
+    "zangief_spinebuster": {
+      "displayName": "Spinebuster",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↘ + LP + LK",
+      "notation": "3LP+LK",
+      "shortName": "3LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "zangief_russian_drop": {
+      "displayName": "Russian Drop",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↙ + LP + LK",
+      "notation": "1LP+LK",
+      "shortName": "1LP+LK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 2550- Super Art gauge increases by 6000- Produces a Hard Knockdown"
+    },
+    "zangief_brain_buster": {
+      "displayName": "Brain Buster",
+      "level": "(When near opponent)LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ↓ + LP + LK",
+      "notation": "2LP+LK",
+      "shortName": "2LP+LK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Damage set to 2550- Super Art gauge increases by 6000- Produces a Hard Knockdown"
+    },
+    "zangief_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "zangief_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 25,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "zangief_drive_impact_double_russian_chop": {
+      "displayName": "Drive Impact: Double Russian Chop",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 hits from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallProperties change to the following when the attack lands as a Punish Counter, or after the Super Armor absorbs a hit:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "zangief_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Reverse Russian Kick",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "zangief_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Reverse Russian Kick",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "zangief_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "zangief_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "zangief_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "zangief_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "zangief_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

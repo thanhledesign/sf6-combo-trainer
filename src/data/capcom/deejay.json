@@ -1,0 +1,2551 @@
+{
+  "id": "deejay",
+  "scrapedAt": "2026-04-25T20:38:47.159Z",
+  "source": "https://www.streetfighter.com/6/character/deejay",
+  "character": {
+    "bio": "A globally popular dance music superstar, Dee Jay is always ready to have a good time. With a burning love for music and fighting, this Jamaican sensation drives audiences wild with hot new songs and stylish moves.",
+    "vitals": {
+      "height": "6'0",
+      "weight": "203 lbs",
+      "likes": "Singing, dancing, hollering",
+      "hates": "Silence"
+    }
+  },
+  "moves": {
+    "deejay_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 6,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "deejay_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "deejay_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 13,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 16,
+        "total": 28
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 18,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be canceled up until the 2nd active frameForces the opponent into a standing position"
+    },
+    "deejay_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 22,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "* 4 frames of recovery are added if the attack missesAdds +18 of frame advantage on Punish Counter"
+    },
+    "deejay_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 8,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "deejay_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 10,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "deejay_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 14,
+        "total": 24
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "* 1 frames of recovery are added if the attack misses"
+    },
+    "deejay_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 19,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Forces a Hard Knockdown on Punish Counter"
+    },
+    "deejay_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 2,
+        "activeRange": "8-9",
+        "recovery": 20,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces the opponent into a standing positionAdds +12 of frame advantage on Punish Counter"
+    },
+    "deejay_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 14,
+        "active": 10,
+        "activeRange": "14-23",
+        "recovery": 15,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when attack lands as a counter or Punish Counter"
+    },
+    "deejay_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 7,
+        "activeRange": "4-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "deejay_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 6,
+        "activeRange": "4-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "deejay_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 6,
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "deejay_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "deejay_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "deejay_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "deejay_knee_shot": {
+      "displayName": "Knee Shot",
+      "level": "(During a forward jump)  L",
+      "category": "normal",
+      "context": "(During a forward jump)",
+      "input": "(During a forward jump) ↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": null,
+        "activeRange": "6-until landing",
+        "recovery": 3,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "deejay_sunrise_heel_m": {
+      "displayName": "Sunrise Heel",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 19,
+        "active": 5,
+        "activeRange": "19-23",
+        "recovery": 16,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "deejay_face_breaker_h": {
+      "displayName": "Face Breaker",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HK",
+      "notation": "4HK",
+      "shortName": "4HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 7,
+        "active": 121,
+        "activeRange": "7-127-8,9-12",
+        "recovery": 20,
+        "total": 148
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Does 800 individual damage when the attack lands on a mid-air opponentForces a juggle state when the first attack lands on a mid-air opponentForces the opponent into a standing position"
+    },
+    "deejay_threebeat_combo_2": {
+      "displayName": "Threebeat Combo (2)",
+      "level": "LM",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 20,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_threebeat_combo_3": {
+      "displayName": "Threebeat Combo (3)",
+      "level": "LMM",
+      "category": "normal",
+      "damage": 626,
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "activeRange": "14-16",
+        "recovery": 19,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_dee_jay_special_2": {
+      "displayName": "Dee Jay Special (2)",
+      "level": "MH",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 11,
+        "active": 7,
+        "activeRange": "11-17",
+        "recovery": 24,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "deejay_dee_jay_special_3": {
+      "displayName": "Dee Jay Special (3)",
+      "level": "MHH",
+      "category": "normal",
+      "damage": 600,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 30,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "deejay_funky_dance_2": {
+      "displayName": "Funky Dance (2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 17,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "deejay_funky_dance_3": {
+      "displayName": "Funky Dance (3)",
+      "level": "MMH",
+      "category": "normal",
+      "damage": 900,
+      "frameData": {
+        "startup": 20,
+        "active": 2,
+        "activeRange": "20-21",
+        "recovery": 24,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_funky_dance_feint": {
+      "displayName": "Funky Dance Feint",
+      "level": "MM  H",
+      "category": "normal",
+      "input": "← + MPMPHP",
+      "notation": "4MPMPHP",
+      "shortName": "4MPMPHP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "deejay_party_in_the_air": {
+      "displayName": "Party in the Air",
+      "level": "(During a jump) MH",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) MP + HP",
+      "notation": "MPHP",
+      "shortName": "MPHP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 7,
+        "activeRange": "8-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "deejay_speedy_maracas": {
+      "displayName": "Speedy Maracas",
+      "level": null,
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) ↓↓ + PP",
+      "notation": "22PP",
+      "shortName": "22PP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 65,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Super Art gauge increases by 2000 on frame 22Super Art gauge increases by 49 every frame after frame 46Extend the move by holding down the button during its execution"
+    },
+    "deejay_l_air_slasher_l": {
+      "displayName": "L Air Slasher",
+      "level": "L",
+      "category": "special",
+      "input": "(Hold ←) → + LP",
+      "notation": "[4]6LP",
+      "shortName": "[4]6LP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 21,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "deejay_m_air_slasher_m": {
+      "displayName": "M Air Slasher",
+      "level": "M",
+      "category": "special",
+      "input": "(Hold ←) → + MP",
+      "notation": "[4]6MP",
+      "shortName": "[4]6MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3,*"
+      },
+      "note": "* Can be canceled into Speedy Maracas on frame 23"
+    },
+    "deejay_h_air_slasher_h": {
+      "displayName": "H Air Slasher",
+      "level": "H",
+      "category": "special",
+      "input": "(Hold ←) → + HP",
+      "notation": "[4]6HP",
+      "shortName": "[4]6HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 60,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3,*"
+      },
+      "note": "* Can be canceled into Speedy Maracas on frames 35 - 36"
+    },
+    "deejay_od_air_slasher": {
+      "displayName": "OD Air Slasher",
+      "level": null,
+      "category": "special",
+      "input": "(Hold ←) → + P",
+      "notation": "[4]6P",
+      "shortName": "[4]6P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2,*"
+      },
+      "note": "* Can be canceled into Speedy Maracas on frames 31"
+    },
+    "deejay_od_air_slasher_projectile": {
+      "displayName": "OD Air Slasher (projectile)",
+      "level": null,
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 22,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "deejay_l_jackknife_maximum_l": {
+      "displayName": "L Jackknife Maximum",
+      "level": "L",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + LK",
+      "notation": "[2]8LK",
+      "shortName": "[2]8LK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 6,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 6 - 45Can be canceled into a normal jumping attack or a unique attack from frames 23 - 40"
+    },
+    "deejay_m_jackknife_maximum_m": {
+      "displayName": "M Jackknife Maximum",
+      "level": "M",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + MK",
+      "notation": "[2]8MK",
+      "shortName": "[2]8MK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 6,
+        "active": 221,
+        "activeRange": "6-226-9, 19-22",
+        "recovery": 2210,
+        "total": 2437
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 5 - 44Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1- 5Invincible to throws from frames 5 - 6"
+    },
+    "deejay_h_jackknife_maximum_h": {
+      "displayName": "H Jackknife Maximum",
+      "level": "H",
+      "category": "special",
+      "input": "(Hold ↓) ↑ + HK",
+      "notation": "[2]8HK",
+      "shortName": "[2]8HK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 5,
+        "active": 331,
+        "activeRange": "5-335-9, 17-21, 30-33",
+        "recovery": 1715,
+        "total": 2051
+      },
+      "frameAdvantage": {
+        "onBlock": -44,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 5 - 51Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1- 9Invincible to throws from frames 5 - 6"
+    },
+    "deejay_od_jackknife_maximum": {
+      "displayName": "OD Jackknife Maximum",
+      "level": null,
+      "category": "special",
+      "input": "(Hold ↓) ↑ + K",
+      "notation": "[2]8K",
+      "shortName": "[2]8K",
+      "damage": 1500,
+      "frameData": {
+        "startup": 6,
+        "active": 641,
+        "activeRange": "6-646-11, 19-21, 31-33, 49-51, 61-64",
+        "recovery": 2918,
+        "total": 3565
+      },
+      "frameAdvantage": {
+        "onBlock": -55,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Will only transition into the 4th and later attacks if the first three attacks hitCompletely invincible from frames 1 - 11Considered airborne from frames 5 - 62 (on block, or if the attack misses)"
+    },
+    "deejay_roll_through_feint_l": {
+      "displayName": "Roll Through Feint",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 26,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "deejay_quick_rolling_sobat_m": {
+      "displayName": "Quick Rolling Sobat",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "deejay_double_rolling_sobat_h": {
+      "displayName": "Double Rolling Sobat",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1400,
+      "frameData": {
+        "startup": 15,
+        "active": 3901,
+        "activeRange": "15-3915-17, 36-39",
+        "recovery": 24,
+        "total": 3940
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "deejay_od_double_rolling_sobat": {
+      "displayName": "OD Double Rolling Sobat",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 19,
+        "active": 3201,
+        "activeRange": "19-3219-20, 30-32",
+        "recovery": 19,
+        "total": 3239
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can be canceled into a Level 2 or 3 Super Art or Critical Art only on the 2nd attack"
+    },
+    "deejay_l_machine_gun_uppercut_l": {
+      "displayName": "L Machine Gun Uppercut",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 1650,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 35,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Will only transition to the next attacks if the first attack hits"
+    },
+    "deejay_m_machine_gun_uppercut_m": {
+      "displayName": "M Machine Gun Uppercut",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 1900,
+      "frameData": {
+        "startup": 22,
+        "active": 4,
+        "activeRange": "22-25",
+        "recovery": 35,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Will only transition to the next attacks if the first attack hits"
+    },
+    "deejay_h_machine_gun_uppercut_h": {
+      "displayName": "H Machine Gun Uppercut",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 2200,
+      "frameData": {
+        "startup": 28,
+        "active": 4,
+        "activeRange": "28-31",
+        "recovery": 35,
+        "total": 67
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Will only transition to the next attacks if the first attack hits"
+    },
+    "deejay_od_machine_gun_uppercut": {
+      "displayName": "OD Machine Gun Uppercut",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 2500,
+      "frameData": {
+        "startup": 26,
+        "active": 4,
+        "activeRange": "26-29",
+        "recovery": 35,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Will only transition to the next attacks if the first attack hitsThe final attack forces a Hard Knockdown"
+    },
+    "deejay_jus_cool": {
+      "displayName": "Jus Cool",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 37,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can transition into branching attacks from frames 13 - 24"
+    },
+    "deejay_od_jus_cool": {
+      "displayName": "OD Jus Cool",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 36,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -18,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "1 frames of recovery added when the attack is blockedCan transition into branching attacks from frames 25 - 39Can transition into Juggling Dash from frame 19"
+    },
+    "deejay_funky_slicer": {
+      "displayName": "Funky Slicer",
+      "level": "(During Jus Cool)L",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) LK",
+      "notation": "LK",
+      "shortName": "LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 22,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "2 frames of recovery subtracted when attack is blockedAdds +3 frames of recovery on armor hit or if the attack misses"
+    },
+    "deejay_od_funky_slicer": {
+      "displayName": "OD Funky Slicer",
+      "level": "(During OD Jus Cool)L",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) LK",
+      "notation": "LK",
+      "shortName": "LK",
+      "damage": 900,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 19,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Forces a spinning knockdown when hitting a mid-air opponentAdds +5 frames of recovery on armor hit or if the attack misses"
+    },
+    "deejay_waning_moon": {
+      "displayName": "Waning Moon",
+      "level": "(During Jus Cool)M",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) MK",
+      "notation": "MK",
+      "shortName": "MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 25,
+        "active": 3,
+        "activeRange": "25-27",
+        "recovery": 16,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponentAdds a ground bounding effect on Punish Counter"
+    },
+    "deejay_od_waning_moon": {
+      "displayName": "OD Waning Moon",
+      "level": "(During OD Jus Cool)M",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) MK",
+      "notation": "MK",
+      "shortName": "MK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 19,
+        "active": 5,
+        "activeRange": "19-23",
+        "recovery": 17,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Adds a ground bounding effect during a mid-air hit"
+    },
+    "deejay_maximum_strike": {
+      "displayName": "Maximum Strike",
+      "level": "(During Jus Cool)H",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) HK",
+      "notation": "HK",
+      "shortName": "HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 15,
+        "active": 5,
+        "activeRange": "15-19",
+        "recovery": 25,
+        "total": 45
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "deejay_od_maximum_strike": {
+      "displayName": "OD Maximum Strike",
+      "level": "(During OD Jus Cool)H",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) HK",
+      "notation": "HK",
+      "shortName": "HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 11,
+        "active": 5,
+        "activeRange": "11-15",
+        "recovery": 21,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "deejay_juggling_dash": {
+      "displayName": "Juggling Dash",
+      "level": "(During Jus Cool)",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 27,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to projectiles from frames 1 - 20Can transition to Juggling Sway from frames 17 - 23"
+    },
+    "deejay_od_juggling_dash": {
+      "displayName": "OD Juggling Dash",
+      "level": "(During Jus Cool)",
+      "category": "special",
+      "context": "(During Jus Cool)",
+      "input": "(During Jus Cool) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to projectiles from frames 1 - 20Can transition to Juggling Sway from frames 16 - 17"
+    },
+    "deejay_juggling_sway": {
+      "displayName": "Juggling Sway",
+      "level": "(During Juggling Dash)",
+      "category": "special",
+      "context": "(During Juggling Dash)",
+      "input": "(During Juggling Dash) ← + P",
+      "notation": "4P",
+      "shortName": "4P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 29,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can be canceled into follow-up attacks except for Juggling Dash from frames 17 - 25"
+    },
+    "deejay_od_juggling_sway": {
+      "displayName": "OD Juggling Sway",
+      "level": "(During OD Juggling Dash)",
+      "category": "special",
+      "context": "(During Juggling Dash)",
+      "input": "(During Juggling Dash) ← + P",
+      "notation": "4P",
+      "shortName": "4P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can be canceled into follow-up attacks except for Juggling Dash from frames 13 - 18"
+    },
+    "deejay_sa1_the_greatest_sobat": {
+      "displayName": "SA1 The Greatest Sobat",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2000,
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "activeRange": "7-10",
+        "recovery": 33,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Punish Counter properties- Produces a crumple stun if the opponent is standing on the ground- Produces a wall bounce when hitting a mid-air opponentValues do not change on counter or Punish CounterMinimum guaranteed damage is 30%"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_l": {
+      "displayName": "SA2 Lowkey Sunrise Festival",
+      "level": "L",
+      "category": "super",
+      "input": "↓↘→↓↘→ + LPLPMPHPLKMKHK",
+      "notation": "236236LPLPMPHPLKMKHK",
+      "shortName": "236236LPLPMPHPLKMKHK",
+      "damage": 300,
+      "frameData": {
+        "startup": 12,
+        "active": 5,
+        "activeRange": "12-16",
+        "recovery": 46,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 16Can only go into the following attacks if the first attack hitsCan transition to the 2nd attack from frames 18 - 30Values do not change on counter or Punish CounterMinimum guaranteed damage is 40%"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_2": {
+      "displayName": "SA2 Lowkey Sunrise Festival (2)",
+      "level": "LL",
+      "category": "super",
+      "damage": 175,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 24,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 3rd attack from frames 19 - 24"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_3": {
+      "displayName": "SA2 Lowkey Sunrise Festival (3)",
+      "level": "LLM",
+      "category": "super",
+      "damage": 175,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 23,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 4th attack from frames 17 - 23"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_4": {
+      "displayName": "SA2 Lowkey Sunrise Festival (4)",
+      "level": "LLMH",
+      "category": "super",
+      "damage": 175,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 5th attack from frames 1 - 26"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_5": {
+      "displayName": "SA2 Lowkey Sunrise Festival (5)",
+      "level": "LLMHL",
+      "category": "super",
+      "damage": 175,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 35,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -16,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 6th attack from frames 27 - 31"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_6": {
+      "displayName": "SA2 Lowkey Sunrise Festival (6)",
+      "level": "LLMHLM",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 45,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 7th attack from frames 31 - 36"
+    },
+    "deejay_sa2_lowkey_sunrise_festival_7": {
+      "displayName": "SA2 Lowkey Sunrise Festival (7)",
+      "level": "LLMHLMH",
+      "category": "super",
+      "damage": 1400,
+      "frameData": {
+        "startup": 18,
+        "active": 2801,
+        "activeRange": "18-2818-20, 26-28",
+        "recovery": 79,
+        "total": 2898
+      },
+      "frameAdvantage": {
+        "onBlock": -61,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_sa2_marvelous_sunrise_festival_m": {
+      "displayName": "SA2 Marvelous Sunrise Festival",
+      "level": "M",
+      "category": "super",
+      "input": "↓↘→↓↘→ + MPLPMPHPLKMKHK",
+      "notation": "236236MPLPMPHPLKMKHK",
+      "shortName": "236236MPLPMPHPLKMKHK",
+      "damage": 300,
+      "frameData": {
+        "startup": 12,
+        "active": 5,
+        "activeRange": "12-16",
+        "recovery": 46,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 16Can only go into the following attacks if the first attack hitsCan transition to the 2nd attack from frames 12 - 17If the 2nd attack is input between frames 2 - 11, or 18 - 30, it will fail to come outValues do not change on counter or Punish CounterMinimum guaranteed damage is 40%"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_2": {
+      "displayName": "SA2 Marvelous Sunrise Festival (2)",
+      "level": "ML",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 24,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 3rd attack from frames 10 - 23If the 3rd attack is input between frames 2 - 9, or 24 - 25, it will fail to come out"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_3": {
+      "displayName": "SA2 Marvelous Sunrise Festival (3)",
+      "level": "MLM",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 23,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 4th attack from frames 9 - 20If the 4th attack is input between frames 2 - 8, or 21 - 23, it will fail to come out"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_4": {
+      "displayName": "SA2 Marvelous Sunrise Festival (4)",
+      "level": "MLMH",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 5th attack from frames 11 - 25If the 5th attack is input between frames 2 - 10, or 26 - 27, it will fail to come out"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_5": {
+      "displayName": "SA2 Marvelous Sunrise Festival (5)",
+      "level": "MLMHL",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 35,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -16,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 6th attack from frames 12 - 28If the 6th attack is input between frames 2 - 11, or 29 - 31, it will fail to come out"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_6": {
+      "displayName": "SA2 Marvelous Sunrise Festival (6)",
+      "level": "MLMHLM",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 45,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 7th attack from frames 14 - 33If the 7th attack is input between frames 2 - 13, or 34 - 36, it will fail to come out"
+    },
+    "deejay_sa2_marvelous_sunrise_festival_7": {
+      "displayName": "SA2 Marvelous Sunrise Festival (7)",
+      "level": "MLMHLMH",
+      "category": "super",
+      "damage": 400,
+      "frameData": {
+        "startup": 18,
+        "active": 2801,
+        "activeRange": "18-2818-20, 26-28",
+        "recovery": 64,
+        "total": 2883
+      },
+      "frameAdvantage": {
+        "onBlock": -43,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to a branching attack from frames 11 - 36"
+    },
+    "deejay_sa2_headliner_sunrise_festival_h": {
+      "displayName": "SA2 Headliner Sunrise Festival",
+      "level": "H",
+      "category": "super",
+      "input": "↓↘→↓↘→ + HPLPMPHPLKMKHK",
+      "notation": "236236HPLPMPHPLKMKHK",
+      "shortName": "236236HPLPMPHPLKMKHK",
+      "damage": 200,
+      "frameData": {
+        "startup": 12,
+        "active": 5,
+        "activeRange": "12-16",
+        "recovery": 46,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 16Can only go into the following attacks if the first attack hitsCan transition to the 2nd attack from frames 13 - 17If the 2nd attack is input between frames 2 - 12, or 18 - 30, it will fail to come outValues do not change on counter or Punish CounterMinimum guaranteed damage is 40%"
+    },
+    "deejay_sa2_headliner_sunrise_festival_2": {
+      "displayName": "SA2 Headliner Sunrise Festival (2)",
+      "level": "HL",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 24,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 3rd attack from frames 15 - 20If the 3rd attack is input between frames 2 - 14, or 21 - 25, it will fail to come out"
+    },
+    "deejay_sa2_headliner_sunrise_festival_3": {
+      "displayName": "SA2 Headliner Sunrise Festival (3)",
+      "level": "HLM",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 23,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 4th attack from frames 13 - 18If the 4th attack is input between frames 2 - 12, or 19 - 23, it will fail to come out"
+    },
+    "deejay_sa2_headliner_sunrise_festival_4": {
+      "displayName": "SA2 Headliner Sunrise Festival (4)",
+      "level": "HLMH",
+      "category": "super",
+      "damage": 200,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 5th attack from frames 16 - 21If the 5th attack is input between frames 2 - 15, or 22 - 27, it will fail to come out"
+    },
+    "deejay_sa2_headliner_sunrise_festival_5": {
+      "displayName": "SA2 Headliner Sunrise Festival (5)",
+      "level": "HLMHL",
+      "category": "super",
+      "damage": 250,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 35,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -16,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 6th attack from frames 15 - 26If the 6th attack is input between frames 2 - 14, or 27 - 31, it will fail to come out"
+    },
+    "deejay_sa2_headliner_sunrise_festival_6": {
+      "displayName": "SA2 Headliner Sunrise Festival (6)",
+      "level": "HLMHLM",
+      "category": "super",
+      "damage": 250,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 45,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 7th attack from frames 17 - 30If the 7th attack is input between frames 2 - 16, or 31 - 36, it will fail to come out"
+    },
+    "deejay_sa2_headliner_sunrise_festival_7": {
+      "displayName": "SA2 Headliner Sunrise Festival (7)",
+      "level": "HLMHLMH",
+      "category": "super",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 2801,
+        "activeRange": "18-2818-20, 26-28",
+        "recovery": 64,
+        "total": 2883
+      },
+      "frameAdvantage": {
+        "onBlock": -43,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to a branching attack from frames 11 - 36"
+    },
+    "deejay_sa2_climactic_strike_marvelous": {
+      "displayName": "SA2 Climactic Strike (Marvelous)",
+      "level": "(After Marvelous Sunrise Festival connects)H",
+      "category": "super",
+      "context": "(After Marvelous Sunrise Festival connects)",
+      "damage": 1100,
+      "frameData": {
+        "startup": 11,
+        "active": 9701,
+        "activeRange": "11-9711-13, 91-97",
+        "recovery": 84,
+        "total": 9796
+      },
+      "frameAdvantage": {
+        "onBlock": -66,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_sa2_climactic_strike_headliner": {
+      "displayName": "SA2 Climactic Strike (Headliner)",
+      "level": "(After Headliner Sunrise Festival connects)H",
+      "category": "super",
+      "context": "(After Headliner Sunrise Festival connects)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 11,
+        "active": 9701,
+        "activeRange": "11-9711-13, 91-97",
+        "recovery": 84,
+        "total": 9796
+      },
+      "frameAdvantage": {
+        "onBlock": -66,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_sa2_encore_beat_marvelous": {
+      "displayName": "SA2 Encore Beat (Marvelous)",
+      "level": "(After Marvelous Sunrise Festival connects)H",
+      "category": "super",
+      "context": "(After Marvelous Sunrise Festival connects)",
+      "damage": 1100,
+      "frameData": {
+        "startup": 33,
+        "active": 7,
+        "activeRange": "33-39",
+        "recovery": 112,
+        "total": 152
+      },
+      "frameAdvantage": {
+        "onBlock": -97,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_sa2_encore_beat_headliner": {
+      "displayName": "SA2 Encore Beat (Headliner)",
+      "level": "(After Headliner Sunrise Festival connects)H",
+      "category": "super",
+      "context": "(After Headliner Sunrise Festival connects)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 33,
+        "active": 7,
+        "activeRange": "33-39",
+        "recovery": 112,
+        "total": 152
+      },
+      "frameAdvantage": {
+        "onBlock": -97,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_failed_version_sa2_sunrise_festival_2_l": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (2)",
+      "level": "L",
+      "category": "super",
+      "damage": 100,
+      "frameData": {
+        "startup": 11,
+        "active": 4,
+        "activeRange": "11-14",
+        "recovery": 24,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 3rd attack from frames 19 - 24"
+    },
+    "deejay_failed_version_sa2_sunrise_festival_3": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (3)",
+      "level": "LM",
+      "category": "super",
+      "damage": 100,
+      "frameData": {
+        "startup": 10,
+        "active": 2,
+        "activeRange": "10-11",
+        "recovery": 23,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 4th attack from frames 17 - 23"
+    },
+    "deejay_failed_version_sa2_sunrise_festival_4": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (4)",
+      "level": "LMH",
+      "category": "super",
+      "damage": 100,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 23,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 5th attack from frames 1 - 26"
+    },
+    "deejay_failed_version_sa2_sunrise_festival_5": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (5)",
+      "level": "LMHL",
+      "category": "super",
+      "damage": 100,
+      "frameData": {
+        "startup": 15,
+        "active": 4,
+        "activeRange": "15-18",
+        "recovery": 35,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -16,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 6th attack from frames 27 - 31"
+    },
+    "deejay_failed_version_sa2_sunrise_festival_6": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (6)",
+      "level": "LMHLM",
+      "category": "super",
+      "damage": 100,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 45,
+        "total": 65
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can transition to the 7th attack from frames 31 - 36"
+    },
+    "deejay_failed_version_sa2_sunrise_festival_7": {
+      "displayName": "(Failed version) SA2 Sunrise Festival (7)",
+      "level": "LMHLMH",
+      "category": "super",
+      "damage": 1000,
+      "frameData": {
+        "startup": 18,
+        "active": 2801,
+        "activeRange": "18-2818-20, 26-28",
+        "recovery": 64,
+        "total": 2883
+      },
+      "frameAdvantage": {
+        "onBlock": -43,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "deejay_sa3_weekend_pleasure": {
+      "displayName": "SA3 Weekend Pleasure",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 48,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 13Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 50%*Can only be canceled into from special moves"
+    },
+    "deejay_ca_weekend_pleasure": {
+      "displayName": "CA Weekend Pleasure",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 48,
+        "total": 62
+      },
+      "frameAdvantage": {
+        "onBlock": -28,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 13Values do not change on counter or Punish CounterMinimum guaranteed damage is set to 50%*Can only be canceled into from special moves"
+    },
+    "deejay_diss_track": {
+      "displayName": "Diss Track",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "deejay_flip_throw": {
+      "displayName": "Flip Throw",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "deejay_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "deejay_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frames 1 - 15"
+    },
+    "deejay_drive_impact_wild_beat": {
+      "displayName": "Drive Impact: Wild Beat",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 hits from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallProperties change to the following when the attack lands as a Punish Counter, or after the Super Armor absorbs a hit:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "deejay_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Leg Scratch",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "deejay_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Leg Scratch",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "deejay_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "deejay_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "deejay_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "deejay_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 55,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "deejay_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 55,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

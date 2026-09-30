@@ -7,6 +7,64 @@ import lukeThumbnail from '../assets/characters/lukeThumbnail.png';
 import cammyThumbnail from '../assets/characters/cammyThumbnail.png';
 import maiThumbnail from '../assets/characters/maiThumbnail.png';
 import ryuThumbnail from '../assets/characters/ryuThumbnail.png';
+import { characterList } from '../data/characters';
+
+// Per-character flag for the new 22 (the original 7 are already in manual
+// list below). Source: Capcom's character profiles.
+const FLAGS = {
+  aki: '🇨🇳', akuma: '🇯🇵', alex: '🇺🇸', blanka: '🇧🇷', cviper: '🇺🇸',
+  deejay: '🇯🇲', dhalsim: '🇮🇳', ed: '🇩🇪', ehonda: '🇯🇵', elena: '🇰🇪',
+  guile: '🇺🇸', jamie: '🇨🇳', jp: '🇷🇺', juri: '🇰🇷', kimberly: '🇺🇸',
+  lily: '🇲🇽', bison: '🇹🇭', manon: '🇫🇷', marisa: '🇮🇹', rashid: '🇦🇪',
+  sagat: '🇹🇭', zangief: '🇷🇺',
+};
+
+// Stable gradient palette hashed from character id for consistent fallback styling.
+const GRADIENT_PALETTE = [
+  { gradient: 'from-purple-600 to-indigo-700', accentColor: '#7C3AED', accentColorDark: '#4F46E5' },
+  { gradient: 'from-emerald-500 to-teal-600',  accentColor: '#10B981', accentColorDark: '#0D9488' },
+  { gradient: 'from-amber-500 to-red-600',     accentColor: '#F59E0B', accentColorDark: '#DC2626' },
+  { gradient: 'from-rose-500 to-fuchsia-600',  accentColor: '#F43F5E', accentColorDark: '#C026D3' },
+  { gradient: 'from-sky-500 to-cyan-600',      accentColor: '#0EA5E9', accentColorDark: '#0891B2' },
+  { gradient: 'from-violet-500 to-purple-700', accentColor: '#8B5CF6', accentColorDark: '#7E22CE' },
+  { gradient: 'from-orange-500 to-red-700',    accentColor: '#F97316', accentColorDark: '#B91C1C' },
+  { gradient: 'from-lime-500 to-green-700',    accentColor: '#84CC16', accentColorDark: '#15803D' },
+  { gradient: 'from-pink-500 to-rose-700',     accentColor: '#EC4899', accentColorDark: '#BE123C' },
+  { gradient: 'from-slate-500 to-gray-700',    accentColor: '#64748B', accentColorDark: '#374151' },
+];
+const paletteFor = (id) => {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) hash = (hash * 31 + id.charCodeAt(i)) >>> 0;
+  return GRADIENT_PALETTE[hash % GRADIENT_PALETTE.length];
+};
+
+// Build a card config for a character that doesn't have manual design metadata.
+// Pulls bio + signature moves from the character's loaded data; falls back to
+// neutral defaults where data is sparse.
+function generateCardConfig(charId, charData) {
+  const palette = paletteFor(charId);
+  const bio = charData?.character?.bio || '';
+  const fightingStyle = bio ? bio.split(/[.!?]\s+/)[0] + '.' : 'Discover their fighting style in the movelist.';
+  // Top 3 special-move displayNames as signature
+  const specials = Object.values(charData?.moves || {})
+    .filter((m) => m?.category === 'special' && m?.displayName && !/^[LMH]\s/.test(m.displayName))
+    .slice(0, 5)
+    .map((m) => m.displayName);
+  return {
+    id: charId,
+    name: charData?.character?.displayName || charData?.character?.name || charId,
+    flag: FLAGS[charId] || '🏳️',
+    archetype: charData?.character?.archetype || 'Fighter',
+    image: null,
+    ...palette,
+    stats: { power: 7, speed: 7, defense: 7 },
+    difficulty: 'Intermediate',
+    difficultyLevel: 3,
+    fightingStyle,
+    signatureMoves: specials.length > 0 ? specials : ['See movelist'],
+    description: charData?.character?.description || '',
+  };
+}
 
 const CharacterCard = ({ character, onClick, compact = false }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -396,8 +454,14 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
     }
   ];
 
-  // Sort characters alphabetically by name
-  const characters = [...defaultCharacters].sort((a, b) => a.name.localeCompare(b.name));
+  // Build the full roster: manual rich entries for the 7 hand-curated chars,
+  // auto-generated entries for everyone else (sourced from their character data).
+  const manualIds = new Set(defaultCharacters.map((c) => c.id));
+  const generated = characterList
+    .filter((c) => !manualIds.has(c.id))
+    .map((c) => generateCardConfig(c.id, c.file));
+  const characters = [...defaultCharacters, ...generated]
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   const handleCharacterClick = (character) => {
     setSelectedCharacter(character);

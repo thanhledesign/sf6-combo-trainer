@@ -1,0 +1,1725 @@
+{
+  "id": "jp",
+  "scrapedAt": "2026-04-25T20:42:22.075Z",
+  "source": "https://www.streetfighter.com/6/character/jp",
+  "character": {
+    "bio": "Head of an international NGO responsible for many successful investment projects, and the man behind Nayshall's present prosperity. Has a beloved cat named Cybele.",
+    "vitals": {
+      "height": "6'3",
+      "weight": "214 lbs",
+      "likes": "Chess puzzles, cleaning, local cuisines",
+      "hates": "Stains on his clothes, sleep"
+    }
+  },
+  "moves": {
+    "jp_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 10,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "jp_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 11,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 21,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Can only be canceled into Departure: Shadow"
+    },
+    "jp_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 19,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 22,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponentAdds +25 frames of advantage on a Punish Counter"
+    },
+    "jp_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 12,
+        "active": 4,
+        "activeRange": "12-15",
+        "recovery": 17,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 7
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can only be canceled into Departure: Shadow"
+    },
+    "jp_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 2,
+        "activeRange": "4-5",
+        "recovery": 11,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "jp_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 6,
+        "active": 2,
+        "activeRange": "6-7",
+        "recovery": 10,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceledCan only be canceled into Departure: Shadow"
+    },
+    "jp_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "activeRange": "7-10",
+        "recovery": 14,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 17,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can only be canceled into Departure: Shadow"
+    },
+    "jp_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 20,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "jp_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 21,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "jp_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "jp_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 8,
+        "activeRange": "6-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "jp_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "jp_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "jp_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown on counter or Punish Counter when hitting a mid-air opponent"
+    },
+    "jp_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 11,
+        "active": 6,
+        "activeRange": "11-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "jp_guillotinna_m": {
+      "displayName": "Guillotinna",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MK",
+      "notation": "6MK",
+      "shortName": "6MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 22,
+        "active": 2,
+        "activeRange": "22-23",
+        "recovery": 19,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "jp_malice_h": {
+      "displayName": "Malice",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HP",
+      "notation": "3HP",
+      "shortName": "3HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 31,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -14,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when attack lands as a counter or Punish Counter"
+    },
+    "jp_bylina_h": {
+      "displayName": "Bylina",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 11,
+        "active": 1601,
+        "activeRange": "11-1611-12, 13-16",
+        "recovery": 24,
+        "total": 1636
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "jp_grom_strelka_1_m": {
+      "displayName": "Grom Strelka(1)",
+      "level": "M",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 16,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_grom_strelka_2": {
+      "displayName": "Grom Strelka(2)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 20,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_zilant": {
+      "displayName": "Zilant",
+      "level": "HH",
+      "category": "normal",
+      "input": "HK + HP",
+      "notation": "HK+HP",
+      "shortName": "HK+HP",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 20,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "jp_zilant_mid": {
+      "displayName": "Zilant Mid",
+      "level": "HHH",
+      "category": "normal",
+      "input": "HKHPHP",
+      "notation": "HKHPHP",
+      "shortName": "HKHPHP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "activeRange": "21-23",
+        "recovery": 22,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "jp_zilant_low": {
+      "displayName": "Zilant Low",
+      "level": "HHH",
+      "category": "normal",
+      "input": "HKHPHK",
+      "notation": "HKHPHK",
+      "shortName": "HKHPHK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "activeRange": "21-23",
+        "recovery": 22,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "jp_l_triglav_l": {
+      "displayName": "L Triglav",
+      "level": "L",
+      "category": "special",
+      "input": "↓↓ + LP",
+      "notation": "22LP",
+      "shortName": "22LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 10,
+        "activeRange": "22-31",
+        "recovery": 55,
+        "total": 87
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "jp_m_triglav_m": {
+      "displayName": "M Triglav",
+      "level": "M",
+      "category": "special",
+      "input": "↓↓ + MP",
+      "notation": "22MP",
+      "shortName": "22MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 10,
+        "activeRange": "22-31",
+        "recovery": 55,
+        "total": 87
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "jp_h_triglav_h": {
+      "displayName": "H Triglav",
+      "level": "H",
+      "category": "special",
+      "input": "↓↓ + HP",
+      "notation": "22HP",
+      "shortName": "22HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 10,
+        "activeRange": "22-31",
+        "recovery": 55,
+        "total": 87
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "jp_od_l_triglav": {
+      "displayName": "OD L Triglav",
+      "level": "LM",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 20,
+        "active": 20,
+        "activeRange": "20-39",
+        "recovery": 53,
+        "total": 93
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "jp_od_m_triglav": {
+      "displayName": "OD M Triglav",
+      "level": "LH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 20,
+        "active": 20,
+        "activeRange": "20-39",
+        "recovery": 53,
+        "total": 93
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "jp_od_h_triglav": {
+      "displayName": "OD H Triglav",
+      "level": "MH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 20,
+        "active": 20,
+        "activeRange": "20-39",
+        "recovery": 53,
+        "total": 93
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "jp_l_stribog_l": {
+      "displayName": "L Stribog",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 16,
+        "active": 6,
+        "activeRange": "16-21",
+        "recovery": 49,
+        "total": 71
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Increases the Drive Gauge by 10,000 during a Perfect ParryClashes with projectiles (Once)"
+    },
+    "jp_m_stribog_m": {
+      "displayName": "M Stribog",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 20,
+        "active": 2601,
+        "activeRange": "20-2620-22, 24-26",
+        "recovery": 53,
+        "total": 2674
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Increases the Drive Gauge by 10,000 during a Perfect ParryClashes with projectiles (Once)"
+    },
+    "jp_h_stribog_h": {
+      "displayName": "H Stribog",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 28,
+        "active": 4201,
+        "activeRange": "28-4228-30, 40-42",
+        "recovery": 61,
+        "total": 4290
+      },
+      "frameAdvantage": {
+        "onBlock": 4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Increases the Drive Gauge by 10,000 during a Perfect ParryClashes with projectiles (Once)3 frames of recovery added on Perfect Parry"
+    },
+    "jp_od_stribog": {
+      "displayName": "OD Stribog",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 19,
+        "active": 3001,
+        "activeRange": "19-3019-21, 28-30",
+        "recovery": 52,
+        "total": 3072
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Increases the Drive Gauge by 10,000 during a Perfect ParryClashes with projectiles (Once)3 frames of recovery added on Perfect ParryOnly the first attack can be canceled into Super Art 2/Super Art 3/Critical Art"
+    },
+    "jp_l_departure_l": {
+      "displayName": "L Departure",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 150,
+        "active": 10,
+        "activeRange": "150-159",
+        "recovery": 50,
+        "total": 210
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_m_departure_m": {
+      "displayName": "M Departure",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 150,
+        "active": 10,
+        "activeRange": "150-159",
+        "recovery": 50,
+        "total": 210
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_h_departure_h": {
+      "displayName": "H Departure",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 150,
+        "active": 10,
+        "activeRange": "150-159",
+        "recovery": 50,
+        "total": 210
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_od_l_departure": {
+      "displayName": "OD L Departure",
+      "level": "LM",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 110,
+        "active": 149001,
+        "activeRange": "110-149110-119, 140-149",
+        "recovery": 40,
+        "total": 149151
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_od_m_departure": {
+      "displayName": "OD M Departure",
+      "level": "LH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 110,
+        "active": 149001,
+        "activeRange": "110-149110-119, 140-149",
+        "recovery": 40,
+        "total": 149151
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_od_h_departure": {
+      "displayName": "OD H Departure",
+      "level": "MH",
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": 110,
+        "active": 149001,
+        "activeRange": "110-149110-119, 140-149",
+        "recovery": 40,
+        "total": 149151
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "jp_departure_window": {
+      "displayName": "Departure: Window",
+      "level": "(While Departure is active)  LM",
+      "category": "special",
+      "context": "(While Departure is active)",
+      "input": "(While Departure is active) ↓↙← + /LPMP",
+      "notation": "214/LPMP",
+      "shortName": "214/LPMP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 44,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 6 - 25Considered airborne from frame 26Can perform moves from frame 31"
+    },
+    "jp_departure_shadow": {
+      "displayName": "Departure: Shadow",
+      "level": "(While Departure is active)  H",
+      "category": "special",
+      "context": "(While Departure is active)",
+      "input": "(While Departure is active) ↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "jp_amnesia": {
+      "displayName": "Amnesia",
+      "level": null,
+      "category": "special",
+      "input": "↓↓ + K",
+      "notation": "22K",
+      "shortName": "22K",
+      "damage": 800,
+      "frameData": {
+        "startup": 3,
+        "active": 18,
+        "activeRange": "3-20",
+        "recovery": 35,
+        "total": 56
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Drive Gauge increases by 10,000 if the move is successfulFires a projectile if the move is successful* Combo scaling occurs after the 3rd hit"
+    },
+    "jp_od_amnesia": {
+      "displayName": "OD Amnesia",
+      "level": null,
+      "category": "special",
+      "input": "↓↓ + K",
+      "notation": "22K",
+      "shortName": "22K",
+      "damage": 1200,
+      "frameData": {
+        "startup": 1,
+        "active": 20,
+        "activeRange": "1-20",
+        "recovery": 35,
+        "total": 56
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Fires a projectile if the move is successful* Combo scaling occurs after the 3rd hit"
+    },
+    "jp_l_torbalan_l": {
+      "displayName": "L Torbalan",
+      "level": "L",
+      "category": "special",
+      "context": "(Hold the button to feint)",
+      "input": "(Hold the button to feint) ↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Start up value listed is when the attack is performed at close range"
+    },
+    "jp_m_torbalan_m": {
+      "displayName": "M Torbalan",
+      "level": "M",
+      "category": "special",
+      "context": "(Hold the button to feint)",
+      "input": "(Hold the button to feint) ↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 26,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "mid - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Start up value listed is when the attack is performed at close range"
+    },
+    "jp_h_torbalan_h": {
+      "displayName": "H Torbalan",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to feint)",
+      "input": "(Hold the button to feint) ↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 26,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "low - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Start up value listed is when the attack is performed at close range"
+    },
+    "jp_od_torbalan": {
+      "displayName": "OD Torbalan",
+      "level": null,
+      "category": "special",
+      "context": "(Hold the button to feint)",
+      "input": "(Hold the button to feint) ↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 25,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Start up value listed is when the attack is performed at close rangeOnly the first attack can be canceled into Super Art 2/Super Art 3/Critical Art"
+    },
+    "jp_embrace": {
+      "displayName": "Embrace",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 1800,
+      "frameData": {
+        "startup": 26,
+        "active": null,
+        "activeRange": "",
+        "recovery": 72,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 2070 individual damage when the attack lands as a Punish CounterStart up value listed is when the attack is performed at close rangeWith Modern ControlsDoes 1656 individual damage when the attack lands as a Punish Counter"
+    },
+    "jp_od_embrace": {
+      "displayName": "OD Embrace",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + K",
+      "notation": "214K",
+      "shortName": "214K",
+      "damage": 2600,
+      "frameData": {
+        "startup": 26,
+        "active": null,
+        "activeRange": "",
+        "recovery": 72,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "With Classic ControlsDoes 2990 individual damage when the attack lands as a Punish CounterStart up value listed is when the attack is performed at close rangeWith Modern ControlsDoes 2392 individual damage when the attack lands as a Punish Counter"
+    },
+    "jp_sa1_chornobog": {
+      "displayName": "SA1 Chornobog",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 2000,
+      "frameData": {
+        "startup": 8,
+        "active": null,
+        "activeRange": "",
+        "recovery": 84,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws from frames 1 - 10Minimum guaranteed damage is 30%Values do not change on counter or Punish Counter"
+    },
+    "jp_sa2_lovushka": {
+      "displayName": "SA2 Lovushka",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 2000,
+      "frameData": {
+        "startup": 29,
+        "active": null,
+        "activeRange": "",
+        "recovery": 13,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "highmidlowmid",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is 40%Values do not change on counter or Punish Counter* Combo scaling occurs after the 3rd hit"
+    },
+    "jp_sa3_interdiction": {
+      "displayName": "SA3 Interdiction",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4000,
+      "frameData": {
+        "startup": 18,
+        "active": 6,
+        "activeRange": "18-23",
+        "recovery": 62,
+        "total": 86
+      },
+      "frameAdvantage": {
+        "onBlock": -50,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 23Minimum guaranteed damage is 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "jp_ca_interdiction": {
+      "displayName": "CA Interdiction",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 4500,
+      "frameData": {
+        "startup": 18,
+        "active": 6,
+        "activeRange": "18-23",
+        "recovery": 62,
+        "total": 86
+      },
+      "frameAdvantage": {
+        "onBlock": -50,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 23Minimum guaranteed damage is 50%Values do not change on counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "jp_ravina": {
+      "displayName": "Ravina",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "jp_uragan": {
+      "displayName": "Uragan",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "jp_tornado": {
+      "displayName": "Tornado",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) LP + LK",
+      "notation": "LP+LK",
+      "shortName": "LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 3,
+        "total": 11
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "jp_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "jp_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "jp_drive_impact_espada": {
+      "displayName": "Drive Impact: Espada",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "jp_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Exilio",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "jp_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Exilio",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "jp_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "jp_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "jp_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "jp_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "jp_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

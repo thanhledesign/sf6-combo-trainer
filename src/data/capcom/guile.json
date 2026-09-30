@@ -1,0 +1,1969 @@
+{
+  "id": "guile",
+  "scrapedAt": "2026-04-25T20:40:21.423Z",
+  "source": "https://www.streetfighter.com/6/character/guile",
+  "character": {
+    "bio": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
+    "vitals": {
+      "height": "6'0",
+      "weight": "218 lbs",
+      "likes": "Watching sports, dog walking",
+      "hates": "Secretive people, layabouts"
+    }
+  },
+  "moves": {
+    "guile_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 7,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "guile_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 15,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 6
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 7,
+        "active": 5,
+        "activeRange": "7-11",
+        "recovery": 18,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "guile_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 23,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 21,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "guile_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 8,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "guile_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "guile_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 13,
+        "total": 22
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "* 3 frames of recovery added when the attack misses"
+    },
+    "guile_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 18,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "guile_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 900,
+      "frameData": {
+        "startup": 9,
+        "active": 5,
+        "activeRange": "9-13",
+        "recovery": 20,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can only be canceled on the 1st active frame if the attack hitsForces the opponent into a standing position"
+    },
+    "guile_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 9,
+        "active": 291,
+        "activeRange": "9-299-10, 27-29",
+        "recovery": 21,
+        "total": 321
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "lowlow",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard KnockdownForces a juggle state when the first attack lands as a Punish Counter"
+    },
+    "guile_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 10,
+        "activeRange": "4-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "guile_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 6,
+        "active": 10,
+        "activeRange": "6-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "guile_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "guile_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 7,
+        "active": 7,
+        "activeRange": "7-13",
+        "recovery": 3,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "guile_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent for a counter"
+    },
+    "guile_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 5,
+        "activeRange": "10-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "guile_full_bullet_magnum_m": {
+      "displayName": "Full Bullet Magnum",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 19,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+    },
+    "guile_burning_straight_h": {
+      "displayName": "Burning Straight",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HP",
+      "notation": "4HP",
+      "shortName": "4HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 21,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_spinning_back_knuckle_h": {
+      "displayName": "Spinning Back Knuckle",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 20,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "guile_knee_bazooka_l": {
+      "displayName": "Knee Bazooka",
+      "level": "L",
+      "category": "normal",
+      "input": "← + LK",
+      "notation": "4LK",
+      "shortName": "4LK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 4,
+        "activeRange": "8-11",
+        "recovery": 15,
+        "total": 27
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "guile_rolling_sobat_m": {
+      "displayName": "Rolling Sobat",
+      "level": "M",
+      "category": "normal",
+      "input": "← + /6MK",
+      "notation": "4/6MK",
+      "shortName": "4/6MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 18,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to low attacks from frames 7 - 1723 frames of recovery (34 frames overall) added if the attack misses"
+    },
+    "guile_reverse_spin_kick_h": {
+      "displayName": "Reverse Spin Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 26,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -8,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to throws and low attacks on frames 4 - 28Forces a juggle state knockdown on counter hitProduces a crumple stun on PunisH Counter"
+    },
+    "guile_guile_high_kick_h": {
+      "displayName": "Guile High Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↘ + HK",
+      "notation": "3HK",
+      "shortName": "3HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 23,
+        "total": 36
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces a juggle state when the attack lands for a Punish CounterForces a juggle state when hitting a mid-air opponent for a counterCan be canceled into a special move from frames 18 - 19"
+    },
+    "guile_recoil_cannon": {
+      "displayName": "Recoil Cannon",
+      "level": "M  H",
+      "category": "normal",
+      "input": "← + MPHP",
+      "notation": "4MPHP",
+      "shortName": "4MPHP",
+      "damage": 600,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 26,
+        "total": 45
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can cancel into a special move or Super Art from frames 8 - 9"
+    },
+    "guile_double_shot": {
+      "displayName": "Double Shot",
+      "level": "M  M",
+      "category": "normal",
+      "input": "↓↓ + MPMP",
+      "notation": "22MPMP",
+      "shortName": "22MPMP",
+      "damage": 400,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 16,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_drake_fang": {
+      "displayName": "Drake Fang",
+      "level": "MM",
+      "category": "normal",
+      "input": "↓→ + MK + MP",
+      "notation": "26MK+MP",
+      "shortName": "26MK+MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 21,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Produces a ground bound on Counter or Punish Counter"
+    },
+    "guile_phantom_cutter": {
+      "displayName": "Phantom Cutter",
+      "level": "HH",
+      "category": "normal",
+      "input": "↓↘ + HKHK",
+      "notation": "23HKHK",
+      "shortName": "23HKHK",
+      "damage": 600,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 25,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "guile_l_sonic_boom_l": {
+      "displayName": "L Sonic Boom",
+      "level": "L",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ←) → + LP",
+      "notation": "[4]6LP",
+      "shortName": "[4]6LP",
+      "damage": 550,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_perfect_timing_l_sonic_boom_l": {
+      "displayName": "(Perfect timing) L Sonic Boom",
+      "level": "L",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_m_sonic_boom_m": {
+      "displayName": "M Sonic Boom",
+      "level": "M",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ←) → + MP",
+      "notation": "[4]6MP",
+      "shortName": "[4]6MP",
+      "damage": 550,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_perfect_timing_m_sonic_boom_m": {
+      "displayName": "(Perfect timing) M Sonic Boom",
+      "level": "M",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_h_sonic_boom_h": {
+      "displayName": "H Sonic Boom",
+      "level": "H",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ←) → + HP",
+      "notation": "[4]6HP",
+      "shortName": "[4]6HP",
+      "damage": 550,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_perfect_timing_h_sonic_boom_h": {
+      "displayName": "(Perfect timing) H Sonic Boom",
+      "level": "H",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 40,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to the normal Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_od_sonic_boom": {
+      "displayName": "OD Sonic Boom",
+      "level": null,
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ←) → + P",
+      "notation": "[4]6P",
+      "shortName": "[4]6P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to Overdrive Sonic Break (Attack available during Super Art 2) from frames 12 - 20"
+    },
+    "guile_l_somersault_kick_l": {
+      "displayName": "L Somersault Kick",
+      "level": "L",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ↓) ↑ + LK",
+      "notation": "[2]8LK",
+      "shortName": "[2]8LK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 5,
+        "active": 6,
+        "activeRange": "5-10",
+        "recovery": 2615,
+        "total": 2626
+      },
+      "frameAdvantage": {
+        "onBlock": -30,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Considered airborne from frames 8 - 36* Does 800 individual damage after the 3rd active frame"
+    },
+    "guile_perfect_timing_l_somersault_kick_l": {
+      "displayName": "(Perfect timing) L Somersault Kick",
+      "level": "L",
+      "category": "special",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 6,
+        "activeRange": "5-10",
+        "recovery": 2615,
+        "total": 2626
+      },
+      "frameAdvantage": {
+        "onBlock": -30,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Considered airborne from frames 8 - 36* Does 1000 individual damage when the attack lands after the 3rd active frame"
+    },
+    "guile_m_somersault_kick_m": {
+      "displayName": "M Somersault Kick",
+      "level": "M",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ↓) ↑ + MK",
+      "notation": "[2]8MK",
+      "shortName": "[2]8MK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "activeRange": "6-11",
+        "recovery": 2715,
+        "total": 2727
+      },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8Considered airborne from frames 8 - 38* Does 800 individual damage after the 3rd active frame"
+    },
+    "guile_perfect_timing_m_somersault_kick_m": {
+      "displayName": "(Perfect timing) M Somersault Kick",
+      "level": "M",
+      "category": "special",
+      "damage": 1300,
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "activeRange": "6-11",
+        "recovery": 2715,
+        "total": 2727
+      },
+      "frameAdvantage": {
+        "onBlock": -31,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8Considered airborne from frames 8 - 38* Does 1000 individual damage when the attack lands after the 3rd active frame"
+    },
+    "guile_h_somersault_kick_h": {
+      "displayName": "H Somersault Kick",
+      "level": "H",
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ↓) ↑ + HK",
+      "notation": "[2]8HK",
+      "shortName": "[2]8HK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 2815,
+        "total": 2828
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9Considered airborne from frames 8 - 40* Does 800 individual damage after the 3rd active frame"
+    },
+    "guile_perfect_timing_h_somersault_kick_h": {
+      "displayName": "(Perfect timing) H Somersault Kick",
+      "level": "H",
+      "category": "special",
+      "damage": 1400,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 2815,
+        "total": 2828
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9Considered airborne from frames 8 - 40* Does 1000 individual damage when the attack lands after the 3rd active frame"
+    },
+    "guile_od_somersault_kick": {
+      "displayName": "OD Somersault Kick",
+      "level": null,
+      "category": "special",
+      "context": "(Press + an attack button simultaneously to change effect)",
+      "input": "(Press + an attack button simultaneously to change effect) (Hold ↓) ↑ + K",
+      "notation": "[2]8K",
+      "shortName": "[2]8K",
+      "damage": 1600,
+      "frameData": {
+        "startup": 6,
+        "active": 6,
+        "activeRange": "6-11",
+        "recovery": 2620,
+        "total": 2632
+      },
+      "frameAdvantage": {
+        "onBlock": -33,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 11Considered airborne from frames 8 - 37* Does 700 individual damage from frames 3 - 4"
+    },
+    "guile_l_sonic_blade_l": {
+      "displayName": "L Sonic Blade",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 400,
+      "frameData": {
+        "startup": 16,
+        "active": 45,
+        "activeRange": "16-60",
+        "recovery": 42,
+        "total": 103
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": -3
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to all Sonic Break variations from frames 35 - 40"
+    },
+    "guile_m_sonic_blade_m": {
+      "displayName": "M Sonic Blade",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 400,
+      "frameData": {
+        "startup": 21,
+        "active": 85,
+        "activeRange": "21-105",
+        "recovery": 50,
+        "total": 156
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": -6
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to any Sonic Cross from frames 40 - 46"
+    },
+    "guile_h_sonic_blade_h": {
+      "displayName": "H Sonic Blade",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 500,
+      "frameData": {
+        "startup": 31,
+        "active": 100,
+        "activeRange": "31-130",
+        "recovery": 54,
+        "total": 185
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Can transition to any Sonic Cross from frames 50 - 54"
+    },
+    "guile_od_l_sonic_blade": {
+      "displayName": "OD L Sonic Blade",
+      "level": "LM",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 15,
+        "active": 100,
+        "activeRange": "15-114",
+        "recovery": 39,
+        "total": 154
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to any Sonic Cross from frames 34 - 39"
+    },
+    "guile_od_m_sonic_blade": {
+      "displayName": "OD M Sonic Blade",
+      "level": "LH",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 15,
+        "active": 100,
+        "activeRange": "15-114",
+        "recovery": 39,
+        "total": 154
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to any Sonic Cross from frames 34 - 39"
+    },
+    "guile_od_h_sonic_blade": {
+      "displayName": "OD H Sonic Blade",
+      "level": "MH",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 15,
+        "active": 100,
+        "activeRange": "15-114",
+        "recovery": 39,
+        "total": 154
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Can transition to any Sonic Cross from frames 34 - 39"
+    },
+    "guile_l_sonic_cross": {
+      "displayName": "L Sonic Cross",
+      "level": "(During Sonic Blade)  L",
+      "category": "special",
+      "context": "(During Sonic Blade) (Press + an attack button simultaneously to change effect)",
+      "input": "(During Sonic Blade) (Press + an attack button simultaneously to change effect) → + LP",
+      "notation": "6LP",
+      "shortName": "6LP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_perfect_timing_l_sonic_cross": {
+      "displayName": "(Perfect timing)L Sonic Cross",
+      "level": "(During Sonic Blade)  L",
+      "category": "special",
+      "context": "(During Sonic Blade)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_m_sonic_cross": {
+      "displayName": "M Sonic Cross",
+      "level": "(During Sonic Blade)  M",
+      "category": "special",
+      "context": "(During Sonic Blade) (Press + an attack button simultaneously to change effect)",
+      "input": "(During Sonic Blade) (Press + an attack button simultaneously to change effect) → + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_perfect_timing_m_sonic_cross": {
+      "displayName": "(Perfect timing)M Sonic Cross",
+      "level": "(During Sonic Blade)  M",
+      "category": "special",
+      "context": "(During Sonic Blade)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_h_sonic_cross": {
+      "displayName": "H Sonic Cross",
+      "level": "(During Sonic Blade)  H",
+      "category": "special",
+      "context": "(During Sonic Blade) (Press + an attack button simultaneously to change effect)",
+      "input": "(During Sonic Blade) (Press + an attack button simultaneously to change effect) → + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_perfect_timing_h_sonic_cross": {
+      "displayName": "(Perfect timing)H Sonic Cross",
+      "level": "(During Sonic Blade)  H",
+      "category": "special",
+      "context": "(During Sonic Blade)",
+      "damage": 1200,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_od_sonic_cross1": {
+      "displayName": "OD Sonic Cross1",
+      "level": "(During Sonic Blade)  \n     (During OD Sonic Blade)",
+      "category": "special",
+      "context": "(During Sonic Blade)",
+      "damage": 1300,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      }
+    },
+    "guile_od_sonic_cross2": {
+      "displayName": "OD Sonic Cross2",
+      "level": "(During OD Sonic Blade)",
+      "category": "special",
+      "context": "(During OD Sonic Blade)",
+      "damage": 1700,
+      "frameData": {
+        "startup": 10,
+        "active": null,
+        "activeRange": "",
+        "recovery": 38,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Produces a wall splat after it hits"
+    },
+    "guile_sonic_break_single_shot": {
+      "displayName": "Sonic Break(Single shot)",
+      "level": "(During Solid Puncher)",
+      "category": "special",
+      "context": "(During Solid Puncher)",
+      "damage": 600,
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "activeRange": "",
+        "recovery": 36,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Can transition to a regular Sonic Break (available while Level 2 Super Art is active) from frames 13 - 21"
+    },
+    "guile_sonic_break_variation": {
+      "displayName": "Sonic Break(Variation)",
+      "level": "(During Solid Puncher)(During Sonic Boom or Sonic Break)",
+      "category": "special",
+      "context": "(During Solid Puncher)",
+      "damage": 600,
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "activeRange": "",
+        "recovery": 36,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Can transition to a regular Sonic Break (available while Level 2 Super Art is active) from frames 13 - 21, up to 3 times* The last transition's recovery is reduced by 1 frame"
+    },
+    "guile_od_sonic_break": {
+      "displayName": "OD Sonic Break",
+      "level": "(During Solid Puncher)(During OD Sonic Boom or OD Sonic Break)",
+      "category": "special",
+      "context": "(During Solid Puncher) (During Sonic Boom or Sonic Break)",
+      "input": "(During Solid Puncher) (During Sonic Boom or Sonic Break) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 11,
+        "active": null,
+        "activeRange": "",
+        "recovery": 35,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Can transition to Overdrive Sonic Break  (available while Level 2 Super Art is active) once from frames 13 - 21"
+    },
+    "guile_sa1_sonic_hurricane_up_h": {
+      "displayName": "SA1 Sonic Hurricane(Up)",
+      "level": "H",
+      "category": "super",
+      "damage": 1800,
+      "frameData": {
+        "startup": 7,
+        "active": 52,
+        "activeRange": "7-58",
+        "recovery": 75,
+        "total": 134
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Minimum guaranteed damage is set to 30%Values do not change on counter or Punish Counter"
+    },
+    "guile_sa1_sonic_hurricane_side": {
+      "displayName": "SA1 Sonic Hurricane(Side)",
+      "level": "L  M",
+      "category": "super",
+      "damage": 2000,
+      "frameData": {
+        "startup": 8,
+        "active": 51,
+        "activeRange": "8-58",
+        "recovery": 89,
+        "total": 148
+      },
+      "frameAdvantage": {
+        "onBlock": -26,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Invincible to throws and strikes from frames 1 - 8Minimum guaranteed damage is set to 30%Values do not change on counter or Punish Counter"
+    },
+    "guile_sa2_solid_puncher": {
+      "displayName": "SA2 Solid Puncher",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 6,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Sonic Break can be performed after this technique is activated"
+    },
+    "guile_sa3_crossfire_somersault": {
+      "displayName": "SA3 Crossfire Somersault",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) (Hold ←) →←→ + K",
+      "notation": "[4]646K",
+      "shortName": "[4]646K",
+      "damage": 4000,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3040,
+        "total": 3055
+      },
+      "frameAdvantage": {
+        "onBlock": -59,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 14Considered airborne from frames 12 - 44Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter*Does 3000 individual damage when the attack lands after the 3rd active frameApplied only when canceling a special move"
+    },
+    "guile_ca_crossfire_somersault": {
+      "displayName": "CA Crossfire Somersault",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) (Hold ←) →←→ + K",
+      "notation": "[4]646K",
+      "shortName": "[4]646K",
+      "damage": 4500,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3040,
+        "total": 3055
+      },
+      "frameAdvantage": {
+        "onBlock": -59,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible from frames 1 - 14Considered airborne from frames 12 - 44Minimum guaranteed damage is set to 50%Values do not change on counter or Punish Counter*Does 3500 individual damage when the attack lands after the 3rd active frameApplied only when canceling a special move"
+    },
+    "guile_dragon_suplex": {
+      "displayName": "Dragon Suplex",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "guile_judo_throw": {
+      "displayName": "Judo Throw",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "guile_flying_mare": {
+      "displayName": "Flying Mare",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 3,
+        "total": 11
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "guile_flying_buster_drop": {
+      "displayName": "Flying Buster Drop",
+      "level": "(During a jump) (When near opponent)LL",
+      "category": "throw",
+      "context": "(During a jump) (When near opponent)",
+      "input": "(During a jump) (When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 3,
+        "total": 11
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "guile_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 21,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "guile_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws from frame 1 to frame 15."
+    },
+    "guile_drive_impact_blitz_combination": {
+      "displayName": "Drive Impact: Blitz Combination",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks from frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Forces a spinning knockdown when hitting a mid-air opponent- Super Art gauge increases by 3000"
+    },
+    "guile_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Strike Eagle",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 225 frames of recovery added on hit"
+    },
+    "guile_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Strike Eagle",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible on frames 1 - 205 frames of recovery added on hit"
+    },
+    "guile_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution."
+    },
+    "guile_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "guile_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occurs.The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "guile_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "guile_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)  (  )  MM",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

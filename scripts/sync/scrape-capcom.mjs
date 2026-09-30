@@ -22,9 +22,17 @@ const OUT_CAPCOM = resolve(ROOT, 'src/data/capcom');
 
 const DEFAULTS = ['ken', 'ryu', 'luke', 'chunli', 'cammy', 'mai', 'terry'];
 
+// Local char id → Capcom URL slug, for chars where the names differ.
+const CAPCOM_URL = {
+  akuma: 'gouki_akuma',
+  bison: 'vega_mbison',
+};
+const urlFor = (id) => CAPCOM_URL[id] || id;
+
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry');
 const all = args.includes('--all');
+const bootstrap = args.includes('--bootstrap');
 const charArg = args.find((a) => a.startsWith('--char='))?.split('=')[1];
 const characters = all ? DEFAULTS : (charArg ? [charArg] : DEFAULTS);
 
@@ -335,14 +343,14 @@ async function scrapeCharacter(page, charId) {
   const out = {
     id: charId,
     scrapedAt: new Date().toISOString(),
-    source: `https://www.streetfighter.com/6/character/${charId}`,
+    source: `https://www.streetfighter.com/6/character/${urlFor(charId)}`,
     character: {},
     moves: {},
     _unmatched: [],
   };
 
   // 1) Character bio page
-  await page.goto(`https://www.streetfighter.com/6/character/${charId}`, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto(`https://www.streetfighter.com/6/character/${urlFor(charId)}`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
   out.character = await page.evaluate(() => {
     // Vitals: each label/value pair lives in a <li class="detail_info__item__…">
@@ -371,7 +379,7 @@ async function scrapeCharacter(page, charId) {
   });
 
   // 1.5) Movelist page — extract canonical input notation from button-icon images
-  await page.goto(`https://www.streetfighter.com/6/character/${charId}/movelist`, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto(`https://www.streetfighter.com/6/character/${urlFor(charId)}/movelist`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
   const movelistEntries = await page.evaluate(() => {
     const items = Array.from(document.querySelectorAll('li[class*="movelist"]'));
@@ -404,7 +412,7 @@ async function scrapeCharacter(page, charId) {
   }
 
   // 2) Frame data page
-  await page.goto(`https://www.streetfighter.com/6/character/${charId}/frame`, { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto(`https://www.streetfighter.com/6/character/${urlFor(charId)}/frame`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
 
   // Use the stable CSS class prefixes Capcom assigns per cell type
@@ -454,7 +462,10 @@ async function scrapeCharacter(page, charId) {
     'super arts': 'super',
   };
 
-  const annot = JSON.parse(readFileSync(resolve(SRC_ANNOT, `${charId}.json`), 'utf8'));
+  const annotPath = resolve(SRC_ANNOT, `${charId}.json`);
+  const annot = existsSync(annotPath)
+    ? JSON.parse(readFileSync(annotPath, 'utf8'))
+    : { moves: {}, character: null, tactics: {} };
   const index = buildMoveIndex(annot.moves);
 
   const num = (s) => {
@@ -484,10 +495,19 @@ async function scrapeCharacter(page, charId) {
       ? startup + activeCount + recovery
       : null;
 
-    const moveId = matchMove(row.displayName, row.level, index, charId);
+    let moveId = matchMove(row.displayName, row.level, index, charId);
     if (!moveId) {
-      out._unmatched.push({ displayName: row.displayName, section: row.section, level: row.level });
-      continue;
+      if (bootstrap) {
+        // For new characters that don't yet have annotations, derive a stable
+        // moveId from the Capcom display name + level. Skeletal annotations
+        // get generated alongside (see writer below).
+        const slug = `${charId}_${normalizeName(row.displayName).replace(/\s+/g, '_')}`;
+        const lvlSuffix = /^[LMH]$/.test(row.level || '') ? `_${row.level.toLowerCase()}` : '';
+        moveId = (slug + lvlSuffix).replace(/__+/g, '_').replace(/_+$/, '');
+      } else {
+        out._unmatched.push({ displayName: row.displayName, section: row.section, level: row.level });
+        continue;
+      }
     }
 
     const category = SECTION_TO_CATEGORY[row.section?.toLowerCase()] ?? 'normal';
@@ -584,6 +604,41 @@ async function scrapeCharacter(page, charId) {
         : resolve(OUT_CAPCOM, `${id}.json`);
       writeFileSync(outPath, JSON.stringify(data, null, 2) + '\n');
       console.log(`  wrote ${outPath}`);
+
+      // Bootstrap: when annotations don't exist yet, generate a skeletal
+      // file so the character renders. Only writes if missing — never
+      // clobbers existing annotation work.
+      if (bootstrap && !dryRun) {
+        const annotPath = resolve(ROOT, `src/data/annotations/${id}.json`);
+        if (!existsSync(annotPath)) {
+          const skel = {
+            character: {
+              id,
+              name: data.character?.bio ? data.character.title || id : id,
+              displayName: id.charAt(0).toUpperCase() + id.slice(1).replace(/_/g, ' '),
+              archetype: 'tbd',
+              description: '',
+            },
+            tactics: {},
+            moves: Object.fromEntries(
+              Object.entries(data.moves).map(([mid, m]) => [mid, {
+                id: mid,
+                yourPerspective: { tacticalUse: '', whenToUse: '', situations: [], range: '', connectsTo: [], executionDifficulty: '' },
+                opponentPerspective: { riskLevel: '', riskDescription: '' },
+                tacticalTags: [],
+              }]),
+            ),
+          };
+          mkdirSync(dirname(annotPath), { recursive: true });
+          writeFileSync(annotPath, JSON.stringify(skel, null, 2) + '\n');
+          console.log(`  bootstrapped annotations → ${annotPath}`);
+          // Also ensure overrides skeleton
+          const overPath = resolve(ROOT, `src/data/overrides/${id}.json`);
+          if (!existsSync(overPath)) {
+            writeFileSync(overPath, JSON.stringify({ id, moves: {} }, null, 2) + '\n');
+          }
+        }
+      }
     } catch (e) {
       console.error(`  FAILED: ${e.message}`);
     }

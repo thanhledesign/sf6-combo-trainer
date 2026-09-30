@@ -1,29 +1,33 @@
-// Character data — produced by merging the three-layer source files
-// (../capcom, ../annotations, ../overrides) via loader.js.
-//
-// Public API is preserved: same named exports, same shapes. Consumers don't
-// need to know the data is no longer monolithic JSON.
+// Character data — auto-discovered from src/data/annotations/*.json via the
+// loader's availableCharacterIds. Adding a new character only requires
+// dropping its three layered files into capcom/ + annotations/ + overrides/.
 
-import { loadCharacter } from './loader';
+import { loadCharacter, availableCharacterIds } from './loader';
 
-export const ken     = loadCharacter('ken');
-export const terry   = loadCharacter('terry');
-export const chunli  = loadCharacter('chunli');
-export const luke    = loadCharacter('luke');
-export const cammy   = loadCharacter('cammy');
-export const mai     = loadCharacter('mai');
-export const ryu     = loadCharacter('ryu');
+// Eagerly load every known character once at module init.
+const map = Object.fromEntries(
+  availableCharacterIds.map((id) => [id, loadCharacter(id)]),
+);
 
-export const characters = { ken, terry, chunli, luke, cammy, mai, ryu };
+// Named exports for the original 7 — preserves backward compat with
+// existing imports in App.jsx and elsewhere.
+export const ken     = map.ken;
+export const ryu     = map.ryu;
+export const luke    = map.luke;
+export const chunli  = map.chunli;
+export const cammy   = map.cammy;
+export const mai     = map.mai;
+export const terry   = map.terry;
 
-export const characterList = [
-  { id: 'ken',    name: 'Ken Masters',   file: ken    },
-  { id: 'terry',  name: 'Terry Bogard',  file: terry  },
-  { id: 'chunli', name: 'Chun-Li',       file: chunli },
-  { id: 'luke',   name: 'Luke Sullivan', file: luke   },
-  { id: 'cammy',  name: 'Cammy White',   file: cammy  },
-  { id: 'mai',    name: 'Mai Shiranui',  file: mai    },
-  { id: 'ryu',    name: 'Ryu',           file: ryu    },
-];
+export const characters = map;
+
+// Sorted alphabetically by displayName for consistent menu ordering.
+export const characterList = Object.entries(map)
+  .map(([id, c]) => ({
+    id,
+    name: c.character?.name || c.character?.displayName || id,
+    file: c,
+  }))
+  .sort((a, b) => (a.name || '').localeCompare(b.name || ''));
 
 export default characters;
