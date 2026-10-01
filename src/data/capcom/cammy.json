@@ -1,6 +1,6 @@
 {
   "id": "cammy",
-  "scrapedAt": "2026-04-25T18:52:12.717Z",
+  "scrapedAt": "2026-10-01T14:58:05.586Z",
   "source": "https://www.streetfighter.com/6/character/cammy",
   "character": {
     "bio": "Member of British special forces unit Delta Red. Distinguished herself in the operation against Shadaloo, with which she shares a fated connection. Hyper-competent but somewhat moody. Currently working at HQ.",
@@ -483,7 +483,7 @@
         "total": 22
       },
       "frameAdvantage": {
-        "onBlock": -1,
+        "onBlock": 1,
         "onHit": 4
       },
       "properties": {
@@ -677,11 +677,11 @@
       "category": "special",
       "damage": 800,
       "frameData": {
-        "startup": 27,
-        "active": 4201,
-        "activeRange": "27-4227-29, 31-33, 34-36, 37-39, 40-42",
+        "startup": 25,
+        "active": 4001,
+        "activeRange": "25-4025-27, 29-40",
         "recovery": 20,
-        "total": 4248
+        "total": 4046
       },
       "frameAdvantage": {
         "onBlock": -14,
@@ -692,7 +692,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Hold the button for more than 16 frames to change its propertiesConsidered airborne from frames 30 - 45"
+      "note": "Hold the button for more than 16 frames to change its propertiesConsidered airborne from frames 28 - 43"
     },
     "cammy_spiral_arrow_od": {
       "displayName": "OD Spiral Arrow",
@@ -705,7 +705,7 @@
       "frameData": {
         "startup": 13,
         "active": 2801,
-        "activeRange": "13-2813-15, 17-19, 20-22, 23-25, 26-28",
+        "activeRange": "13-2813-15, 17-28",
         "recovery": 20,
         "total": 2834
       },
@@ -804,11 +804,11 @@
       "category": "special",
       "damage": 1500,
       "frameData": {
-        "startup": 24,
+        "startup": 22,
         "active": 12,
-        "activeRange": "24-35",
+        "activeRange": "22-33",
         "recovery": 2916,
-        "total": 2952
+        "total": 2950
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -819,7 +819,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Completely invincible from frames 20 - 25Considered airborne from frames 26 - 64* Does 900 individual damage after the 5th active frame"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7Completely invincible from frames 18 - 23Considered airborne from frames 24 - 62* Does 900 individual damage after the 5th active frame"
     },
     "cammy_cannon_spike_od": {
       "displayName": "OD Cannon Spike",
@@ -939,7 +939,7 @@
         "total": 46
       },
       "frameAdvantage": {
-        "onBlock": -2,
+        "onBlock": 3,
         "onHit": 7
       },
       "properties": {
@@ -947,7 +947,7 @@
         "cancelable": false,
         "cancelFlags": "SA2"
       },
-      "note": "Invincible to projectiles from frames 9 - 24When performed at close range, Cammy will go behind her opponent and attack. In this situation, start up is 3 frames later"
+      "note": "Invincible to projectiles from frames 9 - 24When performed at close range, Cammy will go behind her opponent and attack. In this situation, start up is 3 frames slower, and the recovery on block is -2."
     },
     "cammy_cannon_strike": {
       "displayName": "Cannon Strike(Charged)",
@@ -1044,7 +1044,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Hold the button for more than 18 frames to change its propertiesFrom frame 41 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 27 or later. Is considered airborne."
+      "note": "Hold the button for more than 18 frames to change its propertiesFrom frame 39 until landing, can be canceled into any offshoot attacks except for Razor's Edge Slicer on frame 25 or later. Is considered airborne."
     },
     "cammy_hooligan_od": {
       "displayName": "OD Hooligan Combination",

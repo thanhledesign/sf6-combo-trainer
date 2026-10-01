@@ -1,6 +1,6 @@
 {
   "id": "terry",
-  "scrapedAt": "2026-04-25T18:52:43.587Z",
+  "scrapedAt": "2026-10-01T14:59:28.616Z",
   "source": "https://www.streetfighter.com/6/character/terry",
   "character": {
     "bio": "A passionate fighter that hones his craft as he travels all over the world. Also known as the \"Hungry Wolf\". He came to Metro City after hearing about the opening of the Pao Pao Cafe.",
@@ -548,7 +548,7 @@
       "input": "MPHKHK",
       "notation": "MPHKHK",
       "shortName": "MPHKHK",
-      "damage": 1300,
+      "damage": 800,
       "frameData": {
         "startup": 18,
         "active": null,
@@ -563,7 +563,8 @@
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "1000 damage on a clean hit"
     },
     "terry_passing_sway": {
       "displayName": "Passing Sway",
@@ -784,7 +785,7 @@
       },
       "frameAdvantage": {
         "onBlock": -5,
-        "onHit": 2
+        "onHit": 3
       },
       "properties": {
         "hitLevel": "highmid",
@@ -799,7 +800,7 @@
       "input": "↓↙← + LP",
       "notation": "214LP",
       "shortName": "214LP",
-      "damage": 1400,
+      "damage": 1600,
       "frameData": {
         "startup": 10,
         "active": 2301,

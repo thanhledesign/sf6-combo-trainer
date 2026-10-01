@@ -1,6 +1,6 @@
 {
   "id": "chunli",
-  "scrapedAt": "2026-04-25T18:51:50.016Z",
+  "scrapedAt": "2026-10-01T14:57:14.811Z",
   "source": "https://www.streetfighter.com/6/character/chunli",
   "character": {
     "bio": "A former high-kicking ICPO agent, Chun-Li looks after Li-Fen, a victim of the Black Moon Incident. With Shadaloo sundered, she now runs kung fu classes, and has become a well-loved member of the local community.",
@@ -600,7 +600,7 @@
         "cancelable": false,
         "cancelFlags": "*"
       },
-      "note": "* Can be canceled into Serenity Stream on hit or blockCauses a crumple stun when the attack lands as a Punish CounterForces a juggle state when the attack lands as a Punish Counter on a mid-air opponentConsidered airborne from frames 6 - 28"
+      "note": "* Can be canceled into Serenity Stream on hit or blockCauses a crumple stun when the attack lands as a Punish CounterForces a juggle state when the attack lands as a Punish Counter on a mid-air opponentConsidered airborne from frames 8 - 28"
     },
     "chunli_falling_crane": {
       "displayName": "Falling Crane",
@@ -748,7 +748,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Can be canceled by any normal or unique attack that is consideres special-cancelableDuring Serenity Stream, input the same command again to cancel the technique.Can be canceled into any branching attacks from frame 15 of the technique, as well as blockPosition can be held by continually pressing down"
+      "note": "Can be canceled by any normal or unique attack that is consideres special-cancelableDuring Serenity Stream, input up or the same command again to cancel the technique.Can be canceled into any branching attacks from frame 15 of the technique, as well as blockPosition can be held by continually pressing down"
     },
     "chunli_ss_orchid_palm": {
       "displayName": "Orchid Palm",
@@ -820,7 +820,7 @@
         "total": 3243
       },
       "frameAdvantage": {
-        "onBlock": -3,
+        "onBlock": 1,
         "onHit": 2
       },
       "properties": {
@@ -1360,7 +1360,7 @@
         "total": 46
       },
       "frameAdvantage": {
-        "onBlock": -5,
+        "onBlock": -4,
         "onHit": 0
       },
       "properties": {
@@ -1521,7 +1521,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 8 - 69"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 8 - 69Invincible to throws from frames 8 - 9"
     },
     "chunli_tensho_od": {
       "displayName": "OD Tensho Kicks",
