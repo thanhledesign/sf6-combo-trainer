@@ -9,6 +9,8 @@ import {
   newCb, comboStr, push, dir, down, up, sa, tok, back, MAC, TOKS, CM, CKEYS, MACK, TOKK, charKeyToken,
 } from '../../lab/combo';
 import { toast } from './toastBus';
+import ComboStats from './ComboStats';
+import { movesFor } from '../../lab/charMoves';
 
 export default function CombosPane() {
   const S = useLab(), me = meNow(S);
@@ -24,7 +26,7 @@ export default function CombosPane() {
     if (!cb.current.toks.length) { toast('Type a combo first'); return; }
     const old = L.id ? byId(L.S.combos, L.id) : null;
     const nm = (L.name || '').trim() || (old && old.name) || `Combo ${L.S.combos.length + 1}`;
-    put('combos', L.id || 'c' + Date.now().toString(36), { name: nm, char: L.char || me, toks: cb.current.toks.slice(), note: (L.note || '').trim(), focus: old ? !!old.focus : false, focusAt: old ? old.focusAt : undefined, created: (old && old.created) || Date.now(), upd: Date.now() });
+    put('combos', L.id || 'c' + Date.now().toString(36), { name: nm, char: L.char || me, toks: cb.current.toks.slice(), note: (L.note || '').trim(), focus: old ? !!old.focus : false, focusAt: old ? old.focusAt : undefined, created: (old && old.created) || Date.now(), upd: Date.now(), man: old ? old.man : undefined });
     toast(`Saved “${nm}”`); reset();
   };
   const saveRef = useRef(save);
@@ -110,7 +112,7 @@ export default function CombosPane() {
         {list.map((c) => (
           <div key={c.id} className={`cbrow${c.focus ? ' foc' : ''}`}>
             <button type="button" className="cbtick" aria-pressed={!!c.focus} aria-label={`Focus on ${c.name}`} title="Tick to focus on this combo" onClick={() => toggleFocus(c.id)}>{c.focus ? '✓' : ''}</button>
-            <div className="cbmain"><b>{c.name}</b> <span className="mute">{c.char || ''}</span><div className="cbstr mono">{comboStr(c.toks || [])}</div>{c.note && <div className="mute" style={{ fontSize: '.8rem' }}>{c.note}</div>}</div>
+            <div className="cbmain"><b>{c.name}</b> <span className="mute">{c.char || ''}</span><div className="cbstr mono">{comboStr(c.toks || [])}</div>{c.note && <div className="mute" style={{ fontSize: '.8rem' }}>{c.note}</div>}<ComboStats combo={c} moves={movesFor(c.char)} /></div>
             <button type="button" className="mini" style={{ minWidth: '3.6rem', minHeight: '2.6rem' }} onClick={() => edit(c)}>Edit</button>
             <button type="button" className={`mini${arm === c.id ? ' danger' : ''}`} style={{ minWidth: '4.2rem', minHeight: '2.6rem' }} onClick={() => del2(c)}>{arm === c.id ? 'Sure?' : 'Delete'}</button>
           </div>

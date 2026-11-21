@@ -4,6 +4,8 @@ import MoveCard from '../Card/MoveCard';
 import { useLab } from '../../lab/store';
 import { charIdToName } from '../../lab/data';
 import { comboStr, isDirs, isBtn } from '../../lab/combo';
+import { calcCombo, finalStats } from '../../lab/comboCalc';
+import ComboStats from '../Lab/ComboStats';
 
 // Punish groups, in display order. Normals come first: they're what you actually
 // reach for at -4 to -8, so they must never be buried under big-damage specials/supers.
@@ -39,6 +41,7 @@ const PunishCalculator = ({ characterData }) => {
   const [frameDisadvantage, setFrameDisadvantage] = useState('');
   const [sortBy, setSortBy] = useState('damage');
   const [filter, setFilter] = useState('all');
+  const [cmode, setCmode] = useState('pc'); // a punish is a punish counter by default
   const S = useLab();
 
   const moves = characterData?.moves;
@@ -79,11 +82,11 @@ const PunishCalculator = ({ characterData }) => {
     const ok = []; let slow = 0;
     for (const c of mine) {
       const mv = starterMove(c.toks || [], allMoves), st = mv ? startupOf(mv) : null;
-      if (mv && st != null && st <= punishableFrames) ok.push({ c, mv, st }); else slow++;
+      if (mv && st != null && st <= punishableFrames) ok.push({ c, mv, st, dmg: finalStats(calcCombo(c.toks || [], allMoves, c.man || {}), c.man || {})[cmode] || 0 }); else slow++;
     }
-    ok.sort((a, b) => (b.c.focus ? 1 : 0) - (a.c.focus ? 1 : 0) || a.st - b.st);
+    ok.sort((a, b) => (b.c.focus ? 1 : 0) - (a.c.focus ? 1 : 0) || b.dmg - a.dmg || a.st - b.st);
     return { ok, slow };
-  }, [S.combos, allMoves, characterData, punishableFrames]);
+  }, [S.combos, allMoves, characterData, punishableFrames, cmode]);
 
   if (!characterData) {
     return (
@@ -202,6 +205,7 @@ const PunishCalculator = ({ characterData }) => {
                       </div>
                       <div className="font-mono text-gray-200 mt-1 break-words">{comboStr(c.toks || [])}</div>
                       {c.note && <p className="text-gray-400 text-xs mt-1">{c.note}</p>}
+                      <ComboStats combo={c} moves={allMoves} mode={cmode} onMode={setCmode} />
                     </div>
                   ))}
                 </div>
