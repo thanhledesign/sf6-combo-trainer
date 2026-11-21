@@ -10,7 +10,7 @@ import SearchResults from './components/Search/SearchResults';
 import TacticsPage from './components/Tactics/TacticsPage';
 import StatsPage from './components/Tracker/StatsPage';
 import SetTrackerPage from './components/Tracker/SetTrackerPage';
-import LabFrame from './components/Lab/LabFrame';
+import LabPage from './components/Lab/LabPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import { characters as characterMap, characterList } from './data/characters';
 
@@ -512,9 +512,9 @@ function App() {
 
         {/* Tracker — head-to-head set tracker is the primary entry */}
         {/* V01.33 Session Lab: the session tracker is now the main Tracker. */}
-        <Route path="/tracker" element={<LabFrame pane="log" />} />
-        <Route path="/tracker/review" element={<LabFrame pane="review" />} />
-        <Route path="/tracker/combos" element={<LabFrame pane="combos" />} />
+        <Route path="/tracker" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="log" /></div>} />
+        <Route path="/tracker/review" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="review" /></div>} />
+        <Route path="/tracker/combos" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="combos" /></div>} />
         {/* Original V01.32 tracker kept, nothing removed. */}
         <Route path="/tracker/classic" element={
           <SetTrackerPage

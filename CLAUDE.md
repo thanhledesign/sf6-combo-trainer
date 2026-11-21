@@ -89,9 +89,12 @@ Then check `01-NEXT-STEPS.md` for the next pending task. (Task 1 — docs consol
 
 ## Session Lab (V01.33)
 
-- Lives in `public/lab/index.html` — a self-contained vanilla-JS app (data in `localStorage` keys `srst.v1` / `srst.ui`), shown in the app via `src/components/Lab/LabFrame.jsx` (iframe, same origin).
-- Panes are deep-linked by hash: `/lab/index.html#review`, `#combos`, `#log`.
-- Bridge: the Lab posts `{sf6:'study', char}` / `{sf6:'go', to}` to the parent; `LabFrame` navigates to `/browse/<id>`.
-- On load the Lab one-time-imports V01.32 data (`sf6-tracker:*`) into its own store; nothing is deleted. Dedupes by match id (`settings.classicSeen`).
-- Opened directly (not framed) without the `sf6-lab-ok` session flag, it redirects to `/tracker` so the password gate applies. Soft gate only.
-- Data is browser-local (no sync). Password default is now `hadoken` (`VITE_SITE_PASSWORD` overrides — check Vercel env).
+Native React port of the standalone "Skinny Ryu Session Tracker". It is the main Tracker (`/tracker`), plus Replay Review (`/tracker/review`) and the Combo editor (`/tracker/combos`). The V01.32 tracker stays at `/tracker/classic` (and `/tracker/stats`).
+
+- **Code**: pure logic in `src/lab/` (`data.js` roster/tags, `calc.js` records, MR, goals, `combo.js` notation engine, `store.js` external store + `useLab()`, `useLabActions.js` writes). UI in `src/components/Lab/` (`LabPage` header + up to 3 resizable panes; `LogPane`, `StatsPanes` (Live/History/Goals + modals), `ReviewPane`, `CombosPane`, `OptionsPane`). Styles are scoped under `.lab` in `lab.css`.
+- **Storage**: browser-local `localStorage` keys `srst.v1` (data) and `srst.ui` (pane layout, drag pace, zoom). `localStorage` is isolated to `src/lab/store.js` for the later Capacitor swap. No cross-device sync. Options → "Back up data (JSON)" / "Import backup" moves data between browsers.
+- **V01.32 import**: on load, `sf6-tracker:*` matches/sessions are merged once (deduped by id in `settings.classicSeen`); nothing is deleted.
+- **Study bridge**: Review rows and the edit-game modal call `navigate('/browse/<id>')` via `nameToCharId` (tracker names like "M. Bison" → app ids).
+- **Thumbnails**: 33 JPGs in `public/thumbs/` (all roster + Random), mapped in `src/lab/data.js`.
+- **Combo editor keys**: `1-9` dirs; `P`/`K` tap-cycle L→M→H→plain; `Shift+P/K` = PP/KK; `d` DRC, `s` cycles SA1-3/CA, `q w e y u a f g h` motions, `z v b n m l` per-character tokens (table `CM` in `combo.js`; only Ken is verified, others are common notation, check them).
+- Password: default `hadoken` (`VITE_SITE_PASSWORD` overrides; check Vercel env). Soft client-side gate only.
