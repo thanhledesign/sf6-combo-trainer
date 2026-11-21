@@ -196,7 +196,7 @@ const AddMoveModal = ({
                       onClick={() => toggleTag(cat.id)}
                       className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
                         active
-                          ? 'bg-purple-600 text-white'
+                          ? 'bg-[image:var(--btn-grad)] text-white'
                           : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                       }`}
                     >

@@ -230,7 +230,7 @@ const SlotsPanel = ({
             className={`text-xs font-medium py-2 px-2 rounded-lg flex items-center justify-center gap-1 ${
               atCap
                 ? 'bg-gray-800 text-gray-600 cursor-not-allowed'
-                : 'bg-purple-600 hover:bg-purple-700 text-white'
+                : 'bg-[image:var(--btn-grad)] hover:brightness-110 text-white'
             }`}
           >
             <Plus className="w-3.5 h-3.5" /> From factory

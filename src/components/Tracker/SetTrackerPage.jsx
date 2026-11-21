@@ -164,7 +164,7 @@ const PickerView = ({ characterList, thumbnailMap, yourChar, oppChar, setLength,
             onClick={() => onLength(l.value)}
             className={`py-2.5 rounded-lg text-sm font-semibold transition-colors ${
               setLength === l.value
-                ? 'bg-purple-600 text-white'
+                ? 'bg-[image:var(--btn-grad)] text-white'
                 : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
             }`}
           >

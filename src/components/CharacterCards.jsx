@@ -484,7 +484,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
             <button
               onClick={() => setMobileColumns(1)}
               className={`p-2 rounded transition-colors ${
-                mobileColumns === 1 ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white'
+                mobileColumns === 1 ? 'bg-[image:var(--btn-grad)] text-white' : 'text-gray-400 hover:text-white'
               }`}
               title="Single column"
             >
@@ -493,7 +493,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
             <button
               onClick={() => setMobileColumns(2)}
               className={`p-2 rounded transition-colors ${
-                mobileColumns === 2 ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white'
+                mobileColumns === 2 ? 'bg-[image:var(--btn-grad)] text-white' : 'text-gray-400 hover:text-white'
               }`}
               title="Two columns"
             >

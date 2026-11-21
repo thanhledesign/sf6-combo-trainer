@@ -298,7 +298,7 @@ function App() {
                           className={`
                             w-full mt-3 py-2.5 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2
                             ${searchInputValue.trim()
-                              ? 'bg-purple-600 hover:bg-purple-700 text-white'
+                              ? 'bg-[image:var(--btn-grad)] hover:brightness-110 text-white'
                               : 'bg-gray-700 text-gray-500 cursor-not-allowed'
                             }
                           `}
@@ -331,7 +331,7 @@ function App() {
                           className={`
                             w-full mt-3 py-2.5 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2
                             ${searchInputValue.trim()
-                              ? 'bg-purple-600 hover:bg-purple-700 text-white'
+                              ? 'bg-[image:var(--btn-grad)] hover:brightness-110 text-white'
                               : 'bg-gray-700 text-gray-500 cursor-not-allowed'
                             }
                           `}
@@ -548,13 +548,7 @@ function App() {
 const NavButton = ({ children, active, onClick }) => (
   <button
     onClick={onClick}
-    className={`
-      px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap
-      ${active 
-        ? 'bg-purple-600 text-white' 
-        : 'bg-gray-700/50 text-gray-300 hover:bg-gray-700 hover:text-white'
-      }
-    `}
+    className="btn-toggle whitespace-nowrap" aria-pressed={active}
   >
     {children}
   </button>
@@ -564,13 +558,7 @@ const NavButton = ({ children, active, onClick }) => (
 const MobileNavButton = ({ children, active, onClick }) => (
   <button
     onClick={onClick}
-    className={`
-      w-full px-4 py-3 rounded-lg font-medium transition-all text-left
-      ${active 
-        ? 'bg-purple-600 text-white' 
-        : 'bg-gray-700/50 text-gray-300 hover:bg-gray-700 hover:text-white'
-      }
-    `}
+    className="btn-toggle w-full justify-start text-left" aria-pressed={active}
   >
     {children}
   </button>

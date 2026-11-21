@@ -36,6 +36,7 @@
     --card-radius: 1rem;
     --art-tint: 0.8;
     --font-scale: 1;
+    --btn-grad: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to));
   }
   html { font-size: calc(100% * var(--font-scale)); }
   .btn-primary, .btn-secondary {
@@ -46,8 +47,20 @@
   }
   .btn-primary { background: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to)); }
   .btn-primary:hover:not(:disabled) { filter: brightness(1.1); }
-  .btn-secondary { background: var(--btn-secondary-bg); }
+  .btn-secondary { background: var(--btn-secondary-bg); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08); }
   .btn-secondary:hover:not(:disabled) { background: var(--btn-secondary-hover); }
+  /* Toggle / pill / tab buttons: secondary look, gradient when pressed. Set aria-pressed. */
+  .btn-toggle {
+    @apply inline-flex items-center justify-center gap-2 text-gray-300 transition duration-200;
+    border-radius: var(--btn-radius);
+    font-weight: 500;
+    padding: calc(var(--btn-py) * 0.65) var(--btn-px);
+    background: var(--btn-secondary-bg);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+  }
+  .btn-toggle:hover { background: var(--btn-secondary-hover); color: #fff; }
+  .btn-toggle[aria-pressed='true'] { background: var(--btn-grad); color: #fff; box-shadow: none; }
+  .btn-toggle.btn-sm { padding: var(--btn-sm-py) var(--btn-sm-px); @apply text-sm; }
   .btn-sm { padding: var(--btn-sm-py) var(--btn-sm-px); @apply text-sm; }
   /* Gradient reused behind character art so art + button read as one system */
   .brand-gradient { background: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to)); }
