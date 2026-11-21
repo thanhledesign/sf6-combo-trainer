@@ -102,4 +102,4 @@ Native React port of the standalone "Skinny Ryu Session Tracker". It is the main
 
 ## Move videos
 
-Manifest-based demo clips (never in git; files in Supabase Storage bucket `move-videos`). Scrapers `scripts/sync/scrape-videos.mjs`, clip cutter `scripts/video/cut-clips.mjs`, workflow `sync-move-videos.yml`. See `docs/MOVE-VIDEOS.md`.
+Manifest-based demo clips (never in git; files in Supabase Storage bucket `move-videos`). Own-recording clip cutter `scripts/video/cut-clips.mjs` (Capcom video scraper intentionally removed). See `docs/MOVE-VIDEOS.md`.
