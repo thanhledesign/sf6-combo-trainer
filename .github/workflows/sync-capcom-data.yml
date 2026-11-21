@@ -37,6 +37,8 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Scrape characters (whole roster + new DLC by default)
+        id: scrape
+        continue-on-error: true  # a few skipped characters must not block the PR for the rest
         run: |
           if [ -n "${{ inputs.chars }}" ]; then
             node scripts/sync/scrape-capcom.mjs --char=${{ inputs.chars }}

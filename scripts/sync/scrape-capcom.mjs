@@ -615,8 +615,16 @@ async function scrapeCharacter(page, charId, bootstrap) {
       const ap = resolve(SRC_ANNOT, `${id}.json`);
       // "New" = no annotation file, or a placeholder with no moves yet.
       const isNew = !existsSync(ap) || Object.keys(JSON.parse(readFileSync(ap, 'utf8')).moves || {}).length === 0;
-      const data = await scrapeCharacter(page, id, bootstrap || isNew);
-      const moveCount = Object.keys(data.moves).length;
+      // Capcom intermittently serves a half-rendered table (2 moves). Retry a few times before giving up.
+      const prevCount = existsSync(resolve(OUT_CAPCOM, `${id}.json`)) ? Object.keys(JSON.parse(readFileSync(resolve(OUT_CAPCOM, `${id}.json`), 'utf8')).moves || {}).length : 0;
+      let data, moveCount = 0;
+      for (let attempt = 1; attempt <= 4; attempt++) {
+        data = await scrapeCharacter(page, id, bootstrap || isNew);
+        moveCount = Object.keys(data.moves).length;
+        if (!(prevCount > 10 && moveCount < prevCount * 0.6) && moveCount > 0) break;
+        console.warn(`  attempt ${attempt}: only ${moveCount} moves (expected ~${prevCount}), retrying…`);
+        await page.waitForTimeout(4000 * attempt);
+      }
       // Safety net: if Capcom changed their markup the parser can return a
       // tiny/empty table. Never overwrite good data with that.
       const prevPath = resolve(OUT_CAPCOM, `${id}.json`);
