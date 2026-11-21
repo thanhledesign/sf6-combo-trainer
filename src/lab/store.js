@@ -51,18 +51,72 @@ let state = typeof window === 'undefined' ? { games: [], sessions: [], goals: []
 const listeners = new Set();
 const emit = (next) => { state = next; write(LS, state); listeners.forEach((f) => f()); };
 
+/* ---------- change tracking for cloud sync (src/lab/sync.js) ---------- */
+const DIRTY = 'srst.dirty', TOMB = 'srst.del';
+let dirty = (typeof window === 'undefined' ? null : read(DIRTY)) || {};
+let tomb = (typeof window === 'undefined' ? null : read(TOMB)) || {};
+const changeL = new Set();
+const mark = (coll, id) => { dirty[`${coll}/${id}`] = 1; write(DIRTY, dirty); changeL.forEach((f) => f()); };
+export const onLocalChange = (f) => { changeL.add(f); return () => changeL.delete(f); };
+export const getDirty = () => Object.keys(dirty);
+export const clearDirty = (keys) => { keys.forEach((k) => { delete dirty[k]; }); write(DIRTY, dirty); };
+export const getTomb = () => tomb;
+const COLLS = ['games', 'sessions', 'goals', 'streaks', 'combos', 'reviews'];
+const stampOf = (r) => r.t || r.start || r.created || Date.now();
+
+/** Give pre-sync records a timestamp and queue them for upload (settings only if `withSettings`). */
+export function stampLocal(withSettings) {
+  let n = 0; const next = { ...state };
+  COLLS.forEach((c) => {
+    next[c] = state[c].map((r) => { if (r._u != null) return r; n++; mark(c, r.id); return { ...r, _u: stampOf(r) }; });
+  });
+  if (withSettings && Object.keys(state.settings).length && state.settings._u == null) { next.settings = { ...state.settings, _u: Date.now() }; mark('settings', 'main'); n++; }
+  if (n) emit(next);
+  return n;
+}
+
+/** Merge rows pulled from the cloud. Newer timestamp wins; never marks anything dirty. */
+export function applyRemote(rows) {
+  let next = { ...state }, changed = false;
+  rows.forEach((row) => {
+    const key = `${row.coll}/${row.id}`, u = Number(row.updated_at);
+    if (tomb[key] != null && tomb[key] >= u) return; // we deleted it after that version
+    if (row.coll === 'settings') {
+      const cur = next.settings;
+      if ((cur._u || 0) >= u) return;
+      next = { ...next, settings: { ...row.data, _u: u } }; changed = true; return;
+    }
+    if (!COLLS.includes(row.coll)) return;
+    const arr = next[row.coll], i = arr.findIndex((x) => x.id === row.id), local = i >= 0 ? arr[i] : null;
+    if (local && (local._u || 0) >= u) return;
+    if (row.deleted) { if (local) { next = { ...next, [row.coll]: arr.filter((x) => x.id !== row.id) }; changed = true; } return; }
+    const rec = { ...row.data, id: row.id, _u: u }, a2 = arr.slice();
+    if (i >= 0) a2[i] = rec; else a2.push(rec);
+    next = { ...next, [row.coll]: a2 }; changed = true;
+  });
+  if (changed) emit(next);
+  return changed;
+}
+
 export const subscribe = (f) => { listeners.add(f); return () => listeners.delete(f); };
 export const getState = () => state;
 export const useLab = () => useSyncExternalStore(subscribe, getState);
 
 export function put(coll, id, data) {
-  if (coll === 'settings') { emit({ ...state, settings: data }); return; }
-  const arr = state[coll].slice(), row = { ...data, id };
+  const u = Date.now();
+  if (coll === 'settings') { emit({ ...state, settings: { ...data, _u: u } }); mark('settings', 'main'); return; }
+  const arr = state[coll].slice(), row = { ...data, id, _u: u };
   const i = arr.findIndex((x) => x.id === id);
   if (i >= 0) arr[i] = row; else arr.push(row);
+  delete tomb[`${coll}/${id}`];
   emit({ ...state, [coll]: arr });
+  mark(coll, id);
 }
-export function del(coll, id) { emit({ ...state, [coll]: state[coll].filter((x) => x.id !== id) }); }
+export function del(coll, id) {
+  tomb[`${coll}/${id}`] = Date.now(); write(TOMB, tomb);
+  emit({ ...state, [coll]: state[coll].filter((x) => x.id !== id) });
+  mark(coll, id);
+}
 export function saveSettings(patch) { put('settings', 'main', { ...state.settings, ...patch }); }
 
 /* ---------- per-device UI prefs (pane layout, drag pace, zoom) ---------- */

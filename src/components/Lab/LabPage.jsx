@@ -14,6 +14,8 @@ import { DashPane, HistPane, GoalsPane, EditGameModal, GoalModal } from './Stats
 import { OptionsPane, TagManager, CsvModal } from './OptionsPane';
 import ReviewPane from './ReviewPane';
 import CombosPane from './CombosPane';
+import SyncModal from './SyncModal';
+import { initSync, useSync } from '../../lab/sync';
 import './lab.css';
 
 const PANES = ['log', 'dash', 'hist', 'goals', 'combos', 'review', 'opts'];
@@ -35,6 +37,7 @@ function LockModal({ S }) {
 
 export default function LabPage({ pane = 'log' }) {
   const S = useLab(), ui = useUI(), navigate = useNavigate();
+  const sync = useSync(), [syncOpen, setSyncOpen] = useState(false);
   const [edit, setEdit] = useState(null), [goal, setGoal] = useState(null), [tags, setTags] = useState(false), [csv, setCsv] = useState(null), [pick, setPick] = useState(false);
   const me = meNow(S), dev = devNow(S);
   const boxRef = useRef(null), [narrow, setNarrow] = useState(false);
@@ -50,6 +53,7 @@ export default function LabPage({ pane = 'log' }) {
     if (pane === 'log') { if (!cur0 || !cur0.length) setUI({ sel: window.innerWidth >= 1100 ? ['log', 'dash'] : ['log'] }); else if (!cur0.includes('log')) setUI({ sel: ['log', ...cur0].slice(0, 3) }); }
     else if (!cur0 || !cur0.includes(pane)) setUI({ sel: [pane] });
   }, [pane]);
+  useEffect(() => { initSync(); }, []);
   useEffect(() => { try { syncGoals(); } catch { /* ignore */ } }, [S.games, S.goals]);
   useEffect(() => {
     const f = () => setTags(true); window.addEventListener('lab:tags', f); return () => window.removeEventListener('lab:tags', f);
@@ -121,7 +125,9 @@ export default function LabPage({ pane = 'log' }) {
               <button key={d} type="button" aria-pressed={d === dev} aria-label={d === 'Stick' ? 'Fight stick' : d === 'Hitbox' ? 'Leverless hitbox' : 'Gamepad'} onClick={() => setDevice(d)}><Icon name={d} /><span>{d}</span></button>
             ))}
           </div>
-          <div className="sync ok" role="status"><i /><span>Saved on this device</span></div>
+          <button type="button" className={`sync ${sync.email ? (sync.status === 'error' ? 'warn' : 'ok') : 'warn'}`} style={{ background: 'none', border: 0 }} onClick={() => setSyncOpen(true)} aria-label="Sync settings">
+            <i /><span>{sync.email ? (sync.status === 'syncing' ? 'Syncing…' : sync.status === 'error' ? 'Sync problem' : 'Synced') : 'This device only · tap to sync'}</span>
+          </button>
           <nav id="tabs" aria-label="Panes (tap several to split the screen)">
             {PANES.map((p) => <button key={p} type="button" aria-pressed={sel.includes(p)} onClick={() => toggle(p)}><Icon name={p} /><span>{PLBL[p]}</span></button>)}
           </nav>
@@ -135,6 +141,7 @@ export default function LabPage({ pane = 'log' }) {
         </main>
       </div>
 
+      {syncOpen && <SyncModal onClose={() => setSyncOpen(false)} />}
       {pick && (
         <Overlay onClose={() => setPick(false)}>
           <h2>Playing as</h2>
