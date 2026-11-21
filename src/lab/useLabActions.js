@@ -45,7 +45,11 @@ export function logGame(res, form) {
     const ended = L > 0 && (n >= L || (o.setEarly && (w > half || l > half)));
     g.set = os ? os.id : 'x' + t;
     if (ended) msg = `Set over ${w}–${l} vs ${ch}. Pick the next opponent.`;
-    else ns = { id: g.set, mode, char: ch, opp: nm, oppMR: om == null ? null : om, n, w, l };
+    else {
+      // the opponent's MR moves too: carry their after-game MR into the next game of the set
+      const dm = my != null && om != null ? postMR(S, { r: res, myMR: my, oppMR: om }) - my : null;
+      ns = { id: g.set, mode, char: ch, opp: nm, oppMR: om == null ? null : (dm == null ? om : om - dm), n, w, l };
+    }
   }
   put('games', 'g' + t, g);
   put('sessions', s.id, { ...strip(s), openSet: ns });

@@ -59,9 +59,9 @@ export default function LabPage({ pane = 'log' }) {
     const cur0 = getUI().sel, force = seen.current; seen.current = true;
     if (fromTabs) return; // the layout was changed by the pane tabs themselves
     if (pane === 'log') {
-      if (!cur0 || !cur0.length) setUI({ sel: window.innerWidth >= 1100 ? ['log', 'dash'] : ['log'] });
-      else if (!cur0.includes('log')) setUI({ sel: force ? ['log'] : ['log', ...cur0].slice(0, 3) });
-    } else if (force || !cur0 || !cur0.includes(pane)) setUI({ sel: [pane] });
+      if (!cur0 || !cur0.length) setUI({ under: [], sel: window.innerWidth >= 1100 ? ['log', 'dash'] : ['log'] });
+      else if (!cur0.includes('log')) setUI({ under: [], sel: force ? ['log'] : ['log', ...cur0].slice(0, 3) });
+    } else if (force || !cur0 || !cur0.includes(pane)) setUI({ under: [], sel: [pane] });
   }, [pane, loc.key, fromTabs]);
   useEffect(() => { initSync(); }, []);
   useEffect(() => { try { syncGoals(); } catch { /* ignore */ } }, [S.games, S.goals]);
@@ -75,12 +75,29 @@ export default function LabPage({ pane = 'log' }) {
 
   // Pane order is the order in `sel` (the user can rearrange it), not the tab order.
   const sel = [...new Set((ui.sel && ui.sel.length ? ui.sel : ['log']).filter((p) => PANES.includes(p)))];
-  const vis = sel, sig = vis.join(',');
+  // Panes live in columns; a pane in ui.under is tucked beneath the pane before it (same column).
+  const under = ui.under || [];
+  const colsDesk = [];
+  sel.forEach((p) => { if (under.includes(p) && colsDesk.length) colsDesk[colsDesk.length - 1].push(p); else colsDesk.push([p]); });
+  const cols = narrow ? sel.map((p) => [p]) : colsDesk;
+  const vis = sel, sig = cols.map((c) => c.join('+')).join(',');
+  const MAXCOL = 3;
+  const flat = (cs) => ({ sel: cs.flat(), under: cs.flatMap((c) => c.slice(1)) });
+  // Apply a new column layout, carrying each column's width with its first pane.
+  const setCols = (next) => {
+    const old = ((getUI().rat || {})[sig] || []), w = {};
+    cols.forEach((c, i) => { w[c[0]] = old[i] > 0 ? old[i] : 1; });
+    const f = flat(next);
+    setUI({ ...f, rat: { ...getUI().rat, [next.map((c) => c.join('+')).join(',')]: next.map((c) => w[c[0]] || 1) } });
+  };
   const toggle = (p) => {
-    const a = sel.slice(), i = a.indexOf(p);
-    if (i >= 0) { if (a.length > 1) a.splice(i, 1); } else { a.push(p); if (a.length > 3) a.shift(); }
-    setUI({ sel: a });
+    let cs = colsDesk.map((c) => c.slice());
+    const ci = cs.findIndex((c) => c.includes(p));
+    if (ci >= 0) { if (sel.length > 1) { cs[ci] = cs[ci].filter((x) => x !== p); if (!cs[ci].length) cs.splice(ci, 1); } }
+    else { cs.push([p]); while (cs.length > MAXCOL) cs.shift(); }
+    setUI(flat(cs));
     // keep the URL (and the app nav highlight) in step with what's showing
+    const a = flat(cs).sel;
     const url = a.length === 1 && a[0] === 'review' ? '/tracker/review' : a.length === 1 && a[0] === 'combos' ? '/tracker/combos' : '/tracker';
     if (url !== loc.pathname) navigate(url, { replace: true, state: { tabs: true } });
   };
@@ -89,7 +106,7 @@ export default function LabPage({ pane = 'log' }) {
   const ratios = (n) => { const r = ((ui.rat || {})[sig] || []).slice(0, n); for (let i = 0; i < n; i++) if (!(r[i] > 0)) r[i] = 1; return r; };
   useLayoutEffect(() => {
     const box = boxRef.current; if (!box) return;
-    const n = vis.length;
+    const n = cols.length;
     if (n < 2) { box.style.gridTemplateColumns = ''; box.style.gridTemplateRows = ''; return; }
     const r = ratios(n), t = []; r.forEach((x, i) => { if (i) t.push('.6rem'); t.push(`minmax(0,${x}fr)`); });
     box.style.gridTemplateColumns = narrow ? 'minmax(0,1fr)' : t.join(' ');
@@ -97,7 +114,7 @@ export default function LabPage({ pane = 'log' }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sig, narrow, ui.rat]);
   const dragGutter = (i) => (e) => {
-    const n = vis.length, box = boxRef.current, st = { p: narrow ? e.clientY : e.clientX, r: ratios(n) };
+    const n = cols.length, box = boxRef.current, st = { p: narrow ? e.clientY : e.clientX, r: ratios(n) };
     const size = (narrow ? box.clientHeight : box.clientWidth) - (n - 1) * 9.6 - 19.2;
     e.currentTarget.classList.add('drag');
     const el = e.currentTarget;
@@ -110,14 +127,33 @@ export default function LabPage({ pane = 'log' }) {
     const end = () => { el.classList.remove('drag'); window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', end); };
     window.addEventListener('pointermove', mv); window.addEventListener('pointerup', end);
   };
-  // Rearrange: carry each pane's size with it so reordering never resets the layout.
-  const moveTo = (p, to) => {
-    const cur = getUI().sel.filter((x) => PANES.includes(x)), from = cur.indexOf(p);
-    if (from < 0 || to < 0 || to >= cur.length || to === from) return;
-    const oldSig = cur.join(','), old = ((getUI().rat || {})[oldSig] || []);
-    const w = Object.fromEntries(cur.map((x, i) => [x, old[i] > 0 ? old[i] : 1]));
-    const next = cur.filter((x) => x !== p); next.splice(to, 0, p);
-    setUI({ sel: next, rat: { ...getUI().rat, [next.join(',')]: next.map((x) => w[x]) } });
+  // Rearrange. Whole columns move left/right; a pane can be tucked under the column to its left
+  // (or popped back out into its own column), so a column frees up for another tab.
+  const cloneCols = () => colsDesk.map((c) => c.slice());
+  const moveCol = (p, to) => {
+    const cs = cloneCols(), from = cs.findIndex((c) => c.includes(p));
+    if (from < 0 || to < 0 || to >= cs.length || to === from) return;
+    const [c] = cs.splice(from, 1); cs.splice(to, 0, c); setCols(cs);
+  };
+  const tuckUnder = (p, target) => {
+    let cs = cloneCols();
+    const from = cs.findIndex((c) => c.includes(p));
+    let ti = target ? cs.findIndex((c) => c.includes(target)) : from - 1;
+    if (from < 0 || ti < 0 || cs[from].length > 1 && !target) return;
+    cs[from] = cs[from].filter((x) => x !== p);
+    const tcol = cs[ti]; const at = target ? tcol.indexOf(target) + 1 : tcol.length;
+    tcol.splice(at, 0, p);
+    cs = cs.filter((c) => c.length); setCols(cs);
+  };
+  const popOut = (p) => {
+    const cs = cloneCols(), from = cs.findIndex((c) => c.includes(p));
+    if (from < 0 || cs[from].length < 2 || cs.length >= MAXCOL) return;
+    cs[from] = cs[from].filter((x) => x !== p); cs.splice(from + 1, 0, [p]); setCols(cs);
+  };
+  const reorderInCol = (p, d) => {
+    const cs = cloneCols(), c = cs.find((x) => x.includes(p)), i = c.indexOf(p), j = i + d;
+    if (j < 0 || j >= c.length) return;
+    [c[i], c[j]] = [c[j], c[i]]; setCols(cs);
   };
   const startMove = (p) => (e) => {
     if (e.target.closest('button')) return;
@@ -125,14 +161,32 @@ export default function LabPage({ pane = 'log' }) {
     e.preventDefault();
     const wrap = e.currentTarget.closest('.pwrap'); wrap.classList.add('moving');
     const mv = (ev) => {
-      const ws = [...box.querySelectorAll(':scope > .pwrap')]; if (ws.length < 2) return;
+      const cws = [...box.querySelectorAll(':scope > .pcol')]; if (!cws.length) return;
+      if (!narrow) {
+        // drop onto the lower part of another pane = tuck beneath it
+        const hit = document.elementsFromPoint(ev.clientX, ev.clientY).map((x) => x.closest && x.closest('.pwrap')).find((x) => x && x.dataset.pane !== p);
+        if (hit) {
+          const r = hit.getBoundingClientRect();
+          if (ev.clientY > r.top + r.height * 0.6) { tuckUnder(p, hit.dataset.pane); return; }
+        }
+      }
+      if (cws.length < 2 && narrow) return;
       const pos = narrow ? ev.clientY : ev.clientX;
       let best = 0, bd = Infinity;
-      ws.forEach((el, i) => { const r = el.getBoundingClientRect(), c = narrow ? r.top + r.height / 2 : r.left + r.width / 2; const d = Math.abs(pos - c); if (d < bd) { bd = d; best = i; } });
-      moveTo(p, best);
+      cws.forEach((el, i) => { const r = el.getBoundingClientRect(), c = narrow ? r.top + r.height / 2 : r.left + r.width / 2; const d = Math.abs(pos - c); if (d < bd) { bd = d; best = i; } });
+      const myCol = colsDesk.findIndex((c) => c.includes(p));
+      if (narrow) moveCol(p, best);
+      else if (colsDesk[myCol].length > 1) { if (best !== myCol) popOutTo(p, best); }
+      else moveCol(p, best);
     };
     const end = () => { wrap.classList.remove('moving'); window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', end); window.removeEventListener('pointercancel', end); };
     window.addEventListener('pointermove', mv); window.addEventListener('pointerup', end); window.addEventListener('pointercancel', end);
+  };
+  // a tucked pane dragged sideways leaves its column and takes a column slot at that position
+  const popOutTo = (p, idx) => {
+    const cs = cloneCols(), from = cs.findIndex((c) => c.includes(p));
+    if (cs.length >= MAXCOL) return;
+    cs[from] = cs[from].filter((x) => x !== p); cs.splice(idx > from ? idx + 0 : idx, 0, [p]); setCols(cs.filter((c) => c.length));
   };
   const resetGutter = () => { const r = { ...getUI().rat }; delete r[sig]; setUI({ rat: r }); };
 
@@ -168,19 +222,27 @@ export default function LabPage({ pane = 'log' }) {
           </nav>
         </header>
         <main id="panes" ref={boxRef}>
-          {vis.map((p, i) => (
-            <FragmentWith key={p} gutter={i > 0 ? <div className="gutter" role="separator" aria-label="Drag to resize panes" title="Drag to resize · double-click to reset" onPointerDown={dragGutter(i - 1)} onDoubleClick={resetGutter} /> : null}>
-              <div className="pwrap" data-pane={p}>
-                {vis.length > 1 && (
-                  <div className="ptool" onPointerDown={startMove(p)} title="Drag to rearrange">
-                    <span className="grip" aria-hidden="true">⠿</span><b>{PLBL[p]}</b>
-                    <span className="psp" />
-                    <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'up' : 'left'}`} disabled={i === 0} onClick={() => moveTo(p, i - 1)}>{narrow ? '▲' : '◀'}</button>
-                    <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'down' : 'right'}`} disabled={i === vis.length - 1} onClick={() => moveTo(p, i + 1)}>{narrow ? '▼' : '▶'}</button>
-                    <button type="button" aria-label={`Close ${PLBL[p]}`} onClick={() => toggle(p)}>✕</button>
+          {cols.map((col, ci) => (
+            <FragmentWith key={col[0]} gutter={ci > 0 ? <div className="gutter" role="separator" aria-label="Drag to resize panes" title="Drag to resize · double-click to reset" onPointerDown={dragGutter(ci - 1)} onDoubleClick={resetGutter} /> : null}>
+              <div className="pcol">
+                {col.map((p, ri) => (
+                  <div className="pwrap" data-pane={p} key={p}>
+                    {vis.length > 1 && (
+                      <div className="ptool" onPointerDown={startMove(p)} title="Drag to rearrange · drop on the lower half of another pane to tuck underneath">
+                        <span className="grip" aria-hidden="true">⠿</span><b>{PLBL[p]}</b>
+                        <span className="psp" />
+                        {!narrow && col.length > 1 && <button type="button" aria-label={`Move ${PLBL[p]} up in column`} disabled={ri === 0} onClick={() => reorderInCol(p, -1)}>▲</button>}
+                        {!narrow && col.length > 1 && <button type="button" aria-label={`Move ${PLBL[p]} down in column`} disabled={ri === col.length - 1} onClick={() => reorderInCol(p, 1)}>▼</button>}
+                        {!narrow && col.length === 1 && ci > 0 && <button type="button" title="Tuck under the column to the left" aria-label={`Tuck ${PLBL[p]} under the column on the left`} onClick={() => tuckUnder(p)}>⤓</button>}
+                        {!narrow && col.length > 1 && <button type="button" title="Pop out into its own column" aria-label={`Pop ${PLBL[p]} out into its own column`} disabled={cols.length >= MAXCOL} onClick={() => popOut(p)}>⤢</button>}
+                        {(narrow || col.length === 1) && <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'up' : 'left'}`} disabled={ci === 0} onClick={() => moveCol(p, ci - 1)}>{narrow ? '▲' : '◀'}</button>}
+                        {(narrow || col.length === 1) && <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'down' : 'right'}`} disabled={ci === cols.length - 1} onClick={() => moveCol(p, ci + 1)}>{narrow ? '▼' : '▶'}</button>}
+                        <button type="button" aria-label={`Close ${PLBL[p]}`} onClick={() => toggle(p)}>✕</button>
+                      </div>
+                    )}
+                    {render(p)}
                   </div>
-                )}
-                {render(p)}
+                ))}
               </div>
             </FragmentWith>
           ))}

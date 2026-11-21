@@ -230,6 +230,8 @@
 .lab .startv .btn.huge{flex:none}
 
 /* pane toolbar (rearrange / close) */
+.lab .pcol{display:flex;flex-direction:column;gap:.5rem;min-width:0;min-height:0}
+.lab .pcol > .pwrap{flex:1 1 0}
 .lab .pwrap{display:flex;flex-direction:column;gap:.3rem;min-width:0;min-height:0}
 .lab .pwrap > .pane{flex:1 1 0}
 .lab .ptool{display:flex;align-items:center;gap:.25rem;padding:.15rem .3rem;background:var(--panel2);border:1px solid var(--line);border-radius:.6rem;cursor:grab;touch-action:none;user-select:none;font-size:.75rem;color:var(--mute)}
