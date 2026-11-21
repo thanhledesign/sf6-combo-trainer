@@ -1,29 +1,49 @@
-// Turns a Capcom `input` string into a list of icon tokens for normals, e.g.
-//   'LP'                       -> { prefix: null, tokens: [btn LP] }
-//   '↓ + HK'                   -> crouch
-//   '(During a jump) ↗ + MP'   -> jump (arrow kept, ↗ becomes ↑ for neutral jump)
+// Turns a Capcom `input` string into icon tokens (arrows + buttons) so every move card can show its
+// command as official button art instead of a video, e.g.
+//   'LP'                              -> [btn LP]
+//   '↓↘→ + LP'                        -> [arrow 2, 3, 6, plus, btn LP]
+//   '(During a jump) ↗ + MP'          -> caption 'During a jump', [arrow 9, plus, btn MP]
+//   '↓↘→↓↘→ + P'                      -> two motions + generic punch
 // Returns null when the input can't be shown purely as arrows + buttons, so callers fall back.
 const ARROWS = { '↓': 2, '↙': 1, '↘': 3, '←': 4, '→': 6, '↖': 7, '↑': 8, '↗': 9 };
-const BUTTONS = ['LP', 'MP', 'HP', 'LK', 'MK', 'HK'];
+const BUTTON_RE = /^(LP|MP|HP|LK|MK|HK)/;
 
-export function parseNormalInput(input) {
+export function parseInput(input) {
   if (!input || typeof input !== 'string') return null;
-  const ctx = input.match(/^\(([^)]*)\)\s*/);
-  const context = ctx ? ctx[1].toLowerCase() : '';
-  let rest = (ctx ? input.slice(ctx[0].length) : input).trim();
-  const jump = /jump/.test(context);
-  if (context && !jump) return null; // Drive Parry / Sway / Crouch follow-ups etc.
+  let rest = input.trim();
+  const ctxs = [];
+  let m;
+  while ((m = rest.match(/^\(([^)]*)\)\s*/))) { ctxs.push(m[1].trim()); rest = rest.slice(m[0].length); }
+  const context = ctxs.join(' · ');
+  const jump = /jump/i.test(context);
 
   const tokens = [];
-  for (const part of rest.split(/\s*\+\s*/)) {
-    if (BUTTONS.includes(part)) tokens.push({ type: 'button', value: part });
-    else if (part.length === 1 && ARROWS[part]) {
-      let dir = ARROWS[part];
-      if (jump && /neutral/.test(context) && dir === 9) dir = 8;
-      tokens.push({ type: 'arrow', value: dir });
-    } else return null;
+  let i = 0;
+  while (i < rest.length) {
+    const ch = rest[i];
+    if (/\s/.test(ch)) { i++; continue; }
+    if (ch === '+') { tokens.push({ type: 'plus' }); i++; continue; }
+    if (ch === '/') { tokens.push({ type: 'slash' }); i++; continue; }
+    if (ARROWS[ch]) {
+      let dir = ARROWS[ch];
+      if (jump && /neutral/i.test(context) && dir === 9) dir = 8;
+      tokens.push({ type: 'arrow', value: dir }); i++; continue;
+    }
+    if (/[1-9]/.test(ch)) { tokens.push(ch === '5' ? { type: 'neutral' } : { type: 'arrow', value: Number(ch) }); i++; continue; }
+    const b = rest.slice(i).match(BUTTON_RE);
+    if (b) { tokens.push({ type: 'button', value: b[1] }); i += 2; continue; }
+    if (ch === 'P' || ch === 'K') { tokens.push({ type: 'generic', value: ch }); i++; continue; }
+    return null; // unknown glyph (e.g. a Capcom-only icon): don't guess
   }
-  if (!tokens.some(t => t.type === 'button')) return null;
-  const crouch = !jump && tokens.some(t => t.type === 'arrow' && t.value === 2);
-  return { tokens, label: jump ? 'Jumping' : crouch ? 'Crouching' : null };
+  const hasPress = tokens.some((t) => t.type === 'button' || t.type === 'generic');
+  if (!hasPress) {
+    // directions only (e.g. Drive Rush "→→") are still worth showing
+    if (!tokens.some((t) => t.type === 'arrow')) return null;
+  }
+  const dirs = tokens.filter((t) => t.type === 'arrow');
+  const crouch = !jump && dirs.length === 1 && dirs[0].value === 2 && tokens.filter((t) => t.type !== 'plus').length === 2;
+  return { tokens, context: context || null, label: jump ? 'Jumping' : crouch ? 'Crouching' : null };
 }
+
+// Back-compat: normals only ever had a plain command, so the old name keeps working.
+export const parseNormalInput = parseInput;

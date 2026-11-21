@@ -85,7 +85,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
   // Remote video URLs may carry query strings / no extension, so trust the `video` field.
   const mediaType = move.video ? 'video' : getMediaType(mediaSrc);
   // Normals show their official button / direction icons instead of a video.
-  const showButtons = move.category === 'normal' && !!parseNormalInput(move.input);
+  const showButtons = !!parseNormalInput(move.input);
 
   // Determine risk level color
   const getRiskColor = (riskLevel) => {
@@ -245,7 +245,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
             >
               {/* 16:9 Media Preview */}
               <div 
-                className={`${showButtons ? 'aspect-[2.6/1] sm:aspect-video' : 'aspect-video'} relative overflow-hidden cursor-pointer border-b border-purple-500/30`}
+                className={`${showButtons ? 'aspect-[2.2/1] sm:aspect-[2.6/1]' : 'aspect-video'} relative overflow-hidden cursor-pointer border-b border-purple-500/30`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleMediaClick}
