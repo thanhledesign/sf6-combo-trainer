@@ -633,6 +633,7 @@ async function scrapeCharacter(page, charId, bootstrap) {
       const prevPath = resolve(OUT_CAPCOM, `${id}.json`);
       if (existsSync(prevPath) && !dryRun) {
         const prev = Object.keys(JSON.parse(readFileSync(prevPath, 'utf8')).moves || {}).length;
+        if (process.env.SYNC_DIAG) console.log('DIAG unmatched ' + id + ' ' + data._unmatched.length + ' ' + JSON.stringify(data._unmatched.slice(0, 25)) + ' MATCHED ' + JSON.stringify(Object.keys(data.moves)));
         if (prev > 10 && moveCount < prev * 0.6) {
           console.error(`  SKIPPED ${id}: only ${moveCount} moves parsed vs ${prev} on file — parser likely broken, keeping old data`);
           process.exitCode = 1;
