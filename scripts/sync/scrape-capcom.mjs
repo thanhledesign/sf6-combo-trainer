@@ -433,6 +433,17 @@ async function scrapeCharacter(page, charId, bootstrap) {
   // 2) Frame data page
   await page.goto(`https://www.streetfighter.com/6/character/${urlFor(charId)}/frame`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
+  if (process.env.SYNC_DIAG) {
+    const d = await page.evaluate(() => ({
+      url: location.href, title: document.title,
+      tables: document.querySelectorAll('table').length, trs: document.querySelectorAll('table tbody tr').length,
+      skills: document.querySelectorAll('[class*="frame_skill"]').length,
+      classes: [...new Set([...document.querySelectorAll('table *')].map((e) => e.className).filter((c) => typeof c === 'string' && c))].slice(0, 40),
+      text: document.body.innerText.slice(0, 700),
+      html: (document.querySelector('table') || document.querySelector('main') || document.body).outerHTML.slice(0, 2500),
+    }));
+    console.log('DIAG ' + charId + ' ' + JSON.stringify(d, null, 1));
+  }
 
   // Use the stable CSS class prefixes Capcom assigns per cell type
   // (e.g., frame_skill__xxx, frame_startup_frame__yyy) — robust to column

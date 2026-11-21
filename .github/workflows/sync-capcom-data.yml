@@ -37,6 +37,8 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Scrape characters (whole roster + new DLC by default)
+        env:
+          SYNC_DIAG: ${{ inputs.chars != '' && '1' || '' }}
         run: |
           if [ -n "${{ inputs.chars }}" ]; then
             node scripts/sync/scrape-capcom.mjs --char=${{ inputs.chars }}
