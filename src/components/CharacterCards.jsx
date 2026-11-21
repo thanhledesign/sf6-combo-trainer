@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ChevronRight, Zap, Shield, Sword, Star, LayoutGrid, Rows3 } from 'lucide-react';
 import { characterList } from '../data/characters';
 import { charThumb, charArt } from '../data/charThumb';
+import { artGradient } from '../data/charColors';
 
 // Per-character flag for the new 22 (the original 7 are already in manual
 // list below). Source: Capcom's character profiles.
@@ -73,8 +74,8 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
       >
         <div className="row-card row-card-3 relative overflow-hidden rounded-xl shadow-lg active:scale-95 transition-transform" style={{ gridRow: 'span 3' }}>
           {/* Character Image on the brand gradient */}
-          <div className="relative aspect-video overflow-hidden brand-gradient">
-            <div className="absolute inset-0 brand-gradient mix-blend-soft-light opacity-80 z-[5] pointer-events-none"></div>
+          <div className="relative aspect-video overflow-hidden" style={{ background: artGradient(character.id) }}>
+            <div className="absolute inset-0 mix-blend-soft-light opacity-80 z-[5] pointer-events-none" style={{ background: artGradient(character.id) }}></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
             
             {character.image ? (
@@ -113,7 +114,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
                     className={`w-1.5 h-1.5 rounded-full ${
                       i < character.difficultyLevel ? '' : 'opacity-20'
                     }`}
-                    style={{ backgroundColor: i < character.difficultyLevel ? character.accentColor : '#4B5563' }}
+                    style={{ backgroundColor: i < character.difficultyLevel ? '#F3F4F6' : '#4B5563' }}
                   ></div>
                 ))}
               </div>
@@ -158,8 +159,8 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           }}
         ></div>
         
-        <div className="relative aspect-video overflow-hidden brand-gradient">
-            <div className="absolute inset-0 brand-gradient mix-blend-soft-light opacity-80 z-[5] pointer-events-none"></div>
+        <div className="relative aspect-video overflow-hidden" style={{ background: artGradient(character.id) }}>
+            <div className="absolute inset-0 mix-blend-soft-light opacity-80 z-[5] pointer-events-none" style={{ background: artGradient(character.id) }}></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
           
           <div className="absolute top-4 left-4 z-20">
@@ -228,7 +229,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           <div>
             <div className="flex justify-between items-center mb-2">
               <span className="text-xs text-gray-400 uppercase">Difficulty</span>
-              <span className="text-xs font-semibold" style={{ color: character.accentColor }}>
+              <span className="text-xs font-semibold text-gray-200">
                 {character.difficulty}
               </span>
             </div>
@@ -241,9 +242,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
                       ? 'opacity-100' 
                       : 'opacity-20'
                   }`}
-                  style={{ 
-                    backgroundColor: i < character.difficultyLevel ? character.accentColor : '#4B5563'
-                  }}
+                  style={{ backgroundColor: i < character.difficultyLevel ? '#F3F4F6' : '#4B5563' }}
                 ></div>
               ))}
             </div>
