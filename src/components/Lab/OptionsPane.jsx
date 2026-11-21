@@ -5,6 +5,7 @@ import { put } from '../../lab/store';
 import { setOpt, updateStop, endSession } from '../../lab/useLabActions';
 import { toast } from './toastBus';
 import { Overlay, Stepper } from './ui';
+import SyncGuide from './SyncGuide';
 
 const DASH_TILES = [['record', 'Record'], ['win', 'Win rate'], ['streak', 'Streak'], ['mr', 'MR now'], ['lights', 'Loss lights'], ['games', 'Games'], ['minutes', 'Minutes'], ['rule', 'Rule and cue words'], ['dots', 'Last games strip'], ['rematch', 'New vs rematch'], ['goal', 'Top goal']];
 
@@ -68,6 +69,16 @@ export function OptionsPane({ onTags, onCsv }) {
 // Backup / restore of the Lab's browser-local data (used to move from the old standalone tracker).
 function DataButtons() {
   const S = useRaw(); // backups cover every account
+  const [guide, setGuide] = useState(false);
+  // Share sheet → "Save to Files" → iCloud Drive (iOS/Android); plain download elsewhere.
+  const saveToFiles = async () => {
+    const name = `session-lab-${new Date().toISOString().slice(0, 10)}.json`;
+    const file = new File([JSON.stringify(S, null, 2)], name, { type: 'application/json' });
+    try {
+      if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: 'SF6 Session Lab backup' }); return; }
+    } catch (err) { if (err && err.name === 'AbortError') return; }
+    exportJson();
+  };
   const exportJson = () => {
     const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `session-lab-${new Date().toISOString().slice(0, 10)}.json`; a.click();
@@ -87,8 +98,11 @@ function DataButtons() {
   };
   return (
     <>
-      <button type="button" className="btn" onClick={exportJson}>Back up data (JSON)</button>
+      <button type="button" className="btn" onClick={saveToFiles}>Save to Files / iCloud Drive</button>
+      <button type="button" className="btn" onClick={exportJson}>Back up data (JSON download)</button>
       <label className="btn" style={{ textAlign: 'center', cursor: 'pointer', color: 'var(--text)', fontSize: '1rem' }}>Import backup<input type="file" accept="application/json,.json" hidden onChange={importJson} /></label>
+      <button type="button" className="btn" onClick={() => setGuide(true)}>Save &amp; sync guide</button>
+      {guide && <SyncGuide onClose={() => setGuide(false)} />}
     </>
   );
 }

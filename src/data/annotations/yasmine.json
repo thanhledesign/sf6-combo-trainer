@@ -1,0 +1,13 @@
+{
+  "character": {
+    "id": "yasmine",
+    "name": "Yasmine",
+    "displayName": "Yasmine",
+    "archetype": "tbd",
+    "description": "Year 4 DLC fighter (released Aug 3, 2026)",
+    "version": "0.1.0",
+    "pendingSync": true
+  },
+  "tactics": {},
+  "moves": {}
+}

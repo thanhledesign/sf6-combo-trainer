@@ -1,3 +1,4 @@
+import SeasonBadge from '../SeasonBadge';
 import React, { useState, useMemo, useEffect } from 'react';
 import { THUMBS } from '../../data/charThumb';
 import { Search, ChevronDown, LayoutGrid, Rows3 } from 'lucide-react';
@@ -233,6 +234,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
               {character?.displayName || character?.name}
               <ChevronDown className={`w-6 h-6 transition-transform ${showCharacterDropdown ? 'rotate-180' : ''}`} />
             </button>
+            <div className="mt-1"><SeasonBadge meta={characterData?._data ?? character?._data} /></div>
             
             {/* Character Dropdown */}
             {showCharacterDropdown && (
@@ -385,7 +387,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
 
         {filteredMoves.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-400">No moves found matching your filters</p>
+            <p className="text-gray-400">{Object.keys(moves || {}).length === 0 ? `${character?.displayName || 'This character'}'s frame data hasn't been synced from Capcom yet — it lands with the next data sync.` : 'No moves found matching your filters'}</p>
           </div>
         )}
       </div>

@@ -6,6 +6,7 @@ import { charIdToName } from '../../lab/data';
 import { comboStr, isDirs, isBtn } from '../../lab/combo';
 import { calcCombo, finalStats } from '../../lab/comboCalc';
 import ComboStats from '../Lab/ComboStats';
+import SeasonBadge from '../SeasonBadge';
 
 // Punish groups, in display order. Normals come first: they're what you actually
 // reach for at -4 to -8, so they must never be buried under big-damage specials/supers.
@@ -111,7 +112,7 @@ const PunishCalculator = ({ characterData }) => {
       <div className="max-w-4xl mx-auto px-4 py-6 md:py-8">
         {/* Header */}
         <div className="mb-6 md:mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">Punish Calculator</h1>
+          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 flex flex-wrap items-center gap-3">Punish Calculator <SeasonBadge meta={characterData?._data} /></h1>
           <p className="text-gray-400 text-sm md:text-base">
             Enter the opponent's frame disadvantage. Results update as you type and include normals, specials, supers, throws and your own saved combos.
           </p>

@@ -1,0 +1,13 @@
+{
+  "character": {
+    "id": "arjun",
+    "name": "Arjun",
+    "displayName": "Arjun",
+    "archetype": "tbd",
+    "description": "Year 4 DLC fighter (released Oct 13, 2026)",
+    "version": "0.1.0",
+    "pendingSync": true
+  },
+  "tactics": {},
+  "moves": {}
+}

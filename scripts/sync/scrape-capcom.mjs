@@ -12,7 +12,7 @@
 //   /6/character/<id>/movelist — currently unused (input notation is image-only)
 
 import { chromium } from 'playwright';
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -20,7 +20,24 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const SRC_ANNOT = resolve(ROOT, 'src/data/annotations');
 const OUT_CAPCOM = resolve(ROOT, 'src/data/capcom');
 
-const DEFAULTS = ['ken', 'ryu', 'luke', 'chunli', 'cammy', 'mai', 'terry'];
+// Season stamp written into every capcom/<id>.json so the UI can tell which
+// patch the frame data reflects. Bump when Capcom starts a new season/year.
+// Capcom brands these "Year N"; players say "Season N". Season 4 = Year 4,
+// launched 2026-08-03 with Yasmine and a balance pass on the whole roster.
+const SEASON = { number: 4, label: 'Season 4', capcomLabel: 'Year 4', patchDate: '2026-08-03' };
+
+// Characters that exist on streetfighter.com but may have no annotation yet.
+// They are bootstrapped automatically (skeleton annotations + full frame data).
+// Add new DLC slugs here (upcoming: tifa, bosch).
+const NEW_CHARS = ['ingrid', 'yasmine', 'arjun'];
+
+const DISPLAY = { ingrid: 'Ingrid', yasmine: 'Yasmine', arjun: 'Arjun', tifa: 'Tifa', bosch: 'Bosch' };
+
+// --all = every annotated character + any NEW_CHARS.
+const DEFAULTS = [...new Set([
+  ...readdirSync(SRC_ANNOT).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, '')),
+  ...NEW_CHARS,
+])].sort();
 
 // Local char id → Capcom URL slug, for chars where the names differ.
 const CAPCOM_URL = {
@@ -339,9 +356,11 @@ function notationToInputDisplay(notation, context = null) {
 
 // ─── Scraping ─────────────────────────────────────────────────────────
 
-async function scrapeCharacter(page, charId) {
+async function scrapeCharacter(page, charId, bootstrap) {
   const out = {
     id: charId,
+    season: SEASON.number,
+    seasonLabel: SEASON.label,
     scrapedAt: new Date().toISOString(),
     source: `https://www.streetfighter.com/6/character/${urlFor(charId)}`,
     character: {},
@@ -593,8 +612,23 @@ async function scrapeCharacter(page, charId) {
   for (const id of characters) {
     console.log(`\n→ Scraping ${id}…`);
     try {
-      const data = await scrapeCharacter(page, id);
+      const ap = resolve(SRC_ANNOT, `${id}.json`);
+      // "New" = no annotation file, or a placeholder with no moves yet.
+      const isNew = !existsSync(ap) || Object.keys(JSON.parse(readFileSync(ap, 'utf8')).moves || {}).length === 0;
+      const data = await scrapeCharacter(page, id, bootstrap || isNew);
       const moveCount = Object.keys(data.moves).length;
+      // Safety net: if Capcom changed their markup the parser can return a
+      // tiny/empty table. Never overwrite good data with that.
+      const prevPath = resolve(OUT_CAPCOM, `${id}.json`);
+      if (existsSync(prevPath) && !dryRun) {
+        const prev = Object.keys(JSON.parse(readFileSync(prevPath, 'utf8')).moves || {}).length;
+        if (prev > 10 && moveCount < prev * 0.6) {
+          console.error(`  SKIPPED ${id}: only ${moveCount} moves parsed vs ${prev} on file — parser likely broken, keeping old data`);
+          process.exitCode = 1;
+          continue;
+        }
+      }
+      if (moveCount === 0) { console.error(`  SKIPPED ${id}: no moves parsed`); process.exitCode = 1; continue; }
       console.log(`  ${moveCount} moves matched, ${data._unmatched.length} unmatched`);
       if (data._unmatched.length) {
         console.log('  unmatched:', data._unmatched.slice(0, 5).map((u) => u.displayName).join(' | '), data._unmatched.length > 5 ? '…' : '');
@@ -608,14 +642,14 @@ async function scrapeCharacter(page, charId) {
       // Bootstrap: when annotations don't exist yet, generate a skeletal
       // file so the character renders. Only writes if missing — never
       // clobbers existing annotation work.
-      if (bootstrap && !dryRun) {
+      if ((bootstrap || isNew) && !dryRun) {
         const annotPath = resolve(ROOT, `src/data/annotations/${id}.json`);
-        if (!existsSync(annotPath)) {
+        if (!existsSync(annotPath) || isNew) {
           const skel = {
             character: {
               id,
-              name: data.character?.bio ? data.character.title || id : id,
-              displayName: id.charAt(0).toUpperCase() + id.slice(1).replace(/_/g, ' '),
+              name: DISPLAY[id] || id.charAt(0).toUpperCase() + id.slice(1).replace(/_/g, ' '),
+              displayName: DISPLAY[id] || id.charAt(0).toUpperCase() + id.slice(1).replace(/_/g, ' '),
               archetype: 'tbd',
               description: '',
             },
