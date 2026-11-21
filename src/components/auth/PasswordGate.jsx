@@ -58,7 +58,7 @@ export function PasswordGate() {
           {error && <p className="text-xs text-red-500 mt-2">Incorrect password</p>}
           <button
             type="submit"
-            className="w-full mt-4 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-sm font-semibold transition-colors"
+            className="btn-primary w-full mt-4"
           >
             Enter
           </button>

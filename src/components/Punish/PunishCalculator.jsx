@@ -137,11 +137,8 @@ const PunishCalculator = ({ characterData }) => {
               <button
                 key={preset.value}
                 onClick={() => setFrameDisadvantage(preset.value)}
-                className={`px-3 py-2 rounded-lg transition-colors text-center ${
-                  frameDisadvantage === preset.value
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                }`}
+                aria-pressed={frameDisadvantage === preset.value}
+                className="btn-toggle flex-col text-center"
               >
                 <span className="font-mono font-bold block">{preset.label}</span>
                 <span className="text-xs opacity-70 hidden sm:block">{preset.description}</span>
@@ -222,12 +219,12 @@ const PunishCalculator = ({ characterData }) => {
               <div className="flex flex-wrap gap-2" role="group" aria-label="Move type">
                 {[{ key: 'all', label: `All ${categorizedPunishes.all.length}` }, ...GROUPS.filter((g) => grouped[g.key].length).map((g) => ({ key: g.key, label: `${g.label} ${grouped[g.key].length}` }))].map((f) => (
                   <button key={f.key} onClick={() => setFilter(f.key)} aria-pressed={filter === f.key}
-                    className={`px-3 py-1.5 rounded text-sm ${filter === f.key ? 'bg-purple-600 text-white' : 'bg-gray-700 text-gray-300'}`}>{f.label}</button>
+                    className="btn-toggle btn-sm">{f.label}</button>
                 ))}
               </div>
               <div className="flex gap-2">
                 {[['damage', 'Damage'], ['speed', 'Speed']].map(([k, l]) => (
-                  <button key={k} onClick={() => setSortBy(k)} className={`px-3 py-1.5 rounded text-sm ${sortBy === k ? 'bg-gray-500 text-white' : 'bg-gray-700 text-gray-300'}`}>{l}</button>
+                  <button key={k} onClick={() => setSortBy(k)} aria-pressed={sortBy === k} className="btn-toggle btn-sm">{l}</button>
                 ))}
               </div>
             </div>

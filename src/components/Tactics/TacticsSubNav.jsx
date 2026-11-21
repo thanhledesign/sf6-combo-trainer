@@ -56,7 +56,7 @@ const TacticsSubNav = ({ activeId, counts, onSelect, variant = 'mobile', editMod
                     onClick={() => onSelect?.(cat.id)}
                     className={`flex-1 text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between gap-2 ${
                       isActive
-                        ? 'bg-purple-600 text-white'
+                        ? 'bg-[image:var(--btn-grad)] text-white'
                         : 'text-gray-300 hover:bg-gray-800 hover:text-white'
                     }`}
                   >
@@ -122,7 +122,7 @@ const TacticsSubNav = ({ activeId, counts, onSelect, variant = 'mobile', editMod
                 onClick={() => onSelect?.(cat.id)}
                 className={`whitespace-nowrap px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-purple-600 text-white'
+                    ? 'bg-[image:var(--btn-grad)] text-white'
                     : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                 }`}
               >

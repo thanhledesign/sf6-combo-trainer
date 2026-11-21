@@ -115,7 +115,7 @@ const CharacterSelectorModal = ({
           <div className="p-4 border-t border-gray-700 bg-gray-800/50">
             <button
               onClick={() => onSelect(null)}
-              className="w-full py-2 rounded-lg bg-gray-700 hover:bg-gray-600 text-gray-300 transition-colors text-sm"
+              className="btn-secondary btn-sm w-full"
             >
               Clear Selection
             </button>

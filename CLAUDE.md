@@ -103,3 +103,7 @@ Native React port of the standalone "Skinny Ryu Session Tracker". It is the main
 ## Move videos
 
 Manifest-based demo clips (never in git; files in Supabase Storage bucket `move-videos`). Scrapers `scripts/sync/scrape-videos.mjs`, clip cutter `scripts/video/cut-clips.mjs`, workflow `sync-move-videos.yml`. See `docs/MOVE-VIDEOS.md`.
+
+## UI system
+
+Buttons: `.btn-primary` / `.btn-secondary` (+ `.btn-sm`) in `src/index.css`, driven by `:root` tokens (`--btn-*`, `--card-radius`, `--art-tint`). Admin tuner (`src/components/DevTuner.jsx`): hidden for everyone; Ctrl/Cmd+Shift+D or `?dev=1` asks for the admin password (SHA-256 hash in `src/siteConfig.js`, never plaintext). Edits are a local draft; "Publish site-wide" writes `public.site_config` (Supabase `sf6-session-lab`, public read, writes only for admin uid `b20d15f8-…` via RLS), which every visitor loads on startup (cached in localStorage). Publishing requires being signed in on the Tracker as the admin email. Tabs/pills/toggles are separate from buttons; the Lab pane has its own `.lab` styles.

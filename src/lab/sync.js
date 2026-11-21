@@ -13,6 +13,8 @@ const LAST = 'srst.pulled';
 let sb = null;
 const get = () => { if (!sb && typeof window !== 'undefined') sb = createClient(URL, KEY, { auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true } }); return sb; };
 
+export const getSupabase = get;
+
 let st = { status: 'off', email: null, at: null, error: null }; // off | signing | idle | syncing | error
 const L = new Set();
 const set = (p) => { st = { ...st, ...p }; L.forEach((f) => f()); };
