@@ -10,7 +10,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 
 - **Live**: https://sf6-combo-trainer.vercel.app
 - **GitHub**: https://github.com/thanhledesign/sf6-combo-trainer
-- **Current version**: V01.32 (Win/Loss Tracker — quick-entry counter, sessions, per-matchup stats with Trainer bridge, opt-in tilt meter)
+- **Current version**: V01.33 (Session Lab — the standalone session tracker is now the main Tracker at `/tracker`, plus Replay Review `/tracker/review` and Combo editor `/tracker/combos`; V01.32 tracker kept at `/tracker/classic`)
 - **Owner**: Thanh Le. Active SF6 ranked player (Ken main, peak ~1,600 MR), uses the app as a personal training companion
 
 ---
@@ -84,3 +84,14 @@ Then check `01-NEXT-STEPS.md` for the next pending task. (Task 1 — docs consol
 - **Sheet schema changes need migration notes.** If you add a column to the Sheet, document it. Don't break the runtime CSV parser silently.
 - **Don't introduce browser-only APIs in business logic.** This codebase is being prepped for Capacitor → native iOS/Android. See `docs/_handoff-2026-04-24/03-IOS-ANDROID-READINESS.md` for patterns.
 - **The `tactical_tags` system is the next big feature.** See `docs/_handoff-2026-04-24/04-TACTICAL-IA-SPEC.md`. Don't start it until Tasks 1–4 are done.
+
+---
+
+## Session Lab (V01.33)
+
+- Lives in `public/lab/index.html` — a self-contained vanilla-JS app (data in `localStorage` keys `srst.v1` / `srst.ui`), shown in the app via `src/components/Lab/LabFrame.jsx` (iframe, same origin).
+- Panes are deep-linked by hash: `/lab/index.html#review`, `#combos`, `#log`.
+- Bridge: the Lab posts `{sf6:'study', char}` / `{sf6:'go', to}` to the parent; `LabFrame` navigates to `/browse/<id>`.
+- On load the Lab one-time-imports V01.32 data (`sf6-tracker:*`) into its own store; nothing is deleted. Dedupes by match id (`settings.classicSeen`).
+- Opened directly (not framed) without the `sf6-lab-ok` session flag, it redirects to `/tracker` so the password gate applies. Soft gate only.
+- Data is browser-local (no sync). Password default is now `hadoken` (`VITE_SITE_PASSWORD` overrides — check Vercel env).

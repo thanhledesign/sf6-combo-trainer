@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const SITE_PASSWORD = (import.meta.env.VITE_SITE_PASSWORD || 'shoryuken').trim();
+const SITE_PASSWORD = (import.meta.env.VITE_SITE_PASSWORD || 'hadoken').trim();
 const STORAGE_KEY = 'sf6-trainer-password-ok';
 
 export function isPasswordRequired() {

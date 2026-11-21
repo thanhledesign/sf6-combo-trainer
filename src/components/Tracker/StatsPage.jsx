@@ -47,7 +47,7 @@ const StatsPage = ({ characterMap, defaultYourCharacter }) => {
     <div className="bg-gray-900 min-h-screen">
       <div className="max-w-3xl mx-auto px-4 py-5 sm:py-8">
         <button
-          onClick={() => navigate('/tracker')}
+          onClick={() => navigate('/tracker/classic')}
           className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white mb-3"
         >
           <ArrowLeft className="w-4 h-4" /> Back to tracker
