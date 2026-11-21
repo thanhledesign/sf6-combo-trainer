@@ -1,7 +1,7 @@
 // V01.33 Session Lab — native page. Header (character, device, panes) + up to three
 // resizable panes: Log, Live, History, Goals, Combos, Review, Options.
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { availableCharacterIds } from '../../data/characters/loader';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import { meNow, devNow, toCsv, lastGame, opts } from '../../lab/calc';
@@ -48,12 +48,20 @@ export default function LabPage({ pane = 'log' }) {
     navigate(id ? `/browse/${id}` : '/characters');
   }, [navigate]);
 
-  // deep links: /tracker/review and /tracker/combos open that pane
+  // Route → panes. Runs on every navigation (location.key changes even when the
+  // URL is the same, e.g. clicking "Review" while already on Review with a split
+  // layout). On first load a saved layout that already contains the pane is kept;
+  // after that a nav click always lands on exactly what it names:
+  //   /tracker → Log (plus whatever it was already split with), /tracker/review → Review, /tracker/combos → Combos.
+  const loc = useLocation(), seen = useRef(false), fromTabs = !!(loc.state && loc.state.tabs);
   useEffect(() => {
-    const cur0 = getUI().sel;
-    if (pane === 'log') { if (!cur0 || !cur0.length) setUI({ sel: window.innerWidth >= 1100 ? ['log', 'dash'] : ['log'] }); else if (!cur0.includes('log')) setUI({ sel: ['log', ...cur0].slice(0, 3) }); }
-    else if (!cur0 || !cur0.includes(pane)) setUI({ sel: [pane] });
-  }, [pane]);
+    const cur0 = getUI().sel, force = seen.current; seen.current = true;
+    if (fromTabs) return; // the layout was changed by the pane tabs themselves
+    if (pane === 'log') {
+      if (!cur0 || !cur0.length) setUI({ sel: window.innerWidth >= 1100 ? ['log', 'dash'] : ['log'] });
+      else if (!cur0.includes('log')) setUI({ sel: force ? ['log'] : ['log', ...cur0].slice(0, 3) });
+    } else if (force || !cur0 || !cur0.includes(pane)) setUI({ sel: [pane] });
+  }, [pane, loc.key, fromTabs]);
   useEffect(() => { initSync(); }, []);
   useEffect(() => { try { syncGoals(); } catch { /* ignore */ } }, [S.games, S.goals]);
   useEffect(() => {
@@ -70,6 +78,9 @@ export default function LabPage({ pane = 'log' }) {
     const a = sel.slice(), i = a.indexOf(p);
     if (i >= 0) { if (a.length > 1) a.splice(i, 1); } else { a.push(p); if (a.length > 3) a.shift(); }
     setUI({ sel: a });
+    // keep the URL (and the app nav highlight) in step with what's showing
+    const url = a.length === 1 && a[0] === 'review' ? '/tracker/review' : a.length === 1 && a[0] === 'combos' ? '/tracker/combos' : '/tracker';
+    if (url !== loc.pathname) navigate(url, { replace: true, state: { tabs: true } });
   };
 
   // ratios between panes
