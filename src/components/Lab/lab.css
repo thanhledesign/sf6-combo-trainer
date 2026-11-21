@@ -1,5 +1,5 @@
 .lab{--ink:#111827;--panel:#1f2937;--panel2:#2b3647;--line:#3b4657;--text:#f3f4f6;--mute:#9ca3af;--win:#38bdf8;--loss:#f87171;--gold:var(--btn-from);--on-gold:#fff;--ok:#34d399;
---display:inherit;--body:inherit;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+--display:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;--body:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
 .lab, .lab *{box-sizing:border-box}
 .lab [hidden]{display:none!important}
 .lab button, .lab input, .lab select, .lab textarea{font:inherit;color:inherit}
@@ -277,3 +277,25 @@
   .lab .acctbtn{flex:1 1 auto}
 }
 .lab #app{grid-template-columns:minmax(0,1fr)}
+
+
+/* V01.40 phone density: tighter header + type so panes get the screen, not the chrome */
+@media (max-width:640px){
+  .lab .me{padding:.15rem .6rem;min-height:2.6rem;gap:.5rem}
+  .lab .me small{display:none}
+  .lab .me b{font-size:1.35rem}
+  .lab .seg3 button, .lab #tabs button{min-height:2.6rem;font-size:.66rem}
+  .lab .seg3 svg, .lab #tabs svg{width:1.2rem;height:1.2rem}
+  .lab .acctbtn{min-height:2.6rem}
+  .lab #panes{padding:.4rem}
+  .lab .pane{padding:.55rem;border-radius:.7rem}
+  .lab h2{font-size:1.3rem}
+  .lab h3{font-size:.85rem;margin:.6rem 0 .3rem}
+  .lab label{font-size:.72rem}
+  .lab .btn{min-height:2.6rem;padding:.4rem .7rem}
+  .lab .cbline{font-size:1.3rem;min-height:4rem;padding:.55rem .7rem}
+  .lab .cbhead input, .lab .cbhead select{min-height:2.8rem;font-size:1rem}
+  .lab .dirs button, .lab .pk button, .lab .cbx button{min-height:2.8rem}
+  .lab .cbmv button{min-height:2.6rem}
+  .lab .scale{min-height:3rem;padding:.2rem .7rem}
+}

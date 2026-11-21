@@ -127,3 +127,7 @@
 .safe-right  { padding-right: var(--safe-area-inset-right); }
 .safe-x      { padding-left: var(--safe-area-inset-left); padding-right: var(--safe-area-inset-right); }
 .safe-y      { padding-top: var(--safe-area-inset-top); padding-bottom: var(--safe-area-inset-bottom); }
+
+@media (max-width: 640px) {
+  input, select, textarea { font-size: max(16px, 1em); }
+}

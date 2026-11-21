@@ -245,7 +245,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
             >
               {/* 16:9 Media Preview */}
               <div 
-                className="aspect-video relative overflow-hidden cursor-pointer border-b border-purple-500/30"
+                className={`${showButtons ? 'aspect-[2.6/1] sm:aspect-video' : 'aspect-video'} relative overflow-hidden cursor-pointer border-b border-purple-500/30`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleMediaClick}
