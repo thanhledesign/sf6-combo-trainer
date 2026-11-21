@@ -210,3 +210,14 @@
 .lab .tmrow input, .lab .tmrow select{margin-top:0}
 .lab .pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(7rem,1fr));gap:.4rem;margin-top:.6rem}
 .lab #toast{position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line);padding:.6rem .9rem;border-radius:.6rem;z-index:30;display:none}
+.lab .mecard{display:flex;align-items:stretch;gap:.8rem;background:var(--panel2);border:2px solid var(--gold);border-radius:.9rem;padding:.4rem;text-align:left;min-width:0;max-width:100%;flex:1 1 22rem}
+.lab .meart{flex:none;width:6.5rem;height:6.5rem;border-radius:.65rem;background:var(--panel) center top/cover no-repeat;box-shadow:inset 0 0 0 1px rgba(0,0,0,.4)}
+.lab .mebody{display:flex;flex-direction:column;justify-content:center;gap:.35rem;min-width:0;flex:1}
+.lab .mename{font:700 1.9rem/1 var(--display);letter-spacing:.06em;color:var(--gold);text-transform:uppercase;display:flex;align-items:center;gap:.5rem}
+.lab .mename .c{font-size:1rem}
+.lab .pgrid{display:flex;flex-wrap:wrap;gap:.3rem .9rem}
+.lab .pstat{display:flex;flex-direction:column;min-width:3.4rem}
+.lab .pstat b{font:700 1.15rem/1.1 var(--display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lab .pstat span{font-size:.58rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
+.lab .pstat small{font-size:.65rem;color:var(--mute);white-space:nowrap}
+@media (max-width:760px){.lab .meart{width:5rem;height:5rem}.lab .mename{font-size:1.5rem}.lab .pgrid{gap:.25rem .7rem}}

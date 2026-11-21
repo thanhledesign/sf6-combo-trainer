@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { availableCharacterIds } from '../../data/characters/loader';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import { meNow, devNow, toCsv, lastGame, opts } from '../../lab/calc';
-import { ROSTER, DEVICES, nameToCharId, thumbOf } from '../../lab/data';
+import { ROSTER, DEVICES, nameToCharId } from '../../lab/data';
 import { setDevice, setMe, syncGoals, lockState, lockSave, lockEnd, toggleFocus } from '../../lab/useLabActions';
 import { toast } from './toastBus';
 import { Icon, Overlay, Tile, Toast } from './ui';
@@ -14,6 +14,7 @@ import { DashPane, HistPane, GoalsPane, EditGameModal, GoalModal } from './Stats
 import { OptionsPane, TagManager, CsvModal } from './OptionsPane';
 import ReviewPane from './ReviewPane';
 import CombosPane from './CombosPane';
+import ProfileCard from './ProfileCard';
 import SyncModal from './SyncModal';
 import { initSync, useSync } from '../../lab/sync';
 import './lab.css';
@@ -111,15 +112,11 @@ export default function LabPage({ pane = 'log' }) {
     return <section className="pane" id={`p-${p}`}><div className="fill">{body}</div></section>;
   };
 
-  const meImg = thumbOf(me);
   return (
     <div className="lab" style={ui.scale !== 100 ? { zoom: ui.scale / 100 } : undefined}>
       <div id="app">
         <header id="top">
-          <button type="button" className="me" aria-label="Change character" onClick={() => setPick(true)}>
-            <span className="meimg" hidden={!meImg} style={meImg ? { backgroundImage: `url('${meImg}')` } : undefined} />
-            <div><small>PLAYING AS</small><b>{me}</b></div><span className="c">▾</span>
-          </button>
+          <ProfileCard S={S} me={me} onPick={() => setPick(true)} />
           <div className="seg3" role="group" aria-label="Input device">
             {DEVICES.map((d) => (
               <button key={d} type="button" aria-pressed={d === dev} aria-label={d === 'Stick' ? 'Fight stick' : d === 'Hitbox' ? 'Leverless hitbox' : 'Gamepad'} onClick={() => setDevice(d)}><Icon name={d} /><span>{d}</span></button>

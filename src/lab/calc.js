@@ -170,3 +170,20 @@ export function toCsv(S) {
   allGames(S).forEach((g) => rows.push([new Date(g.t).toISOString(), g.sid, g.me || 'Ken', g.dev || '', g.r, g.char || '', g.opp || '', g.oppMR ?? '', g.myMR ?? '', g.myAfter ?? '', g.oppAfter ?? '', gap(g) ?? '', g.rm ? 1 : 0, (g.tags || []).join(' '), g.note || '']));
   return rows.map((r) => r.map((c) => { c = String(c); return /[",\n]/.test(c) ? '"' + c.replace(/"/g, '""') + '"' : c; }).join(',')).join('\n');
 }
+
+/* ---------- per-character profile (from your own logged games) ---------- */
+export function charStats(S, me) {
+  const a = allGames(S).filter((g) => (g.me || 'Ken') === me);
+  const r = wl(a), ranked = a.filter((g) => g.myMR != null);
+  let peak = null; ranked.forEach((g) => { const p = postMR(S, g); if (peak == null || p > peak.v) peak = { v: p, t: g.t }; });
+  let best = 0, run = 0, sid = null;
+  a.forEach((g) => { if (g.r === 'W') { run = g.sid === sid ? run + 1 : 1; sid = g.sid; if (run > best) best = run; } else { run = 0; sid = null; } });
+  let bestWin = null; a.forEach((g) => { if (g.r === 'W' && g.oppMR != null && (!bestWin || g.oppMR > bestWin.oppMR)) bestWin = g; });
+  const by = {}; a.forEach((g) => { if (g.char && g.char !== 'Random') (by[g.char] = by[g.char] || []).push(g); });
+  const rows = Object.keys(by).map((c) => ({ c, ...wl(by[c]) }));
+  const worst = rows.filter((x) => x.n >= 3).sort((x, y) => x.w / x.n - y.w / y.n || y.n - x.n)[0] || null;
+  const top = rows.filter((x) => x.n >= 3).sort((x, y) => y.w / y.n - x.w / x.n || y.n - x.n)[0] || null;
+  const most = rows.slice().sort((x, y) => y.n - x.n)[0] || null;
+  const sessions = new Set(a.map((g) => g.sid)).size;
+  return { n: r.n, w: r.w, l: r.l, peak, now: estMR(S, me), best, bestWin, worst, top, most, sessions, last: a.length ? a[a.length - 1].t : null };
+}
