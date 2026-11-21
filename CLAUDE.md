@@ -99,3 +99,7 @@ Native React port of the standalone "Skinny Ryu Session Tracker". It is the main
 - **Thumbnails**: 33 JPGs in `public/thumbs/` (all roster + Random), mapped in `src/lab/data.js`.
 - **Combo editor keys**: `1-9` dirs; `P`/`K` tap-cycle L→M→H→plain; `Shift+P/K` = PP/KK; `d` DRC, `s` cycles SA1-3/CA, `q w e y u a f g h` motions, `z v b n m l` per-character tokens (table `CM` in `combo.js`; only Ken is verified, others are common notation, check them).
 - Password: default `hadoken` (`VITE_SITE_PASSWORD` overrides; check Vercel env). Soft client-side gate only.
+
+## Move videos
+
+Manifest-based demo clips (never in git; files in Supabase Storage bucket `move-videos`). Scrapers `scripts/sync/scrape-videos.mjs`, clip cutter `scripts/video/cut-clips.mjs`, workflow `sync-move-videos.yml`. See `docs/MOVE-VIDEOS.md`.

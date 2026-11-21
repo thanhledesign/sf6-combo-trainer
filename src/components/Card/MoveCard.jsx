@@ -80,7 +80,8 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
   };
 
   const mediaSrc = move.video || move.image || move.media;
-  const mediaType = getMediaType(mediaSrc);
+  // Remote video URLs may carry query strings / no extension, so trust the `video` field.
+  const mediaType = move.video ? 'video' : getMediaType(mediaSrc);
 
   // Determine risk level color
   const getRiskColor = (riskLevel) => {
