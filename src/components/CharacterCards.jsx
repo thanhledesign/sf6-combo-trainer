@@ -75,7 +75,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
         <div className="row-card row-card-3 relative overflow-hidden rounded-xl shadow-lg active:scale-95 transition-transform" style={{ gridRow: 'span 3' }}>
           {/* Character Image on the brand gradient */}
           <div className="relative aspect-video overflow-hidden" style={{ background: artGradient(character.id) }}>
-            <div className="absolute inset-0 mix-blend-soft-light opacity-80 z-[5] pointer-events-none" style={{ background: artGradient(character.id) }}></div>
+            <div className="absolute inset-0 mix-blend-soft-light z-[5] pointer-events-none" style={{ background: artGradient(character.id), opacity: 'var(--art-tint)' }}></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
             
             {character.image ? (
@@ -140,9 +140,9 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick?.(character)}
     >
-      <div className={`row-card row-card-6 relative overflow-hidden rounded-2xl transition-all duration-500 ${
-        isHovered ? 'shadow-2xl scale-105' : 'shadow-xl'
-      }`} style={{ gridRow: 'span 6' }}>
+      <div className={`row-card row-card-6 relative overflow-hidden transition-all duration-500 ${
+        isHovered ? 'shadow-2xl' : 'shadow-xl'
+      }`} style={{ gridRow: 'span 6', borderRadius: 'var(--card-radius)' }}>
         
         <div 
           className={`absolute inset-0 rounded-2xl transition-opacity duration-500 pointer-events-none ${
@@ -160,7 +160,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
         ></div>
         
         <div className="relative aspect-video overflow-hidden" style={{ background: artGradient(character.id) }}>
-            <div className="absolute inset-0 mix-blend-soft-light opacity-80 z-[5] pointer-events-none" style={{ background: artGradient(character.id) }}></div>
+            <div className="absolute inset-0 mix-blend-soft-light z-[5] pointer-events-none" style={{ background: artGradient(character.id), opacity: 'var(--art-tint)' }}></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
           
           <div className="absolute top-4 left-4 z-20">

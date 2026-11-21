@@ -103,3 +103,7 @@ Native React port of the standalone "Skinny Ryu Session Tracker". It is the main
 ## Move videos
 
 Manifest-based demo clips (never in git; files in Supabase Storage bucket `move-videos`). Scrapers `scripts/sync/scrape-videos.mjs`, clip cutter `scripts/video/cut-clips.mjs`, workflow `sync-move-videos.yml`. See `docs/MOVE-VIDEOS.md`.
+
+## UI system
+
+Buttons: `.btn-primary` / `.btn-secondary` (+ `.btn-sm`) in `src/index.css`, driven by `:root` tokens (`--btn-*`, `--card-radius`, `--art-tint`). Dev tuner (`src/components/DevTuner.jsx`): hidden by default; `?dev=1` or Ctrl/Cmd+Shift+D shows a cog that edits the tokens live, persists on-device and can copy the CSS. Tabs/pills/toggles are separate from buttons; the Lab pane has its own `.lab` styles.

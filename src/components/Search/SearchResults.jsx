@@ -294,7 +294,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
             {/* Search Button */}
             <button
               type="submit"
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors"
+              className="btn-primary"
             >
               Search
             </button>

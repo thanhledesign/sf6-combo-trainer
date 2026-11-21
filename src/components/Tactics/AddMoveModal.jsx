@@ -223,18 +223,14 @@ const AddMoveModal = ({
               <div className="flex gap-2">
                 <button
                   onClick={() => setSelectedMoveId(null)}
-                  className="flex-1 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm"
+                  className="btn-secondary btn-sm flex-1"
                 >
                   Back
                 </button>
                 <button
                   onClick={handleConfirm}
                   disabled={!!validationError}
-                  className={`flex-1 py-2 rounded-lg text-sm font-semibold ${
-                    validationError
-                      ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
-                      : 'bg-purple-600 hover:bg-purple-700 text-white'
-                  }`}
+                  className="btn-primary btn-sm flex-1"
                 >
                   Save
                 </button>

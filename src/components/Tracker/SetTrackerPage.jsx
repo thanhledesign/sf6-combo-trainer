@@ -191,11 +191,8 @@ const PickerView = ({ characterList, thumbnailMap, yourChar, oppChar, setLength,
     <button
       onClick={onStart}
       disabled={!yourChar || !oppChar}
-      className={`w-full mt-6 py-3.5 rounded-xl text-base font-bold transition-colors ${
-        yourChar && oppChar
-          ? 'bg-purple-600 hover:bg-purple-700 text-white'
-          : 'bg-gray-800 text-gray-600 cursor-not-allowed'
-      }`}
+      className="btn-primary w-full mt-6"
+      style={{ padding: 'calc(var(--btn-py) + 0.125rem) var(--btn-px)' }}
     >
       Start set
     </button>
@@ -370,13 +367,13 @@ const DoneView = ({ set, characterMap, onNewSet, onBack }) => {
       <div className="grid grid-cols-2 gap-2">
         <button
           onClick={onBack}
-          className="py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-xl text-sm font-semibold"
+          className="btn-secondary"
         >
           View stats
         </button>
         <button
           onClick={onNewSet}
-          className="py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl text-sm font-semibold"
+          className="btn-primary"
         >
           New set
         </button>
