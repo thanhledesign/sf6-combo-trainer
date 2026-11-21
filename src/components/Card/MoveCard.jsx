@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { RotateCcw, Zap, Shield, AlertTriangle, CheckCircle, Play } from 'lucide-react';
 import RangeBadge from '../RangeBadge';
+import ButtonInput from './ButtonInput';
+import { parseNormalInput } from '../../data/buttonInput';
 
 const MoveCard = ({ move, showCharacter = false, characterName = '', compact = false }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -82,6 +84,8 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
   const mediaSrc = move.video || move.image || move.media;
   // Remote video URLs may carry query strings / no extension, so trust the `video` field.
   const mediaType = move.video ? 'video' : getMediaType(mediaSrc);
+  // Normals show their official button / direction icons instead of a video.
+  const showButtons = move.category === 'normal' && !!parseNormalInput(move.input);
 
   // Determine risk level color
   const getRiskColor = (riskLevel) => {
@@ -140,6 +144,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
 
   // Render media based on type
   const renderMedia = () => {
+    if (showButtons) return <ButtonInput input={move.input} compact={compact} />;
     if (!mediaSrc) {
       return (
         <div className="flex items-center justify-center h-full bg-gradient-to-br from-purple-900/50 to-purple-950/50">

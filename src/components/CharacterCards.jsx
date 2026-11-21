@@ -76,7 +76,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           <div className={`absolute inset-0 bg-gradient-to-br ${character.gradient} opacity-90`}></div>
           
           {/* Character Image */}
-          <div className="relative h-32 overflow-hidden">
+          <div className="relative aspect-video overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
             
             {character.image ? (
@@ -85,7 +85,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
                 alt={character.name}
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
@@ -163,7 +163,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           }}
         ></div>
         
-        <div className="relative h-80 overflow-hidden">
+        <div className="relative aspect-video overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
           
           <div className="absolute top-4 left-4 z-20">
