@@ -10,7 +10,7 @@ const PATHS = [
     steps: [
       'Nothing to do — every session, game, combo and review you save is stored in this browser automatically.',
       'It stays private to this device and works offline. Clearing site data or switching browsers starts you fresh.',
-      'Tip: use Options → "Save to Files / iCloud Drive" now and then as a safety copy.',
+      'Tip: use Options → "Back up data (JSON)" now and then as a safety copy you can keep anywhere.',
     ],
   },
   {
@@ -24,13 +24,11 @@ const PATHS = [
     ],
   },
   {
-    id: 'icloud', title: 'iCloud Drive / Files / Dropbox', tag: 'Manual backup',
+    id: 'file', title: 'Backup file', tag: 'Manual',
     steps: [
-      'Web apps cannot read or write iCloud automatically — Apple only allows that from native apps. This route is a one-tap manual backup instead.',
-      'Options → "Save to Files / iCloud Drive". On iPhone/iPad the share sheet opens: choose "Save to Files" → iCloud Drive (or Dropbox, Google Drive, OneDrive).',
-      'On desktop the file downloads — move it into your iCloud Drive / Dropbox folder.',
-      'To restore on another device: Options → "Import backup" and pick that file. Records already there are kept; only new ones are added.',
-      'Want automatic iCloud later? That needs a native app (the plan is a Capacitor iOS build with CloudKit).',
+      'Options → "Back up data (JSON)" downloads one file with everything: sessions, games, goals, combos and reviews.',
+      'Keep it wherever you like (your own cloud drive, email it to yourself, etc.).',
+      'To restore on another device or browser: Options → "Import backup" and pick that file. Records already there are kept; only new ones are added.',
     ],
   },
   {

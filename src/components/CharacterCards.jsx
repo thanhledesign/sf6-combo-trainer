@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Zap, Shield, Sword, Star, LayoutGrid, Rows3 } from 'lucide-react';
 import { characterList } from '../data/characters';
-import { charThumb } from '../data/charThumb';
+import { charThumb, charArt } from '../data/charThumb';
 
 // Per-character flag for the new 22 (the original 7 are already in manual
 // list below). Source: Capcom's character profiles.
@@ -50,6 +50,7 @@ function generateCardConfig(charId, charData) {
     flag: FLAGS[charId] || '🏳️',
     archetype: charData?.character?.archetype || 'Fighter',
     image: charThumb(charId),
+    art: charArt(charId),
     ...palette,
     stats: { power: 7, speed: 7, defense: 7 },
     difficulty: 'Intermediate',
@@ -80,8 +81,10 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
             
             {character.image ? (
               <img 
-                src={character.image} 
+                src={character.art || character.image} 
                 alt={character.name}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-top"
               />
             ) : (
@@ -178,8 +181,10 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           {/* Character Image */}
           {character.image ? (
             <img 
-              src={character.image} 
+              src={character.art || character.image} 
               alt={character.name}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover object-center"
             />
           ) : (
@@ -455,7 +460,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
     .filter((c) => !manualIds.has(c.id))
     .map((c) => generateCardConfig(c.id, c.file));
   const characters = [...defaultCharacters, ...generated]
-    .map((c) => ({ ...c, image: charThumb(c.id) || c.image }))
+    .map((c) => ({ ...c, image: charThumb(c.id) || c.image, art: charArt(c.id) }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const handleCharacterClick = (character) => {
