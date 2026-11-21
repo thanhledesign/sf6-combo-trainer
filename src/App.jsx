@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { THUMBS } from './data/charThumb';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Search, ChevronDown, Menu, X } from 'lucide-react';
 import { PasswordGate, isPasswordRequired, isPasswordValid } from './components/auth/PasswordGate';
@@ -10,28 +11,14 @@ import SearchResults from './components/Search/SearchResults';
 import TacticsPage from './components/Tactics/TacticsPage';
 import StatsPage from './components/Tracker/StatsPage';
 import SetTrackerPage from './components/Tracker/SetTrackerPage';
+import LabPage from './components/Lab/LabPage';
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import { characters as characterMap, characterList } from './data/characters';
 
 // Character thumbnail imports for nav (only the 7 hand-curated PNGs exist;
 // new characters render via CharacterAvatar's gradient-circle fallback)
-import kenThumb from './assets/characters/kenThumbnail.png';
-import terryThumb from './assets/characters/terryThumbnail.png';
-import chunliThumb from './assets/characters/chunliThumbnail.png';
-import lukeThumb from './assets/characters/lukeThumbnail.png';
-import cammyThumb from './assets/characters/cammyThumbnail.png';
-import maiThumb from './assets/characters/maiThumbnail.png';
-import ryuThumb from './assets/characters/ryuThumbnail.png';
 
-const thumbnailMap = {
-  ken: kenThumb,
-  terry: terryThumb,
-  chunli: chunliThumb,
-  luke: lukeThumb,
-  cammy: cammyThumb,
-  mai: maiThumb,
-  ryu: ryuThumb,
-};
+const thumbnailMap = THUMBS;
 
 // Full roster for the character selector modal — includes all 29 chars.
 const allCharacters = Object.values(characterMap);
@@ -241,10 +228,22 @@ function App() {
                 Tactics
               </NavButton>
               <NavButton
-                active={location.pathname.startsWith('/tracker')}
+                active={location.pathname === '/tracker'}
                 onClick={() => navigate('/tracker')}
               >
                 Tracker
+              </NavButton>
+              <NavButton
+                active={location.pathname === '/tracker/review'}
+                onClick={() => navigate('/tracker/review')}
+              >
+                Review
+              </NavButton>
+              <NavButton
+                active={location.pathname === '/tracker/combos'}
+                onClick={() => navigate('/tracker/combos')}
+              >
+                Combos
               </NavButton>
               <NavButton
                 active={location.pathname.startsWith('/punish')}
@@ -407,13 +406,31 @@ function App() {
                   Tactics
                 </MobileNavButton>
                 <MobileNavButton
-                  active={location.pathname.startsWith('/tracker')}
+                  active={location.pathname === '/tracker'}
                   onClick={() => {
                     navigate('/tracker');
                     setIsMobileMenuOpen(false);
                   }}
                 >
                   Tracker
+                </MobileNavButton>
+                <MobileNavButton
+                  active={location.pathname === '/tracker/review'}
+                  onClick={() => {
+                    navigate('/tracker/review');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Replay Review
+                </MobileNavButton>
+                <MobileNavButton
+                  active={location.pathname === '/tracker/combos'}
+                  onClick={() => {
+                    navigate('/tracker/combos');
+                    setIsMobileMenuOpen(false);
+                  }}
+                >
+                  Combos
                 </MobileNavButton>
                 <MobileNavButton
                   active={location.pathname.startsWith('/punish')}
@@ -480,7 +497,12 @@ function App() {
         } />
 
         {/* Tracker — head-to-head set tracker is the primary entry */}
-        <Route path="/tracker" element={
+        {/* V01.33 Session Lab: the session tracker is now the main Tracker. */}
+        <Route path="/tracker" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="log" /></div>} />
+        <Route path="/tracker/review" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="review" /></div>} />
+        <Route path="/tracker/combos" element={<div style={{ height: "calc(100dvh - 69px)" }}><LabPage pane="combos" /></div>} />
+        {/* Original V01.32 tracker kept, nothing removed. */}
+        <Route path="/tracker/classic" element={
           <SetTrackerPage
             characterMap={characterMap}
             thumbnailMap={thumbnailMap}

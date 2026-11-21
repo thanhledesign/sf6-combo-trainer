@@ -10,7 +10,7 @@ This file is read automatically by Claude Code when the project opens. Keep it t
 
 - **Live**: https://sf6-combo-trainer.vercel.app
 - **GitHub**: https://github.com/thanhledesign/sf6-combo-trainer
-- **Current version**: V01.32 (Win/Loss Tracker — quick-entry counter, sessions, per-matchup stats with Trainer bridge, opt-in tilt meter)
+- **Current version**: V01.33 (Session Lab — the standalone session tracker is now the main Tracker at `/tracker`, plus Replay Review `/tracker/review` and Combo editor `/tracker/combos`; V01.32 tracker kept at `/tracker/classic`)
 - **Owner**: Thanh Le. Active SF6 ranked player (Ken main, peak ~1,600 MR), uses the app as a personal training companion
 
 ---
@@ -84,3 +84,18 @@ Then check `01-NEXT-STEPS.md` for the next pending task. (Task 1 — docs consol
 - **Sheet schema changes need migration notes.** If you add a column to the Sheet, document it. Don't break the runtime CSV parser silently.
 - **Don't introduce browser-only APIs in business logic.** This codebase is being prepped for Capacitor → native iOS/Android. See `docs/_handoff-2026-04-24/03-IOS-ANDROID-READINESS.md` for patterns.
 - **The `tactical_tags` system is the next big feature.** See `docs/_handoff-2026-04-24/04-TACTICAL-IA-SPEC.md`. Don't start it until Tasks 1–4 are done.
+
+---
+
+## Session Lab (V01.33)
+
+Native React port of the standalone "Skinny Ryu Session Tracker". It is the main Tracker (`/tracker`), plus Replay Review (`/tracker/review`) and the Combo editor (`/tracker/combos`). The V01.32 tracker stays at `/tracker/classic` (and `/tracker/stats`).
+
+- **Code**: pure logic in `src/lab/` (`data.js` roster/tags, `calc.js` records, MR, goals, `combo.js` notation engine, `store.js` external store + `useLab()`, `useLabActions.js` writes). UI in `src/components/Lab/` (`LabPage` header + up to 3 resizable panes; `LogPane`, `StatsPanes` (Live/History/Goals + modals), `ReviewPane`, `CombosPane`, `OptionsPane`). Styles are scoped under `.lab` in `lab.css`.
+- **Storage**: browser-local `localStorage` keys `srst.v1` (data), `srst.ui` (pane layout, drag pace, zoom), `srst.dirty`/`srst.del` (sync queue + tombstones). `localStorage` is isolated to `src/lab/store.js` for the later Capacitor swap. Options → "Back up data (JSON)" / "Import backup" is a manual backup.
+- **Cloud sync (Supabase)**: project `sf6-session-lab` (ref `pagtnyoyfrwpvctnvxjv`, us-east-1, separate from money-app-2026). One table `public.lab_docs(user_id, coll, id, data jsonb, deleted, updated_at bigint)` with RLS = own rows only, realtime on. `src/lab/sync.js`: email magic-link sign-in, pull/push, newest write per record wins, deletes via tombstones, realtime + refocus/online resync. Offline-first: works signed out. URL + publishable key are public by design and baked in as defaults; `VITE_SUPABASE_URL` / `VITE_SUPABASE_KEY` override. **Dashboard setup required once**: Authentication → URL Configuration → add the production + preview URLs (`https://sf6-combo-trainer.vercel.app/**`, `https://*-thanh-les-projects-f5b2fa8b.vercel.app/**`) to Redirect URLs, and set Site URL to production. Built-in Supabase email is rate-limited (a few/hour); add custom SMTP if that bites.
+- **V01.32 import**: on load, `sf6-tracker:*` matches/sessions are merged once (deduped by id in `settings.classicSeen`); nothing is deleted.
+- **Study bridge**: Review rows and the edit-game modal call `navigate('/browse/<id>')` via `nameToCharId` (tracker names like "M. Bison" → app ids).
+- **Thumbnails**: 33 JPGs in `public/thumbs/` (all roster + Random), mapped in `src/lab/data.js`.
+- **Combo editor keys**: `1-9` dirs; `P`/`K` tap-cycle L→M→H→plain; `Shift+P/K` = PP/KK; `d` DRC, `s` cycles SA1-3/CA, `q w e y u a f g h` motions, `z v b n m l` per-character tokens (table `CM` in `combo.js`; only Ken is verified, others are common notation, check them).
+- Password: default `hadoken` (`VITE_SITE_PASSWORD` overrides; check Vercel env). Soft client-side gate only.

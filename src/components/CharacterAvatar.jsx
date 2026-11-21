@@ -1,24 +1,10 @@
+import { charThumb } from '../data/charThumb';
+
 // Shared avatar that renders either a thumbnail PNG (when known) or a
 // colored fallback circle with the character's initial. Used by the
 // character selector, character cards, and the head-to-head set tracker.
 
-import kenThumb from '../assets/characters/kenThumbnail.png';
-import terryThumb from '../assets/characters/terryThumbnail.png';
-import chunliThumb from '../assets/characters/chunliThumbnail.png';
-import lukeThumb from '../assets/characters/lukeThumbnail.png';
-import cammyThumb from '../assets/characters/cammyThumbnail.png';
-import maiThumb from '../assets/characters/maiThumbnail.png';
-import ryuThumb from '../assets/characters/ryuThumbnail.png';
 
-const KNOWN_THUMBNAILS = {
-  ken: kenThumb,
-  terry: terryThumb,
-  chunli: chunliThumb,
-  luke: lukeThumb,
-  cammy: cammyThumb,
-  mai: maiThumb,
-  ryu: ryuThumb,
-};
 
 // Stable color hash so each new character gets a consistent fallback color.
 const PALETTE = [
@@ -46,7 +32,7 @@ const CharacterAvatar = ({ characterId, name, size = 'md', className = '', ...re
     xl: 'w-24 h-24 text-3xl',
   };
   const sizeClass = sizeMap[size] || sizeMap.md;
-  const thumb = KNOWN_THUMBNAILS[characterId];
+  const thumb = charThumb(characterId);
 
   if (thumb) {
     return (

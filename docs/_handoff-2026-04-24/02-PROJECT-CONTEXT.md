@@ -88,6 +88,7 @@ Mobile-first throughout. Hamburger menu, sticky nav, 1-column at base, scaling t
 | 2-column compact card view | Mobile density toggle |
 | Google Sheets CMS | Live frame data updates without code deploys |
 | ~~PWA~~ | **Was shipped in V01.29, removed in latest commit. Task 3 reinstates.** |
+| **V01.33 Session Lab** | Native session tracker at `/tracker` (live logger with sets/rematches, stop-rule lock, Live/History/Goals, Options), Replay Review `/tracker/review` (links to move browser via Study), Combo editor `/tracker/combos` (keyboard-first, per-character shortcuts). Browser-local data (`srst.v1`). V01.32 tracker kept at `/tracker/classic`. See CLAUDE.md "Session Lab". |
 
 ### In Flight or Planned
 

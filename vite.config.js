@@ -32,13 +32,15 @@ export default defineConfig({
           { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
         shortcuts: [
+          { name: 'Session Tracker', short_name: 'Tracker', url: '/tracker', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
+          { name: 'Replay Review', short_name: 'Review', url: '/tracker/review', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
           { name: 'Browse Moves', short_name: 'Browse', url: '/browse', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
           { name: 'Punish Calculator', short_name: 'Punish', url: '/punish', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
           { name: 'Search Moves', short_name: 'Search', url: '/search', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,jpg}'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {
