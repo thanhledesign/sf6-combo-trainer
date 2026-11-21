@@ -221,3 +221,8 @@
 .lab .pstat span{font-size:.58rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
 .lab .pstat small{font-size:.65rem;color:var(--mute);white-space:nowrap}
 @media (max-width:760px){.lab .meart{width:5rem;height:5rem}.lab .mename{font-size:1.5rem}.lab .pgrid{gap:.25rem .7rem}}
+
+.lab .startv .startopp{display:flex;flex-direction:column;gap:.35rem}
+.lab .startv .startopp-h{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;font-size:.8rem}
+.lab .startv .chargrid{flex:none;height:min(42vh,20rem);margin:0;border-radius:.6rem}
+.lab .startv .btn.huge{flex:none}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { THUMBS } from './data/charThumb';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Search, ChevronDown, Menu, X } from 'lucide-react';
 import { PasswordGate, isPasswordRequired, isPasswordValid } from './components/auth/PasswordGate';
@@ -16,23 +17,8 @@ import { characters as characterMap, characterList } from './data/characters';
 
 // Character thumbnail imports for nav (only the 7 hand-curated PNGs exist;
 // new characters render via CharacterAvatar's gradient-circle fallback)
-import kenThumb from './assets/characters/kenThumbnail.png';
-import terryThumb from './assets/characters/terryThumbnail.png';
-import chunliThumb from './assets/characters/chunliThumbnail.png';
-import lukeThumb from './assets/characters/lukeThumbnail.png';
-import cammyThumb from './assets/characters/cammyThumbnail.png';
-import maiThumb from './assets/characters/maiThumbnail.png';
-import ryuThumb from './assets/characters/ryuThumbnail.png';
 
-const thumbnailMap = {
-  ken: kenThumb,
-  terry: terryThumb,
-  chunli: chunliThumb,
-  luke: lukeThumb,
-  cammy: cammyThumb,
-  mai: maiThumb,
-  ryu: ryuThumb,
-};
+const thumbnailMap = THUMBS;
 
 // Full roster for the character selector modal — includes all 29 chars.
 const allCharacters = Object.values(characterMap);

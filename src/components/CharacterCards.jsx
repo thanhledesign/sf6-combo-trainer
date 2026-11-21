@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Zap, Shield, Sword, Star, LayoutGrid, Rows3 } from 'lucide-react';
-import kenThumbnail from '../assets/characters/kenThumbnail.png';
-import terryThumbnail from '../assets/characters/terryThumbnail.png';
-import chunliThumbnail from '../assets/characters/chunliThumbnail.png';
-import lukeThumbnail from '../assets/characters/lukeThumbnail.png';
-import cammyThumbnail from '../assets/characters/cammyThumbnail.png';
-import maiThumbnail from '../assets/characters/maiThumbnail.png';
-import ryuThumbnail from '../assets/characters/ryuThumbnail.png';
 import { characterList } from '../data/characters';
+import { charThumb } from '../data/charThumb';
 
 // Per-character flag for the new 22 (the original 7 are already in manual
 // list below). Source: Capcom's character profiles.
@@ -55,7 +49,7 @@ function generateCardConfig(charId, charData) {
     name: charData?.character?.displayName || charData?.character?.name || charId,
     flag: FLAGS[charId] || '🏳️',
     archetype: charData?.character?.archetype || 'Fighter',
-    image: null,
+    image: charThumb(charId),
     ...palette,
     stats: { power: 7, speed: 7, defense: 7 },
     difficulty: 'Intermediate',
@@ -317,7 +311,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Ken",
       flag: "🇺🇸",
       archetype: "Rushdown",
-      image: kenThumbnail,
+      image: null,
       gradient: "from-red-600 to-orange-500",
       accentColor: "#EF4444",
       accentColorDark: "#DC2626",
@@ -337,7 +331,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Terry",
       flag: "🇺🇸",
       archetype: "All-Rounder",
-      image: terryThumbnail,
+      image: null,
       gradient: "from-blue-600 to-cyan-500",
       accentColor: "#3B82F6",
       accentColorDark: "#2563EB",
@@ -357,7 +351,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Chun-Li",
       flag: "🇨🇳",
       archetype: "Footsies",
-      image: chunliThumbnail,
+      image: null,
       gradient: "from-blue-400 to-purple-600",
       accentColor: "#60A5FA",
       accentColorDark: "#7C3AED",
@@ -377,7 +371,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Luke",
       flag: "🇺🇸",
       archetype: "Rushdown",
-      image: lukeThumbnail,
+      image: null,
       gradient: "from-blue-500 to-indigo-600",
       accentColor: "#6366F1",
       accentColorDark: "#4F46E5",
@@ -397,7 +391,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Cammy",
       flag: "🇬🇧",
       archetype: "Rushdown",
-      image: cammyThumbnail,
+      image: null,
       gradient: "from-green-500 to-teal-600",
       accentColor: "#14B8A6",
       accentColorDark: "#0D9488",
@@ -417,7 +411,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Mai",
       flag: "🇯🇵",
       archetype: "Rushdown",
-      image: maiThumbnail,
+      image: null,
       gradient: "from-red-500 to-pink-600",
       accentColor: "#EC4899",
       accentColorDark: "#DB2777",
@@ -437,7 +431,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       name: "Ryu",
       flag: "🇯🇵",
       archetype: "Shoto",
-      image: ryuThumbnail,
+      image: null,
       gradient: "from-gray-600 to-slate-700",
       accentColor: "#64748B",
       accentColorDark: "#475569",
@@ -461,6 +455,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
     .filter((c) => !manualIds.has(c.id))
     .map((c) => generateCardConfig(c.id, c.file));
   const characters = [...defaultCharacters, ...generated]
+    .map((c) => ({ ...c, image: charThumb(c.id) || c.image }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const handleCharacterClick = (character) => {

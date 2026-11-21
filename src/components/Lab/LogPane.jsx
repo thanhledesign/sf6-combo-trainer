@@ -31,7 +31,6 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const s = cur(S), o = opts(S), mode = modeNow(S), ranked = mode === 'ranked', me = meNow(S);
   const idle = !s;
   const shown = s || lastClosed(S);
-  const hasLast = idle && !!shown;
   const os = s && s.openSet && s.openSet.mode === mode ? s.openSet : null;
 
   // log form
@@ -134,8 +133,19 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   return (
     <section className="pane" id="p-log">
       {idle && (
-        <div className={`startv${hasLast ? ' sheet' : ''}`}>
-          <h2>Before you queue <span className="mute lastnote" style={{ fontSize: '.7rem', fontWeight: 400, letterSpacing: 0, textTransform: 'none' }}>· last session shown behind</span></h2>
+        <div className="startv">
+          <h2>Before you queue</h2>
+          <div className="startopp">
+            <div className="startopp-h"><b>Opponent</b><span className="mute">{form.char ? form.char : 'Tap a character (optional, you can pick later)'}</span></div>
+            <div className={`chargrid${form.char ? ' has-sel' : ''}`} ref={grid}>
+              {OPP.map((c) => <Tile key={c} c={c} pressed={c === form.char} onClick={() => pickChar(c)} />)}
+            </div>
+          </div>
+          <div className="modetabs">
+            {MODES.map((m) => (
+              <button key={m[0]} type="button" className="chip" aria-pressed={m[0] === mode} onClick={() => setMode(m[0])}>{m[1]}</button>
+            ))}
+          </div>
           <div className="scales">
             {['calm', 'focus', 'hands'].map((k) => (
               <Scale key={k} k={k} label={SL[k][0]} hint={SL[k][1]} value={chk[k]} pace={ui.space} onChange={(v) => setChk((c) => ({ ...c, [k]: v }))} />
@@ -154,8 +164,8 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
         </div>
       )}
 
-      {shown && (
-        <div className={`livev${idle ? ' idle' : ''}`}>
+      {!idle && shown && (
+        <div className="livev">
           <div className={`chargrid${selChar ? ' has-sel' : ''}`} ref={grid}>
             {OPP.map((c) => <Tile key={c} c={c} pressed={c === selChar} badge={c === selChar && os ? `${os.w}–${os.l}` : ''} onClick={() => pickChar(c)} />)}
           </div>

@@ -1,26 +1,12 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { THUMBS } from '../../data/charThumb';
 import { Search, ChevronDown, LayoutGrid, Rows3 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import MoveCard from '../Card/MoveCard';
 
 // Import thumbnails
-import kenThumbnail from '../../assets/characters/kenThumbnail.png';
-import terryThumbnail from '../../assets/characters/terryThumbnail.png';
-import chunliThumbnail from '../../assets/characters/chunliThumbnail.png';
-import lukeThumbnail from '../../assets/characters/lukeThumbnail.png';
-import cammyThumbnail from '../../assets/characters/cammyThumbnail.png';
-import maiThumbnail from '../../assets/characters/maiThumbnail.png';
-import ryuThumbnail from '../../assets/characters/ryuThumbnail.png';
 
-const thumbnails = {
-  ken: kenThumbnail,
-  terry: terryThumbnail,
-  chunli: chunliThumbnail,
-  luke: lukeThumbnail,
-  cammy: cammyThumbnail,
-  mai: maiThumbnail,
-  ryu: ryuThumbnail,
-};
+const thumbnails = THUMBS;
 
 const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) => {
   const navigate = useNavigate();

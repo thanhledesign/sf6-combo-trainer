@@ -78,7 +78,16 @@ export function Overlay({ children, onClose, wide }) {
     const k = (e) => { if (e.key === 'Escape') onClose(); };
     window.addEventListener('keydown', k); return () => window.removeEventListener('keydown', k);
   }, [onClose]);
-  return <div className="overlay"><div className="card" style={wide ? { maxWidth: '44rem' } : undefined}>{children}</div></div>;
+  // Click/tap on the dim backdrop closes (press + release must both land on it, so
+  // dragging a text selection out of the card never dismisses).
+  const down = useRef(false);
+  return (
+    <div className="overlay"
+      onPointerDown={(e) => { down.current = e.target === e.currentTarget; }}
+      onClick={(e) => { if (onClose && down.current && e.target === e.currentTarget) onClose(); down.current = false; }}>
+      <div className="card" style={wide ? { maxWidth: '44rem' } : undefined}>{children}</div>
+    </div>
+  );
 }
 
 const hue = (c) => { let h = 0; for (let i = 0; i < c.length; i++) h = (h * 31 + c.charCodeAt(i)) % 360; return h; };

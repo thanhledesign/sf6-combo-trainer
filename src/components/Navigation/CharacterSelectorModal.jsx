@@ -1,24 +1,8 @@
 import React from 'react';
 import { X, Check } from 'lucide-react';
 
-// Import thumbnails
-import kenThumb from '../../assets/characters/kenThumbnail.png';
-import terryThumb from '../../assets/characters/terryThumbnail.png';
-import chunliThumb from '../../assets/characters/chunliThumbnail.png';
-import lukeThumb from '../../assets/characters/lukeThumbnail.png';
-import cammyThumb from '../../assets/characters/cammyThumbnail.png';
-import maiThumb from '../../assets/characters/maiThumbnail.png';
-import ryuThumb from '../../assets/characters/ryuThumbnail.png';
+import { charThumb } from '../../data/charThumb';
 
-const thumbnailMap = {
-  ken: kenThumb,
-  terry: terryThumb,
-  chunli: chunliThumb,
-  luke: lukeThumb,
-  cammy: cammyThumb,
-  mai: maiThumb,
-  ryu: ryuThumb
-};
 
 const CharacterSelectorModal = ({ 
   isOpen, 
@@ -65,7 +49,7 @@ const CharacterSelectorModal = ({
               {sortedCharacters.map((charData) => {
                 const charId = charData.character.id;
                 const isSelected = charId === currentCharacterId;
-                const thumbnail = thumbnailMap[charId];
+                const thumbnail = charThumb(charId);
                 
                 return (
                   <button
