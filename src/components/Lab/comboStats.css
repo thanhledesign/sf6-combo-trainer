@@ -1,0 +1,26 @@
+/* Standalone (works inside .lab and in the Tailwind pages) */
+.cstat{margin-top:.45rem;display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:#d1d5db}
+.cstat button,.cstat input,.cstat select{font:inherit}
+.cstat .cs-modes{display:grid;grid-template-columns:repeat(3,1fr);gap:.3rem}
+.cstat .cs-modes button{display:flex;flex-direction:column;align-items:center;gap:.05rem;padding:.35rem .25rem;min-height:2.6rem;border-radius:.6rem;border:1px solid #374151;background:#1f2937;color:#9ca3af;cursor:pointer}
+.cstat .cs-modes button b{font-size:1.05rem;color:#f3f4f6;font-variant-numeric:tabular-nums}
+.cstat .cs-modes button span{font-size:.68rem}
+.cstat .cs-modes button[aria-pressed=true]{background:#6d28d9;border-color:#a78bfa;color:#ede9fe}
+.cstat .cs-line{display:flex;flex-wrap:wrap;gap:.2rem .9rem;color:#9ca3af}
+.cstat .cs-line b{color:#f3f4f6}
+.cstat .cs-line i{font-style:normal;color:#a78bfa}
+.cstat .cs-line .warn{color:#fbbf24}
+.cstat .cs-line .man{color:#a78bfa}
+.cstat .cs-acts{display:flex;gap:.4rem;flex-wrap:wrap}
+.cstat .cs-acts button{background:none;border:0;color:#a78bfa;cursor:pointer;padding:.2rem .1rem;min-height:1.8rem}
+.cstat .cs-bd{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.cstat .cs-bd th,.cstat .cs-bd td{text-align:right;padding:.15rem .4rem;border-bottom:1px solid #374151}
+.cstat .cs-bd th:first-child,.cstat .cs-bd td:first-child{text-align:left}
+.cstat .cs-bd tr.bad td{color:#fbbf24}
+.cstat .cs-bd tr.tot td{font-weight:700;color:#f3f4f6;border-bottom:0}
+.cstat .cs-man{background:#111827;border:1px solid #374151;border-radius:.6rem;padding:.5rem}
+.cstat .cs-man p{margin:0 0 .4rem;color:#9ca3af;font-size:.72rem}
+.cstat .cs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:.4rem}
+.cstat .cs-grid label{display:flex;flex-direction:column;gap:.15rem;font-size:.7rem;color:#9ca3af}
+.cstat .cs-grid input,.cstat .cs-grid select{background:#1f2937;color:#f3f4f6;border:1px solid #4b5563;border-radius:.4rem;padding:.35rem .45rem;min-height:2.2rem}
+.cstat .cs-reset{margin-top:.4rem;background:#374151;color:#f3f4f6;border:0;border-radius:.4rem;padding:.35rem .7rem;cursor:pointer}

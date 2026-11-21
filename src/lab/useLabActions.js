@@ -94,3 +94,10 @@ export function toggleFocus(id) {
   const c = getState().combos.find((x) => x.id === id);
   if (c) put('combos', id, { ...strip(c), focus: !c.focus, focusAt: Date.now() });
 }
+
+// Manual overrides for a combo's computed stats (damage / CH / PC / frame data / starter scaling).
+// Empty string or missing = use the auto value.
+export function setComboMan(id, man) {
+  const c = getState().combos.find((x) => x.id === id);
+  if (c) put('combos', id, { ...strip(c), man });
+}

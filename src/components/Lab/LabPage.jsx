@@ -68,12 +68,13 @@ export default function LabPage({ pane = 'log' }) {
     const f = () => setTags(true); window.addEventListener('lab:tags', f); return () => window.removeEventListener('lab:tags', f);
   }, []);
   useEffect(() => {
-    const mq = window.matchMedia ? window.matchMedia('(max-width:760px)') : null; if (!mq) return undefined;
+    const mq = window.matchMedia ? window.matchMedia('(max-width:900px)') : null; if (!mq) return undefined;
     const f = () => setNarrow(mq.matches); f(); mq.addEventListener('change', f); return () => mq.removeEventListener('change', f);
   }, []);
 
-  const sel = (ui.sel && ui.sel.length ? ui.sel : ['log']).filter((p) => PANES.includes(p));
-  const vis = PANES.filter((p) => sel.includes(p)), sig = vis.join(',');
+  // Pane order is the order in `sel` (the user can rearrange it), not the tab order.
+  const sel = [...new Set((ui.sel && ui.sel.length ? ui.sel : ['log']).filter((p) => PANES.includes(p)))];
+  const vis = sel, sig = vis.join(',');
   const toggle = (p) => {
     const a = sel.slice(), i = a.indexOf(p);
     if (i >= 0) { if (a.length > 1) a.splice(i, 1); } else { a.push(p); if (a.length > 3) a.shift(); }
@@ -107,6 +108,30 @@ export default function LabPage({ pane = 'log' }) {
     };
     const end = () => { el.classList.remove('drag'); window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', end); };
     window.addEventListener('pointermove', mv); window.addEventListener('pointerup', end);
+  };
+  // Rearrange: carry each pane's size with it so reordering never resets the layout.
+  const moveTo = (p, to) => {
+    const cur = getUI().sel.filter((x) => PANES.includes(x)), from = cur.indexOf(p);
+    if (from < 0 || to < 0 || to >= cur.length || to === from) return;
+    const oldSig = cur.join(','), old = ((getUI().rat || {})[oldSig] || []);
+    const w = Object.fromEntries(cur.map((x, i) => [x, old[i] > 0 ? old[i] : 1]));
+    const next = cur.filter((x) => x !== p); next.splice(to, 0, p);
+    setUI({ sel: next, rat: { ...getUI().rat, [next.join(',')]: next.map((x) => w[x]) } });
+  };
+  const startMove = (p) => (e) => {
+    if (e.target.closest('button')) return;
+    const box = boxRef.current; if (!box) return;
+    e.preventDefault();
+    const wrap = e.currentTarget.closest('.pwrap'); wrap.classList.add('moving');
+    const mv = (ev) => {
+      const ws = [...box.querySelectorAll(':scope > .pwrap')]; if (ws.length < 2) return;
+      const pos = narrow ? ev.clientY : ev.clientX;
+      let best = 0, bd = Infinity;
+      ws.forEach((el, i) => { const r = el.getBoundingClientRect(), c = narrow ? r.top + r.height / 2 : r.left + r.width / 2; const d = Math.abs(pos - c); if (d < bd) { bd = d; best = i; } });
+      moveTo(p, best);
+    };
+    const end = () => { wrap.classList.remove('moving'); window.removeEventListener('pointermove', mv); window.removeEventListener('pointerup', end); window.removeEventListener('pointercancel', end); };
+    window.addEventListener('pointermove', mv); window.addEventListener('pointerup', end); window.addEventListener('pointercancel', end);
   };
   const resetGutter = () => { const r = { ...getUI().rat }; delete r[sig]; setUI({ rat: r }); };
 
@@ -143,7 +168,18 @@ export default function LabPage({ pane = 'log' }) {
         <main id="panes" ref={boxRef}>
           {vis.map((p, i) => (
             <FragmentWith key={p} gutter={i > 0 ? <div className="gutter" role="separator" aria-label="Drag to resize panes" title="Drag to resize · double-click to reset" onPointerDown={dragGutter(i - 1)} onDoubleClick={resetGutter} /> : null}>
-              {render(p)}
+              <div className="pwrap" data-pane={p}>
+                {vis.length > 1 && (
+                  <div className="ptool" onPointerDown={startMove(p)} title="Drag to rearrange">
+                    <span className="grip" aria-hidden="true">⠿</span><b>{PLBL[p]}</b>
+                    <span className="psp" />
+                    <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'up' : 'left'}`} disabled={i === 0} onClick={() => moveTo(p, i - 1)}>{narrow ? '▲' : '◀'}</button>
+                    <button type="button" aria-label={`Move ${PLBL[p]} ${narrow ? 'down' : 'right'}`} disabled={i === vis.length - 1} onClick={() => moveTo(p, i + 1)}>{narrow ? '▼' : '▶'}</button>
+                    <button type="button" aria-label={`Close ${PLBL[p]}`} onClick={() => toggle(p)}>✕</button>
+                  </div>
+                )}
+                {render(p)}
+              </div>
             </FragmentWith>
           ))}
         </main>

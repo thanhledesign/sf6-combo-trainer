@@ -28,7 +28,7 @@
 .lab .vsp{flex:0 0 .8rem;margin:-.15rem 0;position:relative;cursor:row-resize;touch-action:none}
 .lab .vsp::after{content:"";position:absolute;left:35%;right:35%;top:50%;height:3px;margin-top:-1.5px;border-radius:2px;background:var(--line);transition:background .12s}
 .lab .vsp:hover::after, .lab .vsp.drag::after{background:var(--gold)}
-@media (max-width:760px){.lab .gutter{cursor:row-resize}
+@media (max-width:900px){.lab .gutter{cursor:row-resize}
 .lab .gutter::after{top:50%;bottom:auto;left:20%;right:20%;width:auto;height:3px;margin:-1.5px 0 0}
 .lab #panes{grid-auto-flow:row;grid-auto-columns:auto;grid-auto-rows:minmax(0,1fr)}
 .lab #tabs{margin-left:0;width:100%}
@@ -226,3 +226,24 @@
 .lab .startv .startopp-h{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline;font-size:.8rem}
 .lab .startv .chargrid{flex:none;height:min(42vh,20rem);margin:0;border-radius:.6rem}
 .lab .startv .btn.huge{flex:none}
+
+/* pane toolbar (rearrange / close) */
+.lab .pwrap{display:flex;flex-direction:column;gap:.3rem;min-width:0;min-height:0}
+.lab .pwrap > .pane{flex:1 1 0}
+.lab .ptool{display:flex;align-items:center;gap:.25rem;padding:.15rem .3rem;background:var(--panel2);border:1px solid var(--line);border-radius:.6rem;cursor:grab;touch-action:none;user-select:none;font-size:.75rem;color:var(--mute)}
+.lab .ptool b{color:var(--text);font-weight:600}
+.lab .ptool .grip{font-size:1rem;line-height:1;opacity:.7}
+.lab .ptool .psp{flex:1}
+.lab .ptool button{min-width:1.9rem;min-height:1.9rem;border:0;border-radius:.4rem;background:transparent;color:var(--mute);font-size:.75rem;cursor:pointer}
+.lab .ptool button:hover:not(:disabled){background:var(--line);color:var(--text)}
+.lab .ptool button:disabled{opacity:.3;cursor:default}
+.lab .pwrap.moving{opacity:.85;outline:2px dashed var(--gold);outline-offset:2px;border-radius:.9rem}
+.lab .pwrap.moving .ptool{cursor:grabbing}
+/* tabs: horizontal scroll on small screens, compact icon+label rows on desktop */
+@media (max-width:900px){.lab #tabs{overflow-x:auto;scrollbar-width:none}.lab #tabs button{flex:1 0 4.2rem}}
+@media (min-width:1100px){
+  .lab #tabs button{flex-direction:row;gap:.45rem;min-height:2.8rem;padding:.2rem .8rem;font-size:.8rem}
+  .lab #tabs svg{width:1.25rem;height:1.25rem}
+  .lab #panes{padding:.8rem}
+}
+@media (min-width:1600px){.lab #panes{padding:1rem}.lab #top{padding:.6rem 1.2rem}}

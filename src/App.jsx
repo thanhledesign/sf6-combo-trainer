@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { THUMBS } from './data/charThumb';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
 import { Search, ChevronDown, Menu, X } from 'lucide-react';
 import { PasswordGate, isPasswordRequired, isPasswordValid } from './components/auth/PasswordGate';
 import CharacterCards from './components/CharacterCards';
 import MoveCard from './components/Card/MoveCard';
-import PunishCalculator from './components/Punish/PunishCalculator';
+const PunishCalculator = lazy(() => import('./components/Punish/PunishCalculator'));
 import MoveBrowser from './components/Browse/MoveBrowser';
 import SearchResults from './components/Search/SearchResults';
-import TacticsPage from './components/Tactics/TacticsPage';
-import StatsPage from './components/Tracker/StatsPage';
-import SetTrackerPage from './components/Tracker/SetTrackerPage';
-import LabPage from './components/Lab/LabPage';
+const TacticsPage = lazy(() => import('./components/Tactics/TacticsPage'));
+const StatsPage = lazy(() => import('./components/Tracker/StatsPage'));
+const SetTrackerPage = lazy(() => import('./components/Tracker/SetTrackerPage'));
+const LabPage = lazy(() => import('./components/Lab/LabPage'));
 import CharacterSelectorModal from './components/Navigation/CharacterSelectorModal';
 import { characters as characterMap, characterList } from './data/characters';
 
@@ -465,6 +465,7 @@ function App() {
       />
 
       {/* Routes */}
+      <Suspense fallback={<div className="p-8 text-center text-gray-400">Loading…</div>}>
       <Routes>
         {/* Home / Characters */}
         <Route path="/" element={
@@ -535,6 +536,7 @@ function App() {
           />
         } />
       </Routes>
+      </Suspense>
     </div>
   );
 }
