@@ -99,13 +99,43 @@ export function applyRemote(rows) {
 }
 
 export const subscribe = (f) => { listeners.add(f); return () => listeners.delete(f); };
-export const getState = () => state;
-export const useLab = () => useSyncExternalStore(subscribe, getState);
+
+/* ---------- accounts (Steam / PS5 / Switch 2 …) ----------
+   Each account has its own games, sessions, goals and manual streaks (its own MR and history).
+   Records carry `acct`; records saved before accounts existed have none and belong to the first account.
+   Combos, reviews, tags and options are shared. Which account is showing is a per-device choice (ui.acct). */
+export const DEFAULT_ACCOUNTS = [
+  { id: 'steam', name: 'Steam', platform: 'Steam' },
+  { id: 'ps5', name: 'PS5', platform: 'PS5' },
+  { id: 'sw2', name: 'Switch 2', platform: 'Switch 2' },
+];
+const SCOPED = ['games', 'sessions', 'goals', 'streaks'];
+export const accountsOf = (settings) => (settings && Array.isArray(settings.accounts) && settings.accounts.length ? settings.accounts : DEFAULT_ACCOUNTS);
+export const curAcctId = () => { const l = accountsOf(state.settings), a = ui.acct; return l.some((x) => x.id === a) ? a : l[0].id; };
+export const acctOfRec = (r, S) => r.acct || accountsOf((S || state).settings)[0].id;
+
+let viewKey = null, viewVal = null;
+function view() {
+  const acct = curAcctId();
+  if (viewVal && viewKey && viewKey.s === state && viewKey.a === acct) return viewVal;
+  const first = accountsOf(state.settings)[0].id, v = { ...state, acct, accounts: accountsOf(state.settings) };
+  SCOPED.forEach((c) => { v[c] = state[c].filter((r) => (r.acct || first) === acct); });
+  viewKey = { s: state, a: acct }; viewVal = v;
+  return v;
+}
+/** Everything the reads in the UI and actions see: the current account's records. */
+export const getState = () => view();
+/** All accounts' records (sync, backup, import). */
+export const getRaw = () => state;
+const subBoth = (f) => { const a = subscribe(f), b = subscribeUI(f); return () => { a(); b(); }; };
+export const useLab = () => useSyncExternalStore(subBoth, view);
+export const useRaw = () => useSyncExternalStore(subscribe, getRaw);
 
 export function put(coll, id, data) {
   const u = Date.now();
   if (coll === 'settings') { emit({ ...state, settings: { ...data, _u: u } }); mark('settings', 'main'); return; }
   const arr = state[coll].slice(), row = { ...data, id, _u: u };
+  if (SCOPED.includes(coll) && row.acct == null) row.acct = curAcctId();
   const i = arr.findIndex((x) => x.id === id);
   if (i >= 0) arr[i] = row; else arr.push(row);
   delete tomb[`${coll}/${id}`];
@@ -120,7 +150,7 @@ export function del(coll, id) {
 export function saveSettings(patch) { put('settings', 'main', { ...state.settings, ...patch }); }
 
 /* ---------- per-device UI prefs (pane layout, drag pace, zoom) ---------- */
-const UI0 = { sel: null, scale: 100, pace: 8, space: 36, rat: {}, hts: {} };
+const UI0 = { acct: null, sel: null, scale: 100, pace: 8, space: 36, rat: {}, hts: {} };
 let ui = { ...UI0, ...(typeof window === 'undefined' ? {} : read(UIK) || {}) };
 ui.rat = ui.rat || {}; ui.hts = ui.hts || {};
 const uiL = new Set();

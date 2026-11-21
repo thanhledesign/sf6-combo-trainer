@@ -1,5 +1,5 @@
 // Game / session / goal actions. All write through the store; none touch the DOM.
-import { put, saveSettings, getState } from './store';
+import { put, saveSettings, getState, accountsOf, getRaw, setUI } from './store';
 import {
   cur, sgm, modeNow, meNow, devNow, opts, stopOf, strip, lossRun, evalGoal, estMR, postMR, byId, optPatch,
 } from './calc';
@@ -101,3 +101,28 @@ export function setComboMan(id, man) {
   const c = getState().combos.find((x) => x.id === id);
   if (c) put('combos', id, { ...strip(c), man });
 }
+
+/* ---------- accounts ---------- */
+export const setAccount = (id) => setUI({ acct: id });
+const saveAccts = (list) => saveSettings({ accounts: list });
+export function addAccount(name, platform) {
+  const list = accountsOf(getRaw().settings), id = 'a' + Date.now().toString(36);
+  saveAccts([...list, { id, name: (name || '').trim() || platform || 'Account', platform: platform || 'Other' }]);
+  setUI({ acct: id });
+  return id;
+}
+export function editAccount(id, patch) { saveAccts(accountsOf(getRaw().settings).map((a) => (a.id === id ? { ...a, ...patch } : a))); }
+export function removeAccount(id) {
+  const raw = getRaw(), list = accountsOf(raw.settings);
+  if (list.length < 2) return false;
+  const first = list[0].id;
+  if (['games', 'sessions', 'goals', 'streaks'].some((c) => raw[c].some((r) => (r.acct || first) === id))) return false; // keep history safe
+  saveAccts(list.filter((a) => a.id !== id)); return true;
+}
+// Records saved before accounts existed belong to the first account; this stamps them onto another one.
+export function assignLegacy(toId) {
+  const raw = getRaw(); let n = 0;
+  ['games', 'sessions', 'goals', 'streaks'].forEach((c) => raw[c].forEach((r) => { if (!r.acct) { put(c, r.id, { ...strip(r), acct: toId }); n++; } }));
+  return n;
+}
+export const legacyCount = (raw) => ['games', 'sessions', 'goals', 'streaks'].reduce((t, c) => t + raw[c].filter((r) => !r.acct).length, 0);
