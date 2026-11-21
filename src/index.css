@@ -18,6 +18,24 @@
   }
 }
 
+/* Global button system — every card CTA uses these (brand purple gradient). */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-3 font-semibold text-white transition duration-200 hover:brightness-110 active:scale-[0.98];
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  }
+  .btn-primary.btn-sm { @apply rounded-lg px-3 py-1.5 text-sm; }
+  /* Gradient reused behind character art so art + button read as one system */
+  .brand-gradient { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+}
+
+/* Cards in a grid row share row lines: every section (art, stats, style, signature
+   moves, button) lines up across the row and stretches to the tallest card. */
+.row-card { display: grid; row-gap: 0; align-content: start; }
+.row-card > * { min-width: 0; }
+.row-card-6 { grid-row: span 6; grid-template-rows: subgrid; }
+.row-card-3 { grid-row: span 3; grid-template-rows: subgrid; }
+
 /* Custom scrollbar hiding for horizontal scroll */
 .scrollbar-hide {
   -ms-overflow-style: none;

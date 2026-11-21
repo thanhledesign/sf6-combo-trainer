@@ -68,15 +68,13 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
   if (compact) {
     return (
       <div
-        className="relative group cursor-pointer"
+        className="row-card row-card-3 group cursor-pointer mb-4"
         onClick={() => onClick?.(character)}
       >
-        <div className="relative overflow-hidden rounded-xl shadow-lg active:scale-95 transition-transform">
-          {/* Background gradient */}
-          <div className={`absolute inset-0 bg-gradient-to-br ${character.gradient} opacity-90`}></div>
-          
-          {/* Character Image */}
-          <div className="relative aspect-video overflow-hidden">
+        <div className="row-card row-card-3 relative overflow-hidden rounded-xl shadow-lg active:scale-95 transition-transform" style={{ gridRow: 'span 3' }}>
+          {/* Character Image on the brand gradient */}
+          <div className="relative aspect-video overflow-hidden brand-gradient">
+            <div className="absolute inset-0 brand-gradient mix-blend-soft-light opacity-80 z-[5] pointer-events-none"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10"></div>
             
             {character.image ? (
@@ -103,9 +101,9 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           </div>
           
           {/* Compact info section */}
-          <div className="relative bg-gray-900/95 p-3">
-            <div className="flex items-center justify-between mb-2">
-              <span className={`text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full bg-gradient-to-br ${character.gradient}`}>
+          <div className="relative bg-gray-900/95 px-3 pt-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full brand-gradient">
                 {character.archetype}
               </span>
               <div className="flex gap-0.5">
@@ -121,12 +119,11 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
               </div>
             </div>
             
-            <button
-              className="w-full py-2 rounded-lg font-semibold text-white text-sm flex items-center justify-center"
-              style={{ background: `linear-gradient(135deg, ${character.accentColor}, ${character.accentColorDark})` }}
-            >
+          </div>
+          <div className="relative bg-gray-900/95 p-3 pt-2">
+            <button className="btn-primary btn-sm w-full">
               View Moves
-              <ChevronRight className="w-4 h-4 ml-1" />
+              <ChevronRight className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -137,16 +134,14 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
   // Full version (original)
   return (
     <div
-      className="relative group cursor-pointer"
+      className="row-card row-card-6 group cursor-pointer mb-4 md:mb-8"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={() => onClick?.(character)}
     >
-      <div className={`relative overflow-hidden rounded-2xl transition-all duration-500 ${
+      <div className={`row-card row-card-6 relative overflow-hidden rounded-2xl transition-all duration-500 ${
         isHovered ? 'shadow-2xl scale-105' : 'shadow-xl'
-      }`}>
-        
-        <div className={`absolute inset-0 bg-gradient-to-br ${character.gradient} opacity-90`}></div>
+      }`} style={{ gridRow: 'span 6' }}>
         
         <div 
           className={`absolute inset-0 rounded-2xl transition-opacity duration-500 pointer-events-none ${
@@ -163,7 +158,8 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           }}
         ></div>
         
-        <div className="relative aspect-video overflow-hidden">
+        <div className="relative aspect-video overflow-hidden brand-gradient">
+            <div className="absolute inset-0 brand-gradient mix-blend-soft-light opacity-80 z-[5] pointer-events-none"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
           
           <div className="absolute top-4 left-4 z-20">
@@ -173,7 +169,7 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           </div>
           
           <div className="absolute top-4 right-4 z-20">
-            <div className={`bg-gradient-to-br ${character.gradient} px-3 py-1 rounded-full border-2 border-white/40 shadow-lg`}>
+            <div className="brand-gradient px-3 py-1 rounded-full border-2 border-white/40 shadow-lg">
               <span className="text-white text-xs font-semibold uppercase tracking-wide">{character.archetype}</span>
             </div>
           </div>
@@ -202,8 +198,8 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
           </div>
         </div>
         
-        <div className="relative bg-gray-900/95 backdrop-blur-sm p-6">
-          <div className="grid grid-cols-3 gap-3 mb-4">
+        <div className="relative bg-gray-900/95 backdrop-blur-sm px-6 pt-6 pb-4">
+          <div className="grid grid-cols-3 gap-3">
             <div className="text-center">
               <div className="flex items-center justify-center mb-1">
                 <Sword className="w-4 h-4 text-red-400 mr-1" />
@@ -227,7 +223,9 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
             </div>
           </div>
           
-          <div className="mb-4">
+        </div>
+        <div className="relative bg-gray-900/95 backdrop-blur-sm px-6 pb-4">
+          <div>
             <div className="flex justify-between items-center mb-2">
               <span className="text-xs text-gray-400 uppercase">Difficulty</span>
               <span className="text-xs font-semibold" style={{ color: character.accentColor }}>
@@ -251,12 +249,15 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
             </div>
           </div>
           
-          <div className="mb-4">
+        </div>
+        <div className="relative bg-gray-900/95 backdrop-blur-sm px-6 pb-4">
+          <div>
             <h4 className="text-xs text-gray-400 uppercase mb-2">Fighting Style</h4>
             <p className="text-sm text-gray-300 leading-relaxed">{character.fightingStyle}</p>
           </div>
-          
-          <div className="mb-4">
+        </div>
+        <div className="relative bg-gray-900/95 backdrop-blur-sm px-6 pb-4">
+          <div>
             <h4 className="text-xs text-gray-400 uppercase mb-2 flex items-center">
               <Star className="w-3 h-3 mr-1" />
               Signature Moves
@@ -273,20 +274,17 @@ const CharacterCard = ({ character, onClick, compact = false }) => {
             </div>
           </div>
           
+        </div>
+        <div className="relative bg-gray-900/95 backdrop-blur-sm px-6 pb-6">
           <button
-            className={`w-full py-3 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center ${
-              isHovered ? 'translate-y-0' : 'translate-y-1'
-            }`}
-            style={{ 
-              background: `linear-gradient(135deg, ${character.accentColor}, ${character.accentColorDark})` 
-            }}
+            className="btn-primary w-full"
             onClick={(e) => {
               e.stopPropagation();
               onClick?.(character);
             }}
           >
             <span>View Moves</span>
-            <ChevronRight className={`w-5 h-5 ml-2 transition-transform duration-300 ${
+            <ChevronRight className={`w-5 h-5 transition-transform duration-300 ${
               isHovered ? 'translate-x-1' : ''
             }`} />
           </button>
@@ -508,7 +506,7 @@ const CharacterCards = ({ onCharacterSelect, selectedCharacterId }) => {
       
       {/* Character Grid */}
       <div className="max-w-7xl mx-auto">
-        <div className={`grid gap-4 md:gap-8 ${
+        <div className={`grid gap-x-4 gap-y-0 md:gap-x-8 ${
           mobileColumns === 2 
             ? 'grid-cols-2 md:grid-cols-2 lg:grid-cols-3' 
             : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
