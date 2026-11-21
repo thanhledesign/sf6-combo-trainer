@@ -1,0 +1,1922 @@
+{
+  "id": "arjun",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:32:17.668Z",
+  "source": "https://www.streetfighter.com/6/character/arjun",
+  "character": {
+    "bio": "Falsely accused of killing his partner,Arjun is a former officer on the lam whowill not stop until he uncovers the truthbehind the murder. Before he picked upthe badge, he dreamt of being an actor.",
+    "vitals": {
+      "height": "6'9",
+      "weight": "320 lbs",
+      "likes": "Bollywood movies, fossil hunting",
+      "hates": "Undercooked Biryani"
+    }
+  },
+  "moves": {
+    "arjun_standing_light_punch_l": {
+      "displayName": "Standing Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 9,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "arjun_standing_light_kick_l": {
+      "displayName": "Standing Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 400,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 14,
+        "total": 23
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "arjun_standing_medium_punch_m": {
+      "displayName": "Standing Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 11,
+        "active": 3,
+        "activeRange": "11-13",
+        "recovery": 19,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "arjun_standing_medium_kick_m": {
+      "displayName": "Standing Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 7,
+        "active": 3,
+        "activeRange": "7-9",
+        "recovery": 19,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frames of recovery subtracted when attack is blocked"
+    },
+    "arjun_standing_heavy_punch_h": {
+      "displayName": "Standing Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 2,
+        "activeRange": "15-16",
+        "recovery": 24,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "1 frames of recovery subtracted when attack is blocked"
+    },
+    "arjun_standing_heavy_kick_h": {
+      "displayName": "Standing Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 14,
+        "active": 4,
+        "activeRange": "14-17",
+        "recovery": 21,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Juggle state time is extended when attack lands as a Punish Counter."
+    },
+    "arjun_crouching_light_punch_l": {
+      "displayName": "Crouching Light Punch",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 9,
+        "total": 17
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "arjun_crouching_light_kick_l": {
+      "displayName": "Crouching Light Kick",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 12,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "arjun_crouching_medium_punch_m": {
+      "displayName": "Crouching Medium Punch",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 3,
+        "activeRange": "9-11",
+        "recovery": 22,
+        "total": 34
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Forces a Hard Knockdown on Punish Counter"
+    },
+    "arjun_crouching_medium_kick_m": {
+      "displayName": "Crouching Medium Kick",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 18,
+        "total": 29
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 5
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      }
+    },
+    "arjun_crouching_heavy_punch_h": {
+      "displayName": "Crouching Heavy Punch",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 22,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -5,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "arjun_crouching_heavy_kick_h": {
+      "displayName": "Crouching Heavy Kick",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "activeRange": "14-16",
+        "recovery": 25,
+        "total": 42
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Produces a ground bound and hard knockdown on Punish Counter"
+    },
+    "arjun_jumping_light_punch": {
+      "displayName": "Jumping Light Punch",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 8,
+        "activeRange": "5-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "arjun_jumping_light_kick": {
+      "displayName": "Jumping Light Kick",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 7,
+        "active": 9,
+        "activeRange": "7-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "arjun_jumping_medium_punch": {
+      "displayName": "Jumping Medium Punch",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 8,
+        "active": 5,
+        "activeRange": "8-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "arjun_jumping_medium_kick": {
+      "displayName": "Jumping Medium Kick",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 9,
+        "active": 8,
+        "activeRange": "9-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "arjun_jumping_heavy_punch": {
+      "displayName": "Jumping Heavy Punch",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 6,
+        "activeRange": "10-15",
+        "recovery": 3,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack propertiesForces a slam knockdown when hitting a mid-air opponent"
+    },
+    "arjun_jumping_heavy_kick": {
+      "displayName": "Jumping Heavy Kick",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Produces a slam knockdown"
+    },
+    "arjun_blade_of_duty_h": {
+      "displayName": "Blade of Duty",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 21,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "arjun_above_the_law_h": {
+      "displayName": "Above the Law",
+      "level": "H",
+      "category": "normal",
+      "input": "→ + HK",
+      "notation": "6HK",
+      "shortName": "6HK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 19,
+        "active": 3,
+        "activeRange": "19-21",
+        "recovery": 21,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Considered airborne from frames 8 - 23"
+    },
+    "arjun_impose_order": {
+      "displayName": "Impose Order",
+      "level": "MH",
+      "category": "normal",
+      "input": "MK + HK",
+      "notation": "MKHK",
+      "shortName": "MKHK",
+      "damage": 900,
+      "frameData": {
+        "startup": 17,
+        "active": 3,
+        "activeRange": "17-19",
+        "recovery": 20,
+        "total": 40
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      },
+      "note": "Knockdown on Counter or Punish Counter"
+    },
+    "arjun_loose_cannon": {
+      "displayName": "Loose Cannon",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HP",
+      "notation": "HPHP",
+      "shortName": "HPHP",
+      "damage": 800,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 30,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA"
+      }
+    },
+    "arjun_suppression": {
+      "displayName": "Suppression",
+      "level": "HHH",
+      "category": "normal",
+      "input": "HPHPHP",
+      "notation": "HPHPHP",
+      "shortName": "HPHPHP",
+      "damage": 2000,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 40,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "arjun_hot_pursuit": {
+      "displayName": "Hot Pursuit",
+      "level": "HHH",
+      "category": "normal",
+      "input": "HPHPHK",
+      "notation": "HPHPHK",
+      "shortName": "HPHPHK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 60,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "arjun_penitent_fist": {
+      "displayName": "Penitent Fist",
+      "level": "HH",
+      "category": "normal",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) HK + HP",
+      "notation": "HK+HP",
+      "shortName": "HK+HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 24,
+        "active": 3,
+        "activeRange": "24-26",
+        "recovery": 42,
+        "total": 69
+      },
+      "frameAdvantage": {
+        "onBlock": -23,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Hold down the button for over 30 frames to change its properties"
+    },
+    "arjun_penitent_fist_charged": {
+      "displayName": "Penitent Fist(Charged)",
+      "level": "HHold H",
+      "category": "normal",
+      "damage": 1000,
+      "frameData": {
+        "startup": 41,
+        "active": 3,
+        "activeRange": "41-43",
+        "recovery": 42,
+        "total": 86
+      },
+      "frameAdvantage": {
+        "onBlock": -19,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Produces a wall splat if the opponent reaches the wall"
+    },
+    "arjun_l_arm_of_justice_l": {
+      "displayName": "L Arm of Justice",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 7,
+        "activeRange": "15-21",
+        "recovery": 17,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Clashes with projectiles (Once)Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Forces a juggle state when the attack lands as a counter or Punish Counter."
+    },
+    "arjun_m_arm_of_justice_m": {
+      "displayName": "M Arm of Justice",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 900,
+      "frameData": {
+        "startup": 20,
+        "active": 7,
+        "activeRange": "20-26",
+        "recovery": 17,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Clashes with projectiles (Once)Deals 700 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Forces a juggle state when the attack lands as a counter or Punish Counter."
+    },
+    "arjun_h_arm_of_justice_h": {
+      "displayName": "H Arm of Justice",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 28,
+        "active": 6,
+        "activeRange": "28-33",
+        "recovery": 20,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Clashes with projectiles (Once)3 frame of recovery added when the attack missesDeals 800 of recoverable damage on blockDrive Gauge increase of 6000 for the opponent when blocked during Burnout.Blowback time extended on counterhitProduces a crumple stun for 26 frames when the attack lands as a Punish Counter"
+    },
+    "arjun_follow_up": {
+      "displayName": "Follow-up",
+      "level": "(During Arm of Justice)",
+      "category": "special",
+      "context": "(During Arm of Justice)",
+      "input": "(During Arm of Justice) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 8,
+        "activeRange": "20-27",
+        "recovery": 19,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 600 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_arm_of_justice": {
+      "displayName": "OD Arm of Justice",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 1000,
+      "frameData": {
+        "startup": 23,
+        "active": 6,
+        "activeRange": "23-28",
+        "recovery": 20,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": 2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Clashes with projectiles (Twice)3 frame of recovery added when the attack missesDeals 800 of recoverable damage on blockDrive Gauge increase of 6000 for the opponent when blocked during Burnout.Blowback time extended on counterhit and punish counter"
+    },
+    "arjun_od_follow_up": {
+      "displayName": "OD Follow-up",
+      "level": "(During OD Arm of Justice)",
+      "category": "special",
+      "context": "(During Arm of Justice)",
+      "input": "(During Arm of Justice) → + P",
+      "notation": "6P",
+      "shortName": "6P",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 8,
+        "activeRange": "20-27",
+        "recovery": 19,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 600 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_l_cruel_shoulder_l": {
+      "displayName": "L Cruel Shoulder",
+      "level": "L",
+      "category": "special",
+      "input": "→↓↘ + LP",
+      "notation": "623LP",
+      "shortName": "623LP",
+      "damage": 1000,
+      "frameData": {
+        "startup": 19,
+        "active": 16,
+        "activeRange": "19-34",
+        "recovery": 22,
+        "total": 57
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 23Deals 600 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Transitions to Justice Beyond when Arjun comes in contact with a stone pillar"
+    },
+    "arjun_m_cruel_shoulder_m": {
+      "displayName": "M Cruel Shoulder",
+      "level": "M",
+      "category": "special",
+      "input": "→↓↘ + MP",
+      "notation": "623MP",
+      "shortName": "623MP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 23,
+        "active": 19,
+        "activeRange": "23-41",
+        "recovery": 19,
+        "total": 61
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 27Deals 700 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Transitions to Justice Beyond when Arjun comes in contact with a stone pillar"
+    },
+    "arjun_h_cruel_shoulder_h": {
+      "displayName": "H Cruel Shoulder",
+      "level": "H",
+      "category": "special",
+      "input": "→↓↘ + HP",
+      "notation": "623HP",
+      "shortName": "623HP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 28,
+        "active": 21,
+        "activeRange": "28-48",
+        "recovery": 27,
+        "total": 76
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 800 of recoverable damage on blockDrive Gauge increase of 6000 for the opponent when blocked during Burnout.Transitions to Justice Beyond when Arjun comes in contact with a stone pillar"
+    },
+    "arjun_justice_beyond": {
+      "displayName": "Justice Beyond",
+      "level": "(Activates when Cruel Shoulder connects with a rock pillar)",
+      "category": "special",
+      "context": "(Activates when Cruel Shoulder connects with a rock pillar)",
+      "damage": 1600,
+      "frameData": {
+        "startup": 11,
+        "active": 16,
+        "activeRange": "11-26",
+        "recovery": 27,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has armor break propertiesDeals 1000 of recoverable damage on blockDrive Gauge increase of 8000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_cruel_shoulder": {
+      "displayName": "OD Cruel Shoulder",
+      "level": null,
+      "category": "special",
+      "input": "→↓↘ + P",
+      "notation": "623P",
+      "shortName": "623P",
+      "damage": 1200,
+      "frameData": {
+        "startup": 22,
+        "active": 21,
+        "activeRange": "22-42",
+        "recovery": 27,
+        "total": 70
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 800 of recoverable damage on blockDrive Gauge increase of 6000 for the opponent when blocked during Burnout.Transitions to Justice Beyond when Arjun comes in contact with a stone pillar"
+    },
+    "arjun_od_justice_beyond": {
+      "displayName": "OD Justice Beyond",
+      "level": "(Activates when Cruel Shoulder connects with a rock pillar)",
+      "category": "special",
+      "context": "(Activates when Cruel Shoulder connects with a rock pillar)",
+      "damage": 1600,
+      "frameData": {
+        "startup": 11,
+        "active": 16,
+        "activeRange": "11-26",
+        "recovery": 27,
+        "total": 54
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has armor break propertiesDeals 1000 of recoverable damage on blockDrive Gauge increase of 8000 for the opponent when blocked during Burnout."
+    },
+    "arjun_breathing_ring": {
+      "displayName": "Breathing Ring",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 300 of recoverable damage on blockDrive Gauge increase of 2000 for the opponent when blocked during Burnout.Can transition to Breathing Shockwave between frames 26 - 36"
+    },
+    "arjun_l_breathing_shockwave": {
+      "displayName": "L Breathing Shockwave",
+      "level": "(During Breathing Ring)  L",
+      "category": "special",
+      "context": "(During Breathing Ring)",
+      "input": "(During Breathing Ring) → + LP",
+      "notation": "6LP",
+      "shortName": "6LP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_m_breathing_shockwave": {
+      "displayName": "M Breathing Shockwave",
+      "level": "(During Breathing Ring)  M",
+      "category": "special",
+      "context": "(During Breathing Ring)",
+      "input": "(During Breathing Ring) → + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_h_breathing_shockwave": {
+      "displayName": "H Breathing Shockwave",
+      "level": "(During Breathing Ring)  H",
+      "category": "special",
+      "context": "(During Breathing Ring)",
+      "input": "(During Breathing Ring) → + HP",
+      "notation": "6HP",
+      "shortName": "6HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_breathing_shockwave_projectile": {
+      "displayName": "Breathing Shockwave(projectile)",
+      "level": null,
+      "category": "special",
+      "damage": 700,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Deals 300 of recoverable damage on blockDrive Gauge increase of 2500 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_breathing_ring": {
+      "displayName": "OD Breathing Ring",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 600,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "",
+        "recovery": 48,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 2500 for the opponent when blocked during Burnout.Can transition to Overdrive Breathing Shockwave between frames 26 - 36"
+    },
+    "arjun_od_l_breathing_shockwave": {
+      "displayName": "OD L Breathing Shockwave",
+      "level": "(During OD Breathing Ring)  L",
+      "category": "special",
+      "context": "(During OD Breathing Ring)",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_m_breathing_shockwave": {
+      "displayName": "OD M Breathing Shockwave",
+      "level": "(During OD Breathing Ring)  M",
+      "category": "special",
+      "context": "(During OD Breathing Ring)",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_h_breathing_shockwave": {
+      "displayName": "OD H Breathing Shockwave",
+      "level": "(During OD Breathing Ring)  H",
+      "category": "special",
+      "context": "(During OD Breathing Ring)",
+      "damage": 800,
+      "frameData": {
+        "startup": 15,
+        "active": 10,
+        "activeRange": "15-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -7,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_breathing_shockwave_projectile": {
+      "displayName": "OD Breathing Shockwave(projectile)",
+      "level": null,
+      "category": "special",
+      "damage": 1000,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_l_divine_pillar_l": {
+      "displayName": "L Divine Pillar",
+      "level": "L",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + LK",
+      "notation": "214LK",
+      "shortName": "214LK",
+      "damage": 800,
+      "frameData": {
+        "startup": 25,
+        "active": 10,
+        "activeRange": "25-34",
+        "recovery": 21,
+        "total": 56
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_m_divine_pillar_m": {
+      "displayName": "M Divine Pillar",
+      "level": "M",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + MK",
+      "notation": "214MK",
+      "shortName": "214MK",
+      "damage": 800,
+      "frameData": {
+        "startup": 25,
+        "active": 10,
+        "activeRange": "25-34",
+        "recovery": 21,
+        "total": 56
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_h_divine_pillar_h": {
+      "displayName": "H Divine Pillar",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + HK",
+      "notation": "214HK",
+      "shortName": "214HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 25,
+        "active": 10,
+        "activeRange": "25-34",
+        "recovery": 21,
+        "total": 56
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_divine_pillar_projectile": {
+      "displayName": "Divine Pillar(projectile)",
+      "level": null,
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_l_divine_pillar": {
+      "displayName": "OD L Divine Pillar",
+      "level": "LM",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 10,
+        "activeRange": "20-29",
+        "recovery": 21,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_m_divine_pillar": {
+      "displayName": "OD M Divine Pillar",
+      "level": "LH",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 10,
+        "activeRange": "20-29",
+        "recovery": 21,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_h_divine_pillar": {
+      "displayName": "OD H Divine Pillar",
+      "level": "MH",
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 10,
+        "activeRange": "20-29",
+        "recovery": 21,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Deals 500 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout."
+    },
+    "arjun_od_divine_pillar_projectile": {
+      "displayName": "OD Divine Pillar(projectile)",
+      "level": null,
+      "category": "special",
+      "damage": 800,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": null,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Deals 400 of recoverable damage on blockDrive Gauge increase of 3000 for the opponent when blocked during Burnout."
+    },
+    "arjun_ghastly_interrogation": {
+      "displayName": "Ghastly Interrogation",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) →↘↓↙← + P",
+      "notation": "63214P",
+      "shortName": "63214P",
+      "damage": 1600,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 35,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageEffects change when opponent's vitality gauge has recoverable damage- 1800 damage"
+    },
+    "arjun_od_ghastly_interrogation": {
+      "displayName": "OD Ghastly Interrogation",
+      "level": "(When near opponent)",
+      "category": "special",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) →↘↓↙← + P",
+      "notation": "63214P",
+      "shortName": "63214P",
+      "damage": 2200,
+      "frameData": {
+        "startup": 26,
+        "active": 3,
+        "activeRange": "26-28",
+        "recovery": 38,
+        "total": 67
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageEffects change when opponent's vitality gauge has recoverable damage- 2400 damage"
+    },
+    "arjun_indomitable_defense_h": {
+      "displayName": "Indomitable Defense",
+      "level": "H",
+      "category": "special",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) ↓↓ + HK",
+      "notation": "22HK",
+      "shortName": "22HK",
+      "damage": 1500,
+      "frameData": {
+        "startup": 3,
+        "active": 26,
+        "activeRange": "3-28",
+        "recovery": 30,
+        "total": 59
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Absorbs projectiles and attacks from frames 3-28. Absorbing an attack transitions to a counter attackDrive Gauge increase of 3000 for the opponent when blocked during Burnout.Hold down the button to extend the techniqueCan transition to Moral Breakdown from frame 26 while holding down the button"
+    },
+    "arjun_moral_breakdown": {
+      "displayName": "Moral Breakdown",
+      "level": "(During Indomitable Defense)",
+      "category": "special",
+      "context": "(During Indomitable Defense)",
+      "input": "(During Indomitable Defense) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 1500,
+      "frameData": {
+        "startup": 28,
+        "active": 38,
+        "activeRange": "28-65",
+        "recovery": 23,
+        "total": 89
+      },
+      "frameAdvantage": {
+        "onBlock": 3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Deals 1100 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Strength equivalent to Overdrive arts when clashing with other projectiles."
+    },
+    "arjun_sa1_howling_destruction": {
+      "displayName": "SA1 Howling Destruction",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2000,
+      "frameData": {
+        "startup": 8,
+        "active": 62,
+        "activeRange": "8-69",
+        "recovery": 67,
+        "total": 137
+      },
+      "frameAdvantage": {
+        "onBlock": -46,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws between frames 1 - 8Deals 100 of recoverable damage on blockDrive Gauge increase of 2500 for the opponent when blocked during Burnout.The minimum guaranteed damage is 30%Values do not change when the attack lands as a counter or Punish Counter"
+    },
+    "arjun_sa2_instant_oblivion": {
+      "displayName": "SA2 Instant Oblivion",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 3000,
+      "frameData": {
+        "startup": 9,
+        "active": 4,
+        "activeRange": "9-12",
+        "recovery": 57,
+        "total": 70
+      },
+      "frameAdvantage": {
+        "onBlock": -41,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible on frames 1 - 12Deals 200 of recoverable damage on blockDrive Gauge increase of 5000 for the opponent when blocked during Burnout.Minimum guaranteed damage is set to 40%Values do not change on counter or Punish Counter"
+    },
+    "arjun_sa3_yaksha_s_order": {
+      "displayName": "SA3 Yaksha's Order",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 58,
+        "total": 74
+      },
+      "frameAdvantage": {
+        "onBlock": -41,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 15Deals 300 of recoverable damage on blockDrive Gauge increase of 7500 for the opponent when blocked during Burnout.The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "arjun_ca_yaksha_s_order": {
+      "displayName": "CA Yaksha's Order",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 13,
+        "active": 3,
+        "activeRange": "13-15",
+        "recovery": 58,
+        "total": 74
+      },
+      "frameAdvantage": {
+        "onBlock": -41,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 15Deals 300 of recoverable damage on blockDrive Gauge increase of 10000 for the opponent when blocked during Burnout.The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "arjun_righteous_verdict": {
+      "displayName": "Righteous Verdict",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "arjun_scale_of_the_judged": {
+      "displayName": "Scale of the Judged",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "arjun_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 22,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "arjun_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 25,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws between frames 1 - 15"
+    },
+    "arjun_drive_impact_excessive_force": {
+      "displayName": "Drive Impact: Excessive Force",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "arjun_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Shield of the Vindicator",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
+    },
+    "arjun_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Shield of the Vindicator",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 205 frames of recovery added on hit"
+    },
+    "arjun_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
+    },
+    "arjun_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "arjun_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occursThe player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "arjun_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "arjun_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

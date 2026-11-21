@@ -1,6 +1,8 @@
 {
   "id": "cviper",
-  "scrapedAt": "2026-04-25T20:44:59.692Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:35:33.037Z",
   "source": "https://www.streetfighter.com/6/character/cviper",
   "character": {
     "bio": "An operative belonging to a certain intelligence organization. A cold, hard realist. She complements her fighting abilities using a number of gadgets hidden in her outfit.",
@@ -107,7 +109,7 @@
       },
       "frameAdvantage": {
         "onBlock": -3,
-        "onHit": 4
+        "onHit": 5
       },
       "properties": {
         "hitLevel": "high",
@@ -609,7 +611,7 @@
       },
       "frameAdvantage": {
         "onBlock": -4,
-        "onHit": 1
+        "onHit": 2
       },
       "properties": {
         "hitLevel": "high",
@@ -1147,7 +1149,7 @@
         "total": 53
       },
       "frameAdvantage": {
-        "onBlock": -8,
+        "onBlock": -6,
         "onHit": 0
       },
       "properties": {

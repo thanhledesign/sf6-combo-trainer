@@ -1,6 +1,8 @@
 {
   "id": "aki",
-  "scrapedAt": "2026-04-25T20:37:30.127Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:30:07.154Z",
   "source": "https://www.streetfighter.com/6/character/aki",
   "character": {
     "bio": "A poison-wielding apprentice of F.A.N.G, the former Shadaloo officer.Enchanted by the power of toxins, nothing brings her more joy than testing them on a new target—other than attention from her “master,” that is.",
@@ -288,7 +290,7 @@
         "hitLevel": "low",
         "cancelable": false
       },
-      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and opponent is put in a poisoned state."
     },
     "aki_crouching_heavy_kick_h": {
       "displayName": "Crouching Heavy Kick",
@@ -503,13 +505,13 @@
       "damage": 900,
       "frameData": {
         "startup": 16,
-        "active": 3,
-        "activeRange": "16-18",
-        "recovery": 21,
+        "active": 4,
+        "activeRange": "16-19",
+        "recovery": 20,
         "total": 40
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": -3,
         "onHit": 3
       },
       "properties": {
@@ -718,7 +720,7 @@
         "cancelable": false,
         "cancelFlags": "SA2"
       },
-      "note": "Puts the opponent in a poisoned state on hitToxic Blossom triggers on hit if the opponent is already in a poisoned state* Deals 800 damage and forces a juggle state on Toxic Blossom triggerClashes with projectiles (Once)"
+      "note": "Puts the opponent in a poisoned state on either hit or blockToxic Blossom triggers on hit if the opponent is already in a poisoned state* Deals 800 damage and forces a juggle state on Toxic Blossom triggerClashes with projectiles (Once)"
     },
     "aki_nightshade_chaser_burst": {
       "displayName": "Nightshade Chaser (Burst)",
@@ -940,7 +942,7 @@
       },
       "frameAdvantage": {
         "onBlock": -3,
-        "onHit": 1
+        "onHit": 2
       },
       "properties": {
         "hitLevel": "high",

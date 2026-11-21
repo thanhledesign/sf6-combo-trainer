@@ -1,6 +1,8 @@
 {
   "id": "zangief",
-  "scrapedAt": "2026-04-25T20:42:32.125Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:51:29.041Z",
   "source": "https://www.streetfighter.com/6/character/zangief",
   "character": {
     "bio": "A colossal wrestler nicknamed the Red Cyclone. Zangief is dedicated to physical improvement and instructing his students.",
@@ -831,7 +833,8 @@
       },
       "properties": {
         "hitLevel": "low",
-        "cancelable": false
+        "cancelable": true,
+        "cancelFlags": "C"
       }
     },
     "zangief_power_stomps_2": {
@@ -1110,7 +1113,7 @@
         "hitLevel": "throw",
         "cancelable": false
       },
-      "note": "With Classic ControlsDoes 3335 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3335 individual damage when the attack lands as a Punish Counter*Does 2668 individual damage using simplified inputs"
+      "note": "The heavy version does 2600 individual damage on activationWith Classic ControlsDoes 3335 individual damage when the attack lands as a Punish CounterWith Modern ControlsDoes 3335 individual damage when the attack lands as a Punish Counter*Does 2668 individual damage using simplified inputs"
     },
     "zangief_od_russian_suplex": {
       "displayName": "OD Russian Suplex",
@@ -1140,7 +1143,7 @@
     },
     "zangief_siberian_express_close_range": {
       "displayName": "Siberian Express(Close range)",
-      "level": "(When near opponent)",
+      "level": "(When near opponent)  LM",
       "category": "special",
       "context": "(When near opponent)",
       "damage": 2700,
@@ -1186,7 +1189,7 @@
     },
     "zangief_siberian_express_far_range": {
       "displayName": "Siberian Express(Far range)",
-      "level": "(When far from opponent)",
+      "level": "(When far from opponent)  LM",
       "category": "special",
       "context": "(When far from opponent)",
       "damage": 2700,

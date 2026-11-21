@@ -1,6 +1,8 @@
 {
   "id": "blanka",
-  "scrapedAt": "2026-04-25T20:38:21.961Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:33:39.826Z",
   "source": "https://www.streetfighter.com/6/character/blanka",
   "character": {
     "bio": "A kindhearted defender of nature, Blanka has become an adventure tour guide, confident his intimate knowledge of the jungle will serve as a springboard to fame—and a comfortable life for his beloved mother.",
@@ -72,11 +74,11 @@
       "shortName": "5MP",
       "damage": 700,
       "frameData": {
-        "startup": 10,
+        "startup": 9,
         "active": 3,
-        "activeRange": "10-12",
+        "activeRange": "9-11",
         "recovery": 15,
-        "total": 28
+        "total": 27
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -112,7 +114,7 @@
         "cancelable": true,
         "cancelFlags": "C"
       },
-      "note": "* 3 frames of recovery added when the attack misses"
+      "note": "3 frames of recovery added when the attack misses"
     },
     "blanka_standing_heavy_punch_h": {
       "displayName": "Standing Heavy Punch",
@@ -570,7 +572,8 @@
         "hitLevel": "high",
         "cancelable": true,
         "cancelFlags": "C"
-      }
+      },
+      "note": "4 frames of recovery added when the attack misses"
     },
     "blanka_wild_nail_h": {
       "displayName": "Wild Nail",
@@ -774,7 +777,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Hold down the button to continue that attack"
+      "note": "Hold down the button to continue that attackWhile held, having the fourth attack onward hit or blocked transitions into a follow-up attack."
     },
     "blanka_lightning_beast_electric_thunder": {
       "displayName": "[Lightning Beast] Electric Thunder",
@@ -797,7 +800,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Hold down the button to continue that attack"
+      "note": "Hold down the button to continue that attackWhile held, having the fourth attack onward hit or blocked transitions into a follow-up attack."
     },
     "blanka_od_electric_thunder": {
       "displayName": "OD Electric Thunder",

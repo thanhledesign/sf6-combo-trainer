@@ -4,10 +4,1305 @@
     "name": "Yasmine",
     "displayName": "Yasmine",
     "archetype": "tbd",
-    "description": "Year 4 DLC fighter (released Aug 3, 2026)",
-    "version": "0.1.0",
-    "pendingSync": true
+    "description": ""
   },
   "tactics": {},
-  "moves": {}
+  "moves": {
+    "yasmine_standing_light_punch_magaang_na_paglaslas_l": {
+      "id": "yasmine_standing_light_punch_magaang_na_paglaslas_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_standing_light_kick_mababang_sipa_l": {
+      "id": "yasmine_standing_light_kick_mababang_sipa_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_standing_medium_punch_pabalik_balik_na_paglaslas_m": {
+      "id": "yasmine_standing_medium_punch_pabalik_balik_na_paglaslas_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_standing_medium_kick_tagilirang_sipa_m": {
+      "id": "yasmine_standing_medium_kick_tagilirang_sipa_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_standing_heavy_punch_tripleng_paglaslas_h": {
+      "id": "yasmine_standing_heavy_punch_tripleng_paglaslas_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_standing_heavy_kick_tumatalon_na_sipa_h": {
+      "id": "yasmine_standing_heavy_kick_tumatalon_na_sipa_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_light_punch_mabilisang_paglaslas_l": {
+      "id": "yasmine_crouching_light_punch_mabilisang_paglaslas_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_light_kick_magaang_na_sipa_l": {
+      "id": "yasmine_crouching_light_kick_magaang_na_sipa_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_medium_punch_kalmot_m": {
+      "id": "yasmine_crouching_medium_punch_kalmot_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_medium_kick_pandurog_ng_lulod_m": {
+      "id": "yasmine_crouching_medium_kick_pandurog_ng_lulod_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_heavy_punch_mamimituin_h": {
+      "id": "yasmine_crouching_heavy_punch_mamimituin_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_crouching_heavy_kick_gunting_na_pabagsak_h": {
+      "id": "yasmine_crouching_heavy_kick_gunting_na_pabagsak_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_light_punch_magaang_na_panghimpapawid_na_paglaslas": {
+      "id": "yasmine_jumping_light_punch_magaang_na_panghimpapawid_na_paglaslas",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_light_kick_panghimpapawid_na_sipa_gamit_ang_tuhod": {
+      "id": "yasmine_jumping_light_kick_panghimpapawid_na_sipa_gamit_ang_tuhod",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_medium_punch_pabilog_na_paglaslas": {
+      "id": "yasmine_jumping_medium_punch_pabilog_na_paglaslas",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_medium_kick_panghimpapawid_na_sipa_sa_harap": {
+      "id": "yasmine_jumping_medium_kick_panghimpapawid_na_sipa_sa_harap",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_heavy_punch_namamalong_mga_pakpak": {
+      "id": "yasmine_jumping_heavy_punch_namamalong_mga_pakpak",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_jumping_heavy_kick_panghimpapawid_na_malakas_na_sipa": {
+      "id": "yasmine_jumping_heavy_kick_panghimpapawid_na_malakas_na_sipa",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_hiwang_pababa_m": {
+      "id": "yasmine_hiwang_pababa_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_walis_na_pabagsak_h": {
+      "id": "yasmine_walis_na_pabagsak_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_kidlat_na_hiwa": {
+      "id": "yasmine_kidlat_na_hiwa",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_tatlong_hiwa": {
+      "id": "yasmine_tatlong_hiwa",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_sunod_sunod_na_sipa_1": {
+      "id": "yasmine_sunod_sunod_na_sipa_1",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_sunod_sunod_na_sipa_2": {
+      "id": "yasmine_sunod_sunod_na_sipa_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_kumbinasyong_pampabagsak": {
+      "id": "yasmine_kumbinasyong_pampabagsak",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_daloy_ng_tubig_l": {
+      "id": "yasmine_l_daloy_ng_tubig_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_alon_1_l": {
+      "id": "yasmine_l_alon_1_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_alon_2": {
+      "id": "yasmine_l_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_boosted_l_alon_2": {
+      "id": "yasmine_boosted_l_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_daloy_ng_tubig_m": {
+      "id": "yasmine_m_daloy_ng_tubig_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_alon_1_m": {
+      "id": "yasmine_m_alon_1_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_alon_2": {
+      "id": "yasmine_m_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_boosted_m_alon_2": {
+      "id": "yasmine_boosted_m_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_daloy_ng_tubig_h": {
+      "id": "yasmine_h_daloy_ng_tubig_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_alon_1_h": {
+      "id": "yasmine_h_alon_1_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_alon_2": {
+      "id": "yasmine_h_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_boosted_h_alon_2": {
+      "id": "yasmine_boosted_h_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_daloy_ng_tubig": {
+      "id": "yasmine_od_daloy_ng_tubig",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_alon_1": {
+      "id": "yasmine_od_alon_1",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_alon_2": {
+      "id": "yasmine_od_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_boosted_od_alon_2": {
+      "id": "yasmine_boosted_od_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_during_nakatagong_lakas_boosted_od_alon_2": {
+      "id": "yasmine_during_nakatagong_lakas_boosted_od_alon_2",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_talim_ng_hangin_l": {
+      "id": "yasmine_l_talim_ng_hangin_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_talim_ng_hangin_m": {
+      "id": "yasmine_m_talim_ng_hangin_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_talim_ng_hangin_h": {
+      "id": "yasmine_h_talim_ng_hangin_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_talim_ng_hangin": {
+      "id": "yasmine_od_talim_ng_hangin",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_mukha_ng_langit_l": {
+      "id": "yasmine_l_mukha_ng_langit_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_mukha_ng_langit_m": {
+      "id": "yasmine_m_mukha_ng_langit_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_mukha_ng_langit_h": {
+      "id": "yasmine_h_mukha_ng_langit_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_mukha_ng_langit": {
+      "id": "yasmine_od_mukha_ng_langit",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_ulan": {
+      "id": "yasmine_ulan",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_ulan": {
+      "id": "yasmine_od_ulan",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_kulog": {
+      "id": "yasmine_kulog",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_kulog": {
+      "id": "yasmine_od_kulog",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_lipad_ng_agila_l": {
+      "id": "yasmine_l_lipad_ng_agila_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_lipad_ng_agila_m": {
+      "id": "yasmine_m_lipad_ng_agila_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_lipad_ng_agila_h": {
+      "id": "yasmine_h_lipad_ng_agila_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_lipad_ng_agila": {
+      "id": "yasmine_od_lipad_ng_agila",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_l_pangil_sa_likuran_l": {
+      "id": "yasmine_l_pangil_sa_likuran_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_m_pangil_sa_likuran_m": {
+      "id": "yasmine_m_pangil_sa_likuran_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_h_pangil_sa_likuran_h": {
+      "id": "yasmine_h_pangil_sa_likuran_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_l_pangil_sa_likuran": {
+      "id": "yasmine_od_l_pangil_sa_likuran",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_m_pangil_sa_likuran": {
+      "id": "yasmine_od_m_pangil_sa_likuran",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_od_h_pangil_sa_likuran": {
+      "id": "yasmine_od_h_pangil_sa_likuran",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_linya_ng_liwanag": {
+      "id": "yasmine_linya_ng_liwanag",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_sa1_hiwa_ng_kalangitan": {
+      "id": "yasmine_sa1_hiwa_ng_kalangitan",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_sa2_nakatagong_lakas": {
+      "id": "yasmine_sa2_nakatagong_lakas",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_sa3_pamumukadkad_ng_sampaguita": {
+      "id": "yasmine_sa3_pamumukadkad_ng_sampaguita",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_ca_pamumukadkad_ng_sampaguita": {
+      "id": "yasmine_ca_pamumukadkad_ng_sampaguita",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_pigil_ulo": {
+      "id": "yasmine_pigil_ulo",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_hila_kamay": {
+      "id": "yasmine_hila_kamay",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_forward_dash": {
+      "id": "yasmine_forward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_backward_dash": {
+      "id": "yasmine_backward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_drive_impact_dagok_sa_katawan": {
+      "id": "yasmine_drive_impact_dagok_sa_katawan",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_drive_reversal_block": {
+      "id": "yasmine_drive_reversal_block",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_drive_reversal_wakeup": {
+      "id": "yasmine_drive_reversal_wakeup",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_drive_parry": {
+      "id": "yasmine_drive_parry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_perfect_parry_strike": {
+      "id": "yasmine_perfect_parry_strike",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_perfect_parry_projectile": {
+      "id": "yasmine_perfect_parry_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_parry_drive_rush": {
+      "id": "yasmine_parry_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "yasmine_cancel_drive_rush": {
+      "id": "yasmine_cancel_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    }
+  }
 }

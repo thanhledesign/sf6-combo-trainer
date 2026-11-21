@@ -1,0 +1,2008 @@
+{
+  "id": "yasmine",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:50:56.864Z",
+  "source": "https://www.streetfighter.com/6/character/yasmine",
+  "character": {
+    "bio": "A high-schooler who became a fighter tofind her lost brother. She is a shy andgentle soul, but beams with confidencein fights, where she uses her Lolo's moves.",
+    "vitals": {
+      "height": "5'4",
+      "weight": "130 lbs",
+      "likes": "Family, eating",
+      "hates": "When she becomes indecisive"
+    }
+  },
+  "moves": {
+    "yasmine_standing_light_punch_magaang_na_paglaslas_l": {
+      "displayName": "Standing Light Punch: Magaang na Paglaslas",
+      "level": "L",
+      "category": "normal",
+      "input": "LP",
+      "notation": "5LP",
+      "shortName": "5LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 7,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled1 frames of recovery added when the attack misses"
+    },
+    "yasmine_standing_light_kick_mababang_sipa_l": {
+      "displayName": "Standing Light Kick: Mababang Sipa",
+      "level": "L",
+      "category": "normal",
+      "input": "LK",
+      "notation": "5LK",
+      "shortName": "5LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 5,
+        "active": 2,
+        "activeRange": "5-6",
+        "recovery": 12,
+        "total": 19
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "yasmine_standing_medium_punch_pabalik_balik_na_paglaslas_m": {
+      "displayName": "Standing Medium Punch: Pabalik-balik na Paglaslas",
+      "level": "M",
+      "category": "normal",
+      "input": "MP",
+      "notation": "5MP",
+      "shortName": "5MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 171,
+        "activeRange": "6-176-7, 16-17",
+        "recovery": 18,
+        "total": 195
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "yasmine_standing_medium_kick_tagilirang_sipa_m": {
+      "displayName": "Standing Medium Kick: Tagilirang Sipa",
+      "level": "M",
+      "category": "normal",
+      "input": "MK",
+      "notation": "5MK",
+      "shortName": "5MK",
+      "damage": 700,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 19,
+        "total": 32
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "yasmine_standing_heavy_punch_tripleng_paglaslas_h": {
+      "displayName": "Standing Heavy Punch: Tripleng Paglaslas",
+      "level": "H",
+      "category": "normal",
+      "input": "HP",
+      "notation": "5HP",
+      "shortName": "5HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 281,
+        "activeRange": "9-289-10, 15-16, 27-28",
+        "recovery": 15,
+        "total": 305
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "yasmine_standing_heavy_kick_tumatalon_na_sipa_h": {
+      "displayName": "Standing Heavy Kick: Tumatalon na Sipa",
+      "level": "H",
+      "category": "normal",
+      "input": "HK",
+      "notation": "5HK",
+      "shortName": "5HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 14,
+        "active": 3,
+        "activeRange": "14-16",
+        "recovery": 20,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Forces a spinning knockdown on Punish Counter"
+    },
+    "yasmine_crouching_light_punch_mabilisang_paglaslas_l": {
+      "displayName": "Crouching Light Punch: Mabilisang Paglaslas",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LP",
+      "notation": "2LP",
+      "shortName": "2LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 3,
+        "activeRange": "4-6",
+        "recovery": 8,
+        "total": 15
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Can be rapid canceled"
+    },
+    "yasmine_crouching_light_kick_magaang_na_sipa_l": {
+      "displayName": "Crouching Light Kick: Magaang na Sipa",
+      "level": "L",
+      "category": "normal",
+      "input": "↓ + LK",
+      "notation": "2LK",
+      "shortName": "2LK",
+      "damage": 200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 10,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Can be rapid canceled"
+    },
+    "yasmine_crouching_medium_punch_kalmot_m": {
+      "displayName": "Crouching Medium Punch: Kalmot",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MP",
+      "notation": "2MP",
+      "shortName": "2MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 6,
+        "active": 3,
+        "activeRange": "6-8",
+        "recovery": 16,
+        "total": 25
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 4
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frame of recovery added when the attack misses2 frames of recovery subtracted when attack is blocked"
+    },
+    "yasmine_crouching_medium_kick_pandurog_ng_lulod_m": {
+      "displayName": "Crouching Medium Kick: Pandurog ng Lulod",
+      "level": "M",
+      "category": "normal",
+      "input": "↓ + MK",
+      "notation": "2MK",
+      "shortName": "2MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 19,
+        "total": 30
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": -1
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "yasmine_crouching_heavy_punch_mamimituin_h": {
+      "displayName": "Crouching Heavy Punch: Mamimituin",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HP",
+      "notation": "2HP",
+      "shortName": "2HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 8,
+        "active": 6,
+        "activeRange": "8-13",
+        "recovery": 23,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -11,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "Forces the opponent into a standing position"
+    },
+    "yasmine_crouching_heavy_kick_gunting_na_pabagsak_h": {
+      "displayName": "Crouching Heavy Kick: Gunting na Pabagsak",
+      "level": "H",
+      "category": "normal",
+      "input": "↓ + HK",
+      "notation": "2HK",
+      "shortName": "2HK",
+      "damage": 900,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 25,
+        "total": 38
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": false
+      },
+      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    },
+    "yasmine_jumping_light_punch_magaang_na_panghimpapawid_na_paglaslas": {
+      "displayName": "Jumping Light Punch: Magaang na Panghimpapawid na Paglaslas",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LP",
+      "notation": "9LP",
+      "shortName": "9LP",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 5,
+        "activeRange": "4-8",
+        "recovery": 3,
+        "total": 12
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "yasmine_jumping_light_kick_panghimpapawid_na_sipa_gamit_ang_tuhod": {
+      "displayName": "Jumping Light Kick: Panghimpapawid na Sipa Gamit ang Tuhod",
+      "level": "(During a jump) L",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + LK",
+      "notation": "9LK",
+      "shortName": "9LK",
+      "damage": 300,
+      "frameData": {
+        "startup": 4,
+        "active": 6,
+        "activeRange": "4-9",
+        "recovery": 3,
+        "total": 13
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "yasmine_jumping_medium_punch_pabilog_na_paglaslas": {
+      "displayName": "Jumping Medium Punch: Pabilog na Paglaslas",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MP",
+      "notation": "9MP",
+      "shortName": "9MP",
+      "damage": 700,
+      "frameData": {
+        "startup": 7,
+        "active": 4,
+        "activeRange": "7-10",
+        "recovery": 3,
+        "total": 14
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a juggle state when hitting a mid-air opponent"
+    },
+    "yasmine_jumping_medium_kick_panghimpapawid_na_sipa_sa_harap": {
+      "displayName": "Jumping Medium Kick: Panghimpapawid na Sipa sa Harap",
+      "level": "(During a jump) M",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + MK",
+      "notation": "9MK",
+      "shortName": "9MK",
+      "damage": 500,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 3,
+        "total": 16
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack properties"
+    },
+    "yasmine_jumping_heavy_punch_namamalong_mga_pakpak": {
+      "displayName": "Jumping Heavy Punch: Namamalong Mga Pakpak",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HP",
+      "notation": "9HP",
+      "shortName": "9HP",
+      "damage": 800,
+      "frameData": {
+        "startup": 9,
+        "active": 6,
+        "activeRange": "9-14",
+        "recovery": 3,
+        "total": 18
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      },
+      "note": "Forces a slam knockdown on counter or Punish Counter when hitting a mid-air opponent"
+    },
+    "yasmine_jumping_heavy_kick_panghimpapawid_na_malakas_na_sipa": {
+      "displayName": "Jumping Heavy Kick: Panghimpapawid na Malakas na Sipa",
+      "level": "(During a jump) H",
+      "category": "normal",
+      "context": "(During a jump)",
+      "input": "(During a jump) ↗ + HK",
+      "notation": "9HK",
+      "shortName": "9HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 10,
+        "active": 7,
+        "activeRange": "10-16",
+        "recovery": 3,
+        "total": 20
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "yasmine_hiwang_pababa_m": {
+      "displayName": "Hiwang Pababa",
+      "level": "M",
+      "category": "normal",
+      "input": "→ + MP",
+      "notation": "6MP",
+      "shortName": "6MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 18,
+        "total": 43
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "mid",
+        "cancelable": false
+      }
+    },
+    "yasmine_walis_na_pabagsak_h": {
+      "displayName": "Walis na Pabagsak",
+      "level": "H",
+      "category": "normal",
+      "input": "← + HK",
+      "notation": "4HK",
+      "shortName": "4HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 22,
+        "active": 2,
+        "activeRange": "22-23",
+        "recovery": 25,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "low",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "3 frames of recovery added when the attack missesJuggle state time is extended when attack lands as a Punish Counter."
+    },
+    "yasmine_kidlat_na_hiwa": {
+      "displayName": "Kidlat na Hiwa",
+      "level": "LL",
+      "category": "normal",
+      "context": "(During a rapid cancelable standing light attack)",
+      "input": "(During a rapid cancelable standing light attack) LP + LP",
+      "notation": "LPLP",
+      "shortName": "LPLP",
+      "damage": 400,
+      "frameData": {
+        "startup": 8,
+        "active": 2,
+        "activeRange": "8-9",
+        "recovery": 16,
+        "total": 26
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      },
+      "note": "2 frame of recovery added when blocked"
+    },
+    "yasmine_tatlong_hiwa": {
+      "displayName": "Tatlong Hiwa",
+      "level": "MM",
+      "category": "normal",
+      "input": "MP + MP",
+      "notation": "MPMP",
+      "shortName": "MPMP",
+      "damage": 400,
+      "frameData": {
+        "startup": 12,
+        "active": 2,
+        "activeRange": "12-13",
+        "recovery": 27,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": true,
+        "cancelFlags": "C"
+      }
+    },
+    "yasmine_sunod_sunod_na_sipa_1": {
+      "displayName": "Sunod-sunod na Sipa(1)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 400,
+      "frameData": {
+        "startup": 13,
+        "active": 2,
+        "activeRange": "13-14",
+        "recovery": 33,
+        "total": 48
+      },
+      "frameAdvantage": {
+        "onBlock": -13,
+        "onHit": -13
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "yasmine_sunod_sunod_na_sipa_2": {
+      "displayName": "Sunod-sunod na Sipa(2)",
+      "level": "MMH",
+      "category": "normal",
+      "damage": 500,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 28,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -9,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recovery is reduced by 5 frame on hitCan be canceled into Linya ng Liwanag on hit"
+    },
+    "yasmine_kumbinasyong_pampabagsak": {
+      "displayName": "Kumbinasyong Pampabagsak",
+      "level": "MH",
+      "category": "normal",
+      "input": "↓ + MKHK",
+      "notation": "2MKHK",
+      "shortName": "2MKHK",
+      "damage": 500,
+      "frameData": {
+        "startup": 8,
+        "active": 2,
+        "activeRange": "8-9",
+        "recovery": 25,
+        "total": 35
+      },
+      "frameAdvantage": {
+        "onBlock": -10,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Can be canceled into Linya ng Liwanag on hit"
+    },
+    "yasmine_l_daloy_ng_tubig_l": {
+      "displayName": "L Daloy ng Tubig",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LP",
+      "notation": "236LP",
+      "shortName": "236LP",
+      "damage": 400,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 22,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_l_alon_1_l": {
+      "displayName": "L Alon(1)",
+      "level": "L",
+      "category": "special",
+      "damage": 300,
+      "frameData": {
+        "startup": 13,
+        "active": 3301,
+        "activeRange": "13-3313-14, 21-22, 32-33",
+        "recovery": 24,
+        "total": 3338
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Normal version goes into the 2nd attack of Alon on hitGoes into the 2nd attack of Alon on either hit or block, and Bayani Mode ends."
+    },
+    "yasmine_l_alon_2": {
+      "displayName": "L Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 400,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 20,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Shifts into Bayani Mode"
+    },
+    "yasmine_boosted_l_alon_2": {
+      "displayName": "[Boosted]L Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 600,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 20,
+        "total": 39
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Reduces Drive by 1000 on hit while Nakatagong Lakas is active."
+    },
+    "yasmine_m_daloy_ng_tubig_m": {
+      "displayName": "M Daloy ng Tubig",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MP",
+      "notation": "236MP",
+      "shortName": "236MP",
+      "damage": 400,
+      "frameData": {
+        "startup": 16,
+        "active": 3,
+        "activeRange": "16-18",
+        "recovery": 22,
+        "total": 41
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_m_alon_1_m": {
+      "displayName": "M Alon(1)",
+      "level": "M",
+      "category": "special",
+      "damage": 300,
+      "frameData": {
+        "startup": 13,
+        "active": 3301,
+        "activeRange": "13-3313-14, 21-22, 32-33",
+        "recovery": 24,
+        "total": 3338
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Normal version goes into the 2nd attack of Alon on hitGoes into the 2nd attack of Alon on either hit or block, and Bayani Mode ends."
+    },
+    "yasmine_m_alon_2": {
+      "displayName": "M Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 300,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 22,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Shifts into Bayani Mode"
+    },
+    "yasmine_boosted_m_alon_2": {
+      "displayName": "[Boosted]M Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 400,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 22,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Reduces Drive by 1000 on hit while Nakatagong Lakas is active."
+    },
+    "yasmine_h_daloy_ng_tubig_h": {
+      "displayName": "H Daloy ng Tubig",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HP",
+      "notation": "236HP",
+      "shortName": "236HP",
+      "damage": 400,
+      "frameData": {
+        "startup": 21,
+        "active": 3,
+        "activeRange": "21-23",
+        "recovery": 22,
+        "total": 46
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 3
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_h_alon_1_h": {
+      "displayName": "H Alon(1)",
+      "level": "H",
+      "category": "special",
+      "damage": 150,
+      "frameData": {
+        "startup": 13,
+        "active": 3301,
+        "activeRange": "13-3313-14, 21-22, 32-33",
+        "recovery": 24,
+        "total": 3338
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Normal version goes into the 2nd attack of Alon on hitGoes into the 2nd attack of Alon on either hit or block, and Bayani Mode ends."
+    },
+    "yasmine_h_alon_2": {
+      "displayName": "H Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 450,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 26,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Shifts into Bayani Mode"
+    },
+    "yasmine_boosted_h_alon_2": {
+      "displayName": "[Boosted]H Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 550,
+      "frameData": {
+        "startup": 22,
+        "active": 3,
+        "activeRange": "22-24",
+        "recovery": 26,
+        "total": 51
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "3 frames of recovery subtracted when attack is blockedReduces Drive by 1000 on hit while Nakatagong Lakas is active."
+    },
+    "yasmine_od_daloy_ng_tubig": {
+      "displayName": "OD Daloy ng Tubig",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + P",
+      "notation": "236P",
+      "shortName": "236P",
+      "damage": 400,
+      "frameData": {
+        "startup": 12,
+        "active": 3,
+        "activeRange": "12-14",
+        "recovery": 22,
+        "total": 37
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": -2
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "yasmine_od_alon_1": {
+      "displayName": "OD Alon(1)",
+      "level": null,
+      "category": "special",
+      "damage": 300,
+      "frameData": {
+        "startup": 13,
+        "active": 3301,
+        "activeRange": "13-3313-14, 21-22, 32-33",
+        "recovery": 24,
+        "total": 3338
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Normal version goes into the 2nd attack of Alon on hitGoes into the 2nd attack of Alon on either hit or block, and Bayani Mode ends."
+    },
+    "yasmine_od_alon_2": {
+      "displayName": "OD Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 1100,
+      "frameData": {
+        "startup": 56,
+        "active": 56,
+        "activeRange": "56",
+        "recovery": 58,
+        "total": 170
+      },
+      "frameAdvantage": {
+        "onBlock": 0,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Shifts into Bayani Mode"
+    },
+    "yasmine_boosted_od_alon_2": {
+      "displayName": "[Boosted]OD Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 1500,
+      "frameData": {
+        "startup": 56,
+        "active": 56,
+        "activeRange": "56",
+        "recovery": 58,
+        "total": 170
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "yasmine_during_nakatagong_lakas_boosted_od_alon_2": {
+      "displayName": "[During Nakatagong Lakas][Boosted]OD Alon(2)",
+      "level": "-",
+      "category": "special",
+      "damage": 1900,
+      "frameData": {
+        "startup": 47,
+        "active": 11001,
+        "activeRange": "47- 11047-106, 110",
+        "recovery": 59,
+        "total": 11107
+      },
+      "frameAdvantage": {
+        "onBlock": -1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Produces a Hard KnockdownReduces Drive by 5000 on hit."
+    },
+    "yasmine_l_talim_ng_hangin_l": {
+      "displayName": "L Talim ng Hangin",
+      "level": "L",
+      "category": "special",
+      "input": "↓↙← + LP",
+      "notation": "214LP",
+      "shortName": "214LP",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 35,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      }
+    },
+    "yasmine_m_talim_ng_hangin_m": {
+      "displayName": "M Talim ng Hangin",
+      "level": "M",
+      "category": "special",
+      "input": "↓↙← + MP",
+      "notation": "214MP",
+      "shortName": "214MP",
+      "damage": 1100,
+      "frameData": {
+        "startup": 21,
+        "active": 2,
+        "activeRange": "21-22",
+        "recovery": 24,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "3 frames of recovery subtracted when attack is blocked1 frame of recovery added on super armor hitFollow-up attacks after the 2nd attack are only performed on hit"
+    },
+    "yasmine_h_talim_ng_hangin_h": {
+      "displayName": "H Talim ng Hangin",
+      "level": "H",
+      "category": "special",
+      "input": "↓↙← + HP",
+      "notation": "214HP",
+      "shortName": "214HP",
+      "damage": 1200,
+      "frameData": {
+        "startup": 30,
+        "active": 2,
+        "activeRange": "30-31",
+        "recovery": 17,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": 1,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      },
+      "note": "Follow-up attacks after the 2nd attack are only performed on hit"
+    },
+    "yasmine_od_talim_ng_hangin": {
+      "displayName": "OD Talim ng Hangin",
+      "level": null,
+      "category": "special",
+      "input": "↓↙← + P",
+      "notation": "214P",
+      "shortName": "214P",
+      "damage": 800,
+      "frameData": {
+        "startup": 20,
+        "active": 2,
+        "activeRange": "20-21",
+        "recovery": 28,
+        "total": 50
+      },
+      "frameAdvantage": {
+        "onBlock": -12,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      },
+      "note": "Follow-up attacks after the 2nd attack are only performed on hit"
+    },
+    "yasmine_l_mukha_ng_langit_l": {
+      "displayName": "L Mukha ng Langit",
+      "level": "L",
+      "category": "special",
+      "input": "↓↘→ + LK",
+      "notation": "236LK",
+      "shortName": "236LK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 59,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can follow up with Ulan (Overdrive version included) or Kulog (Overdrive version included) between frames 23-44Considered airborne from frame 14"
+    },
+    "yasmine_m_mukha_ng_langit_m": {
+      "displayName": "M Mukha ng Langit",
+      "level": "M",
+      "category": "special",
+      "input": "↓↘→ + MK",
+      "notation": "236MK",
+      "shortName": "236MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 59,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can follow up with Ulan (Overdrive version included) or Kulog (Overdrive version included) between frames 23-41Considered airborne from frame 14"
+    },
+    "yasmine_h_mukha_ng_langit_h": {
+      "displayName": "H Mukha ng Langit",
+      "level": "H",
+      "category": "special",
+      "input": "↓↘→ + HK",
+      "notation": "236HK",
+      "shortName": "236HK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 59,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can follow up with Ulan (Overdrive version included) or Kulog (Overdrive version included) Considered airborne from frame 14"
+    },
+    "yasmine_od_mukha_ng_langit": {
+      "displayName": "OD Mukha ng Langit",
+      "level": null,
+      "category": "special",
+      "input": "↓↘→ + K",
+      "notation": "236K",
+      "shortName": "236K",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 59,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Can follow up with Overdrive Ulan or Overdrive Kulog between frames 18-45Considered airborne from frame 14"
+    },
+    "yasmine_ulan": {
+      "displayName": "Ulan",
+      "level": "(During Mukha ng Langit)",
+      "category": "special",
+      "context": "(During Mukha ng Langit)",
+      "input": "(During Mukha ng Langit) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 800,
+      "frameData": {
+        "startup": 17,
+        "active": 4,
+        "activeRange": "17-20",
+        "recovery": 12,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 36
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack propertiesRecovery changes depending on the height of the attack when it hits or is blocked"
+    },
+    "yasmine_od_ulan": {
+      "displayName": "OD Ulan",
+      "level": "(During Mukha ng Langit)\n    /\n(During OD Mukha ng Langit)",
+      "category": "special",
+      "context": "(During Mukha ng Langit)",
+      "input": "(During Mukha ng Langit) P",
+      "notation": "P",
+      "shortName": "P",
+      "damage": 800,
+      "frameData": {
+        "startup": 17,
+        "active": 4,
+        "activeRange": "17-20",
+        "recovery": 12,
+        "total": 33
+      },
+      "frameAdvantage": {
+        "onBlock": -22,
+        "onHit": 510
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Has cross-up attack propertiesRecovery changes depending on the height of the attack when it hits or is blocked"
+    },
+    "yasmine_kulog": {
+      "displayName": "Kulog",
+      "level": "(During Mukha ng Langit)",
+      "category": "special",
+      "context": "(During Mukha ng Langit)",
+      "input": "(During Mukha ng Langit) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 700,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "17-until landing",
+        "recovery": 12,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -34,
+        "onHit": 410
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recovery changes depending on the height of the attack when it hits or is blocked"
+    },
+    "yasmine_od_kulog": {
+      "displayName": "OD Kulog",
+      "level": "(During Mukha ng Langit)\n    /\n(During OD Mukha ng Langit)",
+      "category": "special",
+      "context": "(During Mukha ng Langit)",
+      "input": "(During Mukha ng Langit) K",
+      "notation": "K",
+      "shortName": "K",
+      "damage": 700,
+      "frameData": {
+        "startup": 17,
+        "active": null,
+        "activeRange": "17-until landing",
+        "recovery": 12,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": 17,
+        "onHit": 713
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recovery changes depending on the height of the attack when it hits or is blocked"
+    },
+    "yasmine_l_lipad_ng_agila_l": {
+      "displayName": "L Lipad ng Agila",
+      "level": "L",
+      "category": "special",
+      "input": "→↓↘ + LK",
+      "notation": "623LK",
+      "shortName": "623LK",
+      "damage": 1000,
+      "frameData": {
+        "startup": 5,
+        "active": 141,
+        "activeRange": "5-145-8, 13-14",
+        "recovery": 2712,
+        "total": 2858
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Only transitions to the 3rd attack and after on hitInvincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14Considered airborne from frames 7 - 41"
+    },
+    "yasmine_m_lipad_ng_agila_m": {
+      "displayName": "M Lipad ng Agila",
+      "level": "M",
+      "category": "special",
+      "input": "→↓↘ + MK",
+      "notation": "623MK",
+      "shortName": "623MK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 6,
+        "active": 151,
+        "activeRange": "6-156-9, 14-15",
+        "recovery": 2712,
+        "total": 2869
+      },
+      "frameAdvantage": {
+        "onBlock": -29,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Only transitions to the 3rd attack and after on hitInvincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9Considered airborne from frames 8 - 42"
+    },
+    "yasmine_h_lipad_ng_agila_h": {
+      "displayName": "H Lipad ng Agila",
+      "level": "H",
+      "category": "special",
+      "input": "→↓↘ + HK",
+      "notation": "623HK",
+      "shortName": "623HK",
+      "damage": 1300,
+      "frameData": {
+        "startup": 7,
+        "active": 161,
+        "activeRange": "7-167-10, 15-16",
+        "recovery": 2712,
+        "total": 2880
+      },
+      "frameAdvantage": {
+        "onBlock": -32,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Only transitions to the 3rd attack and after on hitInvincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 9 - 43"
+    },
+    "yasmine_od_lipad_ng_agila": {
+      "displayName": "OD Lipad ng Agila",
+      "level": null,
+      "category": "special",
+      "input": "→↓↘ + K",
+      "notation": "623K",
+      "shortName": "623K",
+      "damage": 1600,
+      "frameData": {
+        "startup": 6,
+        "active": 151,
+        "activeRange": "6-156-9, 14-15",
+        "recovery": 2719,
+        "total": 2876
+      },
+      "frameAdvantage": {
+        "onBlock": -40,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Only transitions to the 3rd attack and after on hitCompletely invincible between frames 1 - 9Considered airborne from frames 8 - 42"
+    },
+    "yasmine_l_pangil_sa_likuran_l": {
+      "displayName": "L Pangil sa Likuran",
+      "level": "L",
+      "category": "special",
+      "input": "↓↓ + LP",
+      "notation": "22LP",
+      "shortName": "22LP",
+      "damage": 600,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_m_pangil_sa_likuran_m": {
+      "displayName": "M Pangil sa Likuran",
+      "level": "M",
+      "category": "special",
+      "input": "↓↓ + MP",
+      "notation": "22MP",
+      "shortName": "22MP",
+      "damage": 600,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_h_pangil_sa_likuran_h": {
+      "displayName": "H Pangil sa Likuran",
+      "level": "H",
+      "category": "special",
+      "input": "↓↓ + HP",
+      "notation": "22HP",
+      "shortName": "22HP",
+      "damage": 600,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -4,
+        "onHit": 1
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA3"
+      }
+    },
+    "yasmine_od_l_pangil_sa_likuran": {
+      "displayName": "OD L Pangil sa Likuran",
+      "level": "LM",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "yasmine_od_m_pangil_sa_likuran": {
+      "displayName": "OD M Pangil sa Likuran",
+      "level": "LH",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "yasmine_od_h_pangil_sa_likuran": {
+      "displayName": "OD H Pangil sa Likuran",
+      "level": "MH",
+      "category": "special",
+      "damage": 900,
+      "frameData": {
+        "startup": 25,
+        "active": null,
+        "activeRange": "",
+        "recovery": 50,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": -2,
+        "onHit": 2
+      },
+      "properties": {
+        "hitLevel": "high - projectile",
+        "cancelable": false,
+        "cancelFlags": "SA2"
+      }
+    },
+    "yasmine_linya_ng_liwanag": {
+      "displayName": "Linya ng Liwanag",
+      "level": "(During Nakatagong Lakas)",
+      "category": "special",
+      "context": "(During Nakatagong Lakas)",
+      "input": "(During Nakatagong Lakas) ← + KK",
+      "notation": "4KK",
+      "shortName": "4KK",
+      "damage": 1100,
+      "frameData": {
+        "startup": 22,
+        "active": 2,
+        "activeRange": "22-23",
+        "recovery": 20,
+        "total": 44
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Transitions to the 2nd attack if the first attack hits, whiffs at close range, or the fighters switch positions"
+    },
+    "yasmine_sa1_hiwa_ng_kalangitan": {
+      "displayName": "SA1 Hiwa ng Kalangitan",
+      "level": null,
+      "category": "super",
+      "input": "↓↘→↓↘→ + K",
+      "notation": "236236K",
+      "shortName": "236236K",
+      "damage": 2000,
+      "frameData": {
+        "startup": 7,
+        "active": 6,
+        "activeRange": "7-12",
+        "recovery": 50,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -34,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Invincible to strikes and throws between frames 1 - 8Values do not change when the attack lands as a counter or Punish CounterThe minimum guaranteed damage is 30%Shifts to Bayani Mode on hit"
+    },
+    "yasmine_sa2_nakatagong_lakas": {
+      "displayName": "SA2 Nakatagong Lakas",
+      "level": null,
+      "category": "super",
+      "input": "↓↙←↓↙← + P",
+      "notation": "214214P",
+      "shortName": "214214P",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Super Art 2 timer is set to 1500Yasmine is always in Bayani Mode while this technique is activeYasmine can perform Linya ng Liwanag while this technique is active"
+    },
+    "yasmine_sa3_pamumukadkad_ng_sampaguita": {
+      "displayName": "SA3 Pamumukadkad ng Sampaguita",
+      "level": null,
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4000,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 70,
+        "total": 83
+      },
+      "frameAdvantage": {
+        "onBlock": -48,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 12The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "yasmine_ca_pamumukadkad_ng_sampaguita": {
+      "displayName": "CA Pamumukadkad ng Sampaguita",
+      "level": "(when under 25% vitality)",
+      "category": "super",
+      "context": "(More powerful when vitality is at 25% or below)",
+      "input": "(More powerful when vitality is at 25% or below) ↓↘→↓↘→ + P",
+      "notation": "236236P",
+      "shortName": "236236P",
+      "damage": 4500,
+      "frameData": {
+        "startup": 10,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 70,
+        "total": 83
+      },
+      "frameAdvantage": {
+        "onBlock": -45,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Completely invincible between frames 1 - 12The minimum guaranteed damage is 50%Values do not change when the attack lands as a counter or Punish Counter* Can only be canceled into from special moves"
+    },
+    "yasmine_pigil_ulo": {
+      "displayName": "Pigil-Ulo",
+      "level": "(When near opponent)    LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) /6LP + LK",
+      "notation": "5/6LP+LK",
+      "shortName": "5/6LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "yasmine_hila_kamay": {
+      "displayName": "Hila-Kamay",
+      "level": "(When near opponent)  LL",
+      "category": "throw",
+      "context": "(When near opponent)",
+      "input": "(When near opponent) ← + LP + LK",
+      "notation": "4LP+LK",
+      "shortName": "4LP+LK",
+      "damage": 1200,
+      "frameData": {
+        "startup": 5,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 23,
+        "total": 31
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "throw",
+        "cancelable": false
+      },
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+    },
+    "yasmine_forward_dash": {
+      "displayName": "Forward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 19,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      }
+    },
+    "yasmine_backward_dash": {
+      "displayName": "Backward Dash",
+      "level": null,
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 23,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Invincible to throws between frames 1 - 15"
+    },
+    "yasmine_drive_impact_dagok_sa_katawan": {
+      "displayName": "Drive Impact: Dagok sa Katawan",
+      "level": "HH",
+      "category": "normal",
+      "input": "HP + HK",
+      "notation": "HP+HK",
+      "shortName": "HP+HK",
+      "damage": 800,
+      "frameData": {
+        "startup": 26,
+        "active": 2,
+        "activeRange": "26-27",
+        "recovery": 35,
+        "total": 63
+      },
+      "frameAdvantage": {
+        "onBlock": -3,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Super Armor for 2 attacks between frames 1 - 27Produces a wall splat if the pushback on hit causes the opponent to connect with the stage wallOn Punish Counter or after a successful hit after Super Armor absorbs a hit, the following properties change:- Produces a crumple stun if the opponent is standing on the ground- Juggle state time is increased if the opponent is in the air- Super Art gauge increases by 3000"
+    },
+    "yasmine_drive_reversal_block": {
+      "displayName": "Drive Reversal (while blocking): Dobleng Palo Gamit ang Palad",
+      "level": "(When blocking or during a successful Drive Parry)  HH",
+      "category": "normal",
+      "context": "(When blocking or during a successful Drive Parry)",
+      "damage": 500,
+      "frameData": {
+        "startup": 20,
+        "active": 3,
+        "activeRange": "20-22",
+        "recovery": 26,
+        "total": 49
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 225 frames of recovery added on hit"
+    },
+    "yasmine_drive_reversal_wakeup": {
+      "displayName": "Drive Reversal (while recovering): Dobleng Palo Gamit ang Palad",
+      "level": "(During knockdown recovery)  HH",
+      "category": "normal",
+      "context": "(During knockdown recovery)",
+      "damage": 500,
+      "frameData": {
+        "startup": 18,
+        "active": 3,
+        "activeRange": "18-20",
+        "recovery": 26,
+        "total": 47
+      },
+      "frameAdvantage": {
+        "onBlock": -6,
+        "onHit": 0
+      },
+      "properties": {
+        "hitLevel": "high",
+        "cancelable": false
+      },
+      "note": "Recoverable damageCompletely invincible between frames 1 - 205 frames of recovery added on hit"
+    },
+    "yasmine_drive_parry": {
+      "displayName": "Drive Parry",
+      "level": "MM",
+      "category": "normal",
+      "context": "(Hold the button to extend the move's duration)",
+      "input": "(Hold the button to extend the move's duration) MP + MK",
+      "notation": "MP+MK",
+      "shortName": "MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "[*2] 1-12",
+        "recovery": 33,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*1"
+      },
+      "note": "*1 Can be canceled from the 4th frame via Drive Rush*2 Parry hitbox is extended for as long as the buttons are heldOnly blocks can be performed during the recovery periodAlways in Punish Counter state during execution"
+    },
+    "yasmine_perfect_parry_strike": {
+      "displayName": "Perfect Parry (strike)",
+      "level": "Block Direction   MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 1,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frame. (For high and overhead attacks, the player must press the direction away from the opponent. For low attacks, down and back)If no direction is inputted the result will be a regular parry with an additional Drive increase of 3000.Fully invincible for 5 frames once recovery is over (invincibility not granted if you continue the parry)The player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "yasmine_perfect_parry_projectile": {
+      "displayName": "Perfect Parry (projectile)",
+      "level": "MM",
+      "category": "normal",
+      "damage": 0,
+      "frameData": {
+        "startup": 1,
+        "active": null,
+        "activeRange": "",
+        "recovery": 10,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false
+      },
+      "note": "Perfect Parry activates when an attack is absorbed on the frame a parry is input, or on the next frameNo screen freeze occursThe player on the receiving end of a Perfect Parry cannot cancel and is forced into a Punish Counter state until their move is finished"
+    },
+    "yasmine_parry_drive_rush": {
+      "displayName": "Parry Drive Rush",
+      "level": "(During a Drive Parry)",
+      "category": "normal",
+      "context": "(During a Drive Parry)",
+      "input": "(During a Drive Parry) →→",
+      "notation": "66",
+      "shortName": "66",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 45,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 10th frame* Can be canceled into an attack on the 9th frame of the move   Can be canceled into actions other than a parry from the 24th frame"
+    },
+    "yasmine_cancel_drive_rush": {
+      "displayName": "Cancel Drive Rush",
+      "level": "(While connecting with a special-cancelable move)",
+      "category": "normal",
+      "context": "(While connecting with a special-cancelable move)",
+      "input": "(While connecting with a special-cancelable move) →→ + /5/6MP + MK",
+      "notation": "66/5/6MP+MK",
+      "shortName": "66/5/6MP+MK",
+      "damage": 0,
+      "frameData": {
+        "startup": null,
+        "active": null,
+        "activeRange": "",
+        "recovery": 46,
+        "total": null
+      },
+      "frameAdvantage": {
+        "onBlock": null,
+        "onHit": null
+      },
+      "properties": {
+        "hitLevel": null,
+        "cancelable": false,
+        "cancelFlags": "*"
+      },
+      "note": "Screen freeze occurs until the 9th frame* Can be canceled into an attack from the 10th frame of the move   Can be canceled into actions other than a parry from the 25th frame"
+    }
+  },
+  "_unmatched": []
+}

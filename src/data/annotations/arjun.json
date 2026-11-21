@@ -4,10 +4,1225 @@
     "name": "Arjun",
     "displayName": "Arjun",
     "archetype": "tbd",
-    "description": "Year 4 DLC fighter (released Oct 13, 2026)",
-    "version": "0.1.0",
-    "pendingSync": true
+    "description": ""
   },
   "tactics": {},
-  "moves": {}
+  "moves": {
+    "arjun_standing_light_punch_l": {
+      "id": "arjun_standing_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_standing_light_kick_l": {
+      "id": "arjun_standing_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_standing_medium_punch_m": {
+      "id": "arjun_standing_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_standing_medium_kick_m": {
+      "id": "arjun_standing_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_standing_heavy_punch_h": {
+      "id": "arjun_standing_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_standing_heavy_kick_h": {
+      "id": "arjun_standing_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_light_punch_l": {
+      "id": "arjun_crouching_light_punch_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_light_kick_l": {
+      "id": "arjun_crouching_light_kick_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_medium_punch_m": {
+      "id": "arjun_crouching_medium_punch_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_medium_kick_m": {
+      "id": "arjun_crouching_medium_kick_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_heavy_punch_h": {
+      "id": "arjun_crouching_heavy_punch_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_crouching_heavy_kick_h": {
+      "id": "arjun_crouching_heavy_kick_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_light_punch": {
+      "id": "arjun_jumping_light_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_light_kick": {
+      "id": "arjun_jumping_light_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_medium_punch": {
+      "id": "arjun_jumping_medium_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_medium_kick": {
+      "id": "arjun_jumping_medium_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_heavy_punch": {
+      "id": "arjun_jumping_heavy_punch",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_jumping_heavy_kick": {
+      "id": "arjun_jumping_heavy_kick",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_blade_of_duty_h": {
+      "id": "arjun_blade_of_duty_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_above_the_law_h": {
+      "id": "arjun_above_the_law_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_impose_order": {
+      "id": "arjun_impose_order",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_loose_cannon": {
+      "id": "arjun_loose_cannon",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_suppression": {
+      "id": "arjun_suppression",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_hot_pursuit": {
+      "id": "arjun_hot_pursuit",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_penitent_fist": {
+      "id": "arjun_penitent_fist",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_penitent_fist_charged": {
+      "id": "arjun_penitent_fist_charged",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_l_arm_of_justice_l": {
+      "id": "arjun_l_arm_of_justice_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_m_arm_of_justice_m": {
+      "id": "arjun_m_arm_of_justice_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_h_arm_of_justice_h": {
+      "id": "arjun_h_arm_of_justice_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_follow_up": {
+      "id": "arjun_follow_up",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_arm_of_justice": {
+      "id": "arjun_od_arm_of_justice",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_follow_up": {
+      "id": "arjun_od_follow_up",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_l_cruel_shoulder_l": {
+      "id": "arjun_l_cruel_shoulder_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_m_cruel_shoulder_m": {
+      "id": "arjun_m_cruel_shoulder_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_h_cruel_shoulder_h": {
+      "id": "arjun_h_cruel_shoulder_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_justice_beyond": {
+      "id": "arjun_justice_beyond",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_cruel_shoulder": {
+      "id": "arjun_od_cruel_shoulder",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_justice_beyond": {
+      "id": "arjun_od_justice_beyond",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_breathing_ring": {
+      "id": "arjun_breathing_ring",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_l_breathing_shockwave": {
+      "id": "arjun_l_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_m_breathing_shockwave": {
+      "id": "arjun_m_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_h_breathing_shockwave": {
+      "id": "arjun_h_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_breathing_shockwave_projectile": {
+      "id": "arjun_breathing_shockwave_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_breathing_ring": {
+      "id": "arjun_od_breathing_ring",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_l_breathing_shockwave": {
+      "id": "arjun_od_l_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_m_breathing_shockwave": {
+      "id": "arjun_od_m_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_h_breathing_shockwave": {
+      "id": "arjun_od_h_breathing_shockwave",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_breathing_shockwave_projectile": {
+      "id": "arjun_od_breathing_shockwave_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_l_divine_pillar_l": {
+      "id": "arjun_l_divine_pillar_l",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_m_divine_pillar_m": {
+      "id": "arjun_m_divine_pillar_m",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_h_divine_pillar_h": {
+      "id": "arjun_h_divine_pillar_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_divine_pillar_projectile": {
+      "id": "arjun_divine_pillar_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_l_divine_pillar": {
+      "id": "arjun_od_l_divine_pillar",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_m_divine_pillar": {
+      "id": "arjun_od_m_divine_pillar",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_h_divine_pillar": {
+      "id": "arjun_od_h_divine_pillar",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_divine_pillar_projectile": {
+      "id": "arjun_od_divine_pillar_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_ghastly_interrogation": {
+      "id": "arjun_ghastly_interrogation",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_od_ghastly_interrogation": {
+      "id": "arjun_od_ghastly_interrogation",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_indomitable_defense_h": {
+      "id": "arjun_indomitable_defense_h",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_moral_breakdown": {
+      "id": "arjun_moral_breakdown",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_sa1_howling_destruction": {
+      "id": "arjun_sa1_howling_destruction",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_sa2_instant_oblivion": {
+      "id": "arjun_sa2_instant_oblivion",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_sa3_yaksha_s_order": {
+      "id": "arjun_sa3_yaksha_s_order",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_ca_yaksha_s_order": {
+      "id": "arjun_ca_yaksha_s_order",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_righteous_verdict": {
+      "id": "arjun_righteous_verdict",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_scale_of_the_judged": {
+      "id": "arjun_scale_of_the_judged",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_forward_dash": {
+      "id": "arjun_forward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_backward_dash": {
+      "id": "arjun_backward_dash",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_drive_impact_excessive_force": {
+      "id": "arjun_drive_impact_excessive_force",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_drive_reversal_block": {
+      "id": "arjun_drive_reversal_block",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_drive_reversal_wakeup": {
+      "id": "arjun_drive_reversal_wakeup",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_drive_parry": {
+      "id": "arjun_drive_parry",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_perfect_parry_strike": {
+      "id": "arjun_perfect_parry_strike",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_perfect_parry_projectile": {
+      "id": "arjun_perfect_parry_projectile",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_parry_drive_rush": {
+      "id": "arjun_parry_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    },
+    "arjun_cancel_drive_rush": {
+      "id": "arjun_cancel_drive_rush",
+      "yourPerspective": {
+        "tacticalUse": "",
+        "whenToUse": "",
+        "situations": [],
+        "range": "",
+        "connectsTo": [],
+        "executionDifficulty": ""
+      },
+      "opponentPerspective": {
+        "riskLevel": "",
+        "riskDescription": ""
+      },
+      "tacticalTags": []
+    }
+  }
 }

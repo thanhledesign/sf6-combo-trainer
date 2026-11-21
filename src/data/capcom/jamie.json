@@ -1,6 +1,8 @@
 {
   "id": "jamie",
-  "scrapedAt": "2026-04-25T20:39:56.459Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:41:21.412Z",
   "source": "https://www.streetfighter.com/6/character/jamie",
   "character": {
     "bio": "This self-styled Chinatown peacekeeper aspires to the example set by Yun and Yang, the Twin Dragons. An expert dancer, Jamie places justice and friendship above all else, defending his town with martial skill.",
@@ -713,7 +715,7 @@
       "level": "(Drink level 2 or higher)MM",
       "category": "normal",
       "context": "(Drink level 2 or higher)",
-      "damage": 400,
+      "damage": 600,
       "frameData": {
         "startup": 15,
         "active": 2401,
@@ -797,8 +799,8 @@
       },
       "properties": {
         "hitLevel": "high",
-        "cancelable": false,
-        "cancelFlags": "SA"
+        "cancelable": true,
+        "cancelFlags": "C"
       },
       "note": "Available at Drink Level 3"
     },
@@ -823,7 +825,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Available at Drink Level 3"
+      "note": "Available at Drink Level 3Produces a wall splat if the opponent reaches the wall"
     },
     "jamie_ransui_haze_1": {
       "displayName": "Ransui Haze(1)",
@@ -1137,7 +1139,7 @@
         "total": 2633
       },
       "frameAdvantage": {
-        "onBlock": -3,
+        "onBlock": -1,
         "onHit": 3
       },
       "properties": {
@@ -1244,12 +1246,12 @@
         "startup": 13,
         "active": 2,
         "activeRange": "13-14",
-        "recovery": 28,
-        "total": 43
+        "recovery": 22,
+        "total": 37
       },
       "frameAdvantage": {
-        "onBlock": -9,
-        "onHit": -3
+        "onBlock": -3,
+        "onHit": -1
       },
       "properties": {
         "hitLevel": "high",
@@ -1266,12 +1268,12 @@
         "startup": 15,
         "active": 2301,
         "activeRange": "15-2315-16, 22-23",
-        "recovery": 27,
-        "total": 2343
+        "recovery": 22,
+        "total": 2338
       },
       "frameAdvantage": {
-        "onBlock": -10,
-        "onHit": -2
+        "onBlock": -3,
+        "onHit": -1
       },
       "properties": {
         "hitLevel": "high",

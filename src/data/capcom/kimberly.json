@@ -1,6 +1,8 @@
 {
   "id": "kimberly",
-  "scrapedAt": "2026-04-25T20:40:32.241Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:43:55.031Z",
   "source": "https://www.streetfighter.com/6/character/kimberly",
   "character": {
     "bio": "Uninvited student to Guy, the 39th successor to Bushinryu. Kimberly had an ordinary upbringing, but she's a genuine prodigy who graduated college early...and now wants to be a ninja. Loves '80s pop culture.",
@@ -1413,7 +1415,8 @@
       "displayName": "Hidden Variable",
       "level": null,
       "category": "special",
-      "input": "↓↙← + P",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + P",
       "notation": "214P",
       "shortName": "214P",
       "damage": 0,
@@ -1432,13 +1435,14 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Completely invincible from frames 19 - 26Can be canceled into anything except walk/dashes, Drive Parry, Block and Hidden Variable from the 34th frame"
+      "note": "Hold the button for more than 19 frames to change its propertiesCompletely invincible from frames 19 - 26Can be canceled into anything except walk/dashes, Drive Parry, Block and Hidden Variable from the 34th frame"
     },
     "kimberly_od_hidden_variable": {
       "displayName": "OD Hidden Variable",
       "level": null,
       "category": "special",
-      "input": "↓↙← + P",
+      "context": "(Hold the button to change effect)",
+      "input": "(Hold the button to change effect) ↓↙← + P",
       "notation": "214P",
       "shortName": "214P",
       "damage": 0,
@@ -1461,9 +1465,10 @@
     },
     "kimberly_genius_at_play": {
       "displayName": "Genius at Play",
-      "level": null,
+      "level": "(With 2 or fewer Shuriken Bomb stocks)",
       "category": "special",
-      "input": "↓↓ + P",
+      "context": "(With 2 or fewer Shuriken Bomb stocks)",
+      "input": "(With 2 or fewer Shuriken Bomb stocks) ↓↓ + P",
       "notation": "22P",
       "shortName": "22P",
       "damage": 0,
@@ -1486,9 +1491,10 @@
     },
     "kimberly_od_genius_at_play": {
       "displayName": "OD Genius at Play",
-      "level": null,
+      "level": "(With 1 or fewer Shuriken Bomb stocks)",
       "category": "special",
-      "input": "↓↓ + P",
+      "context": "(With 1 or fewer Shuriken Bomb stocks)",
+      "input": "(With 1 or fewer Shuriken Bomb stocks) ↓↓ + P",
       "notation": "22P",
       "shortName": "22P",
       "damage": 0,
@@ -1507,7 +1513,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Adds 2 Shuriken Bomb stock on frame 43"
+      "note": "Adds 3 Shuriken Bomb stock on frame 43"
     },
     "kimberly_l_shuriken_bomb": {
       "displayName": "L Shuriken Bomb",

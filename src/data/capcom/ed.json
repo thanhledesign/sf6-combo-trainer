@@ -1,6 +1,8 @@
 {
   "id": "ed",
-  "scrapedAt": "2026-04-25T20:43:47.285Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:37:56.660Z",
   "source": "https://www.streetfighter.com/6/character/ed",
   "character": {
     "bio": "A Psycho Power-wielding youth aged uprapidly by Shadaloo's experimentation,on a journey and a mission to free othersubjects. He gets his short temper andfoul mouth from Balrog, his former mentor.",
@@ -657,11 +659,11 @@
       "shortName": "2HK+HP",
       "damage": 700,
       "frameData": {
-        "startup": 12,
+        "startup": 10,
         "active": 5,
-        "activeRange": "12-16",
+        "activeRange": "10-14",
         "recovery": 19,
-        "total": 36
+        "total": 34
       },
       "frameAdvantage": {
         "onBlock": -8,

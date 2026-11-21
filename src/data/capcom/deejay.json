@@ -1,6 +1,8 @@
 {
   "id": "deejay",
-  "scrapedAt": "2026-04-25T20:38:47.159Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:36:37.759Z",
   "source": "https://www.streetfighter.com/6/character/deejay",
   "character": {
     "bio": "A globally popular dance music superstar, Dee Jay is always ready to have a good time. With a burning love for music and fighting, this Jamaican sensation drives audiences wild with hot new songs and stylish moves.",
@@ -516,7 +518,7 @@
         "cancelable": false,
         "cancelFlags": "SA"
       },
-      "note": "Forces a slam knockdown when hitting a mid-air opponent"
+      "note": "Produces a ground bound during a mid-air hit"
     },
     "deejay_face_breaker_h": {
       "displayName": "Face Breaker",
@@ -1056,11 +1058,11 @@
       "shortName": "236HK",
       "damage": 1300,
       "frameData": {
-        "startup": 19,
-        "active": 3201,
-        "activeRange": "19-3219-20, 30-32",
+        "startup": 17,
+        "active": 3001,
+        "activeRange": "17-3017-18, 28-30",
         "recovery": 19,
-        "total": 3239
+        "total": 3037
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -1305,7 +1307,7 @@
         "hitLevel": "mid",
         "cancelable": false
       },
-      "note": "Forces a slam knockdown when hitting a mid-air opponentAdds a ground bounding effect on Punish Counter"
+      "note": "Invincible to throws from frames 12 - 26Forces a slam knockdown when hitting a mid-air opponentAdds a ground bounding effect on Punish Counter"
     },
     "deejay_od_waning_moon": {
       "displayName": "OD Waning Moon",
@@ -1331,7 +1333,7 @@
         "hitLevel": "mid",
         "cancelable": false
       },
-      "note": "Adds a ground bounding effect during a mid-air hit"
+      "note": "Invincible to throws from frames 10 - 22Adds a ground bounding effect during a mid-air hit"
     },
     "deejay_maximum_strike": {
       "displayName": "Maximum Strike",

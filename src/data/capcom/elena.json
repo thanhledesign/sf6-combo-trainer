@@ -1,6 +1,8 @@
 {
   "id": "elena",
-  "scrapedAt": "2026-04-25T20:44:11.786Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:39:27.438Z",
   "source": "https://www.streetfighter.com/6/character/elena",
   "character": {
     "bio": "A cheerful girl raised in the arms of the savannah, and a member of a clan of proud warriors. She has a talent for healing, and seeks to become a veterinarian.",
@@ -256,7 +258,7 @@
         "total": 30
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": -3,
         "onHit": 4
       },
       "properties": {
@@ -289,7 +291,7 @@
         "cancelable": true,
         "cancelFlags": "C"
       },
-      "note": "Forces the opponent into a standing position"
+      "note": "Forces the opponent into a standing positionForces a juggle state when hitting a mid-air opponent with the 2nd attack"
     },
     "elena_crouching_heavy_kick_h": {
       "displayName": "Crouching Heavy Kick",
@@ -1056,7 +1058,7 @@
         "startup": null,
         "active": null,
         "activeRange": "",
-        "recovery": 34,
+        "recovery": 29,
         "total": null
       },
       "frameAdvantage": {

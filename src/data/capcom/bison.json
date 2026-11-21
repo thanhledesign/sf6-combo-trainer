@@ -1,6 +1,8 @@
 {
   "id": "bison",
-  "scrapedAt": "2026-04-25T20:38:12.349Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:33:07.652Z",
   "source": "https://www.streetfighter.com/6/character/vega_mbison",
   "character": {
     "bio": "A man who resembles M. Bison, the leader of Shadaloo, who was believed to be dead. He has lost his memories, but has violent tendencies. He appears in locations related to Shadaloo, guided by Psycho Power.",
@@ -129,7 +131,7 @@
       },
       "frameAdvantage": {
         "onBlock": 1,
-        "onHit": 4
+        "onHit": 5
       },
       "properties": {
         "hitLevel": "high",
@@ -1099,7 +1101,7 @@
       "displayName": "[when Psycho Mine is embedded]OD Backfist Combo",
       "level": null,
       "category": "special",
-      "damage": 1700,
+      "damage": 1800,
       "frameData": {
         "startup": 14,
         "active": 6301,
@@ -1237,7 +1239,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Can transition to Overdrive Headpress and Devil's Reverse from frames 16-42Invincible to throws from frames 1 - 8Is considered airborne from frame 9"
+      "note": "Can transition to Overdrive Headpress and Devil's Reverse from frames 16-46Invincible to throws from frames 1 - 8Is considered airborne from frame 9"
     },
     "bison_head_press": {
       "displayName": "Head Press",

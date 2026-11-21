@@ -1,6 +1,8 @@
 {
   "id": "marisa",
-  "scrapedAt": "2026-04-25T20:41:58.117Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:47:33.801Z",
   "source": "https://www.streetfighter.com/6/character/marisa",
   "character": {
     "bio": "An up-and-coming jewelry designer from Italy who claims ancestry to ancient Greek warriors. As a child, she was inspired by a vision of the Colosseum in its prime. Today, she seeks glory with a smile—and an eye for beauty.",
@@ -151,7 +153,7 @@
         "total": 47
       },
       "frameAdvantage": {
-        "onBlock": 4,
+        "onBlock": 5,
         "onHit": 7
       },
       "properties": {
@@ -686,7 +688,8 @@
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Advantage on block changes to +4 when following up from Standing Heavy Punch (hold)"
     },
     "marisa_volare_combo": {
       "displayName": "Volare Combo",
@@ -830,7 +833,8 @@
       "properties": {
         "hitLevel": "high",
         "cancelable": false
-      }
+      },
+      "note": "Forces the opponent into a standing position on Punish Counter"
     },
     "marisa_novacula_swipe": {
       "displayName": "Novacula Swipe",
@@ -956,12 +960,12 @@
         "startup": 14,
         "active": 4,
         "activeRange": "14-17",
-        "recovery": 21,
-        "total": 39
+        "recovery": 20,
+        "total": 38
       },
       "frameAdvantage": {
-        "onBlock": -3,
-        "onHit": 0
+        "onBlock": -2,
+        "onHit": 4
       },
       "properties": {
         "hitLevel": "high",
@@ -1531,7 +1535,7 @@
         "total": 50
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": -3,
         "onHit": 0
       },
       "properties": {
@@ -1556,7 +1560,7 @@
         "total": 54
       },
       "frameAdvantage": {
-        "onBlock": -3,
+        "onBlock": 1,
         "onHit": 0
       },
       "properties": {
@@ -1717,11 +1721,11 @@
       "context": "(During Scutum)",
       "damage": 1000,
       "frameData": {
-        "startup": 20,
-        "active": 3,
-        "activeRange": "20-22",
-        "recovery": 36,
-        "total": 59
+        "startup": 19,
+        "active": 4,
+        "activeRange": "19-22",
+        "recovery": 35,
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -21,
