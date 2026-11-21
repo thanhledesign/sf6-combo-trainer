@@ -131,11 +131,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
         <button
           key={cat.id}
           onClick={() => handleCategoryChange(cat.id)}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-            selectedCategory === cat.id
-              ? 'bg-purple-600 text-white'
-              : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-          }`}
+          className="btn-toggle" aria-pressed={selectedCategory === cat.id}
         >
           {cat.name}
           <span className="ml-1 text-xs opacity-70">({cat.count})</span>
@@ -166,7 +162,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
               onClick={() => handleCategoryChange(cat.id)}
               className={`w-full px-4 py-3 text-left flex items-center justify-between transition-colors ${
                 selectedCategory === cat.id
-                  ? 'bg-purple-600 text-white'
+                  ? 'bg-[image:var(--btn-grad)] text-white'
                   : 'text-gray-300 hover:bg-gray-700'
               }`}
             >
@@ -189,11 +185,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
             <button
               key={cat.id}
               onClick={() => handleCategoryChange(cat.id)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                selectedCategory === cat.id
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              }`}
+              className="btn-toggle" aria-pressed={selectedCategory === cat.id}
             >
               {cat.name}
               <span className="ml-1 text-xs opacity-70">({cat.count})</span>
@@ -322,7 +314,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
                     ? filter.id === 'safe' ? 'bg-green-600 text-white' :
                       filter.id === 'unsafe' ? 'bg-red-600 text-white' :
                       filter.id === 'plus' ? 'bg-blue-600 text-white' :
-                      'bg-purple-600 text-white'
+                      'bg-[image:var(--btn-grad)] text-white'
                     : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                 }`}
               >
@@ -349,7 +341,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
             <button
               onClick={() => setMobileColumns(1)}
               className={`p-2 rounded transition-colors ${
-                mobileColumns === 1 ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white'
+                mobileColumns === 1 ? 'bg-[image:var(--btn-grad)] text-white' : 'text-gray-400 hover:text-white'
               }`}
               title="Single column"
             >
@@ -358,7 +350,7 @@ const MoveBrowser = ({ characterData, allCharacters = [], onCharacterChange }) =
             <button
               onClick={() => setMobileColumns(2)}
               className={`p-2 rounded transition-colors ${
-                mobileColumns === 2 ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white'
+                mobileColumns === 2 ? 'bg-[image:var(--btn-grad)] text-white' : 'text-gray-400 hover:text-white'
               }`}
               title="Two columns"
             >

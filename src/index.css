@@ -18,6 +18,61 @@
   }
 }
 
+/* Global button system — every card CTA uses these (brand purple gradient). */
+@layer components {
+  /* Tokens (tweak live with the dev cog, or edit here). */
+  :root {
+    --btn-from: #7c3aed;
+    --btn-to: #4f46e5;
+    --btn-angle: 135deg;
+    --btn-radius: 0.75rem;
+    --btn-weight: 600;
+    --btn-py: 0.75rem;
+    --btn-px: 1rem;
+    --btn-sm-py: 0.375rem;
+    --btn-sm-px: 0.75rem;
+    --btn-secondary-bg: #1f2937;
+    --btn-secondary-hover: #374151;
+    --card-radius: 1rem;
+    --art-tint: 0.8;
+    --font-scale: 1;
+    --btn-grad: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to));
+  }
+  html { font-size: calc(100% * var(--font-scale)); }
+  .btn-primary, .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 text-white transition duration-200 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+    border-radius: var(--btn-radius);
+    font-weight: var(--btn-weight);
+    padding: var(--btn-py) var(--btn-px);
+  }
+  .btn-primary { background: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to)); }
+  .btn-primary:hover:not(:disabled) { filter: brightness(1.1); }
+  .btn-secondary { background: var(--btn-secondary-bg); box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08); }
+  .btn-secondary:hover:not(:disabled) { background: var(--btn-secondary-hover); }
+  /* Toggle / pill / tab buttons: secondary look, gradient when pressed. Set aria-pressed. */
+  .btn-toggle {
+    @apply inline-flex items-center justify-center gap-2 text-gray-300 transition duration-200;
+    border-radius: var(--btn-radius);
+    font-weight: 500;
+    padding: calc(var(--btn-py) * 0.65) var(--btn-px);
+    background: var(--btn-secondary-bg);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+  }
+  .btn-toggle:hover { background: var(--btn-secondary-hover); color: #fff; }
+  .btn-toggle[aria-pressed='true'] { background: var(--btn-grad); color: #fff; box-shadow: none; }
+  .btn-toggle.btn-sm { padding: var(--btn-sm-py) var(--btn-sm-px); @apply text-sm; }
+  .btn-sm { padding: var(--btn-sm-py) var(--btn-sm-px); @apply text-sm; }
+  /* Gradient reused behind character art so art + button read as one system */
+  .brand-gradient { background: linear-gradient(var(--btn-angle), var(--btn-from), var(--btn-to)); }
+}
+
+/* Cards in a grid row share row lines: every section (art, stats, style, signature
+   moves, button) lines up across the row and stretches to the tallest card. */
+.row-card { display: grid; row-gap: 0; align-content: start; }
+.row-card > * { min-width: 0; }
+.row-card-6 { grid-row: span 6; grid-template-rows: subgrid; }
+.row-card-3 { grid-row: span 3; grid-template-rows: subgrid; }
+
 /* Custom scrollbar hiding for horizontal scroll */
 .scrollbar-hide {
   -ms-overflow-style: none;
@@ -72,3 +127,7 @@
 .safe-right  { padding-right: var(--safe-area-inset-right); }
 .safe-x      { padding-left: var(--safe-area-inset-left); padding-right: var(--safe-area-inset-right); }
 .safe-y      { padding-top: var(--safe-area-inset-top); padding-bottom: var(--safe-area-inset-bottom); }
+
+@media (max-width: 640px) {
+  input, select, textarea { font-size: max(16px, 1em); }
+}

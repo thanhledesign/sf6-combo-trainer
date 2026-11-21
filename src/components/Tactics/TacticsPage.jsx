@@ -246,7 +246,7 @@ const TacticsPage = ({ characterMap, onCharacterEntered }) => {
                 onClick={() => editMode ? setEditMode(false) : handleEnterEditMode()}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1.5 ${
                   editMode
-                    ? 'bg-purple-600 hover:bg-purple-700 text-white'
+                    ? 'bg-[image:var(--btn-grad)] hover:brightness-110 text-white'
                     : 'bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white'
                 }`}
               >
@@ -274,13 +274,13 @@ const TacticsPage = ({ characterMap, onCharacterEntered }) => {
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setSlotsPanelOpen(true)}
-                  className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-sm font-semibold flex items-center gap-1.5"
+                  className="btn-primary btn-sm"
                 >
                   <Settings className="w-4 h-4" /> Open slot manager
                 </button>
                 <button
                   onClick={handleEnterEditMode}
-                  className="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg text-sm font-semibold flex items-center gap-1.5"
+                  className="btn-secondary btn-sm"
                 >
                   <Pencil className="w-4 h-4" /> Start editing
                 </button>

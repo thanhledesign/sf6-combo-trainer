@@ -156,11 +156,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
         <button
           key={cat.id}
           onClick={() => handleCategoryChange(cat.id)}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-            selectedCategory === cat.id
-              ? 'bg-purple-600 text-white'
-              : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-          }`}
+          className="btn-toggle" aria-pressed={selectedCategory === cat.id}
         >
           {cat.name}
           <span className="ml-1 text-xs opacity-70">({cat.count})</span>
@@ -198,7 +194,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
                 onClick={() => handleCategoryChange(cat.id)}
                 className={`w-full px-4 py-3 text-left transition-colors flex items-center justify-between ${
                   selectedCategory === cat.id
-                    ? 'bg-purple-600 text-white'
+                    ? 'bg-[image:var(--btn-grad)] text-white'
                     : 'text-gray-300 hover:bg-gray-700'
                 }`}
               >
@@ -222,11 +218,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
             <button
               key={cat.id}
               onClick={() => handleCategoryChange(cat.id)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                selectedCategory === cat.id
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-              }`}
+              className="btn-toggle" aria-pressed={selectedCategory === cat.id}
             >
               {cat.name}
               <span className="ml-1 text-xs opacity-70">({cat.count})</span>
@@ -294,7 +286,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
             {/* Search Button */}
             <button
               type="submit"
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors"
+              className="btn-primary"
             >
               Search
             </button>
@@ -316,7 +308,7 @@ const SearchResults = ({ searchQuery, allCharacters, onBack, onNewSearch }) => {
                       ? filter.id === 'safe' ? 'bg-green-600 text-white' :
                         filter.id === 'unsafe' ? 'bg-red-600 text-white' :
                         filter.id === 'plus' ? 'bg-blue-600 text-white' :
-                        'bg-purple-600 text-white'
+                        'bg-[image:var(--btn-grad)] text-white'
                       : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                   }`}
                 >

@@ -245,7 +245,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
             >
               {/* 16:9 Media Preview */}
               <div 
-                className="aspect-video relative overflow-hidden cursor-pointer border-b border-purple-500/30"
+                className={`${showButtons ? 'aspect-[2.6/1] sm:aspect-video' : 'aspect-video'} relative overflow-hidden cursor-pointer border-b border-purple-500/30`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleMediaClick}
@@ -369,7 +369,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
                 {/* Flip Button - anchored to bottom */}
                 <button
                   onClick={() => setIsFlipped(true)}
-                  className={`w-full ${compact ? 'py-1.5 text-sm' : 'py-2'} bg-purple-700/50 hover:bg-purple-600/50 text-purple-100 rounded-lg transition-colors flex items-center justify-center gap-2 border border-purple-500/30`}
+                  className={`btn-primary btn-sm w-full ${compact ? '' : 'py-2'}`}
                 >
                   <RotateCcw className={`${compact ? 'w-3 h-3' : 'w-4 h-4'}`} />
                   {compact ? 'Flip' : 'Flip to Opponent View'}
@@ -504,7 +504,7 @@ const MoveCard = ({ move, showCharacter = false, characterName = '', compact = f
                 {/* Flip Back Button - anchored to bottom */}
                 <button
                   onClick={() => setIsFlipped(false)}
-                  className={`w-full ${compact ? 'py-1.5 text-sm' : 'py-2'} bg-purple-700/50 hover:bg-purple-600/50 text-purple-100 rounded-lg transition-colors flex items-center justify-center gap-2 border border-purple-500/30`}
+                  className={`btn-primary btn-sm w-full ${compact ? '' : 'py-2'}`}
                 >
                   <RotateCcw className={`${compact ? 'w-3 h-3' : 'w-4 h-4'}`} />
                   {compact ? 'Flip' : 'Flip to Your View'}
