@@ -35,7 +35,9 @@
     --btn-secondary-hover: #374151;
     --card-radius: 1rem;
     --art-tint: 0.8;
+    --font-scale: 1;
   }
+  html { font-size: calc(100% * var(--font-scale)); }
   .btn-primary, .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 text-white transition duration-200 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
     border-radius: var(--btn-radius);
