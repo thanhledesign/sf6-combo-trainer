@@ -31,6 +31,17 @@ export default defineConfig({
           { src: '/icons/icon-maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
           { src: '/icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
+  build: {
+    rollupOptions: {
+      output: {
+        // vendor split: stable libs cache across deploys; supabase only loads with the tracker
+        manualChunks: {
+          react: ['react', 'react-dom', 'react-router-dom'],
+          supabase: ['@supabase/supabase-js'],
+        },
+      },
+    },
+  },
         shortcuts: [
           { name: 'Session Tracker', short_name: 'Tracker', url: '/tracker', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
           { name: 'Replay Review', short_name: 'Review', url: '/tracker/review', icons: [{ src: '/icons/icon-96.png', sizes: '96x96' }] },
