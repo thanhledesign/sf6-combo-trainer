@@ -103,7 +103,7 @@ export default function CombosPane() {
       </div>
       <input type="text" placeholder="Notes (optional): timing, spacing, hit-confirm…" autoComplete="off" value={note} onChange={(e) => setNote(e.target.value)} />
       <div className="cbacts"><button type="button" className="btn primary" onClick={save}>{id ? 'Update combo' : 'Save combo'}</button><button type="button" className="btn" onClick={reset}>Clear</button></div>
-      <p className="mute cbhelp"><b>1–9</b> directions · <b>P</b>/<b>K</b> tap again to cycle LP→MP→HP→P (hold = P) · <b>Space</b> ends the cycle so LP LP works · <b>⇧P / ⇧K</b> = PP / KK · <b>d</b> DRC · <b>s</b> cycles SA1→SA2→SA3→CA · <b>q w e y u</b> = 236 214 623 41236 63214 · <b>a f g h</b> = charge, 22, 360 · <b>z v b n m l</b> = the selected character’s own moves · Backspace undoes · Enter saves</p>
+      <p className="mute cbhelp"><b>1–9</b> directions · <b>P</b>/<b>K</b> tap again to cycle LP→MP→HP→P (hold = P) · <b>, - +</b> (or <b>Space</b>) end the cycle and add a separator, e.g. LP+LK or LP-LP; each tap gives you 1 s to tap again · <b>⇧P / ⇧K</b> = PP / KK · <b>d</b> DRC · <b>s</b> cycles SA1→SA2→SA3→CA · <b>q w e y u</b> = 236 214 623 41236 63214 · <b>a f g h</b> = charge, 22, 360 · <b>z v b n m l</b> = the selected character’s own moves · Backspace undoes · Enter saves</p>
       <h3 style={{ margin: '.3rem 0 0' }}>Saved combos <span className="mute" style={{ fontSize: '.8rem', fontWeight: 400 }}>tick one to keep it in view during sessions</span></h3>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '.4rem' }}>
         {!list.length && <p className="mute">No saved combos yet. Type one above, name it and hit Save.</p>}

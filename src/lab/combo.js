@@ -2,7 +2,7 @@
 // ({toks, hold, lt}) so the React editor can keep it in a ref.
 
 export const HOLD_MS = 380;
-export const TAP_MS = 450;
+export const TAP_MS = 1000; // window to tap P/K again and cycle L→M→H (each tap restarts it)
 const LV = { 1: 'L', 2: 'M', 3: 'H', 4: '' };
 export const SAS = ['SA1', 'SA2', 'SA3', 'CA'];
 
@@ -16,7 +16,7 @@ export const MAC = [
 ];
 export const TOKS = [
   ['d', 'DRC', 'DRC'], ['r', 'DR', 'DR'], ['o', 'OD', 'OD'], ['i', 'DI', 'Drive Imp'], ['t', 'THROW', 'Throw'],
-  ['j', 'j.', 'jump'], ['x', 'xx', 'cancel'], [',', ',', 'link'], ['>', '>', 'then'], ['[', 'PPP', '3×P'], [']', 'KKK', '3×K'],
+  ['j', 'j.', 'jump'], ['x', 'xx', 'cancel'], [',', ',', 'link'], ['-', '-', 'dash'], ['+', '+', 'plus'], ['>', '>', 'then'], ['[', 'PPP', '3×P'], [']', 'KKK', '3×K'],
 ];
 export const CKEYS = 'zvbnml';
 // Per-character move tokens (first six map to z v b n m l). Ken is verified; the rest are common notation.
@@ -39,17 +39,20 @@ export const CM = {
 };
 
 export const MACK = Object.fromEntries(MAC.map((m) => [m[0], m[1]]));
-export const TOKK = { '.': '>', ...Object.fromEntries(TOKS.map((t) => [t[0], t[1]])) };
+export const TOKK = { '.': '>', '=': '+', ...Object.fromEntries(TOKS.map((t) => [t[0], t[1]])) };
 export const charKeyToken = (char, key) => { const i = CKEYS.indexOf(key); const m = (CM[char] || [])[i]; return m ? m[0] : null; };
 
 export const newCb = () => ({ toks: [], hold: {}, lt: null });
 
 export function comboStr(t) {
-  let o = '', i = 0;
+  let o = '', i = 0, prevTight = false;
   while (i < t.length) {
     const x = t[i]; let piece;
     if ((isDirs(x) || x === 'j.') && i + 1 < t.length && isBtn(t[i + 1])) { piece = x + t[i + 1]; i += 2; } else { piece = x; i++; }
-    o += (piece === ',' || !o) ? piece : ' ' + piece;
+    // , attaches to what came before; + and - are tight on both sides (LP+LK, 2MP-HP)
+    const tight = piece === '+' || piece === '-';
+    o += (piece === ',' || tight || !o || prevTight) ? piece : ' ' + piece;
+    prevTight = tight;
   }
   return o;
 }
