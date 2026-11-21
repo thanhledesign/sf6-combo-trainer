@@ -496,7 +496,16 @@ async function scrapeCharacter(page, charId, bootstrap) {
   const annot = existsSync(annotPath)
     ? JSON.parse(readFileSync(annotPath, 'utf8'))
     : { moves: {}, character: null, tactics: {} };
-  const index = buildMoveIndex(annot.moves);
+  // Many annotation files carry no displayName (only tactical notes), so index the move ids by the
+  // displayName already on file in capcom/{id}.json too. Annotation names win where both exist.
+  const prevCapPath = resolve(OUT_CAPCOM, `${charId}.json`);
+  const prevCap = existsSync(prevCapPath) ? JSON.parse(readFileSync(prevCapPath, 'utf8')).moves || {} : {};
+  const indexable = {};
+  for (const id of new Set([...Object.keys(prevCap), ...Object.keys(annot.moves || {})])) {
+    const dn = annot.moves?.[id]?.displayName || prevCap[id]?.displayName;
+    if (dn) indexable[id] = { displayName: dn };
+  }
+  const index = buildMoveIndex(indexable);
 
   const num = (s) => {
     if (s == null || s === '') return null;
