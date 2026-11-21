@@ -1,3 +1,4 @@
+import SeasonBadge from './components/SeasonBadge';
 import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { THUMBS } from './data/charThumb';
 import { Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom';
@@ -199,22 +200,23 @@ function App() {
               {/* Hamburger Menu Button - Mobile Only */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors"
+                className="xl:hidden p-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
 
               {/* Logo */}
               <h1 
-                className="text-xl font-bold text-white cursor-pointer hover:text-purple-400 transition-colors"
+                className="text-xl font-bold text-white cursor-pointer hover:text-purple-400 transition-colors flex items-center gap-2 whitespace-nowrap"
                 onClick={() => navigate('/')}
               >
                 SF6 Trainer
+                <span className="hidden sm:inline-flex"><SeasonBadge /></span>
               </h1>
             </div>
             
             {/* Center: Nav Links - Desktop Only */}
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden xl:flex items-center gap-2">
               <NavButton 
                 active={location.pathname === '/' || location.pathname === '/characters'}
                 onClick={() => navigate('/characters')}
@@ -385,7 +387,8 @@ function App() {
           
           {/* Mobile Hamburger Menu Dropdown - Absolutely positioned */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-800 border-b border-gray-700 shadow-xl z-50">
+            <div className="xl:hidden absolute top-full left-0 right-0 bg-gray-800 border-b border-gray-700 shadow-xl z-50">
+              <div className="px-4 pt-3 sm:hidden"><SeasonBadge /></div>
               <div className="px-4 py-3 flex flex-col gap-1">
                 <MobileNavButton 
                   active={location.pathname === '/' || location.pathname === '/characters'}
@@ -450,7 +453,7 @@ function App() {
       {/* Click overlay to close mobile menu */}
       {isMobileMenuOpen && (
         <div 
-          className="fixed inset-0 z-30 lg:hidden"
+          className="fixed inset-0 z-30 xl:hidden"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}

@@ -90,6 +90,8 @@ export function loadCharacter(id) {
 
   return {
     character: mergeCharacter(a.character, c.character),
+    // Which season/patch the Capcom frame data was scraped for (see season.js).
+    _data:     { season: c.season ?? null, scrapedAt: c.scrapedAt ?? null },
     tactics:   a.tactics,
     moves,
   };

@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { useSync, signIn, verifyCode, signOut, syncNow } from '../../lab/sync';
 import { Overlay } from './ui';
+import SyncGuide from './SyncGuide';
 
 export default function SyncModal({ onClose }) {
   const s = useSync();
-  const [email, setEmail] = useState(''), [sent, setSent] = useState(false), [code, setCode] = useState('');
+  const [email, setEmail] = useState(''), [sent, setSent] = useState(false), [code, setCode] = useState(''), [guide, setGuide] = useState(false);
   const signedIn = !!s.email;
   return (
     <Overlay onClose={onClose}>
+      {guide && <SyncGuide onClose={() => setGuide(false)} />}
       <h2>Sync across devices</h2>
       {signedIn ? (
         <>
@@ -35,6 +37,7 @@ export default function SyncModal({ onClose }) {
           {s.error && <p className="warn" style={{ fontSize: '.85rem' }}>{s.error}</p>}
         </>
       )}
+      <p style={{ marginTop: '.8rem', fontSize: '.85rem' }}><button type="button" className="btn" onClick={() => setGuide(true)}>Walk me through saving &amp; syncing (iCloud, Files, more)</button></p>
     </Overlay>
   );
 }

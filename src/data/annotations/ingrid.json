@@ -1,0 +1,13 @@
+{
+  "character": {
+    "id": "ingrid",
+    "name": "Ingrid",
+    "displayName": "Ingrid",
+    "archetype": "tbd",
+    "description": "Year 3 DLC fighter (released May 28, 2026)",
+    "version": "0.1.0",
+    "pendingSync": true
+  },
+  "tactics": {},
+  "moves": {}
+}

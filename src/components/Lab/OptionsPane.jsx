@@ -5,6 +5,7 @@ import { put } from '../../lab/store';
 import { setOpt, updateStop, endSession } from '../../lab/useLabActions';
 import { toast } from './toastBus';
 import { Overlay, Stepper } from './ui';
+import SyncGuide from './SyncGuide';
 
 const DASH_TILES = [['record', 'Record'], ['win', 'Win rate'], ['streak', 'Streak'], ['mr', 'MR now'], ['lights', 'Loss lights'], ['games', 'Games'], ['minutes', 'Minutes'], ['rule', 'Rule and cue words'], ['dots', 'Last games strip'], ['rematch', 'New vs rematch'], ['goal', 'Top goal']];
 
@@ -68,6 +69,7 @@ export function OptionsPane({ onTags, onCsv }) {
 // Backup / restore of the Lab's browser-local data (used to move from the old standalone tracker).
 function DataButtons() {
   const S = useRaw(); // backups cover every account
+  const [guide, setGuide] = useState(false);
   const exportJson = () => {
     const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `session-lab-${new Date().toISOString().slice(0, 10)}.json`; a.click();
@@ -89,6 +91,8 @@ function DataButtons() {
     <>
       <button type="button" className="btn" onClick={exportJson}>Back up data (JSON)</button>
       <label className="btn" style={{ textAlign: 'center', cursor: 'pointer', color: 'var(--text)', fontSize: '1rem' }}>Import backup<input type="file" accept="application/json,.json" hidden onChange={importJson} /></label>
+      <button type="button" className="btn" onClick={() => setGuide(true)}>Save &amp; sync guide</button>
+      {guide && <SyncGuide onClose={() => setGuide(false)} />}
     </>
   );
 }
