@@ -3,7 +3,7 @@
 // device shows the same data. Conflict rule: newest write per record wins.
 import { useSyncExternalStore } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import { applyRemote, getDirty, clearDirty, getTomb, getState, onLocalChange, stampLocal } from './store';
+import { applyRemote, getDirty, clearDirty, getTomb, getRaw, onLocalChange, stampLocal } from './store';
 
 // Public by design (RLS protects the data). Env vars override for other projects.
 const URL = import.meta.env.VITE_SUPABASE_URL || 'https://pagtnyoyfrwpvctnvxjv.supabase.co';
@@ -36,7 +36,7 @@ async function pull(all) {
 
 async function push() {
   const keys = getDirty(); if (!keys.length) return;
-  const S = getState(), tomb = getTomb(), out = [];
+  const S = getRaw(), tomb = getTomb(), out = [];
   keys.forEach((k) => {
     const [coll, ...rest] = k.split('/'), id = rest.join('/');
     if (coll === 'settings') { const { _u, ...data } = S.settings; if (_u) out.push({ coll, id: 'main', data, deleted: false, updated_at: _u }); return; }

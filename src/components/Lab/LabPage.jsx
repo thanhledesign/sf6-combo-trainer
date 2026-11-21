@@ -15,6 +15,7 @@ import { OptionsPane, TagManager, CsvModal } from './OptionsPane';
 import ReviewPane from './ReviewPane';
 import CombosPane from './CombosPane';
 import ProfileCard from './ProfileCard';
+import AccountSwitcher from './AccountSwitcher';
 import SyncModal from './SyncModal';
 import { initSync, useSync } from '../../lab/sync';
 import './lab.css';
@@ -153,6 +154,7 @@ export default function LabPage({ pane = 'log' }) {
       <div id="app">
         <header id="top">
           <ProfileCard S={S} me={me} onPick={() => setPick(true)} />
+          <AccountSwitcher />
           <div className="seg3" role="group" aria-label="Input device">
             {DEVICES.map((d) => (
               <button key={d} type="button" aria-pressed={d === dev} aria-label={d === 'Stick' ? 'Fight stick' : d === 'Hitbox' ? 'Leverless hitbox' : 'Gamepad'} onClick={() => setDevice(d)}><Icon name={d} /><span>{d}</span></button>

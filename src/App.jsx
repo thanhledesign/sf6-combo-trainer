@@ -199,7 +199,7 @@ function App() {
               {/* Hamburger Menu Button - Mobile Only */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="md:hidden p-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors"
+                className="lg:hidden p-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors"
               >
                 {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -214,7 +214,7 @@ function App() {
             </div>
             
             {/* Center: Nav Links - Desktop Only */}
-            <div className="hidden md:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2">
               <NavButton 
                 active={location.pathname === '/' || location.pathname === '/characters'}
                 onClick={() => navigate('/characters')}
@@ -385,7 +385,7 @@ function App() {
           
           {/* Mobile Hamburger Menu Dropdown - Absolutely positioned */}
           {isMobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-gray-800 border-b border-gray-700 shadow-xl z-50">
+            <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-800 border-b border-gray-700 shadow-xl z-50">
               <div className="px-4 py-3 flex flex-col gap-1">
                 <MobileNavButton 
                   active={location.pathname === '/' || location.pathname === '/characters'}
@@ -450,7 +450,7 @@ function App() {
       {/* Click overlay to close mobile menu */}
       {isMobileMenuOpen && (
         <div 
-          className="fixed inset-0 z-30 md:hidden"
+          className="fixed inset-0 z-30 lg:hidden"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLab, useUI, setUI, saveSettings } from '../../lab/store';
+import { useLab, useRaw, useUI, setUI, saveSettings } from '../../lab/store';
 import { cur, opts, optGet, stopOf, tagList, tagObjs, strip, clamp } from '../../lab/calc';
 import { put } from '../../lab/store';
 import { setOpt, updateStop, endSession } from '../../lab/useLabActions';
@@ -67,7 +67,7 @@ export function OptionsPane({ onTags, onCsv }) {
 
 // Backup / restore of the Lab's browser-local data (used to move from the old standalone tracker).
 function DataButtons() {
-  const S = useLab();
+  const S = useRaw(); // backups cover every account
   const exportJson = () => {
     const blob = new Blob([JSON.stringify(S, null, 2)], { type: 'application/json' });
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `session-lab-${new Date().toISOString().slice(0, 10)}.json`; a.click();
