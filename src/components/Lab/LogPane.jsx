@@ -10,7 +10,7 @@ import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
 import { MrScrub, Scale, Stepper, Tile, TagChips } from './ui';
 
-const SL = { calm: ['Amped up', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Hands warm', '1 cold · 5 loose'] };
+const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
 export function FocusBar({ S, onToggle }) {
   const fc = S.combos.filter((c) => c.focus).sort((a, b) => (b.focusAt || 0) - (a.focusAt || 0));
@@ -62,6 +62,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const R = useRef({ gid: null, my: null, tm: null });
   const setMy = (v) => {
     patch({ myMR: v, myDirty: true });
+    if (res && os && res.oppMR != null) patch({ oppMR: res.oppMR - (v - res.myMR) });
     if (res) {
       R.current.gid = res.id; R.current.my = v; clearTimeout(R.current.tm);
       R.current.tm = setTimeout(() => saveResult(res, v), 500);
@@ -84,10 +85,12 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
     else patch({ char: form.char === c ? null : c });
   };
   const onLog = (r) => {
+    const dm = myMR != null && form.oppMR != null ? postMR(S, { r, myMR, oppMR: form.oppMR }) - myMR : null;
     const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]) });
     if (out.toast) toast(out.toast);
     if (!out.keep && !out.toast && !s) return;
     resetForm(!!out.keep);
+    if (out.keep && dm != null) patch({ oppMR: form.oppMR - dm });
   };
 
   // character grid sizing so every tile fits without scrolling

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useLab } from '../../lab/store';
 import {
-  cur, sg, sgm, wl, pct, lossRun, streakStr, winRun, stopOf, modeNow, modeName, meNow, opts, tagList, tagInfo, estMR, allGames, gap, recStr,
+  cur, sg, sgm, wl, pct, lossRun, streakStr, winRun, stopOf, modeNow, modeName, meNow, opts, tagList, tagInfo, estMR, allGames, gap, deltas, recStr,
   runs, bestEver, evalGoal, goalTitle, suggestions, milestones, fmtT, fmtD, modeOf, num, byId, strip,
 } from '../../lab/calc';
 import { MODES, DEVICES, OPP, ROSTER, KINDS } from '../../lab/data';
@@ -68,13 +68,14 @@ export function DashPane() {
 
 /* ---------------- history ---------------- */
 export function GameRow({ g, S, onOpen }) {
-  const gp = gap(g);
+  const gp = gap(g), dl = deltas(S, g);
+  const d = (n) => (n == null ? '' : ` (${n > 0 ? '+' : n < 0 ? '−' : '±'}${Math.abs(n)})`);
   return (
     <button type="button" className={`game ${g.r}`} onClick={() => onOpen(g.id)}>
       <span className="r">{g.r}</span>
       <span><b>{g.char || 'Unknown'}</b>{g.opp ? <> <span className="mute">{g.opp}</span></> : null}{g.rm ? <> <span className="warn">rematch</span></> : null}
         <small>{fmtT(g.t)} · {modeName(modeOf(g))} · {g.me || 'Ken'} · {g.dev || ''}{g.tags && g.tags.length ? ` · ${g.tags.map((k) => tagInfo(S, k)[1]).join(', ')}` : ''}{g.note ? ` · ${g.note}` : ''}</small></span>
-      <span className="mono">{g.myMR != null ? g.myMR : '?'} vs {g.oppMR != null ? g.oppMR : '?'}{gp != null ? <small>{gp > 0 ? '+' : ''}{gp}</small> : null}</span>
+      <span className="mono">{g.myMR != null ? g.myMR : '?'}{dl ? d(dl.me) : ''} vs {g.oppMR != null ? g.oppMR : '?'}{dl ? d(dl.opp) : ''}{gp != null ? <small>gap {gp > 0 ? '+' : ''}{gp}</small> : null}</span>
     </button>
   );
 }

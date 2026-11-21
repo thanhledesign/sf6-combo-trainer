@@ -77,6 +77,13 @@ export function postMR(S, g) {
   const w = g.r === 'W' ? 1 : 0;
   return g.myMR + (g.oppMR != null ? Math.round(opts(S).k * (w - 1 / (1 + Math.pow(10, (g.oppMR - g.myMR) / 400)))) : (w ? 8 : -8));
 }
+// MR change for each fighter in one game (me from the result screen or the Elo estimate; opponent mirrors it unless entered).
+export function deltas(S, g) {
+  if (g.myMR == null) return null;
+  const me = postMR(S, g) - g.myMR;
+  const opp = g.oppMR == null ? null : (g.oppAfter != null ? g.oppAfter - g.oppMR : -me);
+  return { me, opp };
+}
 export function estMR(S, me) {
   const a = allGames(S);
   for (let i = a.length - 1; i >= 0; i--) { const g = a[i]; if ((g.me || 'Ken') !== me) continue; if (g.myMR != null) return postMR(S, g); }
