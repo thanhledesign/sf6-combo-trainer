@@ -1,6 +1,8 @@
 {
   "id": "dhalsim",
-  "scrapedAt": "2026-04-25T20:41:13.985Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:37:18.427Z",
   "source": "https://www.streetfighter.com/6/character/dhalsim",
   "character": {
     "bio": "A monk and yoga master from India who has served as a guide for countless suffering souls. Prefers to avoid conflict when possible, but his innate hatred of evil compels him to dispense stern justice.",
@@ -1008,7 +1010,8 @@
       "displayName": "L Yoga Arch",
       "level": "L",
       "category": "special",
-      "input": "↓↘→ + LK",
+      "context": "(Input additional command at startup to change effect)",
+      "input": "(Input additional command at startup to change effect) ↓↘→ + LK",
       "notation": "236LK",
       "shortName": "236LK",
       "damage": 600,
@@ -1033,7 +1036,8 @@
       "displayName": "M Yoga Arch",
       "level": "M",
       "category": "special",
-      "input": "↓↘→ + MK",
+      "context": "(Input additional command at startup to change effect)",
+      "input": "(Input additional command at startup to change effect) ↓↘→ + MK",
       "notation": "236MK",
       "shortName": "236MK",
       "damage": 600,
@@ -1058,7 +1062,8 @@
       "displayName": "H Yoga Arch",
       "level": "H",
       "category": "special",
-      "input": "↓↘→ + HK",
+      "context": "(Input additional command at startup to change effect)",
+      "input": "(Input additional command at startup to change effect) ↓↘→ + HK",
       "notation": "236HK",
       "shortName": "236HK",
       "damage": 600,
@@ -1445,7 +1450,7 @@
         "hitLevel": "high - projectile",
         "cancelable": false
       },
-      "note": "Can perform moves from frame 50"
+      "note": "Can perform moves from frame 44"
     },
     "dhalsim_yoga_float_immediately": {
       "displayName": "Yoga Float(immediately)",

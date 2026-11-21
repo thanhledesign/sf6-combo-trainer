@@ -1,6 +1,8 @@
 {
   "id": "rashid",
-  "scrapedAt": "2026-04-25T20:43:22.533Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:48:12.592Z",
   "source": "https://www.streetfighter.com/6/character/rashid",
   "character": {
     "bio": "”The Soaring Eagle of the Desert” that fights using parkour. With the wind as his ally, he outfoxes opponents with his high mobility. Born into nobility, he's a carefree but earnest man. Loves video streaming.",
@@ -280,7 +282,7 @@
         "total": 36
       },
       "frameAdvantage": {
-        "onBlock": -6,
+        "onBlock": -4,
         "onHit": 5
       },
       "properties": {
@@ -639,7 +641,7 @@
       },
       "frameAdvantage": {
         "onBlock": -3,
-        "onHit": 2
+        "onHit": 3
       },
       "properties": {
         "hitLevel": "high",
@@ -875,7 +877,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 3 - 11Considered airborne from frames 10 -97"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 3 - 17Considered airborne from frames 10 -97"
     },
     "rashid_h_spinning_mixer_h": {
       "displayName": "H Spinning Mixer",

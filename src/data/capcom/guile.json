@@ -1,6 +1,8 @@
 {
   "id": "guile",
-  "scrapedAt": "2026-04-25T20:40:21.423Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:40:07.717Z",
   "source": "https://www.streetfighter.com/6/character/guile",
   "character": {
     "bio": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
@@ -146,11 +148,11 @@
       "shortName": "5HK",
       "damage": 800,
       "frameData": {
-        "startup": 13,
+        "startup": 12,
         "active": 3,
-        "activeRange": "13-15",
+        "activeRange": "12-14",
         "recovery": 21,
-        "total": 37
+        "total": 36
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1186,7 +1188,7 @@
         "total": 154
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": 1,
         "onHit": 0
       },
       "properties": {
@@ -1209,7 +1211,7 @@
         "total": 154
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": 1,
         "onHit": 0
       },
       "properties": {
@@ -1232,7 +1234,7 @@
         "total": 154
       },
       "frameAdvantage": {
-        "onBlock": -4,
+        "onBlock": 1,
         "onHit": 0
       },
       "properties": {

@@ -1,6 +1,8 @@
 {
   "id": "ehonda",
-  "scrapedAt": "2026-04-25T20:41:24.690Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:38:46.538Z",
   "source": "https://www.streetfighter.com/6/character/ehonda",
   "character": {
     "bio": "A sumo wrestler looking to bring the sport worldwide, E. Honda has the skills of a yokozuna, but his constant globetrotting has prevented his promotion. Also an expert chef renowned for mouthwatering chanko stew.",
@@ -86,7 +88,7 @@
         "cancelable": true,
         "cancelFlags": "C"
       },
-      "note": "2 frames of recovery added when the attack misses"
+      "note": "4 frames of recovery added when the attack misses"
     },
     "ehonda_standing_medium_kick_m": {
       "displayName": "Standing Medium Kick",
@@ -291,7 +293,7 @@
       "properties": {
         "hitLevel": "high",
         "cancelable": false,
-        "cancelFlags": "*"
+        "cancelFlags": "*SA"
       },
       "note": "Adds +2 frames of recovery on armor hit or if the attack misses* Can be canceled into Hundred Hand Slap if Sumo Spirit is active"
     },
@@ -1144,7 +1146,7 @@
         "startup": null,
         "active": null,
         "activeRange": "",
-        "recovery": 51,
+        "recovery": 44,
         "total": null
       },
       "frameAdvantage": {

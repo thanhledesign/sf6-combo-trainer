@@ -1,6 +1,8 @@
 {
   "id": "akuma",
-  "scrapedAt": "2026-04-25T20:37:47.351Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:30:39.383Z",
   "source": "https://www.streetfighter.com/6/character/gouki_akuma",
   "character": {
     "bio": "A demon of combat that has welcomed the Satsui no Hado into his being in his quest to become the ultimate master of the fist.",
@@ -739,7 +741,7 @@
         "total": null
       },
       "frameAdvantage": {
-        "onBlock": 5,
+        "onBlock": 21,
         "onHit": 0
       },
       "properties": {
@@ -807,7 +809,7 @@
         "total": null
       },
       "frameAdvantage": {
-        "onBlock": 5,
+        "onBlock": 21,
         "onHit": 0
       },
       "properties": {
@@ -875,7 +877,7 @@
         "total": null
       },
       "frameAdvantage": {
-        "onBlock": 5,
+        "onBlock": 21,
         "onHit": 0
       },
       "properties": {
@@ -925,7 +927,7 @@
         "total": null
       },
       "frameAdvantage": {
-        "onBlock": 20,
+        "onBlock": 21,
         "onHit": 0
       },
       "properties": {
@@ -1470,7 +1472,8 @@
         "hitLevel": "high",
         "cancelable": false,
         "cancelFlags": "SA2"
-      }
+      },
+      "note": "Produces a wall splat if the opponent reaches the wall"
     },
     "akuma_l_demon_raid_l": {
       "displayName": "L Demon Raid",
@@ -1741,7 +1744,8 @@
       "properties": {
         "hitLevel": null,
         "cancelable": false
-      }
+      },
+      "note": "Can perform Oboro Throw between frames 21-37"
     },
     "akuma_ashura_senku_backward": {
       "displayName": "Ashura Senku(Backward)",

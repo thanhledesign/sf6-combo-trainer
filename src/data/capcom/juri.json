@@ -1,6 +1,8 @@
 {
   "id": "juri",
-  "scrapedAt": "2026-04-25T20:40:48.737Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:42:42.568Z",
   "source": "https://www.streetfighter.com/6/character/juri",
   "character": {
     "bio": "This sadistic thrillseeker enjoys the strife and suffering of others, taking immense joy in obliterating her foes. Without revenge against M. Bison as a motivator, she whiles away her time in a gloomy haze.",
@@ -1132,7 +1134,7 @@
       },
       "frameAdvantage": {
         "onBlock": -6,
-        "onHit": 2
+        "onHit": 3
       },
       "properties": {
         "hitLevel": "high",
@@ -1310,7 +1312,7 @@
         "cancelable": false,
         "cancelFlags": "SA2"
       },
-      "note": "Clashes with projectiles (Once)Adds 1 Fuha stock on frame 16"
+      "note": "Clashes with projectiles (Twice)Adds 1 Fuha stock on frame 12"
     },
     "juri_saihasho_l": {
       "displayName": "Saihasho",

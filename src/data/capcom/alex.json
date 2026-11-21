@@ -1,6 +1,8 @@
 {
   "id": "alex",
-  "scrapedAt": "2026-04-25T20:45:23.654Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:31:22.728Z",
   "source": "https://www.streetfighter.com/6/character/alex",
   "character": {
     "bio": "A young wrestler considered to bethe next big thing. He debuted with hisadoptive father Tom as his trainer, but wasquickly made a heel due to his perceivedsurliness.",
@@ -75,18 +77,19 @@
         "startup": 7,
         "active": 4,
         "activeRange": "7-10",
-        "recovery": 17,
-        "total": 28
+        "recovery": 14,
+        "total": 25
       },
       "frameAdvantage": {
         "onBlock": 0,
-        "onHit": 3
+        "onHit": 4
       },
       "properties": {
         "hitLevel": "high",
         "cancelable": true,
         "cancelFlags": "C"
-      }
+      },
+      "note": "1 frame of recovery added when blocked3 frames of recovery added when the attack misses"
     },
     "alex_standing_medium_kick_m": {
       "displayName": "Standing Medium Kick",
@@ -309,7 +312,7 @@
       },
       "frameAdvantage": {
         "onBlock": -2,
-        "onHit": 4
+        "onHit": 5
       },
       "properties": {
         "hitLevel": "low",
@@ -363,9 +366,10 @@
       },
       "properties": {
         "hitLevel": "low",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "*"
       },
-      "note": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+      "note": "Can only transition to Prowler Stance on hitKnockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
     },
     "alex_jumping_light_punch": {
       "displayName": "Jumping Light Punch",
@@ -440,9 +444,10 @@
       },
       "properties": {
         "hitLevel": "mid",
-        "cancelable": false
+        "cancelable": false,
+        "cancelFlags": "*"
       },
-      "note": "Forces a juggle state when hitting a mid-air opponent"
+      "note": "Forces a juggle state when hitting a mid-air opponentCan be canceled into Flying Cross Chop during a forward jump"
     },
     "alex_jumping_medium_kick": {
       "displayName": "Jumping Medium Kick",
@@ -776,7 +781,7 @@
         "hitLevel": null,
         "cancelable": false
       },
-      "note": "Super Armor for 2 attack from frames 6 - 16Turns the opponent around on Counter and Punish Counter"
+      "note": "Super Armor for 2 attacks from frames 6 - 23Turns the opponent around on Counter and Punish Counter"
     },
     "alex_tactical_hop": {
       "displayName": "Tactical Hop",
@@ -968,7 +973,7 @@
         "total": 25
       },
       "frameAdvantage": {
-        "onBlock": 1,
+        "onBlock": 2,
         "onHit": 5
       },
       "properties": {
@@ -979,7 +984,7 @@
     },
     "alex_flying_cross_chop": {
       "displayName": "Flying Cross Chop",
-      "level": "(During a jump)   H",
+      "level": "(During a forward jump)  H",
       "category": "normal",
       "context": "(During a forward jump)",
       "input": "(During a forward jump) ↓ + HP",
@@ -1181,7 +1186,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Considered airborne from frames 5 - 32Does not hit an opponent standing on the ground"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10Invincible to throws from frames 5 - 6Considered airborne from frames 5 - 32Does not hit an opponent standing on the ground"
     },
     "alex_m_aerial_knee_smash_m": {
       "displayName": "M Aerial Knee Smash",
@@ -1206,7 +1211,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 16Considered airborne from frames 6 - 34Does not hit an opponent standing on the ground"
+      "note": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 16Invincible to throws from frames 6 - 8Considered airborne from frames 6 - 34Does not hit an opponent standing on the ground"
     },
     "alex_h_aerial_knee_smash_h": {
       "displayName": "H Aerial Knee Smash",
@@ -1491,7 +1496,7 @@
       "input": "(During OD Powered Drop) P + P",
       "notation": "PP",
       "shortName": "PP",
-      "damage": 2800,
+      "damage": 2500,
       "frameData": {
         "startup": null,
         "active": null,
@@ -1637,7 +1642,7 @@
         "hitLevel": "throw",
         "cancelable": false
       },
-      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2040 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
+      "note": "Properties change to the following when the attack lands as a Punish Counter:- Deals 2210 damage- Super Art gauge increases by 4000- Forces a hard knockdown"
     },
     "alex_forward_dash": {
       "displayName": "Forward Dash",
@@ -1669,7 +1674,7 @@
         "startup": null,
         "active": null,
         "activeRange": "",
-        "recovery": 25,
+        "recovery": 23,
         "total": null
       },
       "frameAdvantage": {

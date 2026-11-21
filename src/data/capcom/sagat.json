@@ -1,6 +1,8 @@
 {
   "id": "sagat",
-  "scrapedAt": "2026-04-25T20:44:35.634Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:49:33.604Z",
   "source": "https://www.streetfighter.com/6/character/sagat",
   "character": {
     "bio": "The Emperor of Muay Thai. He was once one ofthe highest ranking members of Shadaloo, buthas since left the criminal organization.He currently lives deep in the mountains,focusing only on his training.",
@@ -55,7 +57,7 @@
       },
       "frameAdvantage": {
         "onBlock": -4,
-        "onHit": -1
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
@@ -578,11 +580,11 @@
       "shortName": "MKHK",
       "damage": 800,
       "frameData": {
-        "startup": 19,
+        "startup": 16,
         "active": 3,
-        "activeRange": "19-21",
+        "activeRange": "16-18",
         "recovery": 23,
-        "total": 45
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -8,
@@ -624,7 +626,7 @@
       "input": "↓ + MPHP",
       "notation": "2MPHP",
       "shortName": "2MPHP",
-      "damage": 600,
+      "damage": 700,
       "frameData": {
         "startup": 20,
         "active": 3,
@@ -650,7 +652,7 @@
       "input": "↓ + MP + HK",
       "notation": "2MP+HK",
       "shortName": "2MP+HK",
-      "damage": 1000,
+      "damage": 1100,
       "frameData": {
         "startup": 18,
         "active": 4,
@@ -1045,7 +1047,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 25 - 28Forces a juggle state when the attack lands as a counter or Punish Counter."
+      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 25 - 28Recovery added by 1 frames on super armor hitForces a juggle state when the attack lands as a counter or Punish Counter."
     },
     "sagat_m_tiger_nexus_m": {
       "displayName": "M Tiger Nexus",
@@ -1071,7 +1073,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 28 - 31Forces a juggle state when the attack lands as a counter or Punish Counter."
+      "note": "Can transition to Mighty Tiger, Greedy Tiger and Nova Tiger between frames 28 - 31Recovery added by 1 frames on super armor hitForces a juggle state when the attack lands as a counter or Punish Counter."
     },
     "sagat_h_tiger_nexus_h": {
       "displayName": "H Tiger Nexus",
@@ -1169,7 +1171,7 @@
         "total": 40
       },
       "frameAdvantage": {
-        "onBlock": -5,
+        "onBlock": -3,
         "onHit": 3
       },
       "properties": {

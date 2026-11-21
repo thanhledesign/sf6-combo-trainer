@@ -1,6 +1,8 @@
 {
   "id": "lily",
-  "scrapedAt": "2026-04-25T20:42:57.583Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:44:35.917Z",
   "source": "https://www.streetfighter.com/6/character/lily",
   "character": {
     "bio": "A descendant of the Thunderfoot tribe, Lily speaks with the spirits of nature, trusting in their guidance as she travels the globe. Don't judge a book by its cover—her small stature conceals truly titanic power.",
@@ -162,7 +164,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "Forces a juggle state on Punish Counter"
+      "note": "Forces a blowback knockdown when the attack lands as a Counter or Punish Counter"
     },
     "lily_crouching_light_punch_l": {
       "displayName": "Crouching Light Punch",
@@ -648,23 +650,24 @@
       "input": "(Hold the button to change effect) ↓↙← + LP",
       "notation": "214LP",
       "shortName": "214LP",
-      "damage": 0,
+      "damage": 900,
       "frameData": {
-        "startup": null,
-        "active": null,
-        "activeRange": "",
-        "recovery": 47,
-        "total": null
+        "startup": 19,
+        "active": 4,
+        "activeRange": "19-22",
+        "recovery": 25,
+        "total": 48
       },
       "frameAdvantage": {
-        "onBlock": null,
-        "onHit": null
+        "onBlock": -8,
+        "onHit": 0
       },
       "properties": {
-        "hitLevel": null,
-        "cancelable": false
+        "hitLevel": "high",
+        "cancelable": false,
+        "cancelFlags": "SA3"
       },
-      "note": "Adds 1 stock of Windclad on frame 46 if the button is released in the fastest situation.Adds 1 stock on frames 71 and 91 if the button is held.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
+      "note": "Transitions into the attack if the button is released during the first 15 frames.If the button is held, adds a Windclad stock on frames 46, 71 and 90.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
     },
     "lily_m_condor_wind_m": {
       "displayName": "M Condor Wind",
@@ -691,7 +694,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 91.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added.Forces a juggle state when hitting a mid-air opponent"
+      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 90.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added.Forces a juggle state when hitting a mid-air opponent"
     },
     "lily_h_condor_wind_h": {
       "displayName": "H Condor Wind",
@@ -718,7 +721,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 91.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added."
+      "note": "Adds 1 stock of Windclad on the 1st active frame of the attack if the button is released by frame 45.If the button is held, adds a Windclad stock on frames 46, 71 and 90.Changes the properties of Condor Spire, Tomahawk Buster, Condor Dive, Thunderbird and Sky Thunderbird after a stock is added.Forces a juggle state when hitting a mid-air opponent"
     },
     "lily_od_condor_wind": {
       "displayName": "OD Condor Wind",

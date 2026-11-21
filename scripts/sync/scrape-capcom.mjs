@@ -433,6 +433,17 @@ async function scrapeCharacter(page, charId, bootstrap) {
   // 2) Frame data page
   await page.goto(`https://www.streetfighter.com/6/character/${urlFor(charId)}/frame`, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForTimeout(1500);
+  if (process.env.SYNC_DIAG) {
+    const d = await page.evaluate(() => ({
+      url: location.href, title: document.title,
+      tables: document.querySelectorAll('table').length, trs: document.querySelectorAll('table tbody tr').length,
+      skills: document.querySelectorAll('[class*="frame_skill"]').length,
+      classes: [...new Set([...document.querySelectorAll('table *')].map((e) => e.className).filter((c) => typeof c === 'string' && c))].slice(0, 40),
+      text: document.body.innerText.slice(0, 700),
+      html: (document.querySelector('table') || document.querySelector('main') || document.body).outerHTML.slice(0, 2500),
+    }));
+    console.log('DIAG ' + charId + ' ' + JSON.stringify(d, null, 1));
+  }
 
   // Use the stable CSS class prefixes Capcom assigns per cell type
   // (e.g., frame_skill__xxx, frame_startup_frame__yyy) — robust to column
@@ -485,7 +496,16 @@ async function scrapeCharacter(page, charId, bootstrap) {
   const annot = existsSync(annotPath)
     ? JSON.parse(readFileSync(annotPath, 'utf8'))
     : { moves: {}, character: null, tactics: {} };
-  const index = buildMoveIndex(annot.moves);
+  // Many annotation files carry no displayName (only tactical notes), so index the move ids by the
+  // displayName already on file in capcom/{id}.json too. Annotation names win where both exist.
+  const prevCapPath = resolve(OUT_CAPCOM, `${charId}.json`);
+  const prevCap = existsSync(prevCapPath) ? JSON.parse(readFileSync(prevCapPath, 'utf8')).moves || {} : {};
+  const indexable = {};
+  for (const id of new Set([...Object.keys(prevCap), ...Object.keys(annot.moves || {})])) {
+    const dn = annot.moves?.[id]?.displayName || prevCap[id]?.displayName;
+    if (dn) indexable[id] = { displayName: dn };
+  }
+  const index = buildMoveIndex(indexable);
 
   const num = (s) => {
     if (s == null || s === '') return null;
@@ -622,6 +642,7 @@ async function scrapeCharacter(page, charId, bootstrap) {
       const prevPath = resolve(OUT_CAPCOM, `${id}.json`);
       if (existsSync(prevPath) && !dryRun) {
         const prev = Object.keys(JSON.parse(readFileSync(prevPath, 'utf8')).moves || {}).length;
+        if (process.env.SYNC_DIAG) console.log('DIAG unmatched ' + id + ' ' + data._unmatched.length + ' ' + JSON.stringify(data._unmatched.slice(0, 25)) + ' MATCHED ' + JSON.stringify(Object.keys(data.moves)));
         if (prev > 10 && moveCount < prev * 0.6) {
           console.error(`  SKIPPED ${id}: only ${moveCount} moves parsed vs ${prev} on file — parser likely broken, keeping old data`);
           process.exitCode = 1;

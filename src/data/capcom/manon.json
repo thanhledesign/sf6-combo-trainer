@@ -1,6 +1,8 @@
 {
   "id": "manon",
-  "scrapedAt": "2026-04-25T20:41:48.470Z",
+  "season": 4,
+  "seasonLabel": "Season 4",
+  "scrapedAt": "2026-11-21T23:46:54.475Z",
   "source": "https://www.streetfighter.com/6/character/manon",
   "character": {
     "bio": "A super model and world champion judoka, Manon is an idealist, forever seeking self-improvement in the pursuit of beauty. She struts the catwalk of street fighting to become the world's strongest model.",
@@ -105,7 +107,7 @@
       },
       "frameAdvantage": {
         "onBlock": -5,
-        "onHit": -2
+        "onHit": 0
       },
       "properties": {
         "hitLevel": "high",
@@ -258,7 +260,7 @@
       },
       "frameAdvantage": {
         "onBlock": -2,
-        "onHit": 3
+        "onHit": 4
       },
       "properties": {
         "hitLevel": "low",
@@ -646,9 +648,9 @@
       "damage": 2000,
       "frameData": {
         "startup": 10,
-        "active": 2,
-        "activeRange": "10-11",
-        "recovery": 49,
+        "active": 3,
+        "activeRange": "10-12",
+        "recovery": 48,
         "total": 61
       },
       "frameAdvantage": {
@@ -669,9 +671,9 @@
       "damage": 2000,
       "frameData": {
         "startup": 8,
-        "active": 2,
-        "activeRange": "8-9",
-        "recovery": 51,
+        "active": 3,
+        "activeRange": "8-10",
+        "recovery": 50,
         "total": 61
       },
       "frameAdvantage": {
@@ -692,9 +694,9 @@
       "damage": 2000,
       "frameData": {
         "startup": 5,
-        "active": 2,
-        "activeRange": "5-6",
-        "recovery": 54,
+        "active": 3,
+        "activeRange": "5-7",
+        "recovery": 53,
         "total": 61
       },
       "frameAdvantage": {
@@ -931,7 +933,7 @@
         "hitLevel": "mid",
         "cancelable": false
       },
-      "note": "Low attack invincibility from frames 11 - 12, as well as throw invincibilityConsidered airborne from frames 9 - 21"
+      "note": "Low attack invincibility from frames 11 - 12, as well as throw invincibilityConsidered airborne from frames 9 - 21Produces a ground bound during a mid-air hit"
     },
     "manon_l_renvers_attack_changes_according_to_medal_level_l": {
       "displayName": "L Renversé(Attack changes according to Medal level)",
@@ -954,7 +956,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "With Classic ControlsProjectile invincibility from frames 3 - 21Transition into feint by holding the button (total 31 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1350 (1360)Medal Level 2: 1500 (1510)Medal Level 3: 1650 (1660)Medal Level 4: 1800 (1810)Medal Level 5: 1950 (1960)Values in parentheses represent damage on Punish CounterWith Modern ControlsMedal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1080 / 1088Medal Level 2: 1200 / 1208Medal Level 3: 1320 / 1328Medal Level 4: 1440 / 1448Medal Level 5: 1560 / 1568Values after the backslash represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
+      "note": "With Classic ControlsProjectile invincibility from frames 3 - 23Transition into feint by holding the button (total 31 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1350 (1360)Medal Level 2: 1500 (1510)Medal Level 3: 1650 (1660)Medal Level 4: 1800 (1810)Medal Level 5: 1950 (1960)Values in parentheses represent damage on Punish CounterWith Modern ControlsMedal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1080 / 1088Medal Level 2: 1200 / 1208Medal Level 3: 1320 / 1328Medal Level 4: 1440 / 1448Medal Level 5: 1560 / 1568Values after the backslash represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
     },
     "manon_m_renvers_attack_changes_according_to_medal_level_m": {
       "displayName": "M Renversé(Attack changes according to Medal level)",
@@ -977,7 +979,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Projectile invincibility from frames 3 - 24Transition into feint by holding the button (total 32 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1400 (1420)Medal Level 2: 1550 (1570)Medal Level 3: 1700 (1720)Medal Level 4: 1850 (1870)Medal Level 5: 2000 (2020)Values in parentheses represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
+      "note": "Projectile invincibility from frames 3 - 26Transition into feint by holding the button (total 32 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1400 (1420)Medal Level 2: 1550 (1570)Medal Level 3: 1700 (1720)Medal Level 4: 1850 (1870)Medal Level 5: 2000 (2020)Values in parentheses represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
     },
     "manon_h_renvers_attack_changes_according_to_medal_level_h": {
       "displayName": "H Renversé(Attack changes according to Medal level)",
@@ -1000,7 +1002,7 @@
         "cancelable": false,
         "cancelFlags": "SA3"
       },
-      "note": "Projectile invincibility from frames 3 - 28Transition into feint by holding the button (total 33 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1500 (1540)Medal Level 2: 1650 (1690)Medal Level 3: 1800 (1840)Medal Level 4: 1950 (1990)Medal Level 5: 2100 (2140)Values in parentheses represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
+      "note": "Projectile invincibility from frames 3 - 30Transition into feint by holding the button (total 33 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1500 (1540)Medal Level 2: 1650 (1690)Medal Level 3: 1800 (1840)Medal Level 4: 1950 (1990)Medal Level 5: 2100 (2140)Values in parentheses represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
     },
     "manon_od_renvers_attack_changes_according_to_medal_level": {
       "displayName": "OD Renversé(Attack changes according to Medal level)",
@@ -1022,7 +1024,7 @@
         "hitLevel": "high",
         "cancelable": false
       },
-      "note": "With Classic ControlsInvincible against strikes from the knee and up from frames 3 - 26Invincible against projectiles from frames 3 - 26Transition into feint by holding the button (total 32 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1500 (1540)Medal Level 2: 1650 (1690)Medal Level 3: 1800 (1840)Medal Level 4: 1950 (1990)Medal Level 5: 2100 (2140)Values in parentheses represent damage on Punish CounterWith Modern ControlsMedal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1200 / 1232Medal Level 2: 1320 / 1352Medal Level 3: 1440 / 1472Medal Level 4: 1560 / 1592Medal Level 5: 1680 / 1712Values after the backslash represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
+      "note": "With Classic ControlsInvincible against strikes from the knee and up from frames 3 - 26Invincible against projectiles from frames 3 - 26Transition into feint by holding the button (total 27 frames)Medal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1500 (1540)Medal Level 2: 1650 (1690)Medal Level 3: 1800 (1840)Medal Level 4: 1950 (1990)Medal Level 5: 2100 (2140)Values in parentheses represent damage on Punish CounterWith Modern ControlsMedal level increases by a single level on hit*Damage increases the higher the Medal levelMedal Level 1: 1200 / 1232Medal Level 2: 1320 / 1352Medal Level 3: 1440 / 1472Medal Level 4: 1560 / 1592Medal Level 5: 1680 / 1712Values after the backslash represent damage on Punish CounterSuper Art gauge increase depends on Medal level.Medal Level 1 - 2: 2150Medal Level 3 - 4: 3150Medal Level 5: 4150"
     },
     "manon_grand_fouett": {
       "displayName": "Grand Fouetté",
@@ -1037,11 +1039,11 @@
         "startup": 11,
         "active": 6,
         "activeRange": "11-16",
-        "recovery": 22,
-        "total": 39
+        "recovery": 20,
+        "total": 37
       },
       "frameAdvantage": {
-        "onBlock": -5,
+        "onBlock": -3,
         "onHit": 0
       },
       "properties": {
