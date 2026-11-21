@@ -261,3 +261,17 @@
 .lab .acctedit,.lab .acctadd{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
 .lab .acctedit input,.lab .acctadd input{flex:1 1 8rem}
 .lab .acctadd{margin:.2rem 0 .6rem}
+
+/* V01.34 responsive header: let every header block shrink/wrap on phones */
+.lab #top>*{min-width:0}
+.lab .acctbtn{max-width:100%;min-width:0}
+.lab .acctbtn>*{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:640px){
+  .lab #top{gap:.4rem;padding:.4rem}
+  .lab .mecard{flex:1 1 100%}
+  .lab .seg3, .lab #tabs{flex:1 1 auto;min-width:0}
+  .lab .seg3 button, .lab #tabs button{flex:1 1 0;min-width:0;min-height:3rem;padding:.2rem .25rem}
+  .lab #tabs{margin-left:0;overflow-x:auto}
+  .lab .acctbtn{flex:1 1 auto}
+}
+.lab #app{grid-template-columns:minmax(0,1fr)}
