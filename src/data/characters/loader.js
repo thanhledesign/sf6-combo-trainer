@@ -8,9 +8,13 @@
 // Capcom is the source of truth for objective fields. Annotations provide
 // the tactical narrative. Overrides patch Capcom errors.
 
+import { USE_CAPCOM_URL_FALLBACK } from '../videoConfig';
+
 const capcomFiles      = import.meta.glob('../capcom/*.json',      { eager: true, import: 'default' });
 const annotationFiles  = import.meta.glob('../annotations/*.json', { eager: true, import: 'default' });
 const overrideFiles    = import.meta.glob('../overrides/*.json',   { eager: true, import: 'default' });
+// Move → demo video links from scripts/sync/scrape-videos.mjs (see videoConfig.js for precedence).
+const videoFiles       = import.meta.glob('../videos/*.json',      { eager: true, import: 'default' });
 
 const byId = (obj) =>
   Object.fromEntries(
@@ -20,13 +24,14 @@ const byId = (obj) =>
 const capcom      = byId(capcomFiles);
 const annotations = byId(annotationFiles);
 const overrides   = byId(overrideFiles);
+const videos      = byId(videoFiles);
 
 // Capcom-owned move fields. When capcom has a value, it wins over annotation.
 // (Annotations may still hold these for moves the scraper couldn't match;
 // in that case the annotation value falls through.)
 const CAPCOM_DISPLAY_FIELDS = ['displayName', 'notation', 'input', 'shortName', 'category', 'level'];
 
-function mergeMove(capcomMove = {}, overrideMove = {}, annotationMove = {}) {
+function mergeMove(capcomMove = {}, overrideMove = {}, annotationMove = {}, videoMove = null) {
   const cFrame = capcomMove.frameData ?? {};
   const oFrame = overrideMove.frameData ?? {};
 
@@ -53,6 +58,8 @@ function mergeMove(capcomMove = {}, overrideMove = {}, annotationMove = {}) {
   };
   merged.properties = { ...aProps, ...cProps, ...oProps };
   if (capcomMove.note) merged.note = capcomMove.note;
+  const video = annotationMove.video ?? videoMove?.storageUrl ?? (USE_CAPCOM_URL_FALLBACK ? videoMove?.url : null);
+  if (video) merged.video = video;
   return merged;
 }
 
@@ -85,7 +92,7 @@ export function loadCharacter(id) {
 
   const moves = {};
   for (const moveId of moveIds) {
-    moves[moveId] = mergeMove(c.moves?.[moveId], o.moves?.[moveId], a.moves?.[moveId]);
+    moves[moveId] = mergeMove(c.moves?.[moveId], o.moves?.[moveId], a.moves?.[moveId], videos[id]?.moves?.[moveId]);
   }
 
   return {

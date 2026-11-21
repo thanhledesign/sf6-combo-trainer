@@ -47,3 +47,6 @@ Desktop.ini
 *.local
 coverage/
 .cache/
+
+# Scratch output from the video tools
+video-out/
