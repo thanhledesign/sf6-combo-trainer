@@ -2,7 +2,7 @@
   "id": "cviper",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:35:33.037Z",
+  "scrapedAt": "2026-11-22T00:14:59.158Z",
   "source": "https://www.streetfighter.com/6/character/cviper",
   "character": {
     "bio": "An operative belonging to a certain intelligence organization. A cold, hard realist. She complements her fighting abilities using a number of gadgets hidden in her outfit.",
@@ -536,10 +536,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 3101,
-        "activeRange": "11-3111-13, 29-31",
+        "active": 21,
+        "activeRange": "11-31",
         "recovery": 16,
-        "total": 3128
+        "total": 48
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -559,7 +559,8 @@
         "startup": null,
         "active": null,
         "activeRange": "",
-        "recovery": 463,
+        "recovery": 46,
+        "landingRecovery": 3,
         "total": null
       },
       "frameAdvantage": {
@@ -581,7 +582,8 @@
         "startup": null,
         "active": null,
         "activeRange": "",
-        "recovery": 463,
+        "recovery": 46,
+        "landingRecovery": 3,
         "total": null
       },
       "frameAdvantage": {
@@ -681,10 +683,10 @@
       "damage": 1600,
       "frameData": {
         "startup": 18,
-        "active": 4101,
-        "activeRange": "18-4118-21, 38-41",
+        "active": 24,
+        "activeRange": "18-41",
         "recovery": 21,
-        "total": 4140
+        "total": 63
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -883,10 +885,10 @@
       "damage": 1500,
       "frameData": {
         "startup": 8,
-        "active": 351,
-        "activeRange": "8-358-10, 32-35",
+        "active": 28,
+        "activeRange": "8-35",
         "recovery": 21,
-        "total": 380
+        "total": 57
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1188,10 +1190,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 23,
-        "active": 3401,
-        "activeRange": "23-3423-26, 31-34",
+        "active": 12,
+        "activeRange": "23-34",
         "recovery": 36,
-        "total": 3460
+        "total": 71
       },
       "frameAdvantage": {
         "onBlock": -16,
@@ -1210,10 +1212,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 30,
-        "active": 4101,
-        "activeRange": "30-4130-33, 38-41",
+        "active": 12,
+        "activeRange": "30-41",
         "recovery": 36,
-        "total": 4167
+        "total": 78
       },
       "frameAdvantage": {
         "onBlock": -16,
@@ -1232,10 +1234,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 69,
-        "active": 8001,
-        "activeRange": "69-8069-72, 77-80",
+        "active": 12,
+        "activeRange": "69-80",
         "recovery": 36,
-        "total": 8106
+        "total": 117
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1254,10 +1256,10 @@
       "damage": 1500,
       "frameData": {
         "startup": 20,
-        "active": 3101,
-        "activeRange": "20-3120-23, 28-31",
+        "active": 12,
+        "activeRange": "20-31",
         "recovery": 36,
-        "total": 3157
+        "total": 68
       },
       "frameAdvantage": {
         "onBlock": -16,
@@ -1276,10 +1278,10 @@
       "damage": 1700,
       "frameData": {
         "startup": 30,
-        "active": 4101,
-        "activeRange": "30-4130-33, 38-41",
+        "active": 12,
+        "activeRange": "30-41",
         "recovery": 36,
-        "total": 4167
+        "total": 78
       },
       "frameAdvantage": {
         "onBlock": -16,
@@ -1298,10 +1300,10 @@
       "damage": 2000,
       "frameData": {
         "startup": 67,
-        "active": 7801,
-        "activeRange": "67-7867-70, 75-78",
+        "active": 12,
+        "activeRange": "67-78",
         "recovery": 36,
-        "total": 7904
+        "total": 115
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1346,10 +1348,10 @@
       "damage": 2000,
       "frameData": {
         "startup": 8,
-        "active": 201,
-        "activeRange": "8-208-11, 15-20",
+        "active": 13,
+        "activeRange": "8-20",
         "recovery": 53,
-        "total": 262
+        "total": 74
       },
       "frameAdvantage": {
         "onBlock": -34,

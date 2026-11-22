@@ -2,7 +2,7 @@
   "id": "guile",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:40:07.717Z",
+  "scrapedAt": "2026-11-22T00:19:07.849Z",
   "source": "https://www.streetfighter.com/6/character/guile",
   "character": {
     "bio": "A US Air Force pilot who fights for his country, Guile succeeded in dismantling Shadaloo and avenging his friend Charlie. He enjoys living the family man life, but new battlefields await him.",
@@ -301,10 +301,10 @@
       "damage": 900,
       "frameData": {
         "startup": 9,
-        "active": 291,
-        "activeRange": "9-299-10, 27-29",
+        "active": 21,
+        "activeRange": "9-29",
         "recovery": 21,
-        "total": 321
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -934,8 +934,9 @@
         "startup": 5,
         "active": 6,
         "activeRange": "5-10",
-        "recovery": 2615,
-        "total": 2626
+        "recovery": 26,
+        "landingRecovery": 15,
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -30,
@@ -957,8 +958,9 @@
         "startup": 5,
         "active": 6,
         "activeRange": "5-10",
-        "recovery": 2615,
-        "total": 2626
+        "recovery": 26,
+        "landingRecovery": 15,
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -30,
@@ -984,8 +986,9 @@
         "startup": 6,
         "active": 6,
         "activeRange": "6-11",
-        "recovery": 2715,
-        "total": 2727
+        "recovery": 27,
+        "landingRecovery": 15,
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -31,
@@ -1007,8 +1010,9 @@
         "startup": 6,
         "active": 6,
         "activeRange": "6-11",
-        "recovery": 2715,
-        "total": 2727
+        "recovery": 27,
+        "landingRecovery": 15,
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -31,
@@ -1034,8 +1038,9 @@
         "startup": 7,
         "active": 6,
         "activeRange": "7-12",
-        "recovery": 2815,
-        "total": 2828
+        "recovery": 28,
+        "landingRecovery": 15,
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": -32,
@@ -1057,8 +1062,9 @@
         "startup": 7,
         "active": 6,
         "activeRange": "7-12",
-        "recovery": 2815,
-        "total": 2828
+        "recovery": 28,
+        "landingRecovery": 15,
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": -32,
@@ -1084,8 +1090,9 @@
         "startup": 6,
         "active": 6,
         "activeRange": "6-11",
-        "recovery": 2620,
-        "total": 2632
+        "recovery": 26,
+        "landingRecovery": 20,
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -33,
@@ -1584,8 +1591,9 @@
         "startup": 9,
         "active": 6,
         "activeRange": "9-14",
-        "recovery": 3040,
-        "total": 3055
+        "recovery": 30,
+        "landingRecovery": 40,
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -59,
@@ -1610,8 +1618,9 @@
         "startup": 9,
         "active": 6,
         "activeRange": "9-14",
-        "recovery": 3040,
-        "total": 3055
+        "recovery": 30,
+        "landingRecovery": 40,
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -59,

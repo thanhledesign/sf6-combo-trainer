@@ -2,7 +2,7 @@
   "id": "ken",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:43:22.848Z",
+  "scrapedAt": "2026-11-22T00:22:26.665Z",
   "source": "https://www.streetfighter.com/6/character/ken",
   "character": {
     "bio": "Former US National Fighting Champ, and ex-VP of the Masters Foundation. Accusations of orchestrating a criminal plot have forced Ken to abandon his family and business and go into hiding.",
@@ -783,8 +783,9 @@
         "startup": 5,
         "active": 10,
         "activeRange": "5-14",
-        "recovery": 2112,
-        "total": 2127
+        "recovery": 21,
+        "landingRecovery": 12,
+        "total": 36
       },
       "frameAdvantage": {
         "onBlock": -23,
@@ -808,10 +809,11 @@
       "damage": 1300,
       "frameData": {
         "startup": 6,
-        "active": 151,
-        "activeRange": "6-156-8,9-15",
-        "recovery": 2812,
-        "total": 2969
+        "active": 10,
+        "activeRange": "6-15",
+        "recovery": 28,
+        "landingRecovery": 12,
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -28,
@@ -835,10 +837,11 @@
       "damage": 1400,
       "frameData": {
         "startup": 7,
-        "active": 161,
-        "activeRange": "7-167-8,9-10,11-16",
-        "recovery": 3515,
-        "total": 3683
+        "active": 10,
+        "activeRange": "7-16",
+        "recovery": 35,
+        "landingRecovery": 15,
+        "total": 52
       },
       "frameAdvantage": {
         "onBlock": -36,
@@ -862,10 +865,11 @@
       "damage": 1600,
       "frameData": {
         "startup": 6,
-        "active": 391,
-        "activeRange": "6-396-7, 8-15, 30-31, 32, 33-34, 35-39",
-        "recovery": 3515,
-        "total": 3912
+        "active": 34,
+        "activeRange": "6-39",
+        "recovery": 35,
+        "landingRecovery": 15,
+        "total": 75
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -885,10 +889,11 @@
       "damage": 1700,
       "frameData": {
         "startup": 8,
-        "active": null,
-        "activeRange": "8-178, 9, 10, 11, 12-17",
-        "recovery": 3315,
-        "total": null
+        "active": 10,
+        "activeRange": "8-17",
+        "recovery": 33,
+        "landingRecovery": 15,
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": -35,
@@ -912,10 +917,10 @@
       "damage": 700,
       "frameData": {
         "startup": 4,
-        "active": 141,
-        "activeRange": "4-144-5, 12-14",
+        "active": 11,
+        "activeRange": "4-14",
         "recovery": 32,
-        "total": 177
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": -14,
@@ -938,10 +943,10 @@
       "damage": 900,
       "frameData": {
         "startup": 14,
-        "active": 3001,
-        "activeRange": "14-3014-15, 29-30",
+        "active": 17,
+        "activeRange": "14-30",
         "recovery": 31,
-        "total": 3046
+        "total": 62
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -964,10 +969,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 16,
-        "active": 4701,
-        "activeRange": "16-4716-17, 31-32, 46-47",
+        "active": 32,
+        "activeRange": "16-47",
         "recovery": 31,
-        "total": 4748
+        "total": 79
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -990,10 +995,11 @@
       "damage": 1700,
       "frameData": {
         "startup": 9,
-        "active": 561,
-        "activeRange": "9-569-12, 18-20, 27-29, 36-38,54-56",
-        "recovery": 2212,
-        "total": 2782
+        "active": 48,
+        "activeRange": "9-56",
+        "recovery": 22,
+        "landingRecovery": 12,
+        "total": 79
       },
       "frameAdvantage": {
         "onBlock": -61,
@@ -1013,10 +1019,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 13,
-        "active": 5801,
-        "activeRange": "13-5813-14,17-19,22-23,26-28,31-32,35-37, 40-41,44-46,49-50,56-58",
+        "active": 46,
+        "activeRange": "13-58",
         "recovery": 20,
-        "total": 5834
+        "total": 79
       },
       "frameAdvantage": {
         "onBlock": -9,
@@ -1039,10 +1045,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 2701,
-        "activeRange": "11-2711-12,18-19,26-27",
+        "active": 17,
+        "activeRange": "11-27",
         "recovery": 14,
-        "total": 2726
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1064,10 +1070,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 2801,
-        "activeRange": "11-2811-12, 14-15, 18-19, 22-23, 27-28",
+        "active": 18,
+        "activeRange": "11-28",
         "recovery": 14,
-        "total": 2826
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1168,10 +1174,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 9,
-        "active": 241,
-        "activeRange": "9-249-10, 18-24",
+        "active": 16,
+        "activeRange": "9-24",
         "recovery": 24,
-        "total": 274
+        "total": 49
       },
       "frameAdvantage": {
         "onBlock": -9,
@@ -1191,10 +1197,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 9,
-        "active": 231,
-        "activeRange": "9-239-12, 18-23",
+        "active": 15,
+        "activeRange": "9-23",
         "recovery": 24,
-        "total": 264
+        "total": 48
       },
       "frameAdvantage": {
         "onBlock": -8,
@@ -1588,10 +1594,10 @@
       "damage": 2800,
       "frameData": {
         "startup": 6,
-        "active": 611,
-        "activeRange": "6-616-7,18-20,31-33,46-48,60-61",
+        "active": 56,
+        "activeRange": "6-61",
         "recovery": 28,
-        "total": 645
+        "total": 90
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -1614,10 +1620,10 @@
       "damage": 4000,
       "frameData": {
         "startup": 7,
-        "active": 451,
-        "activeRange": "7-457-9,11-13,14-16,33-35,36-37,38-39,40-41,42-43,44-45",
+        "active": 39,
+        "activeRange": "7-45",
         "recovery": 55,
-        "total": 513
+        "total": 101
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -1640,10 +1646,10 @@
       "damage": 4500,
       "frameData": {
         "startup": 7,
-        "active": 451,
-        "activeRange": "7-457-9,11-13,14-16,33-35,36-37,38-39,40-41,42-43,44-45",
+        "active": 39,
+        "activeRange": "7-45",
         "recovery": 55,
-        "total": 513
+        "total": 101
       },
       "frameAdvantage": {
         "onBlock": -40,

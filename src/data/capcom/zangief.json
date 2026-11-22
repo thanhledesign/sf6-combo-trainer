@@ -2,7 +2,7 @@
   "id": "zangief",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:51:29.041Z",
+  "scrapedAt": "2026-11-22T00:30:17.437Z",
   "source": "https://www.streetfighter.com/6/character/zangief",
   "character": {
     "bio": "A colossal wrestler nicknamed the Red Cyclone. Zangief is dedicated to physical improvement and instructing his students.",
@@ -891,10 +891,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 15,
-        "active": 4501,
-        "activeRange": "15-4515-16, 26-27, 36-37, 44-45",
+        "active": 31,
+        "activeRange": "15-45",
         "recovery": 27,
-        "total": 4543
+        "total": 73
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -917,10 +917,10 @@
       "damage": 1700,
       "frameData": {
         "startup": 12,
-        "active": 3601,
-        "activeRange": "12-3612-13, 16-17, 21-22, 29-30, 35-36",
+        "active": 25,
+        "activeRange": "12-36",
         "recovery": 26,
-        "total": 3639
+        "total": 63
       },
       "frameAdvantage": {
         "onBlock": -11,

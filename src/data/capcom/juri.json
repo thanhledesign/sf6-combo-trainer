@@ -2,7 +2,7 @@
   "id": "juri",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:42:42.568Z",
+  "scrapedAt": "2026-11-22T00:21:42.061Z",
   "source": "https://www.streetfighter.com/6/character/juri",
   "character": {
     "bio": "This sadistic thrillseeker enjoys the strife and suffering of others, taking immense joy in obliterating her foes. Without revenge against M. Bison as a motivator, she whiles away her time in a gloomy haze.",
@@ -178,10 +178,10 @@
       "damage": 700,
       "frameData": {
         "startup": 5,
-        "active": 101,
-        "activeRange": "5-105-6, 8-10",
+        "active": 6,
+        "activeRange": "5-10",
         "recovery": 17,
-        "total": 123
+        "total": 28
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -203,10 +203,10 @@
       "damage": 500,
       "frameData": {
         "startup": 5,
-        "active": 101,
-        "activeRange": "5-105-6, 8-10",
+        "active": 6,
+        "activeRange": "5-10",
         "recovery": 17,
-        "total": 123
+        "total": 28
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1078,10 +1078,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 15,
-        "active": 2501,
-        "activeRange": "15-2515-17, 23-25",
+        "active": 11,
+        "activeRange": "15-25",
         "recovery": 20,
-        "total": 2536
+        "total": 46
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1101,10 +1101,10 @@
       "damage": 800,
       "frameData": {
         "startup": 15,
-        "active": 2501,
-        "activeRange": "15-2515-17, 23-25",
+        "active": 11,
+        "activeRange": "15-25",
         "recovery": 20,
-        "total": 2536
+        "total": 46
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1127,10 +1127,10 @@
       "damage": 800,
       "frameData": {
         "startup": 10,
-        "active": 2101,
-        "activeRange": "10-2110-12, 19-21",
+        "active": 12,
+        "activeRange": "10-21",
         "recovery": 19,
-        "total": 2130
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1150,10 +1150,10 @@
       "damage": 600,
       "frameData": {
         "startup": 10,
-        "active": 2101,
-        "activeRange": "10-2110-12, 19-21",
+        "active": 12,
+        "activeRange": "10-21",
         "recovery": 19,
-        "total": 2130
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1500,10 +1500,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 18,
-        "active": 3601,
-        "activeRange": "18-3618-21, 34-36",
+        "active": 19,
+        "activeRange": "18-36",
         "recovery": 27,
-        "total": 3646
+        "total": 64
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1527,10 +1527,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 18,
-        "active": 6901,
-        "activeRange": "18-6918-21, 34-36, 65-69",
+        "active": 52,
+        "activeRange": "18-69",
         "recovery": 28,
-        "total": 6947
+        "total": 98
       },
       "frameAdvantage": {
         "onBlock": -16,
@@ -1553,10 +1553,10 @@
       "damage": 800,
       "frameData": {
         "startup": 11,
-        "active": 1701,
-        "activeRange": "11-1711-13, 16-17",
+        "active": 7,
+        "activeRange": "11-17",
         "recovery": 22,
-        "total": 1734
+        "total": 40
       },
       "frameAdvantage": {
         "onBlock": -8,
@@ -1578,10 +1578,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 5,
-        "active": 241,
-        "activeRange": "5-245-12, 18-19, 23-24",
+        "active": 20,
+        "activeRange": "5-24",
         "recovery": 14,
-        "total": 260
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -37,
@@ -1603,10 +1603,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 5,
-        "active": 241,
-        "activeRange": "5-245-12, 18-19, 23-24",
+        "active": 20,
+        "activeRange": "5-24",
         "recovery": 14,
-        "total": 260
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -37,
@@ -1628,10 +1628,10 @@
       "damage": 1600,
       "frameData": {
         "startup": 6,
-        "active": 241,
-        "activeRange": "6-246-9, 11-12, 19-20, 23-24",
+        "active": 19,
+        "activeRange": "6-24",
         "recovery": 19,
-        "total": 266
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -48,
@@ -1704,10 +1704,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 6,
-        "active": 381,
-        "activeRange": "6-386-9, 14-17,35-38",
+        "active": 33,
+        "activeRange": "6-38",
         "recovery": 12,
-        "total": 399
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1729,10 +1729,10 @@
       "damage": 900,
       "frameData": {
         "startup": 6,
-        "active": 381,
-        "activeRange": "6-386-9, 14-17,35-38",
+        "active": 33,
+        "activeRange": "6-38",
         "recovery": 7,
-        "total": 394
+        "total": 46
       },
       "frameAdvantage": {
         "onBlock": null,

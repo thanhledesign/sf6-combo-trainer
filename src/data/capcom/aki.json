@@ -2,7 +2,7 @@
   "id": "aki",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:30:07.154Z",
+  "scrapedAt": "2026-11-22T00:09:29.364Z",
   "source": "https://www.streetfighter.com/6/character/aki",
   "character": {
     "bio": "A poison-wielding apprentice of F.A.N.G, the former Shadaloo officer.Enchanted by the power of toxins, nothing brings her more joy than testing them on a new target—other than attention from her “master,” that is.",
@@ -531,10 +531,10 @@
       "damage": 800,
       "frameData": {
         "startup": 14,
-        "active": 2401,
-        "activeRange": "14-2414-16, 22-24",
+        "active": 11,
+        "activeRange": "14-24",
         "recovery": 16,
-        "total": 2431
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": 2,
@@ -801,10 +801,10 @@
       "damage": 800,
       "frameData": {
         "startup": 13,
-        "active": 3801,
-        "activeRange": "13-3813-15, 30-38",
+        "active": 26,
+        "activeRange": "13-38",
         "recovery": 13,
-        "total": 3827
+        "total": 52
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -935,10 +935,10 @@
       "damage": 800,
       "frameData": {
         "startup": 24,
-        "active": 4501,
-        "activeRange": "24-4524-25, 31-32, 37-38, 44-45",
+        "active": 22,
+        "activeRange": "24-45",
         "recovery": 18,
-        "total": 4543
+        "total": 64
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -961,10 +961,10 @@
       "damage": 900,
       "frameData": {
         "startup": 28,
-        "active": 4901,
-        "activeRange": "28-4928-29, 35-36, 41-42, 48-49",
+        "active": 22,
+        "activeRange": "28-49",
         "recovery": 18,
-        "total": 4947
+        "total": 68
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -987,10 +987,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 33,
-        "active": 5401,
-        "activeRange": "33-5433-34, 40-41, 46-47, 53-54",
+        "active": 22,
+        "activeRange": "33-54",
         "recovery": 18,
-        "total": 5452
+        "total": 73
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1013,10 +1013,10 @@
       "damage": 1600,
       "frameData": {
         "startup": 28,
-        "active": 4901,
-        "activeRange": "28-4928-30, 35-36, 41-42, 48-49",
+        "active": 22,
+        "activeRange": "28-49",
         "recovery": 18,
-        "total": 4947
+        "total": 68
       },
       "frameAdvantage": {
         "onBlock": 2,
@@ -1190,10 +1190,10 @@
       "damage": 600,
       "frameData": {
         "startup": 11,
-        "active": 2501,
-        "activeRange": "11-2511-13, 23-25",
+        "active": 15,
+        "activeRange": "11-25",
         "recovery": 20,
-        "total": 2532
+        "total": 46
       },
       "frameAdvantage": {
         "onBlock": -3,

@@ -2,7 +2,7 @@
   "id": "akuma",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:30:39.383Z",
+  "scrapedAt": "2026-11-22T00:10:01.588Z",
   "source": "https://www.streetfighter.com/6/character/gouki_akuma",
   "character": {
     "bio": "A demon of combat that has welcomed the Satsui no Hado into his being in his quest to become the ultimate master of the fist.",
@@ -151,10 +151,10 @@
       "damage": 800,
       "frameData": {
         "startup": 13,
-        "active": 2701,
-        "activeRange": "13-2713-15, 24-27",
+        "active": 15,
+        "activeRange": "13-27",
         "recovery": 15,
-        "total": 2729
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": 3,
@@ -481,10 +481,10 @@
       "damage": 600,
       "frameData": {
         "startup": 20,
-        "active": null,
-        "activeRange": "20-2420, 22-24",
+        "active": 5,
+        "activeRange": "20-24",
         "recovery": 18,
-        "total": null
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1053,8 +1053,9 @@
         "startup": 5,
         "active": 10,
         "activeRange": "5-14",
-        "recovery": 2112,
-        "total": 2127
+        "recovery": 21,
+        "landingRecovery": 12,
+        "total": 36
       },
       "frameAdvantage": {
         "onBlock": -23,
@@ -1079,8 +1080,9 @@
         "startup": 6,
         "active": 10,
         "activeRange": "6-15",
-        "recovery": 3012,
-        "total": 3028
+        "recovery": 30,
+        "landingRecovery": 12,
+        "total": 46
       },
       "frameAdvantage": {
         "onBlock": -30,
@@ -1105,8 +1107,9 @@
         "startup": 7,
         "active": 11,
         "activeRange": "7-17",
-        "recovery": 3515,
-        "total": 3533
+        "recovery": 35,
+        "landingRecovery": 15,
+        "total": 53
       },
       "frameAdvantage": {
         "onBlock": -36,
@@ -1131,8 +1134,9 @@
         "startup": 6,
         "active": 11,
         "activeRange": "6-16",
-        "recovery": 3715,
-        "total": 3732
+        "recovery": 37,
+        "landingRecovery": 15,
+        "total": 54
       },
       "frameAdvantage": {
         "onBlock": -39,
@@ -1179,10 +1183,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 11,
-        "active": 2801,
-        "activeRange": "11-2811-12, 26-28",
+        "active": 18,
+        "activeRange": "11-28",
         "recovery": 30,
-        "total": 2842
+        "total": 59
       },
       "frameAdvantage": {
         "onBlock": -13,
@@ -1204,10 +1208,11 @@
       "damage": 1600,
       "frameData": {
         "startup": 7,
-        "active": 511,
-        "activeRange": "7-517-9, 16-18, 28-30, 49-51",
-        "recovery": 2312,
-        "total": 2830
+        "active": 45,
+        "activeRange": "7-51",
+        "recovery": 23,
+        "landingRecovery": 12,
+        "total": 75
       },
       "frameAdvantage": {
         "onBlock": -59,
@@ -1229,10 +1234,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 13,
-        "active": 3701,
-        "activeRange": "13-3713-14, 19-20, 25-26, 30-31, 36-37",
+        "active": 25,
+        "activeRange": "13-37",
         "recovery": 26,
-        "total": 3740
+        "total": 64
       },
       "frameAdvantage": {
         "onBlock": -17,
@@ -1255,10 +1260,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 2601,
-        "activeRange": "11-2611-12, 18-19, 25-26",
+        "active": 16,
+        "activeRange": "11-26",
         "recovery": 16,
-        "total": 2628
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1280,10 +1285,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 11,
-        "active": 2801,
-        "activeRange": "11-2811-12, 14-16, 18-20, 22-24, 27-28",
+        "active": 18,
+        "activeRange": "11-28",
         "recovery": 16,
-        "total": 2828
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1459,10 +1464,10 @@
       "damage": 700,
       "frameData": {
         "startup": 7,
-        "active": 171,
-        "activeRange": "7-177-10, 15-17",
+        "active": 11,
+        "activeRange": "7-17",
         "recovery": 25,
-        "total": 203
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": -18,
@@ -1711,10 +1716,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 5,
-        "active": 231,
-        "activeRange": "5-235-6, 9-11, 14-16, 18-20, 22-23",
+        "active": 19,
+        "activeRange": "5-23",
         "recovery": 10,
-        "total": 246
+        "total": 34
       },
       "frameAdvantage": {
         "onBlock": null,
