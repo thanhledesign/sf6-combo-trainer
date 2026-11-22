@@ -1022,10 +1022,10 @@
       "damage": 1900,
       "frameData": {
         "startup": 47,
-        "active": 11001,
-        "activeRange": "47- 11047-106, 110",
+        "active": 64,
+        "activeRange": "47-110",
         "recovery": 59,
-        "total": 11107
+        "total": 170
       },
       "frameAdvantage": {
         "onBlock": -1,

@@ -1129,10 +1129,10 @@
       "damage": 700,
       "frameData": {
         "startup": 11,
-        "active": 4601,
-        "activeRange": "11- 4611-12, 18-19, 24-25, 31-32, 46",
+        "active": 36,
+        "activeRange": "11-46",
         "recovery": 25,
-        "total": 4637
+        "total": 72
       },
       "frameAdvantage": {
         "onBlock": -13,

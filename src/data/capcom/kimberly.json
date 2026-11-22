@@ -1371,10 +1371,10 @@
       "damage": 540,
       "frameData": {
         "startup": 24,
-        "active": null,
-        "activeRange": "24- 45*24-25, 45*",
+        "active": 22,
+        "activeRange": "24-45",
         "recovery": 28,
-        "total": null
+        "total": 74
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1397,10 +1397,10 @@
       "damage": 540,
       "frameData": {
         "startup": 17,
-        "active": 3801,
-        "activeRange": "17- 3817-18, 38",
+        "active": 22,
+        "activeRange": "17-38",
         "recovery": 28,
-        "total": 3846
+        "total": 67
       },
       "frameAdvantage": {
         "onBlock": -12,

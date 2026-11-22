@@ -628,6 +628,7 @@ async function scrapeCharacter(page, charId, bootstrap) {
 // (window 6-15, hits 6-8 and 9-15) or "8-178, 9, 10, 11, 12-17". Keep only the leading window.
 export function cleanActive(raw) {
   if (!raw) return raw;
+  raw = raw.replace(/^(\d+)\s*-\s*/, '$1-'); // some cells read "11- 4611-12, ..."
   const m = raw.match(/^(\d+)-(\d+)/);
   if (!m) return raw;
   const a = m[1], rest = raw.slice(a.length + 1), digits = rest.match(/^\d+/)[0];
