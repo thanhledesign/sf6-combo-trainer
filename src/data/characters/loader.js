@@ -8,6 +8,7 @@
 // Capcom is the source of truth for objective fields. Annotations provide
 // the tactical narrative. Overrides patch Capcom errors.
 
+import { deriveInputs } from '../deriveInput';
 import { USE_CAPCOM_URL_FALLBACK } from '../videoConfig';
 
 const capcomFiles      = import.meta.glob('../capcom/*.json',      { eager: true, import: 'default' });
@@ -94,6 +95,10 @@ export function loadCharacter(id) {
   for (const moveId of moveIds) {
     moves[moveId] = mergeMove(c.moves?.[moveId], o.moves?.[moveId], a.moves?.[moveId], videos[id]?.moves?.[moveId]);
   }
+
+  // Moves Capcom lists with no command get one derived from a sibling/standard command (see deriveInput.js).
+  const derived = deriveInputs(moves);
+  for (const [moveId, input] of Object.entries(derived)) moves[moveId] = { ...moves[moveId], derivedInput: input };
 
   return {
     character: mergeCharacter(a.character, c.character),
