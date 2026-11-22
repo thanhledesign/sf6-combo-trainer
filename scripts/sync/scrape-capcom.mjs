@@ -485,7 +485,7 @@ async function scrapeCharacter(page, charId, bootstrap) {
 
   if (process.env.SYNC_DIAG) {
     const odd = rows.filter((r) => [r.startup, r.recovery].some((v) => v && !/^\d+$/.test(v.trim())));
-    console.log('DIAG rawodd ' + charId + ' ' + odd.length + ' ' + JSON.stringify(odd.slice(0, 14).map((r) => [r.displayName, r.startup, r.active, r.recovery])));
+    console.log('DIAG rawodd ' + charId + ' ' + odd.length + ' ' + JSON.stringify(odd.filter((r) => /(\d\D+\d)/.test(r.recovery || '') || /shoryuken|tatsu/i.test(r.displayName)).slice(0, 25).map((r) => [r.displayName, r.startup, r.active, r.recovery])));
   }
 
   const SECTION_TO_CATEGORY = {
