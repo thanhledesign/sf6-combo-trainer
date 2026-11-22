@@ -483,6 +483,11 @@ async function scrapeCharacter(page, charId, bootstrap) {
     return out;
   });
 
+  if (process.env.SYNC_DIAG) {
+    const odd = rows.filter((r) => [r.startup, r.recovery].some((v) => v && !/^\d+$/.test(v.trim())));
+    console.log('DIAG rawodd ' + charId + ' ' + odd.length + ' ' + JSON.stringify(odd.slice(0, 14).map((r) => [r.displayName, r.startup, r.active, r.recovery])));
+  }
+
   const SECTION_TO_CATEGORY = {
     'normal moves': 'normal',
     'unique moves': 'unique',
