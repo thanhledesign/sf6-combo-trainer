@@ -2,7 +2,7 @@
   "id": "bison",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:33:07.652Z",
+  "scrapedAt": "2026-11-22T00:12:29.722Z",
   "source": "https://www.streetfighter.com/6/character/vega_mbison",
   "character": {
     "bio": "A man who resembles M. Bison, the leader of Shadaloo, who was believed to be dead. He has lost his memories, but has violent tendencies. He appears in locations related to Shadaloo, guided by Psycho Power.",
@@ -830,10 +830,10 @@
       "damage": 800,
       "frameData": {
         "startup": 13,
-        "active": 1701,
-        "activeRange": "13-1713-14, 16-17",
+        "active": 5,
+        "activeRange": "13-17",
         "recovery": 20,
-        "total": 1734
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -855,10 +855,10 @@
       "damage": 900,
       "frameData": {
         "startup": 17,
-        "active": 2101,
-        "activeRange": "17-2117-18, 20-21",
+        "active": 5,
+        "activeRange": "17-21",
         "recovery": 20,
-        "total": 2138
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -880,10 +880,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 22,
-        "active": 2601,
-        "activeRange": "22-2622-23, 25-26",
+        "active": 5,
+        "activeRange": "22-26",
         "recovery": 20,
-        "total": 2643
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -905,10 +905,10 @@
       "damage": 800,
       "frameData": {
         "startup": 17,
-        "active": 4101,
-        "activeRange": "17-4117-18, 20-21, 39-41",
+        "active": 25,
+        "activeRange": "17-41",
         "recovery": 28,
-        "total": 4146
+        "total": 70
       },
       "frameAdvantage": {
         "onBlock": -15,
@@ -931,10 +931,10 @@
       "damage": 700,
       "frameData": {
         "startup": 13,
-        "active": 2901,
-        "activeRange": "13-2913-14, 25-29",
+        "active": 17,
+        "activeRange": "13-29",
         "recovery": 25,
-        "total": 2939
+        "total": 55
       },
       "frameAdvantage": {
         "onBlock": -14,
@@ -954,10 +954,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 13,
-        "active": 2901,
-        "activeRange": "13-2913-14, 25-29",
+        "active": 17,
+        "activeRange": "13-29",
         "recovery": 25,
-        "total": 2939
+        "total": 55
       },
       "frameAdvantage": {
         "onBlock": 9,
@@ -981,10 +981,10 @@
       "damage": 800,
       "frameData": {
         "startup": 17,
-        "active": 3301,
-        "activeRange": "17-3317-18, 29-33",
+        "active": 17,
+        "activeRange": "17-33",
         "recovery": 26,
-        "total": 3344
+        "total": 60
       },
       "frameAdvantage": {
         "onBlock": -15,
@@ -1004,10 +1004,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 17,
-        "active": 3301,
-        "activeRange": "17-3317-18, 29-33",
+        "active": 17,
+        "activeRange": "17-33",
         "recovery": 26,
-        "total": 3344
+        "total": 60
       },
       "frameAdvantage": {
         "onBlock": 9,
@@ -1031,10 +1031,10 @@
       "damage": 900,
       "frameData": {
         "startup": 22,
-        "active": 3901,
-        "activeRange": "22-3922-24, 35-39",
+        "active": 18,
+        "activeRange": "22-39",
         "recovery": 26,
-        "total": 3949
+        "total": 66
       },
       "frameAdvantage": {
         "onBlock": -15,
@@ -1054,10 +1054,10 @@
       "damage": 1500,
       "frameData": {
         "startup": 22,
-        "active": 3901,
-        "activeRange": "22-3922-24, 35-39",
+        "active": 18,
+        "activeRange": "22-39",
         "recovery": 26,
-        "total": 3949
+        "total": 66
       },
       "frameAdvantage": {
         "onBlock": 9,
@@ -1081,10 +1081,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 14,
-        "active": 6301,
-        "activeRange": "14-6314-15, 35-37, 61-63",
+        "active": 50,
+        "activeRange": "14-63",
         "recovery": 44,
-        "total": 6359
+        "total": 108
       },
       "frameAdvantage": {
         "onBlock": -25,
@@ -1104,10 +1104,10 @@
       "damage": 1800,
       "frameData": {
         "startup": 14,
-        "active": 6301,
-        "activeRange": "14-6314-15, 35-37, 61-63",
+        "active": 50,
+        "activeRange": "14-63",
         "recovery": 44,
-        "total": 6359
+        "total": 108
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1425,10 +1425,10 @@
       "damage": 2000,
       "frameData": {
         "startup": 10,
-        "active": 5101,
-        "activeRange": "10-5110-11, 13-15, 47-48, 50-51",
+        "active": 42,
+        "activeRange": "10-51",
         "recovery": 62,
-        "total": 5173
+        "total": 114
       },
       "frameAdvantage": {
         "onBlock": -41,

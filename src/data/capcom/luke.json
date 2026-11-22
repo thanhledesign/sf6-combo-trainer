@@ -2,7 +2,7 @@
   "id": "luke",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:45:26.079Z",
+  "scrapedAt": "2026-11-22T00:24:17.848Z",
   "source": "https://www.streetfighter.com/6/character/luke",
   "character": {
     "bio": "A contractor for a PMC, Luke uses his elite military background to teach mixed martial arts. His days off are spent eating junk food, playing video games, and fighting, but make no mistake—Luke plays to win.",
@@ -1385,8 +1385,9 @@
         "startup": 5,
         "active": 10,
         "activeRange": "5-14",
-        "recovery": 2212,
-        "total": 2227
+        "recovery": 22,
+        "landingRecovery": 12,
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -27,
@@ -1411,8 +1412,9 @@
         "startup": 6,
         "active": 10,
         "activeRange": "6-15",
-        "recovery": 2412,
-        "total": 2428
+        "recovery": 24,
+        "landingRecovery": 12,
+        "total": 40
       },
       "frameAdvantage": {
         "onBlock": -29,
@@ -1437,8 +1439,9 @@
         "startup": 9,
         "active": 10,
         "activeRange": "9-18",
-        "recovery": 2515,
-        "total": 2534
+        "recovery": 25,
+        "landingRecovery": 15,
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -33,
@@ -1461,10 +1464,11 @@
       "damage": 1400,
       "frameData": {
         "startup": 6,
-        "active": 151,
-        "activeRange": "6-156-8, 9-15",
-        "recovery": 3515,
-        "total": 3672
+        "active": 10,
+        "activeRange": "6-15",
+        "recovery": 35,
+        "landingRecovery": 15,
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -1489,8 +1493,9 @@
         "startup": 16,
         "active": 3,
         "activeRange": "16-18",
-        "recovery": 1416,
-        "total": 1435
+        "recovery": 14,
+        "landingRecovery": 16,
+        "total": 33
       },
       "frameAdvantage": {
         "onBlock": null,

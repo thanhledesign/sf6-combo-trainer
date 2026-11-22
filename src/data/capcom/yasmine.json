@@ -2,7 +2,7 @@
   "id": "yasmine",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:50:56.864Z",
+  "scrapedAt": "2026-11-22T00:29:44.414Z",
   "source": "https://www.streetfighter.com/6/character/yasmine",
   "character": {
     "bio": "A high-schooler who became a fighter tofind her lost brother. She is a shy andgentle soul, but beams with confidencein fights, where she uses her Lolo's moves.",
@@ -75,10 +75,10 @@
       "damage": 600,
       "frameData": {
         "startup": 6,
-        "active": 171,
-        "activeRange": "6-176-7, 16-17",
+        "active": 12,
+        "activeRange": "6-17",
         "recovery": 18,
-        "total": 195
+        "total": 36
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -123,10 +123,10 @@
       "damage": 800,
       "frameData": {
         "startup": 9,
-        "active": 281,
-        "activeRange": "9-289-10, 15-16, 27-28",
+        "active": 20,
+        "activeRange": "9-28",
         "recovery": 15,
-        "total": 305
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -672,10 +672,10 @@
       "damage": 300,
       "frameData": {
         "startup": 13,
-        "active": 3301,
-        "activeRange": "13-3313-14, 21-22, 32-33",
+        "active": 21,
+        "activeRange": "13-33",
         "recovery": 24,
-        "total": 3338
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -766,10 +766,10 @@
       "damage": 300,
       "frameData": {
         "startup": 13,
-        "active": 3301,
-        "activeRange": "13-3313-14, 21-22, 32-33",
+        "active": 21,
+        "activeRange": "13-33",
         "recovery": 24,
-        "total": 3338
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -860,10 +860,10 @@
       "damage": 150,
       "frameData": {
         "startup": 13,
-        "active": 3301,
-        "activeRange": "13-3313-14, 21-22, 32-33",
+        "active": 21,
+        "activeRange": "13-33",
         "recovery": 24,
-        "total": 3338
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -954,10 +954,10 @@
       "damage": 300,
       "frameData": {
         "startup": 13,
-        "active": 3301,
-        "activeRange": "13-3313-14, 21-22, 32-33",
+        "active": 21,
+        "activeRange": "13-33",
         "recovery": 24,
-        "total": 3338
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1022,10 +1022,10 @@
       "damage": 1900,
       "frameData": {
         "startup": 47,
-        "active": 11001,
-        "activeRange": "47- 11047-106, 110",
+        "active": 64,
+        "activeRange": "47-110",
         "recovery": 59,
-        "total": 11107
+        "total": 170
       },
       "frameAdvantage": {
         "onBlock": -1,
@@ -1353,10 +1353,11 @@
       "damage": 1000,
       "frameData": {
         "startup": 5,
-        "active": 141,
-        "activeRange": "5-145-8, 13-14",
-        "recovery": 2712,
-        "total": 2858
+        "active": 10,
+        "activeRange": "5-14",
+        "recovery": 27,
+        "landingRecovery": 12,
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -29,
@@ -1378,10 +1379,11 @@
       "damage": 1200,
       "frameData": {
         "startup": 6,
-        "active": 151,
-        "activeRange": "6-156-9, 14-15",
-        "recovery": 2712,
-        "total": 2869
+        "active": 10,
+        "activeRange": "6-15",
+        "recovery": 27,
+        "landingRecovery": 12,
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": -29,
@@ -1403,10 +1405,11 @@
       "damage": 1300,
       "frameData": {
         "startup": 7,
-        "active": 161,
-        "activeRange": "7-167-10, 15-16",
-        "recovery": 2712,
-        "total": 2880
+        "active": 10,
+        "activeRange": "7-16",
+        "recovery": 27,
+        "landingRecovery": 12,
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -32,
@@ -1428,10 +1431,11 @@
       "damage": 1600,
       "frameData": {
         "startup": 6,
-        "active": 151,
-        "activeRange": "6-156-9, 14-15",
-        "recovery": 2719,
-        "total": 2876
+        "active": 10,
+        "activeRange": "6-15",
+        "recovery": 27,
+        "landingRecovery": 19,
+        "total": 43
       },
       "frameAdvantage": {
         "onBlock": -40,

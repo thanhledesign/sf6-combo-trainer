@@ -2,7 +2,7 @@
   "id": "mai",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:46:05.120Z",
+  "scrapedAt": "2026-11-22T00:24:57.024Z",
   "source": "https://www.streetfighter.com/6/character/mai",
   "character": {
     "bio": "The successor of Shiranui-style ninja arts. A charming kunoichi who is as dedicated to love as she is to training. Loves cooking, Japanese dressmaking, flower arrangement, and traditional Japanese dance.",
@@ -277,10 +277,10 @@
       "damage": 800,
       "frameData": {
         "startup": 10,
-        "active": 2201,
-        "activeRange": "10-2210-11, 20-22",
+        "active": 13,
+        "activeRange": "10-22",
         "recovery": 19,
-        "total": 2230
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1027,8 +1027,9 @@
         "startup": 5,
         "active": 18,
         "activeRange": "5-22",
-        "recovery": 1515,
-        "total": 1538
+        "recovery": 15,
+        "landingRecovery": 15,
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -29,
@@ -1049,8 +1050,9 @@
         "startup": 5,
         "active": 18,
         "activeRange": "5-22",
-        "recovery": 1515,
-        "total": 1538
+        "recovery": 15,
+        "landingRecovery": 15,
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -29,
@@ -1075,8 +1077,9 @@
         "startup": 6,
         "active": 18,
         "activeRange": "6-23",
-        "recovery": 1415,
-        "total": 1439
+        "recovery": 14,
+        "landingRecovery": 15,
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -28,
@@ -1097,8 +1100,9 @@
         "startup": 6,
         "active": 19,
         "activeRange": "6-24",
-        "recovery": 1315,
-        "total": 1340
+        "recovery": 13,
+        "landingRecovery": 15,
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -28,
@@ -1123,8 +1127,9 @@
         "startup": 7,
         "active": 18,
         "activeRange": "7-24",
-        "recovery": 1415,
-        "total": 1440
+        "recovery": 14,
+        "landingRecovery": 15,
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -31,
@@ -1145,8 +1150,9 @@
         "startup": 7,
         "active": 18,
         "activeRange": "7-24",
-        "recovery": 1415,
-        "total": 1440
+        "recovery": 14,
+        "landingRecovery": 15,
+        "total": 39
       },
       "frameAdvantage": {
         "onBlock": -31,
@@ -1171,8 +1177,9 @@
         "startup": 6,
         "active": 17,
         "activeRange": "6-22",
-        "recovery": 1916,
-        "total": 1939
+        "recovery": 19,
+        "landingRecovery": 16,
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -1193,8 +1200,9 @@
         "startup": 6,
         "active": 18,
         "activeRange": "6-23",
-        "recovery": 1816,
-        "total": 1840
+        "recovery": 18,
+        "landingRecovery": 16,
+        "total": 42
       },
       "frameAdvantage": {
         "onBlock": -40,
@@ -1267,10 +1275,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 14,
-        "active": 3101,
-        "activeRange": "14-3114-15, 25-31",
+        "active": 18,
+        "activeRange": "14-31",
         "recovery": 16,
-        "total": 3131
+        "total": 48
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1289,10 +1297,10 @@
       "damage": 1100,
       "frameData": {
         "startup": 14,
-        "active": 3101,
-        "activeRange": "14-3114-15, 25-31",
+        "active": 18,
+        "activeRange": "14-31",
         "recovery": 16,
-        "total": 3131
+        "total": 48
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1315,10 +1323,10 @@
       "damage": 800,
       "frameData": {
         "startup": 15,
-        "active": 3601,
-        "activeRange": "15-3615-17, 27-36",
+        "active": 22,
+        "activeRange": "15-36",
         "recovery": 12,
-        "total": 3628
+        "total": 49
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1337,10 +1345,10 @@
       "damage": 900,
       "frameData": {
         "startup": 14,
-        "active": 3601,
-        "activeRange": "14-3614-17, 27-36",
+        "active": 23,
+        "activeRange": "14-36",
         "recovery": 12,
-        "total": 3627
+        "total": 49
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -1363,10 +1371,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 16,
-        "active": 4601,
-        "activeRange": "16-4616-17, 30-34, 42-46",
+        "active": 31,
+        "activeRange": "16-46",
         "recovery": 16,
-        "total": 4633
+        "total": 63
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1385,10 +1393,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 16,
-        "active": 4601,
-        "activeRange": "16-4616-17, 30-34, 42-46",
+        "active": 31,
+        "activeRange": "16-46",
         "recovery": 16,
-        "total": 4633
+        "total": 63
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1412,10 +1420,10 @@
       "damage": 800,
       "frameData": {
         "startup": 10,
-        "active": 3901,
-        "activeRange": "10-3910-11, 23-39",
+        "active": 30,
+        "activeRange": "10-39",
         "recovery": 16,
-        "total": 3927
+        "total": 56
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1434,10 +1442,10 @@
       "damage": 900,
       "frameData": {
         "startup": 10,
-        "active": 3901,
-        "activeRange": "10-3910-11, 23-39",
+        "active": 30,
+        "activeRange": "10-39",
         "recovery": 16,
-        "total": 3927
+        "total": 56
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1460,10 +1468,10 @@
       "damage": 900,
       "frameData": {
         "startup": 15,
-        "active": 4401,
-        "activeRange": "15-4415-16, 28-44",
+        "active": 30,
+        "activeRange": "15-44",
         "recovery": 20,
-        "total": 4436
+        "total": 65
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1482,10 +1490,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 15,
-        "active": 4401,
-        "activeRange": "15-4415-16, 28-44",
+        "active": 30,
+        "activeRange": "15-44",
         "recovery": 20,
-        "total": 4436
+        "total": 65
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1508,10 +1516,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 18,
-        "active": 4701,
-        "activeRange": "18-4718-19, 31-47",
+        "active": 30,
+        "activeRange": "18-47",
         "recovery": 21,
-        "total": 4740
+        "total": 69
       },
       "frameAdvantage": {
         "onBlock": -13,
@@ -1530,10 +1538,10 @@
       "damage": 1100,
       "frameData": {
         "startup": 18,
-        "active": 4701,
-        "activeRange": "18-4718-19, 31-47",
+        "active": 30,
+        "activeRange": "18-47",
         "recovery": 21,
-        "total": 4740
+        "total": 69
       },
       "frameAdvantage": {
         "onBlock": -13,
@@ -1556,10 +1564,10 @@
       "damage": 800,
       "frameData": {
         "startup": 14,
-        "active": 4501,
-        "activeRange": "14-4514-15, 29-45",
+        "active": 32,
+        "activeRange": "14-45",
         "recovery": 32,
-        "total": 4547
+        "total": 78
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1579,10 +1587,10 @@
       "damage": 900,
       "frameData": {
         "startup": 14,
-        "active": 4501,
-        "activeRange": "14-4514-15, 29-45",
+        "active": 32,
+        "activeRange": "14-45",
         "recovery": 32,
-        "total": 4547
+        "total": 78
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1752,10 +1760,10 @@
       "damage": 2800,
       "frameData": {
         "startup": 7,
-        "active": 421,
-        "activeRange": "7-427-8, 12-13, 26-27, 32-33, 40-42",
+        "active": 36,
+        "activeRange": "7-42",
         "recovery": 26,
-        "total": 454
+        "total": 69
       },
       "frameAdvantage": {
         "onBlock": -24,
@@ -1800,10 +1808,10 @@
       "damage": 2800,
       "frameData": {
         "startup": 3,
-        "active": 221,
-        "activeRange": "3-223-4, 7-8, 11-12, 16-17, 20-22",
+        "active": 20,
+        "activeRange": "3-22",
         "recovery": 24,
-        "total": 248
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1848,10 +1856,10 @@
       "damage": 4000,
       "frameData": {
         "startup": 10,
-        "active": 4801,
-        "activeRange": "10-4810-11, 16-17, 33-36, 45-48",
+        "active": 39,
+        "activeRange": "10-48",
         "recovery": 46,
-        "total": 4857
+        "total": 95
       },
       "frameAdvantage": {
         "onBlock": -33,
@@ -1874,10 +1882,10 @@
       "damage": 4500,
       "frameData": {
         "startup": 10,
-        "active": 4801,
-        "activeRange": "10-4810-11, 16-17, 33-36, 45-48",
+        "active": 39,
+        "activeRange": "10-48",
         "recovery": 46,
-        "total": 4857
+        "total": 95
       },
       "frameAdvantage": {
         "onBlock": -33,

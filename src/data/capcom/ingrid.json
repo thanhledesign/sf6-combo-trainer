@@ -2,7 +2,7 @@
   "id": "ingrid",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:40:40.286Z",
+  "scrapedAt": "2026-11-22T00:19:40.026Z",
   "source": "https://www.streetfighter.com/6/character/ingrid",
   "character": {
     "bio": "A pretty, mysterious young girl who claimsto travel through parallel worlds. Using asort of crest and code, she manifests powersbeyond the laws of the world. Talks likesomeone beyond her years.",
@@ -150,10 +150,10 @@
       "damage": 800,
       "frameData": {
         "startup": 9,
-        "active": 171,
-        "activeRange": "9-179-13, 15-17",
+        "active": 9,
+        "activeRange": "9-17",
         "recovery": 19,
-        "total": 199
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -645,10 +645,10 @@
       "damage": 600,
       "frameData": {
         "startup": 8,
-        "active": 161,
-        "activeRange": "8-168-10, 13-16",
+        "active": 9,
+        "activeRange": "8-16",
         "recovery": 3,
-        "total": 172
+        "total": 20
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1175,10 +1175,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 13,
-        "active": 4401,
-        "activeRange": "13-4413-17, 35-44",
+        "active": 32,
+        "activeRange": "13-44",
         "recovery": 33,
-        "total": 4447
+        "total": 78
       },
       "frameAdvantage": {
         "onBlock": -23,
@@ -1200,10 +1200,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 27,
-        "active": 5301,
-        "activeRange": "27-5327-29, 34-35, 50-53",
+        "active": 27,
+        "activeRange": "27-53",
         "recovery": 41,
-        "total": 5369
+        "total": 95
       },
       "frameAdvantage": {
         "onBlock": -25,
@@ -1225,10 +1225,10 @@
       "damage": 1600,
       "frameData": {
         "startup": 14,
-        "active": 3501,
-        "activeRange": "14-3514-18, 23-26, 34-35",
+        "active": 22,
+        "activeRange": "14-35",
         "recovery": 21,
-        "total": 3536
+        "total": 57
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1364,10 +1364,10 @@
       "damage": 1900,
       "frameData": {
         "startup": 11,
-        "active": 5001,
-        "activeRange": "11-5011-15, 30-36, 48-50",
+        "active": 40,
+        "activeRange": "11-50",
         "recovery": 79,
-        "total": 5091
+        "total": 130
       },
       "frameAdvantage": {
         "onBlock": -99,
@@ -1386,10 +1386,10 @@
       "damage": 2300,
       "frameData": {
         "startup": 11,
-        "active": 5001,
-        "activeRange": "11-5011-15, 30-36, 48-50",
+        "active": 40,
+        "activeRange": "11-50",
         "recovery": 79,
-        "total": 5091
+        "total": 130
       },
       "frameAdvantage": {
         "onBlock": -99,
@@ -1408,10 +1408,10 @@
       "damage": 2700,
       "frameData": {
         "startup": 11,
-        "active": 5001,
-        "activeRange": "11-5011-15, 30-36, 48-50",
+        "active": 40,
+        "activeRange": "11-50",
         "recovery": 79,
-        "total": 5091
+        "total": 130
       },
       "frameAdvantage": {
         "onBlock": -99,

@@ -2,7 +2,7 @@
   "id": "manon",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:46:54.475Z",
+  "scrapedAt": "2026-11-22T00:25:46.383Z",
   "source": "https://www.streetfighter.com/6/character/manon",
   "character": {
     "bio": "A super model and world champion judoka, Manon is an idealist, forever seeking self-improvement in the pursuit of beauty. She struts the catwalk of street fighting to become the world's strongest model.",
@@ -742,10 +742,10 @@
       "damage": 900,
       "frameData": {
         "startup": 9,
-        "active": 151,
-        "activeRange": "9-159-11, 14-15",
+        "active": 7,
+        "activeRange": "9-15",
         "recovery": 29,
-        "total": 189
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -15,
@@ -768,10 +768,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 11,
-        "active": 1901,
-        "activeRange": "11-1911-13, 17-19",
+        "active": 9,
+        "activeRange": "11-19",
         "recovery": 27,
-        "total": 1939
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": -14,
@@ -794,10 +794,10 @@
       "damage": 800,
       "frameData": {
         "startup": 14,
-        "active": 2201,
-        "activeRange": "14-2214-16, 20-22",
+        "active": 9,
+        "activeRange": "14-22",
         "recovery": 24,
-        "total": 2239
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": -11,
@@ -820,10 +820,10 @@
       "damage": 800,
       "frameData": {
         "startup": 8,
-        "active": 161,
-        "activeRange": "8-168-11, 14-16",
+        "active": 9,
+        "activeRange": "8-16",
         "recovery": 30,
-        "total": 199
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": -19,
@@ -846,10 +846,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 16,
-        "active": 3101,
-        "activeRange": "16-3116-17, 28-31",
+        "active": 16,
+        "activeRange": "16-31",
         "recovery": 36,
-        "total": 3153
+        "total": 68
       },
       "frameAdvantage": {
         "onBlock": -24,
@@ -870,10 +870,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 16,
-        "active": 3901,
-        "activeRange": "16-3916-19, 34-39",
+        "active": 24,
+        "activeRange": "16-39",
         "recovery": 22,
-        "total": 3939
+        "total": 62
       },
       "frameAdvantage": {
         "onBlock": -13,
@@ -1113,10 +1113,11 @@
       "damage": 2800,
       "frameData": {
         "startup": 7,
-        "active": 801,
-        "activeRange": "7-807-9,21-26,72-80",
-        "recovery": 3834,
-        "total": 4642
+        "active": 74,
+        "activeRange": "7-80",
+        "recovery": 38,
+        "landingRecovery": 34,
+        "total": 119
       },
       "frameAdvantage": {
         "onBlock": -61,

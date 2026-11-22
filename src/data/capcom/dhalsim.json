@@ -2,7 +2,7 @@
   "id": "dhalsim",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:37:18.427Z",
+  "scrapedAt": "2026-11-22T00:16:34.241Z",
   "source": "https://www.streetfighter.com/6/character/dhalsim",
   "character": {
     "bio": "A monk and yoga master from India who has served as a guide for countless suffering souls. Prefers to avoid conflict when possible, but his innate hatred of evil compels him to dispense stern justice.",
@@ -2018,10 +2018,10 @@
       "damage": 500,
       "frameData": {
         "startup": 20,
-        "active": 3101,
-        "activeRange": "20-3120-22, 29-31",
+        "active": 12,
+        "activeRange": "20-31",
         "recovery": 26,
-        "total": 3147
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -6,
@@ -2041,10 +2041,10 @@
       "damage": 500,
       "frameData": {
         "startup": 18,
-        "active": 2901,
-        "activeRange": "18-2918-20, 27-29",
+        "active": 12,
+        "activeRange": "18-29",
         "recovery": 26,
-        "total": 2945
+        "total": 56
       },
       "frameAdvantage": {
         "onBlock": -6,

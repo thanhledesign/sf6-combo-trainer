@@ -2,7 +2,7 @@
   "id": "marisa",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:47:33.801Z",
+  "scrapedAt": "2026-11-22T00:26:27.252Z",
   "source": "https://www.streetfighter.com/6/character/marisa",
   "character": {
     "bio": "An up-and-coming jewelry designer from Italy who claims ancestry to ancient Greek warriors. As a child, she was inspired by a vision of the Colosseum in its prime. Today, she seeks glory with a smile—and an eye for beauty.",
@@ -1869,10 +1869,10 @@
       "damage": 3000,
       "frameData": {
         "startup": 9,
-        "active": 511,
-        "activeRange": "9-519-16,49-51",
+        "active": 43,
+        "activeRange": "9-51",
         "recovery": 59,
-        "total": 579
+        "total": 111
       },
       "frameAdvantage": {
         "onBlock": -44,

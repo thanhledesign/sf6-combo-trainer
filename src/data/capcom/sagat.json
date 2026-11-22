@@ -2,7 +2,7 @@
   "id": "sagat",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:49:33.604Z",
+  "scrapedAt": "2026-11-22T00:28:28.709Z",
   "source": "https://www.streetfighter.com/6/character/sagat",
   "character": {
     "bio": "The Emperor of Muay Thai. He was once one ofthe highest ranking members of Shadaloo, buthas since left the criminal organization.He currently lives deep in the mountains,focusing only on his training.",
@@ -807,8 +807,9 @@
         "startup": 5,
         "active": 10,
         "activeRange": "5-14",
-        "recovery": 3512,
-        "total": 3527
+        "recovery": 35,
+        "landingRecovery": 12,
+        "total": 50
       },
       "frameAdvantage": {
         "onBlock": -37,
@@ -833,8 +834,9 @@
         "startup": 10,
         "active": 10,
         "activeRange": "10-19",
-        "recovery": 4015,
-        "total": 4035
+        "recovery": 40,
+        "landingRecovery": 15,
+        "total": 60
       },
       "frameAdvantage": {
         "onBlock": -45,
@@ -859,8 +861,9 @@
         "startup": 18,
         "active": 10,
         "activeRange": "18-27",
-        "recovery": 4015,
-        "total": 4043
+        "recovery": 40,
+        "landingRecovery": 15,
+        "total": 68
       },
       "frameAdvantage": {
         "onBlock": -45,
@@ -882,8 +885,9 @@
         "startup": 35,
         "active": 10,
         "activeRange": "35-44",
-        "recovery": 4015,
-        "total": 4060
+        "recovery": 40,
+        "landingRecovery": 15,
+        "total": 85
       },
       "frameAdvantage": {
         "onBlock": -45,
@@ -908,8 +912,9 @@
         "startup": 8,
         "active": 12,
         "activeRange": "8-19",
-        "recovery": 3815,
-        "total": 3835
+        "recovery": 38,
+        "landingRecovery": 15,
+        "total": 58
       },
       "frameAdvantage": {
         "onBlock": -43,
@@ -981,10 +986,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 22,
-        "active": 4001,
-        "activeRange": "22-4022-25, 30-40",
+        "active": 19,
+        "activeRange": "22-40",
         "recovery": 18,
-        "total": 4041
+        "total": 59
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -1007,10 +1012,10 @@
       "damage": 1600,
       "frameData": {
         "startup": 19,
-        "active": 3601,
-        "activeRange": "19-3619-21, 26-36",
+        "active": 18,
+        "activeRange": "19-36",
         "recovery": 18,
-        "total": 3638
+        "total": 55
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -1085,10 +1090,10 @@
       "damage": 500,
       "frameData": {
         "startup": 28,
-        "active": 3501,
-        "activeRange": "28-3528-30, 32-35",
+        "active": 8,
+        "activeRange": "28-35",
         "recovery": 20,
-        "total": 3549
+        "total": 56
       },
       "frameAdvantage": {
         "onBlock": -3,
@@ -1111,10 +1116,10 @@
       "damage": 500,
       "frameData": {
         "startup": 23,
-        "active": 3001,
-        "activeRange": "23-3023-25, 27-30",
+        "active": 8,
+        "activeRange": "23-30",
         "recovery": 20,
-        "total": 3044
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": -3,

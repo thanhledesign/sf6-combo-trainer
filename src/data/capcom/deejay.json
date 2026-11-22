@@ -2,7 +2,7 @@
   "id": "deejay",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:36:37.759Z",
+  "scrapedAt": "2026-11-22T00:15:44.854Z",
   "source": "https://www.streetfighter.com/6/character/deejay",
   "character": {
     "bio": "A globally popular dance music superstar, Dee Jay is always ready to have a good time. With a burning love for music and fighting, this Jamaican sensation drives audiences wild with hot new songs and stylish moves.",
@@ -530,10 +530,10 @@
       "damage": 800,
       "frameData": {
         "startup": 7,
-        "active": 121,
-        "activeRange": "7-127-8,9-12",
+        "active": 6,
+        "activeRange": "7-12",
         "recovery": 20,
-        "total": 148
+        "total": 33
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -910,10 +910,11 @@
       "damage": 1100,
       "frameData": {
         "startup": 6,
-        "active": 221,
-        "activeRange": "6-226-9, 19-22",
-        "recovery": 2210,
-        "total": 2437
+        "active": 17,
+        "activeRange": "6-22",
+        "recovery": 22,
+        "landingRecovery": 10,
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -32,
@@ -935,10 +936,11 @@
       "damage": 1300,
       "frameData": {
         "startup": 5,
-        "active": 331,
-        "activeRange": "5-335-9, 17-21, 30-33",
-        "recovery": 1715,
-        "total": 2051
+        "active": 29,
+        "activeRange": "5-33",
+        "recovery": 17,
+        "landingRecovery": 15,
+        "total": 51
       },
       "frameAdvantage": {
         "onBlock": -44,
@@ -960,10 +962,11 @@
       "damage": 1500,
       "frameData": {
         "startup": 6,
-        "active": 641,
-        "activeRange": "6-646-11, 19-21, 31-33, 49-51, 61-64",
-        "recovery": 2918,
-        "total": 3565
+        "active": 59,
+        "activeRange": "6-64",
+        "recovery": 29,
+        "landingRecovery": 18,
+        "total": 94
       },
       "frameAdvantage": {
         "onBlock": -55,
@@ -1034,10 +1037,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 15,
-        "active": 3901,
-        "activeRange": "15-3915-17, 36-39",
+        "active": 25,
+        "activeRange": "15-39",
         "recovery": 24,
-        "total": 3940
+        "total": 64
       },
       "frameAdvantage": {
         "onBlock": -10,
@@ -1059,10 +1062,10 @@
       "damage": 1300,
       "frameData": {
         "startup": 17,
-        "active": 3001,
-        "activeRange": "17-3017-18, 28-30",
+        "active": 14,
+        "activeRange": "17-30",
         "recovery": 19,
-        "total": 3037
+        "total": 50
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -1658,10 +1661,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 18,
-        "active": 2801,
-        "activeRange": "18-2818-20, 26-28",
+        "active": 11,
+        "activeRange": "18-28",
         "recovery": 79,
-        "total": 2898
+        "total": 108
       },
       "frameAdvantage": {
         "onBlock": -61,
@@ -1814,10 +1817,10 @@
       "damage": 400,
       "frameData": {
         "startup": 18,
-        "active": 2801,
-        "activeRange": "18-2818-20, 26-28",
+        "active": 11,
+        "activeRange": "18-28",
         "recovery": 64,
-        "total": 2883
+        "total": 93
       },
       "frameAdvantage": {
         "onBlock": -43,
@@ -1971,10 +1974,10 @@
       "damage": 500,
       "frameData": {
         "startup": 18,
-        "active": 2801,
-        "activeRange": "18-2818-20, 26-28",
+        "active": 11,
+        "activeRange": "18-28",
         "recovery": 64,
-        "total": 2883
+        "total": 93
       },
       "frameAdvantage": {
         "onBlock": -43,
@@ -1994,10 +1997,10 @@
       "damage": 1100,
       "frameData": {
         "startup": 11,
-        "active": 9701,
-        "activeRange": "11-9711-13, 91-97",
+        "active": 87,
+        "activeRange": "11-97",
         "recovery": 84,
-        "total": 9796
+        "total": 182
       },
       "frameAdvantage": {
         "onBlock": -66,
@@ -2016,10 +2019,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 11,
-        "active": 9701,
-        "activeRange": "11-9711-13, 91-97",
+        "active": 87,
+        "activeRange": "11-97",
         "recovery": 84,
-        "total": 9796
+        "total": 182
       },
       "frameAdvantage": {
         "onBlock": -66,
@@ -2191,10 +2194,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 18,
-        "active": 2801,
-        "activeRange": "18-2818-20, 26-28",
+        "active": 11,
+        "activeRange": "18-28",
         "recovery": 64,
-        "total": 2883
+        "total": 93
       },
       "frameAdvantage": {
         "onBlock": -43,

@@ -2,7 +2,7 @@
   "id": "jp",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:42:01.693Z",
+  "scrapedAt": "2026-11-22T00:21:01.191Z",
   "source": "https://www.streetfighter.com/6/character/jp",
   "character": {
     "bio": "Head of an international NGO responsible for many successful investment projects, and the man behind Nayshall's present prosperity. Has a beloved cat named Cybele.",
@@ -531,10 +531,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 1601,
-        "activeRange": "11-1611-12, 13-16",
+        "active": 6,
+        "activeRange": "11-16",
         "recovery": 24,
-        "total": 1636
+        "total": 41
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -841,10 +841,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 20,
-        "active": 2601,
-        "activeRange": "20-2620-22, 24-26",
+        "active": 7,
+        "activeRange": "20-26",
         "recovery": 53,
-        "total": 2674
+        "total": 80
       },
       "frameAdvantage": {
         "onBlock": -8,
@@ -867,10 +867,10 @@
       "damage": 800,
       "frameData": {
         "startup": 28,
-        "active": 4201,
-        "activeRange": "28-4228-30, 40-42",
+        "active": 15,
+        "activeRange": "28-42",
         "recovery": 61,
-        "total": 4290
+        "total": 104
       },
       "frameAdvantage": {
         "onBlock": 4,
@@ -893,10 +893,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 19,
-        "active": 3001,
-        "activeRange": "19-3019-21, 28-30",
+        "active": 12,
+        "activeRange": "19-30",
         "recovery": 52,
-        "total": 3072
+        "total": 83
       },
       "frameAdvantage": {
         "onBlock": 2,
@@ -988,10 +988,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 110,
-        "active": 149001,
-        "activeRange": "110-149110-119, 140-149",
+        "active": 40,
+        "activeRange": "110-149",
         "recovery": 40,
-        "total": 149151
+        "total": 190
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1009,10 +1009,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 110,
-        "active": 149001,
-        "activeRange": "110-149110-119, 140-149",
+        "active": 40,
+        "activeRange": "110-149",
         "recovery": 40,
-        "total": 149151
+        "total": 190
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1030,10 +1030,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 110,
-        "active": 149001,
-        "activeRange": "110-149110-119, 140-149",
+        "active": 40,
+        "activeRange": "110-149",
         "recovery": 40,
-        "total": 149151
+        "total": 190
       },
       "frameAdvantage": {
         "onBlock": null,

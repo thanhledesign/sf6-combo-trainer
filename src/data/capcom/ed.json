@@ -2,7 +2,7 @@
   "id": "ed",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:37:56.660Z",
+  "scrapedAt": "2026-11-22T00:17:06.418Z",
   "source": "https://www.streetfighter.com/6/character/ed",
   "character": {
     "bio": "A Psycho Power-wielding youth aged uprapidly by Shadaloo's experimentation,on a journey and a mission to free othersubjects. He gets his short temper andfoul mouth from Balrog, his former mentor.",
@@ -988,10 +988,10 @@
       "damage": 800,
       "frameData": {
         "startup": 11,
-        "active": 2901,
-        "activeRange": "11-2911-13, 17-19, 26-29",
+        "active": 19,
+        "activeRange": "11-29",
         "recovery": 14,
-        "total": 2926
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -5,
@@ -1013,10 +1013,10 @@
       "damage": 900,
       "frameData": {
         "startup": 13,
-        "active": 3601,
-        "activeRange": "13-3613-14, 22-24, 34-36",
+        "active": 24,
+        "activeRange": "13-36",
         "recovery": 16,
-        "total": 3630
+        "total": 53
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1038,10 +1038,10 @@
       "damage": 1100,
       "frameData": {
         "startup": 15,
-        "active": 3701,
-        "activeRange": "15-3715-16, 28-29, 36-37",
+        "active": 23,
+        "activeRange": "15-37",
         "recovery": 23,
-        "total": 3739
+        "total": 61
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -1063,10 +1063,10 @@
       "damage": 1400,
       "frameData": {
         "startup": 13,
-        "active": null,
-        "activeRange": "13-4413, 18, 22, 26, 30, 34,43-44",
+        "active": 32,
+        "activeRange": "13-44",
         "recovery": 20,
-        "total": null
+        "total": 65
       },
       "frameAdvantage": {
         "onBlock": -4,
@@ -1365,10 +1365,10 @@
       "damage": 2000,
       "frameData": {
         "startup": 13,
-        "active": 6701,
-        "activeRange": "13- 6713-14, 22-23, 40-41, 45-46, 63, 65, 67",
+        "active": 55,
+        "activeRange": "13-67",
         "recovery": 56,
-        "total": 6770
+        "total": 124
       },
       "frameAdvantage": {
         "onBlock": -32,

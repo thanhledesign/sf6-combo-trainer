@@ -2,7 +2,7 @@
   "id": "lily",
   "season": 4,
   "seasonLabel": "Season 4",
-  "scrapedAt": "2026-11-21T23:44:35.917Z",
+  "scrapedAt": "2026-11-22T00:23:28.515Z",
   "source": "https://www.streetfighter.com/6/character/lily",
   "character": {
     "bio": "A descendant of the Thunderfoot tribe, Lily speaks with the spirits of nature, trusting in their guidance as she travels the globe. Don't judge a book by its cover—her small stature conceals truly titanic power.",
@@ -277,10 +277,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 10,
-        "active": 1501,
-        "activeRange": "10-1510-11,12-15",
+        "active": 6,
+        "activeRange": "10-15",
         "recovery": 22,
-        "total": 1533
+        "total": 38
       },
       "frameAdvantage": {
         "onBlock": -2,
@@ -303,10 +303,10 @@
       "damage": 900,
       "frameData": {
         "startup": 11,
-        "active": 2001,
-        "activeRange": "11-2011-12, 19-20",
+        "active": 10,
+        "activeRange": "11-20",
         "recovery": 24,
-        "total": 2036
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -12,
@@ -881,10 +881,10 @@
       "damage": 1000,
       "frameData": {
         "startup": 9,
-        "active": 371,
-        "activeRange": "9-379-13, 20-30, 31-37",
+        "active": 29,
+        "activeRange": "9-37",
         "recovery": 14,
-        "total": 394
+        "total": 52
       },
       "frameAdvantage": {
         "onBlock": 1,
@@ -903,10 +903,10 @@
       "damage": 1100,
       "frameData": {
         "startup": 13,
-        "active": 4101,
-        "activeRange": "13-4113-17, 24-34, 35-41",
+        "active": 29,
+        "activeRange": "13-41",
         "recovery": 14,
-        "total": 4128
+        "total": 56
       },
       "frameAdvantage": {
         "onBlock": 1,
@@ -925,10 +925,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 17,
-        "active": 4501,
-        "activeRange": "17-4517-21, 28-38, 39-45",
+        "active": 29,
+        "activeRange": "17-45",
         "recovery": 14,
-        "total": 4532
+        "total": 60
       },
       "frameAdvantage": {
         "onBlock": 1,
@@ -947,10 +947,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 9,
-        "active": 321,
-        "activeRange": "9-329-22, 23-25, 26-32",
+        "active": 24,
+        "activeRange": "9-32",
         "recovery": 14,
-        "total": 344
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": 2,
@@ -970,10 +970,10 @@
       "damage": 1200,
       "frameData": {
         "startup": 9,
-        "active": 321,
-        "activeRange": "9-329-22, 23-25, 26-32",
+        "active": 24,
+        "activeRange": "9-32",
         "recovery": 14,
-        "total": 344
+        "total": 47
       },
       "frameAdvantage": {
         "onBlock": 2,
@@ -999,8 +999,9 @@
         "startup": 6,
         "active": 11,
         "activeRange": "6-16",
-        "recovery": 2012,
-        "total": 2029
+        "recovery": 20,
+        "landingRecovery": 12,
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -27,
@@ -1025,8 +1026,9 @@
         "startup": 8,
         "active": 12,
         "activeRange": "8-19",
-        "recovery": 2412,
-        "total": 2432
+        "recovery": 24,
+        "landingRecovery": 12,
+        "total": 44
       },
       "frameAdvantage": {
         "onBlock": -32,
@@ -1051,8 +1053,9 @@
         "startup": 10,
         "active": 14,
         "activeRange": "10-23",
-        "recovery": 2512,
-        "total": 2536
+        "recovery": 25,
+        "landingRecovery": 12,
+        "total": 49
       },
       "frameAdvantage": {
         "onBlock": -35,
@@ -1077,8 +1080,9 @@
         "startup": 6,
         "active": 12,
         "activeRange": "6-17",
-        "recovery": 2715,
-        "total": 2733
+        "recovery": 27,
+        "landingRecovery": 15,
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -35,
@@ -1098,10 +1102,11 @@
       "damage": 1000,
       "frameData": {
         "startup": 4,
-        "active": 161,
-        "activeRange": "4-164-7, 8-16",
-        "recovery": 2012,
-        "total": 2177
+        "active": 13,
+        "activeRange": "4-16",
+        "recovery": 20,
+        "landingRecovery": 12,
+        "total": 37
       },
       "frameAdvantage": {
         "onBlock": -25,
@@ -1120,10 +1125,11 @@
       "damage": 1200,
       "frameData": {
         "startup": 6,
-        "active": null,
-        "activeRange": "6-9 10-19",
-        "recovery": 2412,
-        "total": null
+        "active": 4,
+        "activeRange": "6-9",
+        "recovery": 24,
+        "landingRecovery": 12,
+        "total": 34
       },
       "frameAdvantage": {
         "onBlock": -30,
@@ -1142,10 +1148,11 @@
       "damage": 1400,
       "frameData": {
         "startup": 8,
-        "active": 231,
-        "activeRange": "8-238-11, 12-23",
-        "recovery": 2512,
-        "total": 2751
+        "active": 16,
+        "activeRange": "8-23",
+        "recovery": 25,
+        "landingRecovery": 12,
+        "total": 49
       },
       "frameAdvantage": {
         "onBlock": -33,
@@ -1164,10 +1171,11 @@
       "damage": 1600,
       "frameData": {
         "startup": 4,
-        "active": 171,
-        "activeRange": "4-174-5, 6-7, 8-17",
-        "recovery": 2715,
-        "total": 2890
+        "active": 14,
+        "activeRange": "4-17",
+        "recovery": 27,
+        "landingRecovery": 15,
+        "total": 45
       },
       "frameAdvantage": {
         "onBlock": -35,
@@ -1392,10 +1400,10 @@
       "damage": 2200,
       "frameData": {
         "startup": 10,
-        "active": 4701,
-        "activeRange": "10-4710-11,17-18,26-27,36-37,46-47",
+        "active": 38,
+        "activeRange": "10-47",
         "recovery": 54,
-        "total": 4765
+        "total": 102
       },
       "frameAdvantage": {
         "onBlock": -36,
@@ -1418,10 +1426,11 @@
       "damage": 2600,
       "frameData": {
         "startup": 9,
-        "active": 411,
-        "activeRange": "9-419-30,40-41",
-        "recovery": 3924,
-        "total": 4344
+        "active": 33,
+        "activeRange": "9-41",
+        "recovery": 39,
+        "landingRecovery": 24,
+        "total": 81
       },
       "frameAdvantage": {
         "onBlock": -60,
@@ -1440,10 +1449,11 @@
       "damage": 2900,
       "frameData": {
         "startup": 9,
-        "active": 411,
-        "activeRange": "9-419-33,40-41",
-        "recovery": 3924,
-        "total": 4344
+        "active": 33,
+        "activeRange": "9-41",
+        "recovery": 39,
+        "landingRecovery": 24,
+        "total": 81
       },
       "frameAdvantage": {
         "onBlock": -59,
@@ -1466,10 +1476,10 @@
       "damage": 2600,
       "frameData": {
         "startup": 9,
-        "active": 411,
-        "activeRange": "9-419-30,40-41",
+        "active": 33,
+        "activeRange": "9-41",
         "recovery": 25,
-        "total": 445
+        "total": 67
       },
       "frameAdvantage": {
         "onBlock": null,
@@ -1489,10 +1499,10 @@
       "damage": 2900,
       "frameData": {
         "startup": 9,
-        "active": 411,
-        "activeRange": "9-419-33,40-41",
+        "active": 33,
+        "activeRange": "9-41",
         "recovery": 25,
-        "total": 445
+        "total": 67
       },
       "frameAdvantage": {
         "onBlock": null,

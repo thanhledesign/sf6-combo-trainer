@@ -517,7 +517,9 @@ async function scrapeCharacter(page, charId, bootstrap) {
     if (!row.displayName) continue;
 
     const startup = num(row.startup);
-    const recovery = num(row.recovery);
+    const rec = parseRecovery(row.recovery);
+    const recovery = rec ? rec.recovery : num(row.recovery);
+    row.active = cleanActive(row.active);
     const onHit = num(row.onHit);
     const onBlock = num(row.onBlock);
     const damage = num(row.damage);
@@ -606,7 +608,7 @@ async function scrapeCharacter(page, charId, bootstrap) {
       ...(context && { context }),
       ...(notation && { input, notation, shortName: notation }),
       damage,
-      frameData: { startup, active: activeCount, activeRange: row.active, recovery, total },
+      frameData: { startup, active: activeCount, activeRange: row.active, recovery, ...(rec?.landing != null && { landingRecovery: rec.landing }), total },
       frameAdvantage: { onBlock, onHit },
       properties: {
         hitLevel,
@@ -621,6 +623,27 @@ async function scrapeCharacter(page, charId, bootstrap) {
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────
+
+// Capcom's Active cell concatenates the full window with a per-hit breakdown, e.g. "6-156-8,9-15"
+// (window 6-15, hits 6-8 and 9-15) or "8-178, 9, 10, 11, 12-17". Keep only the leading window.
+export function cleanActive(raw) {
+  if (!raw) return raw;
+  raw = raw.replace(/^(\d+)\s*-\s*/, '$1-'); // some cells read "11- 4611-12, ..."
+  const m = raw.match(/^(\d+)-(\d+)/);
+  if (!m) return raw;
+  const a = m[1], rest = raw.slice(a.length + 1), digits = rest.match(/^\d+/)[0];
+  for (let len = 1; len < digits.length; len++) {
+    const next = rest.slice(len);
+    if (next.startsWith(a + '-') || next.startsWith(a + ',')) return `${a}-${rest.slice(0, len)}`;
+  }
+  return `${a}-${digits}`;
+}
+// Recovery cells read "21+12 frame(s) after landing" / "*23" / "49 total frames": first number is the recovery,
+// an optional "+N" is the extra landing recovery.
+export function parseRecovery(raw) {
+  const m = (raw || '').match(/(\d+)(?:\s*\+\s*(\d+))?/);
+  return m ? { recovery: Number(m[1]), landing: m[2] ? Number(m[2]) : null } : null;
+}
 
 (async () => {
   if (!existsSync(OUT_CAPCOM)) mkdirSync(OUT_CAPCOM, { recursive: true });
