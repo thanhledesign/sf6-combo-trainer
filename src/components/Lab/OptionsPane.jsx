@@ -40,7 +40,7 @@ export function OptionsPane({ onTags, onCsv }) {
       <St label="Games per set" value={o.setLen} help="The opponent stays selected until the set ends. 0 = never auto-end" onDec={() => setOpt('setLen', clamp(o.setLen - 1, 0, 9))} onInc={() => setOpt('setLen', clamp(o.setLen + 1, 0, 9))} />
       <Sw label="End the set early when someone clinches" k="setEarly" help="e.g. 2–0 in a set of 3" />
       <h3>Log fields</h3>
-      <Sw label="Opponent MR" k="show.oppMR" /><Sw label="My MR" k="show.myMR" /><Sw label="Opponent name" k="show.oppName" /><Sw label="Tags" k="show.tags" /><Sw label="Note box" k="show.note" />
+      <Sw label="Opponent MR" k="show.oppMR" /><Sw label="My MR" k="show.myMR" /><Sw label="Opponent name" k="show.oppName" /><Sw label="Tags" k="show.tags" /><Sw label="Note box" k="show.note" /><Sw label="Rage meter" k="show.rage" help="Peace to nuclear slider in the session screen" /><Sw label="Rage warnings" k="rageWarn" help="Banner when rage and losses stack up" />
       <h3>Live dashboard tiles</h3>
       {DASH_TILES.map((x) => <Sw key={x[0]} label={x[1]} k={`dash.${x[0]}`} />)}
       <St label="Games in the last-games strip" value={o.dotsN} onDec={() => setOpt('dotsN', clamp(o.dotsN - 1, 4, 30))} onInc={() => setOpt('dotsN', clamp(o.dotsN + 1, 4, 30))} />
