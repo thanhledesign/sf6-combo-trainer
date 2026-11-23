@@ -301,3 +301,24 @@
   .lab .cbmv button{min-height:2.6rem}
   .lab .scale{min-height:3rem;padding:.2rem .7rem}
 }
+
+/* V01.44 rage meter: peace -> nuclear */
+.lab .rage{background:var(--panel2);border:1px solid var(--line);border-radius:.7rem;padding:.4rem .8rem .5rem;--rc:hsl(calc(200 - (var(--r,1) - 1) * 22) 85% 55%)}
+.lab .rage[data-r="1"]{--r:1}.lab .rage[data-r="2"]{--r:2}.lab .rage[data-r="3"]{--r:3}.lab .rage[data-r="4"]{--r:4}.lab .rage[data-r="5"]{--r:5}
+.lab .rage[data-r="6"]{--r:6}.lab .rage[data-r="7"]{--r:7}.lab .rage[data-r="8"]{--r:8}.lab .rage[data-r="9"]{--r:9}.lab .rage[data-r="10"]{--r:10}
+.lab .rage-h{display:flex;align-items:baseline;gap:.6rem}
+.lab .rage-h b{font-weight:700}
+.lab .rage-n{font-size:1.4rem;font-weight:700;color:var(--rc)}
+.lab .rage-l{font-weight:700;color:var(--rc);text-transform:uppercase;letter-spacing:.06em;font-size:.85rem}
+.lab .rage input[type=range]{width:100%;height:2.2rem;margin:.1rem 0;background:transparent;-webkit-appearance:none;appearance:none;touch-action:none;cursor:ew-resize}
+.lab .rage input[type=range]::-webkit-slider-runnable-track{height:.7rem;border-radius:.4rem;background:linear-gradient(90deg,#38bdf8,#34d399 30%,#facc15 55%,#fb923c 75%,#ef4444 90%,#dc2626)}
+.lab .rage input[type=range]::-moz-range-track{height:.7rem;border-radius:.4rem;background:linear-gradient(90deg,#38bdf8,#34d399 30%,#facc15 55%,#fb923c 75%,#ef4444 90%,#dc2626)}
+.lab .rage input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:1.7rem;height:1.7rem;margin-top:-.5rem;border-radius:50%;background:#fff;border:3px solid var(--rc);box-shadow:0 1px 4px #0008}
+.lab .rage input[type=range]::-moz-range-thumb{width:1.4rem;height:1.4rem;border-radius:50%;background:#fff;border:3px solid var(--rc)}
+.lab .rage-e{display:flex;justify-content:space-between;font-size:.65rem;color:var(--mute)}
+.lab .ragewarn{border-radius:.6rem;padding:.5rem .8rem;font-weight:600;font-size:.9rem;border:2px solid}
+.lab .ragewarn.l1{background:#facc1522;border-color:#facc15;color:#fde68a}
+.lab .ragewarn.l2{background:#fb923c2a;border-color:#fb923c;color:#fdba74}
+.lab .ragewarn.l3{background:#ef444433;border-color:#ef4444;color:#fecaca;animation:ragepulse 1.2s ease-in-out infinite}
+@keyframes ragepulse{50%{background:#ef444466}}
+@media (prefers-reduced-motion:reduce){.lab .ragewarn.l3{animation:none}}

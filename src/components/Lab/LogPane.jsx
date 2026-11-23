@@ -2,13 +2,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import {
-  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn,
+  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn,
 } from '../../lab/calc';
 import { OPP, MODES } from '../../lab/data';
-import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult } from '../../lab/useLabActions';
+import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
 import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
-import { MrScrub, Scale, Stepper, Tile, TagChips } from './ui';
+import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter } from './ui';
 
 const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
@@ -44,6 +44,15 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const last = lastGame(S);
   const est = estMR(S, me);
   const myMR = form.myDirty ? form.myMR : est;
+  // rage meter: local while dragging, saved on the session shortly after
+  const [rageL, setRageL] = useState(null);
+  const sid = s ? s.id : null;
+  const rage = rageL != null ? rageL : (s && s.rage != null ? s.rage : 3);
+  useEffect(() => {
+    if (rageL == null || !sid) return undefined;
+    const t = setTimeout(() => { setRage(rageL); setRageL(null); }, 400);
+    return () => clearTimeout(t);
+  }, [rageL, sid]);
   const defOpp = last && last.oppMR != null ? last.oppMR : (myMR || 1500);
 
   // the open set carries its opponent MR / name into the form
@@ -86,7 +95,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   };
   const onLog = (r) => {
     const dm = myMR != null && form.oppMR != null ? postMR(S, { r, myMR, oppMR: form.oppMR }) - myMR : null;
-    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]) });
+    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null });
     if (out.toast) toast(out.toast);
     if (!out.keep && !out.toast && !s) return;
     resetForm(!!out.keep);
@@ -204,14 +213,16 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           ) : form.char ? (
             <div className="setbar"><b>{form.char}</b><span className="mute">New opponent. The next result is game 1; after that it counts as a rematch.</span></div>
           ) : null}
+          {o.show.rage && <RageMeter value={rage} onChange={setRageL} />}
+          {o.show.rage && o.rageWarn && (() => { const w = rageWarn(rage, run); return w ? <div className={`ragewarn l${w.level}`} role="alert">{w.text}</div> : null; })()}
           <div className="mrrow">
-            {o.show.oppMR && ranked && (
-              <div id="fOpp"><label>Opponent MR <i style={{ fontStyle: 'normal' }}>(drag ↕)</i></label>
-                <MrScrub id="oppMR" label="Opponent MR" value={form.oppMR} base={defOpp} pace={ui.pace} onChange={(v) => patch({ oppMR: v })} /></div>
-            )}
             {o.show.myMR && ranked && (
               <div id="fMy"><label>My MR <i style={{ fontStyle: 'normal' }}>{noteText()}</i></label>
                 <MrScrub id="myMR" label="My MR" value={myMR} base={1500} pace={ui.pace} onChange={setMy} /></div>
+            )}
+            {o.show.oppMR && ranked && (
+              <div id="fOpp"><label>Opponent MR <i style={{ fontStyle: 'normal' }}>(drag ↕)</i></label>
+                <MrScrub id="oppMR" label="Opponent MR" value={form.oppMR} base={defOpp} pace={ui.pace} onChange={(v) => patch({ oppMR: v })} /></div>
             )}
             {o.show.oppName && (
               <div id="fName"><label htmlFor="opp">Opponent name</label>

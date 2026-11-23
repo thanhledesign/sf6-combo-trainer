@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useToastMsg } from './toastBus';
 import { useScrub } from './useScrub';
-import { clamp, num } from '../../lab/calc';
+import { clamp, num, rageName } from '../../lab/calc';
 import { thumbOf } from '../../lab/data';
 
 export function Toast() {
@@ -58,6 +58,18 @@ export function Scale({ k, label, hint, value, onChange, pace }) {
       <span className="lbl">{label}<small>{hint}</small></span>
       <span className="bars" ref={bars}>{[1, 2, 3, 4, 5].map((i) => <i key={i} className={i <= value ? 'on' : ''} />)}</span>
       <span className="n">{value}</span>
+    </div>
+  );
+}
+
+/** Peace -> nuclear slider (1..10). Native range so touch, mouse and keyboard all work. */
+export function RageMeter({ value, onChange }) {
+  return (
+    <div className="rage" data-r={value}>
+      <div className="rage-h"><b>Rage</b><span className="rage-n mono">{value}</span><span className="rage-l">{rageName(value)}</span></div>
+      <input type="range" min="1" max="10" step="1" value={value} aria-label="Rage meter, 1 calm to 10 nuclear"
+        aria-valuetext={`${value}, ${rageName(value)}`} onChange={(e) => onChange(Number(e.target.value))} />
+      <div className="rage-e"><span>Peace</span><span>Nuclear</span></div>
     </div>
   );
 }

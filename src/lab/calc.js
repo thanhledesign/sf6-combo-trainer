@@ -7,7 +7,7 @@ export const num = (v) => { const n = parseInt(v, 10); return Number.isFinite(n)
 export const strip = (o) => { const c = { ...o }; delete c.id; return c; };
 export const byId = (a, id) => a.find((x) => x.id === id) || null;
 
-const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false };
+const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false, rage: true };
 const DASH0 = { record: true, win: true, streak: true, mr: true, lights: true, games: true, minutes: true, rule: true, dots: true, rematch: true, goal: true };
 
 export function opts(S) {
@@ -17,6 +17,7 @@ export function opts(S) {
     setEarly: o.setEarly !== false,
     lock: o.lock !== false,
     lockMin: typeof o.lockMin === 'number' ? o.lockMin : 8,
+    rageWarn: o.rageWarn !== false,
     autoRematch: o.autoRematch !== false,
     quickRematch: o.quickRematch !== false,
     k: typeof o.k === 'number' ? o.k : 16,
@@ -193,4 +194,18 @@ export function charStats(S, me) {
   const most = rows.slice().sort((x, y) => y.n - x.n)[0] || null;
   const sessions = new Set(a.map((g) => g.sid)).size;
   return { n: r.n, w: r.w, l: r.l, peak, now: estMR(S, me), best, bestWin, worst, top, most, sessions, last: a.length ? a[a.length - 1].t : null };
+}
+
+/* ----- rage meter (V01.44): 1 calm .. 10 nuclear, set by the player during a session ----- */
+export const RAGE_NAMES = ['', 'Peace', 'Zen', 'Chill', 'Fine', 'Annoyed', 'Heated', 'Tilting', 'Furious', 'Seething', 'Nuclear'];
+export const rageName = (r) => RAGE_NAMES[clamp(Math.round(r) || 1, 1, 10)];
+/** Warning for the live session: rage on its own, or rage stacked with a loss run. null = all clear. */
+export function rageWarn(rage, run) {
+  if (rage == null) return null;
+  const hot = rage >= 9 ? 3 : rage >= 8 || (rage >= 6 && run >= 2) || (rage >= 5 && run >= 3) ? 2 : rage >= 6 || (rage >= 4 && run >= 2) ? 1 : 0;
+  if (!hot) return null;
+  const why = `Rage ${rage} (${rageName(rage)})${run >= 2 ? ` after ${run} losses in a row` : ''}`;
+  return hot === 3 ? { level: 3, text: `${why}. Stop. Close the game and walk away for 20+ minutes.` }
+    : hot === 2 ? { level: 2, text: `${why}. Take a break before the next queue.` }
+    : { level: 1, text: `${why}. Heating up. Slow down, one cue word, no pressing on minus.` };
 }
