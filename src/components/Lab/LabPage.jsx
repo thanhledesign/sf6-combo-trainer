@@ -11,7 +11,7 @@ import { toast } from './toastBus';
 import { Icon, Overlay, Tile, Toast } from './ui';
 import LogPane from './LogPane';
 import { DashPane, HistPane, GoalsPane, EditGameModal, GoalModal } from './StatsPanes';
-import { OptionsPane, TagManager, CsvModal } from './OptionsPane';
+import { OptionsPane, TagManager, ThemeManager, CsvModal } from './OptionsPane';
 import ReviewPane from './ReviewPane';
 import CombosPane from './CombosPane';
 import ProfileCard from './ProfileCard';
@@ -40,7 +40,7 @@ function LockModal({ S }) {
 export default function LabPage({ pane = 'log' }) {
   const S = useLab(), ui = useUI(), navigate = useNavigate();
   const sync = useSync(), [syncOpen, setSyncOpen] = useState(false);
-  const [edit, setEdit] = useState(null), [goal, setGoal] = useState(null), [tags, setTags] = useState(false), [csv, setCsv] = useState(null), [pick, setPick] = useState(false);
+  const [edit, setEdit] = useState(null), [goal, setGoal] = useState(null), [tags, setTags] = useState(false), [themes, setThemes] = useState(false), [csv, setCsv] = useState(null), [pick, setPick] = useState(false);
   const me = meNow(S), dev = devNow(S);
   const boxRef = useRef(null), [narrow, setNarrow] = useState(false);
 
@@ -67,6 +67,9 @@ export default function LabPage({ pane = 'log' }) {
   useEffect(() => { try { syncGoals(); } catch { /* ignore */ } }, [S.games, S.goals]);
   useEffect(() => {
     const f = () => setTags(true); window.addEventListener('lab:tags', f); return () => window.removeEventListener('lab:tags', f);
+  }, []);
+  useEffect(() => {
+    const f = () => setThemes(true); window.addEventListener('lab:themes', f); return () => window.removeEventListener('lab:themes', f);
   }, []);
   useEffect(() => {
     const mq = window.matchMedia ? window.matchMedia('(max-width:900px)') : null; if (!mq) return undefined;
@@ -260,6 +263,7 @@ export default function LabPage({ pane = 'log' }) {
       {edit && <EditGameModal id={edit} onClose={() => setEdit(null)} onStudy={(c) => { setEdit(null); study(c); }} />}
       {goal && <GoalModal id={goal} onClose={() => setGoal(null)} />}
       {tags && <TagManager onClose={() => setTags(false)} />}
+      {themes && <ThemeManager onClose={() => setThemes(false)} />}
       {csv != null && <CsvModal text={csv} onClose={() => setCsv(null)} />}
       <LockModal S={S} />
       <Toast />

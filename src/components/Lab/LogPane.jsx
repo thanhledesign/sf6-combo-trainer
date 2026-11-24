@@ -2,13 +2,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import {
-  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn,
+  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList, capStatus,
 } from '../../lab/calc';
 import { OPP, MODES } from '../../lab/data';
 import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
 import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
-import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter } from './ui';
+import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter, CapMenu } from './ui';
 
 const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
@@ -34,7 +34,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const os = s && s.openSet && s.openSet.mode === mode ? s.openSet : null;
 
   // log form
-  const [form, setForm] = useState({ char: null, oppMR: null, myMR: null, myDirty: false, tags: {}, opp: '', note: '' });
+  const [form, setForm] = useState({ char: null, oppMR: null, myMR: null, myDirty: false, tags: {}, opp: '', note: '', theme: null });
   const patch = (p) => setForm((f) => ({ ...f, ...p }));
   // pre-session sheet
   const [chk, setChk] = useState({ calm: 3, focus: 3, hands: 3 });
@@ -95,7 +95,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   };
   const onLog = (r) => {
     const dm = myMR != null && form.oppMR != null ? postMR(S, { r, myMR, oppMR: form.oppMR }) - myMR : null;
-    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null });
+    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null, theme: o.show.theme ? form.theme : null });
     if (out.toast) toast(out.toast);
     if (!out.keep && !out.toast && !s) return;
     resetForm(!!out.keep);
@@ -140,6 +140,9 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const vsp = (k) => <div className="vsp" title="Drag to resize · double-click to reset" onPointerDown={startSplit(k)} onDoubleClick={resetSplit(k)} />;
 
   const all = shown ? sg(S, shown) : [], a = shown ? sgm(S, shown) : [], r2 = wl(a), run = lossRun(a), N = stopOf(shown), tl = tagList(S);
+  const [nowMs, setNowMs] = useState(() => Date.now());
+  useEffect(() => { const t = setInterval(() => setNowMs(Date.now()), 30000); return () => clearInterval(t); }, []);
+  const cap = shown && ranked ? capStatus(o, a, shown.start, nowMs) : null;
   const lights = Array.from({ length: Math.min(N, 10) }, (_, i) => <i key={i} className={i < run ? 'on' : ''} />);
 
   return (
@@ -165,7 +168,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           </div>
           <div className="row2">
             <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
-            <label>Stop after losses in a row<Stepper value={stopOf({ stop: S.settings.stop })} onDec={() => updateStop(Math.max(0, stopOf({ stop: S.settings.stop }) - 1))} onInc={() => updateStop(Math.min(10, stopOf({ stop: S.settings.stop }) + 1))} /></label>
+            <div><CapMenu /></div>
           </div>
           <div className="row2">
             {[0, 1, 2].map((i) => (
@@ -203,6 +206,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
             ) : <div className="stat"><b>{a.length}</b><span>Games in {modeName(mode)}</span></div>}
             <button type="button" className="stat" onClick={endSession}><b>End</b><span>session</span></button>
           </div>
+          {ranked && <CapMenu />}
           <FocusBar S={S} onToggle={onFocusToggle} />
           {os ? (
             <div className="setbar">
@@ -213,6 +217,19 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           ) : form.char ? (
             <div className="setbar"><b>{form.char}</b><span className="mute">New opponent. The next result is game 1; after that it counts as a rematch.</span></div>
           ) : null}
+          {o.show.theme && (
+            <div className="chips" aria-label="Game plan theme" style={{ maxHeight: 'none' }}>
+              {themeList(S).map((t) => (
+                <button key={t[0]} type="button" className="chip" aria-pressed={form.theme === t[0]} onClick={() => patch({ theme: form.theme === t[0] ? null : t[0] })}>{t[1]}</button>
+              ))}
+              <button type="button" className="chip add" onClick={() => window.dispatchEvent(new CustomEvent('lab:themes'))}>Edit themes</button>
+            </div>
+          )}
+          {cap && (
+            <div className={`ragewarn ${cap.hit.length ? 'l3' : ''} capbar`} style={cap.hit.length ? undefined : { background: 'transparent', border: '1px solid currentColor', opacity: 0.8 }} role={cap.hit.length ? 'alert' : undefined}>
+              {cap.hit.length ? cap.text : `Session cap: ${cap.rows.map((r) => `${r.cur}/${r.max} ${r.label}`).join(' · ')}`}
+            </div>
+          )}
           {o.show.rage && <RageMeter value={rage} onChange={setRageL} />}
           {o.show.rage && o.rageWarn && (() => { const w = rageWarn(rage, run); return w ? <div className={`ragewarn l${w.level}`} role="alert">{w.text}</div> : null; })()}
           <div className="mrrow">

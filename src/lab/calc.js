@@ -1,13 +1,13 @@
 // Pure helpers: given the Lab state `S`, derive records, MR estimates, goals, etc.
 // Ported from the standalone tracker; no DOM or React in here.
-import { DEFAULT_TAGS, MODES } from './data';
+import { DEFAULT_TAGS, DEFAULT_THEMES, MODES } from './data';
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export const num = (v) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : null; };
 export const strip = (o) => { const c = { ...o }; delete c.id; return c; };
 export const byId = (a, id) => a.find((x) => x.id === id) || null;
 
-const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false, rage: true };
+const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false, rage: true, theme: true };
 const DASH0 = { record: true, win: true, streak: true, mr: true, lights: true, games: true, minutes: true, rule: true, dots: true, rematch: true, goal: true };
 
 export function opts(S) {
@@ -18,6 +18,10 @@ export function opts(S) {
     lock: o.lock !== false,
     lockMin: typeof o.lockMin === 'number' ? o.lockMin : 8,
     rageWarn: o.rageWarn !== false,
+    capGames: typeof o.capGames === 'number' ? o.capGames : 0,
+    capWins: typeof o.capWins === 'number' ? o.capWins : 0,
+    capStreak: typeof o.capStreak === 'number' ? o.capStreak : 0,
+    capMin: typeof o.capMin === 'number' ? o.capMin : 0,
     autoRematch: o.autoRematch !== false,
     quickRematch: o.quickRematch !== false,
     k: typeof o.k === 'number' ? o.k : 16,
@@ -38,13 +42,15 @@ export const modeOf = (g) => g.mode || 'ranked';
 export const modeName = (m) => (MODES.find((x) => x[0] === m) || [m, m])[1];
 export const meNow = (S) => S.settings.me || 'Ken';
 export const devNow = (S) => S.settings.device || 'Stick';
-export const stopOf = (s) => (s && typeof s.stop === 'number' ? s.stop : 3);
+export const stopOf = (s) => (s && typeof s.stop === 'number' ? s.stop : 4);
 
 export const tagList = (S) => {
   const t = S.settings.tags;
   return Array.isArray(t) && t.length ? t.map((x) => [x.k, x.n, x.t]) : DEFAULT_TAGS;
 };
 export const tagObjs = (S) => tagList(S).map((t) => ({ k: t[0], n: t[1], t: t[2] }));
+export const themeList = (S) => (Array.isArray(S.settings.themes) && S.settings.themes.length ? S.settings.themes.map((t) => [t.k, t.n]) : DEFAULT_THEMES);
+export const themeName = (S, k) => (themeList(S).find((t) => t[0] === k) || [k, k])[1];
 export const tagInfo = (S, k) => tagList(S).find((t) => t[0] === k) || [k, k, 'good'];
 
 export const cur = (S) => {
@@ -208,4 +214,19 @@ export function rageWarn(rage, run) {
   return hot === 3 ? { level: 3, text: `${why}. Stop. Close the game and walk away for 20+ minutes.` }
     : hot === 2 ? { level: 2, text: `${why}. Take a break before the next queue.` }
     : { level: 1, text: `${why}. Heating up. Slow down, one cue word, no pressing on minus.` };
+}
+
+/* ----- session caps (V01.45): stop after N games, N wins, a win streak of N, or N minutes. 0 = off ----- */
+export function capStatus(o, a, startMs, nowMs) {
+  const n = a.length, w = a.filter((g) => g.r === 'W').length, ws = winRun(a);
+  const mins = startMs ? Math.floor((nowMs - startMs) / 60000) : 0;
+  const rows = [
+    o.capGames > 0 && { k: 'games', cur: n, max: o.capGames, label: 'games', say: `${n} games played` },
+    o.capWins > 0 && { k: 'wins', cur: w, max: o.capWins, label: 'wins', say: `${w} wins` },
+    o.capStreak > 0 && { k: 'streak', cur: ws, max: o.capStreak, label: 'win streak', say: `a ${ws} win streak` },
+    o.capMin > 0 && { k: 'min', cur: mins, max: o.capMin, label: 'min', say: `${mins} minutes` },
+  ].filter(Boolean);
+  if (!rows.length) return null;
+  const hit = rows.filter((r) => r.cur >= r.max);
+  return { rows, hit, text: hit.length ? `Cap reached: ${hit.map((r) => r.say).join(', ')}. Finish this game, then stop.` : '' };
 }

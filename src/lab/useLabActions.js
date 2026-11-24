@@ -38,7 +38,7 @@ export function logGame(res, form) {
   if (os) { ch = os.char; nm = oi || os.opp || ''; om = ranked ? (form.oppMR != null ? form.oppMR : os.oppMR) : null; rm = os.n > 0; }
   else { ch = form.char; nm = oi; om = ranked ? form.oppMR : null; rm = false; }
   const my = ranked ? form.myMR : null;
-  const g = { t, sid: s.id, r: res, char: ch || null, oppMR: om == null ? null : om, myMR: my == null ? null : my, opp: nm, rm, tags: form.tags || [], note: (form.note || '').trim(), dev: devNow(S), me: meNow(S), mode, ...(form.rage != null ? { rage: form.rage } : {}) };
+  const g = { t, sid: s.id, r: res, char: ch || null, oppMR: om == null ? null : om, myMR: my == null ? null : my, opp: nm, rm, tags: form.tags || [], note: (form.note || '').trim(), dev: devNow(S), me: meNow(S), mode, ...(form.rage != null ? { rage: form.rage } : {}), ...(form.theme ? { theme: form.theme } : {}) };
   let ns = null, msg;
   if (ch) {
     const n = (os ? os.n : 0) + 1, w = (os ? os.w : 0) + (res === 'W' ? 1 : 0), l = (os ? os.l : 0) + (res === 'L' ? 1 : 0), L = ranked ? o.setLen : 0, half = Math.floor(L / 2);
