@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import {
-  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList,
+  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList, capStatus,
 } from '../../lab/calc';
 import { OPP, MODES } from '../../lab/data';
 import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
@@ -140,6 +140,9 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const vsp = (k) => <div className="vsp" title="Drag to resize · double-click to reset" onPointerDown={startSplit(k)} onDoubleClick={resetSplit(k)} />;
 
   const all = shown ? sg(S, shown) : [], a = shown ? sgm(S, shown) : [], r2 = wl(a), run = lossRun(a), N = stopOf(shown), tl = tagList(S);
+  const [nowMs, setNowMs] = useState(() => Date.now());
+  useEffect(() => { const t = setInterval(() => setNowMs(Date.now()), 30000); return () => clearInterval(t); }, []);
+  const cap = shown && ranked ? capStatus(o, a, shown.start, nowMs) : null;
   const lights = Array.from({ length: Math.min(N, 10) }, (_, i) => <i key={i} className={i < run ? 'on' : ''} />);
 
   return (
@@ -219,6 +222,11 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
                 <button key={t[0]} type="button" className="chip" aria-pressed={form.theme === t[0]} onClick={() => patch({ theme: form.theme === t[0] ? null : t[0] })}>{t[1]}</button>
               ))}
               <button type="button" className="chip add" onClick={() => window.dispatchEvent(new CustomEvent('lab:themes'))}>Edit themes</button>
+            </div>
+          )}
+          {cap && (
+            <div className={`ragewarn ${cap.hit.length ? 'l3' : ''} capbar`} style={cap.hit.length ? undefined : { background: 'transparent', border: '1px solid currentColor', opacity: 0.8 }} role={cap.hit.length ? 'alert' : undefined}>
+              {cap.hit.length ? cap.text : `Session cap: ${cap.rows.map((r) => `${r.cur}/${r.max} ${r.label}`).join(' · ')}`}
             </div>
           )}
           {o.show.rage && <RageMeter value={rage} onChange={setRageL} />}

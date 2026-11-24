@@ -18,6 +18,10 @@ export function opts(S) {
     lock: o.lock !== false,
     lockMin: typeof o.lockMin === 'number' ? o.lockMin : 8,
     rageWarn: o.rageWarn !== false,
+    capGames: typeof o.capGames === 'number' ? o.capGames : 0,
+    capWins: typeof o.capWins === 'number' ? o.capWins : 0,
+    capStreak: typeof o.capStreak === 'number' ? o.capStreak : 0,
+    capMin: typeof o.capMin === 'number' ? o.capMin : 0,
     autoRematch: o.autoRematch !== false,
     quickRematch: o.quickRematch !== false,
     k: typeof o.k === 'number' ? o.k : 16,
@@ -210,4 +214,19 @@ export function rageWarn(rage, run) {
   return hot === 3 ? { level: 3, text: `${why}. Stop. Close the game and walk away for 20+ minutes.` }
     : hot === 2 ? { level: 2, text: `${why}. Take a break before the next queue.` }
     : { level: 1, text: `${why}. Heating up. Slow down, one cue word, no pressing on minus.` };
+}
+
+/* ----- session caps (V01.45): stop after N games, N wins, a win streak of N, or N minutes. 0 = off ----- */
+export function capStatus(o, a, startMs, nowMs) {
+  const n = a.length, w = a.filter((g) => g.r === 'W').length, ws = winRun(a);
+  const mins = startMs ? Math.floor((nowMs - startMs) / 60000) : 0;
+  const rows = [
+    o.capGames > 0 && { k: 'games', cur: n, max: o.capGames, label: 'games', say: `${n} games played` },
+    o.capWins > 0 && { k: 'wins', cur: w, max: o.capWins, label: 'wins', say: `${w} wins` },
+    o.capStreak > 0 && { k: 'streak', cur: ws, max: o.capStreak, label: 'win streak', say: `a ${ws} win streak` },
+    o.capMin > 0 && { k: 'min', cur: mins, max: o.capMin, label: 'min', say: `${mins} minutes` },
+  ].filter(Boolean);
+  if (!rows.length) return null;
+  const hit = rows.filter((r) => r.cur >= r.max);
+  return { rows, hit, text: hit.length ? `Cap reached: ${hit.map((r) => r.say).join(', ')}. Finish this game, then stop.` : '' };
 }

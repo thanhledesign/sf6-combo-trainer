@@ -34,6 +34,11 @@ export function OptionsPane({ onTags, onCsv }) {
     <div id="opts">
       <h3>Stop rule</h3>
       <St label="Stop after losses in a row" value={stop} help="0 = never. Changes the live session too." onDec={() => updateStop(clamp(stop - 1, 0, 10))} onInc={() => updateStop(clamp(stop + 1, 0, 10))} />
+      <h3>Session caps</h3>
+      <St label="Stop after games" value={o.capGames} help="0 = off. Games this session in the current mode" onDec={() => setOpt('capGames', clamp(o.capGames - 1, 0, 60))} onInc={() => setOpt('capGames', clamp(o.capGames + 1, 0, 60))} />
+      <St label="Stop after wins" value={o.capWins} help="0 = off. Quit while ahead" onDec={() => setOpt('capWins', clamp(o.capWins - 1, 0, 30))} onInc={() => setOpt('capWins', clamp(o.capWins + 1, 0, 30))} />
+      <St label="Stop after a win streak of" value={o.capStreak} help="0 = off. Lock in the hot run" onDec={() => setOpt('capStreak', clamp(o.capStreak - 1, 0, 15))} onInc={() => setOpt('capStreak', clamp(o.capStreak + 1, 0, 15))} />
+      <St label="Stop after minutes" value={o.capMin} suffix="min" help="0 = off. Your data says autopilot starts near 45" onDec={() => setOpt('capMin', clamp(o.capMin - 5, 0, 240))} onInc={() => setOpt('capMin', clamp(o.capMin + 5, 0, 240))} />
       <Sw label="Lock the log until I write a situation" k="lock" />
       {o.lock && <St label="Minimum note length" value={o.lockMin} help="characters" onDec={() => setOpt('lockMin', clamp(o.lockMin - 1, 0, 60))} onInc={() => setOpt('lockMin', clamp(o.lockMin + 1, 0, 60))} />}
       <h3>Ranked sets (rematches)</h3>
