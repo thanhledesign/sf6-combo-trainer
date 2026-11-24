@@ -16,6 +16,8 @@ export const DEFAULT_THEMES = [
   ['bait','Bait and whiff punish'],['wall','Fireball and anti-air wall'],['oki','Corner trap and oki'],
   ['scout','Scout and read'],['block','Block and punish'],['skip','Neutral-skip shutdown'],['herd','Corner herding'],
   ['revbait','Reversal bait'],['overload','Overload their autopilot'],['burnout','Burnout pressure'],['impatience','Impatience bait'],
+  ['driveeco','Drive economy'],['parry','Parry defense'],['rhythm','Rhythm break'],['crowd','Crowd their space'],
+  ['dipunish','Drive Impact punish'],['cornerescape','Corner escape'],['jumpbait','Fireball jump bait'],['lead','Lead management'],
 ];
 
 // Loss tags from the V01.32 tracker, imported alongside its data.
