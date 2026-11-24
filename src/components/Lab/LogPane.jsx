@@ -8,7 +8,7 @@ import { OPP, MODES } from '../../lab/data';
 import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
 import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
-import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter } from './ui';
+import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter, CapMenu } from './ui';
 
 const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
@@ -168,7 +168,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           </div>
           <div className="row2">
             <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
-            <label>Stop after losses in a row<Stepper value={stopOf({ stop: S.settings.stop })} onDec={() => updateStop(Math.max(0, stopOf({ stop: S.settings.stop }) - 1))} onInc={() => updateStop(Math.min(10, stopOf({ stop: S.settings.stop }) + 1))} /></label>
+            <div><CapMenu /></div>
           </div>
           <div className="row2">
             {[0, 1, 2].map((i) => (
@@ -206,6 +206,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
             ) : <div className="stat"><b>{a.length}</b><span>Games in {modeName(mode)}</span></div>}
             <button type="button" className="stat" onClick={endSession}><b>End</b><span>session</span></button>
           </div>
+          {ranked && <CapMenu />}
           <FocusBar S={S} onToggle={onFocusToggle} />
           {os ? (
             <div className="setbar">

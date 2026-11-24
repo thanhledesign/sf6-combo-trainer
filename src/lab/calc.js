@@ -42,7 +42,7 @@ export const modeOf = (g) => g.mode || 'ranked';
 export const modeName = (m) => (MODES.find((x) => x[0] === m) || [m, m])[1];
 export const meNow = (S) => S.settings.me || 'Ken';
 export const devNow = (S) => S.settings.device || 'Stick';
-export const stopOf = (s) => (s && typeof s.stop === 'number' ? s.stop : 3);
+export const stopOf = (s) => (s && typeof s.stop === 'number' ? s.stop : 4);
 
 export const tagList = (S) => {
   const t = S.settings.tags;

@@ -322,3 +322,11 @@
 .lab .ragewarn.l3{background:#ef444433;border-color:#ef4444;color:#fecaca;animation:ragepulse 1.2s ease-in-out infinite}
 @keyframes ragepulse{50%{background:#ef444466}}
 @media (prefers-reduced-motion:reduce){.lab .ragewarn.l3{animation:none}}
+
+/* Stop rules dropdown (V01.45) */
+.lab .capmenu { border: 1px solid var(--line, #374151); border-radius: .6rem; margin: .4rem 0; background: rgba(255,255,255,.03); }
+.lab .capmenu > summary { cursor: pointer; padding: .55rem .8rem; font-size: .85rem; list-style: none; }
+.lab .capmenu > summary::-webkit-details-marker { display: none; }
+.lab .capmenu > summary::after { content: '▾'; float: right; opacity: .7; }
+.lab .capmenu[open] > summary::after { content: '▴'; }
+.lab .capmenu .capbody { padding: 0 .8rem .6rem; }

@@ -2,7 +2,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useToastMsg } from './toastBus';
 import { useScrub } from './useScrub';
-import { clamp, num, rageName } from '../../lab/calc';
+import { clamp, num, rageName, opts, cur, stopOf } from '../../lab/calc';
+import { useLab } from '../../lab/store';
+import { setOpt, updateStop } from '../../lab/useLabActions';
 import { thumbOf } from '../../lab/data';
 
 export function Toast() {
@@ -129,3 +131,26 @@ export const Table = ({ head, rows }) => (
   <div className="tw"><table><thead><tr>{head.map((h) => <th key={h}>{h}</th>)}</tr></thead>
     <tbody>{rows.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody></table></div>
 );
+
+/** Dropdown of every stop rule: losses in a row, games, wins, win streak, minutes. Works before and during a session. */
+export function CapMenu() {
+  const S = useLab(), o = opts(S), s = cur(S);
+  const N = stopOf(s || { stop: S.settings.stop });
+  const parts = [N > 0 && `${N} losses`, o.capGames > 0 && `${o.capGames} games`, o.capWins > 0 && `${o.capWins} wins`, o.capStreak > 0 && `${o.capStreak} win streak`, o.capMin > 0 && `${o.capMin} min`].filter(Boolean);
+  const row = (label, value, set, lo, hi, step = 1, suffix) => (
+    <div className="orow"><div>{label}</div><Stepper value={value} suffix={suffix} onDec={() => set(clamp(value - step, lo, hi))} onInc={() => set(clamp(value + step, lo, hi))} /></div>
+  );
+  return (
+    <details className="capmenu">
+      <summary>Stop rules: {parts.length ? parts.join(' · ') : 'none'}</summary>
+      <div className="capbody">
+        {row('After losses in a row', N, updateStop, 0, 10)}
+        {row('After games played', o.capGames, (v) => setOpt('capGames', v), 0, 60)}
+        {row('After wins', o.capWins, (v) => setOpt('capWins', v), 0, 30)}
+        {row('After a win streak of', o.capStreak, (v) => setOpt('capStreak', v), 0, 15)}
+        {row('After minutes', o.capMin, (v) => setOpt('capMin', v), 0, 480, 15, 'min')}
+        <small className="mute">0 = off. Applies to the live session too.</small>
+      </div>
+    </details>
+  );
+}
