@@ -330,3 +330,18 @@
 .lab .capmenu > summary::after { content: '▾'; float: right; opacity: .7; }
 .lab .capmenu[open] > summary::after { content: '▴'; }
 .lab .capmenu .capbody { padding: 0 .8rem .6rem; }
+
+/* Game plan bar and editor (V01.45) */
+.lab .planbar { border: 1px solid var(--line, #374151); border-radius: .6rem; padding: .5rem .6rem; margin: .4rem 0; }
+.lab .planrow { display: flex; gap: .3rem; align-items: center; flex-wrap: wrap; }
+.lab .plan-l { font-size: .75rem; opacity: .7; margin: 0 .1rem 0 .3rem; }
+.lab .plan-cur { display: flex; flex-wrap: wrap; gap: .1rem .6rem; align-items: baseline; width: 100%; text-align: left; background: none; border: 0; color: inherit; padding: .4rem 0 0; cursor: pointer; }
+.lab .plan-cur b { font-size: 1.05rem; }
+.lab .plan-cur span { flex: 1 1 12rem; font-size: .8rem; }
+.lab .plan-cur i { font-style: normal; font-size: .75rem; opacity: .7; }
+.lab .plan-swap { margin-top: .4rem; }
+.lab .plan-note { display: block; margin-top: .4rem; font-size: .75rem; }
+.lab .plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .6rem; }
+.lab .plan-col { display: flex; flex-direction: column; gap: .4rem; }
+.lab .plan-col label { display: block; font-size: .8rem; }
+.lab .plan-col select { width: 100%; }
