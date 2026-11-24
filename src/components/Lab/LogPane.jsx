@@ -9,7 +9,7 @@ import { startSession, endSession, logGame, endSet, setMode, updateStop, saveRes
 import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
 import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter, CapMenu } from './ui';
-import { PlanBar, PlanEditor } from './PlanPane';
+import { PlanBar, PlanEditor, PlanPreview } from './PlanPane';
 
 const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
@@ -174,11 +174,12 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
               <Scale key={k} k={k} label={SL[k][0]} hint={SL[k][1]} value={chk[k]} pace={ui.space} onChange={(v) => setChk((c) => ({ ...c, [k]: v }))} />
             ))}
           </div>
-          <div className="row2">
-            <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
-            <div><CapMenu /></div>
+          <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
+          <PlanPreview />
+          <div className="row2 planactions">
+            <button type="button" className="btn" onClick={() => setPlanEd(true)}>Edit game plan</button>
+            <CapMenu />
           </div>
-          <button type="button" className="btn" onClick={() => setPlanEd(true)}>Edit game plan</button>
           <div className="row2">
             {[0, 1, 2].map((i) => (
               <input key={i} type="text" aria-label={`Cue word ${i + 1}`} placeholder={`Cue ${i + 1}`} value={cues[i] || ''} onChange={(e) => setCues((c) => { const n = [...c]; n[i] = e.target.value; return n; })} />

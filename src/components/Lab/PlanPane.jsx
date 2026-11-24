@@ -73,3 +73,17 @@ export function PlanEditor({ onClose }) {
     </Overlay>
   );
 }
+
+/** Read-only 3x3 of the plan's theme names for the pre-session screen. */
+export function PlanPreview() {
+  const S = useLab(), plan = planOf(S);
+  return (
+    <div className="plan-prev" aria-label="Game plan">
+      {[1, 2, 3].map((g) => (
+        <div key={g}><b>Game {g}</b>
+          {[1, 2, 3].map((r) => <span key={r}><i>R{r}</i> {themeName(S, plan[planIdx(g, r)])}</span>)}
+        </div>
+      ))}
+    </div>
+  );
+}

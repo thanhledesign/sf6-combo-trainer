@@ -345,3 +345,8 @@
 .lab .plan-col { display: flex; flex-direction: column; gap: .4rem; }
 .lab .plan-col label { display: block; font-size: .8rem; }
 .lab .plan-col select { width: 100%; }
+.lab .plan-prev { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; border: 1px solid var(--line, #374151); border-radius: .6rem; padding: .5rem .6rem; margin: .4rem 0; font-size: .8rem; }
+.lab .plan-prev > div { display: flex; flex-direction: column; gap: .15rem; }
+.lab .plan-prev i { font-style: normal; opacity: .6; margin-right: .25rem; }
+.lab .planactions { align-items: start; }
+.lab .planactions > .btn { height: 100%; min-height: 2.4rem; }
