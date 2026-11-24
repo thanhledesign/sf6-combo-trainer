@@ -20,6 +20,34 @@ export const DEFAULT_THEMES = [
   ['dipunish','Drive Impact punish'],['cornerescape','Corner escape'],['jumpbait','Fireball jump bait'],['lead','Lead management'],
 ];
 
+// Default game plan: 3 games x 3 rounds (G1R1..G3R3), theme keys. Mirrors the Game Plans tab of the sheet.
+export const DEFAULT_PLAN = ['scout', 'bait', 'throw', 'alloffense', 'oki', 'hotcold', 'bait', 'throw', 'wall'];
+// One-line reminder per default theme, shown in the plan bar. Editable per theme in the app.
+export const THEME_TIPS = {
+  throw: 'Make them respect the throw, then loop it. Tick, shimmy, throw again.',
+  hotcold: 'Walk where they walk. Deny what they want. Do not press first.',
+  alloffense: 'Patient before, now constant pressure. Never press on minus.',
+  bait: 'Offer a bait, make it whiff or be unsafe, punish big.',
+  wall: 'Hadoken and DP. Make them come to you. No risk.',
+  oki: 'After the knockdown: meaty, safe jump, keep them cornered.',
+  scout: 'Round 1: collect info, no risks. Skip? Corner? Footsies? Default defense?',
+  block: 'Minus? Block and wait. Punish only what is really unsafe.',
+  skip: 'Hadoken and st.MK stop the dash. Drive Impact the skip. Block the reversal.',
+  herd: 'Walk them back outside cr.MK range. Wait for the mistake.',
+  revbait: 'Anti-air the early jump, block the wake-up reversal, punish.',
+  overload: 'Pressure until their default shows, then beat it. They repeat once.',
+  burnout: 'They are in Burnout. Memorized mixups, keep them cornered.',
+  impatience: 'Hold still. When the fireball comes, Drive Rush through the startup.',
+  driveeco: 'Spend Drive and Super on confirmed hits. No raw Drive Impact. No Burnout.',
+  parry: 'Parry the fireball or string, walk in, take the turn.',
+  rhythm: 'Change your timing every few exchanges. Gaps on purpose.',
+  crowd: 'Stand in their space. Block the panic, anti-air the jump.',
+  dipunish: 'Block their Drive Impact and punish. Never throw yours raw.',
+  cornerescape: 'Backdash, parry, delay tech. Vary it. Do not jump back.',
+  jumpbait: 'Fireball at the jump arc edge, then anti-air the jump.',
+  lead: 'Ahead: make them come. Behind: take reads, not random risk.',
+};
+
 // Loss tags from the V01.32 tracker, imported alongside its data.
 export const CLASSIC_TAGS = [
   ['no-anti-air',"Didn't anti-air"],['lost-neutral-di','Lost neutral to DI'],['whiff-punished','Whiff punished too much'],

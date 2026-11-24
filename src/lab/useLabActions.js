@@ -1,7 +1,7 @@
 // Game / session / goal actions. All write through the store; none touch the DOM.
 import { put, saveSettings, getState, accountsOf, getRaw, setUI } from './store';
 import {
-  cur, sgm, modeNow, meNow, devNow, opts, stopOf, strip, lossRun, evalGoal, estMR, postMR, byId, optPatch,
+  planOf, cur, sgm, modeNow, meNow, devNow, opts, stopOf, strip, lossRun, evalGoal, estMR, postMR, byId, optPatch,
 } from './calc';
 
 export function startSession({ rule, cues, check }) {
@@ -136,3 +136,12 @@ export function setRage(v) {
   const S = getState(), s = cur(S); if (!s || s.rage === v) return;
   put('sessions', s.id, { ...strip(s), rage: v });
 }
+
+/* ----- game plan edits (V01.45) ----- */
+export function setPlanSlot(idx, key) {
+  const S = getState(), cur9 = planOf(S).slice(); cur9[idx] = key; saveSettings({ plan: cur9 });
+}
+export function setThemeNote(key, text) {
+  const S = getState(); saveSettings({ themeNotes: { ...(S.settings.themeNotes || {}), [key]: text.trim() } });
+}
+export function resetPlan() { saveSettings({ plan: null, themeNotes: {} }); }

@@ -2,13 +2,14 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import {
-  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList, capStatus,
+  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList, capStatus, planOf, planIdx,
 } from '../../lab/calc';
 import { OPP, MODES } from '../../lab/data';
 import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
 import { comboStr } from '../../lab/combo';
 import { toast } from './toastBus';
 import { MrScrub, Scale, Stepper, Tile, TagChips, RageMeter, CapMenu } from './ui';
+import { PlanBar, PlanEditor, PlanPreview } from './PlanPane';
 
 const SL = { calm: ['Energy', '1 flat · 5 wired'], focus: ['Focus', '1 foggy · 5 locked in'], hands: ['Warmed up', '1 cold · 5 loose'] };
 
@@ -36,6 +37,8 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   // log form
   const [form, setForm] = useState({ char: null, oppMR: null, myMR: null, myDirty: false, tags: {}, opp: '', note: '', theme: null });
   const patch = (p) => setForm((f) => ({ ...f, ...p }));
+  // game plan: game 1-3 follows the open set, round is tapped; both can be overridden
+  const [gSel, setGSel] = useState(null), [rnd, setRnd] = useState(1), [planEd, setPlanEd] = useState(false);
   // pre-session sheet
   const [chk, setChk] = useState({ calm: 3, focus: 3, hands: 3 });
   const [rule, setRule] = useState(S.settings.rule || '');
@@ -53,6 +56,9 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
     const t = setTimeout(() => { setRage(rageL); setRageL(null); }, 400);
     return () => clearTimeout(t);
   }, [rageL, sid]);
+  const gCur = gSel != null ? gSel : Math.min(3, os ? os.n + 1 : 1);
+  const slotTheme = planOf(S)[planIdx(gCur, rnd)];
+  const themeNow = form.theme || slotTheme;
   const defOpp = last && last.oppMR != null ? last.oppMR : (myMR || 1500);
 
   // the open set carries its opponent MR / name into the form
@@ -85,7 +91,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   };
 
   const resetForm = (keep) => setForm((f) => ({
-    ...f, tags: {}, myDirty: false, note: '',
+    ...f, tags: {}, myDirty: false, note: '', theme: null,
     ...(keep ? {} : { char: null, oppMR: null, opp: '' }),
   }));
 
@@ -95,7 +101,8 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   };
   const onLog = (r) => {
     const dm = myMR != null && form.oppMR != null ? postMR(S, { r, myMR, oppMR: form.oppMR }) - myMR : null;
-    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null, theme: o.show.theme ? form.theme : null });
+    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null, theme: o.show.theme ? themeNow : null });
+    setRnd(1); setGSel(null);
     if (out.toast) toast(out.toast);
     if (!out.keep && !out.toast && !s) return;
     resetForm(!!out.keep);
@@ -147,6 +154,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
 
   return (
     <section className="pane" id="p-log">
+      {planEd && <PlanEditor onClose={() => setPlanEd(false)} />}
       {idle && (
         <div className="startv">
           <h2>Before you queue</h2>
@@ -166,9 +174,11 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
               <Scale key={k} k={k} label={SL[k][0]} hint={SL[k][1]} value={chk[k]} pace={ui.space} onChange={(v) => setChk((c) => ({ ...c, [k]: v }))} />
             ))}
           </div>
-          <div className="row2">
-            <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
-            <div><CapMenu /></div>
+          <label>Session rule (one)<input type="text" value={rule} onChange={(e) => setRule(e.target.value)} placeholder="e.g. cr.HP every jump-in" /></label>
+          <PlanPreview />
+          <div className="row2 planactions">
+            <button type="button" className="btn" onClick={() => setPlanEd(true)}>Edit game plan</button>
+            <CapMenu />
           </div>
           <div className="row2">
             {[0, 1, 2].map((i) => (
@@ -217,10 +227,11 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           ) : form.char ? (
             <div className="setbar"><b>{form.char}</b><span className="mute">New opponent. The next result is game 1; after that it counts as a rematch.</span></div>
           ) : null}
+          {o.show.theme && <PlanBar g={gCur} r={rnd} setG={setGSel} setR={setRnd} onEdit={() => setPlanEd(true)} />}
           {o.show.theme && (
             <div className="chips" aria-label="Game plan theme" style={{ maxHeight: 'none' }}>
               {themeList(S).map((t) => (
-                <button key={t[0]} type="button" className="chip" aria-pressed={form.theme === t[0]} onClick={() => patch({ theme: form.theme === t[0] ? null : t[0] })}>{t[1]}</button>
+                <button key={t[0]} type="button" className="chip" aria-pressed={themeNow === t[0]} onClick={() => patch({ theme: form.theme === t[0] ? null : t[0] })}>{t[1]}</button>
               ))}
               <button type="button" className="chip add" onClick={() => window.dispatchEvent(new CustomEvent('lab:themes'))}>Edit themes</button>
             </div>

@@ -1,6 +1,6 @@
 // Pure helpers: given the Lab state `S`, derive records, MR estimates, goals, etc.
 // Ported from the standalone tracker; no DOM or React in here.
-import { DEFAULT_TAGS, DEFAULT_THEMES, MODES } from './data';
+import { DEFAULT_TAGS, DEFAULT_THEMES, DEFAULT_PLAN, THEME_TIPS, MODES } from './data';
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export const num = (v) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : null; };
@@ -230,3 +230,8 @@ export function capStatus(o, a, startMs, nowMs) {
   const hit = rows.filter((r) => r.cur >= r.max);
   return { rows, hit, text: hit.length ? `Cap reached: ${hit.map((r) => r.say).join(', ')}. Finish this game, then stop.` : '' };
 }
+
+/* ----- game plan (V01.45): 9 slots, game 1-3 x round 1-3, each holds a theme key ----- */
+export const planOf = (S) => (Array.isArray(S.settings.plan) && S.settings.plan.length === 9 ? S.settings.plan : DEFAULT_PLAN);
+export const planIdx = (g, r) => (clamp(g, 1, 3) - 1) * 3 + (clamp(r, 1, 3) - 1);
+export const themeTip = (S, k) => ((S.settings.themeNotes || {})[k]) || THEME_TIPS[k] || '';
