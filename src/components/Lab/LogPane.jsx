@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLab, useUI, getUI, setUI } from '../../lab/store';
 import {
-  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn,
+  cur, lastClosed, sg, sgm, wl, pct, lossRun, streakStr, stopOf, modeNow, modeName, meNow, opts, tagList, estMR, postMR, lastGame, sgn, rageWarn, themeList,
 } from '../../lab/calc';
 import { OPP, MODES } from '../../lab/data';
 import { startSession, endSession, logGame, endSet, setMode, updateStop, saveResult, setRage } from '../../lab/useLabActions';
@@ -34,7 +34,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   const os = s && s.openSet && s.openSet.mode === mode ? s.openSet : null;
 
   // log form
-  const [form, setForm] = useState({ char: null, oppMR: null, myMR: null, myDirty: false, tags: {}, opp: '', note: '' });
+  const [form, setForm] = useState({ char: null, oppMR: null, myMR: null, myDirty: false, tags: {}, opp: '', note: '', theme: null });
   const patch = (p) => setForm((f) => ({ ...f, ...p }));
   // pre-session sheet
   const [chk, setChk] = useState({ calm: 3, focus: 3, hands: 3 });
@@ -95,7 +95,7 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
   };
   const onLog = (r) => {
     const dm = myMR != null && form.oppMR != null ? postMR(S, { r, myMR, oppMR: form.oppMR }) - myMR : null;
-    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null });
+    const out = logGame(r, { char: form.char, oppMR: form.oppMR, myMR, opp: form.opp, note: form.note, tags: Object.keys(form.tags).filter((k) => form.tags[k]), rage: o.show.rage ? rage : null, theme: o.show.theme ? form.theme : null });
     if (out.toast) toast(out.toast);
     if (!out.keep && !out.toast && !s) return;
     resetForm(!!out.keep);
@@ -213,6 +213,14 @@ export default function LogPane({ onEditLast, onFocusToggle }) {
           ) : form.char ? (
             <div className="setbar"><b>{form.char}</b><span className="mute">New opponent. The next result is game 1; after that it counts as a rematch.</span></div>
           ) : null}
+          {o.show.theme && (
+            <div className="chips" aria-label="Game plan theme" style={{ maxHeight: 'none' }}>
+              {themeList(S).map((t) => (
+                <button key={t[0]} type="button" className="chip" aria-pressed={form.theme === t[0]} onClick={() => patch({ theme: form.theme === t[0] ? null : t[0] })}>{t[1]}</button>
+              ))}
+              <button type="button" className="chip add" onClick={() => window.dispatchEvent(new CustomEvent('lab:themes'))}>Edit themes</button>
+            </div>
+          )}
           {o.show.rage && <RageMeter value={rage} onChange={setRageL} />}
           {o.show.rage && o.rageWarn && (() => { const w = rageWarn(rage, run); return w ? <div className={`ragewarn l${w.level}`} role="alert">{w.text}</div> : null; })()}
           <div className="mrrow">

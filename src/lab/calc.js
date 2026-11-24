@@ -1,13 +1,13 @@
 // Pure helpers: given the Lab state `S`, derive records, MR estimates, goals, etc.
 // Ported from the standalone tracker; no DOM or React in here.
-import { DEFAULT_TAGS, MODES } from './data';
+import { DEFAULT_TAGS, DEFAULT_THEMES, MODES } from './data';
 
 export const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 export const num = (v) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : null; };
 export const strip = (o) => { const c = { ...o }; delete c.id; return c; };
 export const byId = (a, id) => a.find((x) => x.id === id) || null;
 
-const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false, rage: true };
+const SHOW0 = { oppMR: true, myMR: true, oppName: true, rematch: true, tags: true, note: false, rage: true, theme: true };
 const DASH0 = { record: true, win: true, streak: true, mr: true, lights: true, games: true, minutes: true, rule: true, dots: true, rematch: true, goal: true };
 
 export function opts(S) {
@@ -45,6 +45,8 @@ export const tagList = (S) => {
   return Array.isArray(t) && t.length ? t.map((x) => [x.k, x.n, x.t]) : DEFAULT_TAGS;
 };
 export const tagObjs = (S) => tagList(S).map((t) => ({ k: t[0], n: t[1], t: t[2] }));
+export const themeList = (S) => (Array.isArray(S.settings.themes) && S.settings.themes.length ? S.settings.themes.map((t) => [t.k, t.n]) : DEFAULT_THEMES);
+export const themeName = (S, k) => (themeList(S).find((t) => t[0] === k) || [k, k])[1];
 export const tagInfo = (S, k) => tagList(S).find((t) => t[0] === k) || [k, k, 'good'];
 
 export const cur = (S) => {

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useLab } from '../../lab/store';
 import {
-  cur, sg, sgm, wl, pct, lossRun, streakStr, winRun, stopOf, modeNow, modeName, meNow, opts, tagList, tagInfo, estMR, allGames, gap, deltas, recStr,
+  cur, sg, sgm, wl, pct, lossRun, streakStr, winRun, stopOf, modeNow, modeName, meNow, opts, tagList, tagInfo, themeList, estMR, allGames, gap, deltas, recStr,
   runs, bestEver, evalGoal, goalTitle, suggestions, milestones, fmtT, fmtD, modeOf, num, byId, strip,
 } from '../../lab/calc';
 import { MODES, DEVICES, OPP, ROSTER, KINDS } from '../../lab/data';
@@ -108,6 +108,7 @@ export function HistPane({ onOpen }) {
     const w = a.filter((g) => (g.tags || []).includes(tg[0])), o = a.filter((g) => !(g.tags || []).includes(tg[0])), rw = wl(w), ro = wl(o);
     return [<>{tg[1]} <span className="mute">({tg[2] === 'leak' ? 'leak' : 'strength'})</span></>, rw.n, pct(rw.w, rw.n), pct(ro.w, ro.n)];
   }).filter((r) => r[1] > 0);
+  const th = themeList(S).map((x) => { const r = wl(a.filter((g) => g.theme === x[0])); return [x[1], r.n, `${r.w}–${r.l}`, pct(r.w, r.n)]; }).filter((r) => r[1] > 0);
   return (
     <div>
       {chips}
@@ -121,6 +122,7 @@ export function HistPane({ onOpen }) {
       <h3>By MR gap</h3>
       <Table head={['Gap', 'Record', 'Win %']} rows={bins.map((b) => { const r = wl(a.filter((g) => { const d = gap(g); return d != null && b[1](d); })); return [b[0], `${r.w}–${r.l}`, pct(r.w, r.n)]; })} />
       {rows.length > 0 && <><h3>By character</h3><Table head={['Character', 'Games', 'Record', 'Win %']} rows={rows} /></>}
+      {th.length > 0 && <><h3>By game plan theme</h3><Table head={['Theme', 'Games', 'Record', 'Win %']} rows={th} /></>}
       {tr.length > 0 && <><h3>Tags</h3><Table head={['Tag', 'Games', 'Win % with', 'Win % without']} rows={tr} /></>}
       <h3>Games</h3>
       {a.slice().reverse().slice(0, 40).map((g) => <GameRow key={g.id} g={g} S={S} onOpen={onOpen} />)}

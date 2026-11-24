@@ -10,6 +10,12 @@ export const DEFAULT_TAGS = [
   ['W','Whiff punish','good'],['D','Blocked clean','good'],['R','Adapted','good'],
 ];
 
+// Game plan themes (V01.44). Names only; the details live in the "Game Plans" tab of the SF6 Ranked Tracker sheet.
+export const DEFAULT_THEMES = [
+  ['throw','Throw loops'],['hotcold','Hot/Cold'],['alloffense','All-out offense'],
+  ['bait','Bait and whiff punish'],['wall','Fireball and anti-air wall'],['oki','Corner trap and oki'],
+];
+
 // Loss tags from the V01.32 tracker, imported alongside its data.
 export const CLASSIC_TAGS = [
   ['no-anti-air',"Didn't anti-air"],['lost-neutral-di','Lost neutral to DI'],['whiff-punished','Whiff punished too much'],
